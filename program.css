@@ -1,0 +1,109 @@
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; background: #fff; }
+.page_table { width: 100%; border-collapse: collapse; }
+.central_td_column { padding: 16px 24px; }
+
+#header { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid #ccc; }
+#header .event_logo { height: 100px; width: auto; flex: 0 0 auto; }
+#header #title { font-size: 22px; font-weight: bold; padding: 0; border: none; }
+#title { font-size: 22px; font-weight: bold; padding: 8px 0; border-bottom: 1px solid #ccc; }
+
+#main_menu { padding: 8px 0; border-bottom: 1px solid #eee; }
+#main_menu a { display: inline-block; padding: 4px 12px; margin-right: 4px; background: #eef; color: #225; text-decoration: none; border-radius: 3px; }
+#main_menu a.selected { background: #c33; color: #fff; font-weight: bold; }
+
+#menu2, #menu3 { padding: 8px 0; font-size: 12px; border-bottom: 1px solid #eee; line-height: 1.9; }
+#menu2 a, #menu3 a { display: inline-block; background: #def; color: #225; text-decoration: none; padding: 2px 8px; margin: 0 1px; border-radius: 2px; }
+#menu2 a:hover, #menu3 a:hover { background: #cde; }
+#menu2 a.selected, #menu3 a.selected { background: #c33; color: #fff; font-weight: bold; }
+#menu2 a.selected:hover, #menu3 a.selected:hover { background: #c33; }
+#menu2 .separator, #menu3 .separator { display: none; }
+
+#pagetitle { font-size: 18px; font-weight: bold; padding: 12px 0 6px 0; }
+
+.days_line { margin: 6px 0 14px 0; }
+.days_line a { margin-right: 14px; color: #225; }
+.days_line a.selected { font-weight: bold; color: #000; }
+.day_icon { height: 14px; width: 14px; vertical-align: -2px; margin: 0 4px; }
+
+.date { background: #ddd; padding: 6px 10px; margin-top: 18px; font-weight: bold; }
+
+.session { border-left: 3px solid #cce; padding: 8px 12px; margin: 8px 0; background: #fafaff; }
+.session.subsession { margin-left: 28px; border-left-color: #99b; background: #f3f3fb; }
+.session .heading { margin-bottom: 4px; }
+.session .interval { font-weight: bold; color: #225; margin-right: 8px; }
+.session .title { font-weight: bold; }
+.session .group_tag { float: right; font-size: 11px; background: #338; color: #fff; padding: 2px 6px; border-radius: 3px; }
+
+.session_chair, .room { font-size: 13px; color: #444; margin: 2px 0; }
+.session_chair .chair_word, .room .room_word { display: inline-block; min-width: 60px; font-weight: bold; }
+.chair_names, .session_chair .chair_names { display: inline; }
+
+.session_desc { font-size: 13px; color: #555; margin: 6px 0; }
+
+table.talks { width: 100%; margin-top: 6px; border-collapse: collapse; }
+table.talks td { padding: 4px 8px; vertical-align: top; border-top: 1px dashed #ddd; }
+table.talks td.time { width: 60px; font-weight: bold; color: #225; white-space: nowrap; }
+.authors { font-size: 13px; color: #225; }
+a.person { color: #225; text-decoration: underline; }
+a.person:hover { color: #c33; }
+.title { font-weight: normal; }
+a.abstract_link { font-size: 12px; color: #338; text-decoration: none; margin-left: 4px; font-weight: normal; }
+a.abstract_link:hover { color: #c33; text-decoration: underline; }
+tr.talk:target td { background: #fff8d6; }
+.abstract { margin: 6px 0 8px 0; padding: 6px 0; font-size: 13px; color: #333; }
+.abstract_label { font-weight: bold; }
+.abstract_text { margin: 4px 0; }
+
+.room_sessions_title { font-size: 16px; margin: 18px 0 8px 0; }
+.room_sessions { list-style: disc; padding-left: 20px; margin: 8px 0; }
+.room_sessions li { padding: 4px 0; }
+.room_sessions .session_link { color: #225; text-decoration: underline; font-weight: bold; }
+.room_sessions .session_link:hover { color: #c33; }
+.room_sessions .session_meta { color: #555; font-family: Consolas, "Courier New", monospace; font-size: 13px; margin-left: 6px; }
+.room_sessions .group_tag { font-size: 11px; background: #338; color: #fff; padding: 2px 6px; border-radius: 3px; margin-left: 8px; }
+.room_sessions_empty { color: #888; font-style: italic; }
+
+#disclaimer { margin-top: 30px; padding-top: 10px; border-top: 1px solid #eee; font-size: 11px; color: #888; }
+
+.shortcuts { padding: 8px 0; margin: 8px 0 16px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; font-size: 14px; }
+.shortcuts .links { margin-left: 8px; }
+.shortcuts a { display: inline-block; min-width: 22px; padding: 2px 6px; margin: 2px; border: 1px solid #c33; color: #c33; text-decoration: none; text-align: center; }
+.shortcuts a:hover { background: #fee; }
+
+table.index { width: 100%; border-collapse: collapse; }
+table.index tr.letter td { background: #fffaa0; padding: 6px 10px; font-weight: bold; font-size: 16px; }
+table.index tr.letter:target td { background: #c33; color: #fff; }
+table.index tr.entry td { padding: 4px 10px; vertical-align: top; border-bottom: 1px solid #eee; }
+table.index td.name { width: 30%; }
+table.index td.name a { color: #225; text-decoration: underline; }
+table.index td.name .last_name { font-weight: bold; }
+table.index td.papers { width: 70%; }
+.paper_list .paper1 { padding: 2px 0; }
+.paper_list .paper1.keyword_paper { padding-left: 14px; position: relative; }
+.paper_list .paper1.keyword_paper::before { content: "\25A0"; color: #555; position: absolute; left: 0; top: 2px; font-size: 10px; }
+.ptitle .conference { display: inline-block; font-size: 12px; color: #338; margin-right: 4px; }
+.ptitle .conference a { color: #338; }
+.ptitle > a { color: #225; }
+.index_intro { font-size: 13px; color: #444; margin: 0 0 12px 0; }
+
+table.bio_layout { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.bio_photo_cell { width: 140px; vertical-align: top; padding-right: 16px; }
+.bio_main_cell { vertical-align: top; }
+.bio_img img { width: 120px; height: auto; border: 1px solid #ddd; }
+.bio_img_placeholder { width: 120px; height: 120px; line-height: 120px; text-align: center; font-size: 48px; color: #999; border: 1px dashed #ccc; background: #f4f4f4; }
+.bio_title { font-size: 22px; font-weight: bold; padding-bottom: 8px; border-bottom: 1px solid #ccc; margin-bottom: 8px; }
+.bio_affiliations { width: 100%; border-collapse: collapse; margin: 8px 0; }
+.bio_affiliations tr { background: #f4f4f4; border: 1px solid #ddd; }
+.bio_affiliations tr:nth-child(even) { background: #fbfbfb; }
+.bio_affiliations td { padding: 6px 10px; border: 1px solid #ddd; font-size: 13px; }
+.bio_affiliation_label { width: 110px; font-weight: bold; color: #444; }
+.bio_affiliation_value { color: #222; }
+.bio_description { font-size: 13px; color: #444; margin: 8px 0 16px 0; }
+.bio_pages { font-weight: bold; margin-top: 12px; padding: 4px 0; }
+.bio_table { width: 100%; border-collapse: collapse; margin-top: 4px; }
+.bio_table td { padding: 4px 8px; }
+.bio_table tr.evengrey td { background: #f4f4f4; }
+.bio_table tr.oddgrey td { background: #fff; }
+.bio_table tr.top td { border-top: 1px solid #ddd; }
+.bio_table tr.bottom td { border-bottom: 1px solid #ddd; }
+.bio_table a { color: #225; }
