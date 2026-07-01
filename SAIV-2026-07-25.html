@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -150,7 +151,7 @@
                             <td>
                                 <div class="title">Latent space navigation – interpretation, probing and steering <a class="abstract_link" href="SAIV-2026-07-25.html#talk:929">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6903.html">Lenka Tetková</a><sup>1</sup>                                </div>
+<a class="person" href="person10448.html">Lenka Tetková</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 </div>
@@ -161,7 +162,7 @@
                             <td>
                                 <div class="title">When Control Changes the Data: Safety under Interaction-Driven Distribution Shifts <a class="abstract_link" href="SAIV-2026-07-25.html#talk:930">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6904.html">Lars Lindemann</a><sup>1</sup>                                </div>
+<a class="person" href="person10449.html">Lars Lindemann</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ETH Zurich</div>
                                 </div>
@@ -172,7 +173,7 @@
                             <td>
                                 <div class="title">Round-table discussion <a class="abstract_link" href="SAIV-2026-07-25.html#talk:931">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6905.html">Lenka Tetková</a><sup>1</sup>, <a class="person" href="person6906.html">Lars Lindemann</a><sup>2</sup>                                </div>
+<a class="person" href="person10450.html">Lenka Tetková</a><sup>1</sup>, <a class="person" href="person10451.html">Lars Lindemann</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 <div class="affiliation_item"><sup>2</sup> ETH Zurich</div>
@@ -216,6 +217,135 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1467">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Certified Neural Approximations of Nonlinear Dynamics <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1467">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10452.html">Frederik Baymler Mathiesen</a><sup>1</sup>, <a class="person" href="person10453.html">Nikolaus Vertovec</a><sup>2</sup>, <a class="person" href="person10454.html">Francesco Fabiano</a><sup>2</sup>, <a class="person" href="person10455.html">Luca Laurenti</a><sup>1</sup>, <a class="person" href="person10456.html">Alessandro Abate</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neural networks hold great potential to act as approximate models of nonlinear dynamical systems, with the resulting neural approximations enabling verification and control of such systems. However, in safety-critical contexts, the use of neural approximations requires formal bounds on their closeness to the underlying system. To address this fundamental challenge, we propose a novel, adaptive, and parallelizable verification method based on certified first-order models. Our approach provides formal error bounds on the neural approximations of dynamical systems, allowing them to be safely employed as surrogates by interpreting the error bound as bounded disturbances acting on the approximated dynamics. We demonstrate the effectiveness and scalability of our method on a range of established benchmarks from the literature, showing that it significantly outperforms the state-of-the-art. Furthermore, we show that our framework can successfully address additional scenarios previously intractable for existing methods -- neural network compression and an autoencoder-based deep learning architecture for learning Koopman operators for the purpose of trajectory prediction.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1468">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Verification of LTL properties on Neural Networks for Chemical Process Monitoring <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1468">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10457.html">Julien Girard-Satabin</a><sup>1</sup>, <a class="person" href="person10458.html">Simon Lutz</a><sup>2</sup>, <a class="person" href="person10459.html">Daniel Neider</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université Paris-Saclay, CEA, List, F-91120, Palaiseau, France</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Dortmund University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The specification and verification of temporal properties is crucial to assess the safety of monitoring systems. 
+Said systems need to ensure that certain properties are validated during its full operation time.
+The rich pattern-finding capabilities of deep learning are a strong incitation to implement such monitors as neural networks.
+However, neural networks verification historically focused on properties related to a single point in time.
+In this paper, we present a way to encode Linear Temporal Logic (LTL) properties in a neural network specification language.
+We derive from this encoding an automated translation to existing off-the-shelf provers.
+We apply our system to the verification of an industrial use case: a monitoring system for batch distillation.
+We were able to successfully specify and verify most of the properties in a small runtime.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1469">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Vancomycert: A Certified Neuro-Symbolic Drug Delivery System (Case Study) <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1469">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10460.html">Alistair Sirman</a><sup>1</sup>, <a class="person" href="person10461.html">Fleur Conway</a><sup>2</sup>, <a class="person" href="person10462.html">Jessica Ciupa</a><sup>2</sup>, <a class="person" href="person10463.html">Gusts Gustavs Grīnbergs</a><sup>3</sup>, <a class="person" href="person10464.html">Ekaterina Komendantskaya</a><sup>1</sup>, <a class="person" href="person10465.html">Alessandro Bruni</a><sup>3</sup>, <a class="person" href="person10466.html">Michael John Williams</a><sup>4</sup>, <a class="person" href="person10467.html">Vaishak Belle</a><sup>2</sup>, <a class="person" href="person10468.html">Thai Son Hoang</a><sup>1</sup>, <a class="person" href="person10469.html">Michael Rawson</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Southampton</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>3</sup> IT University of Copenhagen</div>
+                                <div class="affiliation_item"><sup>4</sup> Schlumberger Cambridge Research</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neural network controllers for autonomous decision-making are well-established
+in cyber-physical systems, yet their deployment in safety-critical healthcare
+settings remains largely unverified. This paper presents a methodology and
+case study for the formal verification of a neural network controller for
+antibiotic dosing, motivated by the challenge of systems that must be
+simultaneously adaptive and provably safe across unbounded time horizons. We
+construct a simplified yet clinically-interpretable
+model that tracks drug concentration, body temperature, and white blood cell
+count. Vancomycin is selected as a representative antibiotic, widely
+prescribed for severe infections yet carrying a narrow therapeutic window,
+where supratherapeutic concentrations risk nephrotoxicity and subtherapeutic
+dosing risks treatment failure. A supervised neural network controller is
+trained on synthetic clinician-style dosing data. We establish formal
+verification of input-output safety properties, specifically verifying a
+property of a neural network that implies an infinite-horizon proof that
+automated dosing never exceeds the supratherapeutic boundary. This system
+property is proven in Rocq using the Vehicle interactive theorem prover
+backend to integrate the different proof systems. The end result is a
+verification pipeline that allows for a wide variety of treatment approaches
+whilst maintaining safety for each specific patient.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1470">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">veriFIRE: An Industrial Case Study in Verifying Consistency Properties for DNN-Based Wildfire Detection System <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1470">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10470.html">Idan Refaeli</a><sup>1</sup>, <a class="person" href="person10471.html">Maya Swisa</a><sup>1</sup>, <a class="person" href="person10472.html">Itay Buchnik</a><sup>2</sup>, <a class="person" href="person10473.html">Alon Zada</a><sup>2</sup>, <a class="person" href="person10474.html">Guy Amir</a><sup>3</sup>, <a class="person" href="person10475.html">Elad Mandelbaum</a><sup>2</sup>, <a class="person" href="person10476.html">Ziv Freund</a><sup>2</sup>, <a class="person" href="person10477.html">Guy Katz</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The Hebrew University of Jerusalem</div>
+                                <div class="affiliation_item"><sup>2</sup> Elbit Systems --- EW & SIGINT --- Elisra Ltd.</div>
+                                <div class="affiliation_item"><sup>3</sup> Cornell University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present our ongoing work on the veriFIRE project: a collaboration between industry and academia, aimed at applying verification to increase the reliability of a real-world, safety-critical system. The system we target is an airborne platform for wildfire detection, which incorporates two deep neural networks. We present an end-to-end methodology for verifying consistency properties of this system. Our approach encodes application-grounded requirements into solver-compatible queries for existing neural network verifiers. We study properties of interest over critical operational scenarios: (i) monotonicity of detector confidence as target intensity increases; and (ii) bounded detector response under physically plausible blur over the sensor. We instantiate these encodings using state-of-the-art neural network verification backends and evaluate them at scale on real background samples. For the first property, all verification queries are solved in under five minutes. For the second property, verification is substantially harder, highlighting key scalability challenges for richer, higher-dimensional specifications. Overall, the results demonstrate that meaningful, domain-specific guarantees can be obtained for industrial systems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1472">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Of Good Demons and Bad Angels: Guaranteeing Safe Control under Finite Precision <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1472">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10484.html">Samuel Teuber</a><sup>1</sup>, <a class="person" href="person10485.html">Debasmita Lohar</a><sup>2</sup>, <a class="person" href="person10486.html">Bernhard Beckert</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> IT University of Copenhagen</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> As neural networks (NNs) become increasingly prevalent in safety-critical neural network-controlled cyber-physical systems (NNCSs), formally guaranteeing their safety becomes crucial. 
+For these systems, safety must be ensured throughout their entire operation, necessitating infinite-time horizon verification. To verify the infinite-time horizon safety of NNCSs, recent approaches leverage Differential Dynamic Logic (dL). However, these dL-based guarantees rely on idealized, real-valued NN semantics and fail to account for roundoff errors introduced by finite-precision implementations.
+
+This paper bridges the gap between theoretical guarantees and real-world implementations by incorporating robustness under finite-precision perturbations --- in sensing, actuation, and computation --- into the safety verification. We model the problem as a hybrid game between a good Demon, responsible for control actions, and a bad Angel, introducing perturbations. This formulation enables formal proofs of robustness w.r.t. a given (bounded) perturbation. Leveraging this bound, we employ state-of-the-art mixed-precision fixed-point tuners to synthesize sound and efficient implementations, thus providing a complete end-to-end solution. We evaluate our approach on case studies from the automotive and aeronautics domains, producing efficient NN implementations with rigorous infinite-time horizon safety guarantees.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1473">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Optimizing VNN Solver Configuration Selection using Large Language Models <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1473">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10487.html">Salil Kamath</a><sup>1</sup>, <a class="person" href="person10488.html">Matthew Davis</a><sup>1</sup>, <a class="person" href="person10489.html">Jonathan Andreason</a><sup>2</sup>, <a class="person" href="person10490.html">Yatis Dodia</a><sup>2</sup>, <a class="person" href="person10491.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Georgia Tech Research Institute</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The rise in popularity and deployment of deep neural networks has resulted in an increased demand for trustworthy models, particularly in safety-critical applications. As a result, several solvers that formally verify properties of neural networks have been developed. However, state of the art solvers have combinatorially large configuration spaces. The task of selecting the best configuration for an instance or benchmark is non-trivial. Furthermore, current methods for algorithm selection and algorithm configuration are insufficient for large configuration spaces.
+
+We present REGENT, an automated selection tool for verification of neural network (VNN) solver configurations via Large Language Model (LLM) prompting. Our zero-shot selection method is a three stage LLM inference tool that takes as input a feature description of a VNN instance and outputs a solver configuration. In case of failure, feedback from the solver is passed back to the LLM, after which a new configuration is queried. Our reinforcement learning with optimization feedback (RLOF) method fine-tunes LLMs to output configurations that cause VNN solvers to improve on an optimization objective.
+
+We perform extensive empirical evaluations that show that the configurations selected by REGENT achieve comparable performance to hand-tuned configurations on a large set of competition grade test instances. When applying our fine-tuning approach, we show that LLMs can configure solvers to prove tighter bounds than those proven using hand-tuned configurations on up to 58% of the most challenging test instances. REGENT allows non-expert users of VNN solvers to automatically generate significantly better configurations, and therefore can save several human
+hours involved in hyperparameter-tuning.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1520">
                     <div class="heading">
@@ -258,7 +388,7 @@
                             <td>
                                 <div class="title">Reliable AI code generation through sound program analysis <a class="abstract_link" href="SAIV-2026-07-25.html#talk:932">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6907.html">Armando Solar-Lezama</a><sup>1</sup>                                </div>
+<a class="person" href="person10492.html">Armando Solar-Lezama</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> MIT</div>
                                 </div>
@@ -307,7 +437,7 @@
                             <td>
                                 <div class="title">Incremental Invariant-based Safety Verification of Neural Controllers <a class="abstract_link" href="SAIV-2026-07-25.html#talk:935">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6916.html">Vladislav Nenchev</a><sup>1</sup>                                </div>
+<a class="person" href="person10501.html">Vladislav Nenchev</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of the Bundeswehr Munich</div>
                                 </div>
@@ -321,7 +451,7 @@
                             <td>
                                 <div class="title">Faster Optimization of Decision Tree Policies for Markov Decision Processes <a class="abstract_link" href="SAIV-2026-07-25.html#talk:936">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6917.html">Daniël Vos</a><sup>1</sup>, <a class="person" href="person6918.html">Anna Lukina</a><sup>1</sup>                                </div>
+<a class="person" href="person10502.html">Daniël Vos</a><sup>1</sup>, <a class="person" href="person10503.html">Anna Lukina</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
                                 </div>

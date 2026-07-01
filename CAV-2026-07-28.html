@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -160,6 +161,93 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1147">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">QAV-FT: Quadratic Approximation-based Neural Network Verification via Fourier Series and Taylor Truncation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1147">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7660.html">Han Wang</a><sup>1</sup>, <a class="person" href="person7661.html">Xuyang Ding</a><sup>1</sup>, <a class="person" href="person7662.html">Xie Ying</a><sup>2</sup>, <a class="person" href="person7663.html">Yakun Sheng</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> School of Computer Science and Engineering, University of Electronic Science and Technology of China</div>
+                                <div class="affiliation_item"><sup>2</sup> College of Computer Science and Artificial Intelligence, Southwest Minzu University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification is paramount for neural networks in safetycritical domains yet remains constrained by the trade-off between precision and scalability, especially with modern high frequency activation functions. However, the inherent NP-hardness of the problem forces a fundamental trade-off between scalability and precision in existing methods, which fail to adequately capture the high-frequency nonlinearities of modern activations. To address this, Quadratic Approximation based Verification via Fourier series and Taylor truncation (QAV-FT) is proposed as a framework unifying Fourier-enhanced quadratic approximation and Taylor remainder aware error control. Specifically: (i) A Fourierbased quadratic abstraction is formulated for arbitrary activations, with a rigorous error bound established via Jackson’s theorem and Lebesgue constant analysis; (ii) A second-order propagation scheme utilizing Lagrange remainder theory is devised to analytically derive sound, tight bounds with reduced symbolic complexity; and (iii) These mechanisms are integrated into a scalable full-network verification algorithm. Empirical results on MNIST-FC and other benchmarks demonstrate that QAV-FT achieves an average certification accuracy of 96.8% across complex activations like Swish, GELU, and Mish, with favorable accuracy and efficiency over comparable methods on partial models.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1149">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">ATKVerifier: Adaptive Top-K Constraints for Tighter Verification of Semantic Segmentation Networks <a class="abstract_link" href="CAV-2026-07-28.html#talk:1149">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7667.html">Yuehao Liu</a><sup>1</sup>, <a class="person" href="person7668.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person7669.html">Yansong Dong</a><sup>2</sup>, <a class="person" href="person7670.html">Liang Zhao</a><sup>1</sup>, <a class="person" href="person7671.html">Chao Huang</a><sup>1</sup>, <a class="person" href="person7672.html">Wensheng Wang</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ICTT and ISN Laboratory, Xidian University</div>
+                                <div class="affiliation_item"><sup>2</sup> KylinSoft Co., Ltd.</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of Semantic Segmentation Networks is challenging due to high-dimensional output spaces and cumulative over-approximation errors in deep architectures. Existing verification methods based on specific Star-set reachability suffer from either exponential state explosion (exact splitting) or excessive conservativeness (interval-based relaxation). In this work, we present ATKVerifier, a verification framework for SSNs operating on an abstract domain named constrained-star (C-star), which captures spatial dependencies within MaxPool receptive fields through explicit predicate constraints. Our framework features: (1) an adaptive top-K lower bound mechanism that dynamically encodes K potential maximizers based on layer depth and interval overlap, balancing precision and computational cost through parameter-free adaptation; (2) an adaptive affine upper bound exploiting linear relationships between top candidates to replace conservative constant bounds; (3) region-level completeness (RLC), a spatial robustness metric quantifying the integrity of verified contiguous object regions. Experiments on M2NIST with three SSN architectures (16~24 layers) demonstrate 8~25% improvement in robust IoU over the state-of-the-art tool NNV, with the improvement scaling with the network's depth. For the 24-layer architecture, ATKVerifier achieves 59.2% RLC versus 43.8% of NNV, certifying 35.2% more complete semantic objects.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1150">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Precise Verification of Transformers through ReLU-Catalyzed Abstraction Refinement <a class="abstract_link" href="CAV-2026-07-28.html#talk:1150">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7673.html">Hengjie Liu</a><sup>1</sup>, <a class="person" href="person7674.html">Zhenya Zhang</a><sup>1</sup>, <a class="person" href="person7675.html">Jianjun Zhao</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Kyushu University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of transformers has become increasingly important due to their widespread deployment in safety-critical applications. Compared to classic neural networks, the inferences of transformers involve highly complex computations, such as dot products in self-attention layers, rendering their verification extremely difficult. Existing approaches explored over-approximation methods by constructing convex constraints to bound the output ranges of transformers, which can achieve high efficiency. However, they may sacrifice verification precision, and consequently introduce significant approximation error that leads to frequent occurrences of false alarms. In this paper, we propose a transformer verification approach that can achieve improved precision. At the core of our approach is a novel usage of ReLU, by which we represent a precise but non-linear bound for dot products such that we can further exploit the rich body of literature for convex relaxation of ReLU to derive precise bounds. We extend two classic approaches to the context of transformers, a rule-based one and an optimization-based one, resulting in two new frameworks for efficient and precise verification. We evaluate our approaches on different model architectures and robustness properties derived from two datasets about sentiment analysis, and compare with the state-of-the-art baseline approach. Compared to the baseline, our approach can achieve significant precision improvement for most of the verification tasks with acceptable compromise of efficiency, which demonstrates the effectiveness of our approach.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1151">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Quantifying Sensitivity for Tree Ensembles : A symbolic and compositional approach <a class="abstract_link" href="CAV-2026-07-28.html#talk:1151">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7676.html">Ajinkya Naik</a><sup>1</sup>, <a class="person" href="person7677.html">Akshay S</a><sup>1</sup>, <a class="person" href="person7678.html">Ashutosh Gupta</a><sup>1</sup>, <a class="person" href="person7679.html">Chaitanya Garg</a><sup>1</sup>, <a class="person" href="person7680.html">Kuldeep S. Meel</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IIT Bombay</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead  to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1152">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Shields to Guarantee Probabilistic Safety in MDPs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1152">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7681.html">Linus Heck</a><sup>1</sup>, <a class="person" href="person7682.html">Filip Macák</a><sup>2</sup>, <a class="person" href="person7683.html">Roman Andriushchenko</a><sup>2</sup>, <a class="person" href="person7684.html">Milan Ceska</a><sup>2</sup>, <a class="person" href="person7685.html">Sebastian Junges</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Radboud University</div>
+                                <div class="affiliation_item"><sup>2</sup> Brno University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Shielding is a prominent model-based technique to ensure
+safety of autonomous agents. Classical shielding aims to ensure that some-
+thing bad never happens and comes with strong guarantees about safety
+and maximal permissiveness. However, shielding systems for probabilistic
+safety, where something bad can happen, but only with an acceptable
+probability, has proven more intricate. This paper presents a formal
+framework that conservatively extends classical shields to probabilistic
+safety. In this framework, we demonstrate the impossibility to preserve
+the strong guarantees, provide natural shields with weaker guarantees,
+and offline and online shield constructions that provide strong safety
+guarantees. The empirical evaluation highlights the practical advantage
+of the new shields as well as computational feasibility.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:671">
                     <div class="heading">
@@ -217,6 +305,39 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1154">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Liveness Proofs for Hardware Model Checking <a class="abstract_link" href="CAV-2026-07-28.html#talk:1154">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7717.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person7718.html">Emily Yu</a><sup>2</sup>, <a class="person" href="person7719.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person7720.html">Armin Biere</a><sup>3</sup>, <a class="person" href="person7721.html">Keijo Heljanko</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
+                                <div class="affiliation_item"><sup>2</sup> Leiden University</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Freiburg</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Helsinki</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce a generic certificate format for verifying liveness properties in hardware model checking, relying purely on propositional predicates and not involving explicit counters. Our certificates can be efficiently validated via a fixed number of SAT checks. The proposed format is compatible with state-of-the-art liveness checking algorithms. We present certificate generation for several representative techniques, including rLive, liveness-to-safety reduction, and k-liveness, as well as for a preprocessing method based on stabilizing constraint extraction. Experimental results on benchmarks from the Hardware Model Checking Competition demonstrate that our approach is practically effective with very low certification overhead, and our certificate checker was able to successfully validate all certificates that were generated.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1156">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">KoAT: Automatic Complexity and Termination Analysis of Integer Programs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1156">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7725.html">Nils Lommen</a><sup>1</sup>, <a class="person" href="person7726.html">Jürgen Giesl</a><sup>1</sup>, <a class="person" href="person7727.html">Eleanore Meyer</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> KoAT is a tool to automatically infer complexity bounds and prove termination of (possibly recursive) integer programs. To this end, KoAT implements an alternating modular inference of upper runtime and size bounds for program parts. In particular, KoAT uses a portfolio of different techniques to analyze subprograms. The power of our approach is demonstrated by an extensive experimental evaluation.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:674">
                     <div class="heading">
@@ -253,6 +374,131 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1157">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Sound and Precise Symbolic Automata Model for Stateful Software Systems <a class="abstract_link" href="CAV-2026-07-28.html#talk:1157">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7728.html">Xinlong Wu</a><sup>1</sup>, <a class="person" href="person7729.html">Ruiyu Zhou</a><sup>1</sup>, <a class="person" href="person7730.html">Peisen Yao</a><sup>2</sup>, <a class="person" href="person7731.html">Qingkai Shi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Nanjing University</div>
+                                <div class="affiliation_item"><sup>2</sup> Zhejiang University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Verifying stateful software systems remains challenging due to complex control structures and intricate state interactions, often necessitating pre-existing behavioral models.
+We introduce Seal, an abstract interpreter that automatically derives sound and precise symbolic finite automata models. In tests on real-world applications, Seal generates sound and precise automata within minutes and, when employed in dynamic model checking, uncovers fifteen previously unknown bugs. These findings demonstrate that our approach can effectively connect code to model-based verification for stateful software systems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1158">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Automated Amortised Analysis of Skew Heaps and Leftist Heaps <a class="abstract_link" href="CAV-2026-07-28.html#talk:1158">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7732.html">Armin Walch</a><sup>1</sup>, <a class="person" href="person7733.html">Georg Moser</a><sup>1</sup>, <a class="person" href="person7734.html">Berry Schoenmakers</a><sup>2</sup>, <a class="person" href="person7735.html">Florian Zuleger</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Eindhoven, Netherlands</div>
+                                <div class="affiliation_item"><sup>3</sup> Vienna University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study the fully automated amortised cost analysis of purely functional data structures like skew heaps, as well as weight- and rank-biased leftist heaps. For that we generalise earlier works on automated amortised resource analysis by developing a type inference based approach based on a generic type system. This allows for modular reasoning and the inference of precise and optimal cost bounds.
+
+More specifically, we extend the work on the ATLAS system by Leutgeb et al., which was developed to cover the analysis of splay trees and some closely related data structures. To enable the analysis of skew heaps, however, and the even more challenging (amortized) analysis of leftist heaps, we have developed a range of new techniques for type-based automated analysis. By introducing a generic type system we allow for arbitrary (classes of) potential functions, compared to the use of hard-coded potential functions in ATLAS, which we have implemented in Haskell in an entirely modular way. We have also greatly enhanced the existing type inference algorithm by extensions in multiple directions, including path-sensitive reasoning, data structure invariants, and template parameters for piecewise defined potential functions. We show how our newly developed system supports the use of all known potential functions for analyzing skew heaps and leftists heaps, confirming the known bounds.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1159">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Polynomial Invariant Generation for Floating-Point Programs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1159">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7736.html">Xuran Cai</a><sup>1</sup>, <a class="person" href="person7737.html">Liqian Chen</a><sup>2</sup>, <a class="person" href="person7738.html">Hongfei Fu</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>2</sup> National University of Defense Technology</div>
+                                <div class="affiliation_item"><sup>3</sup> Shanghai University of Finance and Economics</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In numeric-intensive computations, it is well known that the execution of floating point programs is imprecise as floating point arithmetic incurs round-off errors. Although round-off errors are small for a single floating point operation, the aggregation of such errors may be dramatic and cause catastrophic program failures. Therefore, to ensure the correctness of floating point programs, round-off error needs to be carefully taken into account. In this work, we consider polynomial invariant generation for floating point programs, aiming at generating tight invariants under the perturbation of round-off errors. Our  contribution is a novel framework for applying polynomial constraint solving to address the invariant generation problem, which is also the first polynomial constraint solving based approach that handles floating point errors to our best knowledge. In our framework, we propose a novel combination of round-off error analysis and polynomial constraint solving, aiming to circumvent the  cost of handling a large number of error variables in the floating point model. Experimental results over a variety of challenging benchmarks show that our framework outperforms SOTA approaches in both time efficiency and the precision of generated invariants.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1160">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions <a class="abstract_link" href="CAV-2026-07-28.html#talk:1160">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7739.html">S. Akshay</a><sup>1</sup>, <a class="person" href="person7740.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person7741.html">Soroush Farokhnia</a><sup>3</sup>, <a class="person" href="person7742.html">Amir Goharshady</a><sup>4</sup>, <a class="person" href="person7743.html">Harshit Jitendra Motwani</a><sup>5</sup>, <a class="person" href="person7744.html">Đorđe Žikelić</a><sup>6</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology Bombay</div>
+                                <div class="affiliation_item"><sup>2</sup> IIT Bombay</div>
+                                <div class="affiliation_item"><sup>3</sup> HKUST</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>5</sup> TU Wien</div>
+                                <div class="affiliation_item"><sup>6</sup> Singapore Management University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a parallel abstract interpretation technique for polynomial
+programs with assertions presented as unions of range bound
+constraints.  We use the powerset domain of hyper-rectangles to
+over-approximate sets of reachable states. Our key technical
+contributions include novel abstract transformers and refinement
+operators that account for the semantics of polynomial assignments and
+guards more precisely than earlier work, while remaining amenable to
+parallelization and efficient implementation.  This is achieved by
+appealing to Farkas' Lemma and Handelman's Theorem, and by exploiting
+geometric properties of unions of hyper-rectangles.  Our abstract
+interpretation technique proves safety properties of many polynomial
+programs that state-of-the-art abstract interpretation tools fail to
+prove.  We have implemented our approach in a tool called PolyAbs,
+and experimentally evaluated it on a suite of benchmarks.  Our
+experiments demonstrate the improved precision and broader coverage of
+PolyAbs vis-a-vis state-of-the-art abstract interpretation tools,
+including a commercial-grade tool.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1161">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Incremental Inference for Probabilistic Datalog <a class="abstract_link" href="CAV-2026-07-28.html#talk:1161">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7745.html">Xuyang Li</a><sup>1</sup>, <a class="person" href="person7746.html">Weiyi Chen</a><sup>1</sup>, <a class="person" href="person7747.html">Isil Dillig</a><sup>2</sup>, <a class="person" href="person7748.html">Jingbo Wang</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Purdue University</div>
+                                <div class="affiliation_item"><sup>2</sup> UT Austin</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Several extensions of Datalog  perform probabilistic inference  by allowing users to annotate input facts and rules with probabilities. While extremely useful in many domains (e.g., quantitative program analysis), existing systems typically do not support incremental inference, meaning that even small  changes trigger costly recomputation from scratch. This paper presents PINQ, the first incremental solving framework for  probabilistic Datalog. Given a previously solved program and a set of  changes, PINQ updates query probabilities by reusing  the old derivation graphs and compiled decision diagrams. The key idea is to translate structural changes into parametric updates whenever sound to avoid redundant recomputation. Our framework combines an incremental derivation graph construction algorithm with an adaptive BDD construction technique that safely reuses existing BDDs via weight calibration whenever possible. Experimentally, PINQ achieves an average speedup of 17X over recomputation from scratch on a representative set of program analysis benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1162">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Automatic Detection of Reference Counting Bugs in Linux Kernel Drivers <a class="abstract_link" href="CAV-2026-07-28.html#talk:1162">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7749.html">Joe Hattori</a><sup>1</sup>, <a class="person" href="person7750.html">Naoki Kobayashi</a><sup>1</sup>, <a class="person" href="person7751.html">Ken Sakayori</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The University of Tokyo</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Reference counting bugs in Linux kernel drivers can lead to
+severe resource mismanagement and security vulnerabilities. We intro-
+duce DrvHorn, a novel automated tool to detect these bugs by reducing
+reference counting verification to an assertion checking problem leverag-
+ing the Linux driver interface. Through efficient modeling of the Linux
+kernel and aggressive program slicing, DrvHorn discovered 545 bugs, of
+which 424 were previously unknown, across all platform drivers in v6.6
+Linux kernel, with a lower false positive rate of 29.9% compared to prior
+studies. To address the root causes of these newly discovered bugs, we
+submitted patches to the Linux kernel, and 45 of them were merged.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:676">
                     <div class="heading">

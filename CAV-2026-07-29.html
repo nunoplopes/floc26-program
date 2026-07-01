@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -180,6 +181,44 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1164">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Show Me The Money: An Exercise in Proof-Driven Software Understanding <a class="abstract_link" href="CAV-2026-07-29.html#talk:1164">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7758.html">Joseph Tafese</a><sup>1</sup>, <a class="person" href="person7759.html">Karthik Nukala</a><sup>2</sup>, <a class="person" href="person7760.html">Hassen Saidi</a><sup>3</sup>, <a class="person" href="person7761.html">Natarajan Shankar</a><sup>2</sup>, <a class="person" href="person7762.html">Arie Gurfinkel</a><sup>1</sup>, <a class="person" href="person7763.html">Giuliano Losa</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Waterloo</div>
+                                <div class="affiliation_item"><sup>2</sup> SRI</div>
+                                <div class="affiliation_item"><sup>3</sup> Entalus</div>
+                                <div class="affiliation_item"><sup>4</sup> Stellar Development Foundation</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a case study on proof-driven software understanding of mature, security-critical infrastructure. While formal methods are traditionally applied during the design phase, we present our experience applying formal reasoning onto industrial C++ codebases where correctness arguments are embedded within implementation artifacts. We focus on a formal analysis of the core SDEX algorithm which implements the Stellar blockchain’s order-book. By combining Large Language Models, the Prototype Verification System (PVS) and Seahorn, we are able to prove core properties of the production codebase. Our approach also identified an inconsistency in documentation related to the reachability of an exception location. Most importantly, however, we produce artifacts that make it easy for code changes to be checked against established invariants. This work demonstrates how the strategic combination of interactive theorem proving and model checking provides a path for delivering actionable assurance to legacy, high-value systems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1166">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">PyCHC: a Framework for Certified Horn Solving and CHC-based Design <a class="abstract_link" href="CAV-2026-07-29.html#talk:1166">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7766.html">Anna Becchi</a><sup>1</sup>, <a class="person" href="person7767.html">Martin Blicha</a><sup>2</sup>, <a class="person" href="person7768.html">Rodrigo Otoni</a><sup>3</sup>, <a class="person" href="person7769.html">Natasha Sharygina</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Lugano</div>
+                                <div class="affiliation_item"><sup>2</sup> Argot Collective</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Groningen</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present PyCHC, a solver-agnostic framework aimed at systems of constrained Horn clauses (CHC). PyCHC provides intuitive Python APIs to create and manipulate CHC systems programmatically and solve them using different backend solvers.
+Furthermore, PyCHC offers a certification pipeline to validate the correctness of results reported by the CHC solvers, via the use of independent satisfiability modulo theories (SMT) solvers and proof checkers.
+We present our framework's architecture and features, and demonstrate how it enables rapid prototyping of new CHC-based algorithms and experimentation with novel strategies for cooperative solving.
+We used PyCHC to validate the results of the Eldarica, Golem, and Spacer solvers on CHC-COMP benchmarks, finding several issues across different tool versions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:680">
                     <div class="heading">
@@ -201,6 +240,59 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1168">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Practical Specification Language for Automatic Quantum Program Verification <a class="abstract_link" href="CAV-2026-07-29.html#talk:1168">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7773.html">Wei-Lun Tsai</a><sup>1</sup>, <a class="person" href="person7774.html">Yu-Fang Chen</a><sup>2</sup>, <a class="person" href="person7775.html">Ondřej Lengál</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> National Taiwan University</div>
+                                <div class="affiliation_item"><sup>2</sup> Academia Sinica</div>
+                                <div class="affiliation_item"><sup>3</sup> Brno University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hoare-style verification provides a principled foundation for reasoning about the correctness of quantum programs, but existing approaches do not allow fully automatic verification. While automata-based verification scales well when specifications are given directly as automata, prior frameworks incur exponential blow-up when translating high-level set-based assertions into automata, which severely limits practicality. We introduce an extended set-based specification language and a specification-to-automata translation algorithm whose complexity is linear in the number of qubits, enabled by controlled automaton construction and qubit reordering. The resulting compact automata enable fully automatic Hoare-style verification of fixed-qubit quantum programs at previously infeasible scales, while substantially improving expressiveness without compromising efficiency.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1169">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formal Verification of Quantum Ancilla Safety <a class="abstract_link" href="CAV-2026-07-29.html#talk:1169">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7776.html">Jiqi Li</a><sup>1</sup>, <a class="person" href="person7777.html">Jingyi Mei</a><sup>2</sup>, <a class="person" href="person7778.html">Wang Fang</a><sup>3</sup>, <a class="person" href="person7779.html">Ji Guan</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Key Laboratory of System Software (Chinese Academy of Sciences), Institute of Software Chinese Academy of Sciences, University of Chinese Academy of Sciences</div>
+                                <div class="affiliation_item"><sup>2</sup> Leiden University</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>4</sup> Key Laboratory of System Software (Chinese Academy of Sciences), Institute of Software Chinese Academy of Sciences</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Ensuring ancilla safety is a critical correctness requirement for quantum compilation, since ancilla qubits are routinely introduced to implement complex operations with fewer gates and reduced depth. However, formally verifying this property is computationally hard due to state-space explosion in the number of qubits, particularly for dirty ancilla, which carry unknown initial states and must be restored after use. We propose an end-to-end verification-and-repair framework that rigorously addresses both clean and dirty ancilla safety. Our core contribution is a two-step reduction strategy: we first prove that verifying an m-qubit dirty ancilla register decomposes into 2m independent clean ancilla safety checks; subsequently, we reduce each clean ancilla safety instance to an algebraic commutativity check against Pauli-Z and Pauli-X operators. This approach yields an efficient and naturally parallel verifier and enables actionable diagnosis by classifying violations into logic errors and phase errors. Leveraging this diagnosis, we further design lightweight repair routines that append local single-qubit rotations to eliminate a broad class of local ancilla faults. We implement the full pipeline in a prototype tool using a dual-backend architecture combining decision diagrams and weighted model counting, and validate it on diverse circuits ranging from arithmetic benchmarks to Grover’s algorithm. Our experiments demonstrate scalability to thousands of qubits and show that the proposed repairs effectively improve ancilla safety while preserving circuit functionality.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1172">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Quokka#: Quantum Computing with #SAT <a class="abstract_link" href="CAV-2026-07-29.html#talk:1172">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7789.html">Jingyi Mei</a><sup>1</sup>, <a class="person" href="person7790.html">Dekel Zak</a><sup>2</sup>, <a class="person" href="person7791.html">Muhammad Osama</a><sup>1</sup>, <a class="person" href="person7792.html">Tim Coopmans</a><sup>3</sup>, <a class="person" href="person7793.html">Alfons Laarman</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Leiden University</div>
+                                <div class="affiliation_item"><sup>2</sup> Delft University of Technology, Leiden University</div>
+                                <div class="affiliation_item"><sup>3</sup> Delft University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present Quokka, a versatile, open-source Python library for quantum-circuit analysis.
+Quokka reduces various simulation, verification, and synthesis tasks to (maximum) weighted model counting (#SAT). It supports universal quantum circuits and a wide variety of gates.
+Quokka provides multiple encodings by treating circuit semantics in different algebraic bases and enables key performance tradeoffs by supporting various equivalence checking methods. Moreover, it realizes approximate analysis, where approximation is quantified via circuit fidelity, which is crucial for synthesizing circuits in different gate sets and for real-world, noisy quantum computing, where circuit depth is limited, as approximations allow for large reductions in circuit complexity. This paper demonstrates the design, extensibility, and use of Quokka.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:681">
                     <div class="heading">
@@ -237,6 +329,71 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1173">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Over-approximation of weakly-hard constraints for control systems verification <a class="abstract_link" href="CAV-2026-07-29.html#talk:1173">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7794.html">Rieke de Maeyer</a><sup>1</sup>, <a class="person" href="person7795.html">Holger Hermanns</a><sup>1</sup>, <a class="person" href="person7796.html">Martina Maggio</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Saarland University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A hard real-time system cannot miss any deadline. A weakly-hard real-time system, on the contrary, is designed to tolerate a specific number of deadline misses. For instance, the AnyMiss(2, 300) weakly-hard constraint stipulates that in every window of 300 consecutive jobs, at most 2 deadlines are missed. The weakly-hard model is the state-of-the-art for industrial dependability-by-design of control systems that tolerate deterministic failures. Weakly-hard constraints correspond to regular languages. The size of the minimal finite state machine that recognizes whether a string satisfies the constraint (about 45k states for AnyMiss(2, 300)) is a notorious impediment for the verification of control system properties. This paper discusses an over-approximation of the language that allows us to provide sound safety guarantees for control systems under deadline misses that would be out of reach using the minimal finite state machine. We present a compressed language acceptor and prove that it simulates the original finite state machine. We study language cardinality properties, and report on empirical results that show how the new acceptor can be embedded in the control design workflow, leading to verifying safety for systems for which the state-of-the-art tools do not provide answers.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1174">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Spatiotemporal Robustness of Temporal Logic Tasks using Multi-Objective Reasoning <a class="abstract_link" href="CAV-2026-07-29.html#talk:1174">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7797.html">Oliver Schön</a><sup>1</sup>, <a class="person" href="person7798.html">Lars Lindemann</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ETH Zürich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The reliability of autonomous systems depends on their robustness, i.e., their ability to meet their objectives under uncertainty. In this paper, we study spatiotemporal robustness of temporal logic specifications evaluated over discrete-time signals.  Existing work has proposed robust semantics that capture not only Boolean satisfiability, but also the geometric distance from unsatisfiability, corresponding to admissible spatial perturbations of a given signal. In contrast, we  propose spatiotemporal robustness (STR), which captures admissible spatial and temporal perturbations jointly. This notion is particularly informative for interacting systems, such as  multi-agent robotics, smart cities, and air traffic control. We define STR as a multi-objective reasoning problem, formalized via a partial order over spatial and temporal perturbations. This perspective has two key advantages: (1) STR can be interpreted as a Pareto-optimal set that characterizes all admissible spatiotemporal perturbations, and (2) STR can be computed using tools from multi-objective optimization. To navigate computational challenges, we propose robust semantics  for STR that are sound in the sense of suitably under-approximating  STR while being computationally tractable. Finally, we present monitoring algorithms for STR using these robust semantics. To the best of our knowledge, this is the first work to deal with robustness across multiple dimensions via  multi-objective reasoning.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1176">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Perception with Guarantees: Certified Pose Estimation via Reachability Analysis <a class="abstract_link" href="CAV-2026-07-29.html#talk:1176">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7802.html">Tobias Ladner</a><sup>1</sup>, <a class="person" href="person7803.html">Yasser Shoukry</a><sup>2</sup>, <a class="person" href="person7804.html">Matthias Althoff</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University of Munich</div>
+                                <div class="affiliation_item"><sup>2</sup> University of California, Irvine</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Agents in cyber-physical systems are increasingly entrusted with safety-critical tasks.
+Ensuring safety of these agents often requires localizing the pose for subsequent actions.
+Pose estimates can, e.g., be obtained from various combinations of lidar sensors, cameras, and external services such as GPS.
+Crucially, in safety-critical domains, a rough estimate is insufficient to formally determine safety, i.e., guaranteeing safety even in the worst-case scenario, and external services might additionally not be trustworthy.
+We address this problem by presenting a certified pose estimation in 3D solely from a camera image and a well-known target geometry.
+This is realized by formally bounding the pose, which is computed by leveraging recent results from reachability analysis and formal neural network verification.
+Our experiments demonstrate that our approach efficiently and accurately localizes agents in both synthetic and real-world experiments.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1181">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">ULTIMATE: A Tool for the Verification and Synthesis of Stochastic World Models <a class="abstract_link" href="CAV-2026-07-29.html#talk:1181">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7829.html">Radu Calinescu</a><sup>1</sup>, <a class="person" href="person7830.html">Micah Bassett</a><sup>1</sup>, <a class="person" href="person7831.html">Brendan Devlin-Hill</a><sup>1</sup>, <a class="person" href="person7832.html">Simos Gerasimou</a><sup>1</sup>, <a class="person" href="person7833.html">Sinem Getir Yaman</a><sup>1</sup>, <a class="person" href="person7834.html">Kavan Fatehi</a><sup>1</sup>, <a class="person" href="person7835.html">Gricel Vázquez</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of York</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a tool for the compositional verification and correct-by-construction synthesis of stochastic world models---heterogeneous networks of interdependent stochastic models including discrete and continuous-time Markov chains, Markov decision processes (MDPs), partially observable MDPs, and stochastic multi-player games. Through its unique integration of multiple probabilistic and parametric model checking paradigms, our tool unifies the modelling, verification and synthesis of systems characterised by a combination of probabilistic and nondeterministic uncertainty, discrete and continuous-time behaviour, partial observability, and multi-agent interaction.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:683">
                     <div class="heading">

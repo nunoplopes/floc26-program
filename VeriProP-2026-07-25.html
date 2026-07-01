@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -137,6 +138,86 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1504">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Deciding Termination of Simple Randomized Loops <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1504">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10897.html">Éléanore Meyer</a><sup>1</sup>, <a class="person" href="person10898.html">Jürgen Giesl</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We show that universal positive almost sure termination (UPAST) is decidable for a class of simple randomized programs, i.e., it is decidable whether the expected runtime of such a program is finite for all inputs. Our class contains all programs that consist of a single loop, with a linear loop guard and a loop body composed of two linear commuting and diagonalizable updates. In each iteration of the loop, the update to be carried out is picked at random, according to a fixed probability. We show the decidability of UPAST for this class of programs, where the program's variables and inputs may range over various sub-semirings of the real numbers. In this way, we extend a line of research initiated by Tiwari in 2004 into the realm of randomized programs.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1505">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A First Decision Procedure for Almost-Sure Termination of Probabilistic Term Rewriting <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1505">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10899.html">Jan-Christoph Kassing</a><sup>1</sup>, <a class="person" href="person10900.html">Arion Scheid</a><sup>2</sup>, <a class="person" href="person10901.html">Henri Nagel</a><sup>1</sup>, <a class="person" href="person10902.html">Jürgen Giesl</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> While termination of ordinary programs has been studied for decades, the analysis 
+of probabilistic programs has become increasingly important. In the probabilistic 
+setting, requiring all executions to be ﬁnite is often too restrictive. Instead, one studies 
+almost-sure termination (AST) where every computation has to terminate with probability 1. 
+Thus, inﬁnite executions may still exist, but the probability of such an inﬁnite execution is 0.
+
+In this talk, we consider term rewriting, a well-studied functional programming model 
+based on pattern matching. More precisely, we consider probabilistic term 
+rewrite systems (PTRSs), where the choice of the applied rule remains 
+nondeterministic, but the result of applying a rule is determined probabilistically,
+similar to the semantics of a Markov decision process.
+
+In addition to developing automatic techniques for analyzing AST, one should 
+investigate their limitations. There are multiple ways to assess the “difficulty” 
+of a decision problem in computer science. For example, one may ask under 
+which assumptions the problem becomes decidable. Such assumptions can be 
+syntactic restrictions, e.g., considering only a specific class of PTRSs. Another 
+way to assess the difficulty of an undecidable problem is to relate it to other 
+undecidable problems. So one asks which undecidable problems would need 
+to be decidable in order to decide AST for arbitrary PTRSs. This induces a hierarchy 
+of undecidable problems, where problem A is “harder” than problem B if A remains 
+undecidable even when equipped with an oracle for B. For example, 
+universal termination remains undecidable even if the halting problem 
+(termination on a given input) were decidable, and is therefore “harder”.
+
+Since similar decision problems for imperative probabilistic programs have 
+already been placed in such hierarchies, we follow the first approach 
+and restrict the structure of PTRSs so that AST becomes decidable. 
+In the non-probabilistic setting, there is a well-known subclass of TRSs where
+termination is decidable: right-ground TRSs. 
+A TRS is right-ground if all of its right-hand sides are ground terms, 
+i.e., contain no variables. For example, the rule leq(x, x) → true is right-ground,
+but leq(s(x), s(y)) → leq(x, y) is not. If right-hand sides contain no variables, 
+then one cannot pass arbitrary information through recursive calls.
+
+We show why the decision procedure for termination of right-ground TRSs 
+does not generalize to the probabilistic setting. Consequently, 
+we further restrict the subclass so that it can be related to a stochastic system 
+with a known decision procedure for AST: stochastic context-free grammars. 
+Stochastic context-free grammars (SCFGs) generalize context-free grammars by
+replacing nondeterministic choice with probabilistic choice.
+
+In this talk, we recapitulate SCFGs from and how to decide AST for them. 
+Then, we show how to transform every PTRS P from a certain subclass into an 
+SCFG G such that P is AST if andonly if G is AST. For this transformation, 
+we require the PTRS to be: (RG) right-ground (as in the non-probabilistic 
+decision procedure), (NO) non-overlapping (to remove additional nondeterminism
+in the rule selection), and (TR) tail-recursive (there are no nested defined symbols, 
+as in context-free grammars). 
+This yields the first decision procedure for AST of PTRSs that are RG, NO, and TR.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1648">
                     <div class="heading">
@@ -167,6 +248,57 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1507">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Generating Functions Meet Occupation Measures: Invariant Synthesis for Probabilistic Loops <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1507">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10904.html">Darion Haase</a><sup>1</sup>, <a class="person" href="person10905.html">Kevin Batz</a><sup>2</sup>, <a class="person" href="person10906.html">Adrian Gallus</a>, <a class="person" href="person10907.html">Benjamin Lucien Kaminski</a><sup>3</sup>, <a class="person" href="person10908.html">Joost-Pieter Katoen</a><sup>1</sup>, <a class="person" href="person10909.html">Lutz Klinkenberg</a><sup>1</sup>, <a class="person" href="person10910.html">Tobias Winkler</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
+                                <div class="affiliation_item"><sup>2</sup> Cornell University</div>
+                                <div class="affiliation_item"><sup>3</sup> Saarland University and University College London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Probabilistic programs extend ordinary programs by the abilities to sample values from probability distributions and conditioning. They are ubiquitous in modern computing and appear, for example, in randomized algorithms, random sampling, statistical inference routines, cognitive science, and autonomous systems.
+
+A formal (denotational) program semantics associates each program with a function mapping (non-negative) measures over input states to measures over output states. A fundamental computational task in probabilistic programming is to infer a program's output (posterior) distribution from a given initial (prior) distribution. This problem is challenging, especially for expressive languages that feature loops or unbounded recursion. We aim to push the limits of exact automatic loop analysis. More formally, given a discrete probabilistic loop and a discrete initial distribution over program states, we want to automatically compute an exact representation of the output distribution.
+
+Due to standard undecidability results for while loops, there is no hope for a complete algorithmic solution for exact inference. Our goal is thus to provide heuristics covering reasonably many instances. To achieve this, we combine generating functions as a representation for (infinite-support) distributions with a seemingly less well-known characterization of a loop's output distribution through its occupation measure due to Sharir et al.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1508">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Unbounded Nondeterministic Choice in Weighted Programs <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1508">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10911.html">Sebastian Körner</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oldenburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Unbounded demonic nondeterminism occurs when modelling C-like memory allocation and termination under weak fairness. This ongoing work considers the addition of unbounded demonic nondeterminism to weighted programming and the soundness of weakest precondition-like semantics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1509">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Assessing the Quality of Binomial Samplers: A Statistical Distance Framework <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1509">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10912.html">Uddalok Sarkar</a><sup>1</sup>, <a class="person" href="person10913.html">Sourav Chakraborty</a><sup>1</sup>, <a class="person" href="person10914.html">Kuldeep S. Meel</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Indian Statistical Institute</div>
+                                <div class="affiliation_item"><sup>2</sup> Georgia Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Randomized algorithms depend on accurate sampling from probability distributions, as their correctness and performance hinge on the quality of the generated samples. However, even for common distributions like Binomial, exact sampling is computationally challenging, leading standard library implementations to rely on heuristics. These heuristics, while efficient, suffer from approximation and system representation errors, causing deviations from the ideal distribution. Although seemingly minor, such deviations can accumulate in downstream applications requiring large-scale sampling, potentially undermining algorithmic guarantees. In this work, we propose statistical distance as a robust metric for analyzing the quality of Binomial samplers, quantifying deviations from the ideal distribution. We derive rigorous bounds on the statistical distance for standard implementations and demonstrate the practical utility of our framework by enhancing APSEst, a DNF model counter, with improved reliability and error guarantees. To support practical adoption, we propose an interface extension that allows users to control and monitor statistical distance via explicit input/output parameters. Our findings emphasize the critical need for thorough and systematic error analysis in sampler design. As the first work to focus exclusively on Binomial samplers, our approach lays the groundwork for extending rigorous analysis to other common distributions, opening avenues for more robust and reliable randomized algorithms.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1650">
                     <div class="heading">
@@ -197,6 +329,66 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1510">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Coupling Verification and Learning for Safe and Explainable Decision-Making under Uncertainty <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1510">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10915.html">Milan Ceska</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Brno University of Technology</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1511">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Value Iteration for Stochastic Parity Games <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1511">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10916.html">Kittiphon Phalakarn</a><sup>1</sup>, <a class="person" href="person10917.html">Ichiro Hasuo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> National Institute of Informatics</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We would like to present our ongoing research work on the first (bounded) value iteration algorithm for the quantitative analysis of stochastic parity games. While existing algorithms are based on strategy iteration, our algorithms operate directly on values, exploiting a lattice-theoretic characterization of winning probabilities together with structural properties of almost-sure winning states under parity objectives. We prove correctness and convergence of the proposed methods and demonstrate their practical effectiveness through an experimental evaluation.
+
+We believe that our proposed constructions along with their practical relevance demonstrated through experiments will be of interest to the audience.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1512">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Probabilistic Loop Acceleration via a Quantitative Fixpoint Logic <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1512">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10918.html">Takuma Monma</a><sup>1</sup>, <a class="person" href="person10919.html">Clovis Eberhart</a><sup>1</sup>, <a class="person" href="person10920.html">Hiroshi Unno</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Tohoku University, Japan</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this paper, we propose Probabilistic Loop Acceleration, a novel approach for analyzing quantitative properties of iterative structures in probabilistic programs. Conventionally, the weakest pre-expectation of programs with iterative structures is formulated as a least fixed point, and checking bounds of these fixed points poses significant computational challenges. By concisely summarizing nested probabilistic loops, our proposed method reduces the complexity of fixed-point reasoning, thereby enhancing the practical effectiveness of template-based automated verification.
+Technically, we extend Quantitative Fixpoint Logic (QFL) with an expectation operator to define QFL(E), which allows us to rewrite some fixed points in terms of expectation expressions.
+Furthermore, we integrate this with a template-based method extending MuVal^QFL. We present an automated procedure that resolves the verification obligations expressed in QFL(E) by reducing them to Polynomial Quantified Entailment (PQE) constraints. The infinite sums arising from expectation computations are handled by decomposing them into a finite number of terms and an infinite sum of regular terms aggregated into a closed-form term.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1513">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Hierarchy of Supermartingales for ω-Regular Verification <a class="abstract_link" href="VeriProP-2026-07-25.html#talk:1513">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10921.html">Satoshi Kura</a><sup>1</sup>, <a class="person" href="person10922.html">Hiroshi Unno</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Waseda University</div>
+                                <div class="affiliation_item"><sup>2</sup> Tohoku University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We propose new supermartingale-based certificates for verifying almost sure satisfaction of $\omega$-regular properties: (1) \emph{generalised Streett supermartingales} (GSSMs) and their lexicographic extension (LexGSSMs), (2) \emph{distribution-valued Streett supermartingales} (DVSSMs), and (3) \emph{progress-measure supermartingales} (PMSMs) and their lexicographic extension (LexPMSMs). GSSMs, LexGSSMs, and DVSSMs are derived from least-fixed point characterisations of positive recurrence and null recurrence of Markov chains with respect to given Streett conditions; and PMSMs and LexPMSMs are probabilistic extensions of parity progress measures. We study the hierarchy among these certificates and existing certificates, namely Streett supermartingales, by comparing the classes of problems that can be verified by each type of certificates. Notably, we show that our certificates are strictly more powerful than Streett supermartingales. We also prove completeness of GSSMs for positive recurrence and of DVSSMs for null recurrence: DVSSMs are, in theory, the most powerful certificates in the sense that for any Markov chain that almost surely satisfies a given $\omega$-regular property, there exists a DVSSM certifying it. We provide a sound and relatively complete algorithm for synthesising LexPMSMs, the second most powerful certificates in the hierarchy. We have implemented a prototype tool based on this algorithm, and our experiments show that our tool can successfully synthesise certificates for various examples including those that cannot be certified by existing supermartingales.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1652">
                     <div class="heading">

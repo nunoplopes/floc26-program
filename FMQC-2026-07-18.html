@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -167,6 +168,62 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1205">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Minimal-size decision diagrams for quantum-circuit simulation <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1205">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8324.html">Tim Coopmans</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1206">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">From Tensor Networks to Tractable Circuits, and Back <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1206">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8325.html">Arend-Jan Quist</a><sup>1</sup>, <a class="person" href="person8326.html">Marc Farreras</a>, <a class="person" href="person8327.html">Alexis de Colnet</a><sup>1</sup>, <a class="person" href="person8328.html">John van de Wetering</a><sup>2</sup>, <a class="person" href="person8329.html">Alfons Laarman</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Leiden University</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Amsterdam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Tensor networks and circuits are widely used data structures to represent pseudo-Boolean functions. These two formalisms have been studied primarily in separate communities, and this paper aims to establish equivalences between them. We show that some classes of tensor networks that are appealing in practice correspond to classes of circuits with specific properties that have been studied in knowledge compilation as tractable circuits. In particular, we prove that matrix product states (tensor trains) coincide with nondeterministic edge-valued decision diagrams and that tree tensor networks exactly correspond to structured-decomposable circuits. These correspondences enable direct transfer of structural and algorithmic results; for example, canonicity and tractability guarantees known for circuits yield analogous guarantees for the associated tensor networks, and vice versa.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1207">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">GPU-Accelerated Quantum Simulation of Stabilizer Circuits <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1207">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8330.html">Dimitrios Thanos</a><sup>1</sup>, <a class="person" href="person8331.html">Muhammad Mahmoud</a><sup>1</sup>, <a class="person" href="person8332.html">Alfons Laarman</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Leiden University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce new parallel algorithms for efficient simulation of stabilizer (Clifford) circuits on GPUs. Our approach reformulates key bottlenecks in stabilizer simulation, such as Gaussian elimination and measurement updates, into GPU-tailored primitives that eliminate sequential dependencies and maximize memory coalescing. We implement these techniques in QuaSARQ, a GPU-accelerated stabilizer simulator designed for large qubit counts and many-shot sampling. Across a broad benchmark suite reaching 180,000 qubits and depth 1,000 (roughly 130M gates), QuaSARQ shows substantial runtime improvements, with up to $105\times$ speedup and over 80% energy reduction on demanding instances. Moreover, QuaSARQ consistently outperforms Stim, a state-of-the-art CPU-optimized stabilizer simulator, as well as Qiskit Aer (CPU/GPU), Qibo, Cirq, and PennyLane. These results demonstrate that our parallel algorithms can significantly advance the scalability of stabilizer-circuit simulation, particularly for measurement-heavy and many-shot workloads, while providing a scalable backend for formal analysis, verification, and benchmarking of Clifford circuits.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1208">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Complete Equational Presentation of Qudit Circuits via Polycontrolled PROPs <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1208">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8333.html">Colin Blake</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> INRIA, LORIA, Université de Lorraine</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> High-dimensional quantum computation needs a native circuit-level equational theory for qudits. We give the first finite schematic equational theory that is sound and complete for exact unitary qudit circuits in every finite dimension at least two. The result is entirely circuit-level: circuits are built from local gates, sequential and parallel composition, and value-controls, and equality is derivable exactly when two circuits have the same standard unitary semantics. For each dimension, the theory is presented by a finite family of local bounded-arity axiom schemata whose diagrammatic shapes are uniform in the dimension. The key syntactic ingredient is primitive value-control, which builds control on a chosen basis value directly into the language. This gives the language a useful internal algebra of controlled operations from local rules while keeping the presentation native to qudit circuits. The result provides a finite, dimension-uniform foundation for exact equational reasoning about qudit circuits.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1181">
                     <div class="heading">
@@ -197,6 +254,62 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1209">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Model Counting: Solving, Complexity, and Applications <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1209">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8334.html">Johannes Klaus Fichte</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Linköping University</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1211">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Quantum Physics using Weighted Model Counting <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1211">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8336.html">Joon Lee</a><sup>1</sup>, <a class="person" href="person8337.html">Dirck van den Ende</a><sup>1</sup>, <a class="person" href="person8338.html">Alfons Laarman</a><sup>1</sup>, <a class="person" href="person8339.html">Henning Basold</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Leiden University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Weighted model counting (WMC) has proven effective across computer science 
+and physics, yet existing applications to quantum physics target only specific 
+problem instances, lacking a general framework with formal guarantees. We 
+present a framework that converts Dirac notation to WMC instances via a type 
+system and denotational semantics, supporting general $q^n \times q^m$ matrix 
+operations including multiplication, addition, and trace. We prove correctness 
+of the encoding and provide a Python implementation. As applications, we 
+compute partition functions of the transverse-field Ising model and the Potts 
+model, demonstrating that heuristics from automated reasoning can be 
+systematically brought to bear on quantum physics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1212">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Noisy Quantum Circuit Simulation Via Automated Reasoning <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1212">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8340.html">Max Bannach</a><sup>1</sup>, <a class="person" href="person8341.html">Thore Gerlach</a><sup>1</sup>, <a class="person" href="person8342.html">Jai Grover</a><sup>1</sup>, <a class="person" href="person8343.html">Dolf Huybrechts</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> European Space Agency</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this work, we introduce a framework for exact classical simulation in noisy quantum circuits based on weighted model counting (WMC), leveraging techniques from automated reasoning to enable efficient classical analysis of quantum computations by exploiting structure within the quantum circuit. Rather than reconstructing the full quantum state, this approach enables the direct computation of targeted quantities of interest, including exact output probabilities and selected density matrix elements even in the presence of general noise processes.
+
+To achieve this, we introduce a novel encoding of mixed quantum states within the WMC framework that explicitly represents the density matrix in the computational basis. This representation complements existing Pauli-basis encodings and is shown to be advantageous in specific regimes. Furthermore, we introduce a framework which allows for the translation of arbitrary linear super operators to the weighted model counting framework in both of these encodings. Among other maps, this allows for the formulation of any completely positive trace preserving map in terms of a logical formula. As a result, any physical map, be it unitary (e.g. quantum gates) or non-unitary (e.g. noise channels) can be translated to a weighted model counting problem. This provides a unified approach for simulating quantum dynamics under general discrete operations.
+
+We demonstrate the framework on several physically relevant noise channels commonly encountered in quantum hardware, including depolarizing, phase damping, and amplitude damping noise. We evaluate our approach by performing experiments on a benchmark set of randomly generated quantum circuits based on two universal gate sets: the Clifford+T set and the rotational gate set. The performance of the encodings for the universal gate sets and various noise channels are investigated, as well as compared to existing tensor network and decision diagram based simulators.
+
+Our results show that our tool generally outperforms these methods and we identify regimes where either encoding outperforms the other, providing guidance on how to select the most effective representation for a given circuit and noise model. Furthermore, the approach also outperforms with respect to weak simulation, i.e. sampling-based methods. This work demonstrates that automated reasoning techniques can serve as a powerful tool for noisy quantum verification, quantum error correction studies, …, providing exact analysis tools for noisy intermediate scale quantum hardware and fault-tolerant quantum computing.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1183">
                     <div class="heading">
@@ -227,6 +340,24 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1215">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Static Resource Analysis of Hybrid Programs with Unbounded Loops <a class="abstract_link" href="FMQC-2026-07-18.html#talk:1215">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8347.html">Jad Issa</a><sup>1</sup>, <a class="person" href="person8348.html">Christophe Chareton</a><sup>2</sup>, <a class="person" href="person8349.html">Romain Péchoux</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CEA List, Palaiseau, France and Université de Lorraine, CNRS, Inria, LORIA, F-54000 Nancy, France</div>
+                                <div class="affiliation_item"><sup>2</sup> CEA List, Palaiseau, France</div>
+                                <div class="affiliation_item"><sup>3</sup> Université de Lorraine, CNRS, Inria, LORIA, F-54000 Nancy, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> While quantum hardware remains limited, hybrid quantum-classical algorithms with complex control structures, including unbounded loops, are emerging, posing new challenges for program analysis: the accurate estimation of resource consumption of a given program is needed. In this work, we answer this challenge with the first static analysis solution for reasoning about the resources — termination or cost — of hybrid quantum programs with unbounded loops. Towards that end, we introduce integer hybrid path-sums, a symbolic representation of possible executions of a quantum program. A generic strategy for determining termination and expected resource consumption via loop invariants is also proposed. Finally, a prototype of this solution is implemented in Haskell. This work is the first step toward the design of a complete static resource analysis tool for hybrid quantum programs with unbounded loops, essential for the development of real-world quantum computing. This extended abstract illustrates fully developed results without expanding on the technicalities.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1185">
                     <div class="heading">

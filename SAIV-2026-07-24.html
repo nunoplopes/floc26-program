@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -150,7 +151,7 @@
                             <td>
                                 <div class="title">Neural Stochastic Control and Verification for Safe Autonomy <a class="abstract_link" href="SAIV-2026-07-24.html#talk:920">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6873.html">Djordje Zikelic</a><sup>1</sup>                                </div>
+<a class="person" href="person10395.html">Djordje Zikelic</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Singapore Management University</div>
                                 </div>
@@ -161,7 +162,7 @@
                             <td>
                                 <div class="title">Round-table discussions <a class="abstract_link" href="SAIV-2026-07-24.html#talk:922">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6875.html">Djordje Zikelic</a><sup>1</sup>, <a class="person" href="person6876.html">Sara Magliacane</a><sup>2</sup>                                </div>
+<a class="person" href="person10397.html">Djordje Zikelic</a><sup>1</sup>, <a class="person" href="person10398.html">Sara Magliacane</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Singapore Management University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Amsterdam</div>
@@ -205,6 +206,71 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1461">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Temporal Guardrails for LLM Conversations: A Runtime Verification Framework <a class="abstract_link" href="SAIV-2026-07-24.html#talk:1461">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10399.html">Itay Cohen</a><sup>1</sup>, <a class="person" href="person10400.html">Moran Omer</a><sup>1</sup>, <a class="person" href="person10401.html">Doron Peled</a><sup>1</sup>, <a class="person" href="person10402.html">Klaus Havelund</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Bar Ilan University</div>
+                                <div class="affiliation_item"><sup>2</sup> Jet Propulsion Laboratory, California Inst. of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models (LLMs) are increasingly integrated into organizational workflows, raising growing concerns about their potential abuse for fraud, security breaches, or intellectual property leakage. While LLMs embed protective mechanisms and organizations develop their own guardrails, many practical guardrail approaches remain stateless and lack formal temporal semantics, and existing formal methods are often domain-specific or rely on structured event representations. We propose a runtime verification (RV) framework that treats an LLM conversation as an execution trace that can be formally verified and develop a corresponding tool called Temporal Guard. It observes the stream of user messages and LLM-generated assistant responses, grounds each message into a set of atomic propositions, and thereby constructs a Boolean-labeled trace. Safety policies are specified as formulas in past-time linear temporal logic, and the monitor checks the evolving Boolean trace online to decide whether the conversation satisfies the policy. The central challenge is grounding: bridging the gap between the precise Boolean semantics of temporal logic and the ambiguity of natural language utterances. To address this, we developed a semantic grounding layer and experimentally evaluated a range of grounding strategies, including an embedding-based approach, Natural Language Inference (NLI), and LLM-based zero/few-shot classification. We demonstrate the effectiveness of Temporal Guard through grounding and end-to-end monitoring experiments.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1463">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Solving Probabilistic Verification Problems of Neural Networks using Branch and Bound <a class="abstract_link" href="SAIV-2026-07-24.html#talk:1463">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10408.html">David Boetius</a><sup>1</sup>, <a class="person" href="person10409.html">Stefan Leue</a><sup>1</sup>, <a class="person" href="person10410.html">Tobias Sutter</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Konstanz</div>
+                                <div class="affiliation_item"><sup>2</sup> University of St. Gallen</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Probabilistic verification problems of neural networks are concerned with formally analysing the output distribution of a neural network under a probability distribution of the inputs. Examples of probabilistic verification problems include verifying the demographic parity fairness notion or quantifying the safety of a neural network. We present a new algorithm for solving probabilistic verification problems of neural networks based on an algorithm for computing and iteratively refining lower and upper bounds on probabilities over the outputs of a neural network. By applying state-of-the-art bound propagation and branch and bound techniques from non-probabilistic neural network verification, our algorithm significantly outpaces existing probabilistic verification algorithms, reducing solving times for various benchmarks from the literature from tens of minutes to tens of seconds. Furthermore, our algorithm compares favourably even to dedicated algorithms for restricted probabilistic verification problems. We complement our empirical evaluation with a theoretical analysis, proving that our algorithm is sound and, under mildly re-
+strictive conditions, also complete when using a suitable set of heuristics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1465">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">PICID: Proof-Driven Clause Learning in Neural Network Verification <a class="abstract_link" href="SAIV-2026-07-24.html#talk:1465">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10414.html">Omri Isac</a><sup>1</sup>, <a class="person" href="person10415.html">Idan Refaeli</a><sup>1</sup>, <a class="person" href="person10416.html">Haoze Wu</a><sup>2</sup>, <a class="person" href="person10417.html">Clark Barrett</a><sup>3</sup>, <a class="person" href="person10418.html">Guy Katz</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The Hebrew University of Jerusalem</div>
+                                <div class="affiliation_item"><sup>2</sup> Amherst College</div>
+                                <div class="affiliation_item"><sup>3</sup> Stanford University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Current Deep Neural Network (DNN) verifiers are typically designed to prioritize scalability over reliability. Reliability can be reinforced through the generation of proofs that are checkable by trusted, external proof checkers. To date, only a handful of verifiers support proof production; and these rely on verifier-specific formats, and balance between scalability, proof detail, and the trustworthiness of their proof checker. In this tool paper, we introduce PICID, a DNN verifier that produces proofs in the standard Alethe format for SMT solving, checkable by multiple existing checkers. PICID implements a parallel CDCL(T) architecture that integrates a state-of-the-art, proof-producing SAT solver with the Marabou DNN verifier. Furthermore, PICID leverages UNSAT proofs to derive conflict clauses. Our evaluation shows that PICID generates valid proofs in the vast majority of cases and significantly outperforms existing tools that produce comparable proofs.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1466">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Precise Verification of Transformers through ReLU-Catalyzed Abstraction Refinement <a class="abstract_link" href="SAIV-2026-07-24.html#talk:1466">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10419.html">Hengjie Liu</a><sup>1</sup>, <a class="person" href="person10420.html">Zhenya Zhang</a><sup>1</sup>, <a class="person" href="person10421.html">Jianjun Zhao</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Kyushu University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of transformers has become increasingly important due to their widespread deployment in safety-critical applications. Compared to classic neural networks, the inferences of transformers involve highly complex computations, such as dot products in self-attention layers, rendering their verification extremely difficult. Existing approaches explored over-approximation methods by constructing convex constraints to bound the output ranges of transformers, which can achieve high efficiency. However, they may sacrifice verification precision, and consequently introduce significant approximation error that leads to frequent occurrences of false alarms. 
+In this paper, we propose a transformer verification approach that can achieve improved precision. At the core of our approach is a novel usage of ReLU, by which we represent a precise but non-linear bound for dot products such that we can further exploit the rich body of literature for convex relaxation of ReLU to derive precise bounds. We extend two classic approaches to the context of transformers, a rule-based one and an optimization-based one, resulting in two new frameworks for efficient and precise verification.
+We evaluate our approaches on different model architectures and robustness properties derived from two datasets about sentiment analysis, and compare with the state-of-the-art baseline approach. Compared to the baseline, our approach can achieve significant precision improvement for most of the verification tasks with acceptable compromise of efficiency, which demonstrates the effectiveness of our approach.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1512">
                     <div class="heading">
@@ -304,7 +370,7 @@
                             <td>
                                 <div class="title">Reachability-Based Formal Verification of Graph Neural Networks with Node and Edge Features <a class="abstract_link" href="SAIV-2026-07-24.html#talk:925">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6887.html">Anne M Tumlin</a><sup>1</sup>, <a class="person" href="person6888.html">Ben Wooding</a><sup>1</sup>, <a class="person" href="person6889.html">Zhenxuan Shao</a><sup>1</sup>, <a class="person" href="person6890.html">Diego Manzanas Lopez</a><sup>1</sup>, <a class="person" href="person6891.html">Tyler Derr</a><sup>1</sup>, <a class="person" href="person6892.html">Taylor T Johnson</a><sup>1</sup>                                </div>
+<a class="person" href="person10432.html">Anne M Tumlin</a><sup>1</sup>, <a class="person" href="person10433.html">Ben Wooding</a><sup>1</sup>, <a class="person" href="person10434.html">Zhenxuan Shao</a><sup>1</sup>, <a class="person" href="person10435.html">Diego Manzanas Lopez</a><sup>1</sup>, <a class="person" href="person10436.html">Tyler Derr</a><sup>1</sup>, <a class="person" href="person10437.html">Taylor T Johnson</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Vanderbilt University</div>
                                 </div>
@@ -318,7 +384,7 @@
                             <td>
                                 <div class="title">A Self-Correcting Neuro-Symbolic AI Reasoning Framework <a class="abstract_link" href="SAIV-2026-07-24.html#talk:926">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6893.html">Ben Wooding</a><sup>1</sup>, <a class="person" href="person6894.html">Kiersten Brennan</a><sup>1</sup>, <a class="person" href="person6895.html">Anne M Tumlin</a><sup>1</sup>, <a class="person" href="person6896.html">Hongchao Zhang</a><sup>1</sup>, <a class="person" href="person6897.html">Taylor T Johnson</a><sup>1</sup>                                </div>
+<a class="person" href="person10438.html">Ben Wooding</a><sup>1</sup>, <a class="person" href="person10439.html">Kiersten Brennan</a><sup>1</sup>, <a class="person" href="person10440.html">Anne M Tumlin</a><sup>1</sup>, <a class="person" href="person10441.html">Hongchao Zhang</a><sup>1</sup>, <a class="person" href="person10442.html">Taylor T Johnson</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Vanderbilt University</div>
                                 </div>
@@ -332,7 +398,7 @@
                             <td>
                                 <div class="title">Automated Algorithm Configuration of α,β-CROWN <a class="abstract_link" href="SAIV-2026-07-24.html#talk:927">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6898.html">Konstantin Kaulen</a><sup>1</sup>, <a class="person" href="person6899.html">Holger H. Hoos</a><sup>2</sup>                                </div>
+<a class="person" href="person10443.html">Konstantin Kaulen</a><sup>1</sup>, <a class="person" href="person10444.html">Holger H. Hoos</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
                                 <div class="affiliation_item"><sup>2</sup> RWTH Aachen University, Leiden University</div>

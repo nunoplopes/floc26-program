@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -168,6 +169,57 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1224">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Contextual MetaML: Syntax and Full Abstraction <a class="abstract_link" href="GALOP-2026-07-18.html#talk:1224">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8485.html">Haoxuan Yin</a><sup>1</sup>, <a class="person" href="person8486.html">Andrzej Murawski</a><sup>1</sup>, <a class="person" href="person8487.html">Luke Ong</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>2</sup> Nanyang Technological University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> MetaML-style metaprogramming languages allow programmers to construct, manipulate and run code. In the presence of higher-order references for code, ensuring type safety is challenging, as free variables can escape their binders. In this paper, we present Contextual MetaML, \textit{the first metaprogramming language that supports storing and running open code under a strong type safety guarantee}. The type system utilises contextual modal types to track and reason about free variables in code explicitly.
+
+A crucial concern in metaprogramming-based program optimisations is whether the optimised program preserves the meaning of the original program. Addressing this question requires a notion of program equivalence and techniques to reason about it. In this paper, we provide a semantic model that captures contextual equivalence for Contextual MetaML, establishing \textit{the first full abstraction result for an imperative MetaML-style language}. Our model is based on traces derived via operational game semantics, where the meaning of a program is modelled by its possible interactions with the environment. We also establish a novel closed instances of use theorem that accounts for both call-by-value and call-by-name closing substitutions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1225">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">An operational approach to blindness for ground references in the pi-calculus <a class="abstract_link" href="GALOP-2026-07-18.html#talk:1225">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8488.html">Iwan Quémerais</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ENS de Lyon, University of Bologna</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In the continuation of works that link operational semantics (OGS) with process calculi, we build on top of a type system that enforces visibility in a sequential pi-calculus to also enforce blindness and obtain a full-abstraction result for a sequential pi-calculus with ground references.
+Blindness is a game semantics notion modeling ground references in languages with exchanges of references; it was introduced by Murawski and Tzevelekos in order to prove full-abstraction for Reduced ML.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1226">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The Game Semantics of Reachability Types <a class="abstract_link" href="GALOP-2026-07-18.html#talk:1226">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8489.html">Benedict Bunting</a><sup>1</sup>, <a class="person" href="person8490.html">Andrzej Murawski</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Corpus Christi College, Cambridge</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The presence of shared (or aliased) mutable state has long been recognised as the root cause of many difficulties in programming, particularly complicating understanding and reasoning about the behaviour of programs. Approaches to controlling aliasing are a rich area of study and have become increasingly adopted in mainstream programming languages, for example Rust and Linear Haskell. The policy many of these languages adopt (aliasing XOR mutability and linearity, in the examples, respectively) are incompatible with common, impure, higher-order patterns based on sharing of mutable state.
+Reachability Types are a recent approach to provide control over sharing in a higher-order functional programming language, by tracking in the type system information about what resources are reachable from a term, which allows separation requirements to be enforced using types.
+In this talk, I will discuss how to apply operational game semantics (OGS) to investigate the meaning of Reachability Types and the impact these have on the language. This work is detailed in my forthcoming DPhil thesis. An earlier version on this work was presented at GaLoP 2025, based upon the LICS 2025 paper Reachability Types, Traces and Full Abstraction. This talked is intended to be a update on this project, with an improved pedagogical presentation, which I hope will be of interest to the GaLoP audience.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1198">
                     <div class="heading">
@@ -204,7 +256,7 @@
                             <td>
                                 <div class="title">Thin spans and their associated rigid intersection type system <a class="abstract_link" href="GALOP-2026-07-18.html#talk:684">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person4714.html">Simon Forest</a><sup>1</sup>                                </div>
+<a class="person" href="person8491.html">Simon Forest</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Loria & University of Lorraine</div>
                                 </div>
@@ -241,6 +293,22 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1229">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Sequential algorithms as a Dialectica interpretation <a class="abstract_link" href="GALOP-2026-07-18.html#talk:1229">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8494.html">Valentin Blot</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> INRIA - Nantes Université</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We provide the first formal connection between G¨odel’s Dialectica interpretation and Berry-Curien’s sequential algorithms model, via a parameterized version of G¨odel’s Dialectica inter- pretation which allows us to recast both the Diller-Nahm variant of the interpretation and Berry-Curien’s sequential algorithms model. This illustrates that the Dialectica interpretation has a strong intensional flavour, as the reverse component of the Dialectica interpretation of a function (from environments in the output to environments in the input) corresponds pre- cisely to the computation indices of sequential algorithms (which specify what is needed in the input in order to produce a given output). While a straightforward instanciation gives the usual Diller-Nahm variant of the Dialectica inerpretation, a more involved instanciation provides exactly the sequential algorithms model. We believe that this is a first step towards a convergence between Dialectica-style computational interpretations of logic on one hand, and game semantics flavoured denotational models of various programming languages on the other hand.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 

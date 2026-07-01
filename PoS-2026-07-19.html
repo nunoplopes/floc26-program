@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -143,7 +144,7 @@
                             <td>
                                 <div class="title">Opening <a class="abstract_link" href="PoS-2026-07-19.html#talk:908">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6854.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person6855.html">Dominik Schreiber</a><sup>2</sup>                                </div>
+<a class="person" href="person10291.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person10292.html">Dominik Schreiber</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
                                 <div class="affiliation_item"><sup>2</sup> Karlsruhe Institute of Technology</div>
@@ -166,6 +167,99 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1434">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof-Guided SAT Encoding Selection for Bit-Vector Multiplication <a class="abstract_link" href="PoS-2026-07-19.html#talk:1434">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10293.html">Armin Biere</a><sup>1</sup>, <a class="person" href="person10294.html">Daniel Kroening</a><sup>1</sup>, <a class="person" href="person10295.html">Norbert Manthey</a><sup>1</sup>, <a class="person" href="person10296.html">Martin Nyx Brain</a><sup>2</sup>, <a class="person" href="person10297.html">Michael Tautschnig</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Amazon Web Services</div>
+                                <div class="affiliation_item"><sup>2</sup> City St George’s, University of London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a methodology for designing SAT encodings of integer multiplication guided by proof trace analysis. By examining DRAT proofs, we identify structural bottlenecks—the top bottleneck variable in standard Comba encoding appears in 31% of all proof steps—and use these findings to redesign the encoding. This methodology produced comba-cs, a carry-save Comba encoding that separates column reduction from carry propagation, achieving 2.6–71× speedup across four SAT solvers. We further show that carry propagation is the dominant driver of SAT hardness for multiplication—not merely correlated with it. A controlled experiment holds the partial-product layout and accumulation topology fixed and varies only the accumulator (integer addition vs. GF(2) XOR): integer commutativity is at least 1000× harder than GF(2) at bitwidth 12, and structural variations (sequential vs. parallel-tree accumulation) change running time by less than 5×. This establishes causation for the commutativity pattern on CaDiCaL. Comparing comba-cs with pre-existing alternative encodings (Booth radix-4, 4-bit blocks, sorting networks), we find that no single encoding dominates: Booth is 17× faster on strength-reduction benchmarks, while comba-cs is 2× faster on bfloat16 commutativity. The optimal encoding depends on problem structure, motivating adaptive selection.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1435">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Certified Variable Reordering in Cardinality Encodings <a class="abstract_link" href="PoS-2026-07-19.html#talk:1435">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10298.html">Joseph Reeves</a><sup>1</sup>, <a class="person" href="person10299.html">Marijn Heule</a><sup>1</sup>, <a class="person" href="person10300.html">Randal Bryant</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Cardinality constraints in Boolean satisfiability (SAT) problems 
+are typically encoded as sets of clauses in conjunctive normal form, which serves as the standard input format of SAT solvers. 
+The ordering of data variables within a cardinality constraint can have a 
+substantial impact on the quality of the resulting encoding and on solver performance, 
+motivating the development of various pre-processing and reordering techniques. 
+In this work, we address the scenario in which a cardinality constraint has already been 
+encoded into clauses. 
+We introduce a proof-producing reencoding method that systematically transforms an existing encoding into a new encoding with 
+reordered data variables, while producing a certificate that establishes satisfiability equivalence between the original and transformed formulas. 
+To illustrate the practical advantages of our approach, we evaluate it using 
+a family of vertex cover benchmarks specifically designed with adversarial variable orderings.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1436">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Trimming Pseudo-Boolean Proofs <a class="abstract_link" href="PoS-2026-07-19.html#talk:1436">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10301.html">Berhan Oumer Adame</a><sup>1</sup>, <a class="person" href="person10302.html">Bart Bogaerts</a><sup>2</sup>, <a class="person" href="person10303.html">Benjamin Bogø</a><sup>3</sup>, <a class="person" href="person10304.html">Simon Dold</a><sup>4</sup>, <a class="person" href="person10305.html">Arthur Gontier</a><sup>5</sup>, <a class="person" href="person10306.html">Wietze Koops</a><sup>3</sup>, <a class="person" href="person10307.html">Ciaran McCreesh</a><sup>5</sup>, <a class="person" href="person10308.html">Matthew McIlree</a><sup>5</sup>, <a class="person" href="person10309.html">Jakob Nordstrom</a><sup>3</sup>, <a class="person" href="person10310.html">Andy Oertel</a><sup>6</sup>, <a class="person" href="person10311.html">Adrian Rebola-Pardo</a><sup>7</sup>, <a class="person" href="person10312.html">Mark Turnbull</a><sup>5</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Vrije Universiteit Brussel</div>
+                                <div class="affiliation_item"><sup>2</sup> KU Leuven, Belgium</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Copenhagen, Denmark</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Basel, Switzerland</div>
+                                <div class="affiliation_item"><sup>5</sup> University of Glasgow, United Kingdom</div>
+                                <div class="affiliation_item"><sup>6</sup> Lund University, Sweden</div>
+                                <div class="affiliation_item"><sup>7</sup> Vienna University of Technology, Austria</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In modern combinatorial solving and automated reasoning systems, proof logging and checking is a highly effective way to provide trust in solver outputs. For Boolean satisfiability (SAT), a technique called proof trimming is vital to allow rapid proof checking and reduce the size of stored proofs. However, trimming remains a challenge for richer proof systems. In this work, we design, implement, and evaluate a proof trimmer for the VeriPB proof format, bringing the advantages of trimming to a wide range of certifying solvers, including those for pseudo Boolean optimisation, MaxSAT, constraint programming, and subgraph solving, and for SAT solvers that use techniques like symmetry or cardinality reasoning. We describe and justify the overall architecture of our system, and give details of how the more challenging proof rules are handled. Our experiments demonstrate large reductions in proof size, without compromising correctness, as well as significant speedups for proof checking including formally verified checking.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1437">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">PBLean: Pseudo-Boolean Proof Certificates for Lean 4 <a class="abstract_link" href="PoS-2026-07-19.html#talk:1437">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10313.html">Stefan Szeider</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TIUWien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present PBLean, a method for importing VeriPB pseudo-Boolean (PB) proof certificates into Lean 4. Key to our approach is REFLECTION: a Boolean checker function whose soundness is fully proved in Lean and executed as compiled native code. Our method scales to proofs with tens of thousands of steps that would exhaust memory under explicit proof-term construction. Our checker parses all \veripb kernel rule types and verifies unsatisfiability via cutting-plane derivations, proof-by-contradiction subproofs, and redundance/dominance for symmetry breaking; soundness is established in Lean for the rules used along the UNSAT path. In contrast to external verified checkers that produce verdicts, our integration yields Lean theorems that can serve as composable lemmas in larger formal developments. To derive theorems about the original combinatorial problems rather than about PB constraints alone, we support verified encodings. This closes the trust gap between solver output and problem semantics since the constraint translation and its correctness proof are both formalized in Lean.  We demonstrate the approach on various combinatorial problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1438">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Scaling Zero Knowledge UNSAT Verification via Normalized Chaining <a class="abstract_link" href="PoS-2026-07-19.html#talk:1438">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10314.html">Ashwin Karthikeyan</a><sup>1</sup>, <a class="person" href="person10315.html">Ethan Kharitonov</a><sup>2</sup>, <a class="person" href="person10316.html">Kuldeep S. Meel</a><sup>3</sup>, <a class="person" href="person10317.html">Anwar Hithnawi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
+                                <div class="affiliation_item"><sup>2</sup> Independent</div>
+                                <div class="affiliation_item"><sup>3</sup> Georgia Institute of Technology, University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Proofs of UNSAT are a standard primitive in formal verification and software assurance. In many real-world settings, the proof itself encodes proprietary or security-sensitive information, making public disclosure undesirable. Zero-knowledge certification of UNSAT addresses this tension: it enables a prover to convince a verifier that no satisfying assignment exists, without revealing anything about the underlying proof beyond its validity. Luo et al. recently introduced ZKUNSAT, a protocol that achieves this goal by proving the validity of a weakened resolution proof in zero knowledge. ZKUNSAT demonstrates the feasibility of zero-knowledge certification; however, its scalability to larger, real-world instances is constrained by substantial prover memory overhead, limiting its real-world applicability.
+
+Motivated by advances in UNSAT proof formats such as LRAT, which enable efficient plain-text verification, we present a preprocessing technique that improves the efficiency of ZkUnsat without introducing additional leakage. Our approach normalizes the proof so that each derived clause is justified by a resolution chain of fixed public length k. This eliminates chain-length leakage and reduces prover memory usage. With k = 16, our method certifies roughly 62% more instances than baseline ZkUnsat on the SAT 2002 competition benchmarks. Furthermore, for an equivalent number of certified instances, the memory footprint drops to under 25% of that required by the baseline.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1479">
                     <div class="heading">
@@ -196,6 +290,22 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1441">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Smallest MUS Extraction via Branch-and-Cut <a class="abstract_link" href="PoS-2026-07-19.html#talk:1441">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10327.html">Konstantin Sidorov</a><sup>1</sup>, <a class="person" href="person10328.html">Jacobus G. M. van der Linden</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We revisit the problem of computing a smallest minimal unsatisfiable subset (SMUS) of a propositional CNF formula. The state-of-the-art algorithm by Ignatiev et al. frames SMUS extraction as finding a minimum-cardinality hitting set of the set of minimal correction sets (MCSes), and solves the resulting optimization problem by a generate-and-test loop over a growing MCS collection. We propose to replace the hitting-set loop with a full branch-and-cut solver—concretely, SCIP augmented with a custom constraint handler—so that every incumbent solution discovered during the search is a valid UNSAT subset, giving a monotonically improving anytime sequence. The feasibility is enforced by a separation oracle that, given a fractional point in the LP relaxation, identifies a violated MCS inequality by solving an instance of the weighted MaxSAT problem. Experimental evaluation suggests that, although the formulas with smaller gaps between the smallest MUS cardinality and the number of disjoint MCSes in a formula, such as the ones from the MUS track of the SAT Competition 2011, are favorable for implicit hitting set solving, our branch-and-cut approach is superior to the implicit hitting set approach on formulas with large gaps.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1481">
                     <div class="heading">
@@ -211,6 +321,38 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1442">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Extending CDCL-based Model Enumeration with Weights <a class="abstract_link" href="PoS-2026-07-19.html#talk:1442">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10329.html">Giuseppe Spallitta</a><sup>1</sup>, <a class="person" href="person10330.html">Moshe Y. Vardi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Rice University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this work we investigate Weighted Model Enumeration (WME): given a Boolean formula and a weight function over its satisfying assignments, enumerate models while accounting for their weights. This setting supports weight-driven queries, such as producing the top-k models or all models above a threshold. While related to AllSAT, Weighted Model Counting, and MaxSAT, these paradigms do not treat selective enumeration under weights as a native solver task. We present CDCL-based algorithms for WME that integrate weight propagation, weight-based pruning, and weight-aware conflict analysis into both chronological and non-chronological backtracking frameworks. Chronological backtracking exploits implicit blocking to keep the clause database compact, thereby reducing the memory footprint and enabling efficient propagation. In contrast, non-chronological backtracking with clause learning supports explicit blocking and restarts. We show that both approaches are feasible and complementary, highlighting trade-offs in pruning effectiveness with weights and clarifying when each performs best.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1443">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formalization of Component-Based Projected Model Counting <a class="abstract_link" href="PoS-2026-07-19.html#talk:1443">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10331.html">Kenta Ito</a><sup>1</sup>, <a class="person" href="person10332.html">Kenji Hashimoto</a><sup>2</sup>, <a class="person" href="person10333.html">Masahiko Sakai</a><sup>3</sup>, <a class="person" href="person10334.html">Hidetomo Nabeshima</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Yamanashi</div>
+                                <div class="affiliation_item"><sup>2</sup> Kagawa University</div>
+                                <div class="affiliation_item"><sup>3</sup> Nagoya University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> State-of-the-art projected model counters have achieved remarkable advances by integrating a variety of methods, including those from SAT solvers. However, this has resulted in increasingly complex implementations. Furthermore, the integration of multiple methods may introduce unexpected inconsistencies, leading to incorrect model counts. To address these issues, we propose a declarative framework for describing the projected-model counting procedure that integrates practical methods. Our framework captures all methods implemented in GPMC, one of the state-of-the-art projected model counters, while remaining open to future extensions. We also present a proof sketch for the correctness of the framework, outlining the key ideas.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1482">
                     <div class="heading">
@@ -241,6 +383,51 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1444">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">SAT-IT: an Online Interactive SAT Tracer <a class="abstract_link" href="PoS-2026-07-19.html#talk:1444">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10335.html">Wilber Bermeo Quito</a><sup>1</sup>, <a class="person" href="person10336.html">Pau Ferrer i Font</a><sup>1</sup>, <a class="person" href="person10337.html">Jordi Coll Caballero</a><sup>1</sup>, <a class="person" href="person10338.html">Villaret Ausellé Mateu</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat de Girona</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Modern Boolean Satisfiability (SAT) solvers, based on the Conflict-Driven Clause Learning (CDCL) paradigm, achieve state-of-the-art efficiency but present a steep learning curve due to their sophisticated algorithms and highly optimized data structures. Understanding these complex mechanics and evaluating the effectiveness of problem encodings is notoriously challenging for students and emerging researchers. To ease this learning process, we introduce the Interactive SAT Tracer (SAT-IT), an open-access web environment designed to make the foundations of SAT solving highly visible and interactive. SAT-IT offers a staged pedagogical progression—from naive backtracking to DPLL and full CDCL with the two-watched literals scheme. Users can clearly inspect fundamental data structures, search space trails, and solving statistics. The tool interactive search space exploration is boosted with literal-level breakpoints for targeted inspection, alongside versatile automatic solving modes that offer both continuous real-time execution and state-based subroutine automation. Combined with a powerful ``what-if'' capability for stepping backward to explore alternative decisions, an instance manager, and an extensible architecture ready to support additional algorithms, SAT-IT serves as a practical, granular lens for experimenting with SAT solving algorithms and analysing encodings efficiency.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1446">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The Multi-Skill Project Scheduling Problem: To SAT, or to PB, that is the question. <a class="abstract_link" href="PoS-2026-07-19.html#talk:1446">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10342.html">Wilber Bermeo Quito</a><sup>1</sup>, <a class="person" href="person10343.html">Jordi Coll Caballero</a><sup>1</sup>, <a class="person" href="person10344.html">Villaret Ausellé Mateu</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat de Girona</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper addresses the Multi-Skill Project Scheduling Problem (MSPSP), an NP-hard optimization problem. We propose and evaluate MaxSAT and pseudo-Boolean optimization encoding for the MSPSP. We explore the fundamental trade-off between the expressive power of pseudo-Boolean (PB) constraints and the raw efficiency of MaxSAT solvers. By adapting implied constraints naturally expressed as PB constraints from the literature, we examine whether such additional reasoning provides a greater performance boost to MaxSAT or PB solvers. Our initial hypothesis---that including natural PB constraints into our MSPSP model would provide a greater incremental boost to PB solvers than to MaxSAT solvers---was tested through an exhaustive experimental evaluation using state-of-the-art solvers. Contrary to our expectations, MaxSAT solvers consistently outperform PB solvers on the MSPSP. Moreover, our results demonstrate the benefits of integrating implied constraints, as they significantly reduce the number of timeouts, regardless of the formalism used.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1447">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Orthologic for SAT Solving <a class="abstract_link" href="PoS-2026-07-19.html#talk:1447">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10345.html">Simon Guilloud</a><sup>1</sup>, <a class="person" href="person10346.html">Vladislas De Haldat Du Lys</a><sup>2</sup>, <a class="person" href="person10347.html">Viktor Kun\v{c}ak</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> EPFL</div>
+                                <div class="affiliation_item"><sup>2</sup> ENS Paris-Saclay</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a new algorithm for deciding formula entailment in orthologic (a sound approximation of classical logic) that avoids the costly preprocessing phase of prior implementations while retaining the same $\mathcal{O}(n^2(1+|A|))$ worst-case complexity. We then introduce a family of synthetic SAT benchmarks based on the observation that, for any formula $\phi$, the equivalence $\phi \leftrightarrow \mathrm{NF}_{\mathrm{OL}}(\phi)$ is a tautology whose Tseitin encoding yields unsatisfiable instances that are hard for state-of-the-art SAT solvers yet have short orthologic proofs. Applied to EPFL arithmetic circuits, our algorithm solves these instances efficiently while Kissat times out on a significant fraction. Finally, we show that using orthologic normalization as a preprocessing step reduces formula size and solving time by approximately 26\% on average over a large set of Boolean circuit benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1484">
                     <div class="heading">
@@ -301,6 +488,23 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1452">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Reverse-Engineering Constraint Models from CNFs: An Agentic Approach <a class="abstract_link" href="PoS-2026-07-19.html#talk:1452">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10365.html">Johannes Fichte</a><sup>1</sup>, <a class="person" href="person10366.html">Stefan Szeider</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Linköping University</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Compiling constraint models to conjunctive normal form (CNF) is commonly regarded as a one-way transformation, since auxiliary variables and clausal decomposition obscure the original problem structure. Related methods of structure recovery include gate extraction and cardinality detection, but those recover only fragments, not the complete encoding. We present an autonomous agent, powered by an LLM, that reverse-engineers a complete, semantically equivalent PySAT encoding from a DIMACS CNF file.  We use a SAT-based equivalence checker to verify the high-level encoding and obtain counterexamples for iterative refinement.  The agent queries the formula through bounded analysis tools. It combines structural with abductive reasoning to hypothesize the underlying combinatorial problem.  We evaluate our approach on several combinatorial problems with instances generated by independent encoders (PySAT, Picat, Sugar, BEE), giving the agent no metadata. We obtain 85 reconstruction on 48 instances and demonstrate that the agent handles direct, order, and log encodings of the same problems. Our scaling study confirms feasibility up to 1.2 million clauses.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1488">
                     <div class="heading">
@@ -322,7 +526,7 @@
                             <td>
                                 <div class="title">Closing Remarks <a class="abstract_link" href="PoS-2026-07-19.html#talk:909">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6856.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person6857.html">Dominik Schreiber</a><sup>2</sup>                                </div>
+<a class="person" href="person10372.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person10373.html">Dominik Schreiber</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
                                 <div class="affiliation_item"><sup>2</sup> Karlsruhe Institute of Technology</div>

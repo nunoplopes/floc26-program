@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -160,7 +161,7 @@
                             <td>
                                 <div class="title">CAQE: Strong as Solver, Weak as Proof System <a class="abstract_link" href="SAT-2026-07-22.html#talk:540">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6980.html">Benjamin Böhm</a><sup>1</sup>, <a class="person" href="person6981.html">Olaf Beyersdorff</a><sup>1</sup>                                </div>
+<a class="person" href="person10604.html">Benjamin Böhm</a><sup>1</sup>, <a class="person" href="person10605.html">Olaf Beyersdorff</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Friedrich Schiller University Jena</div>
                                 </div>
@@ -201,6 +202,60 @@ We show that one can perform strategy extraction on that CAQE proof system in su
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1484">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Definition-based dependency schemes <a class="abstract_link" href="SAT-2026-07-22.html#talk:1484">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10608.html">David Kattermann</a><sup>1</sup>, <a class="person" href="person10609.html">Martina Seidl</a><sup>1</sup>, <a class="person" href="person10610.html">Clemens Hofstadler</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Johannes Kepler University Linz</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A variable in a quantified Boolean formula (QBFs) is defined, if its value is uniquely determined by some other variables. Such definitions are widely exploited in various techniques for QBF solving. In this work, we formalize the concept of using definitions for reducing variable dependencies by introducing a novel dependency scheme and investigate its proof-theoretic impact. 
+Our analysis shows that a definition-based dependency scheme is able to detect independencies other established dependency schemes cannot and that this can lead to exponentially shorter refutations. We further demonstrate that our scheme can be combined with any other scheme and that such a combined use can exponentially outperform using either scheme alone. Moreover, we study the dynamic application of our definition-based dependency scheme, which leads to another exponential speedup compared to the static application. Finally, we analyze the computational complexity of our dependency scheme and introduce a family of efficiently computable variants.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1485">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Strong (D)QBF Dependency Schemes via Pure Paths with Applications to Proof Checking <a class="abstract_link" href="SAT-2026-07-22.html#talk:1485">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10611.html">Leroy Chew</a><sup>1</sup>, <a class="person" href="person10612.html">Tomáš Peitl</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Czech Institute of Informatics Robotics and Cybernetics</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Certification for Quantified Boolean Formulas (QBF) and Dependency Quantified Boolean Formulas (DQBF) is an ongoing challenge. Recent proof complexity work has shown that the majority of QBF and DQBF techniques can be p-simulated by using the independent extension rule. In propositional logic, extension rules are supported by proof checkers using a more general RAT (Resolution Asymmetric Tautology) rule. The obvious next step in (D)QBF certification would be to update these modern RAT formats to match the strength of this independent extension rule. 
+
+
+In this paper we first introduce a new dependency scheme called Dpure, this rule is the missing ingredient that when added to Blinkhorn's proof system DQRAT allows it to be p-equivalent to the Independent Extended QU-Res, the most powerful of the known QBF and DQBF proof systems. Up until now, DQRAT has only existed in theory, so we implement a prototype checker DQRAT-check which includes our extra rule. 
+
+
+In addition to its inclusion in our proof checker we show Dpure has two other properties that have been found for previous dependency schemes, and each of these observations has potential in solving/checking. We demonstrate a strategy extraction theorem for long distance Q-resolution equipped with Dpure, meaning it can be incorporated soundly into the dependency learning solver Qute.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1486">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof Systems for QBF Synthesis: Extracting Skolem and Herbrand Functions <a class="abstract_link" href="SAT-2026-07-22.html#talk:1486">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10613.html">S. Akshay</a><sup>1</sup>, <a class="person" href="person10614.html">Olaf Beyersdorff</a><sup>2</sup>, <a class="person" href="person10615.html">Supratik Chakraborty</a><sup>1</sup>, <a class="person" href="person10616.html">Lea Kasche</a><sup>2</sup>, <a class="person" href="person10617.html">Meena Mahajan</a><sup>3</sup>, <a class="person" href="person10618.html">Luc Nicolas Spachmann</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IIT Bombay</div>
+                                <div class="affiliation_item"><sup>2</sup> Friedrich Schiller University Jena</div>
+                                <div class="affiliation_item"><sup>3</sup> IMSc Chennai</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Strategy extraction in QBF proof systems usually attempts to extract winning strategies from valid proofs. However, an alternative (and arguably more powerful) view is to extract Skolem/Herbrand functions, or equivalently synthesis of the game values at all intermediate points. In this paper, we investigate the existence and properties of such proof systems from which one can extract Skolem and Herbrand functions. We propose such a proof system for QBF, which we show is sound and complete, and from which  extraction of Skolem/Herbrand functions can be performed, and game values computed, in polynomial time. We also show that this system is optimal among all proof systems that allow efficient extraction of Skolem/Herbrand functions. We provide conditional lower bound results for our new proof system and compare it to several existing/standard proof systems for QBF that have been studied in the literature, showing interesting orthogonality results. Finally, we provide a compilation algorithm that takes an arbitrary QBF and synthesizes a proof in our system, from which Skolem and Herbrand functions can be easily computed.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:991">
                     <div class="heading">

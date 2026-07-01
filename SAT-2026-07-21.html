@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -169,6 +170,57 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1474">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Beyond Core-Guided MaxSAT <a class="abstract_link" href="SAT-2026-07-21.html#talk:1474">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10547.html">Ilario Bonacina</a><sup>1</sup>, <a class="person" href="person10548.html">Jordi Levy</a><sup>2</sup>, <a class="person" href="person10549.html">Ion Mikel Liberal</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> UPC</div>
+                                <div class="affiliation_item"><sup>2</sup> IIIA-CSIC</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Several proof systems for MaxSAT have been proposed in the literature, including MaxSAT resolution and, more recently, systems based on polynomial calculus and tableaux. Although these systems are sound and complete and have varying strengths, they fail to capture the specific inferential strategies used by practical MaxSAT solvers, particularly those used in core-guided approaches. As a result, a formula that is hard to prove in these proof systems may not be hard for a solver, and vice versa.
+
+In this paper, we describe a new proof system for MaxSAT, the Comparator Calculus (CC), which models the inferential strategies used in core-guided MaxSAT solvers. Inspired by this formalism, we introduce two new MaxSAT algorithms: a core-guided one (Simple) and one not core-guided (CSat), which uses heuristics to construct new soft formulas and calls a SAT solver on a unique soft formula. We also define a hybrid mechanism (core-guided CSat) that uses cores to guide the heuristics.  
+
+We evaluate and compare our solvers with OLL on instances from the MaxSAT evaluation 2024, random 2-CNFs, and PHP formulas. Experimental results suggest that, in general, the performance of the distinct MaxSAT solvers depends on the structure of the instances. On the set of industrial instances of the MaxSAT Evaluation 2024, Simple performs better than the others (including OLL).</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1475">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Scuttle: A System for Multi-Objective MaxSAT <a class="abstract_link" href="SAT-2026-07-21.html#talk:1475">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10550.html">Christoph Jabs</a><sup>1</sup>, <a class="person" href="person10551.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person10552.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We describe the Scuttlesystem for multi-objective combinatorial optimization. Scuttle accepts multi-objective instances where the constraints are declared either as propositional clauses or pseudo-Boolean constraints, and implements a range of multi-objective maximum satisfiability algorithms (including ones for enumerating all Pareto-optimal and leximax-optimal solutions). Pseudo-Boolean constraints are translated to clauses, allowing for applying any of the implemented algorithms on both the clausal and the pseudo-Boolean level. Scuttle also includes tightly integrated preprocessing (both core boosting and liftings of SAT preprocessing techniques) for multi-objective instances and can provide proof certificates for selected algorithms.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1477">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">HitPBO: An Implicit Hitting Set Solver for Pseudo-Boolean Optimization <a class="abstract_link" href="SAT-2026-07-21.html#talk:1477">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10556.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person10557.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person10558.html">Andre Schidler</a><sup>3</sup>, <a class="person" href="person10559.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person10560.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
+                                <div class="affiliation_item"><sup>2</sup> Vrije Universiteit Brussel, KU Leuven</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Freiburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We describe HitPBO 1.0, a from-scratch open-source C++ implementation of the implicit hitting set (IHS) approach to pseudo-Boolean optimization. Compared to earlier implementations, HitPBO adds a range of functionalities and  search techniques, certificates, and support for various alternative solvers within IHS. We give an overview of the solver's architecture and its functionalities.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:982">
                     <div class="heading">
@@ -220,7 +272,7 @@
                             <td>
                                 <div class="title">The Compilability Thresholds of 2-CNF to OBDD <a class="abstract_link" href="SAT-2026-07-21.html#talk:537">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person6970.html">Alexis de Colnet</a><sup>1</sup>, <a class="person" href="person6971.html">Alfons Laarman</a><sup>1</sup>, <a class="person" href="person6972.html">Joon Hyung Lee</a><sup>1</sup>                                </div>
+<a class="person" href="person10574.html">Alexis de Colnet</a><sup>1</sup>, <a class="person" href="person10575.html">Alfons Laarman</a><sup>1</sup>, <a class="person" href="person10576.html">Joon Hyung Lee</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Leiden University</div>
                                 </div>
@@ -260,6 +312,68 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1479">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">PASSAT: Deep Cooperation of Unit Propagation and Local Search in Incomplete SAT Solving <a class="abstract_link" href="SAT-2026-07-21.html#talk:1479">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10582.html">Mingming Jin</a><sup>1</sup>, <a class="person" href="person10583.html">Zhijie Kuang</a><sup>1</sup>, <a class="person" href="person10584.html">Jiongzhi Zheng</a><sup>2</sup>, <a class="person" href="person10585.html">Kun Mao</a><sup>2</sup>, <a class="person" href="person10586.html">Kun He</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Huazhong University of Science and Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Huawei OptVerse Solver,China</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Boolean Satisfiability (SAT) problem is a fundamental NP-complete problem. Algorithms for SAT include complete ones, typically based on Conflict-Driven Clause Learning (CDCL) methods, and incomplete ones, mostly following local search frameworks. CDCL solvers perform very well on complex structured instances. Local search (LS) algorithms cannot compete with CDCL solvers on structured instances, but show good performance on random and crafted instances, and also serve as an important component in top CDCL solvers. This raises a natural question: can techniques from complete SAT solving be used to improve incomplete solvers? This paper proposes the PASSAT (Progressive Activation Search for SAT) incomplete solver to answer it, which integrates the core techniques from both sides, Unit Propagation (UP) and LS. PASSAT starts from a subproblem, which relaxes many variables, and uses UP to progressively activate the search space (\ie, expand the subproblem). When a conflict is encountered, LS is invoked to repair it by searching all variables induced in the subproblem and the conflict. PASSAT ensures that the subproblem size increases monotonically and that the search process gradually approaches the full formula. In PASSAT, UP can guide growth direction based on the structure, and LS can efficiently repair conflicts. Their cooperation leads to some promising results. After a decade of evolution in CCAnr and ProbSAT variants, PASSAT represents a new incomplete algorithm framework with significantly better performance across various benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1480">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Generalizing CDCL with Graph Backtracking <a class="abstract_link" href="SAT-2026-07-21.html#talk:1480">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10587.html">Robin Coutelier</a><sup>1</sup>, <a class="person" href="person10588.html">Thomas Hader</a><sup>1</sup>, <a class="person" href="person10589.html">Laura Kovács</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present graph backtracking, a novel, fine-grained backtracking scheme for CDCL-based SAT solving, parametrized by a user-defined weight function. For conflict repair, we challenge the decision level abstraction and use the implication graph as a precise guiding structure to minimize the weight of literals that are unassigned. Graph backtracking is sound, complete, and terminating. We show that it is a generalization of chronological and non-chronological backtracking by simulating them with specific weight functions. Our approach is implemented in the experimental solver NapSAT. Empirical results show that graph backtracking requires fewer literal propagations than standard approaches, leading to improved solver runtime.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1481">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Natively Parallel Proof Framework for Clause-Sharing SAT Solving <a class="abstract_link" href="SAT-2026-07-21.html#talk:1481">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10590.html">Ruben Götz</a><sup>1</sup>, <a class="person" href="person10591.html">Michael Dörr</a><sup>1</sup>, <a class="person" href="person10592.html">Dominik Schreiber</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology (KIT)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Unsatisfiability proofs are valuable artifacts in propositional satisfiability (SAT) since they can provide correctness guarantees and thus complete trust in reported results. In powerful parallel and distributed clause-sharing SAT solvers, existing proof technology either funnels all solver threads' relevant reasoning steps into a single proof file, which leads to scalability problems for large setups and long running times, or checks proof information in parallel in real-time, which is fully scalable but leaves no persistent artifact. We suggest an alternative approach to achieve the best of both worlds. Specifically, we consider parallel proof files that are logged and also checked in parallel. To this end, we introduce PalRUP – an LRUP-based proof format and a bottleneck-free, decentralized parallel checking procedure that only uses the (parallel) file system and is composed of a set of small, sequential trusted components. In evaluations on up to 3072 cores, we observe that our approach allows for low-overhead proof logging during solving and substantially outscales prior proof producing approaches in terms of checking performance.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1482">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">CaDiCaL 3.0 <a class="abstract_link" href="SAT-2026-07-21.html#talk:1482">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10593.html">Florian Pollitt</a><sup>1</sup>, <a class="person" href="person10594.html">Mathias Fleury</a><sup>1</sup>, <a class="person" href="person10595.html">Katalin Fazekas</a><sup>2</sup>, <a class="person" href="person10596.html">Nils Froleyks</a><sup>3</sup>, <a class="person" href="person10597.html">André Schidler</a><sup>1</sup>, <a class="person" href="person10598.html">Dominik Schreiber</a><sup>4</sup>, <a class="person" href="person10599.html">Armin Biere</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Freiburg</div>
+                                <div class="affiliation_item"><sup>2</sup> Vienna University of Technology</div>
+                                <div class="affiliation_item"><sup>3</sup> KU Leuven</div>
+                                <div class="affiliation_item"><sup>4</sup> Karlsruhe Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The propositional satisfiability (SAT) solver Kissat supports a relatively narrow feature set in favor of bare-metal performance and targeted improvements to core solving techniques, which helped it dominate the International SAT Competition since 2024.  However, many applications rely on advanced SAT solver features such as incremental interaction schemes, finding direct consequences of assumed literals, or expressive proof logging that allows for real-time checking.  This system description reports on how we successfully adapted Kissat's award-winning techniques to the full-featured incremental SAT solver CaDiCaL, including clausal congruence closure, clausal equivalence sweeping, and bounded variable addition.  The main challenge was to support efficient linear proof production with hints.  We further extended CaDiCaL's API to extract implied literals under assumptions and applied advanced deterministic scheduling of inprocessing based on the ticks metric for approximating cache line accesses.  Experiments confirm the benefits of these efforts.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 

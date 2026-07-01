@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -159,6 +160,91 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1106">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Deadlock Verification via Ordering-Constrained Mutex Modeling <a class="abstract_link" href="CAV-2026-07-26.html#talk:1106">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7471.html">Pei Wang</a><sup>1</sup>, <a class="person" href="person7472.html">Zhilei Han</a><sup>1</sup>, <a class="person" href="person7473.html">Zhihang Sun</a><sup>1</sup>, <a class="person" href="person7474.html">Fei He</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Tsinghua University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Mutexes are fundamental synchronization primitives in concurrent programming, but their improper use can lead to deadlocks.
+Conventional assume-based modeling abstracts mutex semantics via assumptions, simplifying safety verification but hindering deadlock verification.
+Although prior efforts have aimed to address this limitation, we show that state-of-the-art methods remain inaccurate.
+In this paper, we propose a novel modeling approach that captures mutex semantics using ordering constraints, enabling accurate deadlock verification within partial-order-based verification frameworks.
+We formally prove the correctness of our method and implement it in a prototype tool, DEAGLE-DL.
+We evaluate DEAGLE-DL against a state-of-the-art bounded model checker ESBMC that employs the conventional modeling approach, and a state-of-the-art static analysis tool for deadlock detection.
+Our experiments show that DEAGLE-DL significantly outperforms both tools in terms of precision, while maintaining substantial efficiency.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1107">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Complete Local Reasoning About Parameterized Programs Over Topologies <a class="abstract_link" href="CAV-2026-07-26.html#talk:1107">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7475.html">Ruotong Cheng</a><sup>1</sup>, <a class="person" href="person7476.html">Azadeh Farzan</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper investigates the algorithmic safety verification problem of infinite-state parameterized concurrent programs over a rich set of communication topologies. The goal is to automatically produce a proof of correctness for them in the form of a universally quantified inductive invariant, where the quantification is over the nodes in the topology. We illustrate that under reasonable assumptions on the underlying topology, the problem can be reduced to and solved as a compositional scheme in which the verification of the parameterized family is reduced to a set of local proofs, in a complete manner. We propose a verification algorithm,  which is implemented as a tool, and demonstrate through a set of benchmarks over several different topologies that our approach is effective in proving parameterized programs safe.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1111">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The TLA+ Model Checker Apalache <a class="abstract_link" href="CAV-2026-07-26.html#talk:1111">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7488.html">Rodrigo Otoni</a><sup>1</sup>, <a class="person" href="person7489.html">Shon Feder</a><sup>2</sup>, <a class="person" href="person7490.html">Jure Kukovec</a><sup>3</sup>, <a class="person" href="person7491.html">Andrey Kupriyanov</a><sup>3</sup>, <a class="person" href="person7492.html">Gabriela Moreira</a><sup>4</sup>, <a class="person" href="person7493.html">Philip Offtermatt</a><sup>4</sup>, <a class="person" href="person7494.html">Thomas Pani</a><sup>3</sup>, <a class="person" href="person7495.html">Thanh-Hai Tran</a><sup>5</sup>, <a class="person" href="person7496.html">Igor Konnov</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Groningen</div>
+                                <div class="affiliation_item"><sup>2</sup> Tarides</div>
+                                <div class="affiliation_item"><sup>3</sup> Independent Researcher</div>
+                                <div class="affiliation_item"><sup>4</sup> Informal Systems</div>
+                                <div class="affiliation_item"><sup>5</sup> Université Paris-Saclay, CEA, List</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The TLA+ language has been widely used, both in academia and industry, to specify and reason about distributed systems. This paper presents Apalache, an efficient and flexible symbolic model checker for TLA+. Apalache's engine is based on bounded model checking, with symbolic transitions being extracted from TLA+ specifications and verification conditions suitable for satisfiability modulo theories (SMT) solvers being generated from them. Reasoning can be done in terms of safety and liveness properties, with liveness checking realised via a liveness-to-safety reduction. Apalache's flexibility lies in its three complementary functionalities: bounded exhaustive verification, for bounded guarantees, randomised symbolic execution, for prototyping and bug detection, and inductiveness checking, for unbounded guarantees. The paper describes Apalache's architecture and features, including its support for PlusCal and Quint, two languages that share the same semantic foundation as TLA+. Industrial usage of Apalache is also presented, together with a case study which illustrates how Apalache can be used to verify the agreement property of a consensus protocol.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1112">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">PSF: A Generic and Extensible Framework for Protocol State Fuzzing <a class="abstract_link" href="CAV-2026-07-26.html#talk:1112">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7497.html">Konstantinos Sagonas</a><sup>1</sup>, <a class="person" href="person7498.html">Thanos Typaldos</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala University & National Technical University of Athens</div>
+                                <div class="affiliation_item"><sup>2</sup> Yale University & National Technical University of Athens</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In recent years, protocol state fuzzing has emerged as an effective technique to analyze and test network protocol implementations, uncovering numerous security vulnerabilities, bugs, and non-conformance issues in them.
+This tool paper presents ProtocolState-Fuzzer (PSF for short), an open source, generic, modular, and extensible framework for state machine learning and testing of network protocol implementations.
+We describe the distinctive features and support that PSF offers, its system architecture, and briefly overview the protocol-specific state fuzzers that currently use PSF as their basis.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1114">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Octopus: Practical Equivalence Checking of P4 Packet Parsers <a class="abstract_link" href="CAV-2026-07-26.html#talk:1114">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7505.html">Jort van Leenen</a><sup>1</sup>, <a class="person" href="person7506.html">Tobias Kappé</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LIACS, Leiden University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> P4 is a domain-specific language for programming protocol-independent packet processors, where packet parsers describe how incoming bit streams are structured into headers and fields. Building on work by Doenges et al. (2022), we present Octopus, a tool that translates P4 packet parsers into automata and then attempts to (symbolically) check their equivalence. Octopus produces evidence, either in the form of a bisimulation demonstrating equivalence, or a counterexample packet witnessing a behavioral difference between the two parsers. In contrast with earlier work, our tool can check equivalence between non-trivial parsers within minutes on consumer hardware. We report on the tool’s implementation and evaluate its usability in networking contexts.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:656">
                     <div class="heading">
@@ -195,6 +281,93 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1117">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Repairing Regex-Dependent String-Manipulation Programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1117">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7517.html">Nariyoshi Chida</a><sup>1</sup>, <a class="person" href="person7518.html">Tachio Terauchi</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> NTT Social Informatics Laboratories</div>
+                                <div class="affiliation_item"><sup>2</sup> Waseda University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a new Programming-by-Examples (PBE) approach to repairing regex-dependent string-manipulation programs.  Our approach has the following key features: (1) the support for a {\em wide range of functions} including regex-dependent functions such as {\tt replaceAll}, {\tt match}, {\tt split}, list manipulation functions such as {\tt map}, {\tt reduce}, {\tt filter}, and numerical functions such as {\tt max}, {\tt min}, {\tt pow}, (2) the support for {\em real-world regexes} with non-standard semantics such as greedy/lazy Kleene star and extensions such as lookarounds and backreferences, (3) the focus on a {\em method-chaining style} that starts the chain of calls with a regex-dependent function, reflecting a code style used in the real-world, and (4) novel {\em origin-enriched} examples that allow users to communicate  {\em intensional} behavior of programs in addition to the standard extension behavior communicated via ordinary input-output examples, and a novel {\em origin-tracking} semantics that formally defines when a program conforms to the behavior stipulated by such examples. We have implemented our approach as a tool named R3-S3 and evaluated it on real-world benchmarks collected from GitHub and StackOverflow. The results show that R3-S3 finds high-quality repairs efficiently.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1118">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Liquid Tree Automata <a class="abstract_link" href="CAV-2026-07-26.html#talk:1118">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7519.html">Ashish Mishra</a><sup>1</sup>, <a class="person" href="person7520.html">Suresh Jagannathan</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology Hyderabad</div>
+                                <div class="affiliation_item"><sup>2</sup> Purdue University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Component-based synthesis (CBS) aims to generate loop-
+free programs from a set of libraries whose methods are annotated with
+specifications and whose output must satisfy a set of logical constraints,
+expressed as a query. The effectiveness of a CBS algorithm critically de-
+pends on the severity of the constraints imposed by the query. The more
+exact these constraints are, the sparser the space of feasible solutions.
+This maxim also applies when we enrich the expressivity of the specifi-
+cations affixed to library methods. In both cases, the search must now
+contend with constraints that may only hold over a small number of the
+possible execution paths that can be enumerated by a CBS procedure.
+In this paper, we address this challenge by equipping CBS search with the
+ability to reason about logical similarities among the paths it explores.
+Our setting considers library methods equipped with refinement-type
+specifications that enrich ordinary base types with a set of rich logical
+qualifiers to constrain the set of values accepted by that type.
+For efficient representation and enumeration of this space, we introduce
+a novel tree automata variant called Liquid Tree Automata (LTA) whose
+construction is driven by the typing rules of a refinement type system.
+This allows us to leverage subtyping constraints over the refinement types
+associated with enumerated terms to enable reasoning about similarity
+among candidate solutions as search proceeds, using this notion of simi-
+larity to eagerly merge LTA states. By doing so, we avoid exploration of
+semantically similar paths, leading to a significantly improved search pro-
+cedure. We present an implementation of this idea in a tool called Hegel
+and provide a comprehensive evaluation that demonstrates Hegel’s abil-
+ity to synthesize solutions to complex CBS queries that go well-beyond
+the capabilities of the existing state-of-the-art.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1119">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">SemML 2.0: Synthesizing Controllers from LTL <a class="abstract_link" href="CAV-2026-07-26.html#talk:1119">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7521.html">Maximilian Prokop</a><sup>1</sup>, <a class="person" href="person7522.html">Tobias Meggendorfer</a><sup>2</sup>, <a class="person" href="person7523.html">Jan Kretinsky</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Munich</div>
+                                <div class="affiliation_item"><sup>2</sup> Lancaster University Leipzig</div>
+                                <div class="affiliation_item"><sup>3</sup> Masaryk University Brno</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Synthesizing a reactive system from specifications given in
+linear temporal logic (LTL) is a classical problem, finding its applications
+in safety-critical systems design. These systems are typically represented
+using either Mealy machines or AIGER circuits. We present the second
+version of SemML, which outperforms all state-of-the-art tools for finding
+either solution. Aside from implementing the classical automata-theoretic
+approach, our tool utilizes partial exploration and machine-learning guid-
+ance for obtaining solutions efficiently, and numerous heuristics and
+improvements of classic algorithms for extracting small representations of
+these solutions. We evaluate our tool against the existing state-of-the-art
+tools (in particular Strix, LtlSynt, and the previous version of SemML)
+on the dataset of the synthesis competition SYNTCOMP. We show that
+we solve significantly more instances and do so much faster than other
+tools, while maintaining state-of-the-art solution quality.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:658">
                     <div class="heading">
@@ -237,7 +410,7 @@
                             <td>
                                 <div class="title">Massively Parallel Mining of Specifications for Hardware Designs <a class="abstract_link" href="CAV-2026-07-26.html#talk:195">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person4158.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person4159.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person4160.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person4161.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
+<a class="person" href="person7540.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person7541.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person7542.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person7543.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
                                 </div>
@@ -252,7 +425,7 @@ In this work, we present MAPminer, a parallel framework for synthesis-based hard
                             <td>
                                 <div class="title">A mechanised, bidirectional type system for bit-width determination in SystemVerilog <a class="abstract_link" href="CAV-2026-07-26.html#talk:196">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person4162.html">Gabriel Desfrene</a><sup>1</sup>, <a class="person" href="person4163.html">Quentin Corradi</a><sup>2</sup>, <a class="person" href="person4164.html">Michalis Pardalos</a><sup>2</sup>, <a class="person" href="person4165.html">John Wickerson</a><sup>2</sup>                                </div>
+<a class="person" href="person7544.html">Gabriel Desfrene</a><sup>1</sup>, <a class="person" href="person7545.html">Quentin Corradi</a><sup>2</sup>, <a class="person" href="person7546.html">Michalis Pardalos</a><sup>2</sup>, <a class="person" href="person7547.html">John Wickerson</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> École normale supérieure – PSL</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial College London</div>

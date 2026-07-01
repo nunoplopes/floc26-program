@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -206,7 +207,7 @@
                             <td>
                                 <div class="title">Type-based information flow analysis for $\pi$-calculus with a dynamically extensible security lattice <a class="abstract_link" href="FCS-2026-07-25.html#talk:670">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person4588.html">Yukihiro Oda</a><sup>1</sup>, <a class="person" href="person4589.html">Eijiro Sumii</a><sup>1</sup>                                </div>
+<a class="person" href="person8286.html">Yukihiro Oda</a><sup>1</sup>, <a class="person" href="person8287.html">Eijiro Sumii</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Tohoku University</div>
                                 </div>
@@ -232,7 +233,7 @@ original system.</p>
                             <td>
                                 <div class="title">Environmental Bisimulation for Type-Based Secure Information Flow in $\lambda$-Calculus with Declassification <a class="abstract_link" href="FCS-2026-07-25.html#talk:671">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person4590.html">Eijiro Sumii</a><sup>1</sup>, <a class="person" href="person4591.html">Lin Oshitani</a><sup>1</sup>, <a class="person" href="person4592.html">Takeshi Egawa</a><sup>1</sup>                                </div>
+<a class="person" href="person8288.html">Eijiro Sumii</a><sup>1</sup>, <a class="person" href="person8289.html">Lin Oshitani</a><sup>1</sup>, <a class="person" href="person8290.html">Takeshi Egawa</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Tohoku University</div>
                                 </div>
@@ -258,7 +259,7 @@ secrecy.</p>
                             <td>
                                 <div class="title">Designing Trustworthy Layered Attestations <a class="abstract_link" href="FCS-2026-07-25.html#talk:672">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person4593.html">Joshua Guttman</a><sup>1</sup>, <a class="person" href="person4594.html">Will Thomas</a><sup>2</sup>, <a class="person" href="person4595.html">Logan Schmalz</a><sup>2</sup>, <a class="person" href="person4596.html">Adam Petz</a><sup>2</sup>, <a class="person" href="person4597.html">Perry Alexander</a><sup>2</sup>, <a class="person" href="person4598.html">Paul D. Rowe</a><sup>3</sup>, <a class="person" href="person4599.html">James Carter</a><sup>4</sup>                                </div>
+<a class="person" href="person8291.html">Joshua Guttman</a><sup>1</sup>, <a class="person" href="person8292.html">Will Thomas</a><sup>2</sup>, <a class="person" href="person8293.html">Logan Schmalz</a><sup>2</sup>, <a class="person" href="person8294.html">Adam Petz</a><sup>2</sup>, <a class="person" href="person8295.html">Perry Alexander</a><sup>2</sup>, <a class="person" href="person8296.html">Paul D. Rowe</a><sup>3</sup>, <a class="person" href="person8297.html">James Carter</a><sup>4</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Zeno's Arrow Consulting</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Kansas</div>
@@ -351,6 +352,54 @@ Keywords.  Layered Attestation; Run-Time Attestation; Hardware-based
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1197">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">GCD: Garbled, Corrected, Demonstrandum - Fixing and Proving Go's Extended GCD Implementation <a class="abstract_link" href="FCS-2026-07-25.html#talk:1197">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8298.html">Linard Arquint</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> National University of Singapore</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We verify the `extendedGCD` implementation in Go's standard library (`crypto/internal/fips140/bigmod`), which plays a crucial role in the generation of RSA key pairs. Even though the Go implementation is supposedly a direct port from BoringSSL's implementation, we uncovered two deviations that each break the algorithm's invariants: (1) the Go implementation deviates in the way coefficients are updated, and (2) it permits a larger input domain. We address both deviations; the first by fixing the Go implementation, which results in an on average 24% speedup, and the second deviation by porting an existing proof for BoringSSL and extending it to cover the larger input domain. We prove correctness and termination of the fixed Go implementation using Gobra, a deductive program verifier for Go. Where necessary, we used Lean to prove key lemmata on non-linear arithmetic, which we import into Gobra.
+
+Our verification effort reveals three key insights: subtle bugs can slip into even well-reviewed code with surprising ease; formal verification is a powerful tool for uncovering them; and AI agents can facilitate the verification process by iteratively refining invariants and lemmata based on Gobra's error messages.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1198">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof Obligations Induced by Shared Challenges in Hybrid Fiat-Shamir Signatures <a class="abstract_link" href="FCS-2026-07-25.html#talk:1198">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8299.html">Dr. Sara Zain</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Barkhausen Institut, Dresden</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The FS-FS hybrid signature scheme by Bindel and Hale (2023) combines two Fiat-Shamir components through a single shared challenge. Its EUF-CMA security is stated as
+a theorem in that work-in-progress, but no proof is provided. We report an EasyCrypt mechanisation of the FS-FS security argument in the Random Oracle Model (ROM), defined over abstract Fiat-Shamir components and instantiated with Schnorr, with ongoing work toward broader instantiations and the QROM. The formalisation yields two distinct insights. First, the second-preimage resistance assumption appearing in the original theorem statement is subsumed by the standard ROM guessing bound. Second, establishing the reduction in EasyCrypt requires two additional proof obligations: a logging invariant for the guessing branch and a tracker invariant for the collision-resistance reduction. Together, these obligations reveal proof-structural complexity introduced by the shared challenge that is absent from single-component Fiat-Shamir signatures.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1200">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formal Verification of Assembly Implementations of Cryptographic Functions via Decompilation <a class="abstract_link" href="FCS-2026-07-25.html#talk:1200">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8306.html">Tom Béné</a><sup>1</sup>, <a class="person" href="person8307.html">Manuel Barbosa</a><sup>2</sup>, <a class="person" href="person8308.html">Roberto Blanco</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Eindhoven University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Porto and INESC TEC</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Implementations of cryptographic primitives need to be both unquestionably secure and highly performant. The second requirement often leads library writers to craft hand-optimized assembly code, which significantly complicates the use of formal methods to satisfy the first requirement. We propose that decompilation techniques can be used to lift cryptographic code written in assembly to Jasmin, a language designed for high-assurance cryptography, and machine-checked for conformance against verified reference implementations, potentially offering comparable guarantees; and evaluate the viability of our approach with case studies drawn from mainstream cryptographic libraries.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1176">
                     <div class="heading">
@@ -387,6 +436,58 @@ Keywords.  Layered Attestation; Run-Time Attestation; Hardware-based
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1201">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Combining Program and Protocol Analysis for Frontrunning Resistance in Smart Contracts <a class="abstract_link" href="FCS-2026-07-25.html#talk:1201">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8309.html">Sebastian Holler</a><sup>1</sup>, <a class="person" href="person8310.html">Yan Farba</a><sup>2</sup>, <a class="person" href="person8311.html">Clara Schneidewind</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> MPI-SP</div>
+                                <div class="affiliation_item"><sup>2</sup> MPI-SP, Ruhr University Bochum</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Frontrunning is a smart contract vulnerability that stems from the non-synchronous nature of blockchain transaction processing. Traditional approaches to detecting frontrunning in smart contracts rely on the notion of Transaction Order Dependence (TOD). A smart contract is considered to have TOD if the result of two contract calls may vary with their execution order. However, TOD does not serve as an accurate predictor for frontrunning vulnerabilities, as it disregards that honest users may purposefully limit contract calls to situations where reordering cannot be harmful. Following this observation, we develop the first frontrunning analysis tool that combines program analysis of a smart contract with protocol analysis for modeling honest user strategies.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1202">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Renegade: Blockchain Protocols Simplified <a class="abstract_link" href="FCS-2026-07-25.html#talk:1202">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8312.html">Kartikeya Gaur</a><sup>1</sup>, <a class="person" href="person8313.html">Clara Schneidewind</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Max Planck Institute for Security and Privacy (MPI-SP)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Blockchain-based distributed consensus enables mutually mistrusting users to jointly realize decentralized services. Cryptocurrencies like Bitcoin or Ethereum use this technology to implement decentralized payment systems and computing platforms. These systems, however, suffer from scalability drawbacks: the underlying consensus mechanism inherently limits their throughput, causing long transaction processing times and transaction costs when scaling
+them up to large user numbers. A promising approach to mitigate these scalability issues are so-called off-chain protocols. In off-chain protocols, users exchange cryptographic information, which enables them to securely batch multiple transactions, such that their effect can be enforced with a small number of on-chain transactions that are processed by the consensus. Prominently, payment channels use such a mechanism to enable fast and cheap bilateral payments between users. While bringing practical benefits, off-chain protocols are hard to design securely: E.g., payment channel users only enjoy security guarantees if they meet channel-specific deadlines, and constantly monitor the blockchain to detect and punish misbehaviour of the channel counterparty. Small design flaws (e.g., a miscalculated deadline) can immediately result in the loss of user funds. Despite these complexities, so far, there exist no frameworks that help protocol designers in the secure design and verification of those protocols. To help this, we make the following contributions: (1) We present Renegade, an intermediate language for designing blockchain protocols - cryptographic protocols that involve blockchain interactions; (2) We present a compilation from Renegade protocols into blockchain protocols for Bitcoin. The compilation is general enough to be extended to many other cryptocurrencies as compilation targets; (3) We provide a computational soundness proof, showing that all behaviour of compiled protocols in a computational model of cryptography is captured by the symbolic Renegade 
+protocol semantics; (4) We implement the Renegade semantics in the proof assistant Rocq, and conduct a case study, demonstrating Renegade’s utility in reasoning about state-of-the art payment channel protocols. The work presented in this paper is in progress.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1203">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Robust Logical Foundations for Mechanizing Post-Quantum Cryptography in Squirrel <a class="abstract_link" href="FCS-2026-07-25.html#talk:1203">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person8314.html">David Baelde</a><sup>1</sup>, <a class="person" href="person8315.html">Antoine Dallon</a><sup>2</sup>, <a class="person" href="person8316.html">Stéphanie Delaune</a><sup>1</sup>, <a class="person" href="person8317.html">Charlie Jacomme</a><sup>3</sup>, <a class="person" href="person8318.html">Adrien Koutsos</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Univ Rennes, IRISA, CNRS</div>
+                                <div class="affiliation_item"><sup>2</sup> AMIAD</div>
+                                <div class="affiliation_item"><sup>3</sup> Inria Nancy Grand-Est, Université de Lorraine, LORIA</div>
+                                <div class="affiliation_item"><sup>4</sup> Inria Paris</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The advent of quantum computers has initiated both research and standardization efforts toward the development of cryptographic primitives and communication protocols that remain  secure against attackers equipped with quantum computers. Computer-aided verification has proven valuable in this context, as it helps identify flaws early and strengthens confidence in cryptographic systems. However, existing verification tools are typically designed for a specific attacker model (most often polynomial-time Turing machines in line with classical cryptographic assumptions) and therefore require adaptation to accurately capture the quantum setting.
+
+In this work, we present a novel post-quantum extension of Squirrel, a proof assistant that provides computational guarantees for cryptographic primitives and protocols. Our extension is fully embedded in the higher-order logic underlying Squirrel, allowing logical terms to directly represent quantum values. This design choice makes the extension generic, preserves compatibility with the latest features of Squirrel, and supports its long-term integration into the tool. We implement our approach within Squirrel and validate it through several case studies. In particular, we obtain post-quantum security guarantees for multiple KEM combiners, as well as for two hybrid key-exchange protocols.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 

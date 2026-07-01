@@ -90,6 +90,7 @@
 <span class="separator"> | </span>                <a href="SD-index.html">SD</a>
 <span class="separator"> | </span>                <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
 <span class="separator"> | </span>                <a href="SmP-index.html">SmP</a>
+<span class="separator"> | </span>                <a href="Soft-index.html">Soft</a>
 <span class="separator"> | </span>                <a href="ST4DM-index.html">ST4DM</a>
 <span class="separator"> | </span>                <a href="SYNT-index.html">SYNT</a>
 <span class="separator"> | </span>                <a href="TEAL-index.html">TEAL</a>
@@ -143,7 +144,7 @@
                             <td>
                                 <div class="title">Trimming Pseudo-Boolean Proofs <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1020">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person7206.html">Berhan Oumer Adame</a><sup>1</sup>, <a class="person" href="person7207.html">Bart Bogaerts</a><sup>2</sup>, <a class="person" href="person7208.html">Benjamin Bogø</a><sup>3</sup>, <a class="person" href="person7209.html">Simon Dold</a><sup>4</sup>, <a class="person" href="person7210.html">Arthur GONTIER</a><sup>5</sup>, <a class="person" href="person7211.html">Wietze Koops</a><sup>6</sup>, <a class="person" href="person7212.html">Ciaran McCreesh</a><sup>5</sup>, <a class="person" href="person7213.html">Matthew J. McIlree</a><sup>5</sup>, <a class="person" href="person7214.html">Jakob Nordström</a><sup>3</sup>, <a class="person" href="person7215.html">Andy Oertel</a><sup>6</sup>, <a class="person" href="person7216.html">Adrian Rebola-Pardo</a><sup>7</sup>, <a class="person" href="person7217.html">Mark Turnbull</a><sup>5</sup>                                </div>
+<a class="person" href="person10935.html">Berhan Oumer Adame</a><sup>1</sup>, <a class="person" href="person10936.html">Bart Bogaerts</a><sup>2</sup>, <a class="person" href="person10937.html">Benjamin Bogø</a><sup>3</sup>, <a class="person" href="person10938.html">Simon Dold</a><sup>4</sup>, <a class="person" href="person10939.html">Arthur GONTIER</a><sup>5</sup>, <a class="person" href="person10940.html">Wietze Koops</a><sup>6</sup>, <a class="person" href="person10941.html">Ciaran McCreesh</a><sup>5</sup>, <a class="person" href="person10942.html">Matthew J. McIlree</a><sup>5</sup>, <a class="person" href="person10943.html">Jakob Nordström</a><sup>3</sup>, <a class="person" href="person10944.html">Andy Oertel</a><sup>6</sup>, <a class="person" href="person10945.html">Adrian Rebola-Pardo</a><sup>7</sup>, <a class="person" href="person10946.html">Mark Turnbull</a><sup>5</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Vrije Universiteit Brussel, Belgium\\ Arba Minch University, Ethiopia</div>
                                 <div class="affiliation_item"><sup>2</sup> KU Leuven, Belgium\\ Vrije Universiteit Brussel, Belgium</div>
@@ -169,98 +170,12 @@ For applications such as proof storage or UNSAT core extraction, one may wish to
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:1021">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Certifying Algorithms for Nonlinear Real Arithmetic <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1021">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7218.html">Tomaz Mascarenhas</a><sup>1</sup>, <a class="person" href="person7219.html">Haniel Barbosa</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Reasoning about nonlinear real arithmetic (NRA) is pervasive in safety-critical
-applications. The applications range from robot motion planning to digital signal processing.
-Nevertheless, the decision procedures involved are
-usually highly intricate. The fastest complete algorithms have a
-doubly exponential lower bound, their implementations are notoriously delicate,
-and even mature tools occasionally return incorrect results. Given that many applications cannot
-tolerate unsound answers, it is necessary to develop means for certifying
-the answers of such algorithms.
-
-Two routes are commonly pursued: building a formally verified
-implementation, or instrumenting an existing solver to produce a
-machine-checkable proof certificate for every answer. The latter is
-considerably less intrusive, can be adapted more easily to changes in the solver, and is already
-the path taken by proof-producing SMT solvers such as cvc5 for theories like
-linear arithmetic and bit-vectors. Extending this
-treatment to NRA, however, has remained largely open.
-
-In this talk we report on ongoing work to bring proof production --- and
-independent proof reconstruction --- to four NRA algorithms with very different
-flavours, all in the context of cvc5 and lean-smt, a Lean tactic capable of
-reconstructing such proofs in the ITP:
-
-  - Incremental Linearization (Cimatti et al.). An
-    abstraction-refinement procedure that approximates multiplication by
-    its tangent plane and transcendental functions by their Taylor polynomials.
-    We have instrumented cvc5 to produce proofs for this algorithm, formalized the solver's
-    proof calculus in Lean and extended lean-smt to reconstruct its proofs.
-    The mechanization exposed several missing
-    hypotheses and unsound corner cases in the documented calculus, which the
-    cvc5 team has since addressed.
-
-  - Cylindrical Algebraic Decomposition (Collins). The fastest
-    known complete decision procedure for NRA, but also the most complex to
-    instrument. We have instrumented cvc5's CAD to to produce proofs for the univariate case,
-    and extended lean-smt so that it is capable
-    of reconstructing such proofs. For achieving this, we had to implement a library
-    of computable real algebraic numbers and to prove Sturm's theorem in Lean.
-    This was inspired by a prior work done in the ITP Isabelle/HOL.
-    We are currently working on the multivariate case. This generalization poses
-    several challenges: formalizing complex proofs of the theorems on which
-    the algorithm is based on; certifying that certain computations were
-    done correctly by cvc5; instrumenting cvc5 to log its reasoning following
-    a novel proof calculus.
-
-  - Sums of Squares (Parrilo). This method reduces the
-      unsatisfiability of a universally quantified nonlinear formula to
-      finding sums-of-squares decompositions of polynomials via semidefinite
-      programming. Although incomplete, the approach naturally produces a
-      certificate in the form of a polynomial identity, which is very cheap
-      to verify. The main challenge is that semidefinite programming solvers
-      often suffer from numerical imprecision due to floating-point
-      arithmetic; the proof checker must therefore attempt to repair any
-      incorrect certificate. Such certificates have already been explored in
-      prior work within HOL Light. We are investigating this
-      technique as a solver for QF_NRA in cvc5.
-
-  - Gröbner Basis (Tiwari). Similarly to Sums of Squares,
-    this method aims to find a polynomial that certifies the unsatisfiability
-    of the input formula. The result known as Positivstellensatz guarantees that,
-    under certain conditions, such polynomial must be present in the elements
-    of the Gröbner Basis of the input. This method uses a set of extension rules
-    to force such conditions to be met. It is thus a method complete relative to an
-    oracle, which would decide which extension rule to apply in a given state.
-        Checking the certificate produced by this method also requires tracking the variables
-        introduced by the extension rules and proving a relationship between the produced polynomial
-        (which may have fresh variables) and the input polynomials.
-    We are likewise prototyping it inside cvc5.
-
-The four algorithms span a useful dichotomy:
-incremental linearization and CAD are well-established inside SMT solvers but there are
-real challenges to check its results; the witness-based methods are more exploratory
-on the solver side, but the produced certificates have a cheap overhead to be computed
-and are straightforward to verify.</p>
-                                </div>
-                            </td>
-                        </tr>
                         <tr class="talk" id="talk:1022">
                             <td class="time"></td>
                             <td>
                                 <div class="title">Proof Logging for Nonlinear Boundary-Value Solvers: A Falkner-Skan Case Study <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1022">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person7220.html">Karthikhesvaran S. S.</a><sup>1</sup>                                </div>
+<a class="person" href="person10947.html">Karthikhesvaran S. S.</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Indiana University Bloomington</div>
                                 </div>
@@ -273,12 +188,25 @@ The case study also highlights challenges that are specific to numerical reasoni
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1517">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Towards Practical Zero-Knowledge Proof for PSPACE <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1517">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10948.html">Ashwin Karthikeyan</a><sup>1</sup>, <a class="person" href="person10949.html">Hengyu Liu</a><sup>2</sup>, <a class="person" href="person10950.html">Kuldeep S. Meel</a><sup>1</sup>, <a class="person" href="person10951.html">Ning Luo</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
+                                <div class="affiliation_item"><sup>2</sup> Aalborg University</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Illinois</div>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1023">
                             <td class="time"></td>
                             <td>
                                 <div class="title">Proving back and forth with the same rules <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1023">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person7221.html">Peter Pfeiffer</a><sup>1</sup>, <a class="person" href="person7222.html">Adrian Rebola-Pardo</a><sup>2</sup>                                </div>
+<a class="person" href="person10952.html">Peter Pfeiffer</a><sup>1</sup>, <a class="person" href="person10953.html">Adrian Rebola-Pardo</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JKU Linz</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Wien, JKU Linz</div>
@@ -370,153 +298,12 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
 
 
                     <table class="talks">
-                        <tr class="talk" id="talk:1024">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">End-to-End Verification for Constraint Programming: Closing the Encodings Gap <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1024">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7223.html">Wietze Koops</a><sup>1</sup>, <a class="person" href="person7224.html">Ciaran McCreesh</a><sup>2</sup>, <a class="person" href="person7225.html">Matthew J. McIlree</a><sup>2</sup>, <a class="person" href="person7226.html">Magnus O. Myreen</a><sup>3</sup>, <a class="person" href="person7227.html">Jakob Nordström</a><sup>4</sup>, <a class="person" href="person7228.html">Philip Rodgers</a><sup>2</sup>, <a class="person" href="person7229.html">Yong Kiam Tan</a><sup>5</sup>, <a class="person" href="person7230.html">Wei-Lin Wu</a><sup>6</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Lund University and University of Copenhagen</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
-                                <div class="affiliation_item"><sup>3</sup> Chalmers University</div>
-                                <div class="affiliation_item"><sup>4</sup> University of Copenhagen and Lund University</div>
-                                <div class="affiliation_item"><sup>5</sup> Nanyang Technological University and Singapore Institute for Infocomm Research</div>
-                                <div class="affiliation_item"><sup>6</sup> Singapore Institute for Infocomm Research</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Pseudo-Boolean proof logging is now being used for a wide range of problems that are not naturally pseudo-Boolean. This is very useful for verifying complex algorithmic and reasoning steps being carried out by solvers, but there is still an encoding gap: why should we trust that the pseudo-Boolean model means the same thing as whatever problem the user cares about? And, for that matter, does the solution as expressed over Boolean variables correspond to the high-level solution that we claim? For a variety of subgraph-finding problems, Gocht et al. introduced end-to-end verification, starting with a HOL description of the problem and verifying the meaning of the output in graph terms. There, the final verification theorem does not mention the pseudo-Boolean intermediaries or how the VeriPB proof system works. In this talk, we discuss what it would take to get a similar process to work for constraint programming, building upon the VeriPB proof logging methodology introduced in the Glasgow Constraint Solver. We will explain what we are aiming for and why we want it; why the problem is complicated; how we've chosen to try to address it; and what remains to be done. Ultimately, we would like to be able to go from human-understandable problem statements written in several domain-specific languages, all the way to solutions, whilst having extremely strong guarantees that the solutions are correct.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1026">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Certificate-Based Propagation: Foundations for Correct Propagator Design <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1026">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7232.html">Maarten Flippo</a><sup>1</sup>, <a class="person" href="person7233.html">Imko Marijnissen</a><sup>1</sup>, <a class="person" href="person7234.html">Emir Demirović</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Recently, we have seen many advances in proof logging methods for CP solvers.
-However, by design, proof logging is agnostic to how the solver produces a proof. 
-For example, it does not verify that an individual propagator achieves its advertised level of consistency. 
-This potential source of bugs may lead to misleading empirical conclusions about new propagation algorithms.
-
-We propose a runtime certification framework to address this gap.
-Propagators emit certificates that justify both the retention and the removal of values in domains.
-These certificates are checked at runtime by checkers that are significantly simpler than the propagation algorithms.
-
-We make the existential definitions of consistency levels constructive. 
-At fixpoint, a propagator must be able to produce a witness for any relevant value (bounds for bounds-consistency; domain values for domain-consistency). 
-If it cannot provide a witness for a specific value, it did not propagate to its advertised consistency level.
-
-To certify removal of values, every value removal and conflict must be accompanied by an explanation. 
-Explanations are checked for soundness and applicability (i.e., whether they are applicable in the current state). 
-This is closely related to checking a proof step, but done at runtime against the live solver state rather than post-hoc.
-
-Finally, we introduce the notion of weak consistency for propagators that are neither bounds- nor domain-consistent (e.g., timetabling for cumulative, prevent-and-check for circuit).
-A weakly-consistent propagator removes those values that, when assigned to a variable, trigger a detectable conflict.
-This gives us a verifiable property applicable to many practical propagators that previously lacked consistency properties.
-
-We implemented propagation certificates in Pumpkin, with checkers for linear inequality, maximum, element, cumulative (timetabling), and circuit (prevent-and-check). 
-Enabling all checkers results in a 1–2 order-of-magnitude slowdown in our experiments.
-However, only running checkers for a single propagator type (the realistic development scenario) substantially reduces this overhead. 
-Using this framework, we identified and fixed several consistency bugs in propagators in Pumpkin.
-In addition, manually injected off-by-one mutations were also caught within one second of solve time.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1660">
-                    <div class="heading">
-                        <span class="interval">15:30-16:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">WHOOPS</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room50.html">C1.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1661">
-                    <div class="heading">
-                        <span class="interval">16:00-17:20</span>
-                        <span class="title">Papers 3</span>
-                        <span class="group_tag">WHOOPS</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room50.html">C1.01</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:1027">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Generalised Clause Learning for Constraint Programming <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1027">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7235.html">Justin Pearson</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Uppsala universitet</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this talk, I will  present a generalisation of conflict-driven
-  clause learning (CDCL) for constraint programming over abstract
-  domains. A core idea in constraint programming is propagation: each
-  constraint has an associated algorithm that during search prunes
-  potential non-solutions.  The abstract theory of constraint
-  propagators as idempotent, monotonic, contracting functions over
-  partial orders has led to the development of propagators and solvers
-  over non-integer domains, such as strings, sets or floating point
-  numbers.  Building on this theory, I introduce a generalisation of
-  reasons, explanations, and implication graphs from CDCL to
-  propagation-based solving over abstract domains. A central result
-  shows that cuts in the implication graph are no-goods.  An abstract
-  scheme is presented that unifies CDCL solving from SAT and
-  lazy-clause search from constraint programming. This work is a first
-  step to generalising proof logging for abstract domains in
-  constraint programming.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1028">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">How can hard can multiplication be? <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1028">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7236.html">Matthew J. McIlree</a><sup>1</sup>, <a class="person" href="person7237.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Glasgow</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A constraint programming (CP) solver that implements proof logging will output a machine-checkable certificate of correctness alongside any result it obtains. This is useful for trusting claims of unsatisfiability or optimality, as well as for debugging and auditing solver implementations. Proofs can be constructed by having the solver log justifications for each inference it makes, and previous work has shown that many standard CP reasoning techniques can be efficiently justified using a pseudo-Boolean (PB) proof format.
-
-Multiplication constraints of the form $X \times Y = Z$ are a fundamental primitive for CP modelling, but they pose a unique challenge for PB proof logging, given their non-linear nature. In this talk, I will present an overview of how multiplication constraints can be encoded as 
-$0$-$1$-linear inequalities, and then how bounds-consistent reasoning can 
-be justified using the \emph{VeriPB} proof format. We will see that this is possible to achieve, but comes with significant costs in terms of proof logging and checking overhead. I will then 
-discuss what this means for certified CP more broadly, and some ideas 
-for making PB proofs of this nature more usable and efficiently checkable in practice. 
-
-This talk will be mostly based on the previously published paper, "Certifying Bounds Propagation for Integer Multiplication Constraints" and a short version was presented at AAAI in 2025.</p>
-                                </div>
-                            </td>
-                        </tr>
                         <tr class="talk" id="talk:1029">
                             <td class="time"></td>
                             <td>
                                 <div class="title">Efficient and Reliable Hitting-Set Computations for the Implicit Hitting Set Approach <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1029">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person7238.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person7239.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person7240.html">André Schidler</a><sup>3</sup>, <a class="person" href="person7241.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person7242.html">Bart Bogaerts</a><sup>4</sup>, <a class="person" href="person7243.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+<a class="person" href="person10954.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person10955.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person10956.html">André Schidler</a><sup>3</sup>, <a class="person" href="person10957.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person10958.html">Bart Bogaerts</a><sup>4</sup>, <a class="person" href="person10959.html">Matti Järvisalo</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
                                 <div class="affiliation_item"><sup>2</sup> Vrije Universiteit Brussel & KU Leuven</div>
@@ -530,12 +317,98 @@ The presented work deals with obtaining reliable hitting set computation in the 
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1021">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Certifying Algorithms for Nonlinear Real Arithmetic <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1021">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10960.html">Tomaz Mascarenhas</a><sup>1</sup>, <a class="person" href="person10961.html">Haniel Barbosa</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Reasoning about nonlinear real arithmetic (NRA) is pervasive in safety-critical
+applications. The applications range from robot motion planning to digital signal processing.
+Nevertheless, the decision procedures involved are
+usually highly intricate. The fastest complete algorithms have a
+doubly exponential lower bound, their implementations are notoriously delicate,
+and even mature tools occasionally return incorrect results. Given that many applications cannot
+tolerate unsound answers, it is necessary to develop means for certifying
+the answers of such algorithms.
+
+Two routes are commonly pursued: building a formally verified
+implementation, or instrumenting an existing solver to produce a
+machine-checkable proof certificate for every answer. The latter is
+considerably less intrusive, can be adapted more easily to changes in the solver, and is already
+the path taken by proof-producing SMT solvers such as cvc5 for theories like
+linear arithmetic and bit-vectors. Extending this
+treatment to NRA, however, has remained largely open.
+
+In this talk we report on ongoing work to bring proof production --- and
+independent proof reconstruction --- to four NRA algorithms with very different
+flavours, all in the context of cvc5 and lean-smt, a Lean tactic capable of
+reconstructing such proofs in the ITP:
+
+  - Incremental Linearization (Cimatti et al.). An
+    abstraction-refinement procedure that approximates multiplication by
+    its tangent plane and transcendental functions by their Taylor polynomials.
+    We have instrumented cvc5 to produce proofs for this algorithm, formalized the solver's
+    proof calculus in Lean and extended lean-smt to reconstruct its proofs.
+    The mechanization exposed several missing
+    hypotheses and unsound corner cases in the documented calculus, which the
+    cvc5 team has since addressed.
+
+  - Cylindrical Algebraic Decomposition (Collins). The fastest
+    known complete decision procedure for NRA, but also the most complex to
+    instrument. We have instrumented cvc5's CAD to to produce proofs for the univariate case,
+    and extended lean-smt so that it is capable
+    of reconstructing such proofs. For achieving this, we had to implement a library
+    of computable real algebraic numbers and to prove Sturm's theorem in Lean.
+    This was inspired by a prior work done in the ITP Isabelle/HOL.
+    We are currently working on the multivariate case. This generalization poses
+    several challenges: formalizing complex proofs of the theorems on which
+    the algorithm is based on; certifying that certain computations were
+    done correctly by cvc5; instrumenting cvc5 to log its reasoning following
+    a novel proof calculus.
+
+  - Sums of Squares (Parrilo). This method reduces the
+      unsatisfiability of a universally quantified nonlinear formula to
+      finding sums-of-squares decompositions of polynomials via semidefinite
+      programming. Although incomplete, the approach naturally produces a
+      certificate in the form of a polynomial identity, which is very cheap
+      to verify. The main challenge is that semidefinite programming solvers
+      often suffer from numerical imprecision due to floating-point
+      arithmetic; the proof checker must therefore attempt to repair any
+      incorrect certificate. Such certificates have already been explored in
+      prior work within HOL Light. We are investigating this
+      technique as a solver for QF_NRA in cvc5.
+
+  - Gröbner Basis (Tiwari). Similarly to Sums of Squares,
+    this method aims to find a polynomial that certifies the unsatisfiability
+    of the input formula. The result known as Positivstellensatz guarantees that,
+    under certain conditions, such polynomial must be present in the elements
+    of the Gröbner Basis of the input. This method uses a set of extension rules
+    to force such conditions to be met. It is thus a method complete relative to an
+    oracle, which would decide which extension rule to apply in a given state.
+        Checking the certificate produced by this method also requires tracking the variables
+        introduced by the extension rules and proving a relationship between the produced polynomial
+        (which may have fresh variables) and the input polynomials.
+    We are likewise prototyping it inside cvc5.
+
+The four algorithms span a useful dichotomy:
+incremental linearization and CAD are well-established inside SMT solvers but there are
+real challenges to check its results; the witness-based methods are more exploratory
+on the solver side, but the produced certificates have a cheap overhead to be computed
+and are straightforward to verify.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1030">
                             <td class="time"></td>
                             <td>
                                 <div class="title">Pseudo-Boolean Blasting for the SMT Theory of Bit-Vectors <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1030">(abstract)</a></div>
                                 <div class="authors">
-<a class="person" href="person7244.html">Pedro Saccomani</a><sup>1</sup>, <a class="person" href="person7245.html">Haniel Barbosa</a><sup>2</sup>                                </div>
+<a class="person" href="person10962.html">Pedro Saccomani</a><sup>1</sup>, <a class="person" href="person10963.html">Haniel Barbosa</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
                                 <div class="affiliation_item"><sup>2</sup> Universidade Federal de MInas Ferais</div>
@@ -570,6 +443,147 @@ them, and their respective proof checkers Carcara and Ethos to verify them.
 In the talk we will detail the encoding strategy used for the operators we already cover, the obstacles posed
 by bit-shifts, division and remainder, and how the cutting-planes proofs produced by RoundingSat can be
 lifted into Alethe and CPC for checking by Carcara and Ethos.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1660">
+                    <div class="heading">
+                        <span class="interval">15:30-16:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">WHOOPS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room50.html">C1.01</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1661">
+                    <div class="heading">
+                        <span class="interval">16:00-17:40</span>
+                        <span class="title">Papers 3</span>
+                        <span class="group_tag">WHOOPS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room50.html">C1.01</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1024">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">End-to-End Verification for Constraint Programming: Closing the Encodings Gap <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1024">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10964.html">Wietze Koops</a><sup>1</sup>, <a class="person" href="person10965.html">Ciaran McCreesh</a><sup>2</sup>, <a class="person" href="person10966.html">Matthew J. McIlree</a><sup>2</sup>, <a class="person" href="person10967.html">Magnus O. Myreen</a><sup>3</sup>, <a class="person" href="person10968.html">Jakob Nordström</a><sup>4</sup>, <a class="person" href="person10969.html">Philip Rodgers</a><sup>2</sup>, <a class="person" href="person10970.html">Yong Kiam Tan</a><sup>5</sup>, <a class="person" href="person10971.html">Wei-Lin Wu</a><sup>6</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Lund University and University of Copenhagen</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
+                                <div class="affiliation_item"><sup>3</sup> Chalmers University</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Copenhagen and Lund University</div>
+                                <div class="affiliation_item"><sup>5</sup> Nanyang Technological University and Singapore Institute for Infocomm Research</div>
+                                <div class="affiliation_item"><sup>6</sup> Singapore Institute for Infocomm Research</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Pseudo-Boolean proof logging is now being used for a wide range of problems that are not naturally pseudo-Boolean. This is very useful for verifying complex algorithmic and reasoning steps being carried out by solvers, but there is still an encoding gap: why should we trust that the pseudo-Boolean model means the same thing as whatever problem the user cares about? And, for that matter, does the solution as expressed over Boolean variables correspond to the high-level solution that we claim? For a variety of subgraph-finding problems, Gocht et al. introduced end-to-end verification, starting with a HOL description of the problem and verifying the meaning of the output in graph terms. There, the final verification theorem does not mention the pseudo-Boolean intermediaries or how the VeriPB proof system works. In this talk, we discuss what it would take to get a similar process to work for constraint programming, building upon the VeriPB proof logging methodology introduced in the Glasgow Constraint Solver. We will explain what we are aiming for and why we want it; why the problem is complicated; how we've chosen to try to address it; and what remains to be done. Ultimately, we would like to be able to go from human-understandable problem statements written in several domain-specific languages, all the way to solutions, whilst having extremely strong guarantees that the solutions are correct.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1027">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Generalised Clause Learning for Constraint Programming <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1027">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10973.html">Justin Pearson</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala universitet</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this talk, I will  present a generalisation of conflict-driven
+  clause learning (CDCL) for constraint programming over abstract
+  domains. A core idea in constraint programming is propagation: each
+  constraint has an associated algorithm that during search prunes
+  potential non-solutions.  The abstract theory of constraint
+  propagators as idempotent, monotonic, contracting functions over
+  partial orders has led to the development of propagators and solvers
+  over non-integer domains, such as strings, sets or floating point
+  numbers.  Building on this theory, I introduce a generalisation of
+  reasons, explanations, and implication graphs from CDCL to
+  propagation-based solving over abstract domains. A central result
+  shows that cuts in the implication graph are no-goods.  An abstract
+  scheme is presented that unifies CDCL solving from SAT and
+  lazy-clause search from constraint programming. This work is a first
+  step to generalising proof logging for abstract domains in
+  constraint programming.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1026">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Certificate-Based Propagation: Foundations for Correct Propagator Design <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1026">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10974.html">Maarten Flippo</a><sup>1</sup>, <a class="person" href="person10975.html">Imko Marijnissen</a><sup>1</sup>, <a class="person" href="person10976.html">Emir Demirović</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Recently, we have seen many advances in proof logging methods for CP solvers.
+However, by design, proof logging is agnostic to how the solver produces a proof. 
+For example, it does not verify that an individual propagator achieves its advertised level of consistency. 
+This potential source of bugs may lead to misleading empirical conclusions about new propagation algorithms.
+
+We propose a runtime certification framework to address this gap.
+Propagators emit certificates that justify both the retention and the removal of values in domains.
+These certificates are checked at runtime by checkers that are significantly simpler than the propagation algorithms.
+
+We make the existential definitions of consistency levels constructive. 
+At fixpoint, a propagator must be able to produce a witness for any relevant value (bounds for bounds-consistency; domain values for domain-consistency). 
+If it cannot provide a witness for a specific value, it did not propagate to its advertised consistency level.
+
+To certify removal of values, every value removal and conflict must be accompanied by an explanation. 
+Explanations are checked for soundness and applicability (i.e., whether they are applicable in the current state). 
+This is closely related to checking a proof step, but done at runtime against the live solver state rather than post-hoc.
+
+Finally, we introduce the notion of weak consistency for propagators that are neither bounds- nor domain-consistent (e.g., timetabling for cumulative, prevent-and-check for circuit).
+A weakly-consistent propagator removes those values that, when assigned to a variable, trigger a detectable conflict.
+This gives us a verifiable property applicable to many practical propagators that previously lacked consistency properties.
+
+We implemented propagation certificates in Pumpkin, with checkers for linear inequality, maximum, element, cumulative (timetabling), and circuit (prevent-and-check). 
+Enabling all checkers results in a 1–2 order-of-magnitude slowdown in our experiments.
+However, only running checkers for a single propagator type (the realistic development scenario) substantially reduces this overhead. 
+Using this framework, we identified and fixed several consistency bugs in propagators in Pumpkin.
+In addition, manually injected off-by-one mutations were also caught within one second of solve time.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1028">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">How can hard can multiplication be? <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1028">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person10977.html">Matthew J. McIlree</a><sup>1</sup>, <a class="person" href="person10978.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Glasgow</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A constraint programming (CP) solver that implements proof logging will output a machine-checkable certificate of correctness alongside any result it obtains. This is useful for trusting claims of unsatisfiability or optimality, as well as for debugging and auditing solver implementations. Proofs can be constructed by having the solver log justifications for each inference it makes, and previous work has shown that many standard CP reasoning techniques can be efficiently justified using a pseudo-Boolean (PB) proof format.
+
+Multiplication constraints of the form $X \times Y = Z$ are a fundamental primitive for CP modelling, but they pose a unique challenge for PB proof logging, given their non-linear nature. In this talk, I will present an overview of how multiplication constraints can be encoded as 
+$0$-$1$-linear inequalities, and then how bounds-consistent reasoning can 
+be justified using the \emph{VeriPB} proof format. We will see that this is possible to achieve, but comes with significant costs in terms of proof logging and checking overhead. I will then 
+discuss what this means for certified CP more broadly, and some ideas 
+for making PB proofs of this nature more usable and efficiently checkable in practice. 
+
+This talk will be mostly based on the previously published paper, "Certifying Bounds Propagation for Integer Multiplication Constraints" and a short version was presented at AAAI in 2025.</p>
                                 </div>
                             </td>
                         </tr>
