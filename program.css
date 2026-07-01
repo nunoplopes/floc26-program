@@ -1,4 +1,4 @@
-body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; background: #fff; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; background: #fff; overflow-wrap: break-word; word-wrap: break-word; }
 .page_table { width: 100%; border-collapse: collapse; }
 .central_td_column { padding: 16px 24px; }
 
@@ -43,6 +43,7 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 table.talks { width: 100%; margin-top: 6px; border-collapse: collapse; }
 table.talks td { padding: 4px 8px; vertical-align: top; border-top: 1px dashed #ddd; }
 table.talks td.time { width: 60px; font-weight: bold; color: #225; white-space: nowrap; }
+.title .duration { display: inline-block; font-weight: normal; font-size: 11px; color: #338; background: #eef; border-radius: 3px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
 .authors { font-size: 13px; color: #225; }
 .authors sup { font-size: 10px; }
 .affiliations { font-size: 12px; color: #666; font-style: italic; margin-top: 2px; }
@@ -112,3 +113,37 @@ table.bio_layout { width: 100%; border-collapse: collapse; margin-top: 8px; }
 .bio_table tr.top td { border-top: 1px solid #ddd; }
 .bio_table tr.bottom td { border-bottom: 1px solid #ddd; }
 .bio_table a { color: #225; }
+
+@media (max-width: 700px) {
+    .page_table { table-layout: fixed; }
+    .central_td_column { padding: 12px; word-wrap: break-word; overflow-wrap: break-word; }
+
+    #header { flex-wrap: wrap; }
+    #header .event_logo { height: 60px; }
+    #header #title, #title { font-size: 18px; }
+
+    #main_menu a { padding: 4px 8px; margin-bottom: 4px; font-size: 13px; }
+    #menu2, #menu3 { line-height: 2.4; }
+
+    .session .group_tag { float: none; display: inline-block; margin-top: 4px; }
+
+    table.talks, table.talks tbody, table.talks tr, table.talks td { display: block; width: auto; }
+    table.talks td.time { width: auto; padding-bottom: 0; white-space: normal; }
+    tr.talk { margin-bottom: 10px; padding-top: 6px; border-top: 1px dashed #ddd; }
+    tr.talk td.time { border-top: none; }
+
+    table.index, table.index tbody, table.index tr, table.index td { display: block; width: auto; }
+    table.index tr.entry td { border-bottom: none; padding: 2px 10px; }
+    table.index tr.entry { border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 6px; }
+
+    .room_sessions .session_meta { display: block; margin-left: 0; margin-top: 2px; }
+
+    table.bio_layout, table.bio_layout tbody, table.bio_layout tr, table.bio_layout td { display: block; width: auto; }
+    .bio_photo_cell { padding-right: 0; padding-bottom: 12px; text-align: center; }
+    .bio_img, .bio_img_placeholder { margin: 0 auto; }
+
+    .bio_affiliations, .bio_affiliations tbody, .bio_affiliations tr, .bio_affiliations td { display: block; width: auto; }
+    .bio_affiliation_label { padding-bottom: 0; }
+
+    .bio_table, .bio_table tbody, .bio_table tr, .bio_table td { display: block; width: auto; }
+}
