@@ -3,7 +3,7 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 .central_td_column { padding: 16px 24px; }
 
 #header { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid #ccc; }
-#header .event_logo { height: 100px; width: auto; flex: 0 0 auto; }
+#header .event_logo { max-height: 75px; width: auto; flex: 0 0 auto; }
 #header #title { font-size: 22px; font-weight: bold; padding: 0; border: none; }
 #title { font-size: 22px; font-weight: bold; padding: 8px 0; border-bottom: 1px solid #ccc; }
 
@@ -25,7 +25,7 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 .days_line a.selected { font-weight: bold; color: #000; }
 .day_icon { height: 14px; width: 14px; vertical-align: -2px; margin: 0 4px; }
 
-.date { background: #ddd; padding: 6px 10px; margin-top: 18px; font-weight: bold; }
+.date { position: sticky; top: 0; z-index: 10; background: #ddd; padding: 6px 10px; margin-top: 18px; font-weight: bold; }
 
 .session { border-left: 3px solid #cce; padding: 8px 12px; margin: 8px 0; background: #fafaff; }
 .session.subsession { margin-left: 28px; border-left-color: #99b; background: #f3f3fb; }
