@@ -11,7 +11,7 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 #main_menu a { display: inline-block; padding: 8px 18px; margin-right: 8px; font-size: 15px; font-weight: 600; background: #eef; color: #225; text-decoration: none; border-radius: 4px; }
 #main_menu a.selected { background: #c33; color: #fff; }
 
-#menu2, #menu3 { display: flex; flex-wrap: wrap; align-items: center; row-gap: 10px; column-gap: 8px; padding: 10px 0; font-size: 14px; border-bottom: 1px solid #eee; }
+#menu2, #menu3 { display: flex; flex-wrap: wrap; align-items: center; row-gap: 6px; column-gap: 7px; padding: 10px 0; font-size: 14px;border-bottom: 1px solid #eee;}
 #menu2 a, #menu3 a { display: inline-block; background: #def; color: #225; text-decoration: none; white-space: nowrap; padding: 5px 12px; border-radius: 3px; }
 #menu2 a:hover, #menu3 a:hover { background: #cde; }
 #menu2 a.selected, #menu3 a.selected { background: #c33; color: #fff; font-weight: bold; }
