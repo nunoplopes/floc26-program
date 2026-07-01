@@ -233,61 +233,147 @@ The tool has been used for several years as a gentle introduction to proposition
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Proof-Guided SAT Encoding Selection for Bit-Vector Multiplication</div>
-                                <div class="authors"><a class="person" href="person24182.html">Proof-Guided SAT Encoding Selection for Bit-Vector Multiplication - Armin Biere</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Certified Variable Reordering in Cardinality Encodings</div>
-                                <div class="authors"><a class="person" href="person23994.html">Certified Variable Reordering in Cardinality Encodings - Joseph Reeves</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Trimming Pseudo-Boolean Proofs</div>
-                                <div class="authors"><a class="person" href="person23972.html">Trimming Pseudo-Boolean Proofs - Berhan Oumer Adame</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">PBLean: Pseudo-Boolean Proof Certificates for Lean 4</div>
-                                <div class="authors"><a class="person" href="person24050.html">PBLean: Pseudo-Boolean Proof Certificates for Lean 4 - Stefan Szeider</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Scaling Zero Knowledge UNSAT Verification via Normalized Chaining</div>
-                                <div class="authors"><a class="person" href="person25084.html">Scaling Zero Knowledge UNSAT Verification via Normalized Chaining - Ashwin Karthikeyan</a></div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
-                <div class="session" id="session:1621">
+                <div class="session" id="session:1338">
                     <div class="heading">
-                        <span class="interval">09:00-10:00</span>
-                        <span class="title">Hugo Paquet (Invited, joint with Galop)</span>
-                        <span class="group_tag">TLLA</span>
+                        <span class="interval">09:00-09:10</span>
+                        <span class="title">Opening</span>
+                        <span class="group_tag">ModRef</span>
                     </div>
 
                     <div class="session_chair">
                         <div class="chair_word">Chair:</div>
                         <div class="chair_names">
-<a class="person" href="person25719.html">Olimpieri</a>
+<a class="person" href="person23427.html">Jordi Coll</a>
                         </div>
                     </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room59.html">C5.07</a>
+                        <a class="room_name" href="room45.html">C3.02</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:783">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Welcome and Introduction <a class="abstract_link" href="ModRef-2026-07-19.html#talk:783">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5680.html">Jordi Coll</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat de Girona</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1422">
+                    <div class="heading">
+                        <span class="interval">09:00-10:00</span>
+                        <span class="title">Learning</span>
+                        <span class="group_tag">OVERLAY</span>
+                    </div>
+
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person23383.html">Nicola Gigante</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room37.html">C1.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:861">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Fairness Certificates via a Lean-Backed Trustworthy Probabilistic Typed Natural Deduction <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:861">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person6749.html">Fabio Aurelio D'Asaro</a><sup>1</sup>, <a class="person" href="person6750.html">Giuseppe Primiero</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Verona, University College London</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Milan</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present TPTND-Lean, a Lean 4 implementation of a core fragment of Trustworthy Probabilistic Typed Natural Deduction (TPTND). TPTND-Lean type-checks TPTND derivation trees whose leaves are empirical observations, and whose internal nodes are introduction or elimination rules for probabilistic connectives, producing machine-checked fairness certificates. In this implementation, frequencies and stored interval endpoints are rational numbers; the standard-error term used by the score-test acceptance bands is computed via a bounded-rational Newton iteration. The kernel is small and auditable; each derivation it accepts is a transferable, re-checkable certificate that binds together counts, statistical test, band, and verdict in a single typed tree. We describe a four-stage workflow that takes group-level summary statistics through claim selection and derivation construction to such a certificate. Two case studies on public data illustrate the approach: (i) the ProPublica COMPAS recidivism data (6172 defendants, reproducing the headline racial-bias finding), and (ii) HMDA mortgage-lending data for Delaware (54000 Black/White applications across 2022-2023, demonstrating multi-year temporal composition via Update and intersectional comparisons). Certificates are conditional: they verify the derivation relative to the supplied counts, the chosen statistical rule, and the checker, not the upstream data pipeline. The full source, data pipelines, and all derivations are publicly available at https://github.com/dasaro/tptnd-lean.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1265">
+                    <div class="heading">
+                        <span class="interval">09:00-10:10</span>
+                        <span class="title">Contributed Talks 1</span>
+                        <span class="group_tag">JoeFest</span>
+                    </div>
+
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person23575.html">Sander Beckers</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room46.html">C4.01</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1362">
+                    <div class="heading">
+                        <span class="interval">09:00-09:30</span>
+                        <span class="title">Informat meet & greet</span>
+                        <span class="group_tag">MW1</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room48.html">C5.01</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1279">
+                    <div class="heading">
+                        <span class="interval">09:00-10:40</span>
+                        <span class="title">Sunday morning 1</span>
+                        <span class="group_tag">LCC</span>
+                    </div>
+
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person23440.html">Isabel Oitavem</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room61.html">C4.06</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1302">
+                    <div class="heading">
+                        <span class="interval">09:00-09:50</span>
+                        <span class="title">Talk1</span>
+                        <span class="group_tag">LLM-Solve</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room55.html">C5.08</a>
                     </div>
 
 
@@ -335,196 +421,6 @@ The tool has been used for several years as a gentle introduction to proposition
 
 
                 </div>
-                <div class="session" id="session:1279">
-                    <div class="heading">
-                        <span class="interval">09:00-10:40</span>
-                        <span class="title">Sunday morning 1</span>
-                        <span class="group_tag">LCC</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person23440.html">Isabel Oitavem</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room61.html">C4.06</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">On the Complexity of Confluence and Church-Rosser Proofs, with Applications to Bounded Arithmetic</div>
-                                <div class="authors"><a class="person" href="person24494.html">On the Complexity of Confluence and Church-Rosser Proofs, with Applications to Bounded Arithmetic - Arnold Beckmann</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Towards Higher-Order Logarithmic Space</div>
-                                <div class="authors"><a class="person" href="person25602.html">Towards Higher-Order Logarithmic Space -</a></div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1422">
-                    <div class="heading">
-                        <span class="interval">09:00-10:00</span>
-                        <span class="title">Learning</span>
-                        <span class="group_tag">OVERLAY</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person23383.html">Nicola Gigante</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room37.html">C1.04</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:861">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Fairness Certificates via a Lean-Backed Trustworthy Probabilistic Typed Natural Deduction <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:861">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person6749.html">Fabio Aurelio D'Asaro</a><sup>1</sup>, <a class="person" href="person6750.html">Giuseppe Primiero</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Verona, University College London</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Milan</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present TPTND-Lean, a Lean 4 implementation of a core fragment of Trustworthy Probabilistic Typed Natural Deduction (TPTND). TPTND-Lean type-checks TPTND derivation trees whose leaves are empirical observations, and whose internal nodes are introduction or elimination rules for probabilistic connectives, producing machine-checked fairness certificates. In this implementation, frequencies and stored interval endpoints are rational numbers; the standard-error term used by the score-test acceptance bands is computed via a bounded-rational Newton iteration. The kernel is small and auditable; each derivation it accepts is a transferable, re-checkable certificate that binds together counts, statistical test, band, and verdict in a single typed tree. We describe a four-stage workflow that takes group-level summary statistics through claim selection and derivation construction to such a certificate. Two case studies on public data illustrate the approach: (i) the ProPublica COMPAS recidivism data (6172 defendants, reproducing the headline racial-bias finding), and (ii) HMDA mortgage-lending data for Delaware (54000 Black/White applications across 2022-2023, demonstrating multi-year temporal composition via Update and intersectional comparisons). Certificates are conditional: they verify the derivation relative to the supplied counts, the chosen statistical rule, and the checker, not the upstream data pipeline. The full source, data pipelines, and all derivations are publicly available at https://github.com/dasaro/tptnd-lean.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1362">
-                    <div class="heading">
-                        <span class="interval">09:00-09:30</span>
-                        <span class="title">Informat meet & greet</span>
-                        <span class="group_tag">MW1</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room48.html">C5.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1338">
-                    <div class="heading">
-                        <span class="interval">09:00-09:10</span>
-                        <span class="title">Opening</span>
-                        <span class="group_tag">ModRef</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person23427.html">Jordi Coll</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room45.html">C3.02</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:783">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Welcome and Introduction <a class="abstract_link" href="ModRef-2026-07-19.html#talk:783">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5680.html">Jordi Coll</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Universitat de Girona</div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1302">
-                    <div class="heading">
-                        <span class="interval">09:00-09:50</span>
-                        <span class="title">Talk1</span>
-                        <span class="group_tag">LLM-Solve</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room55.html">C5.08</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1265">
-                    <div class="heading">
-                        <span class="interval">09:00-10:10</span>
-                        <span class="title">Contributed Talks 1</span>
-                        <span class="group_tag">JoeFest</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person23575.html">Sander Beckers</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room46.html">C4.01</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Introduction</div>
-                                <div class="authors"><a class="person" href="person23575.html">Introduction - Sander Beckers</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Operationalising Relative Causal Knowledge: Backbone Identifiability from Private Reports</div>
-                                <div class="authors"><a class="person" href="person25595.html">Operationalising Relative Causal Knowledge: Backbone Identifiability from Private Reports -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Salient Preference Dynamics: A Model of Attention-Driven Preference Change</div>
-                                <div class="authors"><a class="person" href="person25596.html">Salient Preference Dynamics: A Model of Attention-Driven Preference Change -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Lessons from the Past for the Future of Robotics</div>
-                                <div class="authors"><a class="person" href="person25020.html">Lessons from the Past for the Future of Robotics - Mohan Sridharan</a></div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
                 <div class="session" id="session:1104">
                     <div class="heading">
                         <span class="interval">09:00-10:00</span>
@@ -540,84 +436,26 @@ The tool has been used for several years as a gentle introduction to proposition
 
 
                 </div>
-                <div class="session" id="session:1339">
+                <div class="session" id="session:1621">
                     <div class="heading">
-                        <span class="interval">09:10-10:30</span>
-                        <span class="title">Session 1: Constraint Modelling and Propagation</span>
-                        <span class="group_tag">ModRef</span>
+                        <span class="interval">09:00-10:00</span>
+                        <span class="title">Hugo Paquet (Invited, joint with Galop)</span>
+                        <span class="group_tag">TLLA</span>
                     </div>
 
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person25719.html">Olimpieri</a>
+                        </div>
+                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room45.html">C3.02</a>
+                        <a class="room_name" href="room59.html">C5.07</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk" id="talk:784">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Defining Propagators in MiniZinc <a class="abstract_link" href="ModRef-2026-07-19.html#talk:784">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5681.html">Jip J. Dekker</a><sup>1</sup>, <a class="person" href="person5682.html">Peter J. Stuckey</a><sup>1</sup>, <a class="person" href="person5683.html">Guido Tack</a><sup>1</sup>, <a class="person" href="person5684.html">Huu Quang Tran</a><sup>1</sup>, <a class="person" href="person5685.html">Markus Wagner</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Monash University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Solver-independent modelling languages such as MiniZinc are widely used because they enable rapid prototyping of complex optimisation models without committing to a particular solver technology. However, when using a fixed constraint programming solver, one can extend it with custom problem-specific propagators. This can potentially achieve significantly stronger propagation and improved performance. In contrast, within a solver-independent framework, such constraints are typically expressed through decompositions into simpler primitives, which may weaken propagation and increase runtime.
-This paper presents an extension to MiniZinc that enables specifying custom propagators directly at the modelling level. These propagators are executed via solver callbacks, preserving solver independence while enabling specialised propagation. Beyond modelling-level propagators, our framework enables the integration of externally implemented propagators, making it possible to incorporate propagation for complex black-box functions, such as simulation models. We demonstrate that this enables the rapid development of efficient problem-specific propagators and facilitates hybrid white-box/black-box optimisation approaches.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:785">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Propagation Algorithms for the Minimum-Distance Constraint over Selected Points <a class="abstract_link" href="ModRef-2026-07-19.html#talk:785">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5686.html">Mikael Zayenz Lagerkvist</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Independent researcher, Sambanova</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The minimum-distance constraint min_distance(D, x, z) links selected-point variables x with a variable z denoting the smallest distance between any selected pair. A direct CP encoding introduces one auxiliary distance variable per pair and then constrains the objective to be the minimum of those variables. This encoding is clear and portable, but it also creates a quadratic family of variables and propagators. It can also spend memory representing holes in auxiliary distance domains, even when branch-and-bound only needs useful (lower) bounds on the minimum distance.
-
-This paper studies propagation algorithms for the minimum-distance constraint in Gecode. The implemented variants include pairwise propagators, a global support scan, advisor-backed support maintenance, and a matching-based upper-bound propagator. A motivating example for studying these algorithms is p-dispersion with distance constraints, where the minimum-distance constraint is central and pair-specific lower-bound thresholds are part of the model. Preliminary benchmarks on p-dispersion instances from the literature indicate that direct propagation of this constraint can reduce decomposition overhead, but the experiments should be read as an implementation study rather than a complete p-dispersion solver comparison. The organisation of the propagator is important: full global scans can be too expensive, advisor-backed incremental state maintenance and matching-based bounds help on the indexed model, and pairwise bounds remain a strong baseline.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:786">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Machine Learning-Based Generalization Queries for Constraint Acquisition <a class="abstract_link" href="ModRef-2026-07-19.html#talk:786">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5687.html">Dimos Tsouros</a><sup>1</sup>, <a class="person" href="person5688.html">Senne Berden</a><sup>2</sup>, <a class="person" href="person5689.html">Tias Guns</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Western Macedonia</div>
-                                <div class="affiliation_item"><sup>2</sup> KU Leuven</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Interactive Constraint Acquisition (CA) can assist in modeling constraint problems by acquiring constraints through a query-based interaction with the user. However, existing methods often require a large number of queries. We aim to address this limitation by introducing constraint-specification-based generalization queries, which lift individual learned constraints to higher-level specifications that capture entire sets of constraints at once. We then propose \gqgen, a machine learning-based method to extract such specifications from the learned and excluded constraints during the acquisition process and show how it can be integrated directly within any existing interactive CA algorithm. Our experiments show that our proposed approach reduces the number of queries substantially (by up to 95%), while our user study demonstrates that LLM-based natural language formulations of our generalization queries are understandable to users.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:787">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Paramita: An Extensible Framework for SATisfiability Solving <a class="abstract_link" href="ModRef-2026-07-19.html#talk:787">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5690.html">Josep Alòs</a><sup>1</sup>, <a class="person" href="person5691.html">Carlos Ansótegui</a><sup>1</sup>, <a class="person" href="person5692.html">Juan Luis Esteban</a><sup>2</sup>, <a class="person" href="person5693.html">Eduard Torres</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Universitat de Lleida</div>
-                                <div class="affiliation_item"><sup>2</sup> Universitat Politècnica Catalunya</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Paramita is a Python framework that provides a unified, plugin-based interface for interacting with external tools from the Satisfaibility domain (e.g. SAT and MaxSAT solvers). These tools can be implemented in C++ or Python.  The framework follows a strict separation between interface definitions and concrete implementations. Solvers and encoders in C++ are compiled as shared libraries and loaded at runtime. Solvers implementing IPASIR, IPASIR-UP and IPAMIR C++ interfaces can be directly integrated in Paramita with almost no effort. Paramita also supports a higher level modelling language for Non-CNF formulas, extendend with PB constraints and linear objective functions.
-Paramita is suitable for a wide range of combinatorial optimization and satisfiability tasks. This paper describes the architecture, solver and interfaces provided by the framework, the modelling language and other features.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:1654">
                     <div class="heading">
@@ -791,6 +629,85 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:1339">
+                    <div class="heading">
+                        <span class="interval">09:10-10:30</span>
+                        <span class="title">Session 1: Constraint Modelling and Propagation</span>
+                        <span class="group_tag">ModRef</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room45.html">C3.02</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:784">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Defining Propagators in MiniZinc <a class="abstract_link" href="ModRef-2026-07-19.html#talk:784">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5681.html">Jip J. Dekker</a><sup>1</sup>, <a class="person" href="person5682.html">Peter J. Stuckey</a><sup>1</sup>, <a class="person" href="person5683.html">Guido Tack</a><sup>1</sup>, <a class="person" href="person5684.html">Huu Quang Tran</a><sup>1</sup>, <a class="person" href="person5685.html">Markus Wagner</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Monash University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Solver-independent modelling languages such as MiniZinc are widely used because they enable rapid prototyping of complex optimisation models without committing to a particular solver technology. However, when using a fixed constraint programming solver, one can extend it with custom problem-specific propagators. This can potentially achieve significantly stronger propagation and improved performance. In contrast, within a solver-independent framework, such constraints are typically expressed through decompositions into simpler primitives, which may weaken propagation and increase runtime.
+This paper presents an extension to MiniZinc that enables specifying custom propagators directly at the modelling level. These propagators are executed via solver callbacks, preserving solver independence while enabling specialised propagation. Beyond modelling-level propagators, our framework enables the integration of externally implemented propagators, making it possible to incorporate propagation for complex black-box functions, such as simulation models. We demonstrate that this enables the rapid development of efficient problem-specific propagators and facilitates hybrid white-box/black-box optimisation approaches.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:785">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Propagation Algorithms for the Minimum-Distance Constraint over Selected Points <a class="abstract_link" href="ModRef-2026-07-19.html#talk:785">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5686.html">Mikael Zayenz Lagerkvist</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Independent researcher, Sambanova</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The minimum-distance constraint min_distance(D, x, z) links selected-point variables x with a variable z denoting the smallest distance between any selected pair. A direct CP encoding introduces one auxiliary distance variable per pair and then constrains the objective to be the minimum of those variables. This encoding is clear and portable, but it also creates a quadratic family of variables and propagators. It can also spend memory representing holes in auxiliary distance domains, even when branch-and-bound only needs useful (lower) bounds on the minimum distance.
+
+This paper studies propagation algorithms for the minimum-distance constraint in Gecode. The implemented variants include pairwise propagators, a global support scan, advisor-backed support maintenance, and a matching-based upper-bound propagator. A motivating example for studying these algorithms is p-dispersion with distance constraints, where the minimum-distance constraint is central and pair-specific lower-bound thresholds are part of the model. Preliminary benchmarks on p-dispersion instances from the literature indicate that direct propagation of this constraint can reduce decomposition overhead, but the experiments should be read as an implementation study rather than a complete p-dispersion solver comparison. The organisation of the propagator is important: full global scans can be too expensive, advisor-backed incremental state maintenance and matching-based bounds help on the indexed model, and pairwise bounds remain a strong baseline.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:786">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Machine Learning-Based Generalization Queries for Constraint Acquisition <a class="abstract_link" href="ModRef-2026-07-19.html#talk:786">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5687.html">Dimos Tsouros</a><sup>1</sup>, <a class="person" href="person5688.html">Senne Berden</a><sup>2</sup>, <a class="person" href="person5689.html">Tias Guns</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Western Macedonia</div>
+                                <div class="affiliation_item"><sup>2</sup> KU Leuven</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Interactive Constraint Acquisition (CA) can assist in modeling constraint problems by acquiring constraints through a query-based interaction with the user. However, existing methods often require a large number of queries. We aim to address this limitation by introducing constraint-specification-based generalization queries, which lift individual learned constraints to higher-level specifications that capture entire sets of constraints at once. We then propose \gqgen, a machine learning-based method to extract such specifications from the learned and excluded constraints during the acquisition process and show how it can be integrated directly within any existing interactive CA algorithm. Our experiments show that our proposed approach reduces the number of queries substantially (by up to 95%), while our user study demonstrates that LLM-based natural language formulations of our generalization queries are understandable to users.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:787">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Paramita: An Extensible Framework for SATisfiability Solving <a class="abstract_link" href="ModRef-2026-07-19.html#talk:787">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5690.html">Josep Alòs</a><sup>1</sup>, <a class="person" href="person5691.html">Carlos Ansótegui</a><sup>1</sup>, <a class="person" href="person5692.html">Juan Luis Esteban</a><sup>2</sup>, <a class="person" href="person5693.html">Eduard Torres</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat de Lleida</div>
+                                <div class="affiliation_item"><sup>2</sup> Universitat Politècnica Catalunya</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Paramita is a Python framework that provides a unified, plugin-based interface for interacting with external tools from the Satisfaibility domain (e.g. SAT and MaxSAT solvers). These tools can be implemented in C++ or Python.  The framework follows a strict separation between interface definitions and concrete implementations. Solvers and encoders in C++ are compiled as shared libraries and loaded at runtime. Solvers implementing IPASIR, IPASIR-UP and IPAMIR C++ interfaces can be directly integrated in Paramita with almost no effort. Paramita also supports a higher level modelling language for Non-CNF formulas, extendend with PB constraints and linear objective functions.
+Paramita is suitable for a wide range of combinatorial optimization and satisfiability tasks. This paper describes the architecture, solver and interfaces provided by the framework, the modelling language and other features.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session" id="session:1130">
                     <div class="heading">
                         <span class="interval">09:15-10:10</span>
@@ -944,6 +861,36 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
 
 
                 </div>
+                <div class="session" id="session:1446">
+                    <div class="heading">
+                        <span class="interval">10:00-11:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">PC</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room65.html">C5.09</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1471">
+                    <div class="heading">
+                        <span class="interval">10:00-11:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">PEG</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room52.html">C3.01</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:1423">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
@@ -959,17 +906,32 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
 
 
                 </div>
-                <div class="session" id="session:1446">
+                <div class="session" id="session:1489">
                     <div class="heading">
                         <span class="interval">10:00-11:00</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">PC</span>
+                        <span class="group_tag">QBF</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room65.html">C5.09</a>
+                        <a class="room_name" href="room54.html">C5.02</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1598">
+                    <div class="heading">
+                        <span class="interval">10:00-11:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">ThEdu</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room47.html">C2.01</a>
                     </div>
 
 
@@ -1004,6 +966,21 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
 
 
                 </div>
+                <div class="session" id="session:1105">
+                    <div class="heading">
+                        <span class="interval">10:00-10:30</span>
+                        <span class="title">Contributed talks</span>
+                        <span class="group_tag">DIALOCO</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room51.html">C4.02</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:1685">
                     <div class="heading">
                         <span class="interval">10:00-11:00</span>
@@ -1030,66 +1007,6 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room59.html">C5.07</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1598">
-                    <div class="heading">
-                        <span class="interval">10:00-11:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">ThEdu</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room47.html">C2.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1471">
-                    <div class="heading">
-                        <span class="interval">10:00-11:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">PEG</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room52.html">C3.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1489">
-                    <div class="heading">
-                        <span class="interval">10:00-11:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">QBF</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room54.html">C5.02</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1105">
-                    <div class="heading">
-                        <span class="interval">10:00-10:30</span>
-                        <span class="title">Contributed talks</span>
-                        <span class="group_tag">DIALOCO</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room51.html">C4.02</a>
                     </div>
 
 
@@ -1169,17 +1086,32 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
 
 
                 </div>
-                <div class="session" id="session:1340">
+                <div class="session" id="session:1407">
                     <div class="heading">
                         <span class="interval">10:30-11:00</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">ModRef</span>
+                        <span class="group_tag">NMR</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room45.html">C3.02</a>
+                        <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1479">
+                    <div class="heading">
+                        <span class="interval">10:30-11:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">PoS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
                     </div>
 
 
@@ -1221,32 +1153,32 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1407">
+                <div class="session" id="session:1340">
                     <div class="heading">
                         <span class="interval">10:30-11:00</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">NMR</span>
+                        <span class="group_tag">ModRef</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
+                        <a class="room_name" href="room45.html">C3.02</a>
                     </div>
 
 
                 </div>
-                <div class="session" id="session:1479">
+                <div class="session" id="session:1106">
                     <div class="heading">
                         <span class="interval">10:30-11:00</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">PoS</span>
+                        <span class="group_tag">DIALOCO</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room62.html">C4.08</a>
+                        <a class="room_name" href="room51.html">C4.02</a>
                     </div>
 
 
@@ -1283,21 +1215,6 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room50.html">C1.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1106">
-                    <div class="heading">
-                        <span class="interval">10:30-11:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">DIALOCO</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room51.html">C4.02</a>
                     </div>
 
 
@@ -1385,6 +1302,21 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:1204">
+                    <div class="heading">
+                        <span class="interval">10:40-12:20</span>
+                        <span class="title">Contributed Talks - Session 3</span>
+                        <span class="group_tag">GALOP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room56.html">C5.06</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:1267">
                     <div class="heading">
                         <span class="interval">10:40-12:20</span>
@@ -1438,44 +1370,6 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1204">
-                    <div class="heading">
-                        <span class="interval">10:40-12:20</span>
-                        <span class="title">Contributed Talks - Session 3</span>
-                        <span class="group_tag">GALOP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room56.html">C5.06</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Seeking the primitive categorical structure of concurrent game semantics</div>
-                                <div class="authors"><a class="person" href="person24909.html">Seeking the primitive categorical structure of concurrent game semantics - Pierre Clairambault</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">An Adjunction Between the Lens and the Int Construction in Categorical Game Semantics</div>
-                                <div class="authors"><a class="person" href="person24163.html">An Adjunction Between the Lens and the Int Construction in Categorical Game Semantics - Sangwoo Kim</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Finitely partitioned trees (work in progress)</div>
-                                <div class="authors"><a class="person" href="person24802.html">Finitely partitioned trees (work in progress) - Paul Blain Levy</a></div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
                 <div class="session" id="session:1280">
                     <div class="heading">
                         <span class="interval">10:40-11:10</span>
@@ -1487,21 +1381,6 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room61.html">C4.06</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1148">
-                    <div class="heading">
-                        <span class="interval">11:00-12:30</span>
-                        <span class="title">Session 5</span>
-                        <span class="group_tag">CPSATDP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room36.html">C1.03</a>
                     </div>
 
 
@@ -1581,41 +1460,6 @@ We propose to evaluate this claim using the CPEVAL benchmark.</p>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce ZebraProlog, an approach for solving the Zebra Logic benchmark combining Large 
 Language Models (LLMs) and constraint programming. We compare the performance of ZebraProlog with the logic.py approach, another approach for solving the Zebra Logic benchmark using LLMs and a constraint solver. Our approach does not go through an intermediate representation of the problem in a domain specific language, but rather directly translates to Prolog/CLP(FD) code which is then executed to find a solution. This approach contributes to clarify the benefits and costs of using an intermediate representation. Our experiments reveal two main findings: on the one hand, the DSL-based approach of logic.py gives a slight advantage in terms of success rate (91.9% for logic.py vs 84.6% for ZebraProlog). On the other hand, the DSL-free approach of ZebraProlog is 19.6% faster than logic.py.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1341">
-                    <div class="heading">
-                        <span class="interval">11:00-11:40</span>
-                        <span class="title">Session 2: Puzzles</span>
-                        <span class="group_tag">ModRef</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room45.html">C3.02</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:789">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Scaling Sudoku as a Constraint Problem <a class="abstract_link" href="ModRef-2026-07-19.html#talk:789">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5696.html">Mikael Zayenz Lagerkvist</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Independent researcher, Sambanova</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Helmut Simonis's 2005 ModRef paper, Sudoku as a Constraint Problem, used standard 9x9 Sudoku as a compact constraint-programming laboratory for comparing propagation-oriented models. This paper extends that setup to Sudoku puzzles of sizes 6x6, 9x9, 16x16, 25x25, and 36x36. We generate 32,000 unique-solution base puzzles and run 170,000 hardness walks that add clues back to the puzzles, generating 402,201 additional, simpler instances. These walks ensure that every studied size includes instances in easier hardness buckets.
-
-The original hardness categories identified by Simonis remain useful, but the grid size changes the observed propagation behaviour. No initially generated 25x25 or 36x36 puzzle is solved without search, even with domain-consistent propagation and domain shaving.
-
-Puzzle generation uses Gecode and OR-Tools, and hardness testing uses Gecode.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1736,17 +1580,52 @@ Focusing on a representative use case, we illustrate how the framework integrate
 
 
                 </div>
-                <div class="session" id="session:1656">
+                <div class="session" id="session:1341">
                     <div class="heading">
-                        <span class="interval">11:00-12:00</span>
-                        <span class="title">Invited Talk: Stefan Szeider</span>
-                        <span class="group_tag">WHOOPS</span>
+                        <span class="interval">11:00-11:40</span>
+                        <span class="title">Session 2: Puzzles</span>
+                        <span class="group_tag">ModRef</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room50.html">C1.01</a>
+                        <a class="room_name" href="room45.html">C3.02</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:789">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Scaling Sudoku as a Constraint Problem <a class="abstract_link" href="ModRef-2026-07-19.html#talk:789">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5696.html">Mikael Zayenz Lagerkvist</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Independent researcher, Sambanova</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Helmut Simonis's 2005 ModRef paper, Sudoku as a Constraint Problem, used standard 9x9 Sudoku as a compact constraint-programming laboratory for comparing propagation-oriented models. This paper extends that setup to Sudoku puzzles of sizes 6x6, 9x9, 16x16, 25x25, and 36x36. We generate 32,000 unique-solution base puzzles and run 170,000 hardness walks that add clues back to the puzzles, generating 402,201 additional, simpler instances. These walks ensure that every studied size includes instances in easier hardness buckets.
+
+The original hardness categories identified by Simonis remain useful, but the grid size changes the observed propagation behaviour. No initially generated 25x25 or 36x36 puzzle is solved without search, even with domain-consistent propagation and domain shaving.
+
+Puzzle generation uses Gecode and OR-Tools, and hardness testing uses Gecode.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1480">
+                    <div class="heading">
+                        <span class="interval">11:00-11:50</span>
+                        <span class="title">Session 2: Optimization</span>
+                        <span class="group_tag">PoS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
                     </div>
 
 
@@ -1819,43 +1698,20 @@ In this paper, we describe the aims and the framework of the course as well as t
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1480">
+                <div class="session" id="session:1148">
                     <div class="heading">
-                        <span class="interval">11:00-11:50</span>
-                        <span class="title">Session 2: Optimization</span>
-                        <span class="group_tag">PoS</span>
+                        <span class="interval">11:00-12:30</span>
+                        <span class="title">Session 5</span>
+                        <span class="group_tag">CPSATDP</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room62.html">C4.08</a>
+                        <a class="room_name" href="room36.html">C1.03</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Revising the Implicit Hitting Set Solver MaxHS</div>
-                                <div class="authors"><a class="person" href="person25674.html">Revising the Implicit Hitting Set Solver MaxHS -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Aperture: an Anytime, Complete, and Incremental Solver for MaxSAT and Beyond (Work-in-Progress)</div>
-                                <div class="authors"><a class="person" href="person25392.html">Aperture: an Anytime, Complete, and Incremental Solver for MaxSAT and Beyond (Work-in-Progress) -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Smallest MUS Extraction via Branch-and-Cut</div>
-                                <div class="authors"><a class="person" href="person24190.html">Smallest MUS Extraction via Branch-and-Cut - Konstantin Sidorov</a></div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:1107">
                     <div class="heading">
@@ -1888,6 +1744,21 @@ In this paper, we describe the aims and the framework of the course as well as t
                             </td>
                         </tr>
                     </table>
+                </div>
+                <div class="session" id="session:1656">
+                    <div class="heading">
+                        <span class="interval">11:00-12:00</span>
+                        <span class="title">Invited Talk: Stefan Szeider</span>
+                        <span class="group_tag">WHOOPS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room50.html">C1.01</a>
+                    </div>
+
+
                 </div>
                 <div class="session" id="session:1281">
                     <div class="heading">
@@ -1990,21 +1861,6 @@ In this paper, we describe the aims and the framework of the course as well as t
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1342">
-                    <div class="heading">
-                        <span class="interval">11:40-12:20</span>
-                        <span class="title">Invited Talk</span>
-                        <span class="group_tag">ModRef</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room45.html">C3.02</a>
-                    </div>
-
-
-                </div>
                 <div class="session" id="session:1448">
                     <div class="heading">
                         <span class="interval">11:40-12:00</span>
@@ -2044,6 +1900,21 @@ This work is accepted for publication at SAT 2026.</p>
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:1342">
+                    <div class="heading">
+                        <span class="interval">11:40-12:20</span>
+                        <span class="title">Invited Talk</span>
+                        <span class="group_tag">ModRef</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room45.html">C3.02</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:1481">
                     <div class="heading">
                         <span class="interval">11:50-12:20</span>
@@ -2055,37 +1926,6 @@ This work is accepted for publication at SAT 2026.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room62.html">C4.08</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Extending CDCL-based Model Enumeration with Weights</div>
-                                <div class="authors"><a class="person" href="person23604.html">Extending CDCL-based Model Enumeration with Weights - Giuseppe Spallitta</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Formalization of Component-Based Projected Model Counting</div>
-                                <div class="authors"><a class="person" href="person25163.html">Formalization of Component-Based Projected Model Counting - Kenta Ito</a></div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1472">
-                    <div class="heading">
-                        <span class="interval">12:00-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">PEG</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room52.html">C3.01</a>
                     </div>
 
 
@@ -2105,62 +1945,17 @@ This work is accepted for publication at SAT 2026.</p>
 
 
                 </div>
-                <div class="session" id="session:1600">
+                <div class="session" id="session:1472">
                     <div class="heading">
                         <span class="interval">12:00-14:00</span>
                         <span class="title">Lunch</span>
-                        <span class="group_tag">ThEdu</span>
+                        <span class="group_tag">PEG</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room47.html">C2.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1657">
-                    <div class="heading">
-                        <span class="interval">12:00-13:30</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">WHOOPS</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room50.html">C1.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1686">
-                    <div class="heading">
-                        <span class="interval">12:00-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">WPTE</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room57.html">C5.05</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1449">
-                    <div class="heading">
-                        <span class="interval">12:00-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">PC</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room65.html">C5.09</a>
+                        <a class="room_name" href="room52.html">C3.01</a>
                     </div>
 
 
@@ -2176,6 +1971,36 @@ This work is accepted for publication at SAT 2026.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room37.html">C1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1600">
+                    <div class="heading">
+                        <span class="interval">12:00-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">ThEdu</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room47.html">C2.01</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1449">
+                    <div class="heading">
+                        <span class="interval">12:00-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">PC</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room65.html">C5.09</a>
                     </div>
 
 
@@ -2223,6 +2048,21 @@ This work is accepted for publication at SAT 2026.</p>
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:1108">
+                    <div class="heading">
+                        <span class="interval">12:00-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">DIALOCO</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room51.html">C4.02</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:1149">
                     <div class="heading">
                         <span class="interval">12:00-14:00</span>
@@ -2238,17 +2078,32 @@ This work is accepted for publication at SAT 2026.</p>
 
 
                 </div>
-                <div class="session" id="session:1108">
+                <div class="session" id="session:1657">
                     <div class="heading">
-                        <span class="interval">12:00-14:00</span>
+                        <span class="interval">12:00-13:30</span>
                         <span class="title">Lunch</span>
-                        <span class="group_tag">DIALOCO</span>
+                        <span class="group_tag">WHOOPS</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room51.html">C4.02</a>
+                        <a class="room_name" href="room50.html">C1.01</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1686">
+                    <div class="heading">
+                        <span class="interval">12:00-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">WPTE</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room57.html">C5.05</a>
                     </div>
 
 
@@ -2268,17 +2123,6 @@ This work is accepted for publication at SAT 2026.</p>
 
 
                 </div>
-                <div class="session" id="session:1343">
-                    <div class="heading">
-                        <span class="interval">12:20-13:50</span>
-                        <span class="title">Lunch Break</span>
-                        <span class="group_tag">ModRef</span>
-                    </div>
-
-
-
-
-                </div>
                 <div class="session" id="session:1268">
                     <div class="heading">
                         <span class="interval">12:20-13:50</span>
@@ -2291,6 +2135,17 @@ This work is accepted for publication at SAT 2026.</p>
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room46.html">C4.01</a>
                     </div>
+
+
+                </div>
+                <div class="session" id="session:1343">
+                    <div class="heading">
+                        <span class="interval">12:20-13:50</span>
+                        <span class="title">Lunch Break</span>
+                        <span class="group_tag">ModRef</span>
+                    </div>
+
+
 
 
                 </div>
@@ -2309,21 +2164,6 @@ This work is accepted for publication at SAT 2026.</p>
 
 
                 </div>
-                <div class="session" id="session:1370">
-                    <div class="heading">
-                        <span class="interval">12:30-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">MW1</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room48.html">C5.01</a>
-                    </div>
-
-
-                </div>
                 <div class="session" id="session:1409">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
@@ -2335,6 +2175,21 @@ This work is accepted for publication at SAT 2026.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1370">
+                    <div class="heading">
+                        <span class="interval">12:30-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">MW1</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room48.html">C5.01</a>
                     </div>
 
 
@@ -2434,50 +2289,6 @@ This work is accepted for publication at SAT 2026.</p>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Invited Talk</div>
-                                <div class="authors"><a class="person" href="person23341.html">Invited Talk - Hana Chockler</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Invited Talk</div>
-                                <div class="authors"><a class="person" href="person25599.html">Invited Talk -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Invited Talk</div>
-                                <div class="authors"><a class="person" href="person25599.html">Invited Talk -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Invited Talk</div>
-                                <div class="authors"><a class="person" href="person25599.html">Invited Talk -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Invited Talk</div>
-                                <div class="authors"><a class="person" href="person25599.html">Invited Talk -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Invited Talk</div>
-                                <div class="authors"><a class="person" href="person25599.html">Invited Talk -</a></div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:1344">
                     <div class="heading">
@@ -2526,80 +2337,6 @@ Experiments on two problem classes and two solvers show promising potential, whi
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1307">
-                    <div class="heading">
-                        <span class="interval">14:00-14:50</span>
-                        <span class="title">Talk 2</span>
-                        <span class="group_tag">LLM-Solve</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room55.html">C5.08</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1371">
-                    <div class="heading">
-                        <span class="interval">14:00-14:30</span>
-                        <span class="title">Sandra Kiefer</span>
-                        <span class="group_tag">MW1</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room48.html">C5.01</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:814">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">On the Relativity of Expertise <a class="abstract_link" href="MW1-2026-07-19.html#talk:814">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person6622.html">Sandra Kiefer</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Oxford University</div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1410">
-                    <div class="heading">
-                        <span class="interval">14:00-15:30</span>
-                        <span class="title">Argumentation 2</span>
-                        <span class="group_tag">NMR</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:847">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">On Algorithmic Shortcuts for Skeptical Preferred Reasoning in Abstract Argumentation <a class="abstract_link" href="NMR-2026-07-19.html#talk:847">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person6711.html">Lars Bengel</a><sup>1</sup>, <a class="person" href="person6712.html">Julian Sander</a><sup>1</sup>, <a class="person" href="person6713.html">Matthias Thimm</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Artificial Intelligence Group, University of Hagen</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Skeptical acceptance under the preferred semantics is one of the most intricate reasoning problems in abstract argumentation. That is why efficient solving approaches are of utmost importance for this problem. In this work, we investigate algorithmic shortcuts that can be used to solve this reasoning problem with considerably less resources than sound and complete approaches. Besides an overview of the state-of-the-art, we also propose several novel shortcuts to improve the applicability of such techniques. Finally, we perform an extensive evaluation of all shortcuts regarding their potential to improve the runtime efficiency of argumentation solvers. As our results show, we can significantly improve the runtime of state-of-the-art argumentation solvers by utilizing a variety of shortcuts.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
                 <div class="session" id="session:1426">
                     <div class="heading">
                         <span class="interval">14:00-15:00</span>
@@ -2634,119 +2371,17 @@ Experiments on two problem classes and two solvers show promising potential, whi
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1450">
+                <div class="session" id="session:1483">
                     <div class="heading">
-                        <span class="interval">14:00-14:40</span>
-                        <span class="title">QBF Joint Invited Talk</span>
-                        <span class="group_tag">PC</span>
+                        <span class="interval">14:00-15:10</span>
+                        <span class="title">Session 4: Exploring Solvers and Instances</span>
+                        <span class="group_tag">PoS</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room65.html">C5.09</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:891">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">The Complexity of Quantified CDCL <a class="abstract_link" href="PC-2026-07-19.html#talk:891">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person6827.html">Benjamin Böhm</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Friedrich Schiller University Jena</div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1283">
-                    <div class="heading">
-                        <span class="interval">14:00-15:20</span>
-                        <span class="title">Sunday afternoon 1</span>
-                        <span class="group_tag">LCC</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person23231.html">Heribert Vollmer</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room61.html">C4.06</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:735">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">On the Expressive Power of Ontology-Mediated Queries: Capturing coNP <a class="abstract_link" href="LCC-2026-07-19.html#talk:735">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5315.html">Sanja Lukumbuzya</a><sup>1</sup>, <a class="person" href="person5316.html">Magdalena Ortiz</a><sup>1</sup>, <a class="person" href="person5317.html">Mantas Simkus</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This work investigates the expressive power of ontology-mediated queries (OMQs) from a descriptive complexity perspective. We first show that OMQ languages based on non-monotonic extension of one of the most expressive description logics cannot express all coNP-computable generic Boolean queries, despite being coNP-complete in data complexity. We then propose an extension of this language and show that it is expressive enough to precisely capture the class of all Boolean queries computable in coNP.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:736">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Counting Complexity of ASP <a class="abstract_link" href="LCC-2026-07-19.html#talk:736">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person5318.html">Max Bannach</a><sup>1</sup>, <a class="person" href="person5319.html">Johannes Klaus Fichte</a><sup>2</sup>, <a class="person" href="person5320.html">Johanna Groven</a><sup>2</sup>, <a class="person" href="person5321.html">Markus Hecher</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> European Space Agency</div>
-                                <div class="affiliation_item"><sup>2</sup> Linköping University</div>
-                                <div class="affiliation_item"><sup>3</sup> CNRS, CRIL</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming (ASP) is a mature and widely used framework for modeling and solving problems in AI, knowledge representation and reasoning, and combinatorial search. Counting answer sets is of growing importance for analyzing search spaces, navigating ASP programs, and enabling probabilistic reasoning. While Truszczýnski established a complete hierarchy for the computational complexity of ASP decision and reasoning problems (skeptical and credulous), a corresponding systematic treatment of counting problems has been missing so far. We close this gap by providing an almost complete characterisation of the counting complexity landscape for ASP.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1150">
-                    <div class="heading">
-                        <span class="interval">14:00-15:00</span>
-                        <span class="title">Invited Talk</span>
-                        <span class="group_tag">CPSATDP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room36.html">C1.03</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1626">
-                    <div class="heading">
-                        <span class="interval">14:00-15:00</span>
-                        <span class="title">Lison Blondeau-Patissier (Invited)</span>
-                        <span class="group_tag">TLLA</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person25719.html">Olimpieri</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room59.html">C5.07</a>
+                        <a class="room_name" href="room62.html">C4.08</a>
                     </div>
 
 
@@ -2816,47 +2451,157 @@ Experiments on two problem classes and two solvers show promising potential, whi
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1483">
+                <div class="session" id="session:1410">
                     <div class="heading">
-                        <span class="interval">14:00-15:10</span>
-                        <span class="title">Session 4: Exploring Solvers and Instances</span>
-                        <span class="group_tag">PoS</span>
+                        <span class="interval">14:00-15:30</span>
+                        <span class="title">Argumentation 2</span>
+                        <span class="group_tag">NMR</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room62.html">C4.08</a>
+                        <a class="room_name" href="room34.html">B1.04</a>
                     </div>
 
 
                     <table class="talks">
-                        <tr class="talk">
+                        <tr class="talk" id="talk:847">
                             <td class="time"></td>
                             <td>
-                                <div class="title">SAT-IT: an Online Interactive SAT Tracer</div>
-                                <div class="authors"><a class="person" href="person23462.html">SAT-IT: an Online Interactive SAT Tracer - Wilber Eduardo Bermeo Quito</a></div>
+                                <div class="title">On Algorithmic Shortcuts for Skeptical Preferred Reasoning in Abstract Argumentation <a class="abstract_link" href="NMR-2026-07-19.html#talk:847">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person6711.html">Lars Bengel</a><sup>1</sup>, <a class="person" href="person6712.html">Julian Sander</a><sup>1</sup>, <a class="person" href="person6713.html">Matthias Thimm</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Artificial Intelligence Group, University of Hagen</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Skeptical acceptance under the preferred semantics is one of the most intricate reasoning problems in abstract argumentation. That is why efficient solving approaches are of utmost importance for this problem. In this work, we investigate algorithmic shortcuts that can be used to solve this reasoning problem with considerably less resources than sound and complete approaches. Besides an overview of the state-of-the-art, we also propose several novel shortcuts to improve the applicability of such techniques. Finally, we perform an extensive evaluation of all shortcuts regarding their potential to improve the runtime efficiency of argumentation solvers. As our results show, we can significantly improve the runtime of state-of-the-art argumentation solvers by utilizing a variety of shortcuts.</p>
+                                </div>
                             </td>
                         </tr>
-                        <tr class="talk">
+                    </table>
+                </div>
+                <div class="session" id="session:1450">
+                    <div class="heading">
+                        <span class="interval">14:00-14:40</span>
+                        <span class="title">QBF Joint Invited Talk</span>
+                        <span class="group_tag">PC</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room65.html">C5.09</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:891">
                             <td class="time"></td>
                             <td>
-                                <div class="title">Exploring 3-CNF Formulas Generated From Partial Steiner Triple Systems</div>
-                                <div class="authors"><a class="person" href="person25675.html">Exploring 3-CNF Formulas Generated From Partial Steiner Triple Systems -</a></div>
+                                <div class="title">The Complexity of Quantified CDCL <a class="abstract_link" href="PC-2026-07-19.html#talk:891">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person6827.html">Benjamin Böhm</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Friedrich Schiller University Jena</div>
+                                </div>
                             </td>
                         </tr>
-                        <tr class="talk">
+                    </table>
+                </div>
+                <div class="session" id="session:1307">
+                    <div class="heading">
+                        <span class="interval">14:00-14:50</span>
+                        <span class="title">Talk 2</span>
+                        <span class="group_tag">LLM-Solve</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room55.html">C5.08</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1283">
+                    <div class="heading">
+                        <span class="interval">14:00-15:20</span>
+                        <span class="title">Sunday afternoon 1</span>
+                        <span class="group_tag">LCC</span>
+                    </div>
+
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person23231.html">Heribert Vollmer</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room61.html">C4.06</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:735">
                             <td class="time"></td>
                             <td>
-                                <div class="title">The Multi-Skill Project Scheduling Problem: To SAT, or to PB, that is the question.</div>
-                                <div class="authors"><a class="person" href="person23462.html">The Multi-Skill Project Scheduling Problem: To SAT, or to PB, that is the question. - Wilber Eduardo Bermeo Quito</a></div>
+                                <div class="title">On the Expressive Power of Ontology-Mediated Queries: Capturing coNP <a class="abstract_link" href="LCC-2026-07-19.html#talk:735">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5315.html">Sanja Lukumbuzya</a><sup>1</sup>, <a class="person" href="person5316.html">Magdalena Ortiz</a><sup>1</sup>, <a class="person" href="person5317.html">Mantas Simkus</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This work investigates the expressive power of ontology-mediated queries (OMQs) from a descriptive complexity perspective. We first show that OMQ languages based on non-monotonic extension of one of the most expressive description logics cannot express all coNP-computable generic Boolean queries, despite being coNP-complete in data complexity. We then propose an extension of this language and show that it is expressive enough to precisely capture the class of all Boolean queries computable in coNP.</p>
+                                </div>
                             </td>
                         </tr>
-                        <tr class="talk">
+                        <tr class="talk" id="talk:736">
                             <td class="time"></td>
                             <td>
-                                <div class="title">Orthologic for SAT Solving</div>
-                                <div class="authors"><a class="person" href="person24311.html">Orthologic for SAT Solving - Simon Guilloud</a></div>
+                                <div class="title">Counting Complexity of ASP <a class="abstract_link" href="LCC-2026-07-19.html#talk:736">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person5318.html">Max Bannach</a><sup>1</sup>, <a class="person" href="person5319.html">Johannes Klaus Fichte</a><sup>2</sup>, <a class="person" href="person5320.html">Johanna Groven</a><sup>2</sup>, <a class="person" href="person5321.html">Markus Hecher</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> European Space Agency</div>
+                                <div class="affiliation_item"><sup>2</sup> Linköping University</div>
+                                <div class="affiliation_item"><sup>3</sup> CNRS, CRIL</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming (ASP) is a mature and widely used framework for modeling and solving problems in AI, knowledge representation and reasoning, and combinatorial search. Counting answer sets is of growing importance for analyzing search spaces, navigating ASP programs, and enabling probabilistic reasoning. While Truszczýnski established a complete hierarchy for the computational complexity of ASP decision and reasoning problems (skeptical and credulous), a corresponding systematic treatment of counting problems has been missing so far. We close this gap by providing an almost complete characterisation of the counting complexity landscape for ASP.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1371">
+                    <div class="heading">
+                        <span class="interval">14:00-14:30</span>
+                        <span class="title">Sandra Kiefer</span>
+                        <span class="group_tag">MW1</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room48.html">C5.01</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:814">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">On the Relativity of Expertise <a class="abstract_link" href="MW1-2026-07-19.html#talk:814">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person6622.html">Sandra Kiefer</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Oxford University</div>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -2913,6 +2658,21 @@ Experiments on two problem classes and two solvers show promising potential, whi
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:1150">
+                    <div class="heading">
+                        <span class="interval">14:00-15:00</span>
+                        <span class="title">Invited Talk</span>
+                        <span class="group_tag">CPSATDP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room36.html">C1.03</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:1109">
                     <div class="heading">
                         <span class="interval">14:00-15:00</span>
@@ -2940,6 +2700,27 @@ Experiments on two problem classes and two solvers show promising potential, whi
                             </td>
                         </tr>
                     </table>
+                </div>
+                <div class="session" id="session:1626">
+                    <div class="heading">
+                        <span class="interval">14:00-15:00</span>
+                        <span class="title">Lison Blondeau-Patissier (Invited)</span>
+                        <span class="group_tag">TLLA</span>
+                    </div>
+
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person25719.html">Olimpieri</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room59.html">C5.07</a>
+                    </div>
+
+
                 </div>
                 <div class="session" id="session:1659">
                     <div class="heading">
@@ -3148,27 +2929,6 @@ In addition, manually injected off-by-one mutations were also caught within one 
 
 
                 </div>
-                <div class="session" id="session:1627">
-                    <div class="heading">
-                        <span class="interval">15:00-15:25</span>
-                        <span class="title">S3.1</span>
-                        <span class="group_tag">TLLA</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person25719.html">Olimpieri</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room59.html">C5.07</a>
-                    </div>
-
-
-                </div>
                 <div class="session" id="session:1110">
                     <div class="heading">
                         <span class="interval">15:00-15:30</span>
@@ -3196,6 +2956,27 @@ In addition, manually injected off-by-one mutations were also caught within one 
                             </td>
                         </tr>
                     </table>
+                </div>
+                <div class="session" id="session:1627">
+                    <div class="heading">
+                        <span class="interval">15:00-15:25</span>
+                        <span class="title">S3.1</span>
+                        <span class="group_tag">TLLA</span>
+                    </div>
+
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person25719.html">Olimpieri</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room59.html">C5.07</a>
+                    </div>
+
+
                 </div>
                 <div class="session" id="session:1270">
                     <div class="heading">
@@ -3325,51 +3106,6 @@ horn.</p>
 
 
                 </div>
-                <div class="session" id="session:1602">
-                    <div class="heading">
-                        <span class="interval">15:30-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">ThEdu</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room47.html">C2.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1473">
-                    <div class="heading">
-                        <span class="interval">15:30-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">PEG</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room52.html">C3.01</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1491">
-                    <div class="heading">
-                        <span class="interval">15:30-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">QBF</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room54.html">C5.02</a>
-                    </div>
-
-
-                </div>
                 <div class="session" id="session:1660">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
@@ -3400,51 +3136,6 @@ horn.</p>
 
 
                 </div>
-                <div class="session" id="session:1152">
-                    <div class="heading">
-                        <span class="interval">15:30-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">CPSATDP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room36.html">C1.03</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1207">
-                    <div class="heading">
-                        <span class="interval">15:30-16:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">GALOP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room56.html">C5.06</a>
-                    </div>
-
-
-                </div>
-                <div class="session" id="session:1327">
-                    <div class="heading">
-                        <span class="interval">15:30-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">LSFA</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room43.html">C4.07</a>
-                    </div>
-
-
-                </div>
                 <div class="session" id="session:1309">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
@@ -3471,6 +3162,66 @@ horn.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room48.html">C5.01</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1327">
+                    <div class="heading">
+                        <span class="interval">15:30-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">LSFA</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room43.html">C4.07</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1411">
+                    <div class="heading">
+                        <span class="interval">15:30-16:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">NMR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1452">
+                    <div class="heading">
+                        <span class="interval">15:30-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">PC</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room65.html">C5.09</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1473">
+                    <div class="heading">
+                        <span class="interval">15:30-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">PEG</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room52.html">C3.01</a>
                     </div>
 
 
@@ -3533,32 +3284,62 @@ Our initial experiments show that ConPNet retains competitive classification eff
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1411">
+                <div class="session" id="session:1491">
                     <div class="heading">
-                        <span class="interval">15:30-16:00</span>
+                        <span class="interval">15:30-16:30</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">NMR</span>
+                        <span class="group_tag">QBF</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
+                        <a class="room_name" href="room54.html">C5.02</a>
                     </div>
 
 
                 </div>
-                <div class="session" id="session:1452">
+                <div class="session" id="session:1602">
                     <div class="heading">
                         <span class="interval">15:30-16:30</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">PC</span>
+                        <span class="group_tag">ThEdu</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room65.html">C5.09</a>
+                        <a class="room_name" href="room47.html">C2.01</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1152">
+                    <div class="heading">
+                        <span class="interval">15:30-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">CPSATDP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room36.html">C1.03</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1207">
+                    <div class="heading">
+                        <span class="interval">15:30-16:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">GALOP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room56.html">C5.06</a>
                     </div>
 
 
@@ -3599,51 +3380,6 @@ Our initial experiments show that ConPNet retains competitive classification eff
 
 
                 </div>
-                <div class="session" id="session:1347">
-                    <div class="heading">
-                        <span class="interval">15:50-17:00</span>
-                        <span class="title">Session 4: Applications</span>
-                        <span class="group_tag">ModRef</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room45.html">C3.02</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Novel Pair- and Topic-Swapping</div>
-                                <div class="authors"><a class="person" href="person23625.html">Novel Pair- and Topic-Swapping - Frej Knutar Lewander</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">No More Awkward Silences with Table Talk Tuning</div>
-                                <div class="authors"><a class="person" href="person25629.html">No More Awkward Silences with Table Talk Tuning -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">A Simple Yet Efficient Lifted Formulation for Hard-to-Ground Planning Problems</div>
-                                <div class="authors"><a class="person" href="person23233.html">A Simple Yet Efficient Lifted Formulation for Hard-to-Ground Planning Problems - Miquel Bofill Arasa</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Automated grading of student constraint models</div>
-                                <div class="authors"><a class="person" href="person25630.html">Automated grading of student constraint models -</a></div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
                 <div class="session" id="session:1285">
                     <div class="heading">
                         <span class="interval">15:50-17:00</span>
@@ -3664,22 +3400,6 @@ Our initial experiments show that ConPNet retains competitive classification eff
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Proof complexity of QBF: relations to circuits and computationally hard problems</div>
-                                <div class="authors"><a class="person" href="person23393.html">Proof complexity of QBF: relations to circuits and computationally hard problems - Olaf Beyersdorff</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Closing</div>
-                                <div class="authors"><a class="person" href="person23440.html">Closing - Isabel Oitavem</a></div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:1485">
                     <div class="heading">
@@ -3695,259 +3415,21 @@ Our initial experiments show that ConPNet retains competitive classification eff
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Improving Local Search and adding DDFW to Kissat and CaDiCaL</div>
-                                <div class="authors"><a class="person" href="person25676.html">Improving Local Search and adding DDFW to Kissat and CaDiCaL -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">NobleCount: Revisiting a Forgotten Data Structure for Local Search in SAT</div>
-                                <div class="authors"><a class="person" href="person25677.html">NobleCount: Revisiting a Forgotten Data Structure for Local Search in SAT -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">ams-dist: A Scalable Distributed Hybrid Solver for Hard Combinatorial Problems</div>
-                                <div class="authors"><a class="person" href="person25678.html">ams-dist: A Scalable Distributed Hybrid Solver for Hard Combinatorial Problems -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">MIGSat: A Majority Inverter Graph SAT Solver</div>
-                                <div class="authors"><a class="person" href="person25679.html">MIGSat: A Majority Inverter Graph SAT Solver -</a></div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
-                <div class="session" id="session:1629">
+                <div class="session" id="session:1347">
                     <div class="heading">
-                        <span class="interval">16:00-17:15</span>
-                        <span class="title">S3.2</span>
-                        <span class="group_tag">TLLA</span>
-                    </div>
-
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person25719.html">Olimpieri</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room59.html">C5.07</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:998">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Generating Functions for Probabilistic Programs via the Weighted Relational Model of Linear Logic <a class="abstract_link" href="TLLA-2026-07-19.html#talk:998">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7170.html">Ugo Dal Lago</a><sup>1</sup>, <a class="person" href="person7171.html">Guido Fiorillo</a><sup>2</sup>, <a class="person" href="person7172.html">Paolo Pistone</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Bologna and INRIA Sophia Antipolis</div>
-                                <div class="affiliation_item"><sup>2</sup> Université Claude Bernard Lyon 1</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Assessing quantitative properties of probabilistic programs, like e.g. almost sure termination, is often an undecidable problem. It is, therefore, interesting to identify classes of programs for which these problems become tractable. In a paper to be presented at LICS 2026 (https://arxiv.org/abs/2604.27986) we have shown that the weighted relational model of linear logic can be used to translate (Positive) Almost Sure Termination ((P)AST) for Probabilistic Higher-Order Recursion Schemes (PHORS) into a problem involving generating functions. Then, by using algebraic properties, we have identified a class of PHORS (extending Li et al.’s affine PHORS) whose corresponding generating function is algebraic, making the (P)AST problems decidable.
-In this abstract, we show that this framework is also fruitful for different quantitative problems and other classes of programs. In particular, we consider two types of quantitative problems: exact inference (i.e. computing the posterior probability distribution generated by a program) and computing the termination probability of a program. To consider inference, we consider Boolean PHORS, a variant of PHORS having a type for the booleans. We then present a typing system that ensures the generating function of a (Boolean) PHORS is either rational or algebraic. In the rational case, we show that exact inference for (Boolean) PHORS is computable and that not only (P)AST is decidable, but the exact value of the probability of termination can be computed in polynomial time. In the algebraic case, we show that we can compute an approximation up to any desired precision of the posterior distribution.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:999">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">The Reasonable Effectiveness of Linear Logic in Quantitative Methods <a class="abstract_link" href="TLLA-2026-07-19.html#talk:999">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7173.html">Matteo Capucci</a><sup>1,2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Strathclyde</div>
-                                <div class="affiliation_item"><sup>2</sup> Independent Researcher</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> By 'enriching' the usual sequent calculus of linear logic over the reals, additives and multiplicatives can be interpreted as addition and multiplication. We thus obtain Quantitative Linear Logic (QLL). Besides the technical curiosity, this creates a bridge between structural methods (chiefly linear logic) and quantitative ones. We support this claim in various ways, and invite the community to further explore this newfound connection.
-The talk is based on recent work joint with Atkey, Komendantskaya, and Grellois, as well as with Flinkow, Komendantskaya, and Monahan.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1661">
-                    <div class="heading">
-                        <span class="interval">16:00-17:20</span>
-                        <span class="title">Papers 3</span>
-                        <span class="group_tag">WHOOPS</span>
+                        <span class="interval">15:50-17:00</span>
+                        <span class="title">Session 4: Applications</span>
+                        <span class="group_tag">ModRef</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room50.html">C1.01</a>
+                        <a class="room_name" href="room45.html">C3.02</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk" id="talk:1027">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Generalised Clause Learning for Constraint Programming <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1027">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7235.html">Justin Pearson</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Uppsala universitet</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this talk, I will  present a generalisation of conflict-driven
-  clause learning (CDCL) for constraint programming over abstract
-  domains. A core idea in constraint programming is propagation: each
-  constraint has an associated algorithm that during search prunes
-  potential non-solutions.  The abstract theory of constraint
-  propagators as idempotent, monotonic, contracting functions over
-  partial orders has led to the development of propagators and solvers
-  over non-integer domains, such as strings, sets or floating point
-  numbers.  Building on this theory, I introduce a generalisation of
-  reasons, explanations, and implication graphs from CDCL to
-  propagation-based solving over abstract domains. A central result
-  shows that cuts in the implication graph are no-goods.  An abstract
-  scheme is presented that unifies CDCL solving from SAT and
-  lazy-clause search from constraint programming. This work is a first
-  step to generalising proof logging for abstract domains in
-  constraint programming.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1028">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">How can hard can multiplication be? <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1028">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7236.html">Matthew J. McIlree</a><sup>1</sup>, <a class="person" href="person7237.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Glasgow</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A constraint programming (CP) solver that implements proof logging will output a machine-checkable certificate of correctness alongside any result it obtains. This is useful for trusting claims of unsatisfiability or optimality, as well as for debugging and auditing solver implementations. Proofs can be constructed by having the solver log justifications for each inference it makes, and previous work has shown that many standard CP reasoning techniques can be efficiently justified using a pseudo-Boolean (PB) proof format.
-
-Multiplication constraints of the form $X \times Y = Z$ are a fundamental primitive for CP modelling, but they pose a unique challenge for PB proof logging, given their non-linear nature. In this talk, I will present an overview of how multiplication constraints can be encoded as 
-$0$-$1$-linear inequalities, and then how bounds-consistent reasoning can 
-be justified using the \emph{VeriPB} proof format. We will see that this is possible to achieve, but comes with significant costs in terms of proof logging and checking overhead. I will then 
-discuss what this means for certified CP more broadly, and some ideas 
-for making PB proofs of this nature more usable and efficiently checkable in practice. 
-
-This talk will be mostly based on the previously published paper, "Certifying Bounds Propagation for Integer Multiplication Constraints" and a short version was presented at AAAI in 2025.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1029">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Efficient and Reliable Hitting-Set Computations for the Implicit Hitting Set Approach <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1029">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7238.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person7239.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person7240.html">André Schidler</a><sup>3</sup>, <a class="person" href="person7241.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person7242.html">Bart Bogaerts</a><sup>4</sup>, <a class="person" href="person7243.html">Matti Järvisalo</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
-                                <div class="affiliation_item"><sup>2</sup> Vrije Universiteit Brussel & KU Leuven</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Freiburg</div>
-                                <div class="affiliation_item"><sup>4</sup> KU Leuven & Vrije Universiteit Brussel</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The implicit hitting set (IHS) approach offers a general framework for solving computationally hard combinatorial optimization problems declaratively by iterating between a decision oracle used for extracting sources of inconsistency and an optimizer for computing so-called hitting sets (HSs) over the accumulated sources of inconsistency. While the decision oracle is language-specific, the optimizer is usually instantiated through an (often commercial, closed-source) integer programming (IP) solver.  This makes proof logging in implicit hitting set solvers challenging.  Moreover, IP solvers are known to give incorrect results, mostly due to numerical instability. 
-	
-The presented work deals with obtaining reliable hitting set computation in the context of pseudo-Boolean (0--1 IP) optimization. We explore alternative algorithmic techniques for hitting set optimization based on different ways of employing pseudo-Boolean reasoning as well as stochastic local search. Based on earlier work on proof logging for pseudo-Boolean solving using the VeriPB proof system, we obtain the first implicit hitting set solver that is able to produce proofs of optimality of its solution. Our experimental evaluation highlights a trade-off between efficiency and reliability:  replacing a commercial IP solver with a pseudo-Boolean solver enhances reliability and gives proof logging possibilities, at the cost of solving efficiency. To mitigate this trade-off, we experimented with different hybrid approaches that differ in when to replace the IP solver by a more reliable, certifying solver.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1030">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Pseudo-Boolean Blasting for the SMT Theory of Bit-Vectors <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1030">(abstract)</a></div>
-                                <div class="authors">
-<a class="person" href="person7244.html">Pedro Saccomani</a><sup>1</sup>, <a class="person" href="person7245.html">Haniel Barbosa</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
-                                <div class="affiliation_item"><sup>2</sup> Universidade Federal de MInas Ferais</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Bit-vector solving is essential to many practical applications of Satisfiability Modulo Theories (SMT) solvers.
-Currently, most state-of-the-art SMT solvers handle this theory by means of bit-blasting: After simplifications,
-the input formula is converted into an equisatisfiable formula in propositional logic, which has its satisfiability
-decided by a SAT solver based on resolution, which is known to handle counting and modular reasoning poorly.
-Unfortunately, arithmetic bit-vector operators produce large CNF encodings, especially for multiplication, whose
-refutations can be exponential in size. One alternative is to reason at the word level via polynomial constraints,
-solved using computer algebra techniques, that can be captured by the Polynomial Calculus (PC). However,
-this approach does not handle general reasoning well.
-Pseudo-Boolean (PB) solvers reason with cutting planes, a proof system that can polynomially simulate
-resolution and is exponentially stronger on some of the arithmetic structure of bit-vectors, while avoiding
-the difficulties PC has with bit-level reasoning. This suggests that converting bit-vector constraints into PB
-constraints rather than propositional clauses could yield smaller proofs and potentially faster solving. An
-analogous strategy of translating bit-vectors into integer arithmetic has already shown such gains on increasing
-bit-widths.
-Liew et al. proposed an approach to verify properties of bit-vector multiplication based on pseudo-Booleans,
-via cutting-planes proofs, presenting a construction of optimal polynomial-size proofs for a class of bit-vector
-multiplicative identities. In this work, we plan to extend this approach to the context of SMT solving by
-developing a novel proof-producing decision procedure based on blasting to PB constraints, leveraging external
-PB solvers.
-We are implementing this in the cvc5 SMT solver, building on its extensive infrastructure for proof logging,
-which produces proofs in the Cooperating Proof Calculus (CPC) and Alethe proof formats; as the PB
-solver we use RoundingSat, which produces cutting-planes proofs in the veriPB format. So far we translate all
-operators of the fixed-size bit-vector theory of SMT-LIB except bit-shifts, division and remainder, discharging the
-resulting constraints to RoundingSat. Proofs of the decision procedure will combine cutting-planes reasoning
-with a justification of each translation step to PB constraints; we are extending Alethe and CPC to capture
-them, and their respective proof checkers Carcara and Ethos to verify them.
-In the talk we will detail the encoding strategy used for the operators we already cover, the obstacles posed
-by bit-shifts, division and remainder, and how the cutting-planes proofs produced by RoundingSat can be
-lifted into Alethe and CPC for checking by Carcara and Ethos.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:1208">
-                    <div class="heading">
-                        <span class="interval">16:00-17:40</span>
-                        <span class="title">Contributed Talks - Session 4</span>
-                        <span class="group_tag">GALOP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room56.html">C5.06</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Takahashi's Gambit: Avoiding Context Lemmas in Operational Game Semantics</div>
-                                <div class="authors"><a class="person" href="person24244.html">Takahashi's Gambit: Avoiding Context Lemmas in Operational Game Semantics - Adrienne Lancelot</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Unbounded data nesting for loops in higher-order programs</div>
-                                <div class="authors"><a class="person" href="person24069.html">Unbounded data nesting for loops in higher-order programs - Adriana Baldacchino</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Energy Games for Generalized Equivalence Checking</div>
-                                <div class="authors"><a class="person" href="person24859.html">Energy Games for Generalized Equivalence Checking - Benjamin Bisping</a></div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:1310">
                     <div class="heading">
@@ -4090,6 +3572,206 @@ Our experience suggests that LLMs can support solver implementation from papers,
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:1208">
+                    <div class="heading">
+                        <span class="interval">16:00-17:40</span>
+                        <span class="title">Contributed Talks - Session 4</span>
+                        <span class="group_tag">GALOP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room56.html">C5.06</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1661">
+                    <div class="heading">
+                        <span class="interval">16:00-17:20</span>
+                        <span class="title">Papers 3</span>
+                        <span class="group_tag">WHOOPS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room50.html">C1.01</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1027">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Generalised Clause Learning for Constraint Programming <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1027">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7235.html">Justin Pearson</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala universitet</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this talk, I will  present a generalisation of conflict-driven
+  clause learning (CDCL) for constraint programming over abstract
+  domains. A core idea in constraint programming is propagation: each
+  constraint has an associated algorithm that during search prunes
+  potential non-solutions.  The abstract theory of constraint
+  propagators as idempotent, monotonic, contracting functions over
+  partial orders has led to the development of propagators and solvers
+  over non-integer domains, such as strings, sets or floating point
+  numbers.  Building on this theory, I introduce a generalisation of
+  reasons, explanations, and implication graphs from CDCL to
+  propagation-based solving over abstract domains. A central result
+  shows that cuts in the implication graph are no-goods.  An abstract
+  scheme is presented that unifies CDCL solving from SAT and
+  lazy-clause search from constraint programming. This work is a first
+  step to generalising proof logging for abstract domains in
+  constraint programming.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1028">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">How can hard can multiplication be? <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1028">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7236.html">Matthew J. McIlree</a><sup>1</sup>, <a class="person" href="person7237.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Glasgow</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A constraint programming (CP) solver that implements proof logging will output a machine-checkable certificate of correctness alongside any result it obtains. This is useful for trusting claims of unsatisfiability or optimality, as well as for debugging and auditing solver implementations. Proofs can be constructed by having the solver log justifications for each inference it makes, and previous work has shown that many standard CP reasoning techniques can be efficiently justified using a pseudo-Boolean (PB) proof format.
+
+Multiplication constraints of the form $X \times Y = Z$ are a fundamental primitive for CP modelling, but they pose a unique challenge for PB proof logging, given their non-linear nature. In this talk, I will present an overview of how multiplication constraints can be encoded as 
+$0$-$1$-linear inequalities, and then how bounds-consistent reasoning can 
+be justified using the \emph{VeriPB} proof format. We will see that this is possible to achieve, but comes with significant costs in terms of proof logging and checking overhead. I will then 
+discuss what this means for certified CP more broadly, and some ideas 
+for making PB proofs of this nature more usable and efficiently checkable in practice. 
+
+This talk will be mostly based on the previously published paper, "Certifying Bounds Propagation for Integer Multiplication Constraints" and a short version was presented at AAAI in 2025.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1029">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Efficient and Reliable Hitting-Set Computations for the Implicit Hitting Set Approach <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1029">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7238.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person7239.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person7240.html">André Schidler</a><sup>3</sup>, <a class="person" href="person7241.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person7242.html">Bart Bogaerts</a><sup>4</sup>, <a class="person" href="person7243.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
+                                <div class="affiliation_item"><sup>2</sup> Vrije Universiteit Brussel & KU Leuven</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Freiburg</div>
+                                <div class="affiliation_item"><sup>4</sup> KU Leuven & Vrije Universiteit Brussel</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The implicit hitting set (IHS) approach offers a general framework for solving computationally hard combinatorial optimization problems declaratively by iterating between a decision oracle used for extracting sources of inconsistency and an optimizer for computing so-called hitting sets (HSs) over the accumulated sources of inconsistency. While the decision oracle is language-specific, the optimizer is usually instantiated through an (often commercial, closed-source) integer programming (IP) solver.  This makes proof logging in implicit hitting set solvers challenging.  Moreover, IP solvers are known to give incorrect results, mostly due to numerical instability. 
+	
+The presented work deals with obtaining reliable hitting set computation in the context of pseudo-Boolean (0--1 IP) optimization. We explore alternative algorithmic techniques for hitting set optimization based on different ways of employing pseudo-Boolean reasoning as well as stochastic local search. Based on earlier work on proof logging for pseudo-Boolean solving using the VeriPB proof system, we obtain the first implicit hitting set solver that is able to produce proofs of optimality of its solution. Our experimental evaluation highlights a trade-off between efficiency and reliability:  replacing a commercial IP solver with a pseudo-Boolean solver enhances reliability and gives proof logging possibilities, at the cost of solving efficiency. To mitigate this trade-off, we experimented with different hybrid approaches that differ in when to replace the IP solver by a more reliable, certifying solver.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1030">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Pseudo-Boolean Blasting for the SMT Theory of Bit-Vectors <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1030">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7244.html">Pedro Saccomani</a><sup>1</sup>, <a class="person" href="person7245.html">Haniel Barbosa</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidade Federal de MInas Ferais</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Bit-vector solving is essential to many practical applications of Satisfiability Modulo Theories (SMT) solvers.
+Currently, most state-of-the-art SMT solvers handle this theory by means of bit-blasting: After simplifications,
+the input formula is converted into an equisatisfiable formula in propositional logic, which has its satisfiability
+decided by a SAT solver based on resolution, which is known to handle counting and modular reasoning poorly.
+Unfortunately, arithmetic bit-vector operators produce large CNF encodings, especially for multiplication, whose
+refutations can be exponential in size. One alternative is to reason at the word level via polynomial constraints,
+solved using computer algebra techniques, that can be captured by the Polynomial Calculus (PC). However,
+this approach does not handle general reasoning well.
+Pseudo-Boolean (PB) solvers reason with cutting planes, a proof system that can polynomially simulate
+resolution and is exponentially stronger on some of the arithmetic structure of bit-vectors, while avoiding
+the difficulties PC has with bit-level reasoning. This suggests that converting bit-vector constraints into PB
+constraints rather than propositional clauses could yield smaller proofs and potentially faster solving. An
+analogous strategy of translating bit-vectors into integer arithmetic has already shown such gains on increasing
+bit-widths.
+Liew et al. proposed an approach to verify properties of bit-vector multiplication based on pseudo-Booleans,
+via cutting-planes proofs, presenting a construction of optimal polynomial-size proofs for a class of bit-vector
+multiplicative identities. In this work, we plan to extend this approach to the context of SMT solving by
+developing a novel proof-producing decision procedure based on blasting to PB constraints, leveraging external
+PB solvers.
+We are implementing this in the cvc5 SMT solver, building on its extensive infrastructure for proof logging,
+which produces proofs in the Cooperating Proof Calculus (CPC) and Alethe proof formats; as the PB
+solver we use RoundingSat, which produces cutting-planes proofs in the veriPB format. So far we translate all
+operators of the fixed-size bit-vector theory of SMT-LIB except bit-shifts, division and remainder, discharging the
+resulting constraints to RoundingSat. Proofs of the decision procedure will combine cutting-planes reasoning
+with a justification of each translation step to PB constraints; we are extending Alethe and CPC to capture
+them, and their respective proof checkers Carcara and Ethos to verify them.
+In the talk we will detail the encoding strategy used for the operators we already cover, the obstacles posed
+by bit-shifts, division and remainder, and how the cutting-planes proofs produced by RoundingSat can be
+lifted into Alethe and CPC for checking by Carcara and Ethos.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1629">
+                    <div class="heading">
+                        <span class="interval">16:00-17:15</span>
+                        <span class="title">S3.2</span>
+                        <span class="group_tag">TLLA</span>
+                    </div>
+
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person25719.html">Olimpieri</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room59.html">C5.07</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:998">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Generating Functions for Probabilistic Programs via the Weighted Relational Model of Linear Logic <a class="abstract_link" href="TLLA-2026-07-19.html#talk:998">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7170.html">Ugo Dal Lago</a><sup>1</sup>, <a class="person" href="person7171.html">Guido Fiorillo</a><sup>2</sup>, <a class="person" href="person7172.html">Paolo Pistone</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Bologna and INRIA Sophia Antipolis</div>
+                                <div class="affiliation_item"><sup>2</sup> Université Claude Bernard Lyon 1</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Assessing quantitative properties of probabilistic programs, like e.g. almost sure termination, is often an undecidable problem. It is, therefore, interesting to identify classes of programs for which these problems become tractable. In a paper to be presented at LICS 2026 (https://arxiv.org/abs/2604.27986) we have shown that the weighted relational model of linear logic can be used to translate (Positive) Almost Sure Termination ((P)AST) for Probabilistic Higher-Order Recursion Schemes (PHORS) into a problem involving generating functions. Then, by using algebraic properties, we have identified a class of PHORS (extending Li et al.’s affine PHORS) whose corresponding generating function is algebraic, making the (P)AST problems decidable.
+In this abstract, we show that this framework is also fruitful for different quantitative problems and other classes of programs. In particular, we consider two types of quantitative problems: exact inference (i.e. computing the posterior probability distribution generated by a program) and computing the termination probability of a program. To consider inference, we consider Boolean PHORS, a variant of PHORS having a type for the booleans. We then present a typing system that ensures the generating function of a (Boolean) PHORS is either rational or algebraic. In the rational case, we show that exact inference for (Boolean) PHORS is computable and that not only (P)AST is decidable, but the exact value of the probability of termination can be computed in polynomial time. In the algebraic case, we show that we can compute an approximation up to any desired precision of the posterior distribution.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:999">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The Reasonable Effectiveness of Linear Logic in Quantitative Methods <a class="abstract_link" href="TLLA-2026-07-19.html#talk:999">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person7173.html">Matteo Capucci</a><sup>1,2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Strathclyde</div>
+                                <div class="affiliation_item"><sup>2</sup> Independent Researcher</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> By 'enriching' the usual sequent calculus of linear logic over the reals, additives and multiplicatives can be interpreted as addition and multiplication. We thus obtain Quantitative Linear Logic (QLL). Besides the technical curiosity, this creates a bridge between structural methods (chiefly linear logic) and quantitative ones. We support this claim in various ways, and invite the community to further explore this newfound connection.
+The talk is based on recent work joint with Atkey, Komendantskaya, and Grellois, as well as with Flinkow, Komendantskaya, and Monahan.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session" id="session:1136">
                     <div class="heading">
                         <span class="interval">16:10-16:30</span>
@@ -4116,23 +3798,17 @@ Our experience suggests that LLMs can support solver implementation from papers,
 
 
                 </div>
-                <div class="session" id="session:1429">
+                <div class="session" id="session:1153">
                     <div class="heading">
-                        <span class="interval">16:30-16:45</span>
-                        <span class="title">Closing remarks</span>
-                        <span class="group_tag">OVERLAY</span>
+                        <span class="interval">16:30-18:00</span>
+                        <span class="title">Session 7</span>
+                        <span class="group_tag">CPSATDP</span>
                     </div>
 
-                    <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
-<a class="person" href="person23383.html">Nicola Gigante</a>
-                        </div>
-                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room37.html">C1.04</a>
+                        <a class="room_name" href="room36.html">C1.03</a>
                     </div>
 
 
@@ -4202,17 +3878,23 @@ In this paper, we define and study an extension to a QBF proof system of the - t
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1153">
+                <div class="session" id="session:1429">
                     <div class="heading">
-                        <span class="interval">16:30-18:00</span>
-                        <span class="title">Session 7</span>
-                        <span class="group_tag">CPSATDP</span>
+                        <span class="interval">16:30-16:45</span>
+                        <span class="title">Closing remarks</span>
+                        <span class="group_tag">OVERLAY</span>
                     </div>
 
+                    <div class="session_chair">
+                        <div class="chair_word">Chair:</div>
+                        <div class="chair_names">
+<a class="person" href="person23383.html">Nicola Gigante</a>
+                        </div>
+                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room36.html">C1.03</a>
+                        <a class="room_name" href="room37.html">C1.04</a>
                     </div>
 
 
@@ -4287,29 +3969,6 @@ As in many of the seven papers, also this summary starts from education consider
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Reverse-Engineering Constraint Models from CNFs: An Agentic Approach</div>
-                                <div class="authors"><a class="person" href="person23588.html">Reverse-Engineering Constraint Models from CNFs: An Agentic Approach - Johannes Klaus Fichte</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Coloring Queens with Thousands of Encodings</div>
-                                <div class="authors"><a class="person" href="person25680.html">Coloring Queens with Thousands of Encodings -</a></div>
-                            </td>
-                        </tr>
-                        <tr class="talk">
-                            <td class="time"></td>
-                            <td>
-                                <div class="title">Power Term Polynomial Algebra for Boolean Logic</div>
-                                <div class="authors"><a class="person" href="person25681.html">Power Term Polynomial Algebra for Boolean Logic -</a></div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:1413">
                     <div class="heading">
