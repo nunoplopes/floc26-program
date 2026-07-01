@@ -68,6 +68,7 @@ tr.talk:target td { background: #fff8d6; }
 .room_sessions_empty { color: #888; font-style: italic; }
 
 #disclaimer { margin-top: 30px; padding-top: 10px; border-top: 1px solid #eee; font-size: 11px; color: #888; }
+#last_updated { display: block; margin-top: 2px; }
 
 .shortcuts { padding: 8px 0; margin: 8px 0 16px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; font-size: 14px; }
 .shortcuts .links { margin-left: 8px; }
