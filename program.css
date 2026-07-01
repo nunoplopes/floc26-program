@@ -7,12 +7,12 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 #header #title { font-size: 22px; font-weight: bold; padding: 0; border: none; }
 #title { font-size: 22px; font-weight: bold; padding: 8px 0; border-bottom: 1px solid #ccc; }
 
-#main_menu { padding: 8px 0; border-bottom: 1px solid #eee; }
-#main_menu a { display: inline-block; padding: 4px 12px; margin-right: 4px; background: #eef; color: #225; text-decoration: none; border-radius: 3px; }
-#main_menu a.selected { background: #c33; color: #fff; font-weight: bold; }
+#main_menu { padding: 10px 0; border-bottom: 1px solid #eee; }
+#main_menu a { display: inline-block; padding: 8px 18px; margin-right: 8px; font-size: 15px; font-weight: 600; background: #eef; color: #225; text-decoration: none; border-radius: 4px; }
+#main_menu a.selected { background: #c33; color: #fff; }
 
-#menu2, #menu3 { padding: 8px 0; font-size: 12px; border-bottom: 1px solid #eee; line-height: 1.9; }
-#menu2 a, #menu3 a { display: inline-block; background: #def; color: #225; text-decoration: none; padding: 2px 8px; margin: 0 1px; border-radius: 2px; }
+#menu2, #menu3 { display: flex; flex-wrap: wrap; align-items: center; row-gap: 10px; column-gap: 8px; padding: 10px 0; font-size: 14px; border-bottom: 1px solid #eee; }
+#menu2 a, #menu3 a { display: inline-block; background: #def; color: #225; text-decoration: none; white-space: nowrap; padding: 5px 12px; border-radius: 3px; }
 #menu2 a:hover, #menu3 a:hover { background: #cde; }
 #menu2 a.selected, #menu3 a.selected { background: #c33; color: #fff; font-weight: bold; }
 #menu2 a.selected:hover, #menu3 a.selected:hover { background: #c33; }
@@ -122,8 +122,9 @@ table.bio_layout { width: 100%; border-collapse: collapse; margin-top: 8px; }
     #header .event_logo { height: 60px; }
     #header #title, #title { font-size: 18px; }
 
-    #main_menu a { padding: 4px 8px; margin-bottom: 4px; font-size: 13px; }
-    #menu2, #menu3 { line-height: 2.4; }
+    #main_menu a { padding: 6px 12px; margin-right: 4px; font-size: 14px; }
+    #menu2, #menu3 { row-gap: 5px; column-gap: 6px; font-size: 13px; }
+    #menu2 a, #menu3 a { padding: 6px 13px; }
 
     .session .group_tag { float: none; display: inline-block; margin-top: 4px; }
 
