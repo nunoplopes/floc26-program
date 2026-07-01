@@ -11,7 +11,7 @@
     <tr>
         <td class="central_td_column">
             <div id="header">
-                <img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" />
+                <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
             </div>
 
@@ -100,8 +100,12 @@
                         <tr class="talk" id="talk:389">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person24391_0.html">Arthur Correnson</a></div>
                                 <div class="title">Completing Almost Fair Simulations <a class="abstract_link" href="ITP-2026-07-29.html#talk:389">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2152.html">Arthur Correnson</a><sup>1</sup>, <a class="person" href="person2153.html">Iona Kuhn</a><sup>1</sup>, <a class="person" href="person2154.html">Bernd Finkbeiner</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Almost Fair Simulations were recently introduced as a technique for interactive proofs of language inclusion between Büchi automata. The presented deductive system enables cyclic proofs, but is incomplete for fair similarity, a standard notion of refinement for Büchi automata. In this paper, we address this shortcoming by presenting a new deductive system for language inclusion of Büchi automata that preserves the simplicity of Almost Fair Simulations, with the additional benefit of being complete for fair similarity. We mechanized the soundness and the completeness proofs of our new system in the Rocq proof assistant. The proofs rely on a new technique we call nested parameterized coinduction, an adaptation of Hur's et al. parameterized coinduction for the difficult case of proofs by coinduction-induction-coinduction.</p>
                                 </div>
@@ -142,8 +146,14 @@
                         <tr class="talk" id="talk:392">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person23335_0.html">Manuel Eberl</a></div>
                                 <div class="title">From Weierstraß to Dedekind: Formalising Foundations of Modular Forms <a class="abstract_link" href="ITP-2026-07-29.html#talk:392">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2162.html">Manuel Eberl</a><sup>1</sup>, <a class="person" href="person2163.html">Wenda Li</a><sup>2</sup>, <a class="person" href="person2164.html">Lawrence C. Paulson</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Cambridge</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present an Isabelle/HOL formalisation of the foundations of analytic number theory related to modular forms.
 
@@ -188,8 +198,13 @@ In all of this, we aim for short and clean proofs, building a library of reusabl
                         <tr class="talk" id="talk:394">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person24101_0.html">Omer Keskin</a></div>
                                 <div class="title">Formally Verified Liveness with Multiparty Session Types in Rocq <a class="abstract_link" href="ITP-2026-07-29.html#talk:394">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2169.html">Omer Keskin</a><sup>1</sup>, <a class="person" href="person2170.html">Nobuko Yoshida</a><sup>2</sup>, <a class="person" href="person2171.html">Rob van Glabbeek</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Multiparty session types (MPST) offer a framework for the description of communication-based protocols involving multiple participants. In the top-down approach to MPST, the communication pattern of the session is described using a global type. Then the global type is projected on to a local type for each participant, and the individual processes making up the session are type-checked against these projections. Typed sessions possess certain desirable properties such as safety, deadlock-freedom and liveness.
 
@@ -203,8 +218,13 @@ Besides clarifying the often informal proofs found in the MPST literature, our R
                         <tr class="talk" id="talk:395">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person23656_0.html">Sage Binder</a></div>
                                 <div class="title">Apply2Isar: Automatically Converting Isabelle/HOL Apply-Style Proofs to Structured Isar <a class="abstract_link" href="ITP-2026-07-29.html#talk:395">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2172.html">Sage Binder</a><sup>1</sup>, <a class="person" href="person2173.html">Hanna Lachnitt</a><sup>2</sup>, <a class="person" href="person2174.html">Katherine Kosaian</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Iowa</div>
+                                <div class="affiliation_item"><sup>2</sup> Stanford University</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In Isabelle/HOL, declarative proofs written in the Isar language are widely appreciated for their readability and robustness. However, some users may prefer writing procedural "apply-style" proof scripts since they enable rapid exploration of the search space. To get the best of both worlds, we introduce Apply2Isar, a tool for Isabelle/HOL that automatically converts apply-style scripts to declarative Isar. This allows users to write complex, possibly fragile apply-style scripts, and then automatically convert them to more readable and robust declarative Isar proofs. To demonstrate the the efficacy of Apply2Isar in practice, we evaluate it on a large benchmark set consisting of apply-style proofs from the Isabelle Archive of Formal Proofs.</p>
                                 </div>
@@ -213,8 +233,12 @@ Besides clarifying the often informal proofs found in the MPST literature, our R
                         <tr class="talk" id="talk:396">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person23756_0.html">Damien Pous</a></div>
                                 <div class="title">String diagrams for monoidal categories, in Rocq <a class="abstract_link" href="ITP-2026-07-29.html#talk:396">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2175.html">Damien Pous</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ENS de Lyon</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a Rocq library for monoidal categories, which includes a decision procedure for proving equality of morphisms as well as notations that make it possible to reason as if they were strict, inferring MacLane isomorphims automatically in the background.
 Together with an external tool for visualising and editing string diagrams, this make it possible to perform rewriting steps in monoidal categories graphically, and to translate them back into formal proofs which are concise and readable.</p>

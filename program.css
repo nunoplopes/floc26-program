@@ -44,9 +44,13 @@ table.talks { width: 100%; margin-top: 6px; border-collapse: collapse; }
 table.talks td { padding: 4px 8px; vertical-align: top; border-top: 1px dashed #ddd; }
 table.talks td.time { width: 60px; font-weight: bold; color: #225; white-space: nowrap; }
 .authors { font-size: 13px; color: #225; }
+.authors sup { font-size: 10px; }
+.affiliations { font-size: 12px; color: #666; font-style: italic; margin-top: 2px; }
+.affiliation_item { display: inline; margin-right: 10px; white-space: nowrap; }
+.affiliation_item sup { font-size: 10px; margin-right: 1px; font-style: normal; }
 a.person { color: #225; text-decoration: underline; }
 a.person:hover { color: #c33; }
-.title { font-weight: normal; }
+.title { font-weight: normal; margin-bottom: 6px; }
 a.abstract_link { font-size: 12px; color: #338; text-decoration: none; margin-left: 4px; font-weight: normal; }
 a.abstract_link:hover { color: #c33; text-decoration: underline; }
 tr.talk:target td { background: #fff8d6; }

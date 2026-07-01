@@ -11,7 +11,7 @@
     <tr>
         <td class="central_td_column">
             <div id="header">
-                <img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" />
+                <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
             </div>
 
@@ -85,8 +85,12 @@
                         <tr class="talk" id="talk:524">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person24465_0.html">Andrew Krapivin</a></div>
                                 <div class="title">Near-Optimal Encodings of Cardinality Constraints <a class="abstract_link" href="SAT-2026-07-20.html#talk:524">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2551.html">Andrew Krapivin</a><sup>1</sup>, <a class="person" href="person2552.html">Benjamin Przybocki</a><sup>1</sup>, <a class="person" href="person2553.html">Bernardo Subercaseaux</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present several novel encodings for cardinality constraints, which use fewer clauses than previous encodings and, more importantly, introduce new generally applicable techniques for constructing compact encodings. First, we present a CNF encoding for the $\textsf{AtMostOne}(x_1,\dots,x_n)$ constraint using $2n + 2 \sqrt{2n} + O(\sqrt[3]{n})$ clauses, thus refuting the conjectured optimality of Chen's product encoding. Our construction also yields a smaller monotone circuit for the threshold-2 function, improving on a 50-year-old construction of Adleman and incidentally solving a long-standing open problem in circuit complexity. On the other hand, we show that any encoding for this constraint requires at least $2n + \sqrt{2n} - 3$ clauses, which is the first nontrivial unconditional lower bound for this constraint and answers a question of Ku{\v c}era, Savick{\'{y}}, and Vorel. We then turn our attention to encodings of $\textsf{AtMost}_k(x_1,\dots,x_n)$, where we introduce grid compression, a technique inspired by hash tables, to give encodings using $2n + o(n)$ clauses as long as $k = o(\sqrt[3]{n})$ and $4n + o(n)$ clauses as long as $k = o(n)$. Previously, the smallest known encodings were of size $(k+1)n + o(n)$ for $k \le 5$ and $7n - o(n)$ for $k \ge 6$.</p>
                                 </div>
@@ -95,8 +99,12 @@
                         <tr class="talk" id="talk:525">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person24018_0.html">Benjamin Przybocki</a></div>
                                 <div class="title">Automated Reencoding Meets Graph Theory <a class="abstract_link" href="SAT-2026-07-20.html#talk:525">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2554.html">Benjamin Przybocki</a><sup>1</sup>, <a class="person" href="person2555.html">Bernardo Subercaseaux</a><sup>1</sup>, <a class="person" href="person2556.html">Marijn Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Bounded Variable Addition (BVA) is a central preprocessing method in modern state-of-the-art SAT solvers. We provide a graph-theoretic characterization of which 2-CNF encodings can be constructed by an idealized BVA algorithm. Based on this insight, we prove new results about the behavior and limitations of BVA and its interaction with other preprocessing techniques. We show that idealized BVA, plus some minor additional preprocessing (e.g., equivalent literal substitution), can reencode any 2-CNF formula with $n$ variables into an equivalent 2-CNF formula with $(\tfrac{\lg(3)}{4}+o(1))\,\tfrac{n^2}{\log n}$ clauses. Furthermore, we show that without the additional preprocessing the constant factor worsens from $\tfrac{\lg(3)}{4} \approx 0.396$ to $1$, and that no reencoding method can achieve a constant below $0.25$. On the other hand, for the at-most-one constraint on $n$ variables, we prove that idealized BVA cannot reencode this constraint using fewer than $3n-6$ clauses, a bound that we prove is achieved by actual implementations. In particular, this shows that the product encoding for at-most-one, which uses $2n+o(n)$ clauses, cannot be constructed by BVA regardless of the heuristics used. Finally, our graph-theoretic characterization of BVA allows us to leverage recent work in algorithmic graph theory to develop a drastically more efficient implementation of BVA that achieves a comparable clause reduction on random monotone 2-CNF formulas.</p>
                                 </div>
@@ -137,8 +145,14 @@
                         <tr class="talk" id="talk:526">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person23973_0.html">Florian Pollitt</a></div>
                                 <div class="title">Factoring Learned Clauses <a class="abstract_link" href="SAT-2026-07-20.html#talk:526">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2557.html">Florian Pollitt</a><sup>1</sup>, <a class="person" href="person2558.html">Zachary Battleman</a><sup>2</sup>, <a class="person" href="person2559.html">Mathias Fleury</a><sup>1</sup>, <a class="person" href="person2560.html">Yakir Vizel</a><sup>3</sup>, <a class="person" href="person2561.html">Marijn Heule</a><sup>2</sup>, <a class="person" href="person2562.html">Armin Biere</a><sup>1</sup>, <a class="person" href="person2563.html">Randal E. Bryant</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University Freiburg</div>
+                                <div class="affiliation_item"><sup>2</sup> Carnegie Mellon University</div>
+                                <div class="affiliation_item"><sup>3</sup> Israel Institute of Technology</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Modern SAT solvers are based on the conflict-driven clause learning (CDCL) paradigm, which can be simulated by the resolution proof system. This limits solver effectiveness on instances known to be hard for resolution. Certain approaches, such as parity reasoning, have been shown to be effective in this context, but are hard to integrate with CDCL, in particular, with mainstream proof certificates. The powerful yet simple Extended Resolution (ER) proof system provides an alternative but is not widely used in SAT solving despite having proof certificates for decades and using it effectively remains an open challenge. This paper revisits previous work on ER, which factors out repeated parts of learned clauses during conflict analysis, and explores how their original strategy benefits from 15 years of improvements in the state-of-the-art solver CaDiCaL. We further propose a new, less intrusive inprocessing approach based on factoring XOR and ITE gates from learned clauses globally. Previous work on bounded variable addition focused on AND gates and original clauses only. Our experimental evaluation shows substantial improvements on hard combinatorial benchmark families without performance degradation on the SAT Competition.</p>
                                 </div>
@@ -147,8 +161,13 @@
                         <tr class="talk" id="talk:527">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person25393_0.html">Sahil Samar</a></div>
                                 <div class="title">An Exponential Separation between Deterministic CDCL and DPLL Solvers <a class="abstract_link" href="SAT-2026-07-20.html#talk:527">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2564.html">Sahil Samar</a><sup>1</sup>, <a class="person" href="person2565.html">Marc Vinyals</a><sup>2</sup>, <a class="person" href="person2566.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Auckland</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We prove that there exists a deterministic configuration of Conflict Driven Clause Learning (CDCL) SAT solvers using a variant of the VSIDS branching heuristic that solves instances of the Ordering Principle (OP) CNF formulas in time polynomial in $n$, where $n$ is the number of variables in such formulas. Since tree-like resolution is known to have an exponential lower bound for proof size for OP formulas, it follows that CDCL under this configuration has an exponential separation with any solver that is polynomially equivalent to tree-like resolution and therefore any configuration of DPLL SAT solvers.</p>
                                 </div>
@@ -157,8 +176,14 @@
                         <tr class="talk" id="talk:528">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person23619_0.html">Ilario Bonacina</a></div>
                                 <div class="title">Conditional Autarkies: Hard Formulas Made Easy <a class="abstract_link" href="SAT-2026-07-20.html#talk:528">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2567.html">Ilario Bonacina</a><sup>1</sup>, <a class="person" href="person2568.html">Maria Luisa Bonet</a><sup>1</sup>, <a class="person" href="person2569.html">Antonina Kolokolova</a><sup>2</sup>, <a class="person" href="person2570.html">Massimo Lauria</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> UPC Universitat Politècnica de Catalunya</div>
+                                <div class="affiliation_item"><sup>2</sup> Memorial University of Newfoundland</div>
+                                <div class="affiliation_item"><sup>3</sup> Sapienza - Università di Roma</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> State-of-the-art SAT solvers increasingly use techniques beyond resolution. For instance, adding redundant clauses allows the solver to reduce the solution space, i.e., to break symmetries.
 
@@ -172,8 +197,12 @@ In particular, we give efficient proofs of the perfect matching on a grid, the m
                         <tr class="talk" id="talk:529">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person23704_0.html">Matthäus Micun</a></div>
                                 <div class="title">Proof Systems Based on Structured Circuits <a class="abstract_link" href="SAT-2026-07-20.html#talk:529">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2571.html">Matthäus Micun</a><sup>1</sup>, <a class="person" href="person2572.html">Christoph Berkholz</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University Ilmenau</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Since their introduction by Atserias, Kolaitis, and Vardi in 2004, proof systems where each line is represented by an OBDD have been intensively studied as they allow to compactly represent Boolean functions. We extend this line of work by considering representation formats that can be even more succinct than OBDDs and have gained a lot of attention in the area of knowledge compilation: sentential decision diagrams (SDDs) and deterministic structured DNNF circuits (d-SDNNFs).
 
@@ -216,8 +245,12 @@ We show that both variants can provide strictly smaller refutations of unsatisfi
                         <tr class="talk" id="talk:532">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person24292_0.html">Thomas Sergeys</a></div>
                                 <div class="title">Unified Programmatic Access to CO Benchmarks, to Connect Constraint Solving Communities <a class="abstract_link" href="SAT-2026-07-20.html#talk:532">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2580.html">Thomas Sergeys</a><sup>1</sup>, <a class="person" href="person2581.html">Tias Guns</a><sup>1</sup>, <a class="person" href="person2582.html">Ignace Bleukx</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Many communities within Combinatorial Optimization (CO) maintain benchmark sets in heterogeneous formats, often tied to specific competitions and solver technologies. Whilst this diversity is of practical and historical importance, it also creates barriers to use and compare methods from different communities. Inspired by the more unified software ecosystem from the ML community, we propose a programmatic abstraction for CO benchmark sets. A unified programmatic interface for downloading, reading and converting datasets across formats. This includes solver-oriented benchmarks such as XCSP3, MIPLib, PB, MaxSATEval, SAT and application-oriented benchmarks such as Nurse rostering, PSPLib (RCSP), and JSPlib. To enable cross-formalism conversions, we provide loaders that bring these dataset instances into CPMpy, a modelling library for constraint programming. CPMpy provides a transformation stack; an extensive set of rewrite operations such as constraint decomposition, linearization, and Boolean encodings, that allow transforming between different constraint formalisms. Based on this, we implement file writers to multiple solver-oriented formats, including FlatZinc, LP file format (ILP), OPB, and DIMACS (W)CNF ((Max)SAT). We demonstrate that this unified abstraction facilitates cross-community access to benchmarks and systematic comparisons of solvers across paradigms.</p>
                                 </div>
@@ -226,8 +259,12 @@ We show that both variants can provide strictly smaller refutations of unsatisfi
                         <tr class="talk" id="talk:534">
                             <td class="time"></td>
                             <td>
-                                <div class="authors"><a class="person" href="person23959_0.html">Jean-Marie Lagniez</a></div>
                                 <div class="title">decdnnf_rs: A framework for Querying d-DNNF <a class="abstract_link" href="SAT-2026-07-20.html#talk:534">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person2588.html">Jean-Marie Lagniez</a><sup>1</sup>, <a class="person" href="person2589.html">Emmanuel Lonca</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CRIL</div>
+                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Industrial automated reasoning demands the rapid, repeated extraction of insights from complex formulas. Knowledge compilation into the Deterministic Decomposable Negation Normal Form (d-DNNF) addresses this by reducing natively intractable tasks to polynomial-time operations. We present decdnnf_rs, a performant framework for executing advanced reasoning queries directly on d-DNNF circuits. The library provides unified support for Satisfiability, Model Counting, Disjoint Model Enumeration, Direct Access, and Uniform Sampling. Crucially, decdnnf_rs handles dynamic contexts through implicit conditioning via weight propagation, avoiding the computational overhead of explicit graph modification. It also incorporates dynamic smoothness tracking to maintain a compact memory footprint. Bridging theoretical advancements with robust software engineering, decdnnf_rs offers an optimized toolset for exact and stochastic reasoning.</p>
                                 </div>
