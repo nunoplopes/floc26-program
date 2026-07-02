@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -156,6 +156,23 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:225">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">On the necessity of pre-agreed secrets for thwarting last-minute coercion: vulnerabilities and lessons from the Loki e-voting protocol <a class="abstract_link" href="CSF-2026-07-28.html#talk:225">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11806.html">Jingxin Qiao</a><sup>1</sup>, <a class="person" href="person11778.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person11808.html">Thomas Zacharias</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Coercion-resistance (CR) is a crucial security property in e-voting systems. It ensures that an attacker cannot compel a voter to vote in a specific way by using threats or rewards. The Loki e-voting protocol, proposed by Giustolisi \emph{et al.} at IEEE S\&P (2024), introduces a novel design that mitigates last-minute coercion through a re-voting mechanism. It also aims to address the usability issues of the seminal JCJ e-voting protocol, specifically: i) the requirement that voters can store and hide pre-agreed credentials, and ii) the ability of voters to convincingly lie while being coerced. 
+
+In this work, we identify two vulnerabilities in Loki. The first is a brute-force attack that compromises the integrity of the evasion strategy. Specifically, this attack allows an adversary to cast a ballot on behalf of their victim in a way that the evasion strategy cannot defend against, rendering it ineffective. The second vulnerability is a forced abstention attack, which allows an adversary to detect when their victim has complied with their instruction not to vote. We generalise the integrity attack to reveal a fundamental dilemma: without pre-agreed secret credentials, it is not possible to prevent last-minute coercion. Finally, we show how reverting to pre-agreed secret credentials fixes the aforementioned vulnerabilities and discuss the trade-off between tallying efficiency and stronger trust assumptions.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:226">
                             <td class="time"></td>
                             <td>
@@ -170,6 +187,46 @@
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Anonymous communication is essential for secure and private interactions over public networks. Existing solutions that provide provable anonymity rely on the so-called simple I/O setting, where every participant sends and receives the same number of messages, masking their true communication pattern. The only known way to enforce this setting is through dialing protocols. Such protocols establish pairwise conversations, but each recipient inevitably learns who attempted to contact them, violating sender anonymity, the guaranty that even the recipient cannot determine who attempted to contact them.
 
 In this work, we introduce the notion of enhanced dialing protocols, a broad class of protocols that enforce the simple I/O setting. We also initiate the first formal study of such protocols with respect to sender anonymity. We introduce a framework that captures three key properties: security, correctness, and fairness. Within this framework, we present Fusion, a protocol that achieves perfect correctness and fairness while incurring only unavoidable leakage, and Fusion+, a differentially private variant that reduces this leakage at the cost of some correctness. Through theoretical analysis, we quantify the fundamental trade-off between privacy and correctness in Fusion+.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:227">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Simultaneously Proving Privacy and Verifiability: A ProVerif Framework for Internet Voting <a class="abstract_link" href="CSF-2026-07-28.html#talk:227">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11812.html">Vincent Cheval</a><sup>1</sup>, <a class="person" href="person11813.html">Veronique Cortier</a><sup>2</sup>, <a class="person" href="person11814.html">Alexandre Debant</a><sup>3</sup>, <a class="person" href="person11815.html">Florian Moser</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>2</sup> CNRS Nancy</div>
+                                <div class="affiliation_item"><sup>3</sup> INRIA Nancy</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Electronic voting aims to guarantee the same security properties than traditional paper-based voting, namely vote privacy and verifiability. While the formal verification of security protocols is now a mature filed with several powerful tools such as ProVerif or Tamarin, verifying voting protocols still pushes existing tools at their limits.
+
+We present in this work a proof framework for ProVerif that models an extensible election setting with an unbounded number of concurrent elections, voters and votes. We also develop a library of lemmas to aid the automatic verification. Crucially, the framework allows to reuse the same protocol model for both privacy and verifiability proofs. We apply the framework to several protocols of the literature and industry, showing the flexibility and applicability of our framework.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:228">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Beyond Blockchain Ballots: UC-Secure Layer-2 Voting and Governance <a class="abstract_link" href="CSF-2026-07-28.html#talk:228">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11816.html">Raghav Bhaskar</a><sup>1</sup>, <a class="person" href="person11817.html">Pooya Farshim</a><sup>2</sup>, <a class="person" href="person11818.html">Matthias Fitzi</a><sup>2</sup>, <a class="person" href="person11819.html">Aggelos Kiayias</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> None</div>
+                                <div class="affiliation_item"><sup>2</sup> Input Output</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Edinburgh and Input Output</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Maintaining a decentralized system requires a collective governance mechanism that allows the participants to agree on possible changes to the system. In particular, the governance mechanism should offer a voting functionality that allows the casting, collection, and tallying of votes in a confidential yet verifiable manner.  Scaling this functionality for many millions of participants in a cost-effective manner is a critical requirement for permissionless blockchains that is currently still unmet. 
+
+We put forward a ``layer-2'' approach  to meet this requirement in the setting where a permissionless blockchain acts as the fall back ``layer-1'' mechanism. Specifically the key to our approach to scalability is that the protocol is realized in layer-2 fashion, i.e., the bulk part of the protocol is executed off-chain, but additionally secured on the blockchain  with a minimal footprint.
+
+We prove our protocol secure in the universal composability (UC) framework. First, we formalize a governance ideal functionality $F_{L2Gov}$. Our definition offers high levels of confidentiality and verifiability. Moreover, in case of misbehavior, it is designed to allow attribution of faults so that appropriate action (such as slashing of on-chain funds) can be taken. Second, we demonstrate that our protocol UC-realizes the $F_{L2Gov}$ functionality based on a blockchain, an off-chain bulletin-board, a distributed homomorphic encryption functionality ($F_{DHE}$), and a number of other standard hybrids.
+
+To the best of our knowledge, this work presents the first blockchain layer-2 voting protocol with a rigorous  security analysis. We also point out some challenges that arise when applying the UC framework to layer-2 protocols.</p>
                                 </div>
                             </td>
                         </tr>
@@ -259,6 +316,43 @@ We illustrate our framework through case studies on Hashed Timelock Contracts (H
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:232">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Self-Guarding Arbitrary Cryptographic Primitives and 2PC Protocols <a class="abstract_link" href="CSF-2026-07-28.html#talk:232">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11833.html">Daniele Friolo</a><sup>1</sup>, <a class="person" href="person11834.html">Andrea Reale</a><sup>1</sup>, <a class="person" href="person11835.html">Daniele Venturi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Sapienza University of Rome</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In IEEE CSF '18, Fischlin and Mazaheri introduced the notion of self-guarding cryptographic protocols as a countermeasure to algorithm substitution attacks. After a trusted initialization phase, a Self-Guarder wraps the user's cryptographic algorithm implementation and sanitizes it in a way that (1) prevents that an adversary can exploit the subverted implementation to exfiltrate user's data and (2) maintain the correctness of the genuine implementation.
+Whilst the proposed solutions in CSF '18  support a bounded number of executions before requiring a re-initialization phase, we show a universal self-guarder supporting an unbounded number of executions from a single trusted setup. Our self-guarder can be applied to any cryptographic primitive and any two-party computation protocol with the aid of a verifiable-computation-enabling compiler.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:233">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Revisiting Beimel-Weinreb Weighted Threshold Secret Sharing Schemes <a class="abstract_link" href="CSF-2026-07-28.html#talk:233">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11836.html">Oriol Farràs</a><sup>1</sup>, <a class="person" href="person11837.html">Miquel Guiot</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat Rovira i Virgili</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A secret sharing scheme is a cryptographic primitive that allows a dealer to share a secret among a set of parties, so that only authorized subsets of them can recover it. The access structure of the scheme is the family of authorized subsets. In a weighted threshold secret sharing scheme, each party is assigned a weight according to its importance, and the authorized subsets are those in which the sum of their weights is at least the threshold value. 
+
+For these access structures, Beimel and Weinreb [IPL 2006] presented the best general constructions: The scheme with computational security has a total share size polynomial in $n$, while the scheme with perfect security has a total share size $n^{O(\log n)}$. However, these constructions require the use of shallow monotone sorting networks, which limits their practical use.
+
+In this work, we revisit weighted threshold secret sharing from a circuit-based perspective. By considering alternative circuits and formulas that avoid monotone sorting networks, we obtain substantial improvements in two directions.
+
+First, in the computational setting, we provide a computational scheme that is feasible in practice. Assuming the existence of one-way functions with security parameter $\lambda$, we show that any weighted threshold access structure over $n$ parties with threshold $\sigma$ admits a computational secret sharing scheme with share size $\lambda$, public information of size $O(\lambda n^2 \log \sigma)$, and a reconstruction procedure in which any authorized subset needs to download only $O(\lambda n \log \sigma)$ bits of public information. Notably, for weight distributions that arise in the most widely deployed blockchain networks, our construction reduces the total share size ranging from $300\times$ to $6700\times$ compared to the best previously known schemes.
+
+Second, extending these techniques, we obtain improved information-theoretic ramp weighted threshold secret sharing schemes. For any weights, threshold $\sigma$, and $\epsilon < 1$, we construct a $(\sigma,(1+\epsilon)\sigma)$-ramp weighted threshold scheme with share size $O\left((n/\epsilon) \log n\right)$, reducing the share size with respect to the state-of-the-art solutions.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:234">
                             <td class="time"></td>
                             <td>
@@ -327,6 +421,22 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
 To address these challenges, we propose channel-interleaved packing (CIP) to embed three-dimensional (3-D) data into 2-D ciphertexts, enabling 3-D HE convolution to be performed as a 2-D HE convolution combined with channel aggregations via ciphertext rotations, thereby significantly reducing the number of rotation keys required. To further improve the performance of CIP-based convolution, we introduce an efficient 2-D convolution that halves the number of HE multiplications. For computationally intensive inference tasks, we employ partial-kernel and mini-batch strategies that iteratively process sliced kernels and subsets of samples, aggregating the results to produce the final output.
 
 Experimental results demonstrate the superior efficiency of our method compared to the state-of-the-art HE-based approaches by Lee et al. (ICML’22) and Cheon et al. (IEEE TDSC’24) in both single-sample and multi-sample scenarios. Using ResNet18 and VGG16 with a batch size of 64, our solution achieves speedups of up to 2.9× and 4.6×, respectively. When processing a single test sample, the speedups increase to 4.4× and 27×. Moreover, our method requires only 29 rotation keys for evaluation, which is at least 35% fewer than previous works, resulting in an overall memory reduction of approximately 50%.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:236">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Towards Strong Certified Defense with Universal Asymmetric Randomization <a class="abstract_link" href="CSF-2026-07-28.html#talk:236">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11841.html">Hanbin Hong</a><sup>1</sup>, <a class="person" href="person11842.html">Ali Payani</a><sup>2</sup>, <a class="person" href="person11843.html">Ashish Kundu</a><sup>2</sup>, <a class="person" href="person11844.html">Binghui Wang</a><sup>3</sup>, <a class="person" href="person11845.html">Yuan Hong</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Connecticut</div>
+                                <div class="affiliation_item"><sup>2</sup> Cisco</div>
+                                <div class="affiliation_item"><sup>3</sup> Illinois Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Randomized smoothing has become essential for achieving certified adversarial robustness in machine learning models. However, current methods primarily use isotropic noise distributions that are uniform across all data dimensions, such as image pixels, limiting the effectiveness of robustness certification by ignoring the heterogeneity of inputs and data dimensions. To address this limitation, we propose UCAN: a novel technique that \underline{U}niversally \underline{C}ertifies adversarial robustness with \underline{A}nisotropic \underline{N}oise. UCAN is designed to enhance any existing randomized smoothing method, transforming it from symmetric (isotropic) to asymmetric (anisotropic) noise distributions, thereby offering a more tailored defense against adversarial attacks. Our theoretical framework is versatile, supporting a wide array of noise distributions for certified robustness in different $\ell_p$-norms and applicable to any arbitrary classifier by guaranteeing the classifier's prediction over perturbed inputs with provable robustness bounds through tailored noise injection. Additionally, we develop a novel framework equipped with three exemplary noise parameter generators (NPGs) to optimally fine-tune the anisotropic noise parameters for different data dimensions, allowing for pursuing different levels of robustness enhancements in practice.</p>
                                 </div>
                             </td>
                         </tr>

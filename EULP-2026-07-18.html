@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -139,6 +139,34 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1194">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Opening <a class="abstract_link" href="EULP-2026-07-18.html#talk:1194">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11159.html">Mario Alviano</a><sup>1</sup>, <a class="person" href="person11183.html">Susana Hahn</a><sup>2</sup>, <a class="person" href="person12033.html">Luis Angel Rodriquez Reiners</a><sup>1</sup>, <a class="person" href="person11196.html">Torsten Schaub</a><sup>3</sup>, <a class="person" href="person12035.html">Simon Vandevelde</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                <div class="affiliation_item"><sup>2</sup> Potassco Solutions</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Potsdam</div>
+                                <div class="affiliation_item"><sup>4</sup> KU Leuven</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1195">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">mkdoclingo: A system for automatic documentation of ASP programs <a class="abstract_link" href="EULP-2026-07-18.html#talk:1195">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11207.html">Susana Hahn</a><sup>1</sup>, <a class="person" href="person12037.html">Dominik Gerndt</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Potassco Solutions</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming (ASP) is widely recognized as a powerful paradigm for knowledge representation and reasoning, yet broadening its adoption beyond the core community remains a challenge. A contributing factor is the historical lack of tooling that developers take for granted in mainstream languages; such as linters, code completion, and documentation generators. This work addresses the documentation gap with mkdoclingo, an automated tool that analyzes clingo ASP encodings and generates structured, navigable documentation from the source code and lightweight comment annotations. Built as an extension of the popular MkDocs ecosystem, it integrates seamlessly into Markdown-based documentation sites. Its main features include rendered and annotated encoding sections, predicate classification into input and output, dependency graph visualization, and a navigable glossary with per-predicate argument descriptions and file references.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1196">
                             <td class="time"></td>
                             <td>
@@ -181,6 +209,19 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:666">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">EasyASP <a class="abstract_link" href="EULP-2026-07-18.html#talk:666">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12040.html">Javier Romero Davila</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1164">
                     <div class="heading">
@@ -211,6 +252,54 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:667">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">LLMASP-LGX: A Lightweight Gateway to Logic-Guided Reasoning with LLMs and ASP <a class="abstract_link" href="EULP-2026-07-18.html#talk:667">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11159.html">Mario Alviano</a><sup>1</sup>, <a class="person" href="person12042.html">Lorenzo Grillo</a><sup>1</sup>, <a class="person" href="person12043.html">Nicola Leone</a><sup>1</sup>, <a class="person" href="person12044.html">Fabrizio Lo Scudo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming (ASP) is a mature formalism for non-monotonic reasoning, constraint satisfaction, and combinatorial problem solving, but its adoption beyond specialist circles is held back by the cost of writing and maintaining complete logic programs. Large Language Models (LLMs) are complementary in a specific operational sense: they are fluent at turning natural-language descriptions into candidate relational facts, but unreliable as exact symbolic reasoners.
+Hybrid systems such as LLMASP combine the two, yet in their standard form they keep extraction and reasoning strictly sequential—the oracle is queried for every target predicate, and ASP is consulted only afterwards, filtering a database in which hallucinated facts already mix with well-supported ones. LLMASP-LGX closes this loop through a lightweight YAML-based configuration: the user declares predicates, natural-language extraction prompts, admissibility guards with monotonicity flags, and small ASP knowledge-base fragments, and the LLMASP-LGX engine reads these declarations as an interaction policy between the LLM oracle and the ASP solver. 
+The central claim of this extended abstract is that, despite its lightweight syntax, an LLMASP-LGX configuration specifies a constructive interaction between LLM and ASP: facts extracted so far, together with facts derived by ASP, decide which LLM queries are admissible at each step, and LLM responses update the logical state that drives subsequent reasoning. Reported experiments show that these lightweight annotations reduce oracle calls by more than 70% on a mixed-domain benchmark, while matching the quality of an a posteriori ASP filter and improving substantially over unguided extraction.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:668">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Generating RTEC Programs with LLMs <a class="abstract_link" href="EULP-2026-07-18.html#talk:668">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12045.html">Andreas Kouvaras</a><sup>1</sup>, <a class="person" href="person12046.html">Periklis Mantenoglou</a><sup>2</sup>, <a class="person" href="person12047.html">Alexander Artikis</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Piraeus</div>
+                                <div class="affiliation_item"><sup>2</sup> Örebro University</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Piraeus & NCSR 'Demokritos'</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Constructing composite activity definitions for recognising activities over streams of low-level, symbolic events is a highly involved task: definitions often involve numerous spatio-temporal constraints, while labels for learning them automatically are hard to obtain. We propose a method that generates such definitions from natural-language descriptions using pre-trained Large Language Models (LLMs), together with a novel similarity metric that quantifies the human effort required to correct LLM-generated definitions. An experimental evaluation in the maritime domain demonstrates the effectiveness of our approach.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:669">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Verbalizing Answer Sets: the Map–Summarize Paradigm <a class="abstract_link" href="EULP-2026-07-18.html#talk:669">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11159.html">Mario Alviano</a><sup>1</sup>, <a class="person" href="person12049.html">Matteo Capalbo</a><sup>1</sup>, <a class="person" href="person12050.html">Sebastiano Antonio Piccolo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> While Answer Set Programming (ASP) is a powerful tool for symbolic reasoning, its outputs (i.e., sets of ground atoms) are often impenetrable to non-experts. We propose a formal map–summarize framework that decouples the translation of symbolic facts into text from the linguistic refinement of the final explanation. By evaluating five distinct strategies, ranging from raw LLM prompting to deterministic template-based mapping, we highlight the trade-offs between faithfulness, readability, and computational cost.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1166">
                     <div class="heading">

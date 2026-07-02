@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -132,8 +132,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23471.html">Nourhan Ehab</a>
                         </div>
                     </div>
@@ -168,8 +167,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24814.html">Elena Umili</a>
                         </div>
                     </div>
@@ -193,6 +191,24 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Knowledge graphs (KGs) are increasingly used in autonomous driving (AD) to make traffic scene entities and relations explicit for prediction and reasoning. Existing traffic-scene KGs, however, primarily emphasize trajectory forecasting or general scene understanding. This paper presents the nuScenes Intention Knowledge Graph (NIKG), a focused Web Ontology Language (OWL)-based semantic representation and construction pipeline for ego-centric vehicle intention context. NIKG instantiates nuScenes scenes as a self-describing Turtle graph and promotes three intention-relevant relations to first-class properties of each scene participant: ego-relative motion, spatial configuration, and time to collision (TTC) risk. The pipeline uses a small input contract available in many ego-centric driving datasets: ego pose, tracked object annotations, and temporal keyframe order. NIKG is released as an ontology-backed, self-describing graph artifact together with a reproducible construction pipeline and validation protocol for ego-centric intention context. Applying this pipeline to nuScenes mini yields a graph of 211,335 triples across 404 keyframes; under the validation protocol, ego-relative motion labels achieve 92.5% forward consistency. Coverage, logical consistency, and temporal coherence analyses over this artifact are further reported. NIKG occupies the space between scene-oriented traffic KGs and intention-prediction models: a small, explicit semantic layer intended to support downstream work such as knowledge graph embedding (KGE), SPARQL Protocol and RDF Query Language (SPARQL)-based feature extraction, or hybrid neuro-symbolic reasoning.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:939">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Automatic Chain of Concepts: Conceptual Prompting for LLMs by Constructing Concept Trees <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:939">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14490.html">Hurile Borjigin</a><sup>1</sup>, <a class="person" href="person14491.html">Nishtha N. Vaidya</a><sup>1</sup>, <a class="person" href="person14492.html">Thomas A. Runkler</a><sup>1</sup>, <a class="person" href="person14493.html">Veronika Haderlein-Høgberg</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University of Munich, Siemens AG, Munich, Germany</div>
+                                <div class="affiliation_item"><sup>2</sup> Siemens AG, Munich, Germany</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models (LLMs) perform well on general NLP tasks but often underperform in domain-specific settings where proprietary knowledge and concept hierarchies are required. Chain of Concepts (CoC) mitigates this by injecting structured conceptual guidance via manually curated graphs, but expert curation is costly and hard to scale or reproduce.
+We propose Automatic Chain of Concepts (AutoCoC), a fully automated pipeline that (i) induces a rooted concept tree directly from domain documentation, (ii) enriches nodes with representative examples for in-context learning, and (iii) linearizes the tree into a pedagogically ordered prompt sequence via breadth-first traversal.
+We evaluate AutoCoC on OWL ontology generation (Turtle) across 10 domains, comparing against handcrafted CoC and reverse-engineered baselines. AutoCoC achieves the best mean composite score (0.832) and produces substantially richer ontologies (21.7 classes/file vs. 13.5 and 14.8). Semantic constraint compliance (OntoClean-inspired) is marginally higher (90.6% vs. 89.4%), while confidence is competitive (0.893 vs. 0.864), though per-domain confidence remains higher for the handcrafted baseline in several domains. A self-consistency analysis over 200 runs shows high concept-level stability (0.889) but moderate structural variability (0.625).
+These results suggest that automated concept-structure induction is a viable way to scale concept-based prompting for structured, domain-specific generation tasks without relying on expert-authored hierarchies. Overall, AutoCoC contributes a reproducible and scalable alternative to expert-authored concept hierarchies by automatically deriving domain-specific prompt structures from documentation, making concept-based prompting more practical for structured knowledge generation.</p>
                                 </div>
                             </td>
                         </tr>
@@ -226,6 +242,34 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:942">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">On the Reliability of LLM Orchestration Under Horizontal Knowledge Partitioning <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:942">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14500.html">Mayar Abdelwahab</a><sup>1</sup>, <a class="person" href="person14501.html">Nourhan Ehab</a><sup>1</sup>, <a class="person" href="person14502.html">Mervat Abuelkheir</a>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> German University in Cairo</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models (LLMs) are increasingly used as coordinators in multi-agent systems (MAS), particularly in settings composed entirely of LLM-based agents; however, their ability to coordinate symbolic or hybrid agents under partial observability remains underexplored. In this paper, we investigate whether LLM-based orchestrators can reliably detect and resolve coordination deadlocks in heterogeneous MAS with horizontally partitioned knowledge. We evaluate this problem using a distributed zebra-style constraint satisfaction task involving three specialized agents with restricted reasoning capabilities: equivalence reasoning, relational reasoning, and negation reasoning. We compare fully neural (LLM-only) and neural-symbolic (LLM + Prolog) execution settings under the same orchestration framework, augmented with explicit plan generation, symbolic verification, execution monitoring, and structured planning traces. Our results show that while LLM-based coordination performs effectively in LLM-only settings, it struggles to resolve stagnation and deadlocks when coordinating symbolic agents, despite the symbolic agents maintaining high role-faithfulness and logically valid local reasoning. We further observe that successful LLM-only coordination frequently coincides with violations of role-restricted reasoning boundaries, suggesting that apparent coordination success may partially arise from cross-partition inference leakage rather than robust long-horizon planning. These findings highlight a failure modeinLLMorchestration for heterogeneous MAS and motivate evaluation metrics that consider role compliance and coordination validity in addition to task completion.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:943">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">KGP-QG: Multi-hop Reasoning with Knowledge Graphs in LLMs <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:943">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14503.html">Al Hasib Mahamud</a><sup>1</sup>, <a class="person" href="person14504.html">Yllias Chali</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Lethbridge</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Multi-hop question generation is the task of generating complex questions that require reasoning over multiple information from multiple contexts. Though the recent works on multi-hop question generation have shown a great impact with excellent outcomes using sequence-to-sequence models and large language models (LLMs), in this paper, we have shown the impact of knowledge graph-based prompting approach on multi-hop question generation. For this purpose, we have proposed a framework, KGP-QG (Knowledge Graph Based Prompting for Question Generation), where, at first, we have generated knowledge graph from the input contexts. The generated knowledge graph is integrated back into the input context to form a knowledge graph-based prompt. Generated knowledge graph enriched prompt is fed to LLMs, where the prompt is used for fine-tuning in two LLMs- BART and T5 models. For this research, the HotpotQA dataset is used for result evaluation and fine-tuning. The result of our proposed framework, KGP-QG, has outperformed the existing methodology</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:1533">
@@ -251,8 +295,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25423.html">Mervat Abuelkheir</a>
                         </div>
                     </div>
@@ -280,6 +323,22 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:945">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Toward a Requirements-Driven Neuro-Symbolic Approach to Developing Trustworthy AI Agents Systems <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:945">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14508.html">Bita Banihashemi</a><sup>1</sup>, <a class="person" href="person13094.html">Yves Lespérance</a><sup>2</sup>, <a class="person" href="person14510.html">Sotirios Liaskos</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IGDORE</div>
+                                <div class="affiliation_item"><sup>2</sup> York University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Agentic AI systems that use large language models (LLMs) to implement advanced applications are becoming more and more popular. However, such systems are known to be prone to hallucinations, opaque in the way they make decisions, and not offering any safety guaranties. This introduces the need for principled ways to analyze and design such systems, such that their behavior is verifiable against requirements specifications, and compliant and explainable according to predefined behavioral and decision making rules and strategies. We propose a requirements-driven neuro-symbolic approach to systematically developing such systems. Our approach uses
+agent-based goal models to represent the system requirements and allowable strategies for achieving them. Goal models are then translated into programs in the IndiGolog logic-based agent programming language to orchestrate agent behavior in compliance with the requirements. LLMs are integrated as components for pursuing specified tasks and rendering formalizable results, amenable to symbolic verification and explanation generation. In this paper, we introduce our approach and examine how it can be applied to the design of a meeting scheduling application.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:946">
                             <td class="time"></td>
                             <td>
@@ -291,6 +350,39 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Aggregating inconsistent judgments from multiple reasoners is a long-standing problem in artificial intelligence, with mature foundations in consensus theory, belief pooling, and epistemic logic. The topic has gained renewed significance with the rise of LLM ensembles, where the judgments of specialist LLMs, retrieval-augmented agents, and judge models often diverge even on factual matters. The core problem is that such divergent judgments usually reflect differences in the information sources accessed, not random noise. How can an aggregation rule recognize this distinction and reconcile beliefs without forcing agents that cannot represent the same fine-grained truth to converge? In this paper, we propose a symbolic-probabilistic framework that unites symbolic epistemic structure with probabilistic belief dynamics. Agents maintain probability distributions constrained by their epistemic partitions, while a critic agent computes a dynamic target belief and specialists shift only toward epistemic projections of that target. The framework supports a convergence guarantee and provides a diagnostic interpretation of the remaining disagreement. The contribution is a concise symbolic-statistical approach to feasible consensus in settings where agents cannot necessarily represent the same knowledge.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:947">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Parametric Model of Cognitive Complexity for Symbolic Knowledge-Based Decision Systems <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:947">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14513.html">Federico Sabbatini</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Bologna</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The growing adoption of symbolic knowledge-based decision systems highlights the need of principled methods to quantify their interpretability. While symbolic models are often considered inherently understandable, the cognitive effort required to interpret them varies significantly depending on both their structural properties and on user-specific factors. Existing approaches typically rely on coarse structural proxies, neglect the user perceptions and are often limited to specific representation formats.
+
+This work introduces a representation-agnostic and parametric framework for modelling the cognitive complexity of symbolic knowledge bases. First, a taxonomy is proposed to characterise structural and procedural elements of knowledge representations contributing to cognitive complexity, including size, depth, logical composition, and evaluation dynamics. Building on this taxonomy, a unified formal model is defined. The model decomposes cognitive complexity into micro-level components, capturing the internal structure of knowledge units, and macro-level components, accounting for their global organisation and evaluation process. The model also incorporates user-defined tolerance parameters, enabling a profiled assessment of perceived complexity.
+
+The proposed framework is validated through an experimental analysis on a set of knowledge bases with different structural properties. Results show that the model captures meaningful differences in cognitive effort across representations and user profiles, providing a flexible tool for designing, evaluating, and comparing interpretable symbolic models.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:948">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">PrologMCP: A Standardized Prolog Tool Interface for LLM Agents <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:948">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14514.html">Agnieszka Mensfelt</a><sup>1</sup>, <a class="person" href="person14515.html">Adarsh Prabhakaran</a><sup>1</sup>, <a class="person" href="person14516.html">Adrian Haret</a><sup>1</sup>, <a class="person" href="person14517.html">Vince Trencsenyi</a><sup>2</sup>, <a class="person" href="person14518.html">Kostas Stathis</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Royal Holloway, University of London</div>
+                                <div class="affiliation_item"><sup>2</sup> Royal Holloway University of London, United Kingdom</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Frontier reasoning-tuned language models still fail on deductive tasks at depth, and the cost of improved performance through extended internal reasoning scales poorly. Symbolic delegation offers a complementary route: a language model translates the problem, while a solver performs the inference. However, current autoformalization pipelines for logic programming are typically bespoke integrations tied to particular tasks or agents. We introduce \textsc{PrologMCP}, a task-agnostic, open-source server that exposes Prolog as a stateful tool through the Model Context Protocol (MCP). Its compact tool interface, structured error reporting, and per-session isolation make the \emph{translate--run--inspect--repair} loop a reusable primitive for MCP-capable agents. We evaluate a formalizer agent enhanced with \textsc{PrologMCP} against standard and reasoning LLMs (Claude Sonnet 4.6, GPT-4.1, and o4-mini) on two subsets of \texttt{PARARULE-Plus}: a general-purpose sample and a more challenging one targeting a specific failure mode of natural-language reasoning. On the general sample, the formalizer matches or exceeds reasoning LLMs (accuracy 1.00 vs.\ 1.00 / 0.998), with the largest gains over standard models (0.762 for GPT-4.1). On the challenging subset, the formalizer remains near-perfect (1.00 / 0.99) while reasoning LLMs drop to 0.95 / 0.94. These results suggest that delegating inference to Prolog via MCP is a robust and inspectable alternative to extended natural-language reasoning.</p>
                                 </div>
                             </td>
                         </tr>
@@ -335,8 +427,7 @@ Results show that in the majority of cases NL2UNIFOL is able to correctly create
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25703.html">Federico Sabbatini</a>
                         </div>
                     </div>
@@ -347,6 +438,68 @@ Results show that in the majority of cases NL2UNIFOL is able to correctly create
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:950">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">First Steps Towards Human-AI Ranking Aggregation <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:950">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14522.html">Jonas Karge</a><sup>1</sup>, <a class="person" href="person13813.html">Roy Ferguson</a><sup>2</sup>, <a class="person" href="person13617.html">Daniel Grimaldi</a><sup>2</sup>, <a class="person" href="person13918.html">Jonas Haldimann</a><sup>2</sup>, <a class="person" href="person13009.html">Ruvarashe Madzime</a><sup>3</sup>, <a class="person" href="person13004.html">Thomas Meyer</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Dresden</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Cape Town and CAIR</div>
+                                <div class="affiliation_item"><sup>3</sup> University of the Western Cape and CAIR</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a first formal model of ranking-based human–AI aggregation. We represent both human and AI judgments by ranking functions over possible worlds and study how AI advice affects the epistemic quality of a collective decision. To obtain probabilistic guarantees, we introduce a top-choice abstraction that translates ranking aggregation into a voting problem and connects our setting to a recent model from the voting literature.
+This allows us to model a specific interaction setting that we refer to as AI-follow assistance with concurrent panel revision. The resulting analysis yields a formal account of when AI influence can be epistemically harmful by inducing dependence among human agents.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:951">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Neuro-Symbolic Injection of LTLf Constraints in Autoregressive Reinforcement Learning Policies <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:951">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14528.html">Ashkan Ansarifard</a><sup>1</sup>, <a class="person" href="person13106.html">Matteo Mancanelli</a><sup>1</sup>, <a class="person" href="person11226.html">Elena Umili</a><sup>1</sup>, <a class="person" href="person13096.html">Fabio Patrizi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Sapienza University of Rome</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this work we study offline reinforcement learning (RL) under temporally extended task constraints expressed in Linear Temporal Logic over finite traces (LTLf). Recently, transformer-based approaches such as Trajectory Transformers and Decision Transformers have been adopted to address RL as a sequence modeling problem. However, these methods optimize purely for reward and do not account for high-level temporal requirements. Here, we introduce a neurosymbolic framework that injects LTLf background knowledge into such transformer-based RL policies.  Our approach compiles LTLf formulas into deterministic finite automata (DFAs) and integrates them into the learning process through a differentiable representation and a logic-based loss function. In particular, we derive differentiable satisfaction signals from DFA progression and use them as a regularization term during training. The resulting method is architecture-agnostic across different models. We evaluate the proposed framework on navigation environments with specification suites covering combinations of safety and reachability temporal properties. Experimental results show that incorporating background knowledge not only improves constraint satisfaction, but also maintains competitive return compared to vanilla baselines.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:952">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Enhancing Retrieval-Augmented Generators with Symbolic Query Definitions <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:952">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14532.html">Filippo Bianchini</a><sup>1</sup>, <a class="person" href="person14533.html">Marco Calamo</a><sup>1</sup>, <a class="person" href="person11930.html">Marco Console</a><sup>1</sup>, <a class="person" href="person14535.html">Massimo Mecella</a><sup>1</sup>, <a class="person" href="person11931.html">Laura Papi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Sapienza University of Rome</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Retrieval-Augmented Generation is as a paradigm that integrates the parametric knowledge of a Large Language Model with external non-parametric information through a retrieval component. While RAGs have shown strong performances on several tasks, their answers may still be prone to errors as of the approximate nature of the retrieval process they utilize.
+In this paper, we argue that the output of a dense retriever can be interpreted as a set of noisy samples that could be retrieved via a query that it is implicitly executed over the data. A symbolic representation of this latent intention can then be reconstructed from the samples and used to compute the final retrieval result. We instantiate this idea in a concrete retrieval architecture, which we call Symbolic-Assisted Dense Retriever, and present a preliminary use case scenario and experimental evaluation.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:953">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Deep Weighted Finite Automata <a class="abstract_link" href="SKILLEDLLMs-2026-07-18.html#talk:953">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14537.html">Francesco Casone</a><sup>1</sup>, <a class="person" href="person11893.html">Rafael Peñaloza</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Milano-Bicocca</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Temporal logics and their automata-based counterparts have risen as languages for reasoning about processes and verifying their properties. Increasingly, though, the events in a process refer to observations perceived and classified by a neural network, calling for a mixed formalism capable of dealing with the uncertainty of these classifications. We propose Deep Weighted Finite Automata, a new neuro-symbolic architecture combining formal temporal specifications and neural classifications. We also show how to make probabilistic inferences and compute the most likely execution given a sequence of perceptions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1537">
                     <div class="heading">
@@ -356,8 +509,7 @@ Results show that in the majority of cases NL2UNIFOL is able to correctly create
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24814.html">Elena Umili</a>
                         </div>
                     </div>

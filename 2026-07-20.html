@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html" class="selected">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html" class="selected">Full Program</a>
             </div>
 
 
@@ -116,7 +116,7 @@
                 <p class="days_line">Days:
                     <a class="program_days" href="2026-07-19.html"><img class="day_icon" src="previous.png" alt="" /> previous day</a>
                     <a class="program_days" href="2026-07-21.html">next day<img class="day_icon" src="next.png" alt="" /></a>
-                    <a class="program_days" href="index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
+                    <a class="program_days" href="index-full.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
                 <div class="date">Monday, 20 July 2026</div>
@@ -336,8 +336,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23356.html">Anuj Dawar</a>
                         </div>
                     </div>
@@ -349,6 +348,22 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:439">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Naturally-Colored Translation from LTL to Parity and COCOA <a class="abstract_link" href="LICS-2026-07-20.html#talk:439">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person15143.html">Rüdiger Ehlers</a><sup>1</sup>, <a class="person" href="person15144.html">Ayrat Khalimov</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Clausthal</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Chains of co-Büchi automata (COCOA) have recently been introduced as a new canonical representation of omega-regular languages. The co-Büchi automata in a chain assign each omega-word its natural color, which depends only on the language itself and not on the chosen automaton representation. Automata in such a chain can be minimized in polynomial time and are good-for-games, making this representation attractive for verification and reactive synthesis. However, in these applications, specifications are usually given in linear temporal logic (LTL). To make COCOA useful, an LTL specification must first be translated into the chain of automata. The only translation currently known proceeds via deterministic parity automata (LTL → DPA → COCOA), where the first step ignores natural colors and requires intricate constructions due to Safra or Esparza et al. This raises the question of whether, by exploiting the definition of the natural color of words, one can avoid these complex constructions and obtain a more direct translation from LTL to COCOA.
+
+In this paper, we present a simple yet optimal translation from LTL to COCOA, as well as a variant that translates LTL into DPA. The translation represents a new route from LTL to DPA and avoids the aforementioned intricate constructions. It relies on standard operations on weak alternating automata, Miyano-Hayashi's breakpoint construction, the subset construction, and simple graph algorithms. Starting from weak alternating automata, the procedure also applies to specifications in linear dynamic logic. The procedure runs in asymptotically optimal doubly exponential time and produces automata of asymptotically optimal size.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:440">
                             <td class="time"></td>
                             <td>
@@ -362,6 +377,23 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce layered automata, a subclass of alternating parity automata that generalises deterministic automata. Assuming a consistency property, these automata are history deterministic and 0-1 probabilistic. We show that every omega-regular language is recognised by a unique minimal consistent layered automaton, and that this canonical form can be computed in polynomial time from every layered or deterministic automaton. We further establish that for layered automata both consistency checking and inclusion testing can be performed in polynomial time. Much like deterministic finite automata, minimal consistent layered automata admit a characterisation based on congruences.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:441">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The uniformisation of monadic second-order logic over countable ordinals <a class="abstract_link" href="LICS-2026-07-20.html#talk:441">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person15148.html">Thomas Colcombet</a><sup>1</sup>, <a class="person" href="person15149.html">Alexander Rabinovich</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IRIF</div>
+                                <div class="affiliation_item"><sup>2</sup> Tel Aviv University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study the uniformisation problem for  monadic second-order logic (MSO) over countable ordinal chains, ie, given a formula that refines a relation between subsets of the input model, we are interested in the existence of a formula that defines a function that selects for all sets in the domain of the relation  a unique set such that the pair of the two is in the relation. It is known that uniformisation of MSO is not possible over the class of countable ordinals.
+
+We show in this work that the maximal uniformisation degree is reached if we add to the logic a new predicate that selects in each set, if possible, a cofinal subset of a of order-type $\omega$. Said differently, all formulas of MSO can be uniformised over the class of countable ordinal chains by using a formula of this extended logic.</p>
                                 </div>
                             </td>
                         </tr>
@@ -391,8 +423,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24078.html">Delia Kesner</a>
                         </div>
                     </div>
@@ -465,6 +496,20 @@ We then push this approach a step further to show the robustness of this realiza
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:446">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Unified Treatment of Substitution for Presheaves, Nominal Sets, Renaming Sets, and so on <a class="abstract_link" href="LICS-2026-07-20.html#talk:446">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person15158.html">Fabian Lenke</a><sup>1</sup>, <a class="person" href="person15159.html">Stefan Milius</a><sup>1</sup>, <a class="person" href="person15160.html">Henning Urbat</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> FAU Erlangen-Nürnberg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Presheaves and nominal sets provide alternative abstract models of sets of syntactic objects with free and bound variables, such as $\lambda$-terms. One distinguishing feature of the presheaf-based perspective is its abstract syntax-free characterization of substitution using a closed monoidal structure. In this paper, we introduce a corresponding closed monoidal structure on nominal sets, modelling substitution in the spirit of Fiore~et.~al.'s substitution tensor for presheaves over finite sets. To this end, we present a general method to derive a closed monoidal structure on a category from an action. We then demonstrate that this method not only uniformly recovers known substitution tensors for various kinds of presheaf categories, but also yields novel notions of substitution tensor for nominal sets and their relatives, such as renaming sets. Our results also shed new light on the relation between presheaves and nominal sets, in which we establish novel correspondences between different versions of nominal sets and suitable (pre-)sheaf categories.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:974">
@@ -482,6 +527,20 @@ We then push this approach a step further to show the robustness of this realiza
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:523">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Backtrackable Inprocessing <a class="abstract_link" href="SAT-2026-07-20.html#talk:523">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14117.html">Alexander Nadel</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technion, NVIDIA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce \emph{Backtrackable Inprocessing} (BI), a framework that enables applying inprocessing under the current trail at any decision level, at any point during incremental SAT solving. Our approach lifts the long-standing restriction that inprocessing must be performed only at the global decision level, thereby substantially increasing its potential effectiveness. We focus on three highly efficient core techniques: subsumption, self-subsuming resolution, and Bounded Variable Elimination (BVE). We show how to ensure sound backtracking in the presence of inprocessing, and demonstrate that applying BI for incremental preprocessing after propagating assumptions yields significant performance improvements on Bounded Model Checking (BMC) benchmarks from the Hardware Model Checking Competition 2017. Implemented in the Island SAT solver (IntelSAT's fork), BI enables solving ~1.5X as many difficult bounds as the baseline global-level incremental preprocessor.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:524">
                             <td class="time"></td>
                             <td>
@@ -550,8 +609,7 @@ We then push this approach a step further to show the robustness of this realiza
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23260.html">Sandra Alves</a>
                         </div>
                     </div>
@@ -563,6 +621,37 @@ We then push this approach a step further to show the robustness of this realiza
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:244">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Approximation theory for distant Bang calculus <a class="abstract_link" href="FSCD-2026-07-20.html#talk:244">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12163.html">Kostia Chardonnet</a><sup>1</sup>, <a class="person" href="person12164.html">Jules Chouquet</a><sup>2</sup>, <a class="person" href="person12165.html">Axel Kerinec</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université de Lorraine, CNRS, Inria, LORIA, F-54000 Nancy, France</div>
+                                <div class="affiliation_item"><sup>2</sup> Université d’Orléans, INSA CVL, LIFO, UR 4022, Orléans, France</div>
+                                <div class="affiliation_item"><sup>3</sup> Université Paris Est Creteil, LACL, F-94010 Créteil, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Approximation semantics capture the observable behaviour of {\lambda}-terms, with Böhm Trees and Taylor Expan- sion standing as two central paradigms. Although conceptually different, these notions are related via the Commutation Theorem, which links the Taylor expansion of a term to that of its Böhm tree. These notions are well understood in Call-by-Name {\lambda}-calculus and have been more recently introduced in Call-by-Value settings. Since these two evaluation strategies traditionally require separate theories, a natural next step is to seek a unified setting for approximation semantics. The Bang-calculus offers exactly such a framework, subsuming both CbN and CbV through linear-logic translations while providing robust rewriting properties. However, its approximation semantics is yet to be fully developed. In this work, we develop the approximation semantics for dBang, the Bang-calculus with explicit substitu- tions and distant reductions. We define Böhm trees and Taylor expansion within dBang and establish their fundamental properties. Our results subsume and generalize Call-By-Name and Call-By-Value through their translations into Bang, offering a single framework that uniformly captures infinitary and resource-sensitive semantics across evaluation strategies.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:245">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Groups and Inverse Semigroups in Lambda Calculus <a class="abstract_link" href="FSCD-2026-07-20.html#talk:245">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12166.html">Antonio Bucciarelli</a><sup>1</sup>, <a class="person" href="person12167.html">Arturo De Faveri</a><sup>1</sup>, <a class="person" href="person12168.html">Giulio Manzonetto</a><sup>1</sup>, <a class="person" href="person12169.html">Antonino Salibra</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université Paris Cité, CNRS, IRIF</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study invertibility of lambda-terms modulo lambda-theories. Here a fundamental role is played by a class of lambda-terms called finite hereditary permutations (FHP) and by their infinite generalisations (HP). More precisely, FHPs are the invertible elements in the least extensional lambda-theory lambda-eta and HPs are those in the greatest sensible lambda-theory H*. Our approach is based on inverse semigroups, algebraic structures that generalise groups and semilattices. We show that FHP modulo a  lambda-theory T is always an inverse semigroup and that HP modulo T is an inverse semigroup whenever T contains the theory of Böhm trees.
+An inverse semigroup comes equipped with a natural order. We prove that the natural order corresponds to eta-expansion in FHP/T, and to infinite eta-expansion in HP/T. Building on these correspondences we obtain the two main contributions of this work: firstly, we recast in a broader framework the results cited at the beginning; secondly, we prove that the FHPs are the invertible lambda-terms in all the lambda-theories lying between lambda-eta and H+. The latter is Morris' observational lambda-theory, defined by using the beta-normal forms as observables.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:246">
                             <td class="time"></td>
                             <td>
@@ -668,8 +757,7 @@ An experimental evaluation on hard benchmarks from different application domains
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24047.html">Gabriele Kern-Isberner</a>
                         </div>
                     </div>
@@ -752,8 +840,7 @@ based on their intended semantics, thereby laying the groundwork for novel appli
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23596.html">Sebastian Rudolph</a>
                         </div>
                     </div>
@@ -765,6 +852,23 @@ based on their intended semantics, thereby laying the groundwork for novel appli
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:401">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Distributed Framework for Compiling and Reasoning with d-DNNF <a class="abstract_link" href="KR-2026-07-20.html#talk:401">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12898.html">Zhenghang Xu</a><sup>1</sup>, <a class="person" href="person12899.html">Minghao Yin</a><sup>1</sup>, <a class="person" href="person12900.html">Jianan Wang</a><sup>1</sup>, <a class="person" href="person12901.html">Jean Marie Lagniez</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Northeast Normal University</div>
+                                <div class="affiliation_item"><sup>2</sup> CRIL</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Knowledge Compilation (KC) is a powerful paradigm that enables efficient reasoning by transforming propositional formulas into tractable target languages, such as Deterministic, Decomposable Negation Normal Form (d-DNNF). However, as real-world problem instances grow in complexity, the offline compilation phase becomes a significant computational bottleneck, often exceeding the memory and temporal limits of single-node systems. While distributed computing has been successfully applied to model counting (#SAT), extending these techniques to knowledge compilation remains a challenge due to the difficulty of sharing partial circuit fragments across distributed nodes. 
+
+In this paper, we propose dkc, the first distributed knowledge compiler designed for large-scale Decision-DNNF generation.Leveraging a Cube-and-Conquer strategy, dkc effectively partitions the search space into independent subproblems, mitigating the communication overhead typically associated with work-stealing architectures in circuit-based tasks. Recognizing that the utility of compilation lies in subsequent querying, we further introduce dreasoner, a distributed reasoning engine. dreasoner is capable of performing core inference tasks (including model counting, direct access, and uniform sampling) across a distributed d-DNNF structure, even under variable conditioning. Our experimental evaluation on benchmarks demonstrates that our distributed architecture scales effectively, enabling the compilation and querying of complex formulas that remain beyond the reach of state-of-the-art sequential compilers.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:402">
                             <td class="time"></td>
                             <td>
@@ -795,6 +899,21 @@ based on their intended semantics, thereby laying the groundwork for novel appli
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:404">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Knowledge Compilation for Quantification in Alternating Automata <a class="abstract_link" href="KR-2026-07-20.html#talk:404">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12910.html">Niklas Metzger</a><sup>1</sup>, <a class="person" href="person12911.html">Alfredo Cantarella</a><sup>1</sup>, <a class="person" href="person11315.html">Bernd Finkbeiner</a><sup>1</sup>, <a class="person" href="person11119.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person11504.html">S. Akshay</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
+                                <div class="affiliation_item"><sup>2</sup> Indian Institute of Technology Bombay</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a knowledge compilation approach for existential and universal quantification in alternating automata. Knowledge compilation transforms formulas into normal forms with special properties that enable efficient answering of questions of interest.  For Boolean formulas, several normal forms that have proven effective for existential/universal quantification, and even for functional synthesis, have been studied in the literature. For infinite word automata, quantification is a fundamental operation in verification tasks such as QPTL satisfiability checking and HyperLTL model checking. Existing algorithms rely on nondeterministic infinite word automata, where existential projection can be efficiently performed state-wise, but universal projection requires complementation. Complementing nondeterministic infinite word automata, however, is expensive in practice, making existing algorithms infeasible for automata in practice. Towards addressing this problem, we propose novel knowledge compilation techniques for existential and universal quantification on alternating safety automata. Our approach compiles alternating automata into normal forms where projection can be applied uniformly and efficiently to each state's transition function. Using the compilations for each type of quantification, we can effectively eliminate a sequence of alternating quantifiers in formulas without complementation. Our BDD-based prototype demonstrates the practical effectiveness of our algorithms on a suite of QPTL satisfiability benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:851">
@@ -805,8 +924,7 @@ based on their intended semantics, thereby laying the groundwork for novel appli
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23363.html">Eduardo Fermé</a>
                         </div>
                     </div>
@@ -838,6 +956,46 @@ mentioned extensions are contained in certain closure systems. Our
 algorithms enumerate these closed sets and  filter the searched
 extensions. Experimental results show that our approach outperforms 
 the existing approaches for a large number of the test cases.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:406">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Tenability and Weak Semantics: Modeling Non-uniform Defense <a class="abstract_link" href="KR-2026-07-20.html#talk:406">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12917.html">Uri Andrews</a><sup>1</sup>, <a class="person" href="person12918.html">Luca San Mauro</a><sup>2</sup>, <a class="person" href="person12919.html">John Spoerl</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Wisconsin -- Madison</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Bari</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In Dung-style abstract argumentation, various semantics capture notions of acceptability of arguments. The admissibility semantics capture the notion that an argument can be consistently defended from any potential counterargument.
+Weak semantics often relax the demands of admissibility by restricting which counterarguments must be taken seriously (e.g., discounting self-defeating or otherwise incoherent attacks). Many prominent proposals for weak semantics remain extension-based in a stronger sense. While these semantics discount attacks from arguments which are considered unreasonable, they still require a uniform defense against all reasonable arguments, even if they are collectively incoherent.
+This uniformity can be too demanding when defensibility is inherently strategic, and thus the appropriate reply depends on the opponent’s line of attack.
+
+
+We introduce tenability, a family of dialogue-based semantics that formalize when a designated argument (or a set of arguments) can be maintained in debate by a proponent against any coherent (conflict-free) attack which the opponent may present. The approach is motivated by three natural benchmark patterns—self-defeating attack, floating assignment, and disjunctive reinstatement—on which tenability behaves differently from all weak semantics previously considered in the literature.
+We define three variants--static tenability, tenability, and strong tenability--via monotone commitment games over finite conflict-free moves, differing in the obligations imposed on the disputants. We establish the relative strength of these notions, prove implications and separations with previously studied weak semantics, and % (including admissibility)
+ we analyze computational complexity on finite frameworks: deciding static tenability is $\Pi^P_2$-complete, while deciding tenability and strong tenability is PSPACE-complete.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:407">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Belief Function Propagation in Quantitative Bipolar Argumentation Frameworks <a class="abstract_link" href="KR-2026-07-20.html#talk:407">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12920.html">Jordan Thieyre</a><sup>1</sup>, <a class="person" href="person12921.html">Aurélie Beynier</a><sup>1</sup>, <a class="person" href="person12922.html">Sébastien Destercke</a><sup>2</sup>, <a class="person" href="person12923.html">Nicolas Maudet</a><sup>1</sup>, <a class="person" href="person12924.html">Srdjan Vesic</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LIP6, CNRS - Sorbonne Université</div>
+                                <div class="affiliation_item"><sup>2</sup> Université de technologie de Compiègne, CNRS, Heudiasyc</div>
+                                <div class="affiliation_item"><sup>3</sup> CRIL, CNRS - Univ. Artois</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Argumentation theory provides a formal framework to represent and analyse debates where participants propose arguments that attack or support others and assign scores expressing their opinions. Quantitative Bipolar Argumentation Frameworks model such debates by assigning initial weights to arguments and using semantics to compute final scores that reflect attackers’ and supporters’ influence. One of the major challenge is setting appropriate initial weights when debaters’ opinions are uncertain.
+    
+In this paper, we introduce a formal approach to uncertainty propagation in Quantitative Bipolar argumentation frameworks by representing initial weights as belief mass functions over a discretized unit interval. We introduce two new propagation models: (i) an exact model that computes final mass functions by combining focal elements of initial weights with parent arguments via bipolar gradual semantics; (ii) a practical approximation that projects the exact mass onto a user-specified partition and reconstructs masses using the Moebius inverse. We prove mathematical properties of the projection and show that the baseline, while computationally efficient, can be overconfident by failing to preserve expectations. Our approximation reduces the exponential complexity of the exact model while satisfying Epistemic Cautiousness, yielding acceptability intervals that contain true theoretical expectations and balancing tractability with theoretical soundness.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1018,8 +1176,7 @@ the existing approaches for a large number of the test cases.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25246.html">Anupam Das</a>
                         </div>
                     </div>
@@ -1098,8 +1255,7 @@ We recover sequent calculi from the literature as restrictions of IS (thanks to 
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24421.html">Mahsa Shirmohammadi</a>
                         </div>
                     </div>
@@ -1111,6 +1267,24 @@ We recover sequent calculi from the literature as restrictions of IS (thanks to 
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:450">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Checking History-Determinism for Parity Automata is in NP <a class="abstract_link" href="LICS-2026-07-20.html#talk:450">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person15169.html">Karoliina Lehtinen</a><sup>1</sup>, <a class="person" href="person15170.html">Keya Prakash</a><sup>2</sup>, <a class="person" href="person13039.html">Michał Skrzypczak</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CNRS, Aix Marseille Univ., LIS</div>
+                                <div class="affiliation_item"><sup>2</sup> Aix Marseille Univ., CNRS, LIS</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Warsaw</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> History-deterministic automata, often also known as good-for-games, are an intermediate model between deterministic and nondeterministic automata, which are particularly well-suited for applications in verification and reactive synthesis.
+
+We show that deciding whether a parity automaton is history-deterministic is in NP. Our result matches an NP-hardness lower bound (Prakash 2024) and builds on insights from a fixed-parameter tractable algorithm (Lehtinen and Prakash 2025). This settles the complexity of the problem, which has been open since 2006.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:451">
                             <td class="time"></td>
                             <td>
@@ -1237,8 +1411,7 @@ We show that both variants can provide strictly smaller refutations of unsatisfi
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24246.html">Yves Lesperance</a>
                         </div>
                     </div>
@@ -1250,6 +1423,57 @@ We show that both variants can provide strictly smaller refutations of unsatisfi
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1311">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">I Would If I Could: Reasoning about Dynamics of Actions in Multi-Agent Systems <a class="abstract_link" href="KR-2026-07-20.html#talk:1311">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12930.html">Rustam Galimullin</a><sup>1</sup>, <a class="person" href="person12931.html">Hermine Grosinger</a><sup>2</sup>, <a class="person" href="person12932.html">Munyque Mittelmann</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Bergen</div>
+                                <div class="affiliation_item"><sup>2</sup> Örebro University</div>
+                                <div class="affiliation_item"><sup>3</sup> LIPN, CNRS</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Autonomous agents acting in realistic Multi-Agent Systems (MAS) should be able to adapt during their execution.  Standard strategic logics, such as Alternating-time Temporal Logic (ATL), model agents' state or history-dependent behaviour. However, the dynamic treatment of agents' available actions and their knowledge of required actions is still rarely addressed. In this paper, we introduce ATL with Dynamic Actions (ATL-D), which models the process of granting and revoking actions, and its extension ATEL-D, which captures how such updates affect agents’ knowledge.  Beyond the conceptual contribution, we provide several technical results: we analyse the expressivity of our logic in relation to ATL, study its relation to normative systems, and provide complexity results for relevant computational problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1312">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Specifying Agent Strategy Spaces via LTL Synthesis <a class="abstract_link" href="KR-2026-07-20.html#talk:1312">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12933.html">Benjamin Aminof</a><sup>1</sup>, <a class="person" href="person11290.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person12935.html">Aniello Murano</a><sup>3</sup>, <a class="person" href="person12936.html">Sasha Rubin</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University of Vienna, Austria</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford, UK</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Naples “Federico II’, Italy</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Sydney, Australia</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study an Agentic AI setting where we have only partial control over the strategic actions of a set of autonomous agents with independent sequential decision-making capabilities, building on LTL synthesis originally studied in formal methods. 
+    Specifically, we assign to each agent individually a task expressed in LTL, and assumptions on the strategies employed by its peers and that the agent can exploit while synthesizing a strategy to realize its task. 
+    While we can solve the synthesis problem under assumptions for each such agent we are not only interested in (1) synthesizing strategies for individual agents.
+    Indeed, assumptions in turn are recursively defined through these strategy spaces.  Importantly, we do not assume the ability to access or analyze an agent's internal strategy, as we make no assumptions about the nature of the decision makers, which may be, for example, ML-based. Instead, we focus on (2) characterizing the set of traces that are generated by strategies that realize the specification assigned to each agent. Using this characterization, we are able to (3) verify that the whole system, when in execution, satisfies a global objective, regardless of the strategies chosen by the agents from their allowed spaces. Moreover, by observing the evolution of the execution trace, we can (4) identify whether an agent makes a move that violates its specification and assign precise responsibility for the violation. Technically, we present automata-theoretic techniques to solve these problems, and show that each of them is 2EXPTIME-complete, matching the complexity of classical LTL synthesis.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1313">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Revisiting Ability-Based Bisimulation <a class="abstract_link" href="KR-2026-07-20.html#talk:1313">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12937.html">Carlos Areces</a><sup>1</sup>, <a class="person" href="person12938.html">Raul Fervari</a><sup>1</sup>, <a class="person" href="person12939.html">Antonio Mondejar</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Consejo Nacional de Investigaciones Científicas (CONICET) and Universidad Nacional de Córdoba, Argentina</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidad Nacional de Córdoba, Argentina</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Bisimulation is a crucial tool for investigating and understanding the semantic properties of labeled transition systems (LTSs) and relational models in general. In particular, it plays a fundamental role in characterizing model equivalence with respect to a given logical language and in guiding the construction of minimal models. In this paper, we study bisimulation in the context of a logic for expressing knowing-how assertions, which are related to an agent's ability to achieve a given goal. We begin by revisiting an existing notion of bisimulation for this logic and reformulating it using purely semantic clauses. We then establish adequacy results for this new notion.  Next, we provide a computational analysis of the problem of checking whether two models are bisimilar. In particular, we show that this problem is \PSPACE-complete. We also investigate two approaches to model minimization in this setting, each exhibiting different computational properties.  Along the way, our systematic study of bisimulation yields additional by-product results, w.r.t., for example, the complexity of the definability problem for this logic.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1314">
                             <td class="time"></td>
                             <td>
@@ -1276,8 +1500,7 @@ We show that both variants can provide strictly smaller refutations of unsatisfi
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23348.html">Patrick Koopmann</a>
                         </div>
                     </div>
@@ -1396,8 +1619,7 @@ Intelligence in January, 2026.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23112.html">Sebastien Konieczny</a>
                         </div>
                     </div>
@@ -1452,6 +1674,24 @@ For both modes, we provide postulate-based representation theorems and show how 
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this paper, we investigate the belief revision problem in epistemic planning, i.e., what will be the beliefs of all agents in a multi-agent system after one agent gains the belief in some fluent formula. We expand the standard logic of belief revision to the dynamic, multi-agent setting in order to be able to assess approaches to epistemic planning. Based on the standard representation in epistemic planning of agents’ beliefs via a single Kripke model, we develop a generalization of the classical AGM belief revision postulates as a formal evaluation instrument for dynamic epistemic reasoning frameworks in which the beliefs of all agents as the result of actions are computed. We provide an example of a simple, generalized ``full-meet'' multi-agent belief revision operator and prove that it satisfies all of the generalized AGM postulates. We moreover define a generalization of the standard postulates for *iterated* revision, present an event model based belief operator, and discuss the potential issues in defining an epistemic operator on Kripke models that can satisfy these properties as well.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1322">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Model Change for Description Logic Concepts <a class="abstract_link" href="KR-2026-07-20.html#talk:1322">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11938.html">Ana Ozaki</a><sup>1</sup>, <a class="person" href="person12963.html">Jandson S Ribeiro</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oslo</div>
+                                <div class="affiliation_item"><sup>2</sup> Cardiff University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider the problem of modifying a description logic concept in light of models 
+represented as pointed interpretations. 
+We call this setting \emph{model change}, and eviction, which consists of only removing models; incorporation of models in a single operation. 
+introduce a formal notion of revision and argue that it does not reduce to a simple combination of eviction (removing models) and reception (adding models),  contrary to intuition. We provide positive and negative results on the compatibility of eviction and reception for $\EL_\bot$ and \ALC description logic concepts and on the compatibility of revision for \ALC concepts.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1534,6 +1774,30 @@ We then confirm that architectural choices in coupling symbolic knowledge with n
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:285">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">On the (Intuitionistic) Logic of Next-Token Prediction <a class="abstract_link" href="ICLP-2026-07-20.html#talk:285">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12308.html">Paul Tarau</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of North Texas</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We model in intuitionistic implicational logic the key enabler of today’s GenerativeAI: the next-token pre-
+diction in autoregressive causal neural networks.
+In our framework, next-token prediction corresponds to modus ponens, and sequence processing be-
+comes constructive proof extension under the Curry–Howard correspondence. Our Prolog-based special-
+ized theorem provers validate fundamental properties of the neural models, among which relations between
+commutative vs. non-commutative sequencing and single-token vs. multi-token prediction choices.
+We derive a neural architecture equivalent to multiplicative RNNs that arises naturally from a proof-
+theoretic interpretation of next-token prediction as nested intuitionistic implication and position the model
+relative to transformers, state-space models and recursive LLMs.
+Keywords: logic-based derivation of neural architectures, intuitionistic implicational logic, token-as-
+operator neural models, alternatives to transformer-based foundational models.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:286">
                             <td class="time"></td>
                             <td>
@@ -1560,6 +1824,20 @@ and fully proof-checked by LPTP.</p>
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:287">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Identifying Good Rules for Efficient SAT Encodings of Single-Constant Multiplication Using Machine Learning <a class="abstract_link" href="ICLP-2026-07-20.html#talk:287">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12312.html">Chufeng Jiang</a><sup>1</sup>, <a class="person" href="person12313.html">Neng-Fa Zhou</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> City University of New York</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Single Constant Multiplication problem is a fundamental NP-hard optimization task in hardware design, which seeks to decompose a fixed constant using only additions, subtractions, and bit-shifts. Although dynamic programming methods can produce near-optimal SAT encodings for SCM, their encoding cost remains high for large constants. We propose a neuro-symbolic framework that accelerates SCM SAT encoding by identifying good rules for guiding operator selection during decomposition. Our approach employs a graph neural network model to predict promising operator types from constant decompositions, and exploits the resulting confidence scores to prune no-good choices in the symbolic search. Experimental results on unseen 17--32 bit constants demonstrate one to two orders of magnitude reductions in encoding time, over 97\% reduction in memory usage, and an order-of-magnitude decrease in branching, while preserving near-optimal encoding quality in terms of additions. These results show that learning-guided symbolic strategies can significantly improve the scalability and efficiency of SCM encoding. Our codes and data are public available at: https://github.com/Chufeng-Jiang/SCM_MLDP</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:735">
@@ -1570,8 +1848,7 @@ and fully proof-checked by LPTP.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24057.html">Carsten Fuhs</a>
                         </div>
                     </div>
@@ -1695,8 +1972,7 @@ generalize previous approaches.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24325.html">S. Akshay</a>
                         </div>
                     </div>
@@ -1707,6 +1983,37 @@ generalize previous approaches.</p>
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:453">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Complexity Bound for Determinisation of Min-Plus Weighted Automata <a class="abstract_link" href="LICS-2026-07-20.html#talk:453">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person15175.html">Shaull Almagor</a><sup>1</sup>, <a class="person" href="person15176.html">Guy Arbel</a><sup>1</sup>, <a class="person" href="person15177.html">Sarai Sheinvald</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technion</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The determinisation problem for min-plus (tropical) weighted automata was recently shown to be decidable. However, the proof is purely existential, relying on several non-constructive arguments. Our contribution in this work is twofold: first, we present the first complexity bound for this problem, showing it is primitive recursive. Second, our techniques introduce a versatile framework to analyse runs of weighted automata in a constructive manner. In particular, this significantly simplifies the previous decidability argument and provides a tighter analysis, thus serving as a critical step towards a tight complexity bound.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:454">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Differential Tree Automata <a class="abstract_link" href="LICS-2026-07-20.html#talk:454">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person15178.html">Mahsa Shirmohammadi</a><sup>1</sup>, <a class="person" href="person15179.html">Rida Ait El Manssour</a><sup>2</sup>, <a class="person" href="person15180.html">Vincent Cheval</a><sup>2</sup>, <a class="person" href="person15181.html">James Worrell</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IRIF, CNRS</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this paper we introduce the notion of a differential tree automaton. Differential tree automata generalise weighted tree automata  (over a field) by allowing the transition weights to be rational functions of the tree size. Whereas the class of generating functions of weighted tree automata coincides with the class of algebraic power series, our main result is that that the class of generating functions of differential tree automata coincides with the class of differentially algebraic power series.  As a corollary, we obtain a decision procedure for determining equivalence of differential tree automata.  In the course of proving our main result we identify a class of recurrences that characterises the sequence of coefficients of a differentially algebraic power series, generalising Reutenauer's matrix representation of polynomially recursive sequences. We further identify a natural syntactic subset of differential tree automata whose generating functions are given by rational dynamical systems, that is, as components of the solution of a system of differential equations $\boldsymbol{y}' = F(\boldsymbol y)$, where $F$ is a vector of rational functions that is defined at $\boldsymbol y(0)$.  We further show that this class of power series can be characterised in terms of the classical notion of weighted tree automata by using a labelled generating function on trees.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:932">
                     <div class="heading">
@@ -1716,8 +2023,7 @@ generalize previous approaches.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24596.html">Luis Caires</a>
                         </div>
                     </div>
@@ -1729,6 +2035,22 @@ generalize previous approaches.</p>
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:455">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">LFPL: Revisited and Mechanized <a class="abstract_link" href="LICS-2026-07-20.html#talk:455">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person15182.html">Nathaniel Glover</a><sup>1</sup>, <a class="person" href="person15183.html">Jan Hoffmann</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hofmann (1999) introduced the functional programming language LFPL to characterize the functions computable in polynomial time using an affine type system. LFPL enables a natural programming style, including nested recursion, and has inspired the development of type systems for automatic cost analysis, linear dependent type theories, and efficient memory management in functional programming languages. Despite its prominence, there does not exist a self-contained presentation, let alone a full mechanization, of LFPL and its core metatheory.
+
+This article presents a modern account and mechanization of LFPL and its metatheory with the goal of being self-contained and accessible while streamlining the strongest-known soundness and completeness results. The soundness proof works with the language LFPL+, which extends LFPL with additional language features. The proof is novel, adapting a technique by Aehlig and Schwichtenberg (2002) to construct explicit polynomials that bound the cost of an LFPL+ expression with respect to a big-step cost semantics. The completeness proof shows that LFPL programs can simulate polynomial-time Turing machines while only relying on restricted forms of linear functions and lists. It has the same structure as the original proof by Hofmann (2002) but greatly simplifies the core argument with a novel stack-like data structure that is implemented with first-class functions and lists. The mechanization includes the full soundness and completeness proofs, and serves as one of the first case studies of mechanized metatheory in the recently developed proof assistant Istari.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:456">
                             <td class="time"></td>
                             <td>
@@ -1877,8 +2199,7 @@ A crucial concern in metaprogramming-based program optimisations is whether the 
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23239.html">Marie-Laure Mugnier</a>
                         </div>
                     </div>
@@ -1918,6 +2239,41 @@ A crucial concern in metaprogramming-based program optimisations is whether the 
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:530">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">WhyUnsat: a practical explanation tool <a class="abstract_link" href="SAT-2026-07-20.html#talk:530">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14365.html">Robert Nieuwenhuis</a><sup>1</sup>, <a class="person" href="person14366.html">Albert Oliveras</a><sup>1</sup>, <a class="person" href="person14367.html">Enric Rodríguez Carbonell</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University Catalonia (BarcelonaTech)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hard industrial planning, timetabling or scheduling instances for SAT typically have many high-level constraints, each generating a possibly large number of clauses.  When a given instance is reported unsatisfiable by the SAT solver, the user normally needs an \emph{explanation} why: a (hopefully small) subset of the constraints causing it.  Our industrial applications require \emph{fast} explanations, preferrably faster than the orginal SAT run. For this, we leverage the original solver's work through its unsatisfiability proof.
+
+Previous such group-oriented MUS tools had quite different intended uses and were either based on substantial internal modifications of (now somewhat outdated) SAT solvers or on assumption-based incremental solvers that frequently need very long runtimes on our instances, even for 1-minute original SAT runs.
+
+Here we introduce WhyUnsat, and explain why it is fast and robust.  In WhyUnsat one can always plug in the best current SAT solver and proof trimmer, without any modification, by simply indicating the path to their executables. WhyUnsat is also fast because it exploits, via MPI, the -progessively cheaper- shared-memory and distributed computing resources.  Another requirement we had is that the tool should be anytime and user-friendly; indeed, it quickly shows a human-readable presentation of (an over-approximation of) the explanation, which is then progressively reduced until minimality (unless interrupted by the user).
+
+Finally, and not less importantly, here we explain how and why the WhyUnsat approach is now also directly applicable, at no impementation cost, to IPASIR-UP-based constraint programming by Lazy Clause Generation (LCG) as well as to SAT Modulo Theories (SMT).</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:531">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Shapley-Shubik Attribution from Minimal Subsets <a class="abstract_link" href="SAT-2026-07-20.html#talk:531">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14368.html">Pablo Martínez-Naredo</a><sup>1</sup>, <a class="person" href="person13060.html">Raúl Mencía</a><sup>1</sup>, <a class="person" href="person13057.html">Joao Marques-Silva</a><sup>2</sup>, <a class="person" href="person13058.html">Carlos Mencía</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oviedo</div>
+                                <div class="affiliation_item"><sup>2</sup> ICREA & University of Lleida</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We address the problem of attributing responsibility to individual clauses for the unsatisfiability of a propositional formula. Recent work adopted the Shapley-Shubik power index, proposing a probabilistic approximation algorithm. However, despite polynomial, the required number of SAT solver calls becomes impractical when the input formula is not easy to solve. In such cases, it is often possible to enumerate a partial set of minimal unsatisfiable subsets (MUSes) and minimal correction subsets (MCSes). In this paper, we demonstrate that these subsets can be leveraged to efficiently bound and approximate the Shapley-Shubik index. We introduce a framework that exploits the structural information provided by the available sets to derive useful attribution explanations.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:532">
                             <td class="time"></td>
                             <td>
@@ -1929,6 +2285,30 @@ A crucial concern in metaprogramming-based program optimisations is whether the 
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Many communities within Combinatorial Optimization (CO) maintain benchmark sets in heterogeneous formats, often tied to specific competitions and solver technologies. Whilst this diversity is of practical and historical importance, it also creates barriers to use and compare methods from different communities. Inspired by the more unified software ecosystem from the ML community, we propose a programmatic abstraction for CO benchmark sets. A unified programmatic interface for downloading, reading and converting datasets across formats. This includes solver-oriented benchmarks such as XCSP3, MIPLib, PB, MaxSATEval, SAT and application-oriented benchmarks such as Nurse rostering, PSPLib (RCSP), and JSPlib. To enable cross-formalism conversions, we provide loaders that bring these dataset instances into CPMpy, a modelling library for constraint programming. CPMpy provides a transformation stack; an extensive set of rewrite operations such as constraint decomposition, linearization, and Boolean encodings, that allow transforming between different constraint formalisms. Based on this, we implement file writers to multiple solver-oriented formats, including FlatZinc, LP file format (ILP), OPB, and DIMACS (W)CNF ((Max)SAT). We demonstrate that this unified abstraction facilitates cross-community access to benchmarks and systematic comparisons of solvers across paradigms.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:533">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Sustainable Benchmarking Tool <a class="abstract_link" href="SAT-2026-07-20.html#talk:533">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14375.html">Ashlin Iser</a><sup>1</sup>, <a class="person" href="person14376.html">Marie Anastacio</a><sup>2</sup>, <a class="person" href="person14377.html">Théo Matricon</a><sup>3</sup>, <a class="person" href="person14378.html">Laurent Simon</a><sup>4</sup>, <a class="person" href="person14379.html">Holger H. Hoos</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> RWTH Aachen University</div>
+                                <div class="affiliation_item"><sup>3</sup> Rennes University</div>
+                                <div class="affiliation_item"><sup>4</sup> Bordeaux University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Solvers for NP-hard problems from areas such as automated reasoning or optimisation are complex systems in which many different components interact.
+The performance of these solvers is the result of an intricate interplay between implementation details, algorithmic concepts and heuristics.
+This, alongside the complexity of the problem instances to be solved, makes it challenging to assess the effect of a single idea on the overall performance of a given solver.
+It is therefore not only crucial, but also challenging to evaluate the performance impact of new ideas.
+Existing reliable evaluation methods require large sets of diverse benchmark instances and considerable amounts of computing resources.
+This makes empirical evaluation a bottleneck for solver development, as it is time-consuming and energy-intensive, often requiring several CPU years of computation to evaluate the impact of a single idea.
+In recent years, this bottleneck has led to the development of data-driven approaches that can dynamically select a smaller number of instances that provide sufficient statistical evidence to evaluate the relative performance of a given set of solvers.
+However, these methods are typically not easily accessible. In this work, we present a tool that implements these methods and makes them readily accessible to solver developers, thus enabling them to obtain swifter feedback on their ideas.</p>
                                 </div>
                             </td>
                         </tr>
@@ -2035,6 +2415,21 @@ Viktor Leis and Thomas Neumann wrote a short technical perspective on the paper:
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:291">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Contrast Sequential Pattern Mining with Answer Set Solving <a class="abstract_link" href="ICLP-2026-07-20.html#talk:291">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12333.html">Gioacchino Sterlicchio</a><sup>1</sup>, <a class="person" href="person12334.html">Francesca Alessandra Lisi</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Polytechnic University of Bari</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Bari Aldo Moro</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The extended abstract, for the recently published research track, introduces a novel approach to the Contrast Sequential Pattern Mining (CSPM) task, which is based on Answer Set Programming (ASP). The MASS-CSP framework provides a concise and versatile ASP encoding that addresses the basic CSPM task as well as several advanced extensions. The framework is implemented in two distinct phases: first, extracting frequent sequential patterns, and second, verifying if they satisfy specified constraints, such as the minimum support and contrast rate thresholds. The research demonstrates the power of ASP modelling features such as choice rules for pattern generation, integrity constraints for filtering, and aggregates for calculating the support of patterns. Furthermore, the framework addresses the practical challenges of Logic Programming, including the grounding phase, which can lead to memory explosion if not carefully managed. The practical utility of the framework is further validated by successfully identifying attack patterns in 4G-LTE cellular network logs, proving its effectiveness for anomaly detection and intrusion prevention.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:292">
                             <td class="time"></td>
                             <td>
@@ -2069,8 +2464,7 @@ https://conf.researchr.org/home/icse-2026/nse-2026</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23505.html">Dale Miller</a>
                         </div>
                     </div>
@@ -2100,6 +2494,24 @@ The resulting logic features higher-order quantifiers, infinite conjunction and 
 We establish results at both the syntactic and the semantic level.
 We introduce a sound notion of model, and we show a strong version of completeness that entails the cut-elimination theorem for natural deduction.
 Moreover, we prove an extension of Barr's theorem, allowing us to constructivize classical proofs of a particular fragment of higher-order infinitary logic.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:251">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Polymorphism Meets Dependently Typed Higher-Order Logic <a class="abstract_link" href="FSCD-2026-07-20.html#talk:251">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12184.html">Daniel Ranalter</a><sup>1</sup>, <a class="person" href="person12185.html">Florian Rabe</a><sup>2</sup>, <a class="person" href="person12186.html">Cezary Kaliszyk</a><sup>3,1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Erlangen-Nuremberg</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Melbourne</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> DHOL is an extensional, classical logic that equips the well-known higher-order logic (HOL) with dependent types. This allows for concise encodings of important domains like size-bounded data structures, category theory, or proof theory. Automation support is obtained by translating DHOL to HOL, for which powerful modern automated theorem provers are available. However, a critically missing feature of DHOL is polymorphism. 
+We develop the syntax and semantics of polymorphic DHOL and extend the translation
+accordingly. We implement the translation in the logic-embedding tool and evaluate it on a range of TPTP formalizations. The logic-embedding tool, together with an off-the-shelf HOL theorem prover easily creates a PDHOL theorem prover for experimenting.</p>
                                 </div>
                             </td>
                         </tr>

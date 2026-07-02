@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -291,6 +291,48 @@ Motivated by advances in UNSAT proof formats such as LRAT, which enable efficien
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1439">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Revising the Implicit Hitting Set Solver MaxHS <a class="abstract_link" href="PoS-2026-07-19.html#talk:1439">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14111.html">Edgar Justus</a><sup>1</sup>, <a class="person" href="person14112.html">Jakob Berg</a><sup>1</sup>, <a class="person" href="person14113.html">André Schidler</a><sup>1</sup>, <a class="person" href="person14114.html">Mathias Fleury</a><sup>1</sup>, <a class="person" href="person14115.html">Tobias Paxian</a><sup>1</sup>, <a class="person" href="person11485.html">Armin Biere</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Freiburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Maximum Satisfiability (MaxSAT) is an approach for solving NP-hard optimization problems expressed in
+propositional logic. Among the known approaches for solving MaxSAT is the Implicit Hitting Set approach that
+combines SAT solvers and Integer Linear Programming solvers. No Implicit Hitting solver participated in the
+most important evaluation of state-of-the-art MaxSAT solvers—the annual MaxSAT Evaluation—since MaxHS did
+in 2022. Since then, MaxHS remains unmaintained and is not allowed to participate under the current ruleset.
+Further, recent advances in MaxSAT testing have revealed numerous bugs in MaxHS. In this paper, we describe
+our revision of MaxHS, which include numerous bugfixes, the integration of an open source Integer Linear
+Programming solver that allows MaxHS to participate in the evaluation, and an exact mode that avoids numerical
+problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1440">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Aperture: an Anytime, Complete, and Incremental Solver for MaxSAT and Beyond (Work-in-Progress) <a class="abstract_link" href="PoS-2026-07-19.html#talk:1440">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14117.html">Alexander Nadel</a><sup>1</sup>, <a class="person" href="person14118.html">Yam Slonimski</a><sup>1</sup>, <a class="person" href="person14119.html">Ofer Strichman</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Faculty of Data and Decision Sciences, Technion</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Anytime MaxSAT solving is indispensable in applications that require finding near-optimal solutions within a flexible, user-controlled time budget. Recent years have seen substantial progress in anytime MaxSAT algorithms, including the introduction of SAT-based local search, the development of efficient approximation techniques, and significant advances in classical local search methods. However, all leading anytime solvers—including the winners of the three most recent MaxSAT Evaluations (MSEs) in the anytime categories—reuse the code base of a single solver, tt-open-wbo-inc. While highly efficient, this code base lacks an in-memory API, is non-incremental and incomplete, and contains a substantial amount of dead and legacy code.
+
+We introduce Aperture, a new solver for SAT-based optimization, including MaxSAT, written from scratch in C++ with in-memory APIs for C++ (IPAMIR-compliant) and Python. For MaxSAT, Aperture is anytime, incremental, and complete; algorithmically, it follows a similar high-level approach to tt-open-wbo-inc, but employs a unified flow for both weighted and unweighted MaxSAT.
+
+Performance-wise, Aperture is highly competitive as a MaxSAT solver. Under the benchmark sets and evaluation conditions of MSE 2024, it outperforms both the MSE 2024 winner SPB-MaxSAT-c and tt-open-wbo-inc in all four anytime categories, and in 8 out of 12 anytime categories across the three most recent MSEs (2022–2024). Moreover, Aperture outperforms leading non-anytime MaxSAT solvers on 2 out of the 6 incremental benchmark sets from MSE 2022, an evaluation setting in which—unlike the anytime categories—both incrementality and completeness are mandatory.
+
+Beyond MaxSAT, Aperture also supports other paradigms for optimizing an objective function under Boolean constraints, including Optimization Modulo Bitvectors (OBV) and black-box optimization. Across all supported paradigms, the solver is incremental and anytime; it is complete for MaxSAT and OBV, but incomplete for black-box optimization.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1441">
                             <td class="time"></td>
                             <td>
@@ -398,6 +440,20 @@ Motivated by advances in UNSAT proof formats such as LRAT, which enable efficien
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1445">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Exploring 3-CNF Formulas Generated From Partial Steiner Triple Systems <a class="abstract_link" href="PoS-2026-07-19.html#talk:1445">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14132.html">Wyatt Olson</a><sup>1</sup>, <a class="person" href="person14133.html">Jared Soundy</a><sup>1</sup>, <a class="person" href="person14134.html">Justin Schroeder</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Dakota State University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Steiner triple systems (STS) and subsets of these known as partial STS (PSTS) are combinatorial objects that have received substantial interest from mathematicians since their introduction in 1847. Over the last three decades, (P)TS have found applications in diverse fields ranging from digital circuit testing to wireless transmission. Perhaps unsurprisingly, the ``triple'' in (P)STS allows for a mapping to 3-conjunctive normal form (3-CNF) formulas, the Boolean formula used as input to 3-SAT. Prompted by this ready conversion of (P)STS to 3-CNF formulas and numerous real-world applications of (P)STS, we explore the intersection of (P)STS with 3-SAT and its counting version #3-SAT. We explain the properties of (P)STS-generated 3-CNF formulas in terms familiar to the SAT community and experimentally compare them against randomly-generated 3-CNF formulas. We find that PSTS-3-CNF formulas are statistically distinct from randomly generated 3-CNF formulas, in both probability of satisfiability and expected solution count.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1446">
                             <td class="time"></td>
                             <td>
@@ -458,6 +514,82 @@ Motivated by advances in UNSAT proof formats such as LRAT, which enable efficien
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1448">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Improving Local Search and adding DDFW to Kissat and CaDiCaL <a class="abstract_link" href="PoS-2026-07-19.html#talk:1448">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14141.html">Florian Pollitt</a><sup>1</sup>, <a class="person" href="person14114.html">Mathias Fleury</a><sup>1</sup>, <a class="person" href="person11485.html">Armin Biere</a><sup>1</sup>, <a class="person" href="person14144.html">Lea Hohl</a><sup>1</sup>, <a class="person" href="person14145.html">Johannes Gröber</a><sup>1</sup>, <a class="person" href="person14146.html">Jakob Peterson</a><sup>1</sup>, <a class="person" href="person14147.html">Rico Andris</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Freiburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> State-of-the-art SAT solvers from the SAT Competition are all using a local search component.  Experimentally at the beginning of the search, many better assignment are found; so we developed a new method to not store those each time, based on caching flips. This method was already part of Kissat but was not described so far.  We also describe the implementation in CaDiCaL which reuses watch lists instead of using full-occurrence lists.  Finally, we ported the new \tassat algorithm to CaDiCaL improving the performance of CaDiCaL.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1449">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">NobleCount: Revisiting a Forgotten Data Structure for Local Search in SAT <a class="abstract_link" href="PoS-2026-07-19.html#talk:1449">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14148.html">Yogev Shalmon</a><sup>1</sup>, <a class="person" href="person14117.html">Alexander Nadel</a><sup>1</sup>, <a class="person" href="person14119.html">Ofer Strichman</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Faculty of Data and Decision Sciences, Technion</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Local Search (LS) solvers for SAT can surpass
+CDCL solvers on some prominent satisfiable industrial and
+combinatorial benchmarks. They operate by flipping variable
+assignments and maintaining per-variable scores incrementally to
+guide variable selection, so performance is largely determined by
+how efficiently each flip is executed. We revisit a largely forgotten
+data structure that reduces per-flip overhead by eliminating
+costly clause scans. We dub this scheme NobleCount, integrate
+it into the leading LS solver ProbCCAnr, and evaluate it on
+industrial FCC spectrum-repacking instances and the SC22
+anniversary track, two standard testbeds for modern LS solvers.
+ProbCCAnr with NobleCount achieves new state-of-the-art
+results on both benchmarks. On FCC, where it already overtook
+not only other LS solvers but also leading CDCL solvers,
+employing NobleCount further reduces PAR2 by 24.8% at a 20s
+timeout, with consistent PAR2 gains across all timeouts up to our
+final 300s timeout. On SC22, at longer timeouts where another LS
+solver, TaSSAT, originally overtakes ProbCCAnr, NobleCount
+lifts ProbCCAnr to outperform TaSSAT in PAR2 score.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1450">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">ams-dist: A Scalable Distributed Hybrid Solver for Hard Combinatorial Problems <a class="abstract_link" href="PoS-2026-07-19.html#talk:1450">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14151.html">Maxim Zhulin</a><sup>1</sup>, <a class="person" href="person14152.html">Piyush Jha</a><sup>1</sup>, <a class="person" href="person14153.html">Zhengyu Li</a><sup>1</sup>, <a class="person" href="person14154.html">Richard Vuduc</a><sup>1</sup>, <a class="person" href="person13689.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Solving hard combinatorial problems such as the minimum Kochen-Specker problem requires finding all solutions to large Boolean satisfiability (ALLSAT) formulas, pushing the limits of existing parallel solver infrastructure. We present ams-dist, a new distributed hybrid solver that combines Cube & Conquer and portfolio solving. Building on AlphaMapleSAT-CnC, ams-dist introduces four key improvements: a fully distributed MPI manager-worker architecture, a portfolio clause-sharing simplification phase in which groups of workers collaboratively simplify subproblems in parallel, a distributed beam lookahead cubing procedure with a balanced scoring objective, and a progress-based work-stealing policy during the conquering phase that uses irredundant clause count to estimate subproblem difficulty. These improvements maintain substantially higher core utilization throughout execution compared to the baseline AlphaMapleSAT-CnC. We evaluate ams-dist on Kochen-Specker instances of orders 17-22 on a computing cluster at up to 3072 cores, comparing against the distributed pure portfolio solvers painless and MallobSat. ams-dist achieves consistent speedups of 1.5-3× on tractable instances and is the only solver to solve order-22 instances within a 6-hour timeout.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1451">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">MIGSat: A Majority Inverter Graph SAT Solver <a class="abstract_link" href="PoS-2026-07-19.html#talk:1451">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14156.html">Yuanda Liu</a><sup>1</sup>, <a class="person" href="person14157.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Majority Inverter Graphs (MIG) have been shown to be an excellent basis for circuit representation. However, no Circuit-SAT solvers that accept MIGs natively exist currently. Current Circuit-SAT solvers operate only on AND, OR, and XOR gates, not majority functions. Furthermore, majority gates are difficult for traditional CDCL solvers to tackle due to their large Tseitin transformation. This paper introduces a new CDCL Circuit-SAT solver, named MIGSat, that can efficiently operate on the majority basis by employing novel techniques, including: (1) a watchlist mechanism for the Majority function, (2) an efficient BCP mechanism, including a MiniSat-style blocker for the majority function, (3) a Tseytin clause derivation method for conflict analysis of the majority function, and (4) a MIG specific branching heuristic based on EVSIDS. We also implemented versions of existing heuristics, like LBD and activity-based clause deletion and clause simplification, to improve performance. Lastly, we demonstrated that our solver generally matches the performance of MiniSat on Miter circuits, and can be significantly faster than MiniSat and Kissat on Pigeonhole Circuits. Although still limited in its raw solving power, MIGSat can serve as a foundation for additional research in Circuit-SAT on the MIGs.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1486">
                     <div class="heading">
@@ -501,6 +633,36 @@ Motivated by advances in UNSAT proof formats such as LRAT, which enable efficien
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Compiling constraint models to conjunctive normal form (CNF) is commonly regarded as a one-way transformation, since auxiliary variables and clausal decomposition obscure the original problem structure. Related methods of structure recovery include gate extraction and cardinality detection, but those recover only fragments, not the complete encoding. We present an autonomous agent, powered by an LLM, that reverse-engineers a complete, semantically equivalent PySAT encoding from a DIMACS CNF file.  We use a SAT-based equivalence checker to verify the high-level encoding and obtain counterexamples for iterative refinement.  The agent queries the formula through bounded analysis tools. It combines structural with abductive reasoning to hypothesize the underlying combinatorial problem.  We evaluate our approach on several combinatorial problems with instances generated by independent encoders (PySAT, Picat, Sugar, BEE), giving the agent no metadata. We obtain 85 reconstruction on 48 instances and demonstrate that the agent handles direct, order, and log encodings of the same problems. Our scaling study confirms feasibility up to 1.2 million clauses.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1453">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Coloring Queens with Thousands of Encodings <a class="abstract_link" href="PoS-2026-07-19.html#talk:1453">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14160.html">Bernardo Subercaseaux</a><sup>1</sup>, <a class="person" href="person12649.html">Benjamin Przybocki</a><sup>1</sup>, <a class="person" href="person12609.html">Marijn Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In The Art of Computer Programming, Knuth benchmarked 10 encoding techniques for computing the chromatic number of the queen’s graph: the minimum number of colors needed to color the squares of an n x n chessboard so that no two squares sharing a row, column, or diagonal receive the same color. In this paper, we extend his analysis substantially by comparing thousands of encodings for the same problem, thereby identifying additional factors that are important for solver performance. We obtain 1584 encodings for this problem by varying (a) the constraints that encode which color is assigned to each cell, (b) the constraints that forbid the same color appearing in a row, column, or diagonal line, and (c) the symmetry-breaking constraints. We find that the three most impactful encoding factors are (i) the choice of symmetry-breaking constraints, (ii) enabling so-called clique hints, and (iii) enforcing that each cell is assigned exactly one color through blocked clauses. Furthermore, while Knuth proposed clique hints as an advantage of the order encoding, we show in fact that they can be effectively employed for the one-hot encoding as well.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1454">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Power Term Polynomial Algebra for Boolean Logic <a class="abstract_link" href="PoS-2026-07-19.html#talk:1454">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14163.html">Emanuele Sansone</a><sup>1,2</sup>, <a class="person" href="person14164.html">Armando Solar-Lezama</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
+                                <div class="affiliation_item"><sup>2</sup> MIT</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce power term polynomial algebra, a representation language for Boolean formulae
+designed to bridge conjunctive normal form (CNF) and algebraic normal form (ANF). The language is motivated by the tiling mismatch between these representations: direct CNF↔ANF conversion may cause exponential blowup unless formulas are decomposed into smaller fragments, typically through auxiliary variables and side constraints. In contrast, our framework addresses this mismatch within the representation itself, compactly encoding structured families of monomials while representing CNF clauses directly, thereby avoiding auxiliary variables and constraints at the abstraction level. We formalize the language through power terms and power term polynomials, define their semantics, and show that they admit algebraic operations corresponding to Boolean polynomial addition and multiplication. We prove several key properties of the language: disjunctive clauses admit compact canonical representations; power terms support local shortening and expansion rewrite rules; and products of atomic terms can be systematically rewritten within the language. Together, these results yield a symbolic calculus that enables direct manipulation of formulas without expanding them into ordinary ANF. The resulting framework provides a new intermediate representation and rewriting calculus that bridges clause-based and algebraic reasoning and suggests new directions for structure-aware CNF↔ANF conversion and hybrid reasoning methods.</p>
                                 </div>
                             </td>
                         </tr>

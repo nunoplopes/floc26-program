@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html" class="selected">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -168,6 +168,45 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1072">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Locally Pareto-Optimal Interpretations for Black-Box Machine Learning Models <a class="abstract_link" href="AR4Space-2026-07-25.html#talk:1072">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11118.html">Aniruddha Joshi</a><sup>1</sup>, <a class="person" href="person11119.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person11120.html">S Akshay</a><sup>2</sup>, <a class="person" href="person11121.html">Shetal Shah</a><sup>2</sup>, <a class="person" href="person11122.html">Hazem Torfah</a><sup>3</sup>, <a class="person" href="person11123.html">Sanjit Seshia</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> UC Berkeley</div>
+                                <div class="affiliation_item"><sup>2</sup> IIT Bombay</div>
+                                <div class="affiliation_item"><sup>3</sup> Chalmers University of Technology and University of Gothenburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Creating meaningful interpretations for black-box machine
+learning models involves balancing two often conflicting objectives: ac-
+curacy and explainability. Exploring the trade-off between these objec-
+tives is essential for developing trustworthy interpretations. While many
+techniques for multi-objective interpretation synthesis have been devel-
+oped, they typically lack formal guarantees on the Pareto-optimality
+of the results. Methods that do provide such guarantees, on the other
+hand, often face severe scalability limitations when exploring the Pareto-
+optimal space. To address this, we develop a framework based on local
+optimality guarantees that enables more scalable synthesis of interpre-
+tations. Specifically, we consider the problem of synthesizing a set of
+Pareto-optimal interpretations with local optimality guarantees, within
+the immediate neighborhood of each solution. Our approach begins with
+a multi-objective learning or search technique, such as Multi-Objective
+Monte Carlo Tree Search, to generate a best-effort set of Pareto-optimal
+candidates with respect to accuracy and explainability. We then verify
+local optimality for each candidate as a Boolean satisfiability problem,
+which we solve using a SAT solver. We demonstrate the efficacy of our
+approach on a set of benchmarks, comparing it against previous methods
+for exploring the Pareto-optimal front of interpretations. In particular,
+we show that our approach yields interpretations that closely match those
+synthesized by methods offering global guarantees.
+
+This work was accepted at ATVA 2025. We believe that our work and approach potentially has applications in autonomous space vehicles that use complex ML models.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1073">
                             <td class="time"></td>
                             <td>
@@ -224,6 +263,36 @@
 <a class="person" href="person11131.html">Gricel Vázquez</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of York</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1075">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formalization of a language for autonomous spacecraft operations <a class="abstract_link" href="AR4Space-2026-07-25.html#talk:1075">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11132.html">Lauren M. White</a><sup>1</sup>, <a class="person" href="person11133.html">César A. Muñoz</a><sup>1</sup>, <a class="person" href="person11134.html">Marco A. Feliu</a><sup>2</sup>, <a class="person" href="person11135.html">Mariano M. Moscato</a><sup>2</sup>, <a class="person" href="person11136.html">Laura Humphrey</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> National Aeronautics and Space Administration (NASA)</div>
+                                <div class="affiliation_item"><sup>2</sup> Analytical Mechanics Associates</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Plan Execution Interchange Language (PLEXIL) is an event-driven synchronous language developed by NASA to support autonomous spacecraft operations. Due to the safety- and mission-critical applications of PLEXIL, its semantics has been formalized and key properties of the language have been formally verified. Two of the properties explored in the formalization are operational determinism, which states that the only source of non-determinism in a PLEXIL execution is the external environment, and run-to-completion, which states that under well-defined assumptions, external events trigger a chain of internal computations that eventually terminate. This paper presents an overview of the formal semantics of the current version of the language, PLEXIL 6.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1076">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Robust Observation Planning via Facet Reasoning <a class="abstract_link" href="AR4Space-2026-07-25.html#talk:1076">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11137.html">Jennifer Santos</a><sup>1</sup>, <a class="person" href="person11138.html">Damien Van Meerbeeck</a><sup>1</sup>, <a class="person" href="person11139.html">Mika Skjelnes</a><sup>1</sup>, <a class="person" href="person11140.html">Arnaud Lequen</a><sup>1</sup>, <a class="person" href="person11141.html">Daniel Gnad</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Linköpings Universitet</div>
+                                <div class="affiliation_item"><sup>2</sup> Linköpings Universitet, Heidelberg University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Observation planning is the task of scheduling the operations of a satellite constellation to take pictures of a set of regions of interest and sending these observations down to Earth. With large constellations, uncertain observation conditions, e.g. due to clouds, and limited availability of downstream capacity, it becomes increasingly hard to coordinate the operations. We address the setting where satellites have limited memory, and pictures need to be sent through the constellation to a satellite that can transmit them to a ground station. A key challenge in this problem is the highly dynamic environment, which requires a robust planning system that can quickly adapt to changes. We propose a framework based on facet reasoning, which, unlike traditional planners that provide a single fixed solution, allows for dynamic updates to the current solution without replanning from scratch. We show empirically that facets offer a scalable approach for constellation planning and illustrate the robustness in a case study.</p>
                                 </div>
                             </td>
                         </tr>
@@ -314,6 +383,24 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1081">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Towards Multi-Objective Target Selection for Exoplanet Spectroscopy <a class="abstract_link" href="AR4Space-2026-07-25.html#talk:1081">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11150.html">Kai Hou Yip</a><sup>1</sup>, <a class="person" href="person11151.html">Luís F. Simões</a><sup>2</sup>, <a class="person" href="person11152.html">Nikki Grens</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> King´s College London and ML Analytics</div>
+                                <div class="affiliation_item"><sup>2</sup> ML Analytics</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Target selection for large-scale space survey missions requires selecting a scientifically valuable subset from a much larger pool of available targets. This represents a high-stakes combinatorial optimisation problem, since the final sample directly shapes the scientific return of the mission. Current operational approaches mainly rely on heuristic stratified sampling over low-dimensional parameter subspaces. While this paradigm captures key quantities of interest to astronomers, it becomes increasingly limited as the dimensionality and complexity of the planetary feature space grow. More importantly, there is currently no formal evaluation framework for comparing target-selection strategies against scientifically grounded criteria, leaving mission planners without principled tools for assessing representativeness or survey leverage. This problem is particularly relevant for ESA's Ariel mission, which aims to observe approximately 1,000 exoplanets selected from a much larger Mission Candidate Sample (MCS). Ariel will therefore be used in this work as a case study for developing and evaluating target-selection strategies.
+
+
+We propose a multi-objective subset selection framework that formalises target selection as the simultaneous optimisation of three core objectives: distributional similarity to the full candidate catalogue, quantified via the Wasserstein distance; internal subset diversity, maximised over the planetary feature space; and scheduling practicality, subject to mission lifetime and transit window constraints. A key contribution is the evaluation protocol itself, a fair, metric-grounded benchmarking arena for comparing arbitrary selection strategies, which the community currently lacks.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:1037">
@@ -354,6 +441,17 @@
 <a class="person" href="person11153.html">Sebastian Berndt</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TH Lübeck</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:570">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Bridging Optimization and Onboard Decision-Making: Automated Reasoning in Space Systems and Logistics <a class="abstract_link" href="AR4Space-2026-07-25.html#talk:570">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11154.html">Chit Hong Yam</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Former Jaxa and iSpace</div>
                                 </div>
                             </td>
                         </tr>

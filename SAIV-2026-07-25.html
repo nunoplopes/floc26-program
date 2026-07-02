@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -133,8 +133,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24652.html">Christian Schilling</a>
                         </div>
                     </div>
@@ -205,8 +204,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24652.html">Christian Schilling</a>
                         </div>
                     </div>
@@ -307,6 +305,23 @@ whilst maintaining safety for each specific patient.</p>
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1471">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">ProofBridge: Auto-Formalization of Natural Language Proofs in Lean via Joint Embeddings <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1471">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14313.html">Prithwish Jana</a><sup>1</sup>, <a class="person" href="person14314.html">Kaan Kale</a><sup>1</sup>, <a class="person" href="person14315.html">Ahmet Ege Tanriverdi</a><sup>2</sup>, <a class="person" href="person14316.html">Cruise Song</a><sup>1</sup>, <a class="person" href="person14317.html">Sriram Vishwanath</a><sup>1</sup>, <a class="person" href="person13689.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Bogazici University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Translating human-written mathematical theorems and proofs from natural language (NL) into formal languages (FLs) like Lean 4 has long been a significant challenge for AI. Most state-of-the-art methods either focus on theorem-only NL-to-FL auto-formalization or on FL proof synthesis from FL theorems. In practice, auto-formalization of both theorem and proof still requires human intervention, as seen in AlphaProof’s silver-medal performance at the 2024 IMO, where problem statements were manually translated before automated proof synthesis.
+
+We present ProofBridge, a unified framework for automatically translating entire NL theorems and proofs into Lean 4. At its core is a joint embedding model that aligns NL and FL (NL-FL) theorem+proof pairs in a shared semantic space, enabling cross-modal retrieval of semantically relevant FL examples to guide translation. ProofBridge integrates retrieval-augmented fine-tuning with iterative proof repair, leveraging Lean’s type checker and semantic equivalence feedback to ensure both syntactic correctness and semantic fidelity. Experiments show substantial improvements in proof auto-formalization over strong baselines (including GPT-5, Gemini-2.5, Kimina-Prover, DeepSeek-Prover), with our retrieval-augmented approach yielding significant gains in semantic correctness (SC, via proving bi-directional equivalence) and type correctness (TC, via type-checking theorem+proof) across pass@k metrics on miniF2F-Test-PF, a dataset we curated. In particular, ProofBridge improves cross-modal retrieval quality by up to 3.28x Recall@1 over all-MiniLM-L6-v2, and achieves +31.14% SC and +1.64% TC (pass@32) compared to the baseline Kimina-Prover-RL-1.7B.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1472">
                             <td class="time"></td>
                             <td>
@@ -370,8 +385,7 @@ hours involved in hyperparameter-tuning.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24652.html">Christian Schilling</a>
                         </div>
                     </div>
@@ -419,8 +433,7 @@ hours involved in hyperparameter-tuning.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24652.html">Christian Schilling</a>
                         </div>
                     </div>
@@ -432,6 +445,41 @@ hours involved in hyperparameter-tuning.</p>
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:933">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Value Functions as Supermartingale Certificates <a class="abstract_link" href="SAIV-2026-07-25.html#talk:933">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14291.html">Alessandro Abate</a><sup>1</sup>, <a class="person" href="person14329.html">Daniel Contro</a><sup>2</sup>, <a class="person" href="person14330.html">Mirco Giacobbe</a><sup>2</sup>, <a class="person" href="person14331.html">Agustín Martínez-Suñé</a><sup>1</sup>, <a class="person" href="person14332.html">Diptarko Roy</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Birmingham</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Certification methods for stochastic systems provide sufficient proof rules, based on real-valued supermartingale certificates, to determine the almost-sure satisfaction of $\omega$-regular properties (and therefore linear temporal logic) over general state spaces, encompassing both countably infinite and continuous state spaces.
+
+Conversely, reinforcement learning (RL) methods for $\omega$-regular tasks have received considerable attention, but they typically lack formal guarantees that the learned policy satisfies the specification, except possibly for finite state and action spaces.
+
+We bridge these two lines of research by establishing a novel theoretical connection: under an appropriate reward, the value function associated to a policy that almost surely satisfies an $\omega$-regular property encodes a Streett supermartingale certificate for that specification.
+ 
+Our results, validated experimentally on finite Markov decision processes, hold for finite, countably infinite, and continuous state spaces, suggesting a principled route to certificate synthesis via RL.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:934">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Principled Rewriting of ONNX Operators for Reluctant Solvers <a class="abstract_link" href="SAIV-2026-07-25.html#talk:934">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14333.html">Alban Grastien</a><sup>1</sup>, <a class="person" href="person14334.html">Guilhem Ardouin</a><sup>1</sup>, <a class="person" href="person14292.html">Julien Girard-Satabin</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CEA-List</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neural networks (NN) are often represented using the Open Neural Network Exchange (ONNX) format that provides a rich set of operators.  This richness implies that many tools support only a subset of ONNX operators and, consequently, a subset of NNs.  However, some of these operators can be expressed equivalently as combinations of simpler, already supported, operators.  In this work, we present an extension of CAISAR---a platform for verification of NN that uses external solvers---that automatically transforms these redundant operators into simpler ones before calling existing solvers, thus extending the range of these solvers.  This work focuses on the argmax operator, proposing a transformation, proving its correctness, and presenting experimental results.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:935">
                             <td class="time"></td>
                             <td>
@@ -457,6 +505,21 @@ hours involved in hyperparameter-tuning.</p>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Markov Decision Processes (MDPs) are a powerful modeling paradigm for sequential decision-making problems, e.g., robot navigation and game playing. Decades of research have produced highly efficient algorithms for solving MDPs. A common limitation, however, is that the solutions (policies) are typically represented as large lookup tables that map agents' actions to thousands or even millions of states. In this work, we present a fast approach to optimizing (fixed-size) decision tree policies for MDPs, which are easier for human experts to analyze and for specialized tools to verify. Previous work tackled this problem using computationally intensive techniques, such as integer programming or abstraction refinement. While our method, Lipa, which combines branch-and-bound with smart heuristics, can often find high-quality policies orders of magnitude faster and prove optimality where previous methods fail. We evaluate Lipa on 21 discounted-return and model-checking benchmark MDPs of varying sizes and demonstrate consistent, significant improvement over the state of the art.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:937">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Enhancing the Robustness of Counterfactual Explanations via Adversarial Training <a class="abstract_link" href="SAIV-2026-07-25.html#talk:937">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14339.html">Rithik Appachi Senthilkumar</a><sup>1</sup>, <a class="person" href="person14340.html">Francesco Leofante</a><sup>2</sup>, <a class="person" href="person13689.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Imperial College London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Counterfactual explanations (CEs) provide a simple, yet powerful interpretive approach to understanding neural network behavior, envisioning hypothetical scenarios by systematically altering input features and analyzing the resulting changes in model predictions. However, CEs are useful only if they are robust, i.e., they remain consistent and meaningful even when adversarially perturbed. While prior work has explored the development of generators for robust CEs, checking the robustness of CEs produced for DNNs has not been explored within the verification context, nor has it been studied under adversarial training. We present a systematic study utilizing adversarial training to fortify the underlying neural network, observing its effect on the formal robustness of DNNs with respect to CEs using α, β-CROWN, a state-of-the-art NNV. Our experiments across multiple datasets, network architectures, and CE generators indicate that adversarial training has a positive impact on the number of formally verified robust CEs. We also measure the impact of adversarial training on other desirable properties of CEs, such as plausibility and proximity. While plausibility does not change, there is a trade-off with proximity when using a gradient-based CE generator.</p>
                                 </div>
                             </td>
                         </tr>

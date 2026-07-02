@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -134,8 +134,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23319.html">Eva Darulova</a>
                         </div>
                     </div>
@@ -183,8 +182,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24377.html">Cesare Tinelli</a>
                         </div>
                     </div>
@@ -210,6 +208,20 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1123">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">HyperLasso: Bounded Model Checking of ∀+∃+-Liveness Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1123">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11316.html">Alcino Cunha</a><sup>1</sup>, <a class="person" href="person11317.html">Hugo Pacheco</a><sup>1</sup>, <a class="person" href="person11318.html">Nuno Macedo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade do Minho & INESC TEC</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper presents the first symbolic bounded model checking technique capable of verifying ∀+∃+-liveness hyperproperties (expressed in HyperLTL) over arbitrary (non-terminating) reactive systems. Previous bounded procedures for HyperLTL handled only safety hyperproperties or arbitrary properties over terminating systems. We implement our technique as HyperLasso, and our evaluation results show that it consistently outperforms the explicit-state complete model checker AutoHyper (the only existing tool capable of automatically verifying this class of problems) at several complex bug-finding and synthesis problems.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1124">
                             <td class="time"></td>
                             <td>
@@ -226,6 +238,20 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1125">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">HyperQB 2.0: A Bounded Model Checker for Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1125">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11326.html">Tzu-Han Hsu</a><sup>1</sup>, <a class="person" href="person11327.html">Milad Rabizadeh</a><sup>1</sup>, <a class="person" href="person11328.html">Kenneth Rogale</a><sup>1</sup>, <a class="person" href="person11329.html">Fedor Filippov</a><sup>1</sup>, <a class="person" href="person11330.html">Marco A. de Oliveira Batista</a><sup>1</sup>, <a class="person" href="person11331.html">Borzoo Bonakdarpour</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Michigan State University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce the tool HyperQB2.0, the first highly efficient push-button bounded model checker (BMC) for hyperproperties. HyperQB takes as input a model in NuSMV or Verilog and a formula expressed in the temporal logics HyperLTL or A-HLTL. The core decision procedures to implement BMC are SMT and QBF solvers, enabling verification of finite- and infinite-state programs. HyperQB offers command-line and standalone graphical, and web-based interfaces. Based on the selection of either bug-hunting or synthesis, instances of counterexamples or path witnesses are returned. The tool is entirely implemented in Rust and we report on successful and effective model checking results for a rich set of experiments on a variety of case studies with rigorous performance comparison and contrast with similar tools.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:663">
@@ -236,8 +262,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24377.html">Cesare Tinelli</a>
                         </div>
                     </div>
@@ -261,6 +286,21 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Satisfiability Modulo Theories (SMT) solvers are widely used in formal verification.In program analysis, users often encounter queries that differ only by simple syntactic mutations and are logically equivalent. These mutations typically include assertion reordering, symbol renaming, antisymmetric relation inversion, and commutative operand reordering. However, such minor changes can cause runtimes to vary by orders of magnitude. This variability reduces the predictability required for industrial-scale verification and remains a critical challenge. This paper presents SMTStabilizer, a tool that improves  the stability of SMT solvers via context-driven normalization. Since complete input normalization has been shown to be as hard as the graph isomorphism problem, SMTStabilizer adopts an approximate normalization strategy to avoid the high cost of exact normalization. The framework converts formulas into a structured representation and propagates structural information across nodes, so that each node becomes aware of its surrounding context. Using these context information, SMTStabilizer derives a consistent ordering over subformulas. This process yields a nearly canonical form that remains consistent across isomorphic inputs. SMTStabilizer also leverages pruning techniques utilizing the syntactic structure of SMT to reduce the normalization time. An evaluation with Z3 and cvc5 on millions of queries shows that SMTStabilizer improves the solvers' stability to over \(98\%\) under 10 random mutations.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1127">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Satisfiability Modulo Extensional Constant Arrays <a class="abstract_link" href="CAV-2026-07-27.html#talk:1127">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11337.html">Mathias Preiner</a><sup>1</sup>, <a class="person" href="person11338.html">Aina Niemetz</a><sup>1</sup>, <a class="person" href="person11339.html">Clark Barrett</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Stanford University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Reasoning about array data structures is a key requirement for many applications in hardware and software verification, especially in combination with machine integers. The Satisfiability Modulo Theories (SMT) theory of extensional arrays provides array read and write operators and allows extensionality over arrays. This is sufficient to express many aspects of computer aided verification, but lacks succinctness to efficiently deal with arrays that are initialized with a default value. Existing procedures for extending the SMT-LIB theory of arrays with support
+for constant arrays are limited to arrays with infinite index domains, and existing implementations in SMT solvers only support a fragment of the theory for finite index domains. In this paper, we present a novel decision procedure for the theory of arrays with constant arrays that supports arbitrary index domains and is not limited to the infinite case. We present our procedure as an abstract calculus and show its refutational and satisfiability soundness. We implement a decision procedure based on our calculus in the state-of-the-art SMT solver Bitwuzla and evaluate its performance on a diverse collection of benchmarks and use cases.</p>
                                 </div>
                             </td>
                         </tr>
@@ -336,8 +376,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23373.html">Marieke Huisman</a>
                         </div>
                     </div>
@@ -349,6 +388,24 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1131">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Modular Reasoning about Object Relations <a class="abstract_link" href="CAV-2026-07-27.html#talk:1131">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11353.html">Micha Greutmann</a><sup>1</sup>, <a class="person" href="person11354.html">Marco Eilers</a><sup>1</sup>, <a class="person" href="person11355.html">Peter Müller</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ETH Zurich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In imperative and object-oriented languages, programmers often define relations such as equality or orderings between instances of structs or classes. These object relations must satisfy well-known algebraic properties, such as reflexivity, transitivity, etc. Violations may cause standard library components, such as collections, to behave incorrectly.
+
+Crucially, these properties must hold across types, for instance, when comparing instances of different classes. However, studies show that they are commonly violated, and existing techniques for verifying them are non-modular; they give no guarantees if any types are present at runtime that were not known at verification time.
+
+Our key idea is to express algebraic properties in a novel, expressive normal form that allows us to statically identify, for each type $T$ and relation $R$, a set of other types that are relevant for the correctness of $R$ in $T$. We prove the intended algebraic properties of $R$ between $T$ and each type in this set.  This approach is generic: it applies to different relations (such as equality and orderings), to various imperative and object-oriented languages, and to multiple program logics. We show how it can be used in standard deductive verification tools by encoding the relevant proof obligations using a simple source-to-source rewriting. We implement our technique for the equality relation in the Python verifier Nagini and evaluate it on challenging benchmarks using both Nagini and Dafny, demonstrating its practical applicability and effectiveness.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1132">
                             <td class="time"></td>
                             <td>
@@ -493,8 +550,7 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24096.html">Ondřej Lengál</a>
                         </div>
                     </div>
@@ -506,6 +562,20 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1138">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">An L# Based Algorithm for Active Learning of Minimal Separating Automata <a class="abstract_link" href="CAV-2026-07-27.html#talk:1138">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11387.html">Jasper Laumen</a><sup>1</sup>, <a class="person" href="person11388.html">Leonne Snel</a><sup>1</sup>, <a class="person" href="person11389.html">Frits Vaandrager</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Radboud University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A DFA separates two disjoint languages $L_1$ and $L_2$ if it accepts every word in $L_1$ and rejects every word in $L_2$. Algorithms for active learning of small separating DFAs have many applications, e.g.\  for learning network invariants, learning contextual assumptions in compositional verification, learning state machines from large amounts of log data, and learning bug pattern descriptions.  In this paper, we propose a new learning algorithm, inspired by $L^{\#}$, that learns a minimal separating DFA for disjoint languages $L_1$ and $L_2$ if one exists. Experimental results show that our algorithm significantly outperforms existing active learning algorithms on both randomly generated and industrial benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1139">
                             <td class="time"></td>
                             <td>
@@ -558,6 +628,39 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1142">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Weighted soundness for Workflow Nets <a class="abstract_link" href="CAV-2026-07-27.html#talk:1142">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11402.html">Filip Mazowiecki</a><sup>1</sup>, <a class="person" href="person11403.html">Piotr Hofman</a><sup>1</sup>, <a class="person" href="person11404.html">Krzysztof Makuracki</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Warsaw</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Workflow nets are a variant of Petri nets used for modelling business processes. Central decision problems are soundness problems; one popular variant is called generalised soundness. These problems intuitively ask whether initiated processes can be finalised. We introduce weighted soundness, which strengthens the classical concepts of soundness. In weighted soundness, we bound the weight (typically length) of runs to finalise processes. This allows one to require processes to be finalised within a restricted budget.
+
+We provide multiple reasons supporting the relevance of weighted soundness. Our theoretical analysis shows that weighted soundness is provably simpler than classical soundness. Our main result is that weighted generalised soundness is co-NP^NP-complete, while (unweighted) generalised soundness is known to be PSPACE-complete. Our practical analysis shows that on standard benchmarks classical soundness coincides with weighted soundness, if the weight is set to the number of transitions in the workflow net. Furthermore we analyse the Inductive Miner algorithm, one of the most popular algorithms generating workflow nets from event logs. Inductive Miner is known to guarantee the output workflow nets to be generalised sound. We show that it outputs workflow nets that are weighted generalised sound with a weight linear in the size of the event alphabet. Finally, we generalise reduction techniques from soundness to weighted soundness. Such reductions are crucial in implementations of soundness algorithms.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1143">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Synthesizing POMDP Policies: Sampling Meets Model-checking via Learning <a class="abstract_link" href="CAV-2026-07-27.html#talk:1143">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11405.html">Debraj Chakraborty</a><sup>1</sup>, <a class="person" href="person11406.html">Anirban Majumdar</a><sup>2</sup>, <a class="person" href="person11407.html">Prince Mathew</a><sup>3</sup>, <a class="person" href="person11408.html">Sayan Mukherjee</a><sup>4</sup>, <a class="person" href="person11409.html">Jean-François Raskin</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Nanyang Technological University</div>
+                                <div class="affiliation_item"><sup>2</sup> Tata Institute of Fundamental Research</div>
+                                <div class="affiliation_item"><sup>3</sup> Université Libre de Bruxelles</div>
+                                <div class="affiliation_item"><sup>4</sup> Univ Rennes, Inria, CNRS, IRISA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Partially Observable Markov Decision Processes (POMDPs) are the standard framework for decision-making under uncertainty. While sampling-based methods scale well, they lack formal correctness guarantees, making them unsuitable for safety-critical applications. Conversely, formal synthesis techniques provide correctness-by-construction but often struggle with scalability, as general POMDP synthesis is undecidable. To bridge this gap, we propose a synthesis framework that integrates sampling, automata learning, and model-checking. Inspired by Angluin’s L* algorithm, our approach utilizes sampling as a membership oracle and model-checking as an equivalence oracle. This enables the synthesis of finite-state controllers with formal guarantees, provided the sampling-induced policy is regular. We establish a relative completeness result for this framework. Experimental results from our prototypical implementation demonstrate that this method successfully solves threshold-safety problems that remain challenging for existing formal synthesis tools. We believe our algorithm serves as a valuable component in a portfolio approach to tackling the inherent difficulty of POMDP synthesis problems.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1144">
                             <td class="time"></td>
                             <td>
@@ -574,6 +677,25 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1145">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Extending QuAK with Nested Quantitative Automata <a class="abstract_link" href="CAV-2026-07-27.html#talk:1145">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11416.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person11269.html">Nicolas Mazzocchi</a><sup>2</sup>, <a class="person" href="person11418.html">N. Ege Saraç</a><sup>3</sup>, <a class="person" href="person11419.html">Harun Yılmaz</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Institute of Science and Technology Austria (ISTA)</div>
+                                <div class="affiliation_item"><sup>2</sup> Slovak University of Technology in Bratislava</div>
+                                <div class="affiliation_item"><sup>3</sup> CISPA Helmholtz Center for Information Security</div>
+                                <div class="affiliation_item"><sup>4</sup> Sabancı University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Quantitative automata (QAs) extend finite-state $\omega$-automata with weighted transitions to specify quantitative system properties. However, their finite weight sets rule out properties like average response time, where response times can be arbitrarily large. Nested quantitative automata (NQAs) overcome this limitation: a parent automaton spawns child automata to compute unbounded values over finite subwords and aggregates them into a final result. Despite this expressiveness, NQAs have lacked practical tool support to date.
+
+We address this gap by extending the Quantitative Automata Kit (QuAK), a software tool for QA analysis, to support NQAs. Our core contribution is implementing a suite of flattening procedures that reduce NQAs to QAs, leveraging QuAK's existing decision procedures. The tool handles all decidable combinations of parent aggregators (including limits and averages) and child functions (extrema and monotonic or bounded summations). Experiments on response-time and resource-consumption benchmarks demonstrate QuAK's effectiveness.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:668">
@@ -584,8 +706,7 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23770.html">Mirco Giacobbe</a>
                         </div>
                     </div>
@@ -596,6 +717,19 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:198">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof Against Attack: Can AI Help Build Software We Can Trust? <a class="abstract_link" href="CAV-2026-07-27.html#talk:198">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11420.html">Kathleen Fisher</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Advanced Research and Invention Agency</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 

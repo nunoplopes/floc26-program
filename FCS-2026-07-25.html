@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -132,8 +132,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23879.html">Jana Hofmann</a>
                         </div>
                     </div>
@@ -153,8 +152,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23879.html">Jana Hofmann</a>
                         </div>
                     </div>
@@ -189,8 +187,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23266.html">Anitha Gollamudi</a>
                         </div>
                     </div>
@@ -308,8 +305,7 @@ Keywords.  Layered Attestation; Run-Time Attestation; Hardware-based
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23879.html">Jana Hofmann</a>
                         </div>
                     </div>
@@ -340,8 +336,7 @@ Keywords.  Layered Attestation; Run-Time Attestation; Hardware-based
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23266.html">Anitha Gollamudi</a>
                         </div>
                     </div>
@@ -381,6 +376,24 @@ Our verification effort reveals three key insights: subtle bugs can slip into ev
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The FS-FS hybrid signature scheme by Bindel and Hale (2023) combines two Fiat-Shamir components through a single shared challenge. Its EUF-CMA security is stated as
 a theorem in that work-in-progress, but no proof is provided. We report an EasyCrypt mechanisation of the FS-FS security argument in the Random Oracle Model (ROM), defined over abstract Fiat-Shamir components and instantiated with Schnorr, with ongoing work toward broader instantiations and the QROM. The formalisation yields two distinct insights. First, the second-preimage resistance assumption appearing in the original theorem statement is subsumed by the standard ROM guessing bound. Second, establishing the reduction in EasyCrypt requires two additional proof obligations: a logging invariant for the guessing branch and a tracker invariant for the collision-resistance reduction. Together, these obligations reveal proof-structural complexity introduced by the shared challenge that is absent from single-component Fiat-Shamir signatures.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1199">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Ladders are Better than Trampolines: Key Exchange Security in EasyCrypt’s Probabilistic Relational Hoare Logic <a class="abstract_link" href="FCS-2026-07-25.html#talk:1199">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12065.html">Manuel Barbosa</a><sup>1</sup>, <a class="person" href="person12066.html">François Dupressoir</a><sup>2</sup>, <a class="person" href="person12067.html">Cameron Low</a><sup>2</sup>, <a class="person" href="person12068.html">Charlotte Mylog</a><sup>3</sup>, <a class="person" href="person12069.html">Sabine Oechsner</a><sup>4</sup>, <a class="person" href="person11792.html">Théo Vignon</a><sup>5</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade do Porto (FCUP) and INESC TEC, Porto Portugal</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Bristol</div>
+                                <div class="affiliation_item"><sup>3</sup> Norwegian University of Science and Technology (NTNU)</div>
+                                <div class="affiliation_item"><sup>4</sup> Vrije Universiteit Amsterdam</div>
+                                <div class="affiliation_item"><sup>5</sup> Université Paris-Saclay, CNRS, ENS Paris-Saclay, Laboratoire Méthodes Formelles</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The EasyCrypt proof assistant has been used to successfully formalize security proofs for a wide variety of cryptographic primitives. However, attempts at formalizing objects with interactivity, such as protocols, have fared much worse. In this paper, we investigate (some of) the reasons for this difficulty by formalizing a simple interactive key agreement protocol. From a first complete but exploratory proof, to a failed attempt at a structured proof, and to what we believe is an ``essential'' proof, we identify which proof features contribute most to the complexity of formalization in pRHL. In particular, we argue that difficulties in formalizing the security of interactive protocols in the computational model arise from the fact that such proofs rely on both state and temporal invariants---the former to support cryptographic reasoning, and the latter to support reasoning about the protocol's structure. We believe that this observation can help build new reasoning tools that can bridge the gap that currently exists between primitive-focused tools and protocol-focused tools.</p>
                                 </div>
                             </td>
                         </tr>
@@ -424,8 +437,7 @@ a theorem in that work-in-progress, but no proof is provided. We report an EasyC
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23879.html">Jana Hofmann</a>
                         </div>
                     </div>
@@ -484,6 +496,22 @@ protocol semantics; (4) We implement the Renegade semantics in the proof assista
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The advent of quantum computers has initiated both research and standardization efforts toward the development of cryptographic primitives and communication protocols that remain  secure against attackers equipped with quantum computers. Computer-aided verification has proven valuable in this context, as it helps identify flaws early and strengthens confidence in cryptographic systems. However, existing verification tools are typically designed for a specific attacker model (most often polynomial-time Turing machines in line with classical cryptographic assumptions) and therefore require adaptation to accurately capture the quantum setting.
 
 In this work, we present a novel post-quantum extension of Squirrel, a proof assistant that provides computational guarantees for cryptographic primitives and protocols. Our extension is fully embedded in the higher-order logic underlying Squirrel, allowing logical terms to directly represent quantum values. This design choice makes the extension generic, preserves compatibility with the latest features of Squirrel, and supports its long-term integration into the tool. We implement our approach within Squirrel and validate it through several case studies. In particular, we obtain post-quantum security guarantees for multiple KEM combiners, as well as for two hybrid key-exchange protocols.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1204">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Secrecy Logic and the Post-Compromise Security of an Asymmetric Ratchet <a class="abstract_link" href="FCS-2026-07-25.html#talk:1204">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12084.html">Clément Hérouard</a><sup>1</sup>, <a class="person" href="person11781.html">Charlie Jacomme</a><sup>1</sup>, <a class="person" href="person11790.html">Adrien Koutsos</a><sup>2</sup>, <a class="person" href="person12087.html">Joseph Lallemand</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Inria Nancy Grand-Est, Université de Lorraine, LORIA</div>
+                                <div class="affiliation_item"><sup>2</sup> Inria</div>
+                                <div class="affiliation_item"><sup>3</sup> Univ. Rennes, CNRS, IRISA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Security proofs for cryptographic protocols are notably complex and error-prone, in particular in the computational model. Computer-aided cryptography aims at increasing the confidence in these proofs, by mechanising them and formally verifying them with automated tools. One such tool is the Squirrel proof assistant. In this paper, we use it to prove the Post-Compromise Security (PCS) of an asymmetric ratchet mechanism used to generate shared keys, such as the one featured in the Signal protocol. While Squirrel is convenient to study stateful protocols such as the ratchet, the analysis his is made particularly challenging by the fact that the usual notion of secrecy for Squirrel, i.e. real-or-random secrecy, is not well-suited to that protocol. We instead define predicates and a proof system for non-deducibility, a weaker notion of secrecy, which we found to be the notion needed to study the asymmetric ratchet. We establish the soundness of the proof system, implement it within the Squirrel prover, and use it to write a proof of PCS for the asymmetric ratchet, which is the first mechanised such proof.</p>
                                 </div>
                             </td>
                         </tr>

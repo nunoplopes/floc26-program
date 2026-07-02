@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html" class="selected">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html" class="selected">Full Program</a>
             </div>
 
 
@@ -116,7 +116,7 @@
                 <p class="days_line">Days:
                     <a class="program_days" href="2026-07-27.html"><img class="day_icon" src="previous.png" alt="" /> previous day</a>
                     <a class="program_days" href="2026-07-29.html">next day<img class="day_icon" src="next.png" alt="" /></a>
-                    <a class="program_days" href="index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
+                    <a class="program_days" href="index-full.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
                 <div class="date">Tuesday, 28 July 2026</div>
@@ -223,6 +223,23 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:225">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">On the necessity of pre-agreed secrets for thwarting last-minute coercion: vulnerabilities and lessons from the Loki e-voting protocol <a class="abstract_link" href="CSF-2026-07-28.html#talk:225">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11806.html">Jingxin Qiao</a><sup>1</sup>, <a class="person" href="person11778.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person11808.html">Thomas Zacharias</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Coercion-resistance (CR) is a crucial security property in e-voting systems. It ensures that an attacker cannot compel a voter to vote in a specific way by using threats or rewards. The Loki e-voting protocol, proposed by Giustolisi \emph{et al.} at IEEE S\&P (2024), introduces a novel design that mitigates last-minute coercion through a re-voting mechanism. It also aims to address the usability issues of the seminal JCJ e-voting protocol, specifically: i) the requirement that voters can store and hide pre-agreed credentials, and ii) the ability of voters to convincingly lie while being coerced. 
+
+In this work, we identify two vulnerabilities in Loki. The first is a brute-force attack that compromises the integrity of the evasion strategy. Specifically, this attack allows an adversary to cast a ballot on behalf of their victim in a way that the evasion strategy cannot defend against, rendering it ineffective. The second vulnerability is a forced abstention attack, which allows an adversary to detect when their victim has complied with their instruction not to vote. We generalise the integrity attack to reveal a fundamental dilemma: without pre-agreed secret credentials, it is not possible to prevent last-minute coercion. Finally, we show how reverting to pre-agreed secret credentials fixes the aforementioned vulnerabilities and discuss the trade-off between tallying efficiency and stronger trust assumptions.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:226">
                             <td class="time"></td>
                             <td>
@@ -237,6 +254,46 @@
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Anonymous communication is essential for secure and private interactions over public networks. Existing solutions that provide provable anonymity rely on the so-called simple I/O setting, where every participant sends and receives the same number of messages, masking their true communication pattern. The only known way to enforce this setting is through dialing protocols. Such protocols establish pairwise conversations, but each recipient inevitably learns who attempted to contact them, violating sender anonymity, the guaranty that even the recipient cannot determine who attempted to contact them.
 
 In this work, we introduce the notion of enhanced dialing protocols, a broad class of protocols that enforce the simple I/O setting. We also initiate the first formal study of such protocols with respect to sender anonymity. We introduce a framework that captures three key properties: security, correctness, and fairness. Within this framework, we present Fusion, a protocol that achieves perfect correctness and fairness while incurring only unavoidable leakage, and Fusion+, a differentially private variant that reduces this leakage at the cost of some correctness. Through theoretical analysis, we quantify the fundamental trade-off between privacy and correctness in Fusion+.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:227">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Simultaneously Proving Privacy and Verifiability: A ProVerif Framework for Internet Voting <a class="abstract_link" href="CSF-2026-07-28.html#talk:227">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11812.html">Vincent Cheval</a><sup>1</sup>, <a class="person" href="person11813.html">Veronique Cortier</a><sup>2</sup>, <a class="person" href="person11814.html">Alexandre Debant</a><sup>3</sup>, <a class="person" href="person11815.html">Florian Moser</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>2</sup> CNRS Nancy</div>
+                                <div class="affiliation_item"><sup>3</sup> INRIA Nancy</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Electronic voting aims to guarantee the same security properties than traditional paper-based voting, namely vote privacy and verifiability. While the formal verification of security protocols is now a mature filed with several powerful tools such as ProVerif or Tamarin, verifying voting protocols still pushes existing tools at their limits.
+
+We present in this work a proof framework for ProVerif that models an extensible election setting with an unbounded number of concurrent elections, voters and votes. We also develop a library of lemmas to aid the automatic verification. Crucially, the framework allows to reuse the same protocol model for both privacy and verifiability proofs. We apply the framework to several protocols of the literature and industry, showing the flexibility and applicability of our framework.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:228">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Beyond Blockchain Ballots: UC-Secure Layer-2 Voting and Governance <a class="abstract_link" href="CSF-2026-07-28.html#talk:228">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11816.html">Raghav Bhaskar</a><sup>1</sup>, <a class="person" href="person11817.html">Pooya Farshim</a><sup>2</sup>, <a class="person" href="person11818.html">Matthias Fitzi</a><sup>2</sup>, <a class="person" href="person11819.html">Aggelos Kiayias</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> None</div>
+                                <div class="affiliation_item"><sup>2</sup> Input Output</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Edinburgh and Input Output</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Maintaining a decentralized system requires a collective governance mechanism that allows the participants to agree on possible changes to the system. In particular, the governance mechanism should offer a voting functionality that allows the casting, collection, and tallying of votes in a confidential yet verifiable manner.  Scaling this functionality for many millions of participants in a cost-effective manner is a critical requirement for permissionless blockchains that is currently still unmet. 
+
+We put forward a ``layer-2'' approach  to meet this requirement in the setting where a permissionless blockchain acts as the fall back ``layer-1'' mechanism. Specifically the key to our approach to scalability is that the protocol is realized in layer-2 fashion, i.e., the bulk part of the protocol is executed off-chain, but additionally secured on the blockchain  with a minimal footprint.
+
+We prove our protocol secure in the universal composability (UC) framework. First, we formalize a governance ideal functionality $F_{L2Gov}$. Our definition offers high levels of confidentiality and verifiability. Moreover, in case of misbehavior, it is designed to allow attribution of faults so that appropriate action (such as slashing of on-chain funds) can be taken. Second, we demonstrate that our protocol UC-realizes the $F_{L2Gov}$ functionality based on a blockchain, an off-chain bulletin-board, a distributed homomorphic encryption functionality ($F_{DHE}$), and a number of other standard hybrids.
+
+To the best of our knowledge, this work presents the first blockchain layer-2 voting protocol with a rigorous  security analysis. We also point out some challenges that arise when applying the UC framework to layer-2 protocols.</p>
                                 </div>
                             </td>
                         </tr>
@@ -266,8 +323,7 @@ In this work, we introduce the notion of enhanced dialing protocols, a broad cla
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23183.html">Guy Katz</a>
                         </div>
                     </div>
@@ -279,6 +335,24 @@ In this work, we introduce the notion of enhanced dialing protocols, a broad cla
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1146">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">VNN-LIB 2.0: Rigorous Foundations for Neural Network Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1146">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11421.html">Ann Roy</a><sup>1</sup>, <a class="person" href="person11422.html">Allen Antony</a><sup>1</sup>, <a class="person" href="person11423.html">Andrea Gimelli</a><sup>2</sup>, <a class="person" href="person11424.html">Matthew Daggitt</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Western Australia</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Genova</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neural network verification is active and rapidly maturing research area, with a growing ecosystem of solvers and tools. The VNN-LIB standard was introduced to support interoperability in this ecosystem, but Version 1.0 has several serious short-comings as a formal foundation: it lacks a precise syntax, semantics, and type system, offers limited expressivity, and relies on externally defined ONNX models whose semantics are informal and constantly evolving. The latter distinguishes VNN-LIB from established standards such as SMT-LIB, where queries are self-contained and have fixed semantics.
+
+In this paper we address these challenges by developing the theoretical foundations of VNN-LIB 2.0. Our key contribution is the introduction of the notion of a network theory, which abstractly characterises the minimal semantic interface required from a neural network model format.
+This abstraction enables VNN-LIB to be defined independently of any specific ONNX version while remaining compatible with evolving model representations. Building on this foundation, we present a formal syntax for a more expressive query language, a type system for it over the numeric domains provided by the network theory, and finally a formal semantics. To ensure internal consistency, the standard is mechanised in the Agda theorem prover. VNN-LIB 2.0 therefore provides robust and rigorous foundations for trustworthy neural network verification.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1147">
                             <td class="time"></td>
                             <td>
@@ -291,6 +365,21 @@ In this work, we introduce the notion of enhanced dialing protocols, a broad cla
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification is paramount for neural networks in safetycritical domains yet remains constrained by the trade-off between precision and scalability, especially with modern high frequency activation functions. However, the inherent NP-hardness of the problem forces a fundamental trade-off between scalability and precision in existing methods, which fail to adequately capture the high-frequency nonlinearities of modern activations. To address this, Quadratic Approximation based Verification via Fourier series and Taylor truncation (QAV-FT) is proposed as a framework unifying Fourier-enhanced quadratic approximation and Taylor remainder aware error control. Specifically: (i) A Fourierbased quadratic abstraction is formulated for arbitrary activations, with a rigorous error bound established via Jackson’s theorem and Lebesgue constant analysis; (ii) A second-order propagation scheme utilizing Lagrange remainder theory is devised to analytically derive sound, tight bounds with reduced symbolic complexity; and (iii) These mechanisms are integrated into a scalable full-network verification algorithm. Empirical results on MNIST-FC and other benchmarks demonstrate that QAV-FT achieves an average certification accuracy of 96.8% across complex activations like Swish, GELU, and Mish, with favorable accuracy and efficiency over comparable methods on partial models.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1148">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The Rocq-NN-Roll Prover: Soundly Verifying Hyperproperties of Neural Networks in Rocq <a class="abstract_link" href="CAV-2026-07-28.html#talk:1148">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11429.html">Andrei Aleksandrov</a><sup>1</sup>, <a class="person" href="person11430.html">Malte Jackisch</a><sup>2</sup>, <a class="person" href="person11431.html">Kim Völlinger</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Fraunhofer Institute FOKUS Berlin</div>
+                                <div class="affiliation_item"><sup>2</sup> Technische Universität Berlin</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Research on neural network verification has traditionally emphasized scalability. However, recent invalidations of formally verified neural networks highlight soundness as an equally important goal. Pursuing inherent soundness, we present Rocq-NN-Roll, the first verified prover for real-valued piecewise-affine neural networks. Rocq-NN-Roll combines a network and its specification into a piecewise-affine function and reduces the verification task to solving linear inequalities over each polyhedral region. Verified in Rocq, it also provides the first automated proof support for neural networks in any interactive theorem prover, highlighting their still underexplored role in this field.</p>
                                 </div>
                             </td>
                         </tr>
@@ -361,6 +450,22 @@ the strong guarantees, provide natural shields with weaker guarantees,
 and offline and online shield constructions that provide strong safety
 guarantees. The empirical evaluation highlights the practical advantage
 of the new shields as well as computational feasibility.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1153">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Neurosymbolic Approach to Natural Language Formalization and Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1153">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11451.html">Chenyang An</a><sup>1</sup>, <a class="person" href="person11452.html">Sam Bayless</a><sup>1</sup>, <a class="person" href="person11453.html">Stefano Buliani</a><sup>1</sup>, <a class="person" href="person11454.html">Darion Cassel</a><sup>1</sup>, <a class="person" href="person11455.html">Byron Cook</a><sup>2</sup>, <a class="person" href="person11456.html">Duncan Clough</a><sup>1</sup>, <a class="person" href="person11457.html">Rémi Delmas</a><sup>1</sup>, <a class="person" href="person11458.html">Nafi Diallo</a><sup>1</sup>, <a class="person" href="person11459.html">Ferhat Erata</a><sup>1</sup>, <a class="person" href="person11460.html">Nick Feng</a><sup>1</sup>, <a class="person" href="person11461.html">Dimitra Giannakopoulou</a><sup>1</sup>, <a class="person" href="person11462.html">Aman Goel</a><sup>1</sup>, <a class="person" href="person11463.html">Aditya Gokhale</a><sup>1</sup>, <a class="person" href="person11464.html">Joe Hendrix</a><sup>1</sup>, <a class="person" href="person11465.html">Victor Heorhiadi</a><sup>1</sup>, <a class="person" href="person11466.html">Marc Hudak</a><sup>1</sup>, <a class="person" href="person11467.html">Dejan Jovanović</a><sup>1</sup>, <a class="person" href="person11468.html">Andrew M. Kent</a><sup>1</sup>, <a class="person" href="person11469.html">Benjamin Kiesl-Reiter</a><sup>1</sup>, <a class="person" href="person11470.html">Jeffrey J. Kuna</a><sup>1</sup>, <a class="person" href="person11471.html">Nadia Labai</a><sup>1</sup>, <a class="person" href="person11472.html">Joseph Lilien</a><sup>1</sup>, <a class="person" href="person11473.html">Divya Raghunathan</a><sup>1</sup>, <a class="person" href="person11474.html">Zvonimir Rakamarić</a><sup>1</sup>, <a class="person" href="person11475.html">Niloofar Razavi</a><sup>1</sup>, <a class="person" href="person11476.html">Michael Tautschnig</a><sup>1</sup>, <a class="person" href="person11477.html">Ali Torkamani</a><sup>1</sup>, <a class="person" href="person11478.html">Nathaniel Weir</a><sup>1</sup>, <a class="person" href="person11479.html">Michael W. Whalen</a><sup>1</sup>, <a class="person" href="person11480.html">Jianan Yao</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Amazon Web Services</div>
+                                <div class="affiliation_item"><sup>2</sup> Amazon Web Services, University College London</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models perform well at natural language interpretation and reasoning, but their inherent stochasticity limits their adoption in regulated industries like finance and healthcare that operate under strict policies. To address this limitation, we launched Automated Reasoning checks (ARc): a public service that (1) uses LLMs with optional human guidance to formalize natural language policies, allowing fine-grained control of the formalization process, and (2) uses inference-time autoformalization to validate logical correctness of natural language statements against those policies. When correctness is paramount, we perform multiple redundant formalization steps at inference time, checking the formalizations for semantic equivalence. Our benchmarks show that ARc exceeds 99% soundness and achieves a near-zero false positive rate in identifying logical validity. Our approach produces auditable artifacts that substantiate the verification outcomes and can be used to improve the original text. ARc is the first commercial offering from a major cloud provider to integrate automated reasoning into a generative AI guardrail.</p>
                                 </div>
                             </td>
                         </tr>
@@ -578,8 +683,7 @@ In the present paper, we give a new proof of Čubrić's proof-relevant interpola
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25211.html">Isil Dillig</a>
                         </div>
                     </div>
@@ -590,6 +694,19 @@ In the present paper, we give a new proof of Čubrić's proof-relevant interpola
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:199">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Invited talk by CAV Award awardees <a class="abstract_link" href="CAV-2026-07-28.html#talk:199">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11481.html">TBA na</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> na</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:724">
                     <div class="heading">
@@ -641,6 +758,43 @@ We illustrate our framework through case studies on Hashed Timelock Contracts (H
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Post-quantum cryptography has become pivotal for ensuring communication security in the quantum era. NTRU-based signature schemes have gained attention due to their computational efficiency and compact public keys and signatures, which reduce communication overheads. However, the algebraic structure of NTRU lattices introduces vulnerabilities in physical attack scenarios, where partial secret key leakage can severely undermine system security. In this paper, we propose the Dimension-and-Sample Reduced NTRU Attack (DSRNA). The core principle of DSRNA is to apply a dimension-reduction strategy that transforms the NTRU instance into a lower-dimensional NTRU instance with fewer samples, which is efficiently solvable via lattice basis reduction. Furthermore, we design a unified hint-embedding technique that jointly exploits side information from both secret keys f and g, thereby improving both attack efficiency and success rates. We evaluate the residual security of Falcon and its variants Hawk, under perfect, modular and approximate leakage models. Experimental results demonstrate security degradation. Compared to the method of May et al. at Asiacrypt 2023, DSRNA achieves speedups of 5.8X for Falcon-512 with 400 leaked coefficients and over 29.4X  for Falcon-1024 with 905 coefficients. This study reveals the potential vulnerability of NTRU-based signature schemes to partial secret key leakage.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:232">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Self-Guarding Arbitrary Cryptographic Primitives and 2PC Protocols <a class="abstract_link" href="CSF-2026-07-28.html#talk:232">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11833.html">Daniele Friolo</a><sup>1</sup>, <a class="person" href="person11834.html">Andrea Reale</a><sup>1</sup>, <a class="person" href="person11835.html">Daniele Venturi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Sapienza University of Rome</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In IEEE CSF '18, Fischlin and Mazaheri introduced the notion of self-guarding cryptographic protocols as a countermeasure to algorithm substitution attacks. After a trusted initialization phase, a Self-Guarder wraps the user's cryptographic algorithm implementation and sanitizes it in a way that (1) prevents that an adversary can exploit the subverted implementation to exfiltrate user's data and (2) maintain the correctness of the genuine implementation.
+Whilst the proposed solutions in CSF '18  support a bounded number of executions before requiring a re-initialization phase, we show a universal self-guarder supporting an unbounded number of executions from a single trusted setup. Our self-guarder can be applied to any cryptographic primitive and any two-party computation protocol with the aid of a verifiable-computation-enabling compiler.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:233">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Revisiting Beimel-Weinreb Weighted Threshold Secret Sharing Schemes <a class="abstract_link" href="CSF-2026-07-28.html#talk:233">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11836.html">Oriol Farràs</a><sup>1</sup>, <a class="person" href="person11837.html">Miquel Guiot</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat Rovira i Virgili</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A secret sharing scheme is a cryptographic primitive that allows a dealer to share a secret among a set of parties, so that only authorized subsets of them can recover it. The access structure of the scheme is the family of authorized subsets. In a weighted threshold secret sharing scheme, each party is assigned a weight according to its importance, and the authorized subsets are those in which the sum of their weights is at least the threshold value. 
+
+For these access structures, Beimel and Weinreb [IPL 2006] presented the best general constructions: The scheme with computational security has a total share size polynomial in $n$, while the scheme with perfect security has a total share size $n^{O(\log n)}$. However, these constructions require the use of shallow monotone sorting networks, which limits their practical use.
+
+In this work, we revisit weighted threshold secret sharing from a circuit-based perspective. By considering alternative circuits and formulas that avoid monotone sorting networks, we obtain substantial improvements in two directions.
+
+First, in the computational setting, we provide a computational scheme that is feasible in practice. Assuming the existence of one-way functions with security parameter $\lambda$, we show that any weighted threshold access structure over $n$ parties with threshold $\sigma$ admits a computational secret sharing scheme with share size $\lambda$, public information of size $O(\lambda n^2 \log \sigma)$, and a reconstruction procedure in which any authorized subset needs to download only $O(\lambda n \log \sigma)$ bits of public information. Notably, for weight distributions that arise in the most widely deployed blockchain networks, our construction reduces the total share size ranging from $300\times$ to $6700\times$ compared to the best previously known schemes.
+
+Second, extending these techniques, we obtain improved information-theoretic ramp weighted threshold secret sharing schemes. For any weights, threshold $\sigma$, and $\epsilon < 1$, we construct a $(\sigma,(1+\epsilon)\sigma)$-ramp weighted threshold scheme with share size $O\left((n/\epsilon) \log n\right)$, reducing the share size with respect to the state-of-the-art solutions.</p>
                                 </div>
                             </td>
                         </tr>
@@ -708,6 +862,24 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We address generating theorems from a given set of axioms, without proof goal, aiming at value from a mathematical point of view or as lemmas for automated proving. As benchmark, we convert a fragment of the Metamath database set.mm. Our techniques are centered on proof terms and condensed detachment. This ties in with automated first-order proving by proof structure enumeration, and links to Metamath and formulas-as-types. Our methods for generating theorems are based on partitioning the set of proof terms into inductively characterized levels. We study two ideas for improvement: Lemma synthesis by DAG compression of proof term sets, and incorporating combinators into proof terms. Our lemmas significantly improve solution rates of provers, e.g., of Vampire from 74% to 94%, and of leanCoP from 7% to 44%.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:354">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:354">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12611.html">Emanuele Civini</a><sup>1</sup>, <a class="person" href="person12612.html">Gabriele Masina</a><sup>1</sup>, <a class="person" href="person12613.html">Giuseppe Spallitta</a><sup>2</sup>, <a class="person" href="person12614.html">Roberto Sebastiani</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Trento</div>
+                                <div class="affiliation_item"><sup>2</sup> Rice University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Lifting Boolean-reasoning techniques to the SMT level most often requires producing theory lemmas that rule out theory-inconsistent truth assignments. With standard SMT solving, it is common to "lazily" generate such lemmas on demand during the search. With some harder SMT-level tasks ---such as unsat-core extraction, MaxSMT, T-OBDD or T-SDD compilation--- it may be beneficial or even necessary to "eagerly" pre-compute all the needed theory lemmas upfront. 
+Whereas in principle "classic" eager SMT encodings could do the job, they are specific for very few and easy theories, they do not comply with theory combination, and may produce lots of unnecessary lemmas. 
+
+In this paper, we present theory-agnostic methods for enumerating complete sets of theory lemmas tailored to a given formula. Starting from AllSMT as a baseline approach, we propose several improved lemma-enumeration techniques, including divide&conquer, projected enumeration, and theory-driven partitioning, which are highly parallelizable and which may drastically improve scalability. An experimental evaluation demonstrates that these techniques significantly enhance efficiency and enable the method to scale to substantially more complex instances.</p>
                                 </div>
                             </td>
                         </tr>
@@ -817,6 +989,35 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:388">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Panbench: A Comparative Benchmarking Tool for Dependently-Typed Languages <a class="abstract_link" href="ITP-2026-07-28.html#talk:388">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12792.html">Reed Mullanix</a><sup>1</sup>, <a class="person" href="person12793.html">Jacques Carette</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> McMaster University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We benchmark four proof assistants (Agda, Idris 2, \lean and \rocq) through a
+single test suite. We focus our benchmarks on the basic features that all
+systems based on a similar foundations (dependent type theory) have in common.
+We do this by creating an ``over language'' in which to express all the
+information we need to be able to output correct and idiomatic syntax
+for each of our targets. Our benchmarks further focus on ``basic engineering''
+of these systems: how do they handle long identifiers, long lines, large
+records, large data declarations, and so on.
+
+Our benchmarks reveals both flaws and successes in all systems. We give a
+thorough analysis of the results.
+
+We also detail the design of our extensible system. It is designed so that
+additional tests and additional system versions can easily be added. A side
+effect of this work is a better understanding of the common abstract syntactic
+structures of all four systems.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:673">
@@ -827,8 +1028,7 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24065.html">Orna Grumberg</a>
                         </div>
                     </div>
@@ -854,6 +1054,20 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce a generic certificate format for verifying liveness properties in hardware model checking, relying purely on propositional predicates and not involving explicit counters. Our certificates can be efficiently validated via a fixed number of SAT checks. The proposed format is compatible with state-of-the-art liveness checking algorithms. We present certificate generation for several representative techniques, including rLive, liveness-to-safety reduction, and k-liveness, as well as for a preprocessing method based on stabilizing constraint extraction. Experimental results on benchmarks from the Hardware Model Checking Competition demonstrate that our approach is practically effective with very low certification overhead, and our certificate checker was able to successfully validate all certificates that were generated.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1155">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Transition Invariants Revisited: Termination Witnesses and Their Validation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1155">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11487.html">Dirk Beyer</a><sup>1</sup>, <a class="person" href="person11488.html">Marek Jankola</a><sup>1</sup>, <a class="person" href="person11083.html">Marian Lingsch-Rosenfeld</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Whenever automated provers such as automatic software verifiers deliver a verdict (true or false), they are expected to produce also a witness that justifies the verdict. This allows independent validation of the verdict using the witness by a third party, increasing trust in the results. The current standard exchange formats for witnesses in software verification do not support program termination. To fill this gap, we propose an extension of the witness format that is based on transition invariants as a general and effective formalism. We justify this by (a) proving that transition invariants can encode other popular termination arguments like ranking functions and (b) providing three different validation approaches for transition invariants, which together can validate most of the exported witnesses. Our approach based on transition invariants was integrated into version 2.1 of the recently released witness format, and the software-verification community has adopted the format for SV-COMP.</p>
                                 </div>
                             </td>
                         </tr>
@@ -911,8 +1125,7 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24772.html">Youcheng Sun</a>
                         </div>
                     </div>
@@ -1093,6 +1306,37 @@ submitted patches to the Linux kernel, and 45 of them were merged.</p>
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1276">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">An Applicative Multiset Path Order <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1276">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12621.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person12622.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person12623.html">Teppei Tanaka</a><sup>1</sup>, <a class="person" href="person12624.html">Wataru Yachi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a variant of the multiset path order for untyped applicative term rewriting.  Compared to existing work, our variant incorporates two distinctive features, dubbed arity assignment and reification, to overcome difficulties in handling partial and variable application.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1277">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The ARI Infrastructure for Automated Confluence Analysis <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1277">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12621.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person12551.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person12622.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person12177.html">René Thiemann</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We report on the new ARI infrastructure that supports tools and competitions in term rewriting. It offers ARI-COPS, a database for confluence problems and competition results, and ARIWeb, a convenient web interface for tools that participate in the annual confluence competition. These are built on top of the new ARI format for rewrite systems, a format converter, certifiers for competition results, and a duplicate checker.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:726">
                     <div class="heading">
@@ -1124,6 +1368,22 @@ submitted patches to the Linux kernel, and 45 of them were merged.</p>
 To address these challenges, we propose channel-interleaved packing (CIP) to embed three-dimensional (3-D) data into 2-D ciphertexts, enabling 3-D HE convolution to be performed as a 2-D HE convolution combined with channel aggregations via ciphertext rotations, thereby significantly reducing the number of rotation keys required. To further improve the performance of CIP-based convolution, we introduce an efficient 2-D convolution that halves the number of HE multiplications. For computationally intensive inference tasks, we employ partial-kernel and mini-batch strategies that iteratively process sliced kernels and subsets of samples, aggregating the results to produce the final output.
 
 Experimental results demonstrate the superior efficiency of our method compared to the state-of-the-art HE-based approaches by Lee et al. (ICML’22) and Cheon et al. (IEEE TDSC’24) in both single-sample and multi-sample scenarios. Using ResNet18 and VGG16 with a batch size of 64, our solution achieves speedups of up to 2.9× and 4.6×, respectively. When processing a single test sample, the speedups increase to 4.4× and 27×. Moreover, our method requires only 29 rotation keys for evaluation, which is at least 35% fewer than previous works, resulting in an overall memory reduction of approximately 50%.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:236">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Towards Strong Certified Defense with Universal Asymmetric Randomization <a class="abstract_link" href="CSF-2026-07-28.html#talk:236">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11841.html">Hanbin Hong</a><sup>1</sup>, <a class="person" href="person11842.html">Ali Payani</a><sup>2</sup>, <a class="person" href="person11843.html">Ashish Kundu</a><sup>2</sup>, <a class="person" href="person11844.html">Binghui Wang</a><sup>3</sup>, <a class="person" href="person11845.html">Yuan Hong</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Connecticut</div>
+                                <div class="affiliation_item"><sup>2</sup> Cisco</div>
+                                <div class="affiliation_item"><sup>3</sup> Illinois Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Randomized smoothing has become essential for achieving certified adversarial robustness in machine learning models. However, current methods primarily use isotropic noise distributions that are uniform across all data dimensions, such as image pixels, limiting the effectiveness of robustness certification by ignoring the heterogeneity of inputs and data dimensions. To address this limitation, we propose UCAN: a novel technique that \underline{U}niversally \underline{C}ertifies adversarial robustness with \underline{A}nisotropic \underline{N}oise. UCAN is designed to enhance any existing randomized smoothing method, transforming it from symmetric (isotropic) to asymmetric (anisotropic) noise distributions, thereby offering a more tailored defense against adversarial attacks. Our theoretical framework is versatile, supporting a wide array of noise distributions for certified robustness in different $\ell_p$-norms and applicable to any arbitrary classifier by guaranteeing the classifier's prediction over perturbed inputs with provable robustness bounds through tailored noise injection. Additionally, we develop a novel framework equipped with three exemplary noise parameter generators (NPGs) to optimally fine-tune the anisotropic noise parameters for different data dimensions, allowing for pursuing different levels of robustness enhancements in practice.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1191,6 +1451,33 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1297">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">TableauxRocq: A Deep Embedding of Free-Variable Tableaux in Rocq <a class="abstract_link" href="ITP-2026-07-28.html#talk:1297">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12800.html">Johann Rosain</a><sup>1</sup>, <a class="person" href="person12564.html">Julie Cailler</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ENS de Lyon</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Lorraine, CNRS, Inria, LORIA, Nancy, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The free-variable tableau method has been widely used in order to automate proofs in
+multiple kinds of logics. Many Automated Theorem Provers (ATPs) rely on this approach, either because it is the
+only available method (e.g., in certain modal logics) or because it facilitates the
+generation of proof certificates. However, as far as the authors know, its results have
+never been formalized in a proof assistant.  In this paper, we present TableauxRocq, a
+deep-embedding of free-variable first-order tableaux in the Rocq prover.  The formalized
+calculus is proved sound and provides a modular Skolemization system that enables the use
+of Skolemization-based optimisations. Moreover, we show how TableauxRocq can be used as a
+certifier for ATPs by adapting the Goeland prover to output proofs in the
+TableauxRocq format.  By using the full power of reflection, thereby providing a fully
+certified proof checker for free, we show that the deep embedding performs at least as
+well as a shallow embedding, even without proof optimizations, and strictly better when
+Skolemization-related optimizations are present in the proof.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1298">
                             <td class="time"></td>
                             <td>
@@ -1217,8 +1504,7 @@ We take an initial step toward efficient verified real root isolation by formall
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23680.html">Jürgen Giesl</a>
                         </div>
                     </div>

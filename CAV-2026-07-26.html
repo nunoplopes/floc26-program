@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -148,8 +148,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24350.html">Borzoo Bonakdarpour</a>
                         </div>
                     </div>
@@ -161,6 +160,28 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1105">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">On the Complexity of Checking Soundness of Natural Reductions <a class="abstract_link" href="CAV-2026-07-26.html#talk:1105">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11233.html">Constantin Enea</a><sup>1</sup>, <a class="person" href="person11234.html">Azadeh Farzan</a><sup>2</sup>, <a class="person" href="person11235.html">Dominik Klumpp</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LIX - CNRS - Ecole Polytechnique</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The verification of \emph{reductions}, representative subsets of interleavings, simplifies correctness proofs of parameterized concurrent programs.
+We introduce an expressive class of syntactic reductions, which we call \emph{natural reductions}.
+Natural reductions are specified by introducing atomic blocks and global rendezvous points in the parameterized program's thread template.
+We study the problem of deciding whether a given natural reduction is sound wrt.\ a given (semi-)commutativity relation.
+In the case that there is no synchronization between threads, we present a sound and complete polynomial-time algorithm.
+In the case where synchronization is considered,
+we provide a general lower bound for the problem (parametric in the synchronization mechanism),
+and show that the problem is coNP-hard already for a simple mechanism like locking.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1106">
                             <td class="time"></td>
                             <td>
@@ -192,6 +213,71 @@ Our experiments show that DEAGLE-DL significantly outperforms both tools in term
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper investigates the algorithmic safety verification problem of infinite-state parameterized concurrent programs over a rich set of communication topologies. The goal is to automatically produce a proof of correctness for them in the form of a universally quantified inductive invariant, where the quantification is over the nodes in the topology. We illustrate that under reasonable assumptions on the underlying topology, the problem can be reduced to and solved as a compositional scheme in which the verification of the parameterized family is reduced to a set of local proofs, in a complete manner. We propose a verification algorithm,  which is implemented as a tool, and demonstrate through a set of benchmarks over several different topologies that our approach is effective in proving parameterized programs safe.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1108">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Scalable Deductive Verification of Data-Level Parallel Programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1108">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11242.html">Lars van den Haak</a><sup>1</sup>, <a class="person" href="person11243.html">Marieke Huisman</a><sup>2</sup>, <a class="person" href="person11244.html">Anton Wijs</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Eindhoven University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Twente</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper introduces several techniques that improve the scalability of the deductive verification of data-level programs working on arrays and matrices. First of all, we introduce a technique to rewrite expressions with (nested) quantifiers, so suitable triggers can be generated for these expressions. We have proven this rewrite technique correct in a theorem prover. Second, we make reasoning about potentially overlapping arrays easier, by providing specification constructs to indicate and verify that two arrays are not aliases, or that they are immutable, so they can be modelled as mathematical sequences. All our techniques are implemented in the \vercors program verifier. We illustrate how our techniques improve scalability on a large number of experiments. Using our techniques on a set of typical GPU kernels, we achieve a reduction of verification time by, on average, a factor of 9, with outliers being up to 150 times faster. Additionally, applying these techniques to earlier experiments and an earlier case study of a radio telescope pipeline permitted the verification of results which were previously unobtainable and significantly reduced the verification time.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1109">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">On the Verification Problem of Remote Direct Memory Access programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1109">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11245.html">Parosh Aziz Abdulla</a><sup>1</sup>, <a class="person" href="person11246.html">Mohamed Faouzi Atig</a><sup>1</sup>, <a class="person" href="person11247.html">R Govind</a><sup>2</sup>, <a class="person" href="person11248.html">Stephan Spengler</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala University</div>
+                                <div class="affiliation_item"><sup>2</sup> The Institute of Mathematical Sciences, Chennai</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Remote Direct Memory Access (RDMA) is a technology that allows direct memory access from the memory of one computer into that of another without involving either one’s operating system. This enables high-throughput, low-latency networking, which is especially useful in massively parallel computer clusters.
+
+In this paper, we study the reachability and robustness problems for RDMA programs. We show that reachability is undecidable in general, even for a restricted fragment of the model. We then focus on robustness, which asks whether a program exhibits the same behaviours under the RDMA and sequential consistency (SC) semantics, and prove that this problem is decidable. Our central technical result establishes a normal form for robustness violations, showing that any non-robust program admits a violating execution of a specific form. We then leverage this normal form to obtain a decision procedure that reduces robustness to reachability in finite-state programs with counters, yielding an EXPSPACE upper bound in the general case, and a PSPACE upper bound in the absence of poll operations. Finally, we also show that both of these bounds are optimal.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1110">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Model Checking for Flexible Network Protocols <a class="abstract_link" href="CAV-2026-07-26.html#talk:1110">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11249.html">Andrew Johnson</a><sup>1</sup>, <a class="person" href="person11250.html">Dennis Fetterly</a><sup>2</sup>, <a class="person" href="person11251.html">Jon Zolla</a><sup>2</sup>, <a class="person" href="person11252.html">Sean Song</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Princeton University</div>
+                                <div class="affiliation_item"><sup>2</sup> Google, Inc</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Operating a network is a daunting task. Operating one at
+a global scale, with stringent service objectives and requirements to be
+available during maintenance and failures, is even more so. At Google,
+we operate such a network. This paper details our experience applying
+formal methods to some of the networking protocols that are developed
+and maintained by in-house engineers. These protocols centrally route
+network traffic to respond to changes in demand, react to network failures, 
+and allow for maintenance and upgrades.
+
+We used formal methods to target a class of bugs stemming from unclear 
+specifications, unintended system interactions, and logical errors at
+the specification level. We show how we modeled our protocols using an
+off-the-shelf model checker and a custom harness to scale the model horizontally. 
+We were able to recreate several recent bugs and verify
+that the fixes implemented were correct. Finally, we present a method
+called state projection that we used to increase confidence in the coverage
+of our models, which we added to the TLC model checker for TLA+. We
+created 7 different TLA+ models and showed that they were effective at
+recreating bugs and verifying our fixes to those bugs.</p>
                                 </div>
                             </td>
                         </tr>
@@ -227,6 +313,23 @@ Our experiments show that DEAGLE-DL significantly outperforms both tools in term
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In recent years, protocol state fuzzing has emerged as an effective technique to analyze and test network protocol implementations, uncovering numerous security vulnerabilities, bugs, and non-conformance issues in them.
 This tool paper presents ProtocolState-Fuzzer (PSF for short), an open source, generic, modular, and extensible framework for state machine learning and testing of network protocol implementations.
 We describe the distinctive features and support that PSF offers, its system architecture, and briefly overview the protocol-specific state fuzzers that currently use PSF as their basis.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1113">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Kofola 1.0: A Modular Approach to 𝝎-Regular Complementation and Inclusion Checking <a class="abstract_link" href="CAV-2026-07-26.html#talk:1113">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11264.html">Ondrej Alexaj</a><sup>1</sup>, <a class="person" href="person11265.html">Vojtěch Havlena</a><sup>1</sup>, <a class="person" href="person11266.html">Lukáš Holík</a><sup>2</sup>, <a class="person" href="person11267.html">Ondřej Lengál</a><sup>1</sup>, <a class="person" href="person11268.html">Yong Li</a><sup>3</sup>, <a class="person" href="person11269.html">Nicolas Mazzocchi</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Brno University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Brno University of Technology and Aalborg University</div>
+                                <div class="affiliation_item"><sup>3</sup> Institute of Software, Chinese Academy of Sciences</div>
+                                <div class="affiliation_item"><sup>4</sup> Slovak University of Technology in Bratislava</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present Kofola, an efficient tool for complementing and inclusion checking over Büchi automata. Complementation and inclusion checking for Büchi automata are the cornerstones of many verification problems such as model checking, monitoring, and theorem proving. Kofola implements the state-of-the-art modular complementation framework that partitions the input Büchi automata to apply, for each strongly connected component, the complementation algorithm leveraging the most its structural properties. Inspired by the modular complementation, Kofola also supports modular inclusion checking along with new heuristics. Notably, to allow termination as soon as possible, we have developed a new on-the-fly emptiness checking algorithm for the simple generalized Rabin pair condition, which is the acceptance condition used by our complementation. Empirical evaluation shows that Kofola is highly competitive against the state-of-the-art complementation and inclusion checking tools, being the most robust of the tools that we evaluated and outrunning them often by several orders of magnitude on many benchmarks obtained from practical applications.</p>
                                 </div>
                             </td>
                         </tr>
@@ -269,8 +372,7 @@ We describe the distinctive features and support that PSF offers, its system arc
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25192.html">Orna Kupferman</a>
                         </div>
                     </div>
@@ -282,6 +384,43 @@ We describe the distinctive features and support that PSF offers, its system arc
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1115">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Randomise Alone, Reach Together <a class="abstract_link" href="CAV-2026-07-26.html#talk:1115">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11272.html">Léonard Brice</a><sup>1</sup>, <a class="person" href="person11273.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person11274.html">Alipasha Montaseri</a><sup>1</sup>, <a class="person" href="person11275.html">Ali Shafiee</a><sup>1</sup>, <a class="person" href="person11276.html">K. S. Thejaswini</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Institute of Science and Technology Austria</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study concurrent graph games where $n$ players cooperate against an opponent to reach a set of target states. Unlike traditional settings, we study distributed randomisation: team players do not share a source of randomness, and their private random sources are hidden from the opponent and from each other. 
+
+We show that memoryless strategies are sufficient for the threshold problem (deciding whether there is a strategy for the team that ensures winning with probability that exceeds a threshold), a result that not only places the problem in the Existential Theory of the Reals ($\exists\mathbb{R}$) but also enables the construction of value iteration algorithms. We additionally show that the threshold problem is $\NP$-hard. For the almost-sure reachability problem, we prove $\NP$-completeness.
+
+We introduce Individually Randomised Alternating-time Temporal Logic (IRATL). This logic extends the standard ATL framework to reason about probability thresholds, with semantics explicitly designed for coalitions that lack a shared source of randomness. On the practical side, we implement and evaluate a solver for the threshold and almost-sure problem based on the algorithms that we develop.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1116">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Decoupled Planning for Multiple Omega-Regular Objectives <a class="abstract_link" href="CAV-2026-07-26.html#talk:1116">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11277.html">Guy Avni</a><sup>1</sup>, <a class="person" href="person11273.html">Thomas A. Henzinger</a><sup>2</sup>, <a class="person" href="person11279.html">Kaushik Mallik</a><sup>3</sup>, <a class="person" href="person11280.html">Suman Sadhukhan</a><sup>4</sup>, <a class="person" href="person11281.html">K.S. Thejaswini</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Haifa, Israel</div>
+                                <div class="affiliation_item"><sup>2</sup> Institute of Science and Technology, Austria</div>
+                                <div class="affiliation_item"><sup>3</sup> IMDEA Software Institute, Spain</div>
+                                <div class="affiliation_item"><sup>4</sup> TU Clausthal, Germany</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study the problem of generating paths on a graph that satisfy a collection of $\omega$-regular objectives. We propose a decoupled framework in which each objective is assigned to an independent agent that selects a local policy, while a scheduler---oblivious to the graph and objective---dynamically composes these policies into a single path. We ask when such a composition satisfies all objectives, assuming their conjunction is realizable.
+The framework enables modular policy design but raises fundamental compositional challenges. We show that even extremely fair deterministic schedulers do not ensure correctness, and that stochastic schedulers, while necessary, are insufficient without coordination. For safety objectives, we demonstrate that fully decentralized implementations are impossible, and we introduce a protocol for synchronizing on maximal safe actions.
+For non-safety objectives, we introduce conventions---simple, a priori restrictions agreed upon before the graph or objectives are revealed---that guarantee satisfaction of all objectives when followed by all agents. We characterize minimally restrictive conventions for major subclasses of $\omega$-regular objectives. In particular, B\"uchi objectives admit universal composition of finite-memory policies without scheduler communication; co-B\"uchi objectives require only knowledge of whether the agent was scheduled; and parity objectives additionally require knowledge of which agent was scheduled.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1117">
                             <td class="time"></td>
                             <td>
@@ -367,6 +506,49 @@ tools, while maintaining state-of-the-art solution quality.</p>
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1120">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Fast Obligation Translation and Synthesis <a class="abstract_link" href="CAV-2026-07-26.html#talk:1120">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11289.html">Alexandre Duret-Lutz</a><sup>1,7</sup>, <a class="person" href="person11290.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person11291.html">Marcin Jurdzinski</a><sup>3</sup>, <a class="person" href="person11292.html">Nir Piterman</a><sup>4</sup>, <a class="person" href="person11293.html">Moshe Y. Vardi</a><sup>5</sup>, <a class="person" href="person11294.html">Shufang Zhu</a><sup>6</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LRE</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>3</sup> DIMAP, University of Warwick</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Gothenburg & Chalmers University of Technology</div>
+                                <div class="affiliation_item"><sup>5</sup> Rice University</div>
+                                <div class="affiliation_item"><sup>6</sup> University of Liverpool</div>
+                                <div class="affiliation_item"><sup>7</sup> EPITA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Syntactic obligations is a fragment of LTL formulas that translate to deterministic weak ω-automata (DWA).
+We show that syntactic obligations can be very efficiently converted to minimal DWA represented using multi-terminal binary decision diagrams (MTBDDs), and that synthesis of such specifications can be solved directly on the MTBDD representation on the fly.
+Our implementation in Spot shows huge runtime improvements in translation and synthesis.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1121">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">sweap: Reactive Synthesis for Infinite-State Integer Problems <a class="abstract_link" href="CAV-2026-07-26.html#talk:1121">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11295.html">Shaun Azzopardi</a><sup>1</sup>, <a class="person" href="person11296.html">Luca Di Stefano</a><sup>2</sup>, <a class="person" href="person11297.html">Nir Piterman</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Dedaub</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Wien</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Gothenburg, Chalmers University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Recent years have seen a significant increase in the interest in reactive synthesis from specifications that relate to infinite state spaces.
+We present sweap, a tool for synthesis of infinite-state Linear Integer Arithmetic reactive systems. 
+sweap implements a CEGAR approach, relying on state-of-the-art finite-state synthesis tools as black boxes to solve abstract synthesis problems.
+sweap supports most common input formalisms for infinite-state reactive-synthesis problems: Temporal Stream Logic Modulo Theories, Reactive Program Games, the bespoke input of the Issy tool, and our own bespoke input. 
+We present a mature version of sweap with novel features: a dual abstraction approach that improves its capabilities in proving unrealisability, support for nondeterministic and unbounded updates, more general initialization of variables, and equirealisable reductions for optimisation.
+Experimental evaluation shows that sweap outperforms its only competitor in this domain.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:658">
@@ -392,8 +574,7 @@ tools, while maintaining state-of-the-art solution quality.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24155.html">Supratik Chakraborty</a>
                         </div>
                     </div>
@@ -405,6 +586,45 @@ tools, while maintaining state-of-the-art solution quality.</p>
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:193">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A-IC3: Learning-Guided Adaptive Inductive Generalization for Hardware Model Checking <a class="abstract_link" href="CAV-2026-07-26.html#talk:193">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11298.html">Xiaofeng Zhou</a><sup>1</sup>, <a class="person" href="person11299.html">Guangyu Hu</a><sup>1</sup>, <a class="person" href="person11300.html">Hongce Zhang</a><sup>2</sup>, <a class="person" href="person11301.html">Wei Zhang</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Hong Kong University of Science and Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Hong Kong University of Science and Technology (Guangzhou)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The IC3 algorithm represents the state-of-the-art (SOTA)  hardware model checking technique,owing to its robust performance and scalability. A significant body of research has focused on enhancing the solving efficiency of the IC3 algorithm, with particular attention to the inductive generalization process—a critical phase wherein the algorithm attempts to generalize a counterexample to inductiveness (CTI), which typically is a state leading to a bad state, into a broader set of states. This inductive generalization is a primary source of clauses in IC3 and thus plays a pivotal role in determining the overall effectiveness of the algorithm.
+
+Despite its importance, existing approaches often rely on fixed inductive generalization strategies, overlooking the dynamic and context-sensitive nature of the verification environment in which spurious counterexamples arise. This rigidity can limit the quality of generated clauses and, consequently, the performance of IC3.
+
+To address this limitation, we propose a lightweight machine-learning-based framework that dynamically selects appropriate inductive generalization strategies in response to the evolving verification context. Specifically, we employ a multi-armed bandit (MAB) algorithm to adaptively choose inductive generalization strategies based on real-time feedback from the verification process. The agent is updated by evaluating the quality of generalization outcomes, thereby refining its strategy selection over time.
+
+Empirical evaluation on a benchmark suite comprising 2,957 instances, primarily drawn from the HWMCC collection, demonstrates the efficacy of our approach. 
+When implemented on rIC3, our method solves 28 more cases than the baseline, and on IC3Ref, it achieves an improvement of 14 additional solved instances. Our method improves the PAR-2 score by 170.04 and 71.43 seconds for rIC3 and IC3Ref, respectively.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:194">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Multi-Width Parametric Equivalence Solver <a class="abstract_link" href="CAV-2026-07-26.html#talk:194">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11302.html">Luigi Rinaldi</a><sup>1</sup>, <a class="person" href="person11303.html">John Wickerson</a><sup>2</sup>, <a class="person" href="person11304.html">Samuel Coward</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University College London</div>
+                                <div class="affiliation_item"><sup>2</sup> Imperial College London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> At the core of modern electronic design automation (EDA) tools is rewriting: a mechanism by which local transformations are iteratively applied to circuits to make them faster and more efficient. These
+rewrites are crucial for producing high-quality hardware, and they often depend on extremely delicate conditions, relating, for example, to the widths of the various bitvectors involved. As such, it is both desirable and difficult to prove them correct. Prior work has studied the correctness of parametric-bitwidth rewrites in the context of software compilers and SMT solvers, but those approaches struggle to handle rewrites that have multiple bitwidth parameters, as are commonplace in EDA. We propose a language for expressing these multi-width parametric rewrites and
+provide a translation into equivalences in modular arithmetic. We then show how these equivalences can be automatically and efficiently proved using equality saturation over a set of carefully chosen axioms, and finally reconstructed automatically as theorems in Isabelle. This process is implemented in a tool called ParaBit. Using benchmarks from prior compilers work and from industrial EDA tools, we demonstrate that ParaBit can solve a class of problems that are intractable using existing techniques.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:195">
                             <td class="time"></td>
                             <td>

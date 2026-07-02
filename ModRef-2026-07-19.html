@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -132,8 +132,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23427.html">Jordi Coll</a>
                         </div>
                     </div>
@@ -267,6 +266,20 @@ Paramita is suitable for a wide range of combinatorial optimization and satisfia
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:788">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">An Interactive Application to Solve Sudoku Variant Puzzles <a class="abstract_link" href="ModRef-2026-07-19.html#talk:788">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13786.html">Helmut Simonis</a><sup>1</sup>, <a class="person" href="person13787.html">Luis Quesada</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Insight Centre, University College Cork</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Logic puzzles like Sudoku have been very popular for several decades, some videos showing the solution steps for a complex Sudoku variant instance have over 10 million views. This makes this problem domain an ideal area to demonstrate the advantages of using Constraint Programming to a wider audience. We present an interactive application for solving Sudoku variants, extending the classical Sudoku grid with a variety of additional constraints. The aim is not just to search for solutions of a given puzzle, but to help a user to find a solution interactively. We use an off-the-shelf constraint solver, Choco-solver, to model and propagate 200 common Sudoku variant constraints. This uses a combination of specific global constraints and table constraints to describe feasible or infeasible tuples. In other cases, we use logical expressions over basic constraints to model complex side constraints. The user can add constraints interactively if the solver does not find the solution by propagation alone, or rely on an agent to add deduced constraints dynamically. We evaluate the solver on different data sets, and show that over 97% of the problems in the 2025 Sudoku Grand Prix can be solved by the tool, and that many popular, complex puzzle instances can be solved by a handful of manual constraints and propagation alone.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:789">
                             <td class="time"></td>
                             <td>
@@ -301,6 +314,19 @@ Puzzle generation uses Gecode and OR-Tools, and hardness testing uses Gecode.</p
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:790">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Invited <a class="abstract_link" href="ModRef-2026-07-19.html#talk:790">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13789.html">Carlos Ansótegui</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Lleida</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1343">
                     <div class="heading">
@@ -434,6 +460,21 @@ The idea behind the topic swapping activity is for students to: (1) acquire know
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1431">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">No More Awkward Silences with Table Talk Tuning <a class="abstract_link" href="ModRef-2026-07-19.html#talk:1431">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13802.html">Martin Butler</a><sup>1</sup>, <a class="person" href="person13778.html">Mikael Zayenz Lagerkvist</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Toptracer</div>
+                                <div class="affiliation_item"><sup>2</sup> Independent researcher, Sambanova</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> At a wedding, a seating plan can satisfy capacity limits, grouping requests, separation requests, and balance constraints while still leaving a guest at a table with little shared ground for conversation. This paper introduces Table Talk Tuning (TTT), a small constraint modelling problem drawn from a real wedding-seating case. The name points to the part of the task that ordinary seating constraints leave implicit: giving each guest at least one plausible conversation topic shared with enough tablemates. TTT uses guest topic scores to prefer tables where each guest has a strongest shared topic that enough tablemates can sustain together. The conversation score is optimised after structural terms for table slack and gender balance, so social fit becomes part of the seating objective rather than a post-processing check. We present a MiniZinc model, three synthetic instance families from 10 to 150 guests, a reproducible benchmark pipeline, and a native Gecode implementation for studying objective-aware search. The experiments compare MiniZinc solvers and native search strategies. They show that the conversation terms change the returned seatings on matched instances, and that objective handling matters in practice even when the underlying model is fixed.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1432">
                             <td class="time"></td>
                             <td>
@@ -446,6 +487,22 @@ The idea behind the topic swapping activity is for students to: (1) acquire know
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Planning domains are usually represented in first-order logic. However, historically, most of the planners have been using grounded problem representations. Since grounding can lead to a combinatorial explosion, and thus make some problems intractable, the community has developed techniques to deal with hard-to-ground problems. Those techniques include, for example, splitting action schemas, or partially grounding actions to relevant instantiations for the goal at hand. Recently, a new family of planners which work directly on lifted representations has emerged. However, most of these so-called lifted planners still rely on grounding to some extent. With the aim of broadening the range of approaches to lifted planning, in this work we present a satisfiability-based lifted planner that works on first-order representations and does not rely on grounding at all. We encode the lifted planning task into a quantifier-free formula with uninterpreted functions, in first-order logic with equality. Despite showing higher solving times than the state-of-the art, the planner proves to consume very little memory and is competitive on hard-to-ground instances.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1433">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Automated grading of student constraint models <a class="abstract_link" href="ModRef-2026-07-19.html#talk:1433">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13807.html">Hendrik Bierlee</a><sup>1</sup>, <a class="person" href="person13659.html">Tias Guns</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Auto-grading student constraint models requires a checker that validates solutions against the problem specification. In practice, for example in the Coursera MOOC on MiniZinc, the checker is developed separately from the teacher's own constraint model. This duplicates effort and risks inconsistencies that produce confusing feedback and unfair grades.
+
+We present a framework for CPMpy in which the checker is automatically derived from the teacher's constraint model. By adding a feedback template to each constraint, granular feedback is returned when a student solution violates a specified constraint, domain, or objective. Decision variables in the teacher's model that are intentionally hidden from the student are assigned consistently via a Maximal Satisfiable Subset computation. The same model also provides a performance baseline for grading, generates instances of various difficulty, and can be obfuscated and distributed for local checking. We illustrate the approach on an example Flexible Jobshop Scheduling project, demonstrating violation detection on a toy instance, and checker performance on larger instances.</p>
                                 </div>
                             </td>
                         </tr>

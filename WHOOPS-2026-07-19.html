@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -494,6 +494,30 @@ lifted into Alethe and CPC for checking by Carcara and Ethos.</p>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Pseudo-Boolean proof logging is now being used for a wide range of problems that are not naturally pseudo-Boolean. This is very useful for verifying complex algorithmic and reasoning steps being carried out by solvers, but there is still an encoding gap: why should we trust that the pseudo-Boolean model means the same thing as whatever problem the user cares about? And, for that matter, does the solution as expressed over Boolean variables correspond to the high-level solution that we claim? For a variety of subgraph-finding problems, Gocht et al. introduced end-to-end verification, starting with a HOL description of the problem and verifying the meaning of the output in graph terms. There, the final verification theorem does not mention the pseudo-Boolean intermediaries or how the VeriPB proof system works. In this talk, we discuss what it would take to get a similar process to work for constraint programming, building upon the VeriPB proof logging methodology introduced in the Glasgow Constraint Solver. We will explain what we are aiming for and why we want it; why the problem is complicated; how we've chosen to try to address it; and what remains to be done. Ultimately, we would like to be able to go from human-understandable problem statements written in several domain-specific languages, all the way to solutions, whilst having extremely strong guarantees that the solutions are correct.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1025">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof Logging for (Re)Encoding <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1025">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12609.html">Marijn Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The effectiveness of SAT solvers depends critically on how constraints are encoded into conjunctive normal form (CNF).  Two logically equivalent encodings of the same problem can differ by orders of magnitude in solving performance.  However, constructing effective encodings often requires substantial expertise, making SAT technology difficult to use reliably in practice.  To address this problem, a wide range of reencoding techniques have
+been developed that transform formulas into representations exposing stronger propagation, improved simplification opportunities, or additional structural information.  Unfortunately, most existing proof systems are designed for clause-level reasoning and provide only limited support for certifying such higher-level transformations.
+
+Several examples illustrate the need for proof-producing reencoding. First, the way XOR constraints are encoded as CNF can have a surprisingly large impact on SAT-solving performance.  Even subtle changes in recursive encodings can lead to substantial performance differences.  In particular, placing auxiliary variables at the beginning versus the end of the recursion, often referred to as linear and pooled encodings, respectively, can strongly affect solver behavior.  Such transformations are difficult to justify compactly because they replace one structured encoding by another while preserving equivalence only over the original variables.
+
+Second, the effectiveness of cardinality encodings depends not only on the chosen encoding scheme, but also on how literals are ordered within the
+constraint.  Recent work has shown that sorting literals prior to encoding can substantially improve SAT solving performance by exposing additional structure to propagation and simplification.  Although such sorting transformations preserve the semantics of the original constraint, they are difficult to validate in existing proof systems because the resulting encoding may differ globally from the original one.  In particular, the transformation changes the interaction between auxiliary variables and the input literals while preserving equivalence only over the original variables. This highlights the need for proof systems that can certify semantic-preserving reencodings with higher-level constraints.
+
+Third, symmetry breaking in SAT is constrained by what is visible in the CNF formula. When higher-level constraints such as cardinality or XOR constraints are encoded into CNF, auxiliary variables may obscure the symmetries of the original problem.  As a consequence, symmetry-breaking techniques operating only at the CNF level may fail to detect important structural symmetries that were present before encoding.
+
+This talk argues that the widespread use of CNF as the standard SAT benchmark format creates a fundamental tension between solver performance and trustworthiness.  Many effective preprocessing and reencoding techniques rely on recovering higher-level structure from CNF formulas, such as XOR or cardinality constraints, and then transforming these constraints into more solver-friendly representations.  However, these transformations raise important certification questions.  Should CNF formulas be lifted into richer high-level representations together with corresponding proof objects?  If so, how can these high-level representations and proofs be translated back into CNF-level certificates that can be checked independently?  Alternatively, should correctness be justified directly at the CNF level without introducing higher-level abstractions?  This talk addresses these questions and discusses possible directions for integrating proof logging, reencoding, and high-level reasoning into trustworthy SAT-solving pipelines.</p>
                                 </div>
                             </td>
                         </tr>

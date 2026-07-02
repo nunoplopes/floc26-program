@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -214,6 +214,24 @@ By nature, such problems can only be approximated with a finite precision. Hence
 Surprisingly, we prove that controlling transcription factor production (i.e., transcription rate) without explicitly controlling degradation is mathematically complete for analog computation, achieving equivalent capabilities to systems where both production and degradation are programmable. We demonstrate our approach on several examples including oscillatory and chaotic dynamics, analog sorting, memory, PID controller, and analog extremum seeking.    
 Our result provides a systematic methodology for engineering novel analog dynamics using synthetic transcriptional networks without the added complexity of degradation control and informs our understanding of the capabilities of natural transcriptional circuits. 
 We provide a compiler, in the form of a Python package that can take any system of polynomial ODEs and convert it to an equivalent transcriptional network implementing the system exactly, under appropriate conditions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:590">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Metabolic Transformation Algorithm: A Systems Biology Approach to Aging and Alzheimer’s Disease <a class="abstract_link" href="CMSB-2026-07-25.html#talk:590">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11673.html">Bruno Sá</a><sup>1</sup>, <a class="person" href="person11674.html">Catarina Gomes</a><sup>1</sup>, <a class="person" href="person11675.html">Miguel Rocha</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Minho</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Aging and Alzheimer’s disease are complex multifactorial processes driven by interacting genetic and metabolic mechanisms, for which single-gene approaches often fail to capture system-level behaviour. Systems biology addresses this challenge by integrating omics data with genome-scale metabolic models (GSMMs) to identify candidate interventions. The Metabolic Transformation Algorithm (MTA) and its robust variant rMTA use constraint-based modelling to predict perturbations that shift a system from a disease-associated toward a healthier metabolic state. To move beyond single-gene prioritization, we applied EA-rMTA, an evolutionary extension of rMTA that searches the combinatorial knockout space by optimizing the robust Transformation Score.
+
+We evaluated the framework in two case studies: lifespan-extending unc-62 knockdown in Caenorhabditis elegans and early-onset Alzheimer’s disease (EOAD) in human cortex. In both settings, rMTA found biologically coherent targets and pathway-level signatures consistent with known hallmarks of aging and neurodegeneration. EA-rMTA further identified compact and interpretable multi-gene intervention strategies that outperformed single-gene deletions in shifting the metabolic state toward the desired phenotype.
+
+Together, these results show that evolutionary search extends metabolic transformation analysis beyond single-gene perturbations and enables the discovery of experimentally tractable combinatorial intervention hypotheses. More broadly, the framework provides a computational strategy for generating systems-level therapeutic hypotheses in aging, neurodegeneration, and other multifactorial disorders.</p>
                                 </div>
                             </td>
                         </tr>
@@ -370,6 +388,21 @@ model selection for causal discovery.</p>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Predicting gene expression dynamics is challenging due to the complex regulatory interactions within high-dimensional datasets. We evaluate predictive models that integrate temporal patterns with gene–gene networks, comparing a state-of-the-art approach based on Protein-Protein Interaction (PPI) networks from STRING with models utilizing data-driven network inference. Our results show that inferred networks can enhance accuracy over static biological priors. However, simpler models treating genes independently often achieve comparable performance. This suggests that for the considered datasets, the added complexity of explicit gene–gene interactions does not always translate into superior predictive power, opening to further investigations on the most effective ways to represent and leverage biological connectivity in forecasting tasks.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:595">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Multi-view clustering of transcriptomics and methylomics data elucidates glioma molecular stratification <a class="abstract_link" href="CMSB-2026-07-25.html#talk:595">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11693.html">Carolina Pé-Curto</a><sup>1</sup>, <a class="person" href="person11694.html">Roberta Coletti</a><sup>2</sup>, <a class="person" href="person11695.html">Marta B. Lopes</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> NOVA School of Science and Technology, Universidade NOVA de Lisboa</div>
+                                <div class="affiliation_item"><sup>2</sup> Center for Mathematics and Applications (NOVA Math), NOVA School of Science and Technology, Universidade NOVA de Lisboa</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Gliomas are the most common type of brain tumor in adults and are associated with poor prognosis and high mortality. Despite technological advances, their classification remains challenging in both clinical practice and research, highlighting the need for improved molecular subtyping to enhance diagnosis and treatment. In this study, we systematically evaluate the robustness of current glioma classification using a reproducible pipeline for unsupervised patient stratification. We apply multiple multi-view clustering methods, namely, CIMLR, intNMF, and moCluster, to cluster glioma patients based on transcriptomics and methylomics data. All methods consistently distinguished glioblastoma (GBM) from lower-grade gliomas, with survival analysis confirming poorer outcomes for GBM clusters, in line with clinical expectations. The best partition was obtained with CIMLR, closely aligning with the 2021 WHO classification of central nervous system tumors. In contrast, intNMF identified three clusters with distinct survival distributions, suggesting additional biological heterogeneity that warrants further investigation. To enhance robustness and better capture tumor complexity, we implemented consensus clustering to integrate results across methods. This integrative approach yielded well-defined groups with improved concordance to established glioma subtypes compared to individual methods. Notably, the consensus solution identified more clusters than the traditional classification, revealing deeper molecular characterization and providing a framework to refine glioma classification. Furthermore, we identified key molecular features supported by the literature, including both established and emerging biomarkers. Overall, our findings underscore the value of multi-omics integration and consensus clustering in refining glioma classification, supporting the discovery of novel biomarkers to improve diagnostics, prognostics, and patient outcomes.</p>
                                 </div>
                             </td>
                         </tr>

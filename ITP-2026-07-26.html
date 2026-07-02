@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -155,6 +155,20 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:371">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Complex Bounded Operators in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-26.html#talk:371">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12735.html">Dominique Unruh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen, University of Tartu</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a formalization of bounded operators on complex vector spaces in Isabelle/HOL.  Our formalization contains material on complex vector spaces (normed spaces, Banach spaces, Hilbert spaces) that complements and goes beyond the developments of real vectors spaces in the Isabelle/HOL standard library.  We define the type of bounded operators between complex vector spaces (cblinfun) and develop the theory of unitaries, projectors, extension of bounded linear functions (BLT theorem), adjoints, Loewner order, closed subspaces and more.  For the finite-dimensional case, we provide code generation support by identifying finite-dimensional operators with matrices as formalized in the Jordan_Normal_Form AFP entry.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:372">
                             <td class="time"></td>
                             <td>
@@ -223,6 +237,21 @@ As worked applications of the abstract theorem, we mechanize standard empirical 
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Commutative regular expressions describe sets of unordered words, and are used, for example,
 when building type systems for process calculi. In these applications, a useful operation is finding the intersection of two expressions, but no algorithm currently exists. We remedy this by proposing an algorithm for computing intersections of commutative regular expressions, which we implement and prove correct in the Rocq prover. The algorithm encodes the intersection of two expressions as systems of linear diophantine equations, and extracts from their solution an intersection expression. To solve these systems we implement and verify the algorithm proposed by Contejean and Devie. We detail the implementation of the intersection algorithm, highlight essential aspects of the proofs (including the complex proof of termination of the equation system solver), and evaluate the OCaml-extracted solver on random and real-world commutative regular expressions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:374">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Functional correctness of an optimized modular inversion algorithm <a class="abstract_link" href="ITP-2026-07-26.html#talk:374">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12231.html">Assia Mahboubi</a><sup>1</sup>, <a class="person" href="person12746.html">Guillaume Melquiond</a><sup>1</sup>, <a class="person" href="person12747.html">Pierre-Yves Strub</a><sup>2</sup>, <a class="person" href="person12748.html">Tomás Vallejos Parada</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> INRIA</div>
+                                <div class="affiliation_item"><sup>2</sup> PQShield</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This article describes the first mechanized proof of functional correctness of an algorithm due to Pornin (2020), for computing modular inverses via an optimized extended binary GCD algorithm. This algorithm is widely used in cryptography applications, due to its speed and constant-timeness. But this speed comes from the use of approximate computations during its loop iterations. In particular, the pen-and-paper proof of the fact that sufficiently many loop iterations were performed is especially intricate (and the originally published version was actually wrong), which negatively impacts the trust in the applications that rely on the algorithm. In this work, we expand the notes provided in the original description by Pornin into a complete formal proof. We discuss the challenges raised by its mechanization, which eventually relies on the collaboration of deductive program verification and interactive theorem proving through the use of the tools Rocq and Why3.</p>
                                 </div>
                             </td>
                         </tr>
@@ -315,6 +344,23 @@ input vector via fractional permissions.</p>
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Separation Logic is an established formalism for deductive verification of heap-manipulating programs. Proofs of symbolic heap entailment, an analogue of the ordinary logical implication, are amongst the most common reasoning steps in Separation Logic, and many existing heap verifiers provide automation for discharging valid heap entailments.
 
 We observe that existing techniques for automating entailment proofs in foundational Separation Logic-based verifiers embedded into provers such as Rocq, suffer from three main drawbacks: poor performance due to metaprogramming overhead, limited expressivity (missing dependent types) due to the type-term stratification and restricted extensibility in computational reflection To address these, we propose lazy proof automation---an approach to entailment proofs inspired by translation validation. Our key idea is to implement an entailment checker as a combination of a (1) an efficient but untrusted prover, suitable for fast-paced interactive proofs, and (2) a proof reconstruction procedure that consumes the prover's trace to produce a certificate of entailment validity that can be checked in a post-hoc fashion. We implemented these ideas in Yolo---a generic and extensible heap entailment prover built in Lean. We instantiate Yolo for two Lean-embedded Separation Logics and show its practical benefits, both in terms of user experience and proof-checking speed, compared with the automation available in state-of-the-art foundational Separation Logics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:378">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formalizing a Hoare Calculus for Choreographic Programming <a class="abstract_link" href="ITP-2026-07-26.html#talk:378">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12754.html">Luís Cruz-Filipe</a><sup>1</sup>, <a class="person" href="person12755.html">Thomas Wulff Heissel</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IT University of Copenhagen</div>
+                                <div class="affiliation_item"><sup>2</sup> Independent Researcher</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Choreographic programming is a paradigm where developers write the global specification (called choreography) of a communicating system, and then a correct-by-construction distributed implementation is compiled automatically. Choreographies formalize the way many practicioners think about distributed protocols, and are a natural framework in which to prove properties of such protocols.
+
+Previous work has introduced a Hoare calculus for reasoning about choreographies. In this article, we show how a formalization of that work in a theorem prover revealed several issues with the pen-and-paper development. We discuss the extent to which these issues can be fixed, and conclude with some considerations on the need for more formal verification of research results.</p>
                                 </div>
                             </td>
                         </tr>

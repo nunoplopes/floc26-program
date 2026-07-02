@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -238,6 +238,66 @@ All of our results have been formalized in the interactive theorem prover Lean o
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:381">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">ProofWala: A Framework for Multilingual Proof Data Synthesis and Theorem-Proving <a class="abstract_link" href="ITP-2026-07-27.html#talk:381">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12764.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person12765.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person12766.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person12767.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Texas at Austin</div>
+                                <div class="affiliation_item"><sup>2</sup> New York University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neural approaches to theorem proving require robust infrastructure for interfacing with interactive theorem provers (ITPs), extracting structured proof data, and executing proof search at scale. However, existing tooling is often assistant-specific and oriented toward interactive, file-level execution, making repository-scale analysis and parallel experimentation challenging. We present ProofWala, a multilingual proof engineering framework built around itp-interface, a reusable library for programmatic interaction with ITPs. For Lean 4, we implement a meta-programmed interaction layer that executes inside the elaborator, enabling semantically faithful tactic-level tracing together with declaration- and dependency-level extraction across entire repositories. This design extends beyond traditional REPL-style interaction by supporting project-wide analysis, environment cloning, and pooled execution of proof states. The implementation is robust across Lean 4 versions after 4.15.0 with forward compatibility support. The same interface abstraction supports tactic execution and data extraction for multiple versions of Rocq, yielding a unified cross-assistant pipeline.Built on this infrastructure, ProofWala provides standardized multilingual proof datasets, model training utilities, and parallel proof search algorithms. Using the framework, we demonstrate that multilingual training across Lean and Rocq enables cross-lingual and cross-domain transfer, with mixed-training models outperforming assistant-specific baselines on the standard prove-at-k metric.
+
+We open-source the full framework, including the parallel proof search module, the itp-interface library, multilingual datasets, and trained models, providing a scalable foundation for proof mining, neural theorem proving, and cross-assistant experimentation.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:382">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Feedback & Synthesis in LLM-Assisted Termination Proofs <a class="abstract_link" href="ITP-2026-07-27.html#talk:382">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12768.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person12769.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Northeastern University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Termination---proving there are no inputs on which a function runs
+forever---is one of the most fundamental problems in software
+verification, and competitions comparing termination analysis tools
+have run for over twenty years. We integrate two state-of-the-art,
+open-weight LLMs with a theorem prover’s built-in automation to
+generate termination proofs, solving 39\% more problems than the best
+LLM alone and more than tripling the number solved by the built-in
+analysis on our benchmark. This is the first, to our knowledge,
+integration of an LLM with a termination-analysis algorithm, and is
+generalizable to any theorem prover based on a functional
+language. Our design is informed by nine ablations considering what
+theorem-prover feedback helps the LLM and four experiments on how the
+model decomposes problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:383">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">LeanArchitect: Automating Blueprint Generation for Humans and AI <a class="abstract_link" href="ITP-2026-07-27.html#talk:383">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12770.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person12771.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person12772.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person12773.html">Sean Welleck</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Trento</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large-scale formalization projects in Lean rely on blueprints: structured dependency graphs linking informal mathematical exposition to formal declarations. While blueprints are central to human collaboration, existing tooling treats the informal (LaTeX) and formal (Lean) components as largely decoupled artifacts, leading to maintenance overhead and limiting integration with AI automation. We present LeanArchitect, a Lean package for extracting, managing, and exporting blueprint data directly from Lean code. LeanArchitect introduces a declarative annotation mechanism that associates formal declarations with blueprint metadata, automatically infers dependency information, and generates LaTeX blueprint content synchronized with the Lean development. This design eliminates duplication between formal and informal representations and eases fine-grained progress tracking for both human contributors and AI-based theorem provers. We demonstrate the practicality of LeanArchitect through the automated conversion of several large existing blueprint-driven projects, and through a human--AI collaboration case study formalizing a multivariate Taylor theorem. Our results show that LeanArchitect improves maintainability, exposes latent inconsistencies in existing blueprints, and provides an effective interface for integrating AI tools into real-world formalization workflows.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:828">
                     <div class="heading">
@@ -281,6 +341,20 @@ All of our results have been formalized in the interactive theorem prover Lean o
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a formalization of combinatorial design theory in Lean 4, with a focus on balanced incomplete block designs (BIBDs) and their algebraic properties. The flagship result is the Bruck-Ryser-Chowla theorem, which gives the best known necessary conditions for the existence of a symmetric BIBD, formalized here in a proof assistant for the first time. Reaching this result required us to develop substantial infrastructure beyond combinatorics: we formalize Witt's cancellation theorem for quadratic forms, prove new results on matrix congruence and block matrices, and extend Mathlib's linear algebra library in several directions. We also provide the first formalization of Fisher's inequality in Lean and the first formalization of the Kramer-Mesner theorem in any proof assistant, along with a reusable double-counting argument that supports standard combinatorial reasoning. The cross-domain nature of these contributions reflects a distinctive feature of design theory itself: it draws on and feeds back into many areas of mathematics, making it a particularly rewarding target for formalization within a large-scale library like Mathlib.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1292">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Three Roads to de Finetti's Theorem in Lean: Short Paper <a class="abstract_link" href="ITP-2026-07-27.html#talk:1292">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12776.html">Cameron Freer</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Massachusetts Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a Lean 4 formalization of the de Finetti–Ryll-Nardzewski theorem for infinite sequences of random variables on standard Borel spaces, establishing that every exchangeable sequence is conditionally i.i.d. The development closely follows Kallenberg's modern treatment of probabilistic symmetries and formalizes three distinct proofs of the key implication, with the second and third formalized for real-valued square-integrable sequences: (i) a reverse‑martingale argument due to Aldous, (ii) an elementary L² approach based on contractability bounds and Cesàro convergence, and (iii) an ergodic‑theoretic proof via the Koopman operator and the mean ergodic theorem. The library contains over 42,000 lines of code and was completed in three months with extensive use of Claude and GPT models, together with a reusable Lean proof-engineering skill for agentic coding systems developed during the project. The three proofs share a uniform common ending, so each route had to produce the same finite conditional-factorization interface before the final conclusion. This provided a cross-check on these independent routes during AI-assisted development.</p>
                                 </div>
                             </td>
                         </tr>

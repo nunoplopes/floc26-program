@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -294,6 +294,24 @@ We describe the design of the specification language, the execution model of the
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:354">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:354">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12611.html">Emanuele Civini</a><sup>1</sup>, <a class="person" href="person12612.html">Gabriele Masina</a><sup>1</sup>, <a class="person" href="person12613.html">Giuseppe Spallitta</a><sup>2</sup>, <a class="person" href="person12614.html">Roberto Sebastiani</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Trento</div>
+                                <div class="affiliation_item"><sup>2</sup> Rice University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Lifting Boolean-reasoning techniques to the SMT level most often requires producing theory lemmas that rule out theory-inconsistent truth assignments. With standard SMT solving, it is common to "lazily" generate such lemmas on demand during the search. With some harder SMT-level tasks ---such as unsat-core extraction, MaxSMT, T-OBDD or T-SDD compilation--- it may be beneficial or even necessary to "eagerly" pre-compute all the needed theory lemmas upfront. 
+Whereas in principle "classic" eager SMT encodings could do the job, they are specific for very few and easy theories, they do not comply with theory combination, and may produce lots of unnecessary lemmas. 
+
+In this paper, we present theory-agnostic methods for enumerating complete sets of theory lemmas tailored to a given formula. Starting from AllSMT as a baseline approach, we propose several improved lemma-enumeration techniques, including divide&conquer, projected enumeration, and theory-driven partitioning, which are highly parallelizable and which may drastically improve scalability. An experimental evaluation demonstrates that these techniques significantly enhance efficiency and enable the method to scale to substantially more complex instances.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:355">
                             <td class="time"></td>
                             <td>
@@ -383,6 +401,37 @@ varieties. We illustrate the ideas on examples.</p>
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1276">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">An Applicative Multiset Path Order <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1276">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12621.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person12622.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person12623.html">Teppei Tanaka</a><sup>1</sup>, <a class="person" href="person12624.html">Wataru Yachi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a variant of the multiset path order for untyped applicative term rewriting.  Compared to existing work, our variant incorporates two distinctive features, dubbed arity assignment and reification, to overcome difficulties in handling partial and variable application.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1277">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">The ARI Infrastructure for Automated Confluence Analysis <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1277">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12621.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person12551.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person12622.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person12177.html">René Thiemann</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We report on the new ARI infrastructure that supports tools and competitions in term rewriting. It offers ARI-COPS, a database for confluence problems and competition results, and ARIWeb, a convenient web interface for tools that participate in the annual confluence competition. These are built on top of the new ARI format for rewrite systems, a format converter, certifiers for competition results, and a duplicate checker.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:809">
                     <div class="heading">
@@ -392,8 +441,7 @@ varieties. We illustrate the ideas on examples.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23680.html">Jürgen Giesl</a>
                         </div>
                     </div>

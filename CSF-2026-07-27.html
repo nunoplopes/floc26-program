@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -309,6 +309,45 @@ transfer to OpenLDAP.</p>
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:217">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Are ideal functionalities really ideal? <a class="abstract_link" href="CSF-2026-07-27.html#talk:217">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11778.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person11779.html">Véronique Cortier</a><sup>2</sup>, <a class="person" href="person11780.html">Hubert de Groote</a><sup>3</sup>, <a class="person" href="person11781.html">Charlie Jacomme</a><sup>4</sup>, <a class="person" href="person11765.html">Steve Kremer</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>2</sup> Université de Lorraine, CNRS, Inria, LORIA</div>
+                                <div class="affiliation_item"><sup>3</sup> ENS Paris-Saclay, Université Paris-Saclay</div>
+                                <div class="affiliation_item"><sup>4</sup> Université de Lorraine, Inria, CNRS, LORIA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Ideal functionalities are used to study increasingly complex protocols within the Universal Composability framework. However, such functionalities are often complex themselves, making it difficult to assess whether they truly fulfill their promises. In this paper, we present four attacks on functionalities from various applications (e-voting, SMPC, anonymous lotteries, and smart metering), demonstrating that they do not capture the intuitively expected properties.
+
+We argue that ideal functionalities should not merely be justified secure at a high level but rigorously proven to be so. To this end, we propose a methodology that combines game-based proofs and computer-aided verification: ideal functionalities can in fact be treated as protocols, and one can use traditional game-based proofs to study them, where any game-based security property proven on the functionality does transfer to any protocol that realizes it. We also propose fixed versions of the ideal functionalities we studied, and formally define the security properties they should satisfy through a game. Finally, using Squirrel, a proof assistant for protocol security, we formally prove that the fixed functionalities verify the specified game-based security properties.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:218">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Computationally Sound Symbolic Cryptography in Lean <a class="abstract_link" href="CSF-2026-07-27.html#talk:218">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11783.html">Stefan Dziembowski</a><sup>1</sup>, <a class="person" href="person11784.html">Grzegorz Fabiański</a><sup>2</sup>, <a class="person" href="person11785.html">Daniele Micciancio</a><sup>3</sup>, <a class="person" href="person11786.html">Rafał Stefański</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Warsaw and IDEAS Institute</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Warsaw</div>
+                                <div class="affiliation_item"><sup>3</sup> UCSD</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a formally-verified (in Lean 4) framework for translating symbolic cryptographic proofs into the computationally-sound ones. Symbolic cryptography is a well-established field that allows reasoning about cryptographic protocols in an abstract way and is relatively easy to verify using proof assistants. Unfortunately,  it often lacks a connection to the computational aspects of real-world cryptography. Computationally-sound cryptography, on the other hand, captures this connection much better, but it is often more complex, less accessible, and much harder to verify formally. Several works in the past have provided a bridge between the two, but, to our knowledge, none of them have been implemented in a proof assistant.
+
+We close this gap by formalizing the translation from symbolic to computationally-sound cryptography in Lean 4. Our framework is based on the work of Micciancio (Eurocrypt, 2010) and Li and Micciancio (CSF, 2018), which builds on the idea of using co-induction (instead of induction) for reasoning about an adversary's knowledge in a symbolic setting. Our work encompasses (1) the formalization of the symbolic cryptography framework, (2) the formalization of the computationally sound cryptography framework, and (3) the formalization of the translation between the two. We also provide (4) an extended example of circuit garbling, which is a well-known cryptographic protocol frequently used in secure multi-party computation.
+
+We believe that our work will serve as a foundation for future research in the area of formal verification of cryptographic protocols, as it enables reasoning about cryptographic protocols more abstractly while still providing a formally verified connection to the computational aspects of real-world cryptography.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:219">
                             <td class="time"></td>
                             <td>
@@ -320,6 +359,21 @@ transfer to OpenLDAP.</p>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hybrid arguments are prevalent in cryptographic security proofs, however, existing mechanizations in proof assistants are not as general as they could be. In this paper, we prove a general theorem about the admissibility of hybrid arguments  that encompasses the query-counting, multi-instance, and nested case.  We present three case studies about public-key encryption, which demonstrate the generality of the theorem. The results of this paper are achieved in the setting of state-separating proofs and the theory is integrated into and the case studies are mechanized in Nominal-SSProve.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:220">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Interactive Proofs in Higher-Order Logic with Errors and Application to Concrete Cryptography <a class="abstract_link" href="CSF-2026-07-27.html#talk:220">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11789.html">Caroline Fontaine</a><sup>1</sup>, <a class="person" href="person11790.html">Adrien Koutsos</a><sup>2</sup>, <a class="person" href="person11791.html">Guillaume Scerri</a><sup>1</sup>, <a class="person" href="person11792.html">Théo Vignon</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université Paris-Saclay, CNRS, ENS Paris-Saclay, Laboratoire Méthodes Formelles</div>
+                                <div class="affiliation_item"><sup>2</sup> Inria</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Computer-aided cryptography (CAC) provides strong guarantees through mechanized proofs of security. Squirrel is a proof assistant specialized in CAC, but is restricted to the asymptotic setting, which limits its applicability. Recent theoretical work adapted Squirrel’s underlying logic to the concrete setting through the introduction of a higher-order logic with errors. While this allows to prove precise security bounds on paper, it only provides a low-level logical calculus which lacks an implementation. Thus, it falls short of the CAC aims. In this paper, we use this low-level calculus to build the full-fledged set of features used in a proof assistant such as Squirrel, focusing on reachability reasoning. We design higher-level logical mechanisms on top of this logic, including proof context management, introduction patterns, and bound-annotated tactics. To do so, we need to introduce a proof term calculus with dedicated features for bounds, for which we design an elaborator. This elaborator automatically infer most bound-related manipulations, improving usability and reducing user inputs, and we theoretically argue for its usability through an erasability theorem. All these improvements have been implemented in Squirrel, and we provide empirical evidence of the applicability of our framework through case studies.</p>
                                 </div>
                             </td>
                         </tr>
@@ -401,6 +455,39 @@ noninterference where the intruder cannot break cryptography. The
 underlying model, which combines operating on actual bit strings with
 a symbolic intruder model, and the entire result are
 formalized and proved in Isabelle/HOL.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:223">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Partial Cast Calculus for Gradual Information Security <a class="abstract_link" href="CSF-2026-07-27.html#talk:223">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11797.html">Zechi Shen</a><sup>1</sup>, <a class="person" href="person11798.html">Zhiwu Xu</a><sup>1</sup>, <a class="person" href="person11799.html">Shengchao Qin</a><sup>2</sup>, <a class="person" href="person11800.html">Zhong Ming</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Shenzhen University</div>
+                                <div class="affiliation_item"><sup>2</sup> Xidian University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Gradual typing effectively combines the advantages of dynamic and static typing and is utilized in Information Flow Control. The gradual guarantee ensures that removing type annotations does not affect runtime behavior. However, Toro et al. identify a tension between the gradual guarantee and noninterference, leading many gradual security-typed languages to reconcile these two properties. Recently, Chen and Siek’s language λIFC achieves both properties. Nevertheless, their cast calculus suffers from scalability issues and lacks binary operators, which limits its practical use.
+
+In this paper, we present a partial cast calculus λp for gradual information security based on the concept of partial label. Partial labels serve as concise representations for security coercions and runtime labels, which simplify the definition of operators related to security labels and facilitate cast reductions within the semantics of λp. Consequently, this calculus effectively support binary operators and can be readily extended to accommodate more complex sets of security labels. We prove both noninterference and the gradual guarantee for λp. Furthermore, we explore extensions concerning the accommodation of unknown references and a semantic interpretation of our partial labels.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:224">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Cryptographic Choreographies <a class="abstract_link" href="CSF-2026-07-27.html#talk:224">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11796.html">Sebastian Mödersheim</a><sup>1</sup>, <a class="person" href="person11795.html">Simon Tobias Lund</a><sup>2</sup>, <a class="person" href="person11803.html">Marco Carbone</a><sup>3</sup>, <a class="person" href="person11804.html">Rosario Giustolisi</a><sup>3</sup>, <a class="person" href="person11805.html">Alessandro Bruni</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> DTU</div>
+                                <div class="affiliation_item"><sup>2</sup> Technical University of Denmark</div>
+                                <div class="affiliation_item"><sup>3</sup> ITU</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present CryptoChoreo, a choreography language for the specification of cryptographic protocols. Choreographies can be regarded as an extension of Alice-and-Bob notation, providing an intuitive high-level view of the protocol as a whole (rather than specifying each protocol role in isolation). The extensions over standard Alice-and-Bob notation that we consider are non-deterministic choice, conditional branching, and mutable long-term memory. We define the semantics of CryptoChoreo by translation to a process calculus. This semantics entails an understanding of the protocol: it determines how agents parse and check incoming messages and how they construct outgoing messages, in the presence of an arbitrary algebraic theory and non-deterministic choices made by other agents. While this semantics entails algebraic problems that are in general undecidable, we give an implementation for a representative theory.  We connect this translation to ProVerif and show on a number of case studies that the approach is practically feasible.</p>
                                 </div>
                             </td>
                         </tr>

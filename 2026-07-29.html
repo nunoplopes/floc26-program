@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html" class="selected">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html" class="selected">Full Program</a>
             </div>
 
 
@@ -115,7 +115,7 @@
 
                 <p class="days_line">Days:
                     <a class="program_days" href="2026-07-28.html"><img class="day_icon" src="previous.png" alt="" /> previous day</a>
-                    <a class="program_days" href="index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
+                    <a class="program_days" href="index-full.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
                 <div class="date">Wednesday, 29 July 2026</div>
@@ -128,8 +128,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23320.html">Philipp Rümmer</a>
                         </div>
                     </div>
@@ -140,6 +139,19 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:200">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formally Explaining Neural Networks <a class="abstract_link" href="CAV-2026-07-29.html#talk:200">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11517.html">Guy Katz</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Hebrew University of Jerusalem</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:727">
                     <div class="heading">
@@ -184,6 +196,21 @@
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper presents a formal framework for enhancing privacy in decentralized identity (DID) systems, resolving the inherent conflict between blockchain verifiability and the principle of minimal data disclosure. At its core, we introduce a provably secure cryptographic protocol that leverages attribute commitments on-chain and zero-knowledge proofs for off-chain validation. This approach allows users to demonstrably prove the validity of predicates about their attributes without revealing the underlying sensitive values.
 We formally define the security and privacy requirements for such a system—including consistency, attribute-based indistinguishability, and predicate-based indistinguishability—within a semi-honest adversarial model. We then construct a concrete scheme that realizes these properties under standard cryptographic assumptions. The proposed architecture is designed for full backward compatibility with W3C DID standards, ensuring practical deployability. Security analysis provides rigorous, provable guarantees, while performance evaluation confirms the efficiency of the core cryptographic operations, supporting its use in resource-constrained environments. This work establishes a foundational and analyzable basis for building decentralized identity systems where both accountability and user privacy are essential.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:240">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Zero-Knowledge Proof of Progress: Secure Multi-Phase Capture-the-Flag Competitions <a class="abstract_link" href="CSF-2026-07-29.html#talk:240">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11860.html">Salam Khanji</a><sup>1</sup>, <a class="person" href="person11861.html">Behzad Abdolmaleki</a><sup>1</sup>, <a class="person" href="person11862.html">John Clark</a><sup>1</sup>, <a class="person" href="person11863.html">Aryan Pasikhani</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Sheffield</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Existing Capture-the-Flag (CTF) platforms trust a single organizer, offer limited auditability, and are vulnerable to infrastructure-level manipulation. We propose zk–MPSFV, a zk-SNARK-based, multi-phase sub-flag verification scheme that replaces centralized scoring with an on-chain, zero-knowledge, publicly verifiable scoreboard. Challenges are decomposed into sub-challenges arranged as a directed acyclic graph (DAG): a team unlocks the next step only after proving completion of all parent nodes. Sub-flags and decryption keys are jointly generated by n organizers and released via an off-chain (t, n) Shamir–BLS threshold signature produced through multi-party computation (MPC), preventing any single organizer from leaking or altering keys. Teams submit zk-PLONK proofs that the contract verifies, timestamps, and records immutably. Under standard assumptions (collision-resistant hashing, SNARK soundness/zero-knowledge, IND-CCA2 ECIES, and at least t honest organizers), we prove that zk–MPSFV achieves the stated security goals, including DAG-gated progress, anti-replay, and threshold-robust organizer security, while out-of-band flag sharing remains out of scope. On a three-organizer testbed with 30 simulated teams, setup costs 0.45 ms per sub-flag, proof generation averages 5.34 s on an 8-core system, and on-chain verification costs ≈ 170k L2 gas on zkSync Era with a median fee of 1.33×10−6 ETH (about $0.0046 at $3,435/ETH). Stress replays sustain ≈ 7 proof transactions/s up to 5000 proofs; extrapolating to 50,000 proofs (1000 teams× 50 submissions) yields ≈ 0.0665 ETH (about $200–$228) and ≈ 2 hours of settlement time. Overall, zk–MPSFV is practical
+for small- to mid-scale, audit-ready progression CTFs.</p>
                                 </div>
                             </td>
                         </tr>
@@ -285,8 +312,7 @@ We formally define the security and privacy requirements for such a system—inc
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25215.html">Alessandro Cimatti</a>
                         </div>
                     </div>
@@ -298,6 +324,27 @@ We formally define the security and privacy requirements for such a system—inc
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1163">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Consistency-Based Software Diagnosis: Accuracy, Scalability, and Limitations <a class="abstract_link" href="CAV-2026-07-29.html#talk:1163">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11518.html">Sarah Sallinger</a><sup>1</sup>, <a class="person" href="person11519.html">Lukas Graussam</a><sup>1</sup>, <a class="person" href="person11520.html">Georg Weissenbacher</a><sup>1</sup>, <a class="person" href="person11500.html">Florian Zuleger</a><sup>1</sup>, <a class="person" href="person11522.html">Alexey Ignatiev</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                <div class="affiliation_item"><sup>2</sup> Monash University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Consistency-based diagnosis is a formal approach to software fault localization that explains failing executions by identifying program components whose modification would restore correctness. Tools such as BugAssist and (more recently) CFaults instantiate this idea using logical encodings and bounded model checking.
+
+In our first contribution, we improve on this line of work. We present SherLoc, a consistency-based diagnosis engine for ANSI-C programs with multiple failing test cases. SherLoc introduces an explicit repair model that supports pointers and arrays, ensuring that diagnoses correspond only to semantically valid C repairs.
+In addition, we adapt efficient algorithms from hardware diagnosis, which avoid costly self-composition, and significantly outperform existing tools on standard benchmarks.
+
+In our second contribution, we expose fundamental limitations of formal fault localization: program optimizations and transformations can invalidate diagnoses despite semantic equivalence, representing a major hurdle to further scalability improvements; function inlining can break the functional consistency of repairs, yielding diagnoses that cannot be realized at the source level; and bounded encodings inherently miss diagnoses in the presence of loops or unbounded behavior. 
+Our exposition clarifies the gap between the formal ideal of sound and complete diagnosis and what current techniques can realistically guarantee, and thereby helps guide future work toward more robust and principled approaches.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1164">
                             <td class="time"></td>
                             <td>
@@ -312,6 +359,38 @@ We formally define the security and privacy requirements for such a system—inc
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a case study on proof-driven software understanding of mature, security-critical infrastructure. While formal methods are traditionally applied during the design phase, we present our experience applying formal reasoning onto industrial C++ codebases where correctness arguments are embedded within implementation artifacts. We focus on a formal analysis of the core SDEX algorithm which implements the Stellar blockchain’s order-book. By combining Large Language Models, the Prototype Verification System (PVS) and Seahorn, we are able to prove core properties of the production codebase. Our approach also identified an inconsistency in documentation related to the reachability of an exception location. Most importantly, however, we produce artifacts that make it easy for code changes to be checked against established invariants. This work demonstrates how the strategic combination of interactive theorem proving and model checking provides a path for delivering actionable assurance to legacy, high-value systems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1165">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">SvLibChecker: A Light-Weight Tool for Software Model Checking <a class="abstract_link" href="CAV-2026-07-29.html#talk:1165">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11487.html">Dirk Beyer</a><sup>1</sup>, <a class="person" href="person11083.html">Marian Lingsch-Rosenfeld</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> SvLibChecker is a small tool for software model checking. The
+goal of the tool is to provide a light-weight framework that makes it easy
+to implement and explore algorithms for verifying software. The input to
+SvLibChecker is given in SV-LIB, an intermediate language that relieves
+the developers from dealing with sophisticated language features and their
+semantics. Software verifiers can normally be complex software systems with
+hundreds of thousands of lines of code. Due to the simple input, algorithms
+in SvLibChecker can be written in a succinct way. Our tool currently
+provides six different model-checking algorithms. Each algorithm consists
+of about 100 lines of Python code. The full project has about 2500 LOC in
+total, which are well-documented and have a good test coverage (> 90 %).
+The simplicity, lean architecture, and modular design of SvLibChecker lends
+itself for education. It is much easier to understand the implementation of an
+algorithm implemented in SvLibChecker, compared to complex verifiers for
+languages like C. SvLibChecker’s predicate abstraction with CEGAR has a
+performance comparable to CPAchecker, a mature state-of-the-art tool for
+software verification. The combination of simplicity and performance makes
+SvLibChecker a suitable tool for verification researchers and educators, for
+experimenting with new verification approaches and teaching students.</p>
                                 </div>
                             </td>
                         </tr>
@@ -380,6 +459,42 @@ We used PyCHC to validate the results of the Eldarica, Golem, and Spacer solvers
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:242">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Active Cyber Defense Strategy through Multi-Agent Systems Verification <a class="abstract_link" href="CSF-2026-07-29.html#talk:242">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11866.html">Gabriel Ballot</a><sup>1</sup>, <a class="person" href="person11867.html">Etienne Borde</a><sup>2</sup>, <a class="person" href="person11868.html">Vadim Malvone</a><sup>3</sup>, <a class="person" href="person11869.html">Jean Leneutre</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> SEIDO Lab, EDF R&D and LTCI, Télécom Paris, Institut Polytechnique de Paris, Palaiseau, France</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Canterbury</div>
+                                <div class="affiliation_item"><sup>3</sup> LTCI, Télécom Paris, Institut Polytechnique de Paris, Palaiseau, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Active cyber defense offers a promising approach to
+addressing the longstanding asymmetry between rapidly evolving
+cyber threats and static defense systems. However, active cyber
+defense requires fast responses and proactive reconfigurations
+that must be verified and tailored to observed attacker be-
+haviour. Formal methods rely on rigorous mathematical and
+logical frameworks for verifying system specifications under well-
+defined assumptions. In particular, multi-agent system (MAS)
+verification, which examines formal properties of open systems,
+is well-suited for cybersecurity where attacker–defender inter-
+actions are central. This paper bridges the gap between system
+security modelling and MAS verification, providing active defense
+orchestration with formal guarantees. Our contributions are
+(i) a general methodology for controlling active cyber defenses
+with formally verified specifications based on the attack–defense
+movement model (ADM), a new model of attacker and defender
+actions, (ii) an application of this methodology for adaptive
+honeypot control, which relies on a MAS logic contribution to
+express strategic properties such as attacker attribution, and
+(iii) VeriPot, a tool which implements the honeypot adaptation
+strategy extraction from the ADM.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:243">
                             <td class="time"></td>
                             <td>
@@ -417,6 +532,22 @@ Our results show how importance measures can identify high-leverage attack steps
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1278">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A General Approach for SMT Proof Skeletons <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:1278">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12630.html">Joseph E. Reeves</a><sup>1</sup>, <a class="person" href="person11364.html">Haniel Barbosa</a><sup>2</sup>, <a class="person" href="person11362.html">Andrew Reynolds</a><sup>3</sup>, <a class="person" href="person12633.html">Marijn J. H. Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidade Federal de Minas Gerais</div>
+                                <div class="affiliation_item"><sup>3</sup> The University of Iowa</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> SMT solvers increasingly produce proof certificates to meet the trust requirements of safety-critical applications. However, eagerly justifying learned theory lemmas during solving constitutes a major performance bottleneck. Recent work mitigates this cost by emitting proof skeletons that record only SAT reasoning and unannotated theory lemmas, though existing approaches depend on new proof formats and specialized theory-specific tooling. We present a general approach that restricts SMT proof skeletons to core SMT reasoning:  preprocessing, clausification, and unannotated theory lemmas. We develop external tools for SAT reasoning and proof trimming that reduce the number of theory lemmas requiring justification. An experimental evaluation using the SMT solver cvc5 on SMT-LIB benchmarks across the UF, LIA and LRA theories, with and without quantifiers, demonstrates faster solving and competitive checking performance compared to eager proof production, particularly on quantifier-free problems.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1279">
                             <td class="time"></td>
                             <td>
@@ -429,6 +560,29 @@ Our results show how importance measures can identify high-leverage attack steps
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Eunoia is a logical framework designed for specifying the proofs and proof systems of SMT solvers, namely CVC5. We present a translation from a core fragment of Eunoia to the 𝜆Π-calculus modulo rewriting as implemented by the LambdaPi proof assistant. The translation is implemented by our tool eo2lp, which we use for generating LambdaPi encodings of (a) a large fragment of the Cooperating Proof Calculus (CPC), the Eunoia signature defining CVC5’s proof system, and (b) proofs produced by CVC5 on unsat problems from various fragments of SMT-LIB.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1280">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Checking Regular Expressions in cvc5 Proofs <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:1280">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11365.html">Ofec Israel</a><sup>1</sup>, <a class="person" href="person12637.html">Yoni Zohar</a><sup>1</sup>, <a class="person" href="person12638.html">Hitarth Singh</a><sup>2</sup>, <a class="person" href="person12639.html">Bruno Dutertre</a><sup>3</sup>, <a class="person" href="person12640.html">Andrew Reynolds</a><sup>4</sup>, <a class="person" href="person11339.html">Clark Barrett</a><sup>5</sup>, <a class="person" href="person11374.html">Cesare Tinelli</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Bar-Ilan University</div>
+                                <div class="affiliation_item"><sup>2</sup> The Hong Kong University Of Science And Technology</div>
+                                <div class="affiliation_item"><sup>3</sup> Amazon Web Services</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Iowa</div>
+                                <div class="affiliation_item"><sup>5</sup> Stanford University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> cvc5 is a state-of-the-art proof-producing SMT-solver, capable of solving formulas over a myriad of theories, including that of unicode strings.
+
+Matching regular expressions against candidate strings is done numerous times during the solving process of string constraints, and forms a bottleneck in proof-checking for unsatisfiable formulas.
+
+In this paper, we describe three approaches for checking regular expressions in proofs produced by cvc5. We also describe their implementation in the
+Eunoia proof-checking framework, and evaluate them on proofs produced by cvc5 for unsatisfiable SMT-LIB benchmarks for quantifier free logics containing strings.</p>
                                 </div>
                             </td>
                         </tr>
@@ -479,6 +633,32 @@ Our results show how importance measures can identify high-leverage attack steps
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:390">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Certified Infinite Descent Criteria in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-29.html#talk:390">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12808.html">Jamie Wright</a><sup>1</sup>, <a class="person" href="person12203.html">Liron Cohen</a><sup>2</sup>, <a class="person" href="person12810.html">Reuben N. S. Rowe</a><sup>3</sup>, <a class="person" href="person12731.html">Andrei Popescu</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Sheffield</div>
+                                <div class="affiliation_item"><sup>2</sup> Ben-Gurion University of the Negev</div>
+                                <div class="affiliation_item"><sup>3</sup> Royal Holloway University of London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Infinite Descent is the global trace condition that underpins the soundness of cyclic reasoning and, in program analysis, the size change termination principle.
+Many (semi-)decision procedures for Infinite Descent are known, based on criteria ranging from automata-based constructions and relation-based characterizations, to effective (but incomplete) heuristics.
+Although these criteria are well studied on paper and implemented in tools, a unified, machine-checked account that relates them to the (abstract) Infinite Descent property has been missing.
+
+We present an Isabelle/HOL mechanization of this landscape.
+We develop a reusable, locale-based framework of sloped graphs that defines Infinite Descent at an abstract level,
+independently of any concrete graph encoding.
+Within this framework we formalize standard complete criteria and prove their equivalence to the locale-level InfiniteDescent predicate.
+We also formalize tool-facing sufficient criteria, 
+prove their soundness, and certify incompleteness where appropriate via verified counterexamples.
+Along the way we contribute reusable Isabelle lemmas for $\omega$-regular reasoning over streams and for Büchi-automata constructions needed by the inclusion proofs.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:680">
@@ -489,8 +669,7 @@ Our results show how importance measures can identify high-leverage attack steps
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25215.html">Alessandro Cimatti</a>
                         </div>
                     </div>
@@ -502,6 +681,21 @@ Our results show how importance measures can identify high-leverage attack steps
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1167">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">How Many Circuit Identities Are Needed to Generate All Others? <a class="abstract_link" href="CAV-2026-07-29.html#talk:1167">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11535.html">Yuantian Ding</a><sup>1</sup>, <a class="person" href="person11536.html">Nengkun Yu</a><sup>2</sup>, <a class="person" href="person11537.html">Xiaokang Qiu</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Purdue University</div>
+                                <div class="affiliation_item"><sup>2</sup> Stony Brook University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Quantum compiler optimization relies on rewriting rules derived from equivalences between quantum circuits, yet prior work has identified thousands of such identities, creating substantial challenges for their storage, management, and effective application. For many widely used unitary gate sets, including Clifford+T, this apparent complexity is largely redundant, raising a fundamental question: How many quantum circuit identities are actually needed to generate all others? In this work, we provide strong evidence that a small set of independent identities suffices to generate all circuit equivalences of bounded depth. Surprisingly, for circuits on up to nine qubits in which each side of an equality has depth at most ten, fewer than twenty independent identities are sufficient to derive all others, and for circuits on up to five qubits with depth at most ten, only 17 rules--each involving at most three qubits--are enough. These results enable significantly more compact and efficient rewriting systems for quantum compiler optimization and reveal underlying algebraic structure in common gate sets, showing that the vast majority of known circuit identities are consequences of a small foundational basis.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1168">
                             <td class="time"></td>
                             <td>
@@ -532,6 +726,39 @@ Our results show how importance measures can identify high-leverage attack steps
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Ensuring ancilla safety is a critical correctness requirement for quantum compilation, since ancilla qubits are routinely introduced to implement complex operations with fewer gates and reduced depth. However, formally verifying this property is computationally hard due to state-space explosion in the number of qubits, particularly for dirty ancilla, which carry unknown initial states and must be restored after use. We propose an end-to-end verification-and-repair framework that rigorously addresses both clean and dirty ancilla safety. Our core contribution is a two-step reduction strategy: we first prove that verifying an m-qubit dirty ancilla register decomposes into 2m independent clean ancilla safety checks; subsequently, we reduce each clean ancilla safety instance to an algebraic commutativity check against Pauli-Z and Pauli-X operators. This approach yields an efficient and naturally parallel verifier and enables actionable diagnosis by classifying violations into logic errors and phase errors. Leveraging this diagnosis, we further design lightweight repair routines that append local single-qubit rotations to eliminate a broad class of local ancilla faults. We implement the full pipeline in a prototype tool using a dual-backend architecture combining decision diagrams and weighted model counting, and validate it on diverse circuits ranging from arithmetic benchmarks to Grover’s algorithm. Our experiments demonstrate scalability to thousands of qubits and show that the proposed repairs effectively improve ancilla safety while preserving circuit functionality.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1170">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Model Checking Matrix Product States Against Linear Chain Logic <a class="abstract_link" href="CAV-2026-07-29.html#talk:1170">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11545.html">Ming Xu</a><sup>1</sup>, <a class="person" href="person11546.html">Yihao Chen</a><sup>1</sup>, <a class="person" href="person11544.html">Ji Guan</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> East China Normal University</div>
+                                <div class="affiliation_item"><sup>2</sup> Chinese Academy of Sciences</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Matrix product states (MPS) are the standard tensor-network representation for ground states of
+one-dimensional quantum many-body systems, and they underpin widely used simulation tools such as DMRG. However, while quantum model checking has been developed mainly for quantum programs and communication protocols (with properties expressed along a time axis), there is still no comparable framework for systematically verifying spatial and size-dependent properties of physical many-body states, where the key parameter is the chain length. This paper takes a step toward bridging this gap. We propose Linear Chain Logic (LCL), a spatial logic designed to specify physically meaningful properties of periodic MPS families as the system size grows, such as nontriviality on rings and long-range asymptotic patterns. Our approach builds on a simple but powerful connection: every periodic MPS naturally induces a completely positive map (a quantum operation) on its virtual space, so many quantitative features of the MPS can be analyzed through the repeated application of the operation. Using this perspective, we derive an effective procedure to compute the inner products  of an MPS at a given length and to support richer LCL specifications, without relying on brute-force state expansion. We then develop approximate model-checking algorithms that combine sound bounding with asymptotic structural analysis,
+enabling scalable reasoning about large system sizes. Experiments on representative MPS families illustrate that our method can automatically verify nontriviality and detect asymptotic spatial regimes in a way that complements traditional numerical techniques.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1171">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Analysis and Verification of Quantum Communication Protocols in UPPAAL <a class="abstract_link" href="CAV-2026-07-29.html#talk:1171">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11548.html">René Bødker Christensen</a><sup>1</sup>, <a class="person" href="person11549.html">Nikolaj Rossander Kristensen</a><sup>1</sup>, <a class="person" href="person11550.html">Kim Guldstrand Larsen</a><sup>1</sup>, <a class="person" href="person11551.html">Marius Mikučionis</a><sup>1</sup>, <a class="person" href="person11552.html">Jiří Srba</a><sup>1</sup>, <a class="person" href="person11553.html">Loke Walsted</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Aalborg University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce a formal modeling methodology to analyze quantum communication protocols in the tool Uppaal.
+Our approach encodes quantum states, operations, and measurements into \uppaal timed automata with data extensions and external C++ function calls, enabling both exhaustive verification in the ideal (noiseless) case and statistical model checking for realistic noisy scenarios.
+We apply our framework to the Beyond Superdense Coding protocol---a time-slotted generalization of superdense coding---combined with quantum entanglement distillation, and demonstrate that Uppaal can deal with these protocols even under complex timing and decoherence constraints.</p>
                                 </div>
                             </td>
                         </tr>
@@ -762,8 +989,7 @@ reasoning about complex parameterized behaviors.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25220.html">Pavithra Prabhakar</a>
                         </div>
                     </div>
@@ -803,6 +1029,21 @@ reasoning about complex parameterized behaviors.</p>
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1175">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Best-Effort Safety Control of Multi-Mode Systems <a class="abstract_link" href="CAV-2026-07-29.html#talk:1175">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11564.html">Massimo Benerecetti</a><sup>1</sup>, <a class="person" href="person11565.html">Marco Faella</a><sup>1</sup>, <a class="person" href="person11566.html">Fabio Mogavero</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Naples, Italy</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider the problem of controlling a multi-mode system w.r.t. a safety goal in the Filippov sliding-mode semantics. When the goal can be enforced, we present a symbolic algorithm that enhances the previously known solution.
+ When the goal cannot be enforced, we compare different natural best-effort criteria, identify the most promising one, and design a symbolic algorithm that synthesizes the corresponding myopically optimal control policy. We prove that the synthesized policy enjoys a regularity property known as a tame topology.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1176">
                             <td class="time"></td>
                             <td>
@@ -821,6 +1062,85 @@ Crucially, in safety-critical domains, a rough estimate is insufficient to forma
 We address this problem by presenting a certified pose estimation in 3D solely from a camera image and a well-known target geometry.
 This is realized by formally bounding the pose, which is computed by leveraging recent results from reachability analysis and formal neural network verification.
 Our experiments demonstrate that our approach efficiently and accurately localizes agents in both synthetic and real-world experiments.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1177">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Tensor Probabilistic Model Checking of Finite-Horizon Markov Chains <a class="abstract_link" href="CAV-2026-07-29.html#talk:1177">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11570.html">JIANLIN LI</a><sup>1</sup>, <a class="person" href="person11571.html">Nick Guo</a><sup>1</sup>, <a class="person" href="person11572.html">Peter Ye</a><sup>1</sup>, <a class="person" href="person11573.html">Yizhou Zhang</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Waterloo</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We reexamine the problem of verifying Markov chains with respect to step-bounded reachability probabilities.
+Prevailing approaches to this problem rely on encoding the state-transition matrix using either explicit or symbolic representations.
+While more recent work frames the verification problem as probabilistic inference, this approach does not appear to improve scalability across the board.
+
+Our insight is to cast probabilistic model checking of Markov chains as computations over tensors.
+This methodology enables the use of off-the-shelf compiler toolchains for optimized execution of these tensor computations on hardware accelerators.
+We prove the soundness of the methodology of mapping probabilistic model checking to tensor computations.
+We implement our approach in a tool called Tessa. Empirical evaluation shows that Tessa easily unlocks massive speedups over state-of-the-art methods on benchmarks from the literature.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1178">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Fast Computation of Conditional Probabilities in MDPs and Markov Chain Families <a class="abstract_link" href="CAV-2026-07-29.html#talk:1178">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11449.html">Milan Ceska</a><sup>1</sup>, <a class="person" href="person11077.html">Sebastian Junges</a><sup>2</sup>, <a class="person" href="person11576.html">Luko van der Maas</a><sup>2</sup>, <a class="person" href="person11075.html">Filip Macák</a><sup>1</sup>, <a class="person" href="person11578.html">Tim Quatmann</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Brno University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Radboud University</div>
+                                <div class="affiliation_item"><sup>3</sup> RWTH Aachen University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Computing optimal conditional reachability probabilities in Markov decision processes (MDPs) is tractable by a reduction to reachability probabilities. Yet, this reduction yields cycling, challenging MDPs that are often notoriously hard to solve.
+We present an alternative, practically efficient method to compute optimal conditional reachabilities.
+The new method is numerically stable, can decide the threshold problem in linear time on acyclic MDPs, and yields performance comparable to standard reachability queries. 
+We also integrate the method in an abstraction-refinement framework to analyse millions of Markov chains at once. We demonstrate the efficacy of the new methods on benchmarks from Bayesian network analysis, probabilistic programs, and runtime monitoring and show speed-ups up to multiple orders of magnitude.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1179">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Ensuring Safety in Automotive Machine Learning Inference: From Pre-validated Static Kernels to Machine Learning Graph Compilation <a class="abstract_link" href="CAV-2026-07-29.html#talk:1179">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11579.html">Jelena Frtunikj</a><sup>1</sup>, <a class="person" href="person11580.html">Alex Latz</a><sup>1</sup>, <a class="person" href="person11581.html">Ajit Mistry</a><sup>1</sup>, <a class="person" href="person11582.html">Matthew Propp</a><sup>1</sup>, <a class="person" href="person11583.html">Vasu Singh</a><sup>1</sup>, <a class="person" href="person11584.html">Suresh Talapaneni</a><sup>1</sup>, <a class="person" href="person11585.html">Amanda Tang</a><sup>1</sup>, <a class="person" href="person11586.html">Damien Zufferey</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> NVIDIA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Machine Learning (ML) inference is shifting from using pre-developed static, CUDA C++, GPU kernel libraries to using MLIR-based graph compilers that perform advanced optimizations and generate custom kernels. This paradigm shift reimagines how we achieve ML inference in safety-critical domains such as automotive applications. Traditional approaches relied on qualifying static kernel libraries—pre-built for fixed input shapes and parameter ranges—according to the ISO 26262 standard. However, the demanding performance requirements of diverse ML models and rapidly evolving hardware accelerators necessitate generating optimized kernels on the fly, which only ML graph compilers can provide.
+
+This paper presents an industrial experience report on a comprehensive verification framework for ML inference in automotive applications. We describe the transition from static kernels to dynamic ML graph compilation and introduce two complementary verification strategies:   (1) formal methods targeting memory safety and concurrency properties in CUDA kernels and MLIR-based compiler; and   (2) AI-driven testing for functional correctness. Our experience over multiple years of production use demonstrates that validating ML graph compiler output can achieve safety assurance levels comparable to compiler qualification while enabling performance and flexibility benefits. We discuss remaining challenges including scalability of formal verification and adapting to evolving compilers and hardware platforms.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1180">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Caesar: A Deductive Verifier for Probabilistic Programs <a class="abstract_link" href="CAV-2026-07-29.html#talk:1180">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11587.html">Philipp Schröer</a><sup>1</sup>, <a class="person" href="person11588.html">Kevin Batz</a><sup>2</sup>, <a class="person" href="person11589.html">Umut Yiğit Dural</a><sup>1</sup>, <a class="person" href="person11590.html">Darion Haase</a><sup>1</sup>, <a class="person" href="person11090.html">Benjamin Lucien Kaminski</a><sup>3</sup>, <a class="person" href="person11091.html">Joost-Pieter Katoen</a><sup>1</sup>, <a class="person" href="person11593.html">Christoph Matheja</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
+                                <div class="affiliation_item"><sup>2</sup> Cornell University</div>
+                                <div class="affiliation_item"><sup>3</sup> Saarland University and University College London</div>
+                                <div class="affiliation_item"><sup>4</sup> DTU Compute and University of Oldenburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> \emph{Caesar} is a deductive verifier for probabilistic programs.
+At its core lies HeyVL, a quantitative \emph{intermediate verification language} based on the real-valued logic HeyLo.
+HeyVL allows to express a probabilistic program, its specifications, and proof rules in a programming-language-style, so that new proof rules can be easily integrated into the verifier.
+Caesar translates HeyVL programs into verification conditions, which are then checked using the Z3 SMT solver.
+It also includes another backend based on probabilistic model checking for a subset of HeyVL.
+We report on the results of five years of development of Caesar, highlighting its main features and architecture.
+In particular, we highlight recent improvements such as additional proof rules, a model checking backend, and better diagnostics.</p>
                                 </div>
                             </td>
                         </tr>
@@ -855,6 +1175,21 @@ Our experiments demonstrate that our approach efficiently and accurately localiz
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:391">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formalizing Abstract Simplicial Complexes & Stellar Subdivisions in Lean <a class="abstract_link" href="ITP-2026-07-29.html#talk:391">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12812.html">Garett Cunningham</a><sup>1</sup>, <a class="person" href="person12813.html">Daniel Zach</a><sup>2</sup>, <a class="person" href="person12814.html">Stefan Friedl</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Connecticut</div>
+                                <div class="affiliation_item"><sup>2</sup> Universität Regensburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The theory of simplicial complexes is a cornerstone of topology, offering a sophisticated tool for computing invariants. We present a formalization of abstract simplicial complexes and stellar subdivisions in the Lean proof assistant. We adopt a purely combinatorial framework in order to provide a cohesive foundation for studying the theory of stellar subdivisions as seen in many contexts of combinatorial topology. In particular, we provide formalizations of morphisms between abstract simplicial complexes; several crucial constructions and operations on complexes, such as links and joins; and perform a comprehensive study of how stellar subdivisions interact with these operations. We state and prove a number of identities commonly used in the study of triangulated manifolds, such as deriving equivalences between links in an abstract simplicial complex $K$ and in a stellar subdivision $\sigma_s K$, including results with no references in the standard literature. To our knowledge, this is the first formalization of stellar subdivisions in any proof assistant.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:392">
                             <td class="time"></td>
                             <td>
@@ -872,6 +1207,22 @@ Our experiments demonstrate that our approach efficiently and accurately localiz
 We begin by refactoring and extending the existing library on elliptic functions, adding the theorem that every elliptic function can be written in terms of the Weierstraß elliptic function ℘ and the addition theorem for ℘, which links complex lattices to elliptic curves. Next, we develop an extensive library on Jacobi theta functions, including well-known results such as the Jacobi triple product, the Pentagonal Number Theorem, and the Rogers–Ramanujan identities. Finally, we apply this library to the study of the Dedekind η function and the ‘forbidden’ Eisenstein series G2.
 
 In all of this, we aim for short and clean proofs, building a library of reusable lemmas.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:393">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">An End-to-End Verification of Keller's Conjecture <a class="abstract_link" href="ITP-2026-07-29.html#talk:393">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12818.html">James Gallicchio</a><sup>1</sup>, <a class="person" href="person12819.html">Cayden Codel</a><sup>1</sup>, <a class="person" href="person12772.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person12633.html">Marijn J. H. Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In 1930, Keller conjectured that every gap-free tiling of R^n by n-dimensional unit cubes must contain cubes that fully share an (n − 1)-dimensional face. Keller’s conjecture holds for n ≤ 7 and fails for n ≥ 8. The final case, n = 7, was settled in 2020 using a mix of traditional and automated reasoning. The result was obtained by reducing the conjecture to a set of clique-existence problems, encoding those problems into propositional logic, breaking symmetries, and solving them with a SAT solver.
+
+In this paper, we present an end-to-end verification in Lean 4 of Keller’s conjecture for all dimensions. First, we simplify a prior reduction of Keller’s conjecture to the clique-existence problems. We then verify an improved SAT encoding of those problems and some associated symmetry reasoning. Throughout our work, we sought to maximize the synergy between interactive and automated techniques while minimizing human proof burden. In particular, the symmetry reasoning was split between Lean and a clausal proof system, since neither was suitable on their own for verifying all the symmetry reasoning. We discuss how and why we chose to split the reasoning across these systems, based on their relative strengths and weaknesses.</p>
                                 </div>
                             </td>
                         </tr>
@@ -937,6 +1288,38 @@ In all of this, we aim for short and clean proofs, building a library of reusabl
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:365">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof Nets for PiL <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:365">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12242.html">Matteo Acclavio</a><sup>1</sup>, <a class="person" href="person12670.html">Giulia Manara</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Southern Denmark</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce proof nets for PiL, an extension of first-order multiplicative additive linear logic with new operators allowing a shallow encoding of processes in the 𝜋-calculus as formulas.
+
+We provide correctness criterion, sequentialization procedure, and a proof translation algorithm. We show that proof nets provide a canonical representation of sequent calculus derivations modulo rule permutations.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:366">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Ordered Adjoint Logic <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:366">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12671.html">Sophia Roshal</a><sup>1</sup>, <a class="person" href="person12542.html">Frank Pfenning</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Ordered logics and type systems have been used in a variety of applications including computational linguistics, memory allocation, stream processing, logical frameworks, parametricity, and enforcing security protocols. In most formulations, ordered types are also linear, requiring each resource to be used exactly once. Prior work by Kanovich et al. has investigated calculi that relax this constraint through subexponentials within a linear ordered logic. We generalize their work by using adjoint modalities to combine logics with varying fine-grained structural properties, including weakening, left contraction, right contraction, left mobility, and right mobility. We show that the resulting sequent calculus admits cut elimination.
+
+We further provide a natural deduction formulation in which structural rules are implicit, and show that proof checking for this system is decidable. This makes it a suitable foundation for an expressive adjoint programming language or logical framework.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:367">
                             <td class="time"></td>
                             <td>
@@ -955,6 +1338,42 @@ cannot take the role of deduction for establishing validity. Furthermore, quanti
 pose a proof system for HyperLTL∗, where completeness is achieved by allowing an ω-rule. Weaker finitary rules such as what can be useful for interactive theorem proving can be derived using the ω-rule. We give examples of the use of the proof system on complicated HyperLTL for-
 mulas which would be hard to derive automatically. We also discuss the expressiveness of HyperLTL∗ and the potential for using first-order logic theorem provers based on it.
 theorem provers based on it.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:368">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Automatic Abstraction Refinement for Hyperproperties Verification <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:368">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12676.html">Malak Marrid</a><sup>1</sup>, <a class="person" href="person12677.html">Shachar Itzhaky</a><sup>1</sup>, <a class="person" href="person11349.html">Sharon Shoham</a><sup>2</sup>, <a class="person" href="person12282.html">Yakir Vizel</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The Technion</div>
+                                <div class="affiliation_item"><sup>2</sup> Tel Aviv University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hyperproperties specify the behavior of a system across multiple executions, and are
+an important extension of regular temporal properties. Most algorithms for deciding if a given system satisfy a given hyperproperty rely on a user-specified abstraction of the system.
+
+In this paper, we suggest a novel automatic abstraction-refinement algorithm for hyperproperties verification. Our approach is based on predicate abstraction and the recently introduced reduction of hyperproperties verification to satisfiability of Constrained Horn Clauses (CHCs). Moreover, it formalizes and uses CHC-based refinement for counterexamples in the shape of a directed acyclic graph.
+
+
+We implemented our new algorithm on top of the SMT solver Z3. Our experimental evaluation shows our automatic abstraction refinement algorithm can solve a variaty of hyperproperty verification problems, completely automatically. This is in contrast to other existing techniques that require a user-given abstraction.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:369">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Uniform interpolation with constructive diamond <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:369">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12680.html">Iris van der Giessen</a><sup>1</sup>, <a class="person" href="person12569.html">Ian Shillito</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Amsterdam</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Birmingham</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Uniform interpolation is a strong form of interpolation providing an interpretation of propositional quantifiers within a propositional logic. Pitts’ seminal work establishes this property for intuitionistic propositional logic relying on a sequent calculus in which naïve backward proof-search terminates. This constructive approach has been adapted to a wide range of logics, including intuitionistic modal logics. Surprisingly, no intuitionistic modal logic with independent box and diamond has yet been shown to satisfy uniform interpolation. We fill in this gap by proving the uniform interpolation property for Constructive K (CK) and Wijesekera's K (WK).  We build on Pitts' technique by exploiting existing terminating calculi for CK and WK, which we prove to eliminate cut, and formalise all our results in the proof assistant Rocq. Together, our results constitute the first positive uniform interpolation results for intuitionistic modal logics with diamond.</p>
                                 </div>
                             </td>
                         </tr>

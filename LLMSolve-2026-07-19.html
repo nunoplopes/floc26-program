@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -154,6 +154,23 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:760">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Towards Human Readable Explanations <a class="abstract_link" href="LLMSolve-2026-07-19.html#talk:760">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13655.html">Kha Luân Feltus</a><sup>1</sup>, <a class="person" href="person13656.html">Victor Poucet</a><sup>1</sup>, <a class="person" href="person13657.html">Helene Verhaeghe</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> UCLouvain</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> LLMs and their capabilities to handle natural language are more and more used as an intuitive
+interface between non-experts users and complex algorithms. This is facilitated by the recent
+introduction of the Model Context Protocol (MCP). In this work, the LLMs facilitate the use of
+explanation algorithms by translating back their outputs into natural language adapted to the user.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:761">
                             <td class="time"></td>
                             <td>
@@ -200,6 +217,34 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:762">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Learn2Zinc: Fine-tuning Small Language Models for Text-to-Model Translation in MiniZinc <a class="abstract_link" href="LLMSolve-2026-07-19.html#talk:762">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13660.html">Karthik Uppuluri</a><sup>1</sup>, <a class="person" href="person13661.html">Serdar Kadioglu</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Fidelity Investments</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large language models excel at code generation for mainstream programming languages but struggle with domain-specific languages such as MiniZinc, a constraint modeling language for combinatorial problems. To address this propose Learn2Zinc and investigate whether targeted fine-tuning can teach small language models (0.6B to 20B parameters) to generate syntactically correct and semantically valid MiniZinc models from natural language descriptions. Our key finding is that syntax errors dominate failures: the out-of-the-box execution accuracy of small language models is near zero. We propose cross-model error bootstrapping approach that collects syntax errors from multiple LLM runs and leverages those to curate an error correction dataset. With an ensemble of our fine-tuned models, we achieve up to 98% execution accuracy. The solution accuracy remains at 35% indicating that while syntax is learnable, constraint reasoning still remains a challenge. We open-source Learn2Zinc fine-tuning pipeline, datasets, and models for further research.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:763">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">CP-SynC: Multi-Agent Zero-Shot Constraint Modeling in MiniZinc with Synthesized Checkers <a class="abstract_link" href="LLMSolve-2026-07-19.html#talk:763">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13662.html">Yuliang Song</a><sup>1</sup>, <a class="person" href="person13663.html">Eldan Cohen</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Constraint Programming (CP) is a powerful paradigm for solving combinatorial problems, yet translating natural language problem descriptions into executable models remains a significant bottleneck. While Large Language Models (LLMs) show promise in automating this translation, they often struggle with subtle semantic errors in the absence of oracle validation at test time. To address this, we introduce CP-SynC (Constraint Programming modeling with Synthesized Checkers), a multi-agent workflow for zero-shot constraint modeling in MiniZinc. CP-SynC coordinates modeling agents that generate and refine candidate models and validation agents that synthesize semantic checkers to provide feedback on semantic correctness. To mitigate noise inherent in individual LLM outputs, CP-SynC explores multiple modeling trajectories in parallel and employs selection agents to select the final model via multi-agent evidence aggregation. Extensive experiments on a benchmark of 100 CP problems show that CP-SynC substantially outperforms representative baselines in MiniZinc modeling.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:764">
                             <td class="time"></td>
                             <td>
@@ -309,6 +354,42 @@ Language Models (LLMs) and constraint programming. We compare the performance of
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:767">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Escaping Local Optima in Prompt Optimisation via Failure-Driven Refinement and History-Guided Restarting <a class="abstract_link" href="LLMSolve-2026-07-19.html#talk:767">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13672.html">Ekaterina Averkova</a><sup>1</sup>, <a class="person" href="person13673.html">Nikita Kulin</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ITMO University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Automatic prompt optimisation is a challenging black-box combinatorial problem central to deploying large language models (LLMs) at scale. Existing generation-based methods ignore concrete failure patterns of the current prompt, while iterative editing methods suffer from premature convergence. We introduce LEAP (Local–global Exploration for Automatic Prompting), a two-stage framework alternating between a convergence stage—targeted editing guided by verbal error feedback and multi-parent beam search—and an escape stage that activates upon stagnation and leverages the full optimisation history to generate structurally diverse candidates. On four NLP benchmarks against six baselines, LEAP achieves a mean composite score of 0.485, outperforming the nearest competitor by 7.1%.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:768">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Controlling Agent Behavior with Policy-as-Code via Autoformalization <a class="abstract_link" href="LLMSolve-2026-07-19.html#talk:768">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13674.html">Adam Mondl</a><sup>1</sup>, <a class="person" href="person13675.html">Matthew Maisel</a><sup>1</sup>, <a class="person" href="person13676.html">John H. Brock</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Sondera</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Agent safety in high-stakes domains requires formal policy enforcement, but most existing approaches either rely on probabilistic guardrails (prompt-based steering; fine-tuned classifiers, e.g., Llama Guard \cite{inan2023llamaguard}) that offer no formal guarantees, or on hand-coded symbolic enforcement that does not scale to the breadth of real policy specifications.
+
+In this paper, we present an alternative approach: an autoformalization pipeline that translates natural language agent prompts, MCP tool descriptions, and policy documents into formally verified policies via an LLM-based generator-critic loop. These policies run in a deterministic policy harness external to the agent, which evaluates agent actions against these formal policies to decide whether those actions should be permitted. We use Cedar as our policy language, which is formally analyzable by SMT solvers \cite{cutler2024cedar}. This work draws inspiration from the LLM Modulo framework \cite{kambhampati2024llmscantplanhelp} and neurosymbolic AI.
+
+On the MedAgentBench benchmark, our autoformalized policies cover substantially more of the natural language policy than the hand-coded symbolic enforcement in prior work.
+
+We have open sourced the external harness with support for several agent scaffolds, alongside custom Cedar language bindings in Python.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1309">
                     <div class="heading">
@@ -340,6 +421,20 @@ Language Models (LLMs) and constraint programming. We compare the performance of
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:769">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Improving Constraint Models with LLM Agents <a class="abstract_link" href="LLMSolve-2026-07-19.html#talk:769">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13677.html">Florentina Voboril</a><sup>1</sup>, <a class="person" href="person12335.html">Stefan Szeider</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We implement an agentic approach that improves constraint models. It receives a CPMpy model and three small training instances as input, autonomously creates and tests alternative CPMpy models, and outputs the variant that it considers best-performing within about fifteen minutes. We then evaluate the proposed model on three larger test instances. Our experiments on nine combinatorial optimization problems show that the generated models outperform the original models on 20 out of 27 test instances (74\%), demonstrating that autonomous agentic methods can support the improvement of constraint models.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:770">
                             <td class="time"></td>
                             <td>
@@ -353,6 +448,21 @@ Language Models (LLMs) and constraint programming. We compare the performance of
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Recent works in Constraint Programming (CP) have investigated how Large Language Models (LLMs) can assist in model formulation from natural language problem descriptions, lowering the barrier to modelling. However, even when a model is correct, solver performance remains highly sensitive to modelling choices. Formulating high-performance models that effectively prune the search space requires expertise and manual trial-and-error, through techniques such as symmetry breaking, redundant constraints, or global constraint reformulation. In this work, we explore the potential of LLMs to assist in the model optimisation process. We present and evaluate an LLM-guided iterative framework that takes an initial constraint model and a natural language problem description as input, and produces a semantically equivalent but computationally faster model. Each step of the iterative process includes a model evaluation on a set of training instances to assess the candidate model before using it in the next generation, which additionally includes solver feedback (runtime/UNSAT/error etc.). We systematically evaluate our approach on a set of diverse combinatorial problems from CSPLib, and across various strategies that configure the context at each iteration.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:771">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">KissatEvolve: Controllable and Scalable Synthesis of SAT Heuristics with Densely Annotated Memory Bank <a class="abstract_link" href="LLMSolve-2026-07-19.html#talk:771">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13683.html">Meru Gopalan</a><sup>1</sup>, <a class="person" href="person13684.html">Jialin Lu</a><sup>2</sup>, <a class="person" href="person13685.html">Jialin Song</a><sup>2</sup>, <a class="person" href="person13686.html">Shimin Zhang</a><sup>1</sup>, <a class="person" href="person13687.html">Hieu Nguyen</a><sup>1</sup>, <a class="person" href="person13688.html">Wuyang Chen</a><sup>2</sup>, <a class="person" href="person13689.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Simon Fraser University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present KissatEvolve, an LLM-based framework for fully automatic, scalable, and controllable synthesis of SAT solver heuristics. Modern CDCL solvers such as Kissat employ a large ensemble of tightly coupled heuristic components whose joint configuration space is prohibitively large to search exhaustively. Existing LLM-based approaches explore only a narrow slice of this space, confining search to a single solver or a small set of heuristic functions, and optimize exclusively for aggregate PAR-2 without regard for targeted problem subcategories. KissatEvolve is the first framework to address both limitations simultaneously. For scalability, KissatEvolve combines a self-adaptive agentic workflow with a fully parallelized generation-and-evaluation pipeline that spans multiple solver families and heuristic functions concurrently, substantially reducing the wall-clock time required to cover the design space while minimizing human intervention. For controllability, KissatEvolve maintains a densely annotated memory bank that records both high- and low-performing heuristic variants, each enriched with solver analyses, search statistics, and code-diff traces. Selectively retrieved examples condition subsequent LLM generations toward targeting user-specified subcategories (SAT, UNSAT, easy, or hard problems), enabling fine-grained steering of solver behavior. Using KissatEvolve, we conduct a comprehensive study of 17 heuristic functions across 6 SAT solvers, finding improved heuristics for 3 solvers that reduce PAR-2 by 12.80% on average over their respective baselines. We also find that controlled retrieval reduces PAR-2 by up to 43.76% relative to uncontrolled retrieval.</p>
                                 </div>
                             </td>
                         </tr>

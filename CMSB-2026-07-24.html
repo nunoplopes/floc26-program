@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -354,6 +354,23 @@ In this work, we present a unified SDE framework that combines deterministic dri
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Reaction Systems (RSs) provide a successful qualitative modelling framework inspired by biochemical reactions. In a RS a computation starts from a initial state given by a set of entities
 and each following computation state is determined by the application of all the enabled reactions to the previous state. RSs can also model the interaction with the environment. Each entity can either be present or absent in a computation state, as a crisp boolean condition, and also reactions are (or not) enabled under crisp conditions.  This framework has proved to have many applications for modelling biomedical and computer science systems, but it can become restrictive when laboratory measurements exhibit graded concentrations, partial inhibition, and noise. We thus introduce Mamdani-driven Fuzzy Reaction Systems (M-FRS), as a graded conservative extension of RSs. Each reaction in the style of RSs is now interpreted as a Mamdani rule, and we formalise a single four-stage fuzzy inference cycle (fuzzification, rule evaluation, aggregation, optional defuzzification) which defines a deterministic discrete-time graded update operator. Fuzzy inference yields a discrete dynamical system. As a first case study, we develop a compact M-FRS model of the hypothalamic--pituitary--thyroid axis.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:586">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Incremental Kasa: Static Analysis of Kappa Models at Edit Time (tool paper) <a class="abstract_link" href="CMSB-2026-07-24.html#talk:586">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11664.html">Jérôme FERET</a><sup>1</sup>, <a class="person" href="person11665.html">Rebecca GHIDINI</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> DI ENS, École Normale Supérieure, PSL, CNRS, INRIA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Kappa offers a modeling environment to describe, simulate, and reason about rule-based models. 
+It has been used to model protein-protein interaction networks, especially models of signaling pathways. Kappa comes with a static analyzer, KaSa, to assist the modeler and assess the consistency of the models. Although efficient, KaSa is sometimes too slow to reason while modifying large models or when editing models within the user interface. Here, we propose an incremental version that updates the result of the current analysis at each model modification. 
+
+Our approach relies on the use of an abstraction of the relationships between the rules of the model and the properties that they induce. Partial evaluation is used when some rules are removed, to exclude the results that derive from the removed rules. Adding rules is done classically by resuming the iterations of the analysis algorithm. This incremental analysis is available on the command-line or as an electron app, and it is evaluated on examples from the literature.</p>
                                 </div>
                             </td>
                         </tr>

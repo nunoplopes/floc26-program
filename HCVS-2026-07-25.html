@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -132,8 +132,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23302.html">Fred Mesnard</a>
                         </div>
                     </div>
@@ -144,6 +143,35 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1236">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Invited Talk: Infinite State Model Checking without Interpolation <a class="abstract_link" href="HCVS-2026-07-25.html#talk:1236">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12270.html">Florian Frohn</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University, Germany</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1237">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">SV-LIB 1.0: A Standard Exchange Format for Software-Verification Tasks <a class="abstract_link" href="HCVS-2026-07-25.html#talk:1237">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11080.html">Dirk Beyer</a><sup>1</sup>, <a class="person" href="person11081.html">Gidon Ernst</a><sup>1</sup>, <a class="person" href="person11082.html">Martin Jonáš</a><sup>1</sup>, <a class="person" href="person11083.html">Marian Lingsch-Rosenfeld</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In the past two decades, significant research and development effort went into the development of verification tools for individual languages, such as C, C++, and Java. Many of the used verification approaches are in fact language-agnostic and it would be beneficial for the technology transfer to allow for using the implementations also for other programming and modeling languages. To address the problem, we propose SV-LIB, an exchange format and intermediate language for software-verification tasks, including programs, specifications, and verification witnesses. SV-LIB is based on well-known concepts from imperative programming languages and uses SMT-LIB to represent expressions and sorts used in the program. This makes it easy to parse and to build into existing infrastructure, since many verification tools are based on SMT solvers already. Furthermore, SV-LIB defines a witness format for both correct and incorrect SV-LIB programs, together with means for specifying witness-validation tasks. This makes it possible both to implement independent witness validators and to reuse some verifiers also as validators for witnesses. This paper presents version 1.0 of the SV-LIB format, including its design goals, the syntax, and informal semantics. Formal semantics and further extensions to concurrency are planned for future versions.
+
+This paper has already been published as a technical report on arXiv (https://arxiv.org/pdf/2511.21509) so we aim for a presentation-only paper.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1210">
                     <div class="heading">
@@ -168,8 +196,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23302.html">Fred Mesnard</a>
                         </div>
                     </div>
@@ -181,6 +208,22 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:687">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Why3-Elpi: Logic Programming Transformations for Why3 <a class="abstract_link" href="HCVS-2026-07-25.html#talk:687">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12275.html">Matteo Manighetti</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IRIF, Université Paris Cité</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Why3 relies on logical task transformations both for the translation of verification conditions to-
+wards external provers and for interactive proof. The kind of metalogical programming involved in
+these transformations is naturally expressed in higher-order logic programming languages such as λProlog. This paper presents Why3-Elpi, a tool that exposes a typed fragment of the Why3 API to λProlog using Elpi and lets users implement Why3 transformations in λProlog. This provides an environment where non-trivial transformations can be easily prototyped and experimented with, using a declarative and concise style.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:688">
                             <td class="time"></td>
                             <td>
@@ -222,8 +265,7 @@ For the latter problem, a panic handler, which is a function that is called when
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23826.html">Zafer Esen</a>
                         </div>
                     </div>
@@ -243,6 +285,30 @@ For the latter problem, a panic handler, which is a function that is called when
 <a class="person" href="person11534.html">Natasha Sharygina</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Lugano, Switzerland</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1239">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Extended Abstract: Bit-Precise CHC Satisfiability Using Theory-Modular Reasoning <a class="abstract_link" href="HCVS-2026-07-25.html#talk:1239">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12280.html">Omer Rappoport</a><sup>1</sup>, <a class="person" href="person12281.html">Orna Grumberg</a><sup>1</sup>, <a class="person" href="person12282.html">Yakir Vizel</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technion - Israel Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Program safety verification with bit-precise semantics can naturally be encoded as Constrained Horn Clauses (CHCs) modulo the theory of fixed-size bit-vectors (T_B).
+Alternatively, bit-precise semantics can be encoded as CHCs modulo the theory of Integer Arithmetic (T_I) by modeling modular and bit-wise behavior using arithmetic constraints.
+However, neither approach consistently yields an efficient verification procedure:
+reasoning directly in T_B often limits the generalization capabilities of CHC solvers, whereas bit-precise T_I encodings produce complex arithmetic constraints that are expensive to process, especially in the presence of bit-wise operations.
+
+We present Mosaic, a theory-modular framework for deciding satisfiability of CHCs modulo T_B through modular reasoning in T_B and T_I.
+Given a CHC set modulo T_B, Mosaic partitions the input into a bit-vector fragment and an integer fragment, and exchanges information between them through sound theory transformations.
+This avoids committing the entire CHC set to a single theory, allowing different CHCs to be handled in different background theories.
+
+We implemented a prototype of Mosaic using Z3 and Spacer and evaluated it on bit-manipulating benchmarks.
+Our evaluation shows that Mosaic significantly outperforms both pure bit-vector and fully arithmetic CHC-solving approaches, often scaling to substantially larger bit-widths.</p>
                                 </div>
                             </td>
                         </tr>
@@ -271,8 +337,7 @@ For the latter problem, a panic handler, which is a function that is called when
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23826.html">Zafer Esen</a>
                         </div>
                     </div>
@@ -284,6 +349,20 @@ For the latter problem, a panic handler, which is a function that is called when
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1240">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Presentation Only Paper: Bit-Vector CHC Solving for Binary Analysis and Binary Analysis for Bit-Vector CHC Solving <a class="abstract_link" href="HCVS-2026-07-25.html#talk:1240">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12283.html">Aaron Bembenek</a><sup>1</sup>, <a class="person" href="person12284.html">Toby Murray</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Melbourne</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> For high-assurance software, source-level reasoning is insufficient: we need binary-level guarantees. Despite constrained Horn clause (CHC) solving being one of the most popular forms of automated verification, prior work has not evaluated the viability of CHC solving for binary analysis. To fill this gap, we assemble a pipeline that encodes binary analysis problems as CHCs in the SMT logic of quantifier-free bit vectors, and show that off-the-shelf CHC solvers achieve reasonable success on binaries compiled from 983 C invariant inference benchmarks: a portfolio solves 59.5% and 66.0% of the problems derived from the unoptimized and optimized binaries, respectively—roughly equal to the success rate of a leading C verifier on the source code (60.1%). Moreover, we show that binary analysis provides a valuable source of bit-vector CHC benchmarks (which are in short supply): binary-derived problems differ from existing benchmarks both structurally and in solver success rates and rankings. Augmenting CHC solving competitions with binary-derived benchmarks will encourage solver developers to improve bit-vector reasoning, in turn making CHC solving a more effective tool for binary analysis.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1241">
                             <td class="time"></td>
                             <td>

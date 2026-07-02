@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -140,6 +140,19 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:293">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">ASP in the Loop: From Structured Prompting to Agentic Logic Programming <a class="abstract_link" href="ICLP-2026-07-21.html#talk:293">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12336.html">Mario Alviano</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria, Italy</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:767">
                     <div class="heading">
@@ -187,6 +200,30 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:295">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Logic-Guided Data Extraction with Answer Set Programming and Large Language Models <a class="abstract_link" href="ICLP-2026-07-21.html#talk:295">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11159.html">Mario Alviano</a><sup>1</sup>, <a class="person" href="person12042.html">Lorenzo Grillo</a><sup>1</sup>, <a class="person" href="person12043.html">Nicola Leone</a><sup>1</sup>, <a class="person" href="person12044.html">Fabrizio Lo Scudo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models (LLMs) have recently been adopted for semantic data extraction and parsing from unstructured text, enabling the generation of candidate relational facts from natural language. 
+However, while LLMs are effective at extraction, they are not reliable solvers of complex combinatorial reasoning tasks or global consistency constraints, and logic-based extraction pipelines often require issuing multiple queries while coping with incomplete or spurious outputs. 
+In this paper, we propose a logic-guided data extraction framework that combines LLM-based extraction with Answer Set Programming (ASP), delegating fact extraction to the LLM and all validation, inference, and control to ASP, which plays an active role in structuring and guiding the extraction process. 
+In contrast to baseline pipelines that invoke the LLM independently for all target predicates, our approach uses ASP reasoning to determine which predicates are logically admissible at each stage, thereby guiding the selection of extraction queries. 
+The framework interleaves LLM calls with ASP reasoning and derivation, allowing logically implied facts to be inferred without additional extraction and enabling early consistency checks. 
+We formalize the proposed pipeline and show that, under mild assumptions on the extraction oracle, it is equivalent to the baseline approach in terms of the final extracted facts, while reducing the
+number of LLM calls. 
+We further introduce a caching mechanism for logic-based control queries, exploiting monotonicity properties of conjunctive queries over incrementally constructed fact sets to reduce the number of solver invocations. 
+An experimental evaluation on benchmarks derived from standard Answer Set Programming domains shows that the proposed framework substantially reduces the number of LLM calls and, in practice, improves extraction quality by
+mitigating spurious outputs. 
+These results demonstrate the effectiveness of using non-monotonic logic programming as a control mechanism for semantic data extraction from text.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:296">
                             <td class="time"></td>
                             <td>
@@ -199,6 +236,31 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neurosymbolic AI combines neural networks with symbolic programs to create robust and explainable predictions. One such framework is NeurASP, which trains a neural network to predict concepts and reasons over them using rules written in answer set programming (ASP) to solve downstream tasks. Crucially, labels are only provided for the downstream prediction produced by the symbolic rules, not for the latent concepts themselves. Backpropagation through the non-differentiable ASP component requires expensive probability and gradient calculations, which has hindered scalability to more sophisticated tasks. In this paper, we address the current limitations of NeurASP by improving its computational performance through vectorization, batch processing and caching of intermediate computations during training. We compare computation speeds between the original and our new implementation of NeurASP and report speedups of multiple orders of magnitude for larger tasks. To this end, we propose a new dataset of difficult tasks involving playing cards, which we use to test the capabilities of NeurASP's enhanced learning function.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:297">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">From Reasoning to Code: GRPO Optimization for Underrepresented Languages <a class="abstract_link" href="ICLP-2026-07-21.html#talk:297">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12346.html">Federico Pennino</a><sup>1</sup>, <a class="person" href="person12347.html">Bianca Raimondi</a><sup>1</sup>, <a class="person" href="person12348.html">Massimo Rondelli</a><sup>1</sup>, <a class="person" href="person12349.html">Andrea Gurioli</a><sup>1</sup>, <a class="person" href="person12350.html">Maurizio Gabbrielli</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Università di Bologna</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Generating accurate and executable code using Large Language Models (LLMs) remains a sig-
+nificant challenge for underrepresented programming languages, such as Prolog and Lisp, due to
+the scarcity of public training data compared to high-resource languages like Python. This pa-
+per introduces a generalizable Reinforcement Learning (RL) approach that combines small-scale
+versions of the Qwen2.5-Coder model with Group Relative Policy Optimization (GRPO) to en-
+able effective code generation through reasoning. To address the limitations of sparse datasets,
+we integrate execution-driven feedback directly into the RL loop, utilizing a reward system that
+exploits both logical correctness and structural formatting. Experimental results on GSM8K
+dataset demonstrate significant improvements in reasoning quality and code accuracy across
+underrepresented languages. These findings underscore the potential of our approach to bene-
+fit a wide range of programming languages lacking extensive training resources by leveraging
+symbolic reasoning and interpreter-based feedback.</p>
                                 </div>
                             </td>
                         </tr>
@@ -249,6 +311,21 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:298">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Equilibrium Semantics and Strong Equivalence for Higher-Order Logic Programs <a class="abstract_link" href="ICLP-2026-07-21.html#talk:298">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12351.html">Angelos Charalambidis</a><sup>1</sup>, <a class="person" href="person12352.html">Giannos Chatziagapis</a><sup>2</sup>, <a class="person" href="person12353.html">Babis Kostopoulos</a><sup>1</sup>, <a class="person" href="person12354.html">Panos Rondogiannis</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Harokopio University of Athens</div>
+                                <div class="affiliation_item"><sup>2</sup> National and Kapodistrian University of Athens</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> One of the most significant achievements of equilibrium logic was the characterization of strong equivalence, a property crucial for program transformation and optimization in Answer Set Programming (ASP). While ASP has recently been extended to a higher-order setting to enhance its expressive power, the lack of a comparable purely logical foundation has made verifying strong equivalence for higher-order programs or even proving the correctness of simple program transformations, a difficult challenge. This paper addresses this gap by developing a logical semantics for higher-order ASP by extending the equilibrium logic framework. Within this extended framework we demonstrate that every stratified higher-order logic program possesses a unique equilibrium model. Moreover, we establish  definability results demonstrating that the syntax of our higher-order language is sufficiently expressive to capture its semantic domains. Finally, and most importantly, we generalize the classical theorem of strong equivalence to the higher-order setting: we prove that two programs are strongly equivalent if and only if they share the same higher-order models.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:311">
                             <td class="time"></td>
                             <td>
@@ -301,6 +378,39 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:300">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">GLP: A Grassroots, Multiagent, Concurrent, Logic Programming Language <a class="abstract_link" href="ICLP-2026-07-21.html#talk:300">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12363.html">Ehud Shapiro</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> London School of Economics</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Grassroots platforms are distributed systems with multiple instances that can (1) operate independently of each other and of any global resource other than the network, and (2) coalesce into ever larger instances, possibly resulting in a single global instance.
+
+Here, we present Grassroots Logic Programs (GLP), a multiagent concurrent logic programming language designed for the implementation of grassroots platforms.  
+We introduce the language  incrementally: We recall the standard operational semantics of logic programs; introduce the operational semantics of Concurrent (single-agent) GLP as a restriction of that of LP; recall the notion of multiagent transition systems and atomic transactions; introduce the operational semantics of multiagent GLP via a multiagent transition system specified via atomic transactions; and prove multiagent GLP to be grassroots. The accompanying programming example is the grassroots social graph---the fundamental grassroots platform on which all others are based. 
+
+With the mathematical foundations presented here: a workstation-based implementation of Concurrent GLP was developed by AI, based on the operational semantics of Concurrent GLP;  a distributed peer-to-peer smartphone-based implementation of multiagent GLP is being developed by AI, based on the operational semantics of multiagent GLP; a moded type system for GLP was implemented by AI, to facilitate the specification of GLP programs by human and AI designers, for their programming by AI; all reported in detail in companion papers.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:301">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Encoding Event-B Proof Rules in Prolog: An Interactive Sequent Prover for ProB <a class="abstract_link" href="ICLP-2026-07-21.html#talk:301">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12364.html">Katharina Engels</a><sup>1</sup>, <a class="person" href="person12365.html">Jan Gruteser</a><sup>1</sup>, <a class="person" href="person12366.html">Michael Leuschel</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Düsseldorf</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Event-B is a formal method rooted in predicate logic and set theory. We encoded its over 600 proof rules in Prolog enabling a systematic, comprehensible proof analysis and construction. By integrating the proof rules into the Prolog-based validation tool ProB, we can bring the proof rules to life and obtain an interactive proof system with proof tree visualisation. This has advantages in teaching, enabling students to precisely control the application of proof rules. Our tool can import proof obligations from the Rodin platform and provides multiple exports: a trace file for proof replay in ProB, an interactive HTML document for tool-independent exploration of the proof tree, and an export back to Rodin, allowing the ProB prover to be used as second chain. Compared to the previous implementation of the proof rules in Java, the encoding in Prolog is much more compact, maintainable and extensible. In future we also hope to obtain fast automatic provers; a preliminary iterative deepening prover with simple heuristics is already available and useful for finding short proofs.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:302">
                             <td class="time"></td>
                             <td>
@@ -363,6 +473,32 @@ We assessed the perceived usefulness of seven types of automated feedback, inclu
 Our results show that 74% of students agreed the feedback helped increase their grade, and the system achieved a System Usability Scale score of 78.5 (grade B+). Among the feedback types, automatic testing was ranked as the most useful, followed by open choice point warnings and predicate scoring, with statistically significant differences.
 We found no significant effect of students' interest level, engagement with optional exercises, or use of large language models on their perception of feedback usefulness.
 We also explore student preferences for future feedback features, finding a significant preference for showing the differences between generated and expected test outputs.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:305">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">chess db: A framework for working with large chess game datasets <a class="abstract_link" href="ICLP-2026-07-21.html#talk:305">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12381.html">Nicos Angelopoulos</a><sup>1</sup>, <a class="person" href="person12382.html">Jan Wielemaker</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Imperial College London</div>
+                                <div class="affiliation_item"><sup>2</sup> SWI-Prolog Solutions</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Chess is a two player strategic game that is embedded in classical AI culture as it was once the
+frontier for intelligent behaviour. There was the silent assumption that the advent of computer
+engines that play better than the best humans will extinguish interest in the game. However, the
+opposite has come to pass, with a growing following for the game. A lot of the computational
+resources are now centered around training of players, where the engine output is just one aspect.
+Access to past games is also an essential part, both in knowing what games a specific player has
+played previously, and also which continuations at a certain position have led to victory more
+often for each of the two colour players. We present chess db a suit of logic programming tools
+that can effectively manipulate games both in memory and via creating back end databases. In
+particular, we provide versatile code that creates databases from PGN game files and explore
+the suitability of open source key-value databases for storing position tables that provide near-
+instant access to information pertaining to substantially large number of games.</p>
                                 </div>
                             </td>
                         </tr>

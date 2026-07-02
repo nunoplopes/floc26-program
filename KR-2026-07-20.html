@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -193,8 +193,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24047.html">Gabriele Kern-Isberner</a>
                         </div>
                     </div>
@@ -277,8 +276,7 @@ based on their intended semantics, thereby laying the groundwork for novel appli
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23596.html">Sebastian Rudolph</a>
                         </div>
                     </div>
@@ -290,6 +288,23 @@ based on their intended semantics, thereby laying the groundwork for novel appli
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:401">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Distributed Framework for Compiling and Reasoning with d-DNNF <a class="abstract_link" href="KR-2026-07-20.html#talk:401">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12898.html">Zhenghang Xu</a><sup>1</sup>, <a class="person" href="person12899.html">Minghao Yin</a><sup>1</sup>, <a class="person" href="person12900.html">Jianan Wang</a><sup>1</sup>, <a class="person" href="person12901.html">Jean Marie Lagniez</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Northeast Normal University</div>
+                                <div class="affiliation_item"><sup>2</sup> CRIL</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Knowledge Compilation (KC) is a powerful paradigm that enables efficient reasoning by transforming propositional formulas into tractable target languages, such as Deterministic, Decomposable Negation Normal Form (d-DNNF). However, as real-world problem instances grow in complexity, the offline compilation phase becomes a significant computational bottleneck, often exceeding the memory and temporal limits of single-node systems. While distributed computing has been successfully applied to model counting (#SAT), extending these techniques to knowledge compilation remains a challenge due to the difficulty of sharing partial circuit fragments across distributed nodes. 
+
+In this paper, we propose dkc, the first distributed knowledge compiler designed for large-scale Decision-DNNF generation.Leveraging a Cube-and-Conquer strategy, dkc effectively partitions the search space into independent subproblems, mitigating the communication overhead typically associated with work-stealing architectures in circuit-based tasks. Recognizing that the utility of compilation lies in subsequent querying, we further introduce dreasoner, a distributed reasoning engine. dreasoner is capable of performing core inference tasks (including model counting, direct access, and uniform sampling) across a distributed d-DNNF structure, even under variable conditioning. Our experimental evaluation on benchmarks demonstrates that our distributed architecture scales effectively, enabling the compilation and querying of complex formulas that remain beyond the reach of state-of-the-art sequential compilers.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:402">
                             <td class="time"></td>
                             <td>
@@ -320,6 +335,21 @@ based on their intended semantics, thereby laying the groundwork for novel appli
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:404">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Knowledge Compilation for Quantification in Alternating Automata <a class="abstract_link" href="KR-2026-07-20.html#talk:404">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12910.html">Niklas Metzger</a><sup>1</sup>, <a class="person" href="person12911.html">Alfredo Cantarella</a><sup>1</sup>, <a class="person" href="person11315.html">Bernd Finkbeiner</a><sup>1</sup>, <a class="person" href="person11119.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person11504.html">S. Akshay</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
+                                <div class="affiliation_item"><sup>2</sup> Indian Institute of Technology Bombay</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a knowledge compilation approach for existential and universal quantification in alternating automata. Knowledge compilation transforms formulas into normal forms with special properties that enable efficient answering of questions of interest.  For Boolean formulas, several normal forms that have proven effective for existential/universal quantification, and even for functional synthesis, have been studied in the literature. For infinite word automata, quantification is a fundamental operation in verification tasks such as QPTL satisfiability checking and HyperLTL model checking. Existing algorithms rely on nondeterministic infinite word automata, where existential projection can be efficiently performed state-wise, but universal projection requires complementation. Complementing nondeterministic infinite word automata, however, is expensive in practice, making existing algorithms infeasible for automata in practice. Towards addressing this problem, we propose novel knowledge compilation techniques for existential and universal quantification on alternating safety automata. Our approach compiles alternating automata into normal forms where projection can be applied uniformly and efficiently to each state's transition function. Using the compilations for each type of quantification, we can effectively eliminate a sequence of alternating quantifiers in formulas without complementation. Our BDD-based prototype demonstrates the practical effectiveness of our algorithms on a suite of QPTL satisfiability benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:851">
@@ -330,8 +360,7 @@ based on their intended semantics, thereby laying the groundwork for novel appli
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23363.html">Eduardo Fermé</a>
                         </div>
                     </div>
@@ -363,6 +392,46 @@ mentioned extensions are contained in certain closure systems. Our
 algorithms enumerate these closed sets and  filter the searched
 extensions. Experimental results show that our approach outperforms 
 the existing approaches for a large number of the test cases.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:406">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Tenability and Weak Semantics: Modeling Non-uniform Defense <a class="abstract_link" href="KR-2026-07-20.html#talk:406">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12917.html">Uri Andrews</a><sup>1</sup>, <a class="person" href="person12918.html">Luca San Mauro</a><sup>2</sup>, <a class="person" href="person12919.html">John Spoerl</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Wisconsin -- Madison</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Bari</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In Dung-style abstract argumentation, various semantics capture notions of acceptability of arguments. The admissibility semantics capture the notion that an argument can be consistently defended from any potential counterargument.
+Weak semantics often relax the demands of admissibility by restricting which counterarguments must be taken seriously (e.g., discounting self-defeating or otherwise incoherent attacks). Many prominent proposals for weak semantics remain extension-based in a stronger sense. While these semantics discount attacks from arguments which are considered unreasonable, they still require a uniform defense against all reasonable arguments, even if they are collectively incoherent.
+This uniformity can be too demanding when defensibility is inherently strategic, and thus the appropriate reply depends on the opponent’s line of attack.
+
+
+We introduce tenability, a family of dialogue-based semantics that formalize when a designated argument (or a set of arguments) can be maintained in debate by a proponent against any coherent (conflict-free) attack which the opponent may present. The approach is motivated by three natural benchmark patterns—self-defeating attack, floating assignment, and disjunctive reinstatement—on which tenability behaves differently from all weak semantics previously considered in the literature.
+We define three variants--static tenability, tenability, and strong tenability--via monotone commitment games over finite conflict-free moves, differing in the obligations imposed on the disputants. We establish the relative strength of these notions, prove implications and separations with previously studied weak semantics, and % (including admissibility)
+ we analyze computational complexity on finite frameworks: deciding static tenability is $\Pi^P_2$-complete, while deciding tenability and strong tenability is PSPACE-complete.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:407">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Belief Function Propagation in Quantitative Bipolar Argumentation Frameworks <a class="abstract_link" href="KR-2026-07-20.html#talk:407">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12920.html">Jordan Thieyre</a><sup>1</sup>, <a class="person" href="person12921.html">Aurélie Beynier</a><sup>1</sup>, <a class="person" href="person12922.html">Sébastien Destercke</a><sup>2</sup>, <a class="person" href="person12923.html">Nicolas Maudet</a><sup>1</sup>, <a class="person" href="person12924.html">Srdjan Vesic</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LIP6, CNRS - Sorbonne Université</div>
+                                <div class="affiliation_item"><sup>2</sup> Université de technologie de Compiègne, CNRS, Heudiasyc</div>
+                                <div class="affiliation_item"><sup>3</sup> CRIL, CNRS - Univ. Artois</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Argumentation theory provides a formal framework to represent and analyse debates where participants propose arguments that attack or support others and assign scores expressing their opinions. Quantitative Bipolar Argumentation Frameworks model such debates by assigning initial weights to arguments and using semantics to compute final scores that reflect attackers’ and supporters’ influence. One of the major challenge is setting appropriate initial weights when debaters’ opinions are uncertain.
+    
+In this paper, we introduce a formal approach to uncertainty propagation in Quantitative Bipolar argumentation frameworks by representing initial weights as belief mass functions over a discretized unit interval. We introduce two new propagation models: (i) an exact model that computes final mass functions by combining focal elements of initial weights with parent arguments via bipolar gradual semantics; (ii) a practical approximation that projects the exact mass onto a user-specified partition and reconstructs masses using the Moebius inverse. We prove mathematical properties of the projection and show that the baseline, while computationally efficient, can be overconfident by failing to preserve expectations. Our approximation reduces the exponential complexity of the exact model while satisfying Epistemic Cautiousness, yielding acceptability intervals that contain true theoretical expectations and balancing tractability with theoretical soundness.</p>
                                 </div>
                             </td>
                         </tr>
@@ -438,8 +507,7 @@ the existing approaches for a large number of the test cases.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24246.html">Yves Lesperance</a>
                         </div>
                     </div>
@@ -451,6 +519,57 @@ the existing approaches for a large number of the test cases.</p>
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1311">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">I Would If I Could: Reasoning about Dynamics of Actions in Multi-Agent Systems <a class="abstract_link" href="KR-2026-07-20.html#talk:1311">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12930.html">Rustam Galimullin</a><sup>1</sup>, <a class="person" href="person12931.html">Hermine Grosinger</a><sup>2</sup>, <a class="person" href="person12932.html">Munyque Mittelmann</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Bergen</div>
+                                <div class="affiliation_item"><sup>2</sup> Örebro University</div>
+                                <div class="affiliation_item"><sup>3</sup> LIPN, CNRS</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Autonomous agents acting in realistic Multi-Agent Systems (MAS) should be able to adapt during their execution.  Standard strategic logics, such as Alternating-time Temporal Logic (ATL), model agents' state or history-dependent behaviour. However, the dynamic treatment of agents' available actions and their knowledge of required actions is still rarely addressed. In this paper, we introduce ATL with Dynamic Actions (ATL-D), which models the process of granting and revoking actions, and its extension ATEL-D, which captures how such updates affect agents’ knowledge.  Beyond the conceptual contribution, we provide several technical results: we analyse the expressivity of our logic in relation to ATL, study its relation to normative systems, and provide complexity results for relevant computational problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1312">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Specifying Agent Strategy Spaces via LTL Synthesis <a class="abstract_link" href="KR-2026-07-20.html#talk:1312">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12933.html">Benjamin Aminof</a><sup>1</sup>, <a class="person" href="person11290.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person12935.html">Aniello Murano</a><sup>3</sup>, <a class="person" href="person12936.html">Sasha Rubin</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University of Vienna, Austria</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford, UK</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Naples “Federico II’, Italy</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Sydney, Australia</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study an Agentic AI setting where we have only partial control over the strategic actions of a set of autonomous agents with independent sequential decision-making capabilities, building on LTL synthesis originally studied in formal methods. 
+    Specifically, we assign to each agent individually a task expressed in LTL, and assumptions on the strategies employed by its peers and that the agent can exploit while synthesizing a strategy to realize its task. 
+    While we can solve the synthesis problem under assumptions for each such agent we are not only interested in (1) synthesizing strategies for individual agents.
+    Indeed, assumptions in turn are recursively defined through these strategy spaces.  Importantly, we do not assume the ability to access or analyze an agent's internal strategy, as we make no assumptions about the nature of the decision makers, which may be, for example, ML-based. Instead, we focus on (2) characterizing the set of traces that are generated by strategies that realize the specification assigned to each agent. Using this characterization, we are able to (3) verify that the whole system, when in execution, satisfies a global objective, regardless of the strategies chosen by the agents from their allowed spaces. Moreover, by observing the evolution of the execution trace, we can (4) identify whether an agent makes a move that violates its specification and assign precise responsibility for the violation. Technically, we present automata-theoretic techniques to solve these problems, and show that each of them is 2EXPTIME-complete, matching the complexity of classical LTL synthesis.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1313">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Revisiting Ability-Based Bisimulation <a class="abstract_link" href="KR-2026-07-20.html#talk:1313">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12937.html">Carlos Areces</a><sup>1</sup>, <a class="person" href="person12938.html">Raul Fervari</a><sup>1</sup>, <a class="person" href="person12939.html">Antonio Mondejar</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Consejo Nacional de Investigaciones Científicas (CONICET) and Universidad Nacional de Córdoba, Argentina</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidad Nacional de Córdoba, Argentina</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Bisimulation is a crucial tool for investigating and understanding the semantic properties of labeled transition systems (LTSs) and relational models in general. In particular, it plays a fundamental role in characterizing model equivalence with respect to a given logical language and in guiding the construction of minimal models. In this paper, we study bisimulation in the context of a logic for expressing knowing-how assertions, which are related to an agent's ability to achieve a given goal. We begin by revisiting an existing notion of bisimulation for this logic and reformulating it using purely semantic clauses. We then establish adequacy results for this new notion.  Next, we provide a computational analysis of the problem of checking whether two models are bisimilar. In particular, we show that this problem is \PSPACE-complete. We also investigate two approaches to model minimization in this setting, each exhibiting different computational properties.  Along the way, our systematic study of bisimulation yields additional by-product results, w.r.t., for example, the complexity of the definability problem for this logic.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1314">
                             <td class="time"></td>
                             <td>
@@ -477,8 +596,7 @@ the existing approaches for a large number of the test cases.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23348.html">Patrick Koopmann</a>
                         </div>
                     </div>
@@ -597,8 +715,7 @@ Intelligence in January, 2026.</p>
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23112.html">Sebastien Konieczny</a>
                         </div>
                     </div>
@@ -653,6 +770,24 @@ For both modes, we provide postulate-based representation theorems and show how 
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this paper, we investigate the belief revision problem in epistemic planning, i.e., what will be the beliefs of all agents in a multi-agent system after one agent gains the belief in some fluent formula. We expand the standard logic of belief revision to the dynamic, multi-agent setting in order to be able to assess approaches to epistemic planning. Based on the standard representation in epistemic planning of agents’ beliefs via a single Kripke model, we develop a generalization of the classical AGM belief revision postulates as a formal evaluation instrument for dynamic epistemic reasoning frameworks in which the beliefs of all agents as the result of actions are computed. We provide an example of a simple, generalized ``full-meet'' multi-agent belief revision operator and prove that it satisfies all of the generalized AGM postulates. We moreover define a generalization of the standard postulates for *iterated* revision, present an event model based belief operator, and discuss the potential issues in defining an epistemic operator on Kripke models that can satisfy these properties as well.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1322">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Model Change for Description Logic Concepts <a class="abstract_link" href="KR-2026-07-20.html#talk:1322">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11938.html">Ana Ozaki</a><sup>1</sup>, <a class="person" href="person12963.html">Jandson S Ribeiro</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oslo</div>
+                                <div class="affiliation_item"><sup>2</sup> Cardiff University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider the problem of modifying a description logic concept in light of models 
+represented as pointed interpretations. 
+We call this setting \emph{model change}, and eviction, which consists of only removing models; incorporation of models in a single operation. 
+introduce a formal notion of revision and argue that it does not reduce to a simple combination of eviction (removing models) and reception (adding models),  contrary to intuition. We provide positive and negative results on the compatibility of eviction and reception for $\EL_\bot$ and \ALC description logic concepts and on the compatibility of revision for \ALC concepts.</p>
                                 </div>
                             </td>
                         </tr>
@@ -711,8 +846,7 @@ For both modes, we provide postulate-based representation theorems and show how 
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23239.html">Marie-Laure Mugnier</a>
                         </div>
                     </div>

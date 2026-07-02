@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -138,6 +138,19 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:800">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Equational theories for scoped effects <a class="abstract_link" href="MSFP-2026-07-18.html#talk:800">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11104.html">Cristina Matache</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Birmingham</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1355">
                     <div class="heading">
@@ -169,6 +182,24 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:801">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Effects with Variable Binding <a class="abstract_link" href="MSFP-2026-07-18.html#talk:801">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12788.html">Jaro Reinders</a><sup>1</sup>, <a class="person" href="person13827.html">Casper Bach</a><sup>2</sup>, <a class="person" href="person13828.html">Benedikt Ahrens</a><sup>1</sup>, <a class="person" href="person13829.html">Nicolas Wu</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Southern Denmark</div>
+                                <div class="affiliation_item"><sup>3</sup> Imperial College London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Algebraic effects let programmers declare the syntax of operations which can be used to write and compose effectful programs. Such programs can be run by applying effect handlers that give programmers control over when and how many times to call continuations of operations. Embedding algebraic effects and handlers in an existing language provides a lightweight and powerful approach to programming with effects. Such embeddings typically use host language functions to represent continuations of programs. While host language functions offer an ergonomic interface for programming with and handling effects, they also hinder programmers wishing to define custom optimizations for effectful programs. Specifically, optimizations that statically analyze and transform variable bindings cannot be defined, as that would require meta-programming facilities for host language functions.
+
+This paper presents a solution to this problem by embedding algebraic effects as intrinsically typed, De Bruijn-indexed syntax. Working in Agda, we demonstrate how this provides a safe-by-construction approach to programming with effects that is almost as ergonomic as the traditional embedding, but which additionally supports optimizations that inspect and transform variable binding.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:802">
                             <td class="time"></td>
                             <td>
@@ -320,6 +351,20 @@ produce an equivariant function.</p>
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:806">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Towards Minimal Axioms for Probabilistic Programming <a class="abstract_link" href="MSFP-2026-07-18.html#talk:806">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13838.html">Eigil Rischel</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Tallinn University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> I will present a recent result giving a very simple characterization of the Giry monad on (standard Borel) measurable spaces in terms of a (initial) universal property. In addition, I'll present some ongoing work on adapting this result to categories more suited for functional programming, such as elementary toposes.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:807">
                             <td class="time"></td>
                             <td>
@@ -367,6 +412,20 @@ produce an equivariant function.</p>
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:808">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Symmetric List Objects <a class="abstract_link" href="MSFP-2026-07-18.html#talk:808">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13842.html">Fiona Blackett</a><sup>1</sup>, <a class="person" href="person13843.html">Vikraman Choudhury</a><sup>1</sup>, <a class="person" href="person13844.html">Rin Liu</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Strathclyde</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Cons-lists are fundamental to functional programming, and are well-understood as initial algebras, and as a concrete construction of free monoids. In category theory, such list objects can be axiomatised internal to any monoidal category, with nil and cons maps, and a recursion mechanism. When strengthened to support parametrised recursion, they can be shown to give the free monoid construction. We study a small variant on parametrised list objects called parametrised symmetric list objects, in a symmetric monoidal category, where the two frontmost elements are allowed to be permuted. We show that this gives a construction of free commutative monoids, and develop some related theory.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:809">
                             <td class="time"></td>
                             <td>

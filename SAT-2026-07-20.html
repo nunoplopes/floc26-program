@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -155,6 +155,20 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:523">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Backtrackable Inprocessing <a class="abstract_link" href="SAT-2026-07-20.html#talk:523">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14117.html">Alexander Nadel</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technion, NVIDIA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce \emph{Backtrackable Inprocessing} (BI), a framework that enables applying inprocessing under the current trail at any decision level, at any point during incremental SAT solving. Our approach lifts the long-standing restriction that inprocessing must be performed only at the global decision level, thereby substantially increasing its potential effectiveness. We focus on three highly efficient core techniques: subsumption, self-subsuming resolution, and Bounded Variable Elimination (BVE). We show how to ensure sound backtracking in the presence of inprocessing, and demonstrate that applying BI for incremental preprocessing after propagating assumptions yields significant performance improvements on Bounded Model Checking (BMC) benchmarks from the Hardware Model Checking Competition 2017. Implemented in the Island SAT solver (IntelSAT's fork), BI enables solving ~1.5X as many difficult bounds as the baseline global-level incremental preprocessor.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:524">
                             <td class="time"></td>
                             <td>
@@ -315,6 +329,41 @@ We show that both variants can provide strictly smaller refutations of unsatisfi
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:530">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">WhyUnsat: a practical explanation tool <a class="abstract_link" href="SAT-2026-07-20.html#talk:530">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14365.html">Robert Nieuwenhuis</a><sup>1</sup>, <a class="person" href="person14366.html">Albert Oliveras</a><sup>1</sup>, <a class="person" href="person14367.html">Enric Rodríguez Carbonell</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University Catalonia (BarcelonaTech)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hard industrial planning, timetabling or scheduling instances for SAT typically have many high-level constraints, each generating a possibly large number of clauses.  When a given instance is reported unsatisfiable by the SAT solver, the user normally needs an \emph{explanation} why: a (hopefully small) subset of the constraints causing it.  Our industrial applications require \emph{fast} explanations, preferrably faster than the orginal SAT run. For this, we leverage the original solver's work through its unsatisfiability proof.
+
+Previous such group-oriented MUS tools had quite different intended uses and were either based on substantial internal modifications of (now somewhat outdated) SAT solvers or on assumption-based incremental solvers that frequently need very long runtimes on our instances, even for 1-minute original SAT runs.
+
+Here we introduce WhyUnsat, and explain why it is fast and robust.  In WhyUnsat one can always plug in the best current SAT solver and proof trimmer, without any modification, by simply indicating the path to their executables. WhyUnsat is also fast because it exploits, via MPI, the -progessively cheaper- shared-memory and distributed computing resources.  Another requirement we had is that the tool should be anytime and user-friendly; indeed, it quickly shows a human-readable presentation of (an over-approximation of) the explanation, which is then progressively reduced until minimality (unless interrupted by the user).
+
+Finally, and not less importantly, here we explain how and why the WhyUnsat approach is now also directly applicable, at no impementation cost, to IPASIR-UP-based constraint programming by Lazy Clause Generation (LCG) as well as to SAT Modulo Theories (SMT).</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:531">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Shapley-Shubik Attribution from Minimal Subsets <a class="abstract_link" href="SAT-2026-07-20.html#talk:531">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14368.html">Pablo Martínez-Naredo</a><sup>1</sup>, <a class="person" href="person13060.html">Raúl Mencía</a><sup>1</sup>, <a class="person" href="person13057.html">Joao Marques-Silva</a><sup>2</sup>, <a class="person" href="person13058.html">Carlos Mencía</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oviedo</div>
+                                <div class="affiliation_item"><sup>2</sup> ICREA & University of Lleida</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We address the problem of attributing responsibility to individual clauses for the unsatisfiability of a propositional formula. Recent work adopted the Shapley-Shubik power index, proposing a probabilistic approximation algorithm. However, despite polynomial, the required number of SAT solver calls becomes impractical when the input formula is not easy to solve. In such cases, it is often possible to enumerate a partial set of minimal unsatisfiable subsets (MUSes) and minimal correction subsets (MCSes). In this paper, we demonstrate that these subsets can be leveraged to efficiently bound and approximate the Shapley-Shubik index. We introduce a framework that exploits the structural information provided by the available sets to derive useful attribution explanations.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:532">
                             <td class="time"></td>
                             <td>
@@ -326,6 +375,30 @@ We show that both variants can provide strictly smaller refutations of unsatisfi
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Many communities within Combinatorial Optimization (CO) maintain benchmark sets in heterogeneous formats, often tied to specific competitions and solver technologies. Whilst this diversity is of practical and historical importance, it also creates barriers to use and compare methods from different communities. Inspired by the more unified software ecosystem from the ML community, we propose a programmatic abstraction for CO benchmark sets. A unified programmatic interface for downloading, reading and converting datasets across formats. This includes solver-oriented benchmarks such as XCSP3, MIPLib, PB, MaxSATEval, SAT and application-oriented benchmarks such as Nurse rostering, PSPLib (RCSP), and JSPlib. To enable cross-formalism conversions, we provide loaders that bring these dataset instances into CPMpy, a modelling library for constraint programming. CPMpy provides a transformation stack; an extensive set of rewrite operations such as constraint decomposition, linearization, and Boolean encodings, that allow transforming between different constraint formalisms. Based on this, we implement file writers to multiple solver-oriented formats, including FlatZinc, LP file format (ILP), OPB, and DIMACS (W)CNF ((Max)SAT). We demonstrate that this unified abstraction facilitates cross-community access to benchmarks and systematic comparisons of solvers across paradigms.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:533">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Sustainable Benchmarking Tool <a class="abstract_link" href="SAT-2026-07-20.html#talk:533">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14375.html">Ashlin Iser</a><sup>1</sup>, <a class="person" href="person14376.html">Marie Anastacio</a><sup>2</sup>, <a class="person" href="person14377.html">Théo Matricon</a><sup>3</sup>, <a class="person" href="person14378.html">Laurent Simon</a><sup>4</sup>, <a class="person" href="person14379.html">Holger H. Hoos</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> RWTH Aachen University</div>
+                                <div class="affiliation_item"><sup>3</sup> Rennes University</div>
+                                <div class="affiliation_item"><sup>4</sup> Bordeaux University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Solvers for NP-hard problems from areas such as automated reasoning or optimisation are complex systems in which many different components interact.
+The performance of these solvers is the result of an intricate interplay between implementation details, algorithmic concepts and heuristics.
+This, alongside the complexity of the problem instances to be solved, makes it challenging to assess the effect of a single idea on the overall performance of a given solver.
+It is therefore not only crucial, but also challenging to evaluate the performance impact of new ideas.
+Existing reliable evaluation methods require large sets of diverse benchmark instances and considerable amounts of computing resources.
+This makes empirical evaluation a bottleneck for solver development, as it is time-consuming and energy-intensive, often requiring several CPU years of computation to evaluate the impact of a single idea.
+In recent years, this bottleneck has led to the development of data-driven approaches that can dynamically select a smaller number of instances that provide sufficient statistical evidence to evaluate the relative performance of a given set of solvers.
+However, these methods are typically not easily accessible. In this work, we present a tool that implements these methods and makes them readily accessible to solver developers, thus enabling them to obtain swifter feedback on their ideas.</p>
                                 </div>
                             </td>
                         </tr>

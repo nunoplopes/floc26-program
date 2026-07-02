@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -184,6 +184,32 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:390">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Certified Infinite Descent Criteria in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-29.html#talk:390">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12808.html">Jamie Wright</a><sup>1</sup>, <a class="person" href="person12203.html">Liron Cohen</a><sup>2</sup>, <a class="person" href="person12810.html">Reuben N. S. Rowe</a><sup>3</sup>, <a class="person" href="person12731.html">Andrei Popescu</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Sheffield</div>
+                                <div class="affiliation_item"><sup>2</sup> Ben-Gurion University of the Negev</div>
+                                <div class="affiliation_item"><sup>3</sup> Royal Holloway University of London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Infinite Descent is the global trace condition that underpins the soundness of cyclic reasoning and, in program analysis, the size change termination principle.
+Many (semi-)decision procedures for Infinite Descent are known, based on criteria ranging from automata-based constructions and relation-based characterizations, to effective (but incomplete) heuristics.
+Although these criteria are well studied on paper and implemented in tools, a unified, machine-checked account that relates them to the (abstract) Infinite Descent property has been missing.
+
+We present an Isabelle/HOL mechanization of this landscape.
+We develop a reusable, locale-based framework of sloped graphs that defines Infinite Descent at an abstract level,
+independently of any concrete graph encoding.
+Within this framework we formalize standard complete criteria and prove their equivalence to the locale-level InfiniteDescent predicate.
+We also formalize tool-facing sufficient criteria, 
+prove their soundness, and certify incompleteness where appropriate via verified counterexamples.
+Along the way we contribute reusable Isabelle lemmas for $\omega$-regular reasoning over streams and for Büchi-automata constructions needed by the inclusion proofs.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:841">
@@ -216,6 +242,21 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:391">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Formalizing Abstract Simplicial Complexes & Stellar Subdivisions in Lean <a class="abstract_link" href="ITP-2026-07-29.html#talk:391">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12812.html">Garett Cunningham</a><sup>1</sup>, <a class="person" href="person12813.html">Daniel Zach</a><sup>2</sup>, <a class="person" href="person12814.html">Stefan Friedl</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Connecticut</div>
+                                <div class="affiliation_item"><sup>2</sup> Universität Regensburg</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The theory of simplicial complexes is a cornerstone of topology, offering a sophisticated tool for computing invariants. We present a formalization of abstract simplicial complexes and stellar subdivisions in the Lean proof assistant. We adopt a purely combinatorial framework in order to provide a cohesive foundation for studying the theory of stellar subdivisions as seen in many contexts of combinatorial topology. In particular, we provide formalizations of morphisms between abstract simplicial complexes; several crucial constructions and operations on complexes, such as links and joins; and perform a comprehensive study of how stellar subdivisions interact with these operations. We state and prove a number of identities commonly used in the study of triangulated manifolds, such as deriving equivalences between links in an abstract simplicial complex $K$ and in a stellar subdivision $\sigma_s K$, including results with no references in the standard literature. To our knowledge, this is the first formalization of stellar subdivisions in any proof assistant.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:392">
                             <td class="time"></td>
                             <td>
@@ -233,6 +274,22 @@
 We begin by refactoring and extending the existing library on elliptic functions, adding the theorem that every elliptic function can be written in terms of the Weierstraß elliptic function ℘ and the addition theorem for ℘, which links complex lattices to elliptic curves. Next, we develop an extensive library on Jacobi theta functions, including well-known results such as the Jacobi triple product, the Pentagonal Number Theorem, and the Rogers–Ramanujan identities. Finally, we apply this library to the study of the Dedekind η function and the ‘forbidden’ Eisenstein series G2.
 
 In all of this, we aim for short and clean proofs, building a library of reusable lemmas.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:393">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">An End-to-End Verification of Keller's Conjecture <a class="abstract_link" href="ITP-2026-07-29.html#talk:393">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12818.html">James Gallicchio</a><sup>1</sup>, <a class="person" href="person12819.html">Cayden Codel</a><sup>1</sup>, <a class="person" href="person12772.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person12633.html">Marijn J. H. Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In 1930, Keller conjectured that every gap-free tiling of R^n by n-dimensional unit cubes must contain cubes that fully share an (n − 1)-dimensional face. Keller’s conjecture holds for n ≤ 7 and fails for n ≥ 8. The final case, n = 7, was settled in 2020 using a mix of traditional and automated reasoning. The result was obtained by reducing the conjecture to a set of clique-existence problems, encoding those problems into propositional logic, breaking symmetries, and solving them with a SAT solver.
+
+In this paper, we present an end-to-end verification in Lean 4 of Keller’s conjecture for all dimensions. First, we simplify a prior reduction of Keller’s conjecture to the clique-existence problems. We then verify an improved SAT encoding of those problems and some associated symmetry reasoning. Throughout our work, we sought to maximize the synergy between interactive and automated techniques while minimizing human proof burden. In particular, the symmetry reasoning was split between Lean and a clausal proof system, since neither was suitable on their own for verifying all the symmetry reasoning. We discuss how and why we chose to split the reasoning across these systems, based on their relative strengths and weaknesses.</p>
                                 </div>
                             </td>
                         </tr>

@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -183,6 +183,22 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1278">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A General Approach for SMT Proof Skeletons <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:1278">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12630.html">Joseph E. Reeves</a><sup>1</sup>, <a class="person" href="person11364.html">Haniel Barbosa</a><sup>2</sup>, <a class="person" href="person11362.html">Andrew Reynolds</a><sup>3</sup>, <a class="person" href="person12633.html">Marijn J. H. Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidade Federal de Minas Gerais</div>
+                                <div class="affiliation_item"><sup>3</sup> The University of Iowa</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> SMT solvers increasingly produce proof certificates to meet the trust requirements of safety-critical applications. However, eagerly justifying learned theory lemmas during solving constitutes a major performance bottleneck. Recent work mitigates this cost by emitting proof skeletons that record only SAT reasoning and unannotated theory lemmas, though existing approaches depend on new proof formats and specialized theory-specific tooling. We present a general approach that restricts SMT proof skeletons to core SMT reasoning:  preprocessing, clausification, and unannotated theory lemmas. We develop external tools for SAT reasoning and proof trimming that reduce the number of theory lemmas requiring justification. An experimental evaluation using the SMT solver cvc5 on SMT-LIB benchmarks across the UF, LIA and LRA theories, with and without quantifiers, demonstrates faster solving and competitive checking performance compared to eager proof production, particularly on quantifier-free problems.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1279">
                             <td class="time"></td>
                             <td>
@@ -195,6 +211,29 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Eunoia is a logical framework designed for specifying the proofs and proof systems of SMT solvers, namely CVC5. We present a translation from a core fragment of Eunoia to the 𝜆Π-calculus modulo rewriting as implemented by the LambdaPi proof assistant. The translation is implemented by our tool eo2lp, which we use for generating LambdaPi encodings of (a) a large fragment of the Cooperating Proof Calculus (CPC), the Eunoia signature defining CVC5’s proof system, and (b) proofs produced by CVC5 on unsat problems from various fragments of SMT-LIB.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1280">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Checking Regular Expressions in cvc5 Proofs <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:1280">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11365.html">Ofec Israel</a><sup>1</sup>, <a class="person" href="person12637.html">Yoni Zohar</a><sup>1</sup>, <a class="person" href="person12638.html">Hitarth Singh</a><sup>2</sup>, <a class="person" href="person12639.html">Bruno Dutertre</a><sup>3</sup>, <a class="person" href="person12640.html">Andrew Reynolds</a><sup>4</sup>, <a class="person" href="person11339.html">Clark Barrett</a><sup>5</sup>, <a class="person" href="person11374.html">Cesare Tinelli</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Bar-Ilan University</div>
+                                <div class="affiliation_item"><sup>2</sup> The Hong Kong University Of Science And Technology</div>
+                                <div class="affiliation_item"><sup>3</sup> Amazon Web Services</div>
+                                <div class="affiliation_item"><sup>4</sup> University of Iowa</div>
+                                <div class="affiliation_item"><sup>5</sup> Stanford University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> cvc5 is a state-of-the-art proof-producing SMT-solver, capable of solving formulas over a myriad of theories, including that of unicode strings.
+
+Matching regular expressions against candidate strings is done numerous times during the solving process of string constraints, and forms a bottleneck in proof-checking for unsatisfiable formulas.
+
+In this paper, we describe three approaches for checking regular expressions in proofs produced by cvc5. We also describe their implementation in the
+Eunoia proof-checking framework, and evaluate them on proofs produced by cvc5 for unsatisfiable SMT-LIB benchmarks for quantifier free logics containing strings.</p>
                                 </div>
                             </td>
                         </tr>
@@ -400,6 +439,38 @@ reasoning about complex parameterized behaviors.</p>
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:365">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof Nets for PiL <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:365">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12242.html">Matteo Acclavio</a><sup>1</sup>, <a class="person" href="person12670.html">Giulia Manara</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Southern Denmark</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce proof nets for PiL, an extension of first-order multiplicative additive linear logic with new operators allowing a shallow encoding of processes in the 𝜋-calculus as formulas.
+
+We provide correctness criterion, sequentialization procedure, and a proof translation algorithm. We show that proof nets provide a canonical representation of sequent calculus derivations modulo rule permutations.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:366">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Ordered Adjoint Logic <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:366">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12671.html">Sophia Roshal</a><sup>1</sup>, <a class="person" href="person12542.html">Frank Pfenning</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Ordered logics and type systems have been used in a variety of applications including computational linguistics, memory allocation, stream processing, logical frameworks, parametricity, and enforcing security protocols. In most formulations, ordered types are also linear, requiring each resource to be used exactly once. Prior work by Kanovich et al. has investigated calculi that relax this constraint through subexponentials within a linear ordered logic. We generalize their work by using adjoint modalities to combine logics with varying fine-grained structural properties, including weakening, left contraction, right contraction, left mobility, and right mobility. We show that the resulting sequent calculus admits cut elimination.
+
+We further provide a natural deduction formulation in which structural rules are implicit, and show that proof checking for this system is decidable. This makes it a suitable foundation for an expressive adjoint programming language or logical framework.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:367">
                             <td class="time"></td>
                             <td>
@@ -418,6 +489,42 @@ cannot take the role of deduction for establishing validity. Furthermore, quanti
 pose a proof system for HyperLTL∗, where completeness is achieved by allowing an ω-rule. Weaker finitary rules such as what can be useful for interactive theorem proving can be derived using the ω-rule. We give examples of the use of the proof system on complicated HyperLTL for-
 mulas which would be hard to derive automatically. We also discuss the expressiveness of HyperLTL∗ and the potential for using first-order logic theorem provers based on it.
 theorem provers based on it.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:368">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Automatic Abstraction Refinement for Hyperproperties Verification <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:368">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12676.html">Malak Marrid</a><sup>1</sup>, <a class="person" href="person12677.html">Shachar Itzhaky</a><sup>1</sup>, <a class="person" href="person11349.html">Sharon Shoham</a><sup>2</sup>, <a class="person" href="person12282.html">Yakir Vizel</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The Technion</div>
+                                <div class="affiliation_item"><sup>2</sup> Tel Aviv University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hyperproperties specify the behavior of a system across multiple executions, and are
+an important extension of regular temporal properties. Most algorithms for deciding if a given system satisfy a given hyperproperty rely on a user-specified abstraction of the system.
+
+In this paper, we suggest a novel automatic abstraction-refinement algorithm for hyperproperties verification. Our approach is based on predicate abstraction and the recently introduced reduction of hyperproperties verification to satisfiability of Constrained Horn Clauses (CHCs). Moreover, it formalizes and uses CHC-based refinement for counterexamples in the shape of a directed acyclic graph.
+
+
+We implemented our new algorithm on top of the SMT solver Z3. Our experimental evaluation shows our automatic abstraction refinement algorithm can solve a variaty of hyperproperty verification problems, completely automatically. This is in contrast to other existing techniques that require a user-given abstraction.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:369">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Uniform interpolation with constructive diamond <a class="abstract_link" href="IJCAR-2026-07-29.html#talk:369">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12680.html">Iris van der Giessen</a><sup>1</sup>, <a class="person" href="person12569.html">Ian Shillito</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Amsterdam</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Birmingham</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Uniform interpolation is a strong form of interpolation providing an interpretation of propositional quantifiers within a propositional logic. Pitts’ seminal work establishes this property for intuitionistic propositional logic relying on a sequent calculus in which naïve backward proof-search terminates. This constructive approach has been adapted to a wide range of logics, including intuitionistic modal logics. Surprisingly, no intuitionistic modal logic with independent box and diamond has yet been shown to satisfy uniform interpolation. We fill in this gap by proving the uniform interpolation property for Constructive K (CK) and Wijesekera's K (WK).  We build on Pitts' technique by exploiting existing terminating calculi for CK and WK, which we prove to eliminate cut, and formalise all our results in the proof assistant Rocq. Together, our results constitute the first positive uniform interpolation results for intuitionistic modal logics with diamond.</p>
                                 </div>
                             </td>
                         </tr>

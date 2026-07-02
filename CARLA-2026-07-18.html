@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -162,8 +162,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23269.html">Manuel Borroto</a>
                         </div>
                     </div>
@@ -197,6 +196,21 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The field of video anomaly detection has evolved towards more flexible approaches that increasingly leverage the semantic understanding capabilities of Vision-Language Models (VLMs). These models are particularly appealing as they enable reasoning about the high-level semantics of anomalous events, going beyond simple pattern deviations. However, despite their strong semantic capabilities, VLMs are often computationally expensive and may be unsuitable for deployment in high-risk domains. In this paper, we propose a neuro-symbolic agent that combines a YOLO-based perception model for object detection with a symbolic reasoning component capable of identifying anomalies formalized through explicit rules. The reasoning module also serves as a filtering mechanism, selecting ambiguous situations that require deeper semantic analysis according to user-defined criteria. Such cases are then delegated to VLMs, reducing unnecessary reliance on these costly models. Finally, we discuss the limitations of the proposed approach and illustrate its applicability through a representative real-world scenario.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1099">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">ASPembly: Neuro-Symbolic Robotic Assembly Planning with Answer Set Programming <a class="abstract_link" href="CARLA-2026-07-18.html#talk:1099">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11159.html">Mario Alviano</a><sup>1</sup>, <a class="person" href="person11219.html">Lorenzo Grillo</a><sup>1</sup>, <a class="person" href="person11220.html">Pierpaolo Sestito</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Robotic assembly tasks require systems to interpret unstructured visual instructions, derive action sequences, and ensure physical feasibility. While Vision-Language Models (VLMs) excel at extracting semantic information from visual manuals, they cannot reliably solve complex combinatorial reasoning tasks, enforce action preconditions, or guarantee global consistency. To bridge this gap, we present ASPembly, a neuro-symbolic pipeline that instantiates a visual variant of the Logic-Guided Extraction (LGX) framework for image-based assembly manuals. Unlike baseline pipelines that query a model independently and validate the output post-hoc, ASPembly interleaves VLM-based extraction with non-monotonic Answer Set Programming (ASP) reasoning. In this architecture, the VLM reads visual instruction pages to propose candidate robot commands, while ASP acts as an active control mechanism rather than a passive checker. Guard conditions over the evolving symbolic state dynamically determine which predicates can be extracted, rejected, delayed, or logically inferred without additional model calls. By shifting logic from post-processing to active process control, ASPembly significantly improves
+the coherence of the generated assembly trace, mitigating spurious outputs and reducing unsupported commands during extraction.</p>
                                 </div>
                             </td>
                         </tr>
@@ -239,8 +253,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23269.html">Manuel Borroto</a>
                         </div>
                     </div>
@@ -263,6 +276,20 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this paper, we present CoSP-TL, a two-level architecture that combines tacit reasoning knowledge from Large Language Models with formal symbolic planning to address temporally constrained planning problems expressed in natural language. Our approach employs a hierarchical planner composed of a High-Level Planner, which iteratively refines a natural-language plan until it satisfies a Linear Temporal Logic formula encoding the problem constraints, and a Low-Level Planner, which translates the high-level plan into executable PDDL with extensive validation and error-recovery mechanisms. We evaluate our framework on the recent and challenging LexiCon benchmark across three IPC domains, Blocksworld, Logistics, and Sokoban considering an increasing number of temporal constraints over domain fluents. Results show that our approach significantly outperforms standard LLM-based planning, achieving strong performance on unconstrained problems and maintaining robust results as the number of constraints increases, highlighting the scalability of CoSP-TL in handling temporally constrained planning tasks at which standard LLM planners exhibits substantial performance degradation.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1102">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Collaborating with Ad Hoc Agents through Reasoning and Learning <a class="abstract_link" href="CARLA-2026-07-18.html#talk:1102">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11229.html">Hasra Dodampegama</a><sup>1</sup>, <a class="person" href="person11230.html">Mohan Sridharan</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> An assistive AI agent often has to collaborate with previously unseen agents and humans. Methods considered state of the art for such ad hoc teamwork use a large labeled dataset of prior observations to model the behavior of other agents and to determine the ad hoc agent's behavior. These approaches are resource-hungry, and do not support rapid incremental revisions or transparency, with the necessary resources (e.g., training examples, computation) not readily available in practical domains. Our architecture for ad hoc teamwork embeds the principles of refinement, ecological rationality, and interactive learning, leveraging the complementary strengths of knowledge-based and data-driven methods. For any given goal, an ad hoc agent determines its actions through non-monotonic logical reasoning with: (a) prior domain-specific commonsense knowledge; (b) models learned rapidly to predict the behavior of other agents; and (c) anticipated abstract future tasks based on generic knowledge of similar situations. Further, the agent processes natural language descriptions and observations of other agents' behavior, incrementally acquiring and revising its existing knowledge. We evaluate the capabilities of our architecture in VirtualHome, a realistic 3D simulation environment.</p>
                                 </div>
                             </td>
                         </tr>

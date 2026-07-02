@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -185,6 +185,21 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:824">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A many-valued multi-preferential propositional typicality logic and a conditional interpretation for gradual argumentation (Extended Abstract) <a class="abstract_link" href="NMR-2026-07-17.html#talk:824">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11159.html">Mario Alviano</a><sup>1</sup>, <a class="person" href="person11933.html">Laura Giordano</a><sup>2</sup>, <a class="person" href="person11934.html">Daniele Theseider Dupré</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Università della Calabria</div>
+                                <div class="affiliation_item"><sup>2</sup> DISIT, Università del Piemonte Orientale</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In the extended abstract we report about a many-valued and multi-preferential conditional logic with typicality developed in  https://academic.oup.com/logcom/article/36/2/exaf063/8442302, which is based on a multi-preferential semantics and is proven to be a generalization of KLM preferential semantics to the many-valued case. The multi-preferential semantics provides a preferential interpretation to gradual argumentation, considering both weighted and non-weighted argumentation graphs. The approach allows for conditional reasoning over arguments and boolean combination of arguments, with respect to some gradual semantics, through the verification of graded (strict or defeasible) implications over argumentation graphs.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:825">
                             <td class="time"></td>
                             <td>
@@ -273,6 +288,24 @@ In doing so, we also point out a flaw in the original definition where some post
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:828">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Constructive Preference Relations: Navigating Undecidability in Rational LTL Contraction <a class="abstract_link" href="NMR-2026-07-17.html#talk:828">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13880.html">Hannes Gaißer</a><sup>1</sup>, <a class="person" href="person11235.html">Dominik Klumpp</a><sup>2</sup>, <a class="person" href="person13882.html">Jandson S. Ribeiro</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Tübingen</div>
+                                <div class="affiliation_item"><sup>2</sup> LIX - CNRS - École Polytechnique</div>
+                                <div class="affiliation_item"><sup>3</sup> Cardiff University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study the computational aspects of \emph{epistemic preference relations} in non-classical logics, particularly \emph{linear temporal logic} (LTL).
+Epistemic preferences form the backbone of \emph{belief contraction operators}, which describe how to rationally relinquish obsolete beliefs. These preference relations have to satisfy certain innocuous conditions;   and constructing such relations is usually assumed to be a trivial process. However, in the case of LTL, where relations are represented with Büchi automata, we show that this is a challenging task: the core condition, which guarantees the success of contraction, is in fact \emph{undecidable}. Towards achieving effective LTL belief contraction, we then propose several concrete constructions of novel preference relations that satisfy the required conditions \emph{by design}. These constructions include, among others,
+(1) generalisations of distance measures (e.g.\ Dalal) beyond the classical setting, as well as (2) the ability to hierarchically compose different preference relations. Our results not only provide rich families of preference relations for LTL, but also generalise the limited pool of concrete preference relations for the classical cases, allowing us to go beyond Dalal to achieve full rationality.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:829">
                             <td class="time"></td>
                             <td>
@@ -332,6 +365,29 @@ In doing so, we also point out a flaw in the original definition where some post
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Machine learning classifiers work by being given a dataset of instances described by observed properties and labels, and then learning how to predict the label of a new instance. Some methods do this in an interpretable way, producing simple if-then rules that a person can read directly. A learned rule set may say that one feature pattern usually supports label~1, except when a more specific pattern supports label~0. People naturally read such outputs as defaults and exceptions, but a readable rule set is not automatically a defeasible theory: it may look defeasible without any formal guarantee that its predictions correspond to principled nonmonotonic reasoning. This paper provides such a guarantee. We identify a single structural condition on learned conjunctive rule sets for binary classification, called strict global exception closure, under which every prediction the classifier makes is provably a defeasible entailment. To make this precise, we translate the rule set into a defeasible knowledge base in the framework of Kraus, Lehmann, and Magidor (KLM), a standard approach to reasoning with rules that can have exceptions. We then prove that, for every fully observed instance, the classifier's Most Specific Wins prediction agrees exactly with the entailment of the translated knowledge base under three well-known KLM-style formalisms: Rational Closure, Lexicographic Closure, and System~W. The classifier is therefore not merely interpretable; it is a formally grounded defeasible theory. We further show that strict global exception closure is the only condition that needs to be checked directly: one additional property follows from it logically, and another is restored by a prediction-preserving pruning step. We analyse what breaks when the condition fails, revealing insights for both machine learning and nonmonotonic reasoning. Experiments on several benchmark datasets confirm that the condition arises naturally from decision tree extraction, producing rule sets with nontrivial exception hierarchies at competitive accuracy.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:831">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A Resource-Aware Structural Causal Semantics for Feasibility Analysis of Counterfactuals <a class="abstract_link" href="NMR-2026-07-17.html#talk:831">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13887.html">Pinaki Chakraborty</a><sup>1</sup>, <a class="person" href="person13888.html">David Pym</a><sup>2</sup>, <a class="person" href="person13889.html">Tristan Caulfield</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University College London</div>
+                                <div class="affiliation_item"><sup>2</sup> University College London and Institute of Philosophy, University of London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Structural causal models (SCMs) are the default substrate for counterfactual explanation, responsibility, and causal recourse in the Halpern-Pearl account of actual causation.
+In SCMs, interventions quantify over arbitrary assignments to endogenous variables.
+However, in socio-technical systems, agent actions (and hence responsibility) are constrained by procedures, authority, permissions, and coordination requirements.
+Thus counterfactual `alternatives' may include states that the relevant agent could not have feasibly executed.
+We characterize this intervention--feasibility gap and show how it can yield misplaced responsibility attributions or infeasible recourse recommendations even when the underlying SCM is descriptively adequate.
+We propose a principled restriction of intervention admissibility via \emph{Resource-aware SCMs} (R-SCMs).
+Without abandoning SCM semantics, we equip models with agent-controlled endogenous variables, enablement predicates evaluated against the acting agent's observation, and consumable resources modelled by a partial commutative monoid.
+We interpret agent-relative counterfactual feasibility via executable, resource-consuming intervention traces (a sequence of actions) and prove basic properties of R-SCMs (well-definedness, monotonicity, conservativity under trivial feasibility).
+Finally, we prove \textsf{NP-completeness} of the bounded-horizon feasibility decision problem for R-SCMs.</p>
                                 </div>
                             </td>
                         </tr>

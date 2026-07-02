@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -252,6 +252,35 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:388">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Panbench: A Comparative Benchmarking Tool for Dependently-Typed Languages <a class="abstract_link" href="ITP-2026-07-28.html#talk:388">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12792.html">Reed Mullanix</a><sup>1</sup>, <a class="person" href="person12793.html">Jacques Carette</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> McMaster University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We benchmark four proof assistants (Agda, Idris 2, \lean and \rocq) through a
+single test suite. We focus our benchmarks on the basic features that all
+systems based on a similar foundations (dependent type theory) have in common.
+We do this by creating an ``over language'' in which to express all the
+information we need to be able to output correct and idiomatic syntax
+for each of our targets. Our benchmarks further focus on ``basic engineering''
+of these systems: how do they handle long identifiers, long lines, large
+records, large data declarations, and so on.
+
+Our benchmarks reveals both flaws and successes in all systems. We give a
+thorough analysis of the results.
+
+We also detail the design of our extensible system. It is designed so that
+additional tests and additional system versions can easily be added. A side
+effect of this work is a better understanding of the common abstract syntactic
+structures of all four systems.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:836">
@@ -310,6 +339,33 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Vampire proves theorems completely automatically in first- and higher-order logic extended with theories. Proof checking is increasingly demanded to consolidate user trust in Vampire's output.  We describe ongoing efforts in reconstructing Vampire proofs as trusted proofs in Lean.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1297">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">TableauxRocq: A Deep Embedding of Free-Variable Tableaux in Rocq <a class="abstract_link" href="ITP-2026-07-28.html#talk:1297">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12800.html">Johann Rosain</a><sup>1</sup>, <a class="person" href="person12564.html">Julie Cailler</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ENS de Lyon</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Lorraine, CNRS, Inria, LORIA, Nancy, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The free-variable tableau method has been widely used in order to automate proofs in
+multiple kinds of logics. Many Automated Theorem Provers (ATPs) rely on this approach, either because it is the
+only available method (e.g., in certain modal logics) or because it facilitates the
+generation of proof certificates. However, as far as the authors know, its results have
+never been formalized in a proof assistant.  In this paper, we present TableauxRocq, a
+deep-embedding of free-variable first-order tableaux in the Rocq prover.  The formalized
+calculus is proved sound and provides a modular Skolemization system that enables the use
+of Skolemization-based optimisations. Moreover, we show how TableauxRocq can be used as a
+certifier for ATPs by adapting the Goeland prover to output proofs in the
+TableauxRocq format.  By using the full power of reflection, thereby providing a fully
+certified proof checker for free, we show that the deep embedding performs at least as
+well as a shallow embedding, even without proof optimizations, and strictly better when
+Skolemization-related optimizations are present in the proof.</p>
                                 </div>
                             </td>
                         </tr>

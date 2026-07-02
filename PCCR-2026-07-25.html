@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -133,8 +133,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24741.html">Sebastian Ordyniak</a>
                         </div>
                     </div>
@@ -182,8 +181,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24741.html">Sebastian Ordyniak</a>
                         </div>
                     </div>
@@ -194,6 +192,67 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:903">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Eliminating Majority Illusion in Social Networks <a class="abstract_link" href="PCCR-2026-07-25.html#talk:903">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14077.html">Pankaj Kumar</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Birmingham</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In social networks, individuals’ decisions are influenced by their local connections, leading to \emph{majority illusion}, where some perceive a local majority opinion that contradicts the global majority. This distortion, prevalent in binary choices such as voting or vaccination stances, can skew public perception, making its mitigation desirable. 
+
+In our model, we view the network as a \red–\blue colored graph, where a vertex is under majority illusion if its neighborhood has a \red majority despite \blue being globally dominant, and anchoring means flipping selected \red vertices to \blue.
+
+Eliminating majority illusion necessitates structural
+edits to the graph representing the social network. Grandi et al.\ (AAAI 2023) studied edge additions/deletions to reduce illusion, but such changes disrupt natural connections, creating artificial links or removing genuine ones, which are visible and undesirable to users. Instead, we propose \emph{anchoring} vertices---discreetly changing the opinions of selected users (e.g., influencers)---to preserve the network’s structure and hide interventions, offering a practical alternative. Fioravantes et al.\ (AAMAS 2025) aimed to eliminate all illusions with minimum anchors, but this is often impractical. We consider a realistic setting with a budget limiting the number of anchors ($k$) and aim to maximize the number of users ($p$) freed from illusion.
+
+
+Formally, we introduce the 𝑘-ANCH-𝑝-MIE problem: determine whether there is a set $X \subseteq V$ of size at $k$ such that anchoring $X$ eliminates majority illusion for at least $p$ vertices.
+
+\textbf{Dichotomy.} We establish the dichotomy regarding the classical computational complexity of the problem: 𝑘-ANCH-𝑝-MIE is polynomial-time solvable for graphs with maximum degree $\Delta \leq 2$, but \NP-complete for $\Delta \geq 3$. 
+
+\textbf{Tight Exact Algorithm.} We show that the 𝑘-ANCH-𝑝-MIE is \W[1]-hard when parameterized by $k+p$, even for bipartite graphs. Moreover, under the Exponential Time Hypothesis ($\ETH$), there is no $f(k,p)\cdot n^{o(k+\sqrt{p})}$-time algorithm where $n$ denote the number of vertices in the graph (for any computable function $f$), showing that the $n^{O(k)}$-time brute-force algorithm is asymptotically optimal. 
+
+\textbf{Tight Approximation Results.}
+Finally, complementing our hardness results, for the natural maximization version of the problem--- where the goal is to anchor $k$ vertices to eliminate majority illusion from as many vertices as possible--- we establish a tight $(1-\frac{1}{e})$-approximation via a natural greedy algorithm matching the optimal threshold for submodular maximization. We also prove that this is essentially optimal: no polynomial-time algorithm, can achieve an $(1-\frac{1}{e}+\epsilon)$-approximation for any $\epsilon>0$ unless $\P=\NP$. Moreover, under \ETH, any algorithm achieving an $(1-\frac{1}{e}+\epsilon)$ approximation factor for any constant $\epsilon\in(0,1)$, must take runtime $\Omega_k(|S|^{k^{\Omega(1)}})$, where $S$ denote the set of vertices that can possibly be anchored in the input graph.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:904">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Gateways to Tractability for Satisfiability in Pearl's Causal Hierarchy <a class="abstract_link" href="PCCR-2026-07-25.html#talk:904">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14078.html">Robert Ganian</a><sup>1</sup>, <a class="person" href="person14079.html">Marlene Gründel</a><sup>1</sup>, <a class="person" href="person14080.html">Simon Wietheger</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Pearl’s Causal Hierarchy (PCH) is a central framework for reasoning about probabilistic, interventional, and counterfactual statements, yet the satisfiability problem for PCH formulas is computationally intractable in almost all classical settings. We revisit this challenge through the lens of parameterized complexity and identify the first gateways to tractability. Our results include fixed-parameter and XP-algorithms for satisfiability in key probabilistic and counterfactual fragments, using parameters such as primal treewidth and the number of variables, together with matching hardness results that map the limits of tractability. Technically, we depart from the dynamic programming paradigm typically employed for treewidth-based algorithms and instead exploit structural characterizations of well-formed causal models, providing a new algorithmic toolkit for causal reasoning.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:905">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Width Parameters for Flow Decompositions on DAGs <a class="abstract_link" href="PCCR-2026-07-25.html#talk:905">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14081.html">Andreas Grigorjew</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Warsaw</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Every flow on a DAG can be decomposed into weighted paths. The Minimum Flow Decomposition (MFD) problem, which is strongly NP-hard, asks for a smallest set of weighted paths whose sum is equal to the flow. This problem is crucial in various fields, including transportation planning, network communication, and bioinformatics, which has driven the development of fast heuristic algorithms. 
+
+In this talk, I will give an overview of current theoretical results of the problem, focusing on its relations to DAG parameters, such as minimum path covers, and its connections to structural theory of DAGs. I will also present algorithmic results and improvements on a practical ILP solver for MFD based on this theoretical work.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1466">
                     <div class="heading">
@@ -218,8 +277,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24741.html">Sebastian Ordyniak</a>
                         </div>
                     </div>
@@ -252,8 +310,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24741.html">Sebastian Ordyniak</a>
                         </div>
                     </div>
@@ -264,6 +321,19 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:907">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">tba <a class="abstract_link" href="PCCR-2026-07-25.html#talk:907">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14083.html">Robert Ganian</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1469">
                     <div class="heading">
@@ -288,8 +358,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24741.html">Sebastian Ordyniak</a>
                         </div>
                     </div>

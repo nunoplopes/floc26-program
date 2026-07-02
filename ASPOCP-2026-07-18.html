@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -132,8 +132,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23723.html">Brais Muñiz</a>
                         </div>
                     </div>
@@ -145,6 +144,17 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1082">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Opening <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1082">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11155.html">Brais Muñiz</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Coruña</div>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1083">
                             <td class="time"></td>
                             <td>
@@ -158,6 +168,49 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Integration of Answer Set Programming (ASP) with neural networks has emerged as a promising tool in Neuro-symbolic AI. While existing approaches extend the capabilities of ASP to real world domains, their reasoning pipelines depend on classical solvers, which is a bottleneck for scalability. To tackle this problem, we propose a new method to compute stable models, called decision-propagation (DProp), which alternates falsity decisions and truth propagations. Successful DProp computations are shown to capture the stable model semantics. We then develop Neural DProp (NDProp), a differentiable extension of DProp with neural computation for decisions and fuzzy evaluation for propagations. We evaluate the capabilities of NDProp for learning decision heuristics as well as neuro-symbolic integration, and compare it with existing neuro-symbolic approaches. The results show that NDProp can learn to efficiently compute stable models, and it improves accuracy and scalability on neuro-symbolic benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1084">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Instance-Aware AMOSUM Propagator Selection in ASP <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1084">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11159.html">Mario Alviano</a><sup>1</sup>, <a class="person" href="person11160.html">Carmine Dodaro</a><sup>1</sup>, <a class="person" href="person11161.html">Thomas Eiter</a><sup>2</sup>, <a class="person" href="person11162.html">Salvatore Fiorentino</a><sup>1</sup>, <a class="person" href="person11163.html">Tobias Geibinger</a><sup>2</sup>, <a class="person" href="person11164.html">Megan Macrì</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming (ASP) is a well-known declarative paradigms for knowledge representation and automated reasoning, where solutions are represented as stable models of logic programs. The success of ASP is due to a rich set of language extensions that ease the modeling of complex domains, such as SUM aggregates. A common pattern in real-world problems is the co-occurrence of SUM constraints with At-Most-One (AMO) constraints. In particular, sum constraints assert that a weighted sum of literals meets a given threshold, while AMO constraints restrict the simultaneous truth of multiple elements in a set.
+
+Recently, the AMOSUM propagator has been introduced to jointly handle SUM and AMO constraints, demonstrating significant performance improvements compared to approaches that treat these constraint types independently.
+This propagator has been further investigated in ongoing work, proposing several configurations that enhance the original AMOSUM propagator. However, no single configuration has been shown to dominate across all problem instances, motivating the need for a more adaptive strategy.
+
+In this work, we propose a Machine Learning (ML) based approach to automatically select the most effective propagator configuration on a per-instance basis. We describe the construction of a diverse training dataset across three combinatorial benchmarks and we extract from it semantically meaningful features capturing the interaction between SUM and AMO constraints. Finally, we develop a series of ML-based selectors to obtain best propagator configurations based on the extracted features. Experimental results show that the ML-based selectors substantially outperform any single static configuration in terms of both solved instances and average runtime.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1085">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">aspen-tree: A system for non-ground meta-programming in ASP (Preliminary Report) <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1085">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11165.html">Amade Nemes</a><sup>1</sup>, <a class="person" href="person11166.html">Torsten Schaub</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Potsdam, Germany</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Meta-programming is a powerful technique in Answer Set Programming (ASP)
+for prototyping language extensions and exploring alternative semantics.
+While traditional approaches predominantly operate on ground logic programs,
+many language design tasks require the manipulation of non-ground source code prior to instantiation.
+We introduce aspen, a novel system for the reification, transformation, and analysis of non-ground ASP programs.
+Built upon the treesitter parsing library,
+aspen provides a language-independent and iterative framework for mapping source code to a reified fact base.
+These facts are then processed by clingo using meta-encodings to generate high-level transformation instructions,
+which are applied via a templating engine to update the source code.
+We demonstrate the utility of aspen through two case studies on program analysis and transformation in ASP-Core-2.</p>
                                 </div>
                             </td>
                         </tr>
@@ -201,8 +254,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24903.html">Djordje Markovic</a>
                         </div>
                     </div>
@@ -214,6 +266,21 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1087">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Towards ASP-based Composition of Scientific Workflows <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1087">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11170.html">Nikolas Bertrand</a><sup>1</sup>, <a class="person" href="person11171.html">Charlotte Grunert</a><sup>1</sup>, <a class="person" href="person11172.html">Mario Frank</a><sup>1</sup>, <a class="person" href="person11173.html">Anna-Lena Lamprecht</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Research across all disciplines generates increasingly large and complex data that require sophisticated data analysis workflows (DAWs) for processing and interpretation. Constructing these workflows manually can be very challenging, especially given the growing numbers of computational tools and libraries that are available to implement the different steps in the workflows. The Automated Pipeline Explorer (APE) addresses this workflow composition challenge by synthesizing workflow candidates for a given specification, based on a semantic domain model that provides an ontology of terms and functional characterizations of the available workflow components. APE has successfully been used for workflow composition in different domains, including bioinformatics, geosciences and computational materials science.  However, the current implementation of APE, which is based on creating a temporal finite automaton, faces extensibility and scalability issues that hinder its application to large scale domains. In this paper, we present an ASP-based architecture for automated workflow composition, framing the synthesis problem as a search for stable models that represent valid workflow candidates. Our approach uses multi-shot incremental solving to support future extendability and interactive
+configuration, combined with different optimizations motivated by domain-specific features. Our evaluation with diverse benchmarks shows that the ASP-based approach reaches semantic parity with the current implementation of APE, while providing a more scalable and more extensible foundation for further development and application.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1088">
                             <td class="time"></td>
                             <td>
@@ -268,6 +335,37 @@ flaspland facilitates the evaluation of declarative approaches to qualitative an
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1090">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Dynamic Equilibrium Logic for Action and Change: Abridged report <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1090">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11181.html">Arvid Becker</a><sup>1</sup>, <a class="person" href="person11175.html">Martin Dieguez</a><sup>2</sup>, <a class="person" href="person11183.html">Susana Hahn</a><sup>1</sup>, <a class="person" href="person11166.html">Torsten Schaub</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Potsdam, Germany</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Angers, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Reasoning about action and change is a fundamental challenge in Artificial Intelligence,
+yet dedicated action languages within Answer Set Programming (ASP) see significantly less adoption than plain ASP.
+In practice, the lack of a unified approach inhibits the creation of an expressive, sustainable framework that
+leverages ASP's rich modeling capabilities and efficient solvers.
+To bridge this gap, we introduce a non-monotonic modeling framework based on Dynamic Logic (DL) that is
+designed for direct implementation through modern ASP systems.
+By synthesizing and adapting variants of established methodologies,
+our approach, the Dynamic Equilibrium Logic with Actions and Fluents,
+unifies a rich two-sorted language with non-monotonic semantic foundations.
+As common in DL, it explicitly distinguishes between state variables (fluents) and action variables
+to facilitate intuitive knowledge representation,
+combining propositional logic for concurrent state transitions with
+DL-based path expressions for global constraints over complex trajectories.
+Furthermore, we demonstrate that despite its expressive two-sorted nature,
+our formalism can be entirely reduced to the simpler, one-sorted Dynamic Equilibrium Logic.
+This strict reduction paves the way for practical implementation,
+ultimately allowing these expressive dynamic problems to be seamlessly solved using the temporal ASP solver telingo.</p>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="session" id="session:1045">
@@ -293,8 +391,7 @@ flaspland facilitates the evaluation of declarative approaches to qualitative an
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23723.html">Brais Muñiz</a>
                         </div>
                     </div>
@@ -327,8 +424,7 @@ flaspland facilitates the evaluation of declarative approaches to qualitative an
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23723.html">Brais Muñiz</a>
                         </div>
                     </div>
@@ -339,6 +435,43 @@ flaspland facilitates the evaluation of declarative approaches to qualitative an
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1091">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Modeling the Resource-Constrained Project Scheduling Problem with Answer Set Programming <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1091">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11186.html">Mohammed M. S. El-Kholany</a><sup>1</sup>, <a class="person" href="person11187.html">Martin Gebser</a><sup>2</sup>, <a class="person" href="person11188.html">Đorđe Marković</a><sup>2</sup>, <a class="person" href="person11189.html">Gianluca Zavan</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Cairo University</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Klagenfurt</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Resource-Constrained Project Scheduling Problem (RCPSP) is a long-standing challenge problem in the area of constraint optimization. Its goal is to schedule partially ordered activities, each requiring specific resources, as effectively as possible while respecting the resources’ capacity limits. Previous approaches have utilized
+Constraint Programming or local search techniques for solving the RCPSP to exact or approximate optimality, respectively. While Answer Set Programming (ASP) along with its extensions by difference logic or finite domain constraints has been successfully applied to closely related scheduling problems, these declarative problem solving approaches have so far not been explored for the RCPSP.
+In this work, we elaborate on modeling approaches for encoding the RCPSP in plain ASP as well as its extensions by difference logic and finite domain constraints. Interestingly, formulating resource capacity limits is simpler in plain ASP due to the explicit representation of time points, while the use of difference logic or finite domain constraints incurs a certain modeling effort. Our empirical comparison on small- to medium-scale RCPSP instances shows that the simplicity of modeling promotes plain ASP and more than outweighs its larger problem representation size, which counteracts the performance trends typically observed on related scheduling problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1092">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Solving configuration problems with unbounded cardinalities in COOM: Preliminary report <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1092">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11190.html">Joachim Baumeister</a><sup>1</sup>, <a class="person" href="person11191.html">Konstantin Herud</a><sup>2</sup>, <a class="person" href="person11192.html">Jan Heuer</a><sup>3</sup>, <a class="person" href="person11193.html">Jochen Reutelshöfer</a><sup>2</sup>, <a class="person" href="person11194.html">Nicolas Rühling</a><sup>3</sup>, <a class="person" href="person11195.html">Abdallah Saffidine</a><sup>4</sup>, <a class="person" href="person11196.html">Torsten Schaub</a><sup>5</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Würzburg</div>
+                                <div class="affiliation_item"><sup>2</sup> denkbares</div>
+                                <div class="affiliation_item"><sup>3</sup> UP Transfer</div>
+                                <div class="affiliation_item"><sup>4</sup> Potassco Solutions</div>
+                                <div class="affiliation_item"><sup>5</sup> University of Potsdam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Industrial product configuration often involves complex partonomic structures where the required number of components is unknown in advance since it depends on intricate, interdependent constraints. This paper addresses the challenge of determining minimal bounds for unbounded cardinalities within the CoomSuite workbench. While previous methods relied on a “naive” single-shot approach, requiring grounding and solving from scratch for every iteration, we introduce an extended workflow that leverages clingo’s multi-shot capabilities. We evaluate our approach across three benchmark domains demonstrating the efficiency of our incremental method compared to traditional single-shot strategies in scenarios with unbounded cardinalities.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1048">
                     <div class="heading">
@@ -363,8 +496,7 @@ flaspland facilitates the evaluation of declarative approaches to qualitative an
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25261.html">Alice Tarzariol</a>
                         </div>
                     </div>
@@ -376,6 +508,25 @@ flaspland facilitates the evaluation of declarative approaches to qualitative an
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:1093">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Between Two Worlds: Logica Intertwines ASP and SQL <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1093">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11197.html">Evgeny Skvortsov</a><sup>1</sup>, <a class="person" href="person11198.html">Shawn Bowers</a><sup>2</sup>, <a class="person" href="person11199.html">Yilin Xia</a><sup>3</sup>, <a class="person" href="person11200.html">Ojaswa Garg</a><sup>1</sup>, <a class="person" href="person11201.html">Bertram Ludäscher</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Google</div>
+                                <div class="affiliation_item"><sup>2</sup> Gonzaga University</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Illinois, Urbana-Champaign</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming excels at combinatorial search: generating models, solving constraints, and optimizing over discrete choices. SQL-based evaluation excels at data analysis: aggregation, joining, and transforming large datasets. Many real-world problems require both a search phase that explores a combinatorial space, followed by an analytical phase that examines the results, or a pipeline where data preparation feeds into constraint solving and the solutions are analyzed further. We present an integration of ASP into Logica, an open-source logic programming language that compiles to SQL.
+We introduce \texttt{couldbe}, \texttt{cantbe}, and \texttt{shouldbe} decorators that extend Logica's expressive power with
+choice rules, integrity constraints, and optimization objectives, respectively. The programmer writes a single Logica program and the system compiles the deterministic fragment to SQL (executed by DuckDB) and the non-deterministic fragment to an ASP program (solved by Clingo). Solutions returned by Clingo are materialized as SQL tables, available within the same program for further analysis using Logica's full analytical power: aggregation, recursive evaluation, and functional composition. The program may contain an arbitrary number of non-deterministic
+fragments. We illustrate the integration through three examples that combine search and analysis in ways that neither paradigm handles well alone: detecting and neutralizing cliques in a social network via PageRank, identifying strategically essential companies in a supply chain, and analyzing adversarial robustness of graph coloring. The integration is implemented and publicly available as part of the Logica system.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1094">
                             <td class="time"></td>
                             <td>
@@ -401,6 +552,21 @@ including non-tight encodings and recursive aggregates.
 Furthermore, we generalize the transformation to handle private predicates through a novel guess-and-check formulation.
 Our approach is implemented as an integrated component of the anthem framework,
 providing developers with concrete witnesses of non-equivalence to facilitate the rapid identification of logical flaws in ASP encodings.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1095">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">asplain: An ASP System for Contrastive Explanations <a class="abstract_link" href="ASPOCP-2026-07-18.html#talk:1095">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11207.html">Susana Hahn</a><sup>1</sup>, <a class="person" href="person11208.html">Brais Muñiz</a><sup>2</sup>, <a class="person" href="person11209.html">Orkunt Sabuncu</a><sup>1</sup>, <a class="person" href="person11210.html">Torsten Schaub</a><sup>1</sup>, <a class="person" href="person11211.html">Tran Cao Son</a><sup>1</sup>, <a class="person" href="person11212.html">Hannes Weichelt</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Potassco Solutions GmbH, Germany</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Coruña, Spain</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper focuses on answering “why-not" questions in Answer Set Programming, with an emphasis on user-oriented explanations. Such questions ask why a user’s expectations are not met within an answer set or why a program is unsatisfiable. We address these questions using contrastive explanations, which explain an outcome by contrasting a reference program and, when available, one of its models, with an alternative program–model pair that satisfies the query. The alternative program is obtained through a controlled process of rule addition and removal. Our approach emphasizes flexibility, adapting to different domain settings and supporting preference-based selection among possible explanations. To improve interpretability, we propose a graph-based representation that highlights contrasts while leveraging domain knowledge captured by integrity constraints. These ideas are realized in asplain, a system that computes contrastive explanation graphs via meta-programming in clingo, allows users to configure explanation generation through a tagging mechanism, and supports interactive exploration of the explanation space through a user-friendly interface. Finally, we present a preliminary experiment using large language models to generate natural language explanations from contrastive explanation graphs.</p>
                                 </div>
                             </td>
                         </tr>

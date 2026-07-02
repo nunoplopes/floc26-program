@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -155,6 +155,59 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:201">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Optimizing Differential Privacy in Federated Analytics under Known Input Distributions <a class="abstract_link" href="CSF-2026-07-26.html#talk:201">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11723.html">Ferran Alborch Escobar</a><sup>1</sup>, <a class="person" href="person11724.html">Andreas Athanasiou</a><sup>2</sup>, <a class="person" href="person11725.html">Pascal Reisert</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Orange Innovation</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Delft</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Stuttgart</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Differential privacy (DP) is one of the most efficient tools for protecting the privacy of individual data holders under computation. This property guarantees that the computation outputs for every pair of adjacent input sets are statistically indistinguishable with respect to a given parameter ε, which is independent of the likelihood that specific inputs occur or not. While the distribution of input sets is generally unknown, in some use cases (approximate) information about it might be available. If the latter is the case, two adjacent inputs of one individual are sometimes already obfuscated by other inputs and the computation itself (i.e., without any additional noise). For example, if the sum of n independent and identically distributed uniformly random bits outputs approximately n/2, both values for the first bit remain (almost) equally likely for large n.
+
+Based on this observation, we present a new DP mechanism that uses an estimate of the input distribution to reduce the noise addition (compared to standard DP) and hence improves the accuracy of the output. We first explore this idea in the central model, where a single central party collects all data. Then, we provide a new technique (possibly of independent interest) that allows multiple entities to jointly generate reduced noise, using the property of infinite divisibility. This allows each party to individually add noise to their respective inputs, e.g., in Federated Analytics applications.
+   
+We apply our theoretical results, both for the single and multi-party setups, to perform data analysis over human resources data from different subsidiaries within a corporate group. Our benchmarks show that our new DP mechanism provides more accurate outputs while retaining the same privacy level as state-of-the-art DP approaches using the geometric mechanism.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:202">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Interpreting Differential Privacy in Terms of Disclosure Risk <a class="abstract_link" href="CSF-2026-07-26.html#talk:202">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11726.html">Zeki Kazan</a><sup>1</sup>, <a class="person" href="person11727.html">Sagar Sharma</a><sup>2</sup>, <a class="person" href="person11728.html">Wanrong Zhang</a><sup>2</sup>, <a class="person" href="person11729.html">Bo Jiang</a><sup>2</sup>, <a class="person" href="person11730.html">Qiang Yan</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Duke University</div>
+                                <div class="affiliation_item"><sup>2</sup> TikTok Inc</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> As the use of differential privacy (DP) becomes widespread, the development of effective tools for reasoning about the privacy guarantee becomes increasingly critical. In pursuit of this goal, we demonstrate novel relationships between DP and measures of statistical disclosure risk. We suggest how experts and non-experts can use these results to explain the DP guarantee, interpret DP composition theorems, select and justify privacy parameters, and identify worst-case adversary prior probabilities.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:203">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Bayesian Advantage of Re-Identification Attack in the Shuffle Model <a class="abstract_link" href="CSF-2026-07-26.html#talk:203">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11731.html">Pengcheng Su</a><sup>1</sup>, <a class="person" href="person11732.html">Haibo Cheng</a><sup>1</sup>, <a class="person" href="person11733.html">Ping Wang</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Peking University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The shuffle model, which anonymizes data by randomly permuting user messages, has been widely adopted in both cryptography and differential privacy. In this work, we present the first systematic study of the Bayesian advantage in re-identifying a user's message under the shuffle model. We begin with a basic setting: one sample is drawn from a distribution $P$, and $n - 1$ samples are drawn from a distribution $Q$, after which all $n$ samples are randomly shuffled. We define $\beta_n(P, Q)$ as the success probability of a Bayes-optimal adversary in identifying the sample from $P$, and define the additive and multiplicative Bayesian advantages as $\mathsf{Adv}_n^{+}(P, Q) = \beta_n(P,Q) - \frac{1}{n}$ and $\mathsf{Adv}_n^{\times}(P, Q) = n \cdot \beta_n(P,Q)$, respectively.
+
+We derive exact analytical expressions and asymptotic characterizations of $\beta_n(P, Q)$, along with evaluations in several representative scenarios. Furthermore, we establish (nearly) tight mutual bounds between the additive Bayesian advantage and the total variation distance.
+
+Finally, we extend our analysis beyond the basic setting and present, for the first time, an upper bound on the success probability of Bayesian attacks in shuffle differential privacy. Specifically, when the outputs of $n$ users—each processed through an $\varepsilon$-differentially private local randomizer—are shuffled, the probability that an attacker successfully re-identifies any target user's message is at most $e^{\varepsilon}/n$.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:204">
                             <td class="time"></td>
                             <td>
@@ -167,6 +220,20 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Pointwise maximal leakage (PML) is a per-outcome privacy measure based on threat models from quantitative information flow. Privacy guarantees with PML rely on knowledge about the distribution that generated the private data. In this work, we propose a framework for PML privacy assessment and mechanism design with empirical estimates of this data-generating distribution. By extending the PML framework to consider sets of data-generating  distributions, we arrive at bounds on the worst-case leakage within a given set. We use these bounds alongside large-deviation bounds from the literature to provide a method for obtaining distribution-independent $(\varepsilon,\delta)$-PML guarantees when the data-generating distribution is estimated from available data samples. We provide an optimal binary mechanism, and show that mechanism design with this type of uncertainty about the data-generating distribution reduces to a linearly constrained convex program. Further, we show that optimal mechanisms designed for a distribution estimate can be used. Finally, we apply these tools to leakage assessment of the Laplace mechanism and the Gaussian mechanism for binary private data, and numerically show that the presented approach to mechanism design can yield significant utility increase compared to local differential privacy, while retaining similar privacy guarantees.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:205">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">DPEI: Privacy Budget Savings for Edge Information Protection in Synthetic Graph Publishing <a class="abstract_link" href="CSF-2026-07-26.html#talk:205">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11738.html">Ruizhong Du</a><sup>1</sup>, <a class="person" href="person11739.html">Zizhan Wei</a><sup>1</sup>, <a class="person" href="person11740.html">Mingyue Li</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Hebei University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> With the widespread adoption of graph-structured data, protecting the complex relational information between nodes and edges while preventing sensitive information leakage has become a critical challenge. However, existing edge protection methods either introduce noise directly into the adjacency matrix, resulting in significant information loss, or uniformly apply noise across all edges, leading to imbalanced privacy budget allocation and inefficiency. To address these issues, we propose DPEI, a Differential Privacy-based Edge Information protection solution designed to safeguard the edge relationships between two nodes, thus reducing the risk of privacy leakage and preventing attackers from repeatedly inferring internal community relationships from the released graph data. Specifically, DPEI achieves protection through PPO (Proximal Policy Optimization) based selection of locally optimal thresholds combined with adaptive Laplace noise operations, and attachment nodes below the threshold into high-information edges to enhance relational information protection. Subsequently, unlike traditional uniform allocation, DPEI distributes the privacy budget in proportion to the information content of each edge, ensuring that edges with higher information content receive stronger privacy protection. Extensive experiments conducted on three real-world graph datasets demonstrate that DPEI significantly outperforms existing methods across seven commonly used graph metrics, thereby validating its effectiveness and practicality.</p>
                                 </div>
                             </td>
                         </tr>
@@ -230,6 +297,27 @@
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study privacy guarantees in the framework of pointwise maximal leakage (PML) that satisfy two requirements: they are robust under post-processing and upper bound the failure probability, i.e., the probability that the information leakage exceeds a given threshold. We first examine two candidate definitions inspired by (approximate) differential privacy and show that neither one satisfies both requirements simultaneously. We then introduce the notion of the PML envelope, which quantifies the largest amount of information leakage about a secret after arbitrary post-processing of a mechanism’s output. By construction, the PML envelope satisfies both requirements. We discuss basic structural properties of the envelope, such as monotonicity, and derive general upper and lower bounds. We further analyze the envelope for two widely used privacy mechanisms: the PML-extremal mechanisms in the high-privacy regime and randomized response. Overall, this work establishes the PML envelope as a natural and operationally meaningful definition for providing privacy guarantees that are preserved under arbitrary downstream transformations.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:208">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Beyond Epsilon: A Principled QIF Framework for Local Differential Privacy <a class="abstract_link" href="CSF-2026-07-26.html#talk:208">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11747.html">Ramon G. Gonze</a><sup>1,5</sup>, <a class="person" href="person11743.html">Natasha Fernandes</a><sup>2</sup>, <a class="person" href="person11749.html">Heber H. Arcolezi</a><sup>3</sup>, <a class="person" href="person11750.html">Catuscia Palamidessi</a><sup>4</sup>, <a class="person" href="person11751.html">Nataliia Bielova</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Institut Polytechnique de Paris</div>
+                                <div class="affiliation_item"><sup>2</sup> Macquarie University</div>
+                                <div class="affiliation_item"><sup>3</sup> ETS Montréal</div>
+                                <div class="affiliation_item"><sup>4</sup> Inria</div>
+                                <div class="affiliation_item"><sup>5</sup> Universidade Federal de Minas Gerais</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Local Differential Privacy (LDP) has become the de facto standard for privacy-preserving data collection in large-scale systems, in particular for the purpose of estimating frequencies. However, the current research landscape lacks a systematic and principled way to compare LDP protocols. The parameter ε of LDP is considered the measure of
+privacy, but it only bounds worst-case distinguishability. Other comparisons rely on utility-driven analyses, where mechanisms are ranked based on their ability to preserve data utility for a given privacy budget ε. Both such kinds of comparisons fail to account for the strength of protocols against diverse attacker models. 
+In this paper, we propose a framework for analyzing LDP frequency estimation protocols through the lens of Quantitative Information Flow (QIF). By modeling LDP mechanisms as probabilistic channels, we leverage the concept of refinement (Blackwell ordering) to establish more principled classifications. This approach allows us to determine when one protocol is intrinsically superior to another for all possible adversaries, and to discuss the implications for utility. In particular, our analysis uncovers cases where protocols previously deemed "optimal" are, in fact, incomparable with, or strictly dominated by, other protocols. 
+We provide a formal QIF-based treatment of seven state-of-the-art protocols, including Generalized Randomized Response (GRR), local hashing variants (BLH, OLH), unary encoding schemes (SUE, OUE), and Thresholding with Histogram Encoding (THE). This perspective bridges the gap between the LDP and formal methods communities and enables principled, adversary-aware reasoning about locally private systems.</p>
                                 </div>
                             </td>
                         </tr>

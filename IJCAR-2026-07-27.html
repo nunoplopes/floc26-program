@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -208,6 +208,50 @@ most general unifier. In fact, minimal complete sets of
 unifiers of deterministic higher-order patterns may be
 infinite, so decidability of the unification problem
 remains an open question.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1262">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Automating proof search when equality is a logical connective <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1262">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12552.html">Kaustuv Chaudhuri</a><sup>1,2</sup>, <a class="person" href="person12553.html">Arunava Gantait</a><sup>1,2</sup>, <a class="person" href="person12198.html">Dale Miller</a><sup>1,2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Inria-Saclay & LIX</div>
+                                <div class="affiliation_item"><sup>2</sup> IPP</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Treating syntactic equality as a logical connective---governed by left- and right-introduction rules within the sequent calculus---offers an elegant and powerful approach to term identity. This treatment of equality allows for the derivation of core mathematical principles, such as Peano’s axioms (excluding induction), and serves as a foundation for the Abella interactive proof assistant. However, integrating this equality into automated proof search remains challenging. We present a proof search procedure that extends unification to handle the complexities of quantifier alternation and equations that occur in both positive and negative occurrences. While established logical frameworks such as lambda Prolog and LF lack direct support for this kind of equality, our procedure enables a lightweight logical framework that addresses this gap. Our system enables unification-aware proof search across a diverse range of first-order sequent calculi that can directly use this form of equality.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1263">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">SMT-Based Deontic Reasoning for Aqvist Logics <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1263">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12555.html">Christian Köll</a><sup>1</sup>, <a class="person" href="person12556.html">Agata Ciabattoni</a><sup>1</sup>, <a class="person" href="person12557.html">Dmitry Rozplokhas</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Building on the small-model constructions for Åqvist’s deontic logics (E, F, F+(CM), and G), we present Deo-SMT, an SMT-based reasoner implemented in Z3 for validity checking and countermodel generation. These logics correspond to well-known conditional systems: F+(CM) extends Preferential Conditional Logic with reflexivity and absoluteness, while G corresponds to Lewis’s VTA. Deo-SMT provides countermodel visualizations as text, matrices, and directed graphs. It outperforms the existing Isabelle/HOL approach and offers a lightweight, user-friendly interface for normative reasoning.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1264">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">grind: An SMT-Inspired Tactic for Lean 4 <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1264">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12558.html">Kim Morrison</a><sup>1</sup>, <a class="person" href="person12559.html">Leonardo de Moura</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Lean FRO</div>
+                                <div class="affiliation_item"><sup>2</sup> Amazon Web Services, and Lean FRO</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We describe grind, an SMT-inspired proof automation tactic for Lean 4. Unlike hammer-style tools that translate proof obligations into external logics and invoke external ATP and SMT solvers, grind works natively in the Calculus of Inductive Constructions, producing kernel-checkable proof terms without any soundness compromises. At its core, grind combines congruence closure for dependent type theory with E-matching and a suite of satellite solvers for linear integer arithmetic, linear arithmetic over ordered modules, polynomial equations over commutative (semi)rings, and associative-commutative operators. Each satellite solver is parameterized by Lean's typeclass mechanism, enabling it to operate over any type implementing the appropriate algebraic interface rather than only hardcoded numeric types. Users can extend grind with new theory solvers through a plugin API, control theorem instantiation through a constraint system on E-matching patterns, and inspect the internal state through an interactive mode with a domain-specific language for navigating the solver. An annotation system with automatic pattern selection enables libraries to declare how their theorems should be used by grind. The tactic ships with Lean and is used extensively in Mathlib, CSLib, and major formalization projects including the Prime Number Theorem formalization and Terence Tao's formalization of Analysis I.</p>
                                 </div>
                             </td>
                         </tr>
@@ -422,6 +466,28 @@ The deductive engine performs an automated proof search in the labelled sequent 
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1268">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Learning Computation Tree Logic with Neural Networks <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1268">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12583.html">Benjamin Bordais</a><sup>1</sup>, <a class="person" href="person12584.html">Daniel Neider</a><sup>2</sup>, <a class="person" href="person12585.html">Mustafa Yalciner</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université Libre de Bruxelles</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Dortmund University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Automatically identifying temporal properties from observations of a system's behavior provides valuable insight into that system's inner workings. 
+Temporal properties are often expressed in temporal logics, such as Computation Tree Logic (CTL).
+Existing approaches to learning CTL specifications from observations rely on constraint-solving by encoding the search for formulas into a satisfiability problem that perfectly separates observations that the system can (positive) or cannot (negative) perform. 
+While adequate in noise‑free settings, these methods often struggle with noisy data, such as incomplete executions or mislabeled traces, and scale poorly to large inputs.
+To overcome these limitations, we propose a neural approach for learning CTL specifications from positive- and negative-labeled observations represented as transition systems. 
+Our method employs a neural network in which neurons encode the presence of CTL operators at specific positions. After training, a deterministic extraction procedure converts network weights into interpretable CTL formulas. 
+In contrast to satisfiability‑based learning approaches, our framework efficiently produces high‑quality specifications even under noisy data conditions. 
+It supports arbitrary CTL formulas up to a user-defined size budget and consistently yields accurate results within short computation times, demonstrating that neural architectures can provide a fast and noise-tolerant method for inferring temporal properties.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1269">
                             <td class="time"></td>
                             <td>
@@ -447,6 +513,21 @@ The deductive engine performs an automated proof search in the labelled sequent 
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present an implemented reasoner for fuzzy order-sorted feature (OSF) logic, supporting fuzzy unification and normalization of OSF terms modulo a sort theory. Fuzzy OSF logic is a knowledge representation and reasoning language based on feature symbols, denoting functions, and sort symbols, denoting fuzzy sets. Sort symbols are organized in a fuzzy subsumption relation that extends to OSF terms, record-like structures representing classes of entities. The unification algorithm for these structures provides a calculus of fuzzy type subsumption. We demonstrate the system's behavior on representative examples, such as computing the membership degree of an instance to a sort, and computing subsumption degrees between sorts and OSF terms. We also report a comparison with a resolution-based fuzzy logic programming system.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1271">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Presentation of the Termination Competition (termCOMP) Results <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1271">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12589.html">Florian Frohn</a><sup>1</sup>, <a class="person" href="person11491.html">Jürgen Giesl</a><sup>1</sup>, <a class="person" href="person11498.html">Georg Moser</a><sup>2</sup>, <a class="person" href="person12592.html">Étienne Payet</a><sup>3</sup>, <a class="person" href="person12593.html">Akihisa Yamada</a><sup>4</sup>, <a class="person" href="person12594.html">Dieter Hofbauer</a><sup>5</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
+                                <div class="affiliation_item"><sup>3</sup> Université de La Réunion</div>
+                                <div class="affiliation_item"><sup>4</sup> National Institute of Informatics</div>
+                                <div class="affiliation_item"><sup>5</sup> ASW Saarland</div>
                                 </div>
                             </td>
                         </tr>

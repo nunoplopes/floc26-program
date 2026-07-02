@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -133,8 +133,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24249.html">Guy Avni</a>
                         </div>
                     </div>
@@ -154,6 +153,17 @@
 <a class="person" href="person14230.html">Djordje Zikelic</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Singapore Management University</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:921">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">A high-level view on causal representation learning with actions <a class="abstract_link" href="SAIV-2026-07-24.html#talk:921">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14231.html">Sara Magliacane</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Amsterdam</div>
                                 </div>
                             </td>
                         </tr>
@@ -194,8 +204,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24249.html">Guy Avni</a>
                         </div>
                     </div>
@@ -222,6 +231,20 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1462">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">MetaMoE: Formal Verification of Compositional Robustness and Scalability of Mixture-of-Experts Architecture <a class="abstract_link" href="SAIV-2026-07-24.html#talk:1462">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14238.html">Quang Pham</a><sup>1</sup>, <a class="person" href="person14239.html">Ben Wooding</a><sup>1</sup>, <a class="person" href="person14240.html">Luke Nam</a><sup>1</sup>, <a class="person" href="person14241.html">Samuel Sasaki</a><sup>1</sup>, <a class="person" href="person14242.html">Taylor T. Johnson</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Vanderbilt University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Mixture-of-experts (MoE) architectures offer modularity and scalability, yet their robustness, and the practicality of certifying that robustness, in heterogeneous settings are not well understood. This work presents MetaMoE, a heterogeneous MoE framework designed for compositional formal verification. In MetaMoE, a neural network, called a router, classifies an input image's domain and routes it to the corresponding domain expert neural network for fine-grained classification; we study how robustness propagates compositionally across these router and experts and establish when system-level verification can be derived from component-level verification. In homogeneous MoE, all experts share the same task, so a misroute may still preserve correctness if the receiving expert classifies the input correctly; in heterogeneous MoE, experts operate on disjoint class spaces, making any misroute catastrophic. We prove that when the router maintains expert selection under hard routing (k=1) within a perturbation limit, and the selected expert also maintains its classification within that perturbation limit, the end-to-end system robustness is compositional. This enables scalability as the computational power needed for verification and re-verification does not snowball as the system expands. We further complement the formal verification results with empirical experiments, which support the same robustness trends observed under certification. Experiments across 8 MoE configurations and 3 perturbation budgets show that robustly trained (RT) experts improve adversarial accuracy by up to 13.1% over non-robustly trained (NRT) ones and are a prerequisite for formal certifiability -- NRT models on complex domains are completely unverifiable -- while router training paradigm has negligible impact (<0.1%), and verified routers achieve 100% certified robustness accuracy (RoCRA) at practical perturbation bounds. These results outline a principled path toward scalable, verifiable modular AI.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1463">
                             <td class="time"></td>
                             <td>
@@ -235,6 +258,20 @@
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Probabilistic verification problems of neural networks are concerned with formally analysing the output distribution of a neural network under a probability distribution of the inputs. Examples of probabilistic verification problems include verifying the demographic parity fairness notion or quantifying the safety of a neural network. We present a new algorithm for solving probabilistic verification problems of neural networks based on an algorithm for computing and iteratively refining lower and upper bounds on probabilities over the outputs of a neural network. By applying state-of-the-art bound propagation and branch and bound techniques from non-probabilistic neural network verification, our algorithm significantly outpaces existing probabilistic verification algorithms, reducing solving times for various benchmarks from the literature from tens of minutes to tens of seconds. Furthermore, our algorithm compares favourably even to dedicated algorithms for restricted probabilistic verification problems. We complement our empirical evaluation with a theoretical analysis, proving that our algorithm is sound and, under mildly re-
 strictive conditions, also complete when using a suitable set of heuristics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1464">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change <a class="abstract_link" href="SAIV-2026-07-24.html#talk:1464">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14246.html">Sterre Lutz</a><sup>1</sup>, <a class="person" href="person14247.html">Matthijs T.J. Spaan</a><sup>1</sup>, <a class="person" href="person14248.html">Anna Lukina</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Autonomous systems operating in the real world encounter a range of uncertainties. Probabilistic neural Lyapunov certification is a powerful approach to proving safety of nonlinear stochastic dynamical systems. When faced with changes beyond the modeled uncertainties, e.g., unidentified obstacles, probabilistic certificates must be transferred to the new system dynamics. However, even when the changes are localized in a known part of the state space, state-of-the-art requires complete re-certification, which is particularly costly for neural certificates. We introduce VeRecycle, the first framework to formally reclaim guarantees for discrete-time stochastic dynamical systems. VeRecycle efficiently reuses probabilistic certificates when the system dynamics deviate only in a given subset of states. We present a general theoretical justification and algorithmic implementation. Our experimental evaluation shows scenarios where VeRecycle both saves significant computational effort and achieves competitive probabilistic guarantees in compositional neural control.</p>
                                 </div>
                             </td>
                         </tr>
@@ -295,8 +332,7 @@ We evaluate our approaches on different model architectures and robustness prope
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25691.html">Taylor T. Johnson</a>
                         </div>
                     </div>
@@ -316,8 +352,7 @@ We evaluate our approaches on different model architectures and robustness prope
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24249.html">Guy Avni</a>
                         </div>
                     </div>
@@ -328,6 +363,41 @@ We evaluate our approaches on different model architectures and robustness prope
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:923">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Neural Network Verification using Partial Multi-Neuron Relaxation <a class="abstract_link" href="SAIV-2026-07-24.html#talk:923">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14257.html">Ido Shmuel</a><sup>1</sup>, <a class="person" href="person14253.html">Guy Katz</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Hebrew University of Jeruslaem</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The increasing integration of deep neural networks in critical
+systems has spawned a theoretical and practical interest in formally guaranteeing
+safety properties about their behavior. To achieve this, contemporary verification
+algorithms rely on computing linear relaxations for a network's non-linear
+activation functions. Existing approaches for linear relaxations typically fall
+into one of two categories: single-neuron relaxation, in which each activation neuron
+is bounded in terms of its sources; and multi-neuron relaxation,
+in which linear bounds involving multiple activation neurons and their sources are
+calculated. However, existing methods might fail to balance tightness and
+scalability, as single-neuron bounds might not derive sufficiently tight
+bounds necessary for verification to complete, whereas generating multi-neuron
+relaxation for all activation neurons is computationally expensive.
+In this paper, we present a middle-ground approach featuring partial
+multi-neuron relaxation, in which we generate multi-neuron bounds for
+only a small, heuristically selected subset of neurons. To achieve this, we
+build upon existing branching heuristics for selecting neurons and for optimizing
+bounding hyper-planes for multi-neuron bounds. We integrated our proposed method
+within the Marabou verifier, and obtained favorable results in comparison
+to existing bound tightening methods. Our experiments showcase the
+potential of our technique for neural network verification.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session" id="session:1515">
                     <div class="heading">
@@ -352,8 +422,7 @@ We evaluate our approaches on different model architectures and robustness prope
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24249.html">Guy Avni</a>
                         </div>
                     </div>
@@ -365,6 +434,40 @@ We evaluate our approaches on different model architectures and robustness prope
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:924">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Verified Tensor Operators for Safety-Critical ML: From Specification to Reference Implementation <a class="abstract_link" href="SAIV-2026-07-24.html#talk:924">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person13984.html">João Machado</a><sup>1</sup>, <a class="person" href="person13985.html">Ricardo Silva</a><sup>1</sup>, <a class="person" href="person14261.html">Loïc Correnson</a><sup>2</sup>, <a class="person" href="person13986.html">João Galego</a><sup>3</sup>, <a class="person" href="person13987.html">Eric Jenn</a><sup>4</sup>, <a class="person" href="person13988.html">Hugo Daniel Macedo</a><sup>5,7</sup>, <a class="person" href="person14265.html">Jean Souyris</a><sup>6</sup>, <a class="person" href="person13989.html">Jorge Sousa Pinto</a><sup>5,7</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade do Minho & Critical Software, Portugal</div>
+                                <div class="affiliation_item"><sup>2</sup> CEA LIST, Saclay, France</div>
+                                <div class="affiliation_item"><sup>3</sup> ISEG Executive Education & Critical Software, Portugal</div>
+                                <div class="affiliation_item"><sup>4</sup> IRT Saint-Exupéry, Toulouse, France</div>
+                                <div class="affiliation_item"><sup>5</sup> HASLab</div>
+                                <div class="affiliation_item"><sup>6</sup> Airbus Commercial, Toulouse, France</div>
+                                <div class="affiliation_item"><sup>7</sup> INESC TEC & Universidade do Minho, Portugal</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Safety-critical deployment of machine learning models requires
+  unambiguous specification and verified implementation of tensor
+  operators. This paper presents a formally verified pipeline based on
+  the Why3 deductive verification platform. The pipeline takes each
+  operator from an abstract WhyML specification over mathematical
+  tensors to extracted C code, via a concrete implementation on flat
+  arrays linked by a machine-checked refinement proof. A reusable
+  library supports the development, providing abstract tensor types, a
+  row-major layout with proven bijectivity, and a refinement mapping
+  to a C-level representation.  We illustrate the workflow on several
+  ONNX operators, developed within the SONNX Working Group. Finally,
+  we demonstrate how the abstract specifications compose to enable
+  contract-based verification of functional properties of complete
+  networks. The methodology is applicable beyond ONNX to any framework
+  requiring verified tensor implementations.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:925">
                             <td class="time"></td>
                             <td>
@@ -405,6 +508,20 @@ We evaluate our approaches on different model architectures and robustness prope
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> While neural networks have achieved remarkable success across a wide range of application domains, their predictions remain brittle when confronted with adversarial perturbations. To enable their responsible deployment in safety-critical settings, neural network verification techniques have been developed to formally establish input–output properties of interest. However, even state-of-the-art verification systems such as α,β-CROWN, the winner of the Verification of Neural Networks Competition (VNN-COMP) since 2021, may fail to prove challenging properties within reasonable time budgets. Fully exploiting the capabilities of such systems typically demands careful tuning of numerous parameters, a process that often relies on substantial domain expertise and extensive manual experimentation. In this work, for the first time, we apply automated algorithm configuration to α,β-CROWN using SMAC3, thereby eliminating the need for labour-intensive manual tuning. We show that, given a carefully designed parameter search space, automatically discovered configurations can achieve performance comparable to expert-crafted configurations, even when using relatively modest computational budgets for the optimisation process. We evaluate our approach on the benchmarks from the regular track of VNN-COMP 2025 and demonstrate that the automatically configured version of α,β-CROWN achieves a higher overall score than the author-provided configuration when applying the scoring scheme of the competition.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:928">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Hybrid Robustness Verification for Spatio-Temporal Neural Networks <a class="abstract_link" href="SAIV-2026-07-24.html#talk:928">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14280.html">Sherwin Varghese</a><sup>1</sup>, <a class="person" href="person14281.html">Matthew Wicker</a><sup>1</sup>, <a class="person" href="person14282.html">Alessio Lomuscio</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Imperial College London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> With AI increasingly deployed in safety-critical systems, providing formal robustness guarantees for the underlying models is essential. Existing verification methods either rely on overly conservative approximations or incur prohibitive computational costs. For example, the use of $\ell_p$-norm perturbations in video settings encodes the belief that the adversary can inject noise in every video frame. In practice, adversarial perturbations exhibit structured spatial and temporal correlations, constrained to lower-dimensional, semantically meaningful subspaces. In this work, we study robustness verification of \emph{3D convolutional neural networks} (3D CNNs) processing video and volumetric inputs, targeting applications in action recognition (UCF-101), autonomous driving (Udacity), and medical imaging (MedMNIST) exploiting realistic assumptions on adversarial strength by modelling them as spatio-temporal constraints --- where the attacker can modify either a subset of frames or patches within a set of consecutive frames. We demonstrate that modelling realistic constraints enables tighter approximations, particularly in CNNs. We introduce \emph{Spatio-Temporal Bound Propagation} (STBP), a verification framework that computes an exact closed-form characterization of the first convolutional layer and propagates certified bounds through subsequent layers using scalable approximations. Computing the exact closed-form provides the tightest bounds for the first convolutional layer. Thus, we utilise approximation methods in the remainder of the network. To spur further progress in this field, we propose \texttt{ST-Bench}, a verification benchmark for autonomous driving and activity recognition, to systematically evaluate verifiable robustness. Compared to existing verification and training-based approaches, STBP provides stronger robustness guarantees with significantly improved scalability, achieving up to $1.7\times$ higher certified robust accuracy under identical perturbation budgets.</p>
                                 </div>
                             </td>
                         </tr>

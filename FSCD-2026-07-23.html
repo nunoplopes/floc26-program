@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -133,8 +133,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person23181.html">Frank Pfenning</a>
                         </div>
                     </div>
@@ -186,8 +185,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person25253.html">Liron Cohen</a>
                         </div>
                     </div>
@@ -199,6 +197,53 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:270">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Constructing (Co)inductive Types via Large Sizes <a class="abstract_link" href="FSCD-2026-07-23.html#talk:270">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12225.html">Bastiaan Laarakker</a><sup>1</sup>, <a class="person" href="person12226.html">Daniël Otten</a><sup>2</sup>, <a class="person" href="person12227.html">Benno van den Berg</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Leiden University</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Amsterdam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> To ensure decidability and consistency of its type theory, a proof assistant should only accept terminating recursive functions and productive corecursive functions. Most proof assistants enforce this through syntactic conditions, which can be restrictive and non-modular. Sized types are a type-based alternative where (co)inductive types are annotated with additional size information. Well-founded induction on sizes can then be used to prove termination and productivity.
+
+An implementation of sized types exists in Agda, but it is currently inconsistent due to the addition of a largest size. We investigate an alternative approach, where intensional type theory is extended with a large type of sizes and parametric quantifiers over sizes. We show that inductive and coinductive types can be constructed in this theory, which improves on earlier work where this was only possible for the finitely-branching inductive types. The consistency of the theory is justified by an impredicative realisability model, which interprets the type of sizes as an uncountable ordinal.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:271">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Not choosing is still a choice: Constructive mathematics without any choice <a class="abstract_link" href="FSCD-2026-07-23.html#talk:271">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12228.html">Martin Baillon</a><sup>1</sup>, <a class="person" href="person12229.html">Yannick Forster</a><sup>1</sup>, <a class="person" href="person12230.html">Dominik Kirst</a><sup>1</sup>, <a class="person" href="person12231.html">Assia Mahboubi</a><sup>1</sup>, <a class="person" href="person12232.html">Pierre-marie Pédrot</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> INRIA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The axiom of choice (AC) states that every total relation contains a function.
+  It enjoys a pivotal role in both classical and constructive dialects of mathematics.
+  In the former, it is seen as a useful closure property invoked especially in set-theoretic contexts, in the latter it is seen either as a tautology, following from a constructive reading of totality proofs, or as a taboo, as by an extensional reading of totality proofs it enforces full classical logic.
+  It has therefore been debated how much of AC should be accepted in constructive foundations and authors like Richman argued for
+``Constructive mathematics without choice''
+  where even countable choice, not immediately jeopardising constructive reasoning, is avoided.
+  
+  With this paper, we propose a continuation of Richman's programme of more radical extent
+  and systematically study constructive foundations absent of countable, unique, or quantifier-free choice principles as well as the spurious fragments of (the actual) AC in form of extensionality principles:``Constructive mathematics without \textit{any} choice''
+
+  We argue that such a minimalistic setting is advantageous, for instance for studies in constructive reverse mathematics and synthetic computability theory.
+  Apart from these programmatic considerations and a careful encyclopedia of choice principles, we revisit and refine several results from the literature:
+  We show that already the partition principle (a consequence of AC of unknown strength) implies the excluded middle, that already decidable equality of propositions implies proof irrelevance, and that function inversion principles such as the Cantor-Bernstein theorem not only rely on the excluded middle but also on unique choice. To the best of our knowledge, the latter
+is the first reverse mathematics result regarding the full axiom of unique choice, enabled by our
+minimal setting.
+
+  Implementing such a minimalistic foundation, the proofs of all our results have been mechanised with the Rocq prover.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:272">
                             <td class="time"></td>
                             <td>
@@ -239,8 +284,7 @@
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24340.html">Claudia Faggian</a>
                         </div>
                     </div>
@@ -252,6 +296,21 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:273">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Denotational semantics for stabiliser quantum programs <a class="abstract_link" href="FSCD-2026-07-23.html#talk:273">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12236.html">Cole Comfort</a><sup>1</sup>, <a class="person" href="person12237.html">Robert Booth</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université Paris-Saclay</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The stabiliser fragment of quantum theory is a foundational building block for quantum error correction, and hence for the fault-tolerant compilation of quantum programs. In this article, we develop a sound, universal, and complete denotational semantics for stabiliser operations, including measurement, classically controlled Pauli operators, and affine classical computation; supporting an explicit treatment of quantum error-correcting codes. We interpret stabiliser operations as \emph{affine relations} over finite fields, yielding a semantics that reflects the algebraic structure underlying stabiliser quantum error correction. Because stabiliser quantum mechanics has a well-behaved algebraic structure, our relational semantics is conceptually transparent and computationally tractable when compared to standard denotational models for general quantum programs. We demonstrate the resulting semantics by describing a small, low-level assembly language for stabiliser programs with fully-abstract denotational semantics.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:274">
                             <td class="time"></td>
                             <td>
@@ -316,8 +375,7 @@ In order to reason about large composite systems, we introduce a compact scalabl
                     </div>
 
                     <div class="session_chair">
-                        <div class="chair_word">Chair:</div>
-                        <div class="chair_names">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
 <a class="person" href="person24042.html">Takeshi Tsukada</a>
                         </div>
                     </div>
@@ -329,6 +387,22 @@ In order to reason about large composite systems, we introduce a compact scalabl
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:276">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Proof Identity and Categorical Models of BV <a class="abstract_link" href="FSCD-2026-07-23.html#talk:276">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12242.html">Matteo Acclavio</a><sup>1</sup>, <a class="person" href="person12243.html">Lutz Strassburger</a><sup>2</sup>, <a class="person" href="person12244.html">Vladimir Zamdzhiev</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Southern Denmark</div>
+                                <div class="affiliation_item"><sup>2</sup> INRIA Saclay</div>
+                                <div class="affiliation_item"><sup>3</sup> Université Paris-Saclay, CNRS, ENS Paris-Saclay, Inria, Laboratoire Méthodes Formelles</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> BV-categories are a recent development that aims to give categorical semantics to proofs in the logic BV. However, due to the absence of a coherence theorem on one side and a well-defined notion of proof identity for BV on the other side, the precise relation between BV-categories and the logic BV is still not clear. To improve on this situation, we define in this paper a notion of proof identity for BV, based on the notion of atomic flows, which can be seen as a special form of string diagrams. Based on this notion of proof identity, we then strengthen the existing notion of BV-category and prove that it is sound with respect to the logic.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:277">
                             <td class="time"></td>
                             <td>

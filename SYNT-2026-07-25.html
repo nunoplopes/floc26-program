@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -214,6 +214,39 @@
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:962">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">From Quasipolynomial to Data-Parallel Algorithms for Verification Games Played on Graphs <a class="abstract_link" href="SYNT-2026-07-25.html#talk:962">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14606.html">Vanessa Flugel</a><sup>1</sup>, <a class="person" href="person14607.html">Marcin Jurdzinski</a><sup>2</sup>, <a class="person" href="person14608.html">Guillermo Perez</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Antwerp</div>
+                                <div class="affiliation_item"><sup>2</sup> Warwick University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a practical acceleration of recent quasipolynomial-time progress measure algorithms for parity games. For this, we combine a novel Strahler-universal tree encoding with data-parallel (SIMD) computation.
+
+Our key contribution is showing that common instances admit very small structural parameters, enabling compact representations that fit into SIMD registers. This insight allows us to redesign the core lifting (i.e. successor computation) step into a parallel form, yielding significant empirical speedups over existing implementations.
+
+This work demonstrates that bridging algorithmic structure (Strahler measures) with hardware-aware optimization (SIMD) can materially improve parity game solving.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:963">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Lazy and Priority-Guided Product Construction for Non-Integer Discounted-Sum Synthesis <a class="abstract_link" href="SYNT-2026-07-25.html#talk:963">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14609.html">Raj Chandak</a><sup>1</sup>, <a class="person" href="person14610.html">Priyanka Golia</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology, Delhi</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Reactive synthesis with non-integer discounted-sum objectives is solved by Bansal et al. (AAAI 2022) via the DSLow comparator automaton, which under-approximates the running sum and reduces the problem to a Büchi game on the product of the arena and comparator. Their construction allocates the full product upfront and explores it by BFS, incurring two costs: many product states are structurally unreachable (ghost states), and BFS defers winning states behind a wide shallow frontier. We propose (1) a lazy on-the-fly construction that materializes only reachable states, and (2) a priority-guided exploration keyed on U − c (distance to comparator saturation) with interleaved backward propagation. On the standard benchmarks, our approach constructs 74– 99% fewer states and discovers the first winning state up to 22× faster, with identical winning regions. Weight-specific asymmetric comparator bounds additionally cut the theoretical state space by 40–50% at no cost.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:964">
                             <td class="time"></td>
                             <td>
@@ -250,6 +283,22 @@ In this talk, we will consider the complexity of solving games played on
 (succinct) temporal graphs. In particular, our results show that reachability and parity games on temporal graphs are PSPACE-complete. In fact, the PSPACE-hardness also holds on 1-player temporal graphs. 
 
 We also consider games with explorability objective, where one player tries to visit all the vertices of a graph. Explorability is a well studied topic in temporal graphs. We show that the game version of the explorability problem is PSPACE-complete even when the temporal graph is presented as a sequence of  static graphs.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:966">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Sure-almost-sure and Sure-limit-sure Window Mean Payoff in Markov Decision Processes <a class="abstract_link" href="SYNT-2026-07-25.html#talk:966">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14617.html">Pranshu Gaba</a><sup>1</sup>, <a class="person" href="person14618.html">Shibashis Guha</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Tata Institute of Fundamental Research, Mumbai</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Given rationals α and β, the sure-almost-sure problem for an objective φ in a Markov decision process (MDP) asks if one can simultaneously ensure that all outcomes of the MDP have φ-value at least α (i.e., sure α satisfaction), and with probability 1 the outcome has φ-value at least β (i.e., almost-sure β satisfaction). The sure-limit-sure problem asks if for all ε > 0, one can simultaneously ensure that all outcomes have φ-value at least α, and with probability at least 1 − ε the outcome has φ-value at least β. Moreover, if simultaneous satisfaction of objectives is possible, then one would also like to construct a strategy (for sure-almost-sure) or a family of strategies (for sure-limit-sure) that achieves this.
+
+In this paper, we solve the sure-almost-sure and sure-limit-sure problems for window mean-payoff objectives. The window mean-payoff objective strengthens the standard mean-payoff objective by requiring that the average payoff of a finite window that slides over an infinite run be greater than a given threshold. We study two variants of window mean payoff; for both variants we show that sure-almost-sure problem and the sure-limit-sure problem are no harder than sure satisfaction and almost-sure satisfaction when considered separately for these objectives.</p>
                                 </div>
                             </td>
                         </tr>
@@ -300,6 +349,20 @@ We also consider games with explorability objective, where one player tries to v
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:967">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Multiple Definitions from a Single Resolution Proof <a class="abstract_link" href="SYNT-2026-07-25.html#talk:967">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11615.html">Friedrich Slivovsky</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Liverpool</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Identifying implicitly defined variables in a propositional formula and extracting their explicit definitions is useful for Boolean functional synthesis and related problems. This typically involves one SAT call per variable and constructing an interpolant from the resulting resolution proof. We propose extracting an entire set of n definitions from a single resolution refutation. A modification of a standard interpolation system computes interpolants under partial assignments, one per target variable. A single pass of the refutation then produces a multi-output circuit of size O(nm) for a proof of length m. Preliminary experiments on Boolean functional synthesis benchmarks show that the joint refutation is produced at least as fast as the per-variable sequence of proofs, but the multi-output circuits are typically larger. Closing this circuit-size gap is the main open question.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:968">
                             <td class="time"></td>
                             <td>
@@ -316,6 +379,25 @@ We also consider games with explorability objective, where one player tries to v
     We first show that unlike instances that are random, industrial BFnS instances admit high modularity,  even more than is common in SAT. Observing that, we construct a novel BFnS random instance generator with controlled modularity, which we use to study the effect of modularity on performance of state-of-the-art BFnS solvers.
     Finally we white-box these solvers to determine how the structure of generated instances changes iteratively through the solving process.
     Our findings indicate that instances modularity has a direct effect on the various solvers performance and their behavior.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:969">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Reducing Quantum Circuit Synthesis to #SAT <a class="abstract_link" href="SYNT-2026-07-25.html#talk:969">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14622.html">Dekel Zak</a><sup>1</sup>, <a class="person" href="person11542.html">Jingyi Mei</a><sup>1</sup>, <a class="person" href="person13296.html">Jean-Marie Lagniez</a><sup>2</sup>, <a class="person" href="person11558.html">Alfons Laarman</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Leiden University</div>
+                                <div class="affiliation_item"><sup>2</sup> Artois University, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Quantum circuit synthesis is the task of decomposing a given quantum operator into a sequence of elementary quantum gates. Since the finite target gate set cannot exactly implement any given operator, approximation is often necessary. Model counting, or #SAT, has recently been demonstrated as a promising new approach for tackling core problems in quantum circuit analysis.
+In this work, we show for the first time that the universal quantum circuit synthesis problem can be reduced to maximum model counting. We formulate a #SAT encoding for exact and approximate depth-optimal quantum circuit synthesis into the Clifford+T gate set. We evaluate our method with an open-source implementation that uses the maximum model counter d4Max as a backend.
+For this purpose, we extended d4Max with support for complex and negative weights to represent amplitudes. Experimental results show that existing classical tools have potential for the quantum circuit synthesis problem.
+
+https://arxiv.org/pdf/2508.00416</p>
                                 </div>
                             </td>
                         </tr>
@@ -438,6 +520,20 @@ for which this problem remains decidable.</p>
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Inductive program synthesis algorithms search a space of programs to find one that meets some specification. Enumerating according to the syntax of a programming language leads to a large search space, and hence slow synthesis, due in large part to semantic duplication. A synthesiser may have to evaluate—and reject—multiple semantically identical but syntactically different programs, wasting resources.
 
 To avoid this duplication, we present NSynC, a synthesis-by-semantics approach. By enumerating the semantics of the target language directly, we guarantee that each candidate program is semantically unique and that each evaluation of a candidate is meaningful. Specifically, we search the space of normal forms for the simply-typed lambda calculus with sums using a top-down, type-directed synthesis algorithm. Our preliminary results show a geomean speedup of 8.93x on a synthetic benchmark suite over the unrestricted algorithm.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:973">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Liquify your Programs <a class="abstract_link" href="SYNT-2026-07-25.html#talk:973">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person14639.html">Rajarshi Goswami</a><sup>1</sup>, <a class="person" href="person11284.html">Ashish Mishra</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IIT Hyderabad</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Traditional type systems prevent basic errors but lack the expressiveness to handle logical errors or prove complex program properties. Refinement types address this by augmenting base types with decidable first-order logic constraints. However, writing them manually is difficult, which ultimately hinders their widespread adoption. Existing symbolic and data-driven inference approaches often struggle to scale to multi-function programs or rely heavily on manual annotations. In this work, we present a neurosymbolic approach for automated refinement type synthesis. Our methodology converts the refinement typing rules into a graphical representation and learns semantic representations via a Graph Neural Network (GNN). An autoregressive decoder model then synthesizes predicates, using Reinforcement Learning (RL) to navigate the search space while a type checker verifies candidates. However, a core challenge in this setting is the sparse-reward problem, where type checker feedback provides insufficient guidance for the RL agent. To address this, we introduce two main contributions. First, novel Behavioral Rewards utilizing subspecifications and semantic program slicing to provide partial rewards. Second, a data-driven, CEGAR-Guided Learning loop that refines reward signals based on incremental correctness. Together, these techniques generate denser rewards and accelerate convergence. Our implementation and initial evaluation demonstrates that the framework can synthesize semantically correct specifications for complex programs and properties.</p>
                                 </div>
                             </td>
                         </tr>

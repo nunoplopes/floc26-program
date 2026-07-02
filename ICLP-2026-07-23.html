@@ -23,8 +23,7 @@
             </div>
 
             <div id="menu2">
-                <a href="index.html">General</a>
-<span class="separator"> | </span>                <a href="ACV-index.html">ACV</a>
+                <a href="ACV-index.html">ACV</a>
 <span class="separator"> | </span>                <a href="AIMACS-index.html">AIMACS</a>
 <span class="separator"> | </span>                <a href="AR4Space-index.html">AR4Space</a>
 <span class="separator"> | </span>                <a href="ARQNL-index.html">ARQNL</a>
@@ -107,6 +106,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
             <div id="menu3">
@@ -232,6 +232,29 @@ In this work, we introduce ProDebug, the first tool to combine Large Language Mo
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:325">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Diamonds Are Forever: Stabilization Semantics for Unrestricted Aggregation and Recursion in Logica <a class="abstract_link" href="ICLP-2026-07-23.html#talk:325">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person11197.html">Evgeny Skvortsov</a><sup>1</sup>, <a class="person" href="person11199.html">Yilin Xia</a><sup>2</sup>, <a class="person" href="person11198.html">Shawn Bowers</a><sup>3</sup>, <a class="person" href="person11200.html">Ojaswa Garg</a><sup>1</sup>, <a class="person" href="person12462.html">Bertram Lud\"{a}scher</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Google</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Illinois Urbana-Champaign</div>
+                                <div class="affiliation_item"><sup>3</sup> Gonzaga University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Logica is an open-source logic programming language that compiles to SQL and runs on platforms including DuckDB, SQLite, PostgreSQL, and BigQuery. Unlike classic Datalog, Logica permits free combination of recursion and aggregation, enabling concise formulations of algorithms from shortest paths to PageRank. This expressiveness introduces fundamental semantic challenges: aggregate predicates are updated by replacement rather than accumulation, evaluation is sensitive to rule scheduling, and programs may converge to meaningful results without ever reaching a fixpoint, placing them outside the scope of
+traditional fixpoint semantics.
+
+We address these challenges with \emph{Defendant--Opponent (DO) semantics}, a stabilization-based framework for nonmonotonic logic programs. Program evaluation is modeled as a rewrite system over derivation states. A ground atom is true if, from every reachable state, there exists a
+continuation after which the atom persists in all further derivations. This notion admits two equivalent characterizations: (1)~game-theoretically, truth is what a Defendant can defend against any Opponent in a three-turn derivation game; and (2)~modally, a formula~$t$ is a
+theorem precisely when the condition $\bdb\,t$ holds in the derivation graph viewed as a Kripke structure.
+
+We show that DO semantics coincides with classic least fixpoint semantics for positive Datalog programs and is compatible with both the Well-Founded Semantics (the two never disagree on definite answers) and the Stable Model Semantics (every stable model is a DO interpretation). For programs that converge without reaching a fixpoint, we introduce $\omega$-limit interpretations, giving rigorous meaning to iterative computations such as PageRank. DO semantics thus offers a coherent framework that complements existing logic programming semantics while supporting recursive aggregation.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:326">
                             <td class="time"></td>
                             <td>
@@ -283,6 +306,50 @@ We evaluate our methodology using a collaborative graph data editing case study 
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:327">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Bound-Founded Semantics for Answer Set Programming with Difference Constraints <a class="abstract_link" href="ICLP-2026-07-23.html#talk:327">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12466.html">Pedro Cabalar</a><sup>1</sup>, <a class="person" href="person11202.html">Jorge Fandinno</a><sup>2</sup>, <a class="person" href="person12468.html">Nicolas Ruehling</a><sup>3</sup>, <a class="person" href="person11166.html">Torsten Schaub</a><sup>3</sup>, <a class="person" href="person12470.html">Sebastian Schellhorn</a><sup>3</sup>, <a class="person" href="person12296.html">Philipp Wanko</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of A Coruña</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Nebraska Omaha</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Potsdam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> While the integration of linear constraints has significantly expanded the reach of Answer Set Programming (ASP),
+existing hybrid solvers often rely on disparate semantic underpinnings that lack a unified logical foundation.
+We address this gap by introducing a many-sorted variant of the Bound-founded Logic of Here-and-There (HTB),
+providing a versatile framework capable of characterizing equilibrium models
+across a wide spectrum of alternative semantics for extensions of ASP with linear constraints.
+We apply this framework to the setting of difference constraints,
+focusing on the semantic characterization of clingodl.
+Central to our approach is the formalization of foundedness for numeric variables.
+By investigating how different hybrid systems---such as clingodl, clingcon, and flingo---justify constraint atoms,
+we uncover the semantic roots of their varying behaviors.
+This investigation results in a single,
+consistent framework that not only formalizes the foundations of current systems like clingodl
+but also facilitates the rigorous study of program simplifications and the future integration of diverse semantic principles.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:328">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">hMKNGneg: Hybrid MKNF with Classical Negation <a class="abstract_link" href="ICLP-2026-07-23.html#talk:328">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12472.html">Arun Raveendran Nair Sheela</a><sup>1</sup>, <a class="person" href="person12473.html">Christophe REY</a><sup>2</sup>, <a class="person" href="person12474.html">DE GRANCEY Florence</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université Clermont Auvergne, LIMOS, Thales</div>
+                                <div class="affiliation_item"><sup>2</sup> Université Clermont Auvergne, LIMOS, CNRS, France</div>
+                                <div class="affiliation_item"><sup>3</sup> Thales</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hybrid MKNF knowledge bases under the well-founded semantics integrate Description Logics with Logic Programming \citep{Knorr2011LocalCW}; however, they do not support classical negation in the rule component, which limits their ability to represent explicit negative knowledge. This limitation is particularly problematic for applications in which conclusions must be justified by explicit evidence rather than default assumptions. We introduce $\hybridmknf$, an extension of hybrid MKNF that supports classical negation in the rule component. Based on the notion of stable partitions from \cite{LIU2017123}, we provide a semantic characterisation of three-valued MKNF models for $\hybridmknf$ and define the well-founded partition as the unique stable partition that is minimal with respect to the number of true and false modal atoms. Finally, we propose a general procedure for computing the well-founded partition of a $\hybridmknf$ knowledge base.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:329">
                             <td class="time"></td>
                             <td>
@@ -309,6 +376,35 @@ We evaluate our methodology using a collaborative graph data editing case study 
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present chrKanren, a dialect of the purely relational constraint logic programming language miniKanren which includes support for Constraint Handling Rules (CHR), a language for writing rule–based programs such as constraint solvers. We show how to integrate CHR’s constraint propagation mechanism into the language of miniKanren search streams such that both processes remain complete. We also use chrKanren to illustrate novel applications of constraints in miniKanren, such as semantic unification of user-defined data-structures and example propagation in relational interpreters in the style of MYTH.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:331">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Delayed Constraints in Narrowing for the Logic-Based Analyses of Real-Time Systems <a class="abstract_link" href="ICLP-2026-07-23.html#talk:331">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12480.html">Santiago Escobar</a><sup>1</sup>, <a class="person" href="person12481.html">Raúl López-Rueda</a><sup>1</sup>, <a class="person" href="person12482.html">Carlos Olarte</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat Politècnica de València</div>
+                                <div class="affiliation_item"><sup>2</sup> Université Sorbonne Paris Nord</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The formal analysis of real-time systems must address two dimensions of infiniteness: an unbounded number of agents and messages, and a potentially infinite state space induced by dense time. We present a novel narrowing-based verification method that deals with both dimensions. Technically, our approach integrates (i) rewriting modulo SMT for symbolic representation of timing constraints, (ii) narrowing with logical variables to reason about systems with a unknown number of agents, and (iii) a constraint store over partially instantiated terms, in the style of constraint logic programming. We further introduce a folding mechanism that, under certain conditions, ensures termination of the symbolic analysis. The method has been implemented as an extension of the Maude rewriting engine. We evaluate the approach by verifying the correctness of a timed mutual exclusion protocol without imposing bounds on the number of participating processes. Moreover, we show that the framework uniformly supports the analysis of other real-time models, including parametric timed automata with unspecified components that our method is able to synthesize. Our results suggest that the proposed framework provides a sound and expressive basis for the symbolic verification of real-time rewrite theories.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:332">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">CaVE: A Constraint Storage Approach to Handling Integrity Constraints <a class="abstract_link" href="ICLP-2026-07-23.html#talk:332">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12483.html">Xiangyu Guo</a><sup>1</sup>, <a class="person" href="person12484.html">Ajay Bansal</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Arizona State University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper presents Constraints as Verifiers and Emitters (CaVE), a constraint storage approach for handling integrity constraints in stableKanren. stableKanren is a normal logic-program solver based on extended unification and resolution. Integrity constraints control the outcomes of goals in normal logic programs, which is critical for non-monotonic reasoning. There is no resolution-based algorithm for handling integrity constraints that can be used in stableKanren. Therefore, we design Constraints as Verifiers and Emitters (CaVE), a constraint storage that works with resolution to support integrity constraints. We prove the soundness and completeness of CaVE with respect to the integrity constraints. We implement CaVE using Scheme in stableKanren and show a series of example normal programs written in stableKanren with integrity constraints.</p>
                                 </div>
                             </td>
                         </tr>
@@ -344,6 +440,21 @@ We evaluate our methodology using a collaborative graph data editing case study 
 
 
                     <table class="talks">
+                        <tr class="talk" id="talk:333">
+                            <td class="time"></td>
+                            <td>
+                                <div class="title">Learning from Answer Sets via Single-Shot Disjunctive ASP Encoding <a class="abstract_link" href="ICLP-2026-07-23.html#talk:333">(abstract)</a></div>
+                                <div class="authors">
+<a class="person" href="person12485.html">Roberto Borelli</a><sup>1</sup>, <a class="person" href="person12303.html">Agostino Dovier</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Padova</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Udine</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Deep Learning techniques are nowadays pervasive in AI. However, these approaches suffer from a lack of transparency for justifying their output and for helping users in believing in their decisions. For these reasons alternative approaches to learning deserve to be explored either for developing new tools with autonomous learning capability or for explaining the results of black-box predictors. Among them an important role is assumed since the Nineties by Inductive Logic Programming and, in particular, recently by the approaches of Learning from Answer Sets (LAS). Computing inductive solutions for LAS tasks is known to be Sigma P2 hard. In this work, we tackle this problem using a single-shot disjunctive ASP encoding based on the saturation technique originally proposed by Eiter and Gottlob. We prove that, when the background knowledge and hypothesis space form a tight program (a syntactical property) our encoding is linear in the size of the task. This approach contrasts with the state-of-the-art ILASP system, which relies on multiple iterative calls to an ASP solver. As a result, it can be directly evaluated by modern disjunctive ASP solvers, leveraging decades of research and optimization in the ASP community. We implement our method in a system named LASCO. Experimental results on a diverse set of benchmarks demonstrate that LASCO outperforms all versions of ILASP on many instances and it scales if run on multi-threaded machines.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:334">
                             <td class="time"></td>
                             <td>
