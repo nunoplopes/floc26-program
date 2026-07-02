@@ -51,7 +51,7 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 
 table.talks { width: 100%; margin-top: 6px; border-collapse: collapse; }
 table.talks td { padding: 4px 8px; vertical-align: top; border-top: 1px dashed #ddd; }
-table.talks td.time { width: 60px; font-weight: bold; color: #225; white-space: nowrap; }
+table.talks td.time { width: 60px; font-size: 12px; font-weight: bold; color: #225; white-space: nowrap; }
 .title .duration { display: inline-block; font-weight: normal; font-size: 11px; color: #338; background: #eef; border-radius: 3px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
 .authors { font-size: 13px; color: #225; }
 .authors sup { font-size: 10px; }
