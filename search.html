@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Search</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639186968176338846" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639186972683794477" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
     <style>
@@ -127,21 +127,62 @@
     let allTalks = [];
     let debounceTimer;
 
+    const CACHE_KEY = 'floc:search-cache';
+
+    async function fetchAllTalks() {
+        const talks = [];
+        const manifest = await fetch('data/manifest.json');
+        if (manifest.ok) {
+            const manifestData = await manifest.json();
+            for (const groupId of manifestData.groupIds) {
+                const jsonFile = `data/group-${groupId}.json`;
+                const response = await fetch(jsonFile);
+                if (response.ok) {
+                    const data = await response.json();
+                    talks.push(...(data.talks || []));
+                }
+            }
+        }
+        return talks;
+    }
+
     async function loadSearchData() {
         loadingDiv.style.display = 'block';
         resultsList.innerHTML = '';
         noResultsDiv.style.display = 'none';
 
         try {
-            const manifest = await fetch('data/manifest.json');
-            if (manifest.ok) {
-                const manifestData = await manifest.json();
-                for (const groupId of manifestData.groupIds) {
-                    const jsonFile = `data/group-${groupId}.json`;
-                    const response = await fetch(jsonFile);
-                    if (response.ok) {
-                        const data = await response.json();
-                        allTalks = allTalks.concat(data.talks || []);
+            let version = null;
+            try {
+                const buildInfo = await fetch('build-info.json', { cache: 'no-store' });
+                if (buildInfo.ok) {
+                    version = (await buildInfo.json()).generatedAtUtc;
+                }
+            } catch (e) {
+                console.error('Failed to check build version:', e);
+            }
+
+            let cached = null;
+            if (version) {
+                try {
+                    const stored = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+                    if (stored && stored.version === version) {
+                        cached = stored.talks;
+                    }
+                } catch (e) {
+                    console.error('Failed to read search cache:', e);
+                }
+            }
+
+            if (cached) {
+                allTalks = cached;
+            } else {
+                allTalks = await fetchAllTalks();
+                if (version) {
+                    try {
+                        localStorage.setItem(CACHE_KEY, JSON.stringify({ version, talks: allTalks }));
+                    } catch (e) {
+                        console.error('Failed to write search cache:', e);
                     }
                 }
             }
@@ -245,6 +286,6 @@
     });
 </script>
 
-<script src="install-detection.js?v=639186968176338846"></script>
+<script src="install-detection.js?v=639186972683794477"></script>
 </body>
 </html>
