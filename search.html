@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Search</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639186947114466489" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639186951095199761" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
     <style>
@@ -153,8 +153,18 @@
         performSearch();
     }
 
+    function normalizeText(text) {
+        return text
+            .normalize('NFD')
+            .replace(/[̀-ͯ]/g, '')
+            .replace(/[đĐ]/g, 'd')
+            .replace(/[øØ]/g, 'o')
+            .replace(/[łŁ]/g, 'l')
+            .toLowerCase();
+    }
+
     function performSearch() {
-        const query = searchInput.value.toLowerCase().trim();
+        const query = normalizeText(searchInput.value.trim());
 
         if (!query) {
             resultsList.innerHTML = '';
@@ -163,13 +173,13 @@
         }
 
         const results = allTalks.filter(talk => {
-            const searchText = [
+            const searchText = normalizeText([
                 talk.title,
                 talk.authors,
                 talk.abstract,
                 talk.sessionName,
                 talk.affiliations.join(' ')
-            ].join(' ').toLowerCase();
+            ].join(' '));
 
             return searchText.includes(query);
         });
@@ -235,6 +245,6 @@
     });
 </script>
 
-<script src="install-detection.js?v=639186947114466489"></script>
+<script src="install-detection.js?v=639186951095199761"></script>
 </body>
 </html>
