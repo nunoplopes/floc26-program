@@ -3,8 +3,12 @@ if ('serviceWorker' in navigator) {
 }
 
 window.addEventListener('load', () => {
-    document.querySelectorAll('#menu2 a.selected, #menu3 a.selected, #main_menu a.selected').forEach((el) => {
-        el.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    document.querySelectorAll('#menu2, #menu3').forEach((container) => {
+        if (container.scrollHeight <= container.clientHeight) return;
+        const selected = container.querySelector('a.selected');
+        if (!selected) return;
+        container.scrollTop = selected.offsetTop - container.offsetTop
+            - (container.clientHeight / 2) + (selected.clientHeight / 2);
     });
 });
 

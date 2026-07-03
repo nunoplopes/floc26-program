@@ -29,7 +29,7 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 
 .date { position: sticky; top: 39px; z-index: 10; background: #ddd; padding: 6px 10px; margin-top: 18px; margin-bottom: 12px; font-weight: bold; }
 
-.session { border-left: 3px solid #cce; padding: 8px 12px; margin: 8px 0; background: #fafaff; }
+.session { border-left: 3px solid #cce; padding: 8px 12px; margin: 8px 0; background: #fafaff; scroll-margin-top: 80px; }
 .session.subsession { margin-left: 28px; border-left-color: #99b; background: #f3f3fb; }
 .session.interval_session { border-left-color: #bbb; background: #f2f2f2; }
 .session.interval_session .title { font-weight: normal; color: #666; }
@@ -65,6 +65,7 @@ a.person:hover { color: #c33; }
 .title { font-weight: normal; margin-bottom: 6px; }
 a.abstract_link { font-size: 12px; color: #338; text-decoration: none; margin-left: 4px; font-weight: normal; }
 a.abstract_link:hover { color: #c33; text-decoration: underline; }
+tr.talk { scroll-margin-top: 80px; }
 tr.talk:target td { background: #fff8d6; }
 .abstract { margin: 6px 0 8px 0; padding: 6px 0; font-size: 13px; color: #333; }
 .abstract_label { font-weight: bold; }
