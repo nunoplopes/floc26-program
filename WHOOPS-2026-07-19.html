@@ -57,11 +57,13 @@
 <span class="separator"> | </span>                <a href="IWC-index.html">IWC</a>
 <span class="separator"> | </span>                <a href="JoeFest-index.html">JoeFest</a>
 <span class="separator"> | </span>                <a href="KR-index.html">KR</a>
+<span class="separator"> | </span>                <a href="LAMASSR-index.html">LAMAS-SR</a>
 <span class="separator"> | </span>                <a href="LCC-index.html">LCC</a>
 <span class="separator"> | </span>                <a href="LFMTP-index.html">LFMTP</a>
 <span class="separator"> | </span>                <a href="LICS-index.html">LICS</a>
 <span class="separator"> | </span>                <a href="LINDA-index.html">LINDA</a>
 <span class="separator"> | </span>                <a href="LLMSolve-index.html">LLM-Solve</a>
+<span class="separator"> | </span>                <a href="LLM4R-index.html">LLM4R</a>
 <span class="separator"> | </span>                <a href="LOGICNN-index.html">LOGICNN</a>
 <span class="separator"> | </span>                <a href="LPOP-index.html">LPOP</a>
 <span class="separator"> | </span>                <a href="LSFA-index.html">LSFA</a>
@@ -106,6 +108,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="XLoKRExCoS-index.html">XLoKR-ExCoS</a>
 <span class="separator"> | </span>                <a href="index-full.html">Full Program</a>
             </div>
 
@@ -126,7 +129,7 @@
 
                 <div class="session" id="session:1654">
                     <div class="heading">
-                        <span class="interval">09:10-10:30</span>
+                        <span class="interval">09:00-10:30</span>
                         <span class="title">Papers 1</span>
                         <span class="group_tag">WHOOPS</span>
                     </div>
@@ -139,12 +142,55 @@
 
 
                     <table class="talks">
-                        <tr class="talk" id="talk:1020">
+                        <tr class="talk" id="talk:1576">
+                            <td class="time">09:00-09:10</td>
+                            <td>
+                                <div class="title">Opening Remarks <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1576">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person18106.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Glasgow</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1029">
                             <td class="time">09:10-09:30</td>
+                            <td>
+                                <div class="title">Efficient and Reliable Hitting-Set Computations for the Implicit Hitting Set Approach <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1029">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person18751.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person18752.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person18473.html">André Schidler</a><sup>3</sup>, <a class="person" href="person18746.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person15799.html">Bart Bogaerts</a><sup>4</sup>, <a class="person" href="person17457.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
+                                <div class="affiliation_item"><sup>2</sup> Vrije Universiteit Brussel & KU Leuven</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Freiburg</div>
+                                <div class="affiliation_item"><sup>4</sup> KU Leuven & Vrije Universiteit Brussel</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The implicit hitting set (IHS) approach offers a general framework for solving computationally hard combinatorial optimization problems declaratively by iterating between a decision oracle used for extracting sources of inconsistency and an optimizer for computing so-called hitting sets (HSs) over the accumulated sources of inconsistency. While the decision oracle is language-specific, the optimizer is usually instantiated through an (often commercial, closed-source) integer programming (IP) solver.  This makes proof logging in implicit hitting set solvers challenging.  Moreover, IP solvers are known to give incorrect results, mostly due to numerical instability. 
+	
+The presented work deals with obtaining reliable hitting set computation in the context of pseudo-Boolean (0--1 IP) optimization. We explore alternative algorithmic techniques for hitting set optimization based on different ways of employing pseudo-Boolean reasoning as well as stochastic local search. Based on earlier work on proof logging for pseudo-Boolean solving using the VeriPB proof system, we obtain the first implicit hitting set solver that is able to produce proofs of optimality of its solution. Our experimental evaluation highlights a trade-off between efficiency and reliability:  replacing a commercial IP solver with a pseudo-Boolean solver enhances reliability and gives proof logging possibilities, at the cost of solving efficiency. To mitigate this trade-off, we experimented with different hybrid approaches that differ in when to replace the IP solver by a more reliable, certifying solver.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1517">
+                            <td class="time">09:30-09:50</td>
+                            <td>
+                                <div class="title">Towards Practical Zero-Knowledge Proof for PSPACE <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1517">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person18467.html">Ashwin Karthikeyan</a><sup>1</sup>, <a class="person" href="person19138.html">Hengyu Liu</a><sup>2</sup>, <a class="person" href="person15760.html">Kuldeep S. Meel</a><sup>3</sup>, <a class="person" href="person19140.html">Ning Luo</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Illinois Urbana-Champaign</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Toronto, Georgia Institute of Technology</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1020">
+                            <td class="time">09:50-10:10</td>
                             <td>
                                 <div class="title">Trimming Pseudo-Boolean Proofs <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1020">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14094.html">Berhan Oumer Adame</a><sup>1</sup>, <a class="person" href="person11484.html">Bart Bogaerts</a><sup>2</sup>, <a class="person" href="person14096.html">Benjamin Bogø</a><sup>3</sup>, <a class="person" href="person14097.html">Simon Dold</a><sup>4</sup>, <a class="person" href="person14774.html">Arthur GONTIER</a><sup>5</sup>, <a class="person" href="person14044.html">Wietze Koops</a><sup>6</sup>, <a class="person" href="person13746.html">Ciaran McCreesh</a><sup>5</sup>, <a class="person" href="person14777.html">Matthew J. McIlree</a><sup>5</sup>, <a class="person" href="person13748.html">Jakob Nordström</a><sup>3</sup>, <a class="person" href="person13747.html">Andy Oertel</a><sup>6</sup>, <a class="person" href="person14104.html">Adrian Rebola-Pardo</a><sup>7</sup>, <a class="person" href="person14105.html">Mark Turnbull</a><sup>5</sup>                                </div>
+<a class="person" href="person18454.html">Berhan Oumer Adame</a><sup>1</sup>, <a class="person" href="person15799.html">Bart Bogaerts</a><sup>2</sup>, <a class="person" href="person18456.html">Benjamin Bogø</a><sup>3</sup>, <a class="person" href="person18457.html">Simon Dold</a><sup>4</sup>, <a class="person" href="person19145.html">Arthur GONTIER</a><sup>5</sup>, <a class="person" href="person18404.html">Wietze Koops</a><sup>6</sup>, <a class="person" href="person18106.html">Ciaran McCreesh</a><sup>5</sup>, <a class="person" href="person19148.html">Matthew J. McIlree</a><sup>5</sup>, <a class="person" href="person18108.html">Jakob Nordström</a><sup>3</sup>, <a class="person" href="person18107.html">Andy Oertel</a><sup>6</sup>, <a class="person" href="person18464.html">Adrian Rebola-Pardo</a><sup>7</sup>, <a class="person" href="person18465.html">Mark Turnbull</a><sup>5</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Vrije Universiteit Brussel, Belgium\\ Arba Minch University, Ethiopia</div>
                                 <div class="affiliation_item"><sup>2</sup> KU Leuven, Belgium\\ Vrije Universiteit Brussel, Belgium</div>
@@ -170,43 +216,12 @@ For applications such as proof storage or UNSAT core extraction, one may wish to
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:1022">
-                            <td class="time">09:30-09:50</td>
-                            <td>
-                                <div class="title">Proof Logging for Nonlinear Boundary-Value Solvers: A Falkner-Skan Case Study <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1022">(abstract)</a> <span class="duration">20 min</span></div>
-                                <div class="authors">
-<a class="person" href="person14782.html">Karthikhesvaran S. S.</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Indiana University Bloomington</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Modern proof logging has been highly successful for discrete reasoning, but scientific computation still relies heavily on complex numerical pipelines whose outputs are rarely independently checkable. This talk uses a recent Keller-box computation arising from a Falkner–Skan thermal-flow model by Anwar et al. (2025) as a focused case study for this certification gap. After similarity reduction, the governing equations become a coupled nonlinear boundary-value problem; the final numerical solution is then produced through first-order reformulation, implicit box discretization, Newton linearization and repeated solution of block-tridiagonal linear systems. In such a setting, correctness is not a purely analytic matter: it depends on the fidelity of discretization, the consistency of boundary treatment, the soundness of linearization and the actual convergence behavior of the iterative solver.
-
-The talk argues that this solver layer is a natural target for proof logging. Rather than attempting to certify the entire physical model at once, we isolate the computational core and propose a certificate structure for it: logs for the reduced boundary-value problem, machine-checkable witnesses for each discretized system, residual certificates for Newton iterations, explicit verification of boundary-condition satisfaction and auditable checks for the numerical quantities ultimately reported from the computation. 
-
-The case study also highlights challenges that are specific to numerical reasoning: floating-point effects, truncation of infinite domains, dependence on mesh choice and the need to distinguish empirical convergence from certifiable correctness. The broader aim is to help articulate what a proof-logging discipline for nonlinear scientific solvers should look like. We suggest that numerical workflows of this kind are both important and structurally rich enough to serve as realistic benchmarks for the next generation of certifying algorithms.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1517">
-                            <td class="time">09:50-10:10</td>
-                            <td>
-                                <div class="title">Towards Practical Zero-Knowledge Proof for PSPACE <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1517">(abstract)</a> <span class="duration">20 min</span></div>
-                                <div class="authors">
-<a class="person" href="person14107.html">Ashwin Karthikeyan</a><sup>1</sup>, <a class="person" href="person14784.html">Hengyu Liu</a><sup>2</sup>, <a class="person" href="person11445.html">Kuldeep S. Meel</a><sup>1</sup>, <a class="person" href="person14786.html">Ning Luo</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
-                                <div class="affiliation_item"><sup>2</sup> Aalborg University</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Illinois</div>
-                                </div>
-                            </td>
-                        </tr>
                         <tr class="talk" id="talk:1023">
                             <td class="time">10:10-10:30</td>
                             <td>
                                 <div class="title">Proving back and forth with the same rules <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1023">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14200.html">Peter Pfeiffer</a><sup>1</sup>, <a class="person" href="person14104.html">Adrian Rebola-Pardo</a><sup>2</sup>                                </div>
+<a class="person" href="person18560.html">Peter Pfeiffer</a><sup>1</sup>, <a class="person" href="person18464.html">Adrian Rebola-Pardo</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JKU Linz</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Wien, JKU Linz</div>
@@ -298,22 +313,21 @@ In this work, we overcome this limitation by showing that dynamic proofs can als
 
 
                     <table class="talks">
-                        <tr class="talk" id="talk:1029">
+                        <tr class="talk" id="talk:1022">
                             <td class="time">14:30-14:50</td>
                             <td>
-                                <div class="title">Efficient and Reliable Hitting-Set Computations for the Implicit Hitting Set Approach <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1029">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="title">Proof Logging for Nonlinear Boundary-Value Solvers: A Falkner-Skan Case Study <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1022">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14391.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person14392.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person14113.html">André Schidler</a><sup>3</sup>, <a class="person" href="person14386.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person11484.html">Bart Bogaerts</a><sup>4</sup>, <a class="person" href="person13142.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+<a class="person" href="person19155.html">Karthikhesvaran S. S.</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
-                                <div class="affiliation_item"><sup>2</sup> Vrije Universiteit Brussel & KU Leuven</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Freiburg</div>
-                                <div class="affiliation_item"><sup>4</sup> KU Leuven & Vrije Universiteit Brussel</div>
+                                <div class="affiliation_item"><sup>1</sup> Indiana University Bloomington</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The implicit hitting set (IHS) approach offers a general framework for solving computationally hard combinatorial optimization problems declaratively by iterating between a decision oracle used for extracting sources of inconsistency and an optimizer for computing so-called hitting sets (HSs) over the accumulated sources of inconsistency. While the decision oracle is language-specific, the optimizer is usually instantiated through an (often commercial, closed-source) integer programming (IP) solver.  This makes proof logging in implicit hitting set solvers challenging.  Moreover, IP solvers are known to give incorrect results, mostly due to numerical instability. 
-	
-The presented work deals with obtaining reliable hitting set computation in the context of pseudo-Boolean (0--1 IP) optimization. We explore alternative algorithmic techniques for hitting set optimization based on different ways of employing pseudo-Boolean reasoning as well as stochastic local search. Based on earlier work on proof logging for pseudo-Boolean solving using the VeriPB proof system, we obtain the first implicit hitting set solver that is able to produce proofs of optimality of its solution. Our experimental evaluation highlights a trade-off between efficiency and reliability:  replacing a commercial IP solver with a pseudo-Boolean solver enhances reliability and gives proof logging possibilities, at the cost of solving efficiency. To mitigate this trade-off, we experimented with different hybrid approaches that differ in when to replace the IP solver by a more reliable, certifying solver.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Modern proof logging has been highly successful for discrete reasoning, but scientific computation still relies heavily on complex numerical pipelines whose outputs are rarely independently checkable. This talk uses a recent Keller-box computation arising from a Falkner–Skan thermal-flow model by Anwar et al. (2025) as a focused case study for this certification gap. After similarity reduction, the governing equations become a coupled nonlinear boundary-value problem; the final numerical solution is then produced through first-order reformulation, implicit box discretization, Newton linearization and repeated solution of block-tridiagonal linear systems. In such a setting, correctness is not a purely analytic matter: it depends on the fidelity of discretization, the consistency of boundary treatment, the soundness of linearization and the actual convergence behavior of the iterative solver.
+
+The talk argues that this solver layer is a natural target for proof logging. Rather than attempting to certify the entire physical model at once, we isolate the computational core and propose a certificate structure for it: logs for the reduced boundary-value problem, machine-checkable witnesses for each discretized system, residual certificates for Newton iterations, explicit verification of boundary-condition satisfaction and auditable checks for the numerical quantities ultimately reported from the computation. 
+
+The case study also highlights challenges that are specific to numerical reasoning: floating-point effects, truncation of infinite domains, dependence on mesh choice and the need to distinguish empirical convergence from certifiable correctness. The broader aim is to help articulate what a proof-logging discipline for nonlinear scientific solvers should look like. We suggest that numerical workflows of this kind are both important and structurally rich enough to serve as realistic benchmarks for the next generation of certifying algorithms.</p>
                                 </div>
                             </td>
                         </tr>
@@ -322,7 +336,7 @@ The presented work deals with obtaining reliable hitting set computation in the 
                             <td>
                                 <div class="title">Certifying Algorithms for Nonlinear Real Arithmetic <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1021">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14795.html">Tomaz Mascarenhas</a><sup>1</sup>, <a class="person" href="person11364.html">Haniel Barbosa</a><sup>1</sup>                                </div>
+<a class="person" href="person19156.html">Tomaz Mascarenhas</a><sup>1</sup>, <a class="person" href="person15679.html">Haniel Barbosa</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
                                 </div>
@@ -408,7 +422,7 @@ and are straightforward to verify.</p>
                             <td>
                                 <div class="title">Pseudo-Boolean Blasting for the SMT Theory of Bit-Vectors <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1030">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14797.html">Pedro Saccomani</a><sup>1</sup>, <a class="person" href="person11364.html">Haniel Barbosa</a><sup>2</sup>                                </div>
+<a class="person" href="person19158.html">Pedro Saccomani</a><sup>1</sup>, <a class="person" href="person15679.html">Haniel Barbosa</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
                                 <div class="affiliation_item"><sup>2</sup> Universidade Federal de MInas Ferais</div>
@@ -465,7 +479,7 @@ lifted into Alethe and CPC for checking by Carcara and Ethos.</p>
                 </div>
                 <div class="session" id="session:1661">
                     <div class="heading">
-                        <span class="interval">16:00-17:40</span>
+                        <span class="interval">16:00-18:00</span>
                         <span class="title">Papers 3</span>
                         <span class="group_tag">WHOOPS</span>
                     </div>
@@ -483,7 +497,7 @@ lifted into Alethe and CPC for checking by Carcara and Ethos.</p>
                             <td>
                                 <div class="title">End-to-End Verification for Constraint Programming: Closing the Encodings Gap <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1024">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14044.html">Wietze Koops</a><sup>1</sup>, <a class="person" href="person13746.html">Ciaran McCreesh</a><sup>2</sup>, <a class="person" href="person14801.html">Matthew J. McIlree</a><sup>2</sup>, <a class="person" href="person14802.html">Magnus O. Myreen</a><sup>3</sup>, <a class="person" href="person13748.html">Jakob Nordström</a><sup>4</sup>, <a class="person" href="person14804.html">Philip Rodgers</a><sup>2</sup>, <a class="person" href="person14805.html">Yong Kiam Tan</a><sup>5</sup>, <a class="person" href="person14806.html">Wei-Lin Wu</a><sup>6</sup>                                </div>
+<a class="person" href="person18404.html">Wietze Koops</a><sup>1</sup>, <a class="person" href="person18106.html">Ciaran McCreesh</a><sup>2</sup>, <a class="person" href="person19162.html">Matthew J. McIlree</a><sup>2</sup>, <a class="person" href="person19163.html">Magnus O. Myreen</a><sup>3</sup>, <a class="person" href="person18108.html">Jakob Nordström</a><sup>4</sup>, <a class="person" href="person19165.html">Philip Rodgers</a><sup>2</sup>, <a class="person" href="person19166.html">Yong Kiam Tan</a><sup>5</sup>, <a class="person" href="person19167.html">Wei-Lin Wu</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Lund University and University of Copenhagen</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
@@ -497,65 +511,12 @@ lifted into Alethe and CPC for checking by Carcara and Ethos.</p>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:1025">
-                            <td class="time">16:20-16:40</td>
-                            <td>
-                                <div class="title">Proof Logging for (Re)Encoding <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1025">(abstract)</a> <span class="duration">20 min</span></div>
-                                <div class="authors">
-<a class="person" href="person12609.html">Marijn Heule</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The effectiveness of SAT solvers depends critically on how constraints are encoded into conjunctive normal form (CNF).  Two logically equivalent encodings of the same problem can differ by orders of magnitude in solving performance.  However, constructing effective encodings often requires substantial expertise, making SAT technology difficult to use reliably in practice.  To address this problem, a wide range of reencoding techniques have
-been developed that transform formulas into representations exposing stronger propagation, improved simplification opportunities, or additional structural information.  Unfortunately, most existing proof systems are designed for clause-level reasoning and provide only limited support for certifying such higher-level transformations.
-
-Several examples illustrate the need for proof-producing reencoding. First, the way XOR constraints are encoded as CNF can have a surprisingly large impact on SAT-solving performance.  Even subtle changes in recursive encodings can lead to substantial performance differences.  In particular, placing auxiliary variables at the beginning versus the end of the recursion, often referred to as linear and pooled encodings, respectively, can strongly affect solver behavior.  Such transformations are difficult to justify compactly because they replace one structured encoding by another while preserving equivalence only over the original variables.
-
-Second, the effectiveness of cardinality encodings depends not only on the chosen encoding scheme, but also on how literals are ordered within the
-constraint.  Recent work has shown that sorting literals prior to encoding can substantially improve SAT solving performance by exposing additional structure to propagation and simplification.  Although such sorting transformations preserve the semantics of the original constraint, they are difficult to validate in existing proof systems because the resulting encoding may differ globally from the original one.  In particular, the transformation changes the interaction between auxiliary variables and the input literals while preserving equivalence only over the original variables. This highlights the need for proof systems that can certify semantic-preserving reencodings with higher-level constraints.
-
-Third, symmetry breaking in SAT is constrained by what is visible in the CNF formula. When higher-level constraints such as cardinality or XOR constraints are encoded into CNF, auxiliary variables may obscure the symmetries of the original problem.  As a consequence, symmetry-breaking techniques operating only at the CNF level may fail to detect important structural symmetries that were present before encoding.
-
-This talk argues that the widespread use of CNF as the standard SAT benchmark format creates a fundamental tension between solver performance and trustworthiness.  Many effective preprocessing and reencoding techniques rely on recovering higher-level structure from CNF formulas, such as XOR or cardinality constraints, and then transforming these constraints into more solver-friendly representations.  However, these transformations raise important certification questions.  Should CNF formulas be lifted into richer high-level representations together with corresponding proof objects?  If so, how can these high-level representations and proofs be translated back into CNF-level certificates that can be checked independently?  Alternatively, should correctness be justified directly at the CNF level without introducing higher-level abstractions?  This talk addresses these questions and discusses possible directions for integrating proof logging, reencoding, and high-level reasoning into trustworthy SAT-solving pipelines.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1027">
-                            <td class="time">16:40-17:00</td>
-                            <td>
-                                <div class="title">Generalised Clause Learning for Constraint Programming <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1027">(abstract)</a> <span class="duration">20 min</span></div>
-                                <div class="authors">
-<a class="person" href="person14808.html">Justin Pearson</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Uppsala universitet</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this talk, I will  present a generalisation of conflict-driven
-  clause learning (CDCL) for constraint programming over abstract
-  domains. A core idea in constraint programming is propagation: each
-  constraint has an associated algorithm that during search prunes
-  potential non-solutions.  The abstract theory of constraint
-  propagators as idempotent, monotonic, contracting functions over
-  partial orders has led to the development of propagators and solvers
-  over non-integer domains, such as strings, sets or floating point
-  numbers.  Building on this theory, I introduce a generalisation of
-  reasons, explanations, and implication graphs from CDCL to
-  propagation-based solving over abstract domains. A central result
-  shows that cuts in the implication graph are no-goods.  An abstract
-  scheme is presented that unifies CDCL solving from SAT and
-  lazy-clause search from constraint programming. This work is a first
-  step to generalising proof logging for abstract domains in
-  constraint programming.</p>
-                                </div>
-                            </td>
-                        </tr>
                         <tr class="talk" id="talk:1026">
-                            <td class="time">17:00-17:20</td>
+                            <td class="time">16:20-16:40</td>
                             <td>
                                 <div class="title">Certificate-Based Propagation: Foundations for Correct Propagator Design <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1026">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14809.html">Maarten Flippo</a><sup>1</sup>, <a class="person" href="person14810.html">Imko Marijnissen</a><sup>1</sup>, <a class="person" href="person14811.html">Emir Demirović</a><sup>1</sup>                                </div>
+<a class="person" href="person19168.html">Maarten Flippo</a><sup>1</sup>, <a class="person" href="person19169.html">Imko Marijnissen</a><sup>1</sup>, <a class="person" href="person19170.html">Emir Demirović</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
                                 </div>
@@ -589,12 +550,41 @@ In addition, manually injected off-by-one mutations were also caught within one 
                                 </div>
                             </td>
                         </tr>
+                        <tr class="talk" id="talk:1027">
+                            <td class="time">16:40-17:00</td>
+                            <td>
+                                <div class="title">Generalised Clause Learning for Constraint Programming <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1027">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person19171.html">Justin Pearson</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala universitet</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In this talk, I will  present a generalisation of conflict-driven
+  clause learning (CDCL) for constraint programming over abstract
+  domains. A core idea in constraint programming is propagation: each
+  constraint has an associated algorithm that during search prunes
+  potential non-solutions.  The abstract theory of constraint
+  propagators as idempotent, monotonic, contracting functions over
+  partial orders has led to the development of propagators and solvers
+  over non-integer domains, such as strings, sets or floating point
+  numbers.  Building on this theory, I introduce a generalisation of
+  reasons, explanations, and implication graphs from CDCL to
+  propagation-based solving over abstract domains. A central result
+  shows that cuts in the implication graph are no-goods.  An abstract
+  scheme is presented that unifies CDCL solving from SAT and
+  lazy-clause search from constraint programming. This work is a first
+  step to generalising proof logging for abstract domains in
+  constraint programming.</p>
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="talk" id="talk:1028">
-                            <td class="time">17:20-17:40</td>
+                            <td class="time">17:00-17:20</td>
                             <td>
                                 <div class="title">How can hard can multiplication be? <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1028">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person14801.html">Matthew J. McIlree</a><sup>1</sup>, <a class="person" href="person13746.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
+<a class="person" href="person19162.html">Matthew J. McIlree</a><sup>1</sup>, <a class="person" href="person18106.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Glasgow</div>
                                 </div>
@@ -608,6 +598,41 @@ discuss what this means for certified CP more broadly, and some ideas
 for making PB proofs of this nature more usable and efficiently checkable in practice. 
 
 This talk will be mostly based on the previously published paper, "Certifying Bounds Propagation for Integer Multiplication Constraints" and a short version was presented at AAAI in 2025.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1025">
+                            <td class="time">17:20-17:40</td>
+                            <td>
+                                <div class="title">Proof Logging for (Re)Encoding <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1025">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16924.html">Marijn Heule</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The effectiveness of SAT solvers depends critically on how constraints are encoded into conjunctive normal form (CNF).  Two logically equivalent encodings of the same problem can differ by orders of magnitude in solving performance.  However, constructing effective encodings often requires substantial expertise, making SAT technology difficult to use reliably in practice.  To address this problem, a wide range of reencoding techniques have
+been developed that transform formulas into representations exposing stronger propagation, improved simplification opportunities, or additional structural information.  Unfortunately, most existing proof systems are designed for clause-level reasoning and provide only limited support for certifying such higher-level transformations.
+
+Several examples illustrate the need for proof-producing reencoding. First, the way XOR constraints are encoded as CNF can have a surprisingly large impact on SAT-solving performance.  Even subtle changes in recursive encodings can lead to substantial performance differences.  In particular, placing auxiliary variables at the beginning versus the end of the recursion, often referred to as linear and pooled encodings, respectively, can strongly affect solver behavior.  Such transformations are difficult to justify compactly because they replace one structured encoding by another while preserving equivalence only over the original variables.
+
+Second, the effectiveness of cardinality encodings depends not only on the chosen encoding scheme, but also on how literals are ordered within the
+constraint.  Recent work has shown that sorting literals prior to encoding can substantially improve SAT solving performance by exposing additional structure to propagation and simplification.  Although such sorting transformations preserve the semantics of the original constraint, they are difficult to validate in existing proof systems because the resulting encoding may differ globally from the original one.  In particular, the transformation changes the interaction between auxiliary variables and the input literals while preserving equivalence only over the original variables. This highlights the need for proof systems that can certify semantic-preserving reencodings with higher-level constraints.
+
+Third, symmetry breaking in SAT is constrained by what is visible in the CNF formula. When higher-level constraints such as cardinality or XOR constraints are encoded into CNF, auxiliary variables may obscure the symmetries of the original problem.  As a consequence, symmetry-breaking techniques operating only at the CNF level may fail to detect important structural symmetries that were present before encoding.
+
+This talk argues that the widespread use of CNF as the standard SAT benchmark format creates a fundamental tension between solver performance and trustworthiness.  Many effective preprocessing and reencoding techniques rely on recovering higher-level structure from CNF formulas, such as XOR or cardinality constraints, and then transforming these constraints into more solver-friendly representations.  However, these transformations raise important certification questions.  Should CNF formulas be lifted into richer high-level representations together with corresponding proof objects?  If so, how can these high-level representations and proofs be translated back into CNF-level certificates that can be checked independently?  Alternatively, should correctness be justified directly at the CNF level without introducing higher-level abstractions?  This talk addresses these questions and discusses possible directions for integrating proof logging, reencoding, and high-level reasoning into trustworthy SAT-solving pipelines.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1577">
+                            <td class="time">17:40-18:00</td>
+                            <td>
+                                <div class="title">Discussion and Closing <a class="abstract_link" href="WHOOPS-2026-07-19.html#talk:1577">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person18106.html">Ciaran McCreesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Glasgow</div>
                                 </div>
                             </td>
                         </tr>

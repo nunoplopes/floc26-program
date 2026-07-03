@@ -57,11 +57,13 @@
 <span class="separator"> | </span>                <a href="IWC-index.html">IWC</a>
 <span class="separator"> | </span>                <a href="JoeFest-index.html">JoeFest</a>
 <span class="separator"> | </span>                <a href="KR-index.html">KR</a>
+<span class="separator"> | </span>                <a href="LAMASSR-index.html">LAMAS-SR</a>
 <span class="separator"> | </span>                <a href="LCC-index.html">LCC</a>
 <span class="separator"> | </span>                <a href="LFMTP-index.html">LFMTP</a>
 <span class="separator"> | </span>                <a href="LICS-index.html">LICS</a>
 <span class="separator"> | </span>                <a href="LINDA-index.html">LINDA</a>
 <span class="separator"> | </span>                <a href="LLMSolve-index.html">LLM-Solve</a>
+<span class="separator"> | </span>                <a href="LLM4R-index.html">LLM4R</a>
 <span class="separator"> | </span>                <a href="LOGICNN-index.html">LOGICNN</a>
 <span class="separator"> | </span>                <a href="LPOP-index.html">LPOP</a>
 <span class="separator"> | </span>                <a href="LSFA-index.html">LSFA</a>
@@ -106,6 +108,7 @@
 <span class="separator"> | </span>                <a href="WithoutGroup-index.html">Without Group</a>
 <span class="separator"> | </span>                <a href="WPTE-index.html">WPTE</a>
 <span class="separator"> | </span>                <a href="WST-index.html">WST</a>
+<span class="separator"> | </span>                <a href="XLoKRExCoS-index.html">XLoKR-ExCoS</a>
 <span class="separator"> | </span>                <a href="index-full.html" class="selected">Full Program</a>
             </div>
 
@@ -140,7 +143,7 @@
                             <td>
                                 <div class="title">Trustworthy Neuro-Symbolic Programming with Informal Specifications <a class="abstract_link" href="WithoutGroup-2026-07-28.html#talk:552">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person15382.html">Işıl Dillig</a>                                </div>
+<a class="person" href="person19324.html">Işıl Dillig</a>                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neuro-Symbolic Programming (NSP) treats learning-enabled systems as programs that compose symbolic control structure composed with learned neural primitives for perception and prediction. NSP offers a principled response to a central challenge for logic and formal methods in the age of machine learning: how to obtain trustworthy, compositional behavior when key components are statistical and uncertain. This talk gives an gives an overview of recent advances in NSP along three axes: (1) domain-specific languages targeting real-world use cases, (2) learning techniques for fitting program structure based on informal specifications, and (3) approaches for ensuring correctness despite noisy neural components and incomplete specifications.</p>
                                 </div>
@@ -178,21 +181,6 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:669">
-                    <div class="heading">
-                        <span class="interval">10:00-10:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">CAV</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room28.html">Grande Auditório</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:721">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
@@ -208,112 +196,20 @@
 
 
                 </div>
-                <div class="session" id="session:722">
+                <div class="session interval_session" id="session:669">
                     <div class="heading">
-                        <span class="interval">10:30-12:30</span>
-                        <span class="title">E-Voting & Anonymity</span>
-                        <span class="group_tag">CSF</span>
+                        <span class="interval">10:00-10:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">CAV</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
+                        <a class="room_name" href="room28.html">Grande Auditório</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk" id="talk:225">
-                            <td class="time">10:30-10:54</td>
-                            <td>
-                                <div class="title">On the necessity of pre-agreed secrets for thwarting last-minute coercion: vulnerabilities and lessons from the Loki e-voting protocol <a class="abstract_link" href="CSF-2026-07-28.html#talk:225">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person11806.html">Jingxin Qiao</a><sup>1</sup>, <a class="person" href="person11778.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person11808.html">Thomas Zacharias</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> The University of Edinburgh</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Coercion-resistance (CR) is a crucial security property in e-voting systems. It ensures that an attacker cannot compel a voter to vote in a specific way by using threats or rewards. The Loki e-voting protocol, proposed by Giustolisi \emph{et al.} at IEEE S\&P (2024), introduces a novel design that mitigates last-minute coercion through a re-voting mechanism. It also aims to address the usability issues of the seminal JCJ e-voting protocol, specifically: i) the requirement that voters can store and hide pre-agreed credentials, and ii) the ability of voters to convincingly lie while being coerced. 
-
-In this work, we identify two vulnerabilities in Loki. The first is a brute-force attack that compromises the integrity of the evasion strategy. Specifically, this attack allows an adversary to cast a ballot on behalf of their victim in a way that the evasion strategy cannot defend against, rendering it ineffective. The second vulnerability is a forced abstention attack, which allows an adversary to detect when their victim has complied with their instruction not to vote. We generalise the integrity attack to reveal a fundamental dilemma: without pre-agreed secret credentials, it is not possible to prevent last-minute coercion. Finally, we show how reverting to pre-agreed secret credentials fixes the aforementioned vulnerabilities and discuss the trade-off between tallying efficiency and stronger trust assumptions.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:226">
-                            <td class="time">10:54-11:18</td>
-                            <td>
-                                <div class="title">Setup Protocols for Sender Anonymity <a class="abstract_link" href="CSF-2026-07-28.html#talk:226">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person11809.html">Tian Huang</a><sup>1</sup>, <a class="person" href="person11810.html">Jiatai Zhang</a><sup>2</sup>, <a class="person" href="person11811.html">Megumi Ando</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Tufts University</div>
-                                <div class="affiliation_item"><sup>2</sup> Rensselaer Polytechnic Institute</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Anonymous communication is essential for secure and private interactions over public networks. Existing solutions that provide provable anonymity rely on the so-called simple I/O setting, where every participant sends and receives the same number of messages, masking their true communication pattern. The only known way to enforce this setting is through dialing protocols. Such protocols establish pairwise conversations, but each recipient inevitably learns who attempted to contact them, violating sender anonymity, the guaranty that even the recipient cannot determine who attempted to contact them.
-
-In this work, we introduce the notion of enhanced dialing protocols, a broad class of protocols that enforce the simple I/O setting. We also initiate the first formal study of such protocols with respect to sender anonymity. We introduce a framework that captures three key properties: security, correctness, and fairness. Within this framework, we present Fusion, a protocol that achieves perfect correctness and fairness while incurring only unavoidable leakage, and Fusion+, a differentially private variant that reduces this leakage at the cost of some correctness. Through theoretical analysis, we quantify the fundamental trade-off between privacy and correctness in Fusion+.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:227">
-                            <td class="time">11:18-11:42</td>
-                            <td>
-                                <div class="title">Simultaneously Proving Privacy and Verifiability: A ProVerif Framework for Internet Voting <a class="abstract_link" href="CSF-2026-07-28.html#talk:227">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person11812.html">Vincent Cheval</a><sup>1</sup>, <a class="person" href="person11813.html">Veronique Cortier</a><sup>2</sup>, <a class="person" href="person11814.html">Alexandre Debant</a><sup>3</sup>, <a class="person" href="person11815.html">Florian Moser</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
-                                <div class="affiliation_item"><sup>2</sup> CNRS Nancy</div>
-                                <div class="affiliation_item"><sup>3</sup> INRIA Nancy</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Electronic voting aims to guarantee the same security properties than traditional paper-based voting, namely vote privacy and verifiability. While the formal verification of security protocols is now a mature filed with several powerful tools such as ProVerif or Tamarin, verifying voting protocols still pushes existing tools at their limits.
-
-We present in this work a proof framework for ProVerif that models an extensible election setting with an unbounded number of concurrent elections, voters and votes. We also develop a library of lemmas to aid the automatic verification. Crucially, the framework allows to reuse the same protocol model for both privacy and verifiability proofs. We apply the framework to several protocols of the literature and industry, showing the flexibility and applicability of our framework.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:228">
-                            <td class="time">11:42-12:06</td>
-                            <td>
-                                <div class="title">Beyond Blockchain Ballots: UC-Secure Layer-2 Voting and Governance <a class="abstract_link" href="CSF-2026-07-28.html#talk:228">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person11816.html">Raghav Bhaskar</a><sup>1</sup>, <a class="person" href="person11817.html">Pooya Farshim</a><sup>2</sup>, <a class="person" href="person11818.html">Matthias Fitzi</a><sup>2</sup>, <a class="person" href="person11819.html">Aggelos Kiayias</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> None</div>
-                                <div class="affiliation_item"><sup>2</sup> Input Output</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Edinburgh and Input Output</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Maintaining a decentralized system requires a collective governance mechanism that allows the participants to agree on possible changes to the system. In particular, the governance mechanism should offer a voting functionality that allows the casting, collection, and tallying of votes in a confidential yet verifiable manner.  Scaling this functionality for many millions of participants in a cost-effective manner is a critical requirement for permissionless blockchains that is currently still unmet. 
-
-We put forward a ``layer-2'' approach  to meet this requirement in the setting where a permissionless blockchain acts as the fall back ``layer-1'' mechanism. Specifically the key to our approach to scalability is that the protocol is realized in layer-2 fashion, i.e., the bulk part of the protocol is executed off-chain, but additionally secured on the blockchain  with a minimal footprint.
-
-We prove our protocol secure in the universal composability (UC) framework. First, we formalize a governance ideal functionality $F_{L2Gov}$. Our definition offers high levels of confidentiality and verifiability. Moreover, in case of misbehavior, it is designed to allow attribution of faults so that appropriate action (such as slashing of on-chain funds) can be taken. Second, we demonstrate that our protocol UC-realizes the $F_{L2Gov}$ functionality based on a blockchain, an off-chain bulletin-board, a distributed homomorphic encryption functionality ($F_{DHE}$), and a number of other standard hybrids.
-
-To the best of our knowledge, this work presents the first blockchain layer-2 voting protocol with a rigorous  security analysis. We also point out some challenges that arise when applying the UC framework to layer-2 protocols.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:229">
-                            <td class="time">12:06-12:30</td>
-                            <td>
-                                <div class="title">BlindReview: Anonymous and End-to-End Verifiable Peer Review <a class="abstract_link" href="CSF-2026-07-28.html#talk:229">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person11820.html">Xavier Bultel</a><sup>1</sup>, <a class="person" href="person11821.html">Ashley Fraser</a><sup>2</sup>, <a class="person" href="person11822.html">Elizabeth A. Quaglia</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> INSA Centre Val de Loire, Inria</div>
-                                <div class="affiliation_item"><sup>2</sup> Lancaster University</div>
-                                <div class="affiliation_item"><sup>3</sup> Royal Holloway, University of London</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce BlindReview, an anonymous and end-to-end verifiable peer review system that cryptographically guarantees both privacy and auditability through-out the reviewing process. We formally define these security properties and provide rigorous proofs that BlindReview satisfies them. We also present an implementation demonstrating our protocol’s practicality. This work serves as a foundation for verifiable and privacy-preserving peer review, offering a concrete solution to enhance transparency and reduce bias in the academic peer review process.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:670">
                     <div class="heading">
@@ -340,7 +236,7 @@ To the best of our knowledge, this work presents the first blockchain layer-2 vo
                             <td>
                                 <div class="title">VNN-LIB 2.0: Rigorous Foundations for Neural Network Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1146">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11421.html">Ann Roy</a><sup>1</sup>, <a class="person" href="person11422.html">Allen Antony</a><sup>1</sup>, <a class="person" href="person11423.html">Andrea Gimelli</a><sup>2</sup>, <a class="person" href="person11424.html">Matthew Daggitt</a><sup>1</sup>                                </div>
+<a class="person" href="person15736.html">Ann Roy</a><sup>1</sup>, <a class="person" href="person15737.html">Allen Antony</a><sup>1</sup>, <a class="person" href="person15738.html">Andrea Gimelli</a><sup>2</sup>, <a class="person" href="person15739.html">Matthew Daggitt</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Western Australia</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Genova</div>
@@ -358,7 +254,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">QAV-FT: Quadratic Approximation-based Neural Network Verification via Fourier Series and Taylor Truncation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1147">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11425.html">Han Wang</a><sup>1</sup>, <a class="person" href="person11426.html">Xuyang Ding</a><sup>1</sup>, <a class="person" href="person11427.html">Xie Ying</a><sup>2</sup>, <a class="person" href="person11428.html">Yakun Sheng</a><sup>1</sup>                                </div>
+<a class="person" href="person15740.html">Han Wang</a><sup>1</sup>, <a class="person" href="person15741.html">Xuyang Ding</a><sup>1</sup>, <a class="person" href="person15742.html">Xie Ying</a><sup>2</sup>, <a class="person" href="person15743.html">Yakun Sheng</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> School of Computer Science and Engineering, University of Electronic Science and Technology of China</div>
                                 <div class="affiliation_item"><sup>2</sup> College of Computer Science and Artificial Intelligence, Southwest Minzu University</div>
@@ -373,7 +269,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">The Rocq-NN-Roll Prover: Soundly Verifying Hyperproperties of Neural Networks in Rocq <a class="abstract_link" href="CAV-2026-07-28.html#talk:1148">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11429.html">Andrei Aleksandrov</a><sup>1</sup>, <a class="person" href="person11430.html">Malte Jackisch</a><sup>2</sup>, <a class="person" href="person11431.html">Kim Völlinger</a><sup>2</sup>                                </div>
+<a class="person" href="person15744.html">Andrei Aleksandrov</a><sup>1</sup>, <a class="person" href="person15745.html">Malte Jackisch</a><sup>2</sup>, <a class="person" href="person15746.html">Kim Völlinger</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Fraunhofer Institute FOKUS Berlin</div>
                                 <div class="affiliation_item"><sup>2</sup> Technische Universität Berlin</div>
@@ -388,7 +284,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">ATKVerifier: Adaptive Top-K Constraints for Tighter Verification of Semantic Segmentation Networks <a class="abstract_link" href="CAV-2026-07-28.html#talk:1149">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11432.html">Yuehao Liu</a><sup>1</sup>, <a class="person" href="person11391.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person11434.html">Yansong Dong</a><sup>2</sup>, <a class="person" href="person11435.html">Liang Zhao</a><sup>1</sup>, <a class="person" href="person11436.html">Chao Huang</a><sup>1</sup>, <a class="person" href="person11392.html">Wensheng Wang</a><sup>1</sup>                                </div>
+<a class="person" href="person15747.html">Yuehao Liu</a><sup>1</sup>, <a class="person" href="person15706.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person15749.html">Yansong Dong</a><sup>2</sup>, <a class="person" href="person15750.html">Liang Zhao</a><sup>1</sup>, <a class="person" href="person15751.html">Chao Huang</a><sup>1</sup>, <a class="person" href="person15707.html">Wensheng Wang</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ICTT and ISN Laboratory, Xidian University</div>
                                 <div class="affiliation_item"><sup>2</sup> KylinSoft Co., Ltd.</div>
@@ -403,7 +299,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">Precise Verification of Transformers through ReLU-Catalyzed Abstraction Refinement <a class="abstract_link" href="CAV-2026-07-28.html#talk:1150">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11438.html">Hengjie Liu</a><sup>1</sup>, <a class="person" href="person11439.html">Zhenya Zhang</a><sup>1</sup>, <a class="person" href="person11440.html">Jianjun Zhao</a><sup>1</sup>                                </div>
+<a class="person" href="person15753.html">Hengjie Liu</a><sup>1</sup>, <a class="person" href="person15754.html">Zhenya Zhang</a><sup>1</sup>, <a class="person" href="person15755.html">Jianjun Zhao</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Kyushu University</div>
                                 </div>
@@ -417,7 +313,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">Quantifying Sensitivity for Tree Ensembles : A symbolic and compositional approach <a class="abstract_link" href="CAV-2026-07-28.html#talk:1151">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11441.html">Ajinkya Naik</a><sup>1</sup>, <a class="person" href="person11442.html">Akshay S</a><sup>1</sup>, <a class="person" href="person11443.html">Ashutosh Gupta</a><sup>1</sup>, <a class="person" href="person11444.html">Chaitanya Garg</a><sup>1</sup>, <a class="person" href="person11445.html">Kuldeep S. Meel</a><sup>2</sup>                                </div>
+<a class="person" href="person15756.html">Ajinkya Naik</a><sup>1</sup>, <a class="person" href="person15757.html">Akshay S</a><sup>1</sup>, <a class="person" href="person15758.html">Ashutosh Gupta</a><sup>1</sup>, <a class="person" href="person15759.html">Chaitanya Garg</a><sup>1</sup>, <a class="person" href="person15760.html">Kuldeep S. Meel</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> IIT Bombay</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
@@ -432,7 +328,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">Shields to Guarantee Probabilistic Safety in MDPs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1152">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11074.html">Linus Heck</a><sup>1</sup>, <a class="person" href="person11075.html">Filip Macák</a><sup>2</sup>, <a class="person" href="person11448.html">Roman Andriushchenko</a><sup>2</sup>, <a class="person" href="person11449.html">Milan Ceska</a><sup>2</sup>, <a class="person" href="person11077.html">Sebastian Junges</a><sup>1</sup>                                </div>
+<a class="person" href="person15389.html">Linus Heck</a><sup>1</sup>, <a class="person" href="person15390.html">Filip Macák</a><sup>2</sup>, <a class="person" href="person15763.html">Roman Andriushchenko</a><sup>2</sup>, <a class="person" href="person15764.html">Milan Ceska</a><sup>2</sup>, <a class="person" href="person15392.html">Sebastian Junges</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Radboud University</div>
                                 <div class="affiliation_item"><sup>2</sup> Brno University of Technology</div>
@@ -458,7 +354,7 @@ of the new shields as well as computational feasibility.</p>
                             <td>
                                 <div class="title">A Neurosymbolic Approach to Natural Language Formalization and Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1153">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11451.html">Chenyang An</a><sup>1</sup>, <a class="person" href="person11452.html">Sam Bayless</a><sup>1</sup>, <a class="person" href="person11453.html">Stefano Buliani</a><sup>1</sup>, <a class="person" href="person11454.html">Darion Cassel</a><sup>1</sup>, <a class="person" href="person11455.html">Byron Cook</a><sup>2</sup>, <a class="person" href="person11456.html">Duncan Clough</a><sup>1</sup>, <a class="person" href="person11457.html">Rémi Delmas</a><sup>1</sup>, <a class="person" href="person11458.html">Nafi Diallo</a><sup>1</sup>, <a class="person" href="person11459.html">Ferhat Erata</a><sup>1</sup>, <a class="person" href="person11460.html">Nick Feng</a><sup>1</sup>, <a class="person" href="person11461.html">Dimitra Giannakopoulou</a><sup>1</sup>, <a class="person" href="person11462.html">Aman Goel</a><sup>1</sup>, <a class="person" href="person11463.html">Aditya Gokhale</a><sup>1</sup>, <a class="person" href="person11464.html">Joe Hendrix</a><sup>1</sup>, <a class="person" href="person11465.html">Victor Heorhiadi</a><sup>1</sup>, <a class="person" href="person11466.html">Marc Hudak</a><sup>1</sup>, <a class="person" href="person11467.html">Dejan Jovanović</a><sup>1</sup>, <a class="person" href="person11468.html">Andrew M. Kent</a><sup>1</sup>, <a class="person" href="person11469.html">Benjamin Kiesl-Reiter</a><sup>1</sup>, <a class="person" href="person11470.html">Jeffrey J. Kuna</a><sup>1</sup>, <a class="person" href="person11471.html">Nadia Labai</a><sup>1</sup>, <a class="person" href="person11472.html">Joseph Lilien</a><sup>1</sup>, <a class="person" href="person11473.html">Divya Raghunathan</a><sup>1</sup>, <a class="person" href="person11474.html">Zvonimir Rakamarić</a><sup>1</sup>, <a class="person" href="person11475.html">Niloofar Razavi</a><sup>1</sup>, <a class="person" href="person11476.html">Michael Tautschnig</a><sup>1</sup>, <a class="person" href="person11477.html">Ali Torkamani</a><sup>1</sup>, <a class="person" href="person11478.html">Nathaniel Weir</a><sup>1</sup>, <a class="person" href="person11479.html">Michael W. Whalen</a><sup>1</sup>, <a class="person" href="person11480.html">Jianan Yao</a><sup>3</sup>                                </div>
+<a class="person" href="person15766.html">Chenyang An</a><sup>1</sup>, <a class="person" href="person15767.html">Sam Bayless</a><sup>1</sup>, <a class="person" href="person15768.html">Stefano Buliani</a><sup>1</sup>, <a class="person" href="person15769.html">Darion Cassel</a><sup>1</sup>, <a class="person" href="person15770.html">Byron Cook</a><sup>2</sup>, <a class="person" href="person15771.html">Duncan Clough</a><sup>1</sup>, <a class="person" href="person15772.html">Rémi Delmas</a><sup>1</sup>, <a class="person" href="person15773.html">Nafi Diallo</a><sup>1</sup>, <a class="person" href="person15774.html">Ferhat Erata</a><sup>1</sup>, <a class="person" href="person15775.html">Nick Feng</a><sup>1</sup>, <a class="person" href="person15776.html">Dimitra Giannakopoulou</a><sup>1</sup>, <a class="person" href="person15777.html">Aman Goel</a><sup>1</sup>, <a class="person" href="person15778.html">Aditya Gokhale</a><sup>1</sup>, <a class="person" href="person15779.html">Joe Hendrix</a><sup>1</sup>, <a class="person" href="person15780.html">Victor Heorhiadi</a><sup>1</sup>, <a class="person" href="person15781.html">Marc Hudak</a><sup>1</sup>, <a class="person" href="person15782.html">Dejan Jovanović</a><sup>1</sup>, <a class="person" href="person15783.html">Andrew M. Kent</a><sup>1</sup>, <a class="person" href="person15784.html">Benjamin Kiesl-Reiter</a><sup>1</sup>, <a class="person" href="person15785.html">Jeffrey J. Kuna</a><sup>1</sup>, <a class="person" href="person15786.html">Nadia Labai</a><sup>1</sup>, <a class="person" href="person15787.html">Joseph Lilien</a><sup>1</sup>, <a class="person" href="person15788.html">Divya Raghunathan</a><sup>1</sup>, <a class="person" href="person15789.html">Zvonimir Rakamarić</a><sup>1</sup>, <a class="person" href="person15790.html">Niloofar Razavi</a><sup>1</sup>, <a class="person" href="person15791.html">Michael Tautschnig</a><sup>1</sup>, <a class="person" href="person15792.html">Ali Torkamani</a><sup>1</sup>, <a class="person" href="person15793.html">Nathaniel Weir</a><sup>1</sup>, <a class="person" href="person15794.html">Michael W. Whalen</a><sup>1</sup>, <a class="person" href="person15795.html">Jianan Yao</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Amazon Web Services</div>
                                 <div class="affiliation_item"><sup>2</sup> Amazon Web Services, University College London</div>
@@ -466,6 +362,113 @@ of the new shields as well as computational feasibility.</p>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models perform well at natural language interpretation and reasoning, but their inherent stochasticity limits their adoption in regulated industries like finance and healthcare that operate under strict policies. To address this limitation, we launched Automated Reasoning checks (ARc): a public service that (1) uses LLMs with optional human guidance to formalize natural language policies, allowing fine-grained control of the formalization process, and (2) uses inference-time autoformalization to validate logical correctness of natural language statements against those policies. When correctness is paramount, we perform multiple redundant formalization steps at inference time, checking the formalizations for semantic equivalence. Our benchmarks show that ARc exceeds 99% soundness and achieves a near-zero false positive rate in identifying logical validity. Our approach produces auditable artifacts that substantiate the verification outcomes and can be used to improve the original text. ARc is the first commercial offering from a major cloud provider to integrate automated reasoning into a generative AI guardrail.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:722">
+                    <div class="heading">
+                        <span class="interval">10:30-12:30</span>
+                        <span class="title">E-Voting & Anonymity</span>
+                        <span class="group_tag">CSF</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room31.html">B2.03</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:225">
+                            <td class="time">10:30-10:54</td>
+                            <td>
+                                <div class="title">On the necessity of pre-agreed secrets for thwarting last-minute coercion: vulnerabilities and lessons from the Loki e-voting protocol <a class="abstract_link" href="CSF-2026-07-28.html#talk:225">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16121.html">Jingxin Qiao</a><sup>1</sup>, <a class="person" href="person16093.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person16123.html">Thomas Zacharias</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Coercion-resistance (CR) is a crucial security property in e-voting systems. It ensures that an attacker cannot compel a voter to vote in a specific way by using threats or rewards. The Loki e-voting protocol, proposed by Giustolisi \emph{et al.} at IEEE S\&P (2024), introduces a novel design that mitigates last-minute coercion through a re-voting mechanism. It also aims to address the usability issues of the seminal JCJ e-voting protocol, specifically: i) the requirement that voters can store and hide pre-agreed credentials, and ii) the ability of voters to convincingly lie while being coerced. 
+
+In this work, we identify two vulnerabilities in Loki. The first is a brute-force attack that compromises the integrity of the evasion strategy. Specifically, this attack allows an adversary to cast a ballot on behalf of their victim in a way that the evasion strategy cannot defend against, rendering it ineffective. The second vulnerability is a forced abstention attack, which allows an adversary to detect when their victim has complied with their instruction not to vote. We generalise the integrity attack to reveal a fundamental dilemma: without pre-agreed secret credentials, it is not possible to prevent last-minute coercion. Finally, we show how reverting to pre-agreed secret credentials fixes the aforementioned vulnerabilities and discuss the trade-off between tallying efficiency and stronger trust assumptions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:226">
+                            <td class="time">10:54-11:18</td>
+                            <td>
+                                <div class="title">Setup Protocols for Sender Anonymity <a class="abstract_link" href="CSF-2026-07-28.html#talk:226">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16124.html">Tian Huang</a><sup>1</sup>, <a class="person" href="person16125.html">Jiatai Zhang</a><sup>2</sup>, <a class="person" href="person16126.html">Megumi Ando</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Tufts University</div>
+                                <div class="affiliation_item"><sup>2</sup> Rensselaer Polytechnic Institute</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Anonymous communication is essential for secure and private interactions over public networks. Existing solutions that provide provable anonymity rely on the so-called simple I/O setting, where every participant sends and receives the same number of messages, masking their true communication pattern. The only known way to enforce this setting is through dialing protocols. Such protocols establish pairwise conversations, but each recipient inevitably learns who attempted to contact them, violating sender anonymity, the guaranty that even the recipient cannot determine who attempted to contact them.
+
+In this work, we introduce the notion of enhanced dialing protocols, a broad class of protocols that enforce the simple I/O setting. We also initiate the first formal study of such protocols with respect to sender anonymity. We introduce a framework that captures three key properties: security, correctness, and fairness. Within this framework, we present Fusion, a protocol that achieves perfect correctness and fairness while incurring only unavoidable leakage, and Fusion+, a differentially private variant that reduces this leakage at the cost of some correctness. Through theoretical analysis, we quantify the fundamental trade-off between privacy and correctness in Fusion+.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:227">
+                            <td class="time">11:18-11:42</td>
+                            <td>
+                                <div class="title">Simultaneously Proving Privacy and Verifiability: A ProVerif Framework for Internet Voting <a class="abstract_link" href="CSF-2026-07-28.html#talk:227">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16127.html">Vincent Cheval</a><sup>1</sup>, <a class="person" href="person16128.html">Veronique Cortier</a><sup>2</sup>, <a class="person" href="person16129.html">Alexandre Debant</a><sup>3</sup>, <a class="person" href="person16130.html">Florian Moser</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>2</sup> CNRS Nancy</div>
+                                <div class="affiliation_item"><sup>3</sup> INRIA Nancy</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Electronic voting aims to guarantee the same security properties than traditional paper-based voting, namely vote privacy and verifiability. While the formal verification of security protocols is now a mature filed with several powerful tools such as ProVerif or Tamarin, verifying voting protocols still pushes existing tools at their limits.
+
+We present in this work a proof framework for ProVerif that models an extensible election setting with an unbounded number of concurrent elections, voters and votes. We also develop a library of lemmas to aid the automatic verification. Crucially, the framework allows to reuse the same protocol model for both privacy and verifiability proofs. We apply the framework to several protocols of the literature and industry, showing the flexibility and applicability of our framework.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:228">
+                            <td class="time">11:42-12:06</td>
+                            <td>
+                                <div class="title">Beyond Blockchain Ballots: UC-Secure Layer-2 Voting and Governance <a class="abstract_link" href="CSF-2026-07-28.html#talk:228">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16131.html">Raghav Bhaskar</a><sup>1</sup>, <a class="person" href="person16132.html">Pooya Farshim</a><sup>2</sup>, <a class="person" href="person16133.html">Matthias Fitzi</a><sup>2</sup>, <a class="person" href="person16134.html">Aggelos Kiayias</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> None</div>
+                                <div class="affiliation_item"><sup>2</sup> Input Output</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Edinburgh and Input Output</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Maintaining a decentralized system requires a collective governance mechanism that allows the participants to agree on possible changes to the system. In particular, the governance mechanism should offer a voting functionality that allows the casting, collection, and tallying of votes in a confidential yet verifiable manner.  Scaling this functionality for many millions of participants in a cost-effective manner is a critical requirement for permissionless blockchains that is currently still unmet. 
+
+We put forward a ``layer-2'' approach  to meet this requirement in the setting where a permissionless blockchain acts as the fall back ``layer-1'' mechanism. Specifically the key to our approach to scalability is that the protocol is realized in layer-2 fashion, i.e., the bulk part of the protocol is executed off-chain, but additionally secured on the blockchain  with a minimal footprint.
+
+We prove our protocol secure in the universal composability (UC) framework. First, we formalize a governance ideal functionality $F_{L2Gov}$. Our definition offers high levels of confidentiality and verifiability. Moreover, in case of misbehavior, it is designed to allow attribution of faults so that appropriate action (such as slashing of on-chain funds) can be taken. Second, we demonstrate that our protocol UC-realizes the $F_{L2Gov}$ functionality based on a blockchain, an off-chain bulletin-board, a distributed homomorphic encryption functionality ($F_{DHE}$), and a number of other standard hybrids.
+
+To the best of our knowledge, this work presents the first blockchain layer-2 voting protocol with a rigorous  security analysis. We also point out some challenges that arise when applying the UC framework to layer-2 protocols.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:229">
+                            <td class="time">12:06-12:30</td>
+                            <td>
+                                <div class="title">BlindReview: Anonymous and End-to-End Verifiable Peer Review <a class="abstract_link" href="CSF-2026-07-28.html#talk:229">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16135.html">Xavier Bultel</a><sup>1</sup>, <a class="person" href="person16136.html">Ashley Fraser</a><sup>2</sup>, <a class="person" href="person16137.html">Elizabeth A. Quaglia</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> INSA Centre Val de Loire, Inria</div>
+                                <div class="affiliation_item"><sup>2</sup> Lancaster University</div>
+                                <div class="affiliation_item"><sup>3</sup> Royal Holloway, University of London</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce BlindReview, an anonymous and end-to-end verifiable peer review system that cryptographically guarantees both privacy and auditability through-out the reviewing process. We formally define these security properties and provide rigorous proofs that BlindReview satisfies them. We also present an implementation demonstrating our protocol’s practicality. This work serves as a foundation for verifiable and privacy-preserving peer review, offering a concrete solution to enhance transparency and reduce bias in the academic peer review process.</p>
                                 </div>
                             </td>
                         </tr>
@@ -491,7 +494,7 @@ of the new shields as well as computational feasibility.</p>
                             <td>
                                 <div class="title">Finite Model Finding in First-order Modal Logics <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1272">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12595.html">Happy Khairunnisa Sariyanto</a><sup>1</sup>, <a class="person" href="person12596.html">Alexander Steen</a><sup>1</sup>, <a class="person" href="person12548.html">Geoff Sutcliffe</a><sup>2</sup>                                </div>
+<a class="person" href="person16910.html">Happy Khairunnisa Sariyanto</a><sup>1</sup>, <a class="person" href="person16911.html">Alexander Steen</a><sup>1</sup>, <a class="person" href="person16863.html">Geoff Sutcliffe</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Greifswald</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Miami</div>
@@ -518,7 +521,7 @@ Up to the authors' knowledge, MoMo is the first model finder for first-order mod
                             <td>
                                 <div class="title">Completeness of Synthesis under Realizability Assumptions using Superposition <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1273">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12598.html">Márton Hajdu</a><sup>1</sup>, <a class="person" href="person12599.html">Petra Hozzová</a><sup>1</sup>, <a class="person" href="person12187.html">Laura Kovács</a><sup>1</sup>, <a class="person" href="person12601.html">Eva Wagner</a><sup>1</sup>                                </div>
+<a class="person" href="person16913.html">Márton Hajdu</a><sup>1</sup>, <a class="person" href="person16914.html">Petra Hozzová</a><sup>1</sup>, <a class="person" href="person16502.html">Laura Kovács</a><sup>1</sup>, <a class="person" href="person16916.html">Eva Wagner</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -534,7 +537,7 @@ We present cases where the calculus fails and refine it to solve them. We prove 
                             <td>
                                 <div class="title">Hardware Model Checking Certification with Certifaiger and Cerbtora <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1274">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11482.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person11483.html">Emily Yu</a><sup>2</sup>                                </div>
+<a class="person" href="person15797.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person15798.html">Emily Yu</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
                                 <div class="affiliation_item"><sup>2</sup> Leiden University</div>
@@ -549,7 +552,7 @@ We present cases where the calculus fails and refine it to solve them. We prove 
                             <td>
                                 <div class="title">Pgeon: Generating Tableau-Based Provers from Declarative Specifications of Logical Calculi <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1275">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12604.html">Romain Sidhoum</a><sup>1</sup>, <a class="person" href="person12605.html">Simon Robillard</a><sup>1</sup>, <a class="person" href="person12606.html">David Delahaye</a><sup>1</sup>                                </div>
+<a class="person" href="person16919.html">Romain Sidhoum</a><sup>1</sup>, <a class="person" href="person16920.html">Simon Robillard</a><sup>1</sup>, <a class="person" href="person16921.html">David Delahaye</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LIRMM, Univ Montpellier, CNRS, Montpellier, France</div>
                                 </div>
@@ -585,7 +588,7 @@ We describe the design of the specification language, the execution model of the
                             <td>
                                 <div class="title">Don't Sweat Interaction Trees: Proof-Guided Local Variable Lifting for Interaction Trees <a class="abstract_link" href="ITP-2026-07-28.html#talk:384">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12781.html">Yiming Lin</a><sup>1</sup>, <a class="person" href="person12782.html">Ian Kariniemi</a><sup>1</sup>, <a class="person" href="person12783.html">Yao Li</a><sup>1</sup>                                </div>
+<a class="person" href="person17096.html">Yiming Lin</a><sup>1</sup>, <a class="person" href="person17097.html">Ian Kariniemi</a><sup>1</sup>, <a class="person" href="person17098.html">Yao Li</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Portland State University</div>
                                 </div>
@@ -599,7 +602,7 @@ We describe the design of the specification language, the execution model of the
                             <td>
                                 <div class="title">Bidirectional Interpolation for the Lambda-Calculus – Revisiting and Formalising Craig-Čubrić Interpolation <a class="abstract_link" href="ITP-2026-07-28.html#talk:385">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12784.html">Meven Lennon-Bertrand</a><sup>1</sup>, <a class="person" href="person11635.html">Alexis Saurin</a><sup>2</sup>                                </div>
+<a class="person" href="person17099.html">Meven Lennon-Bertrand</a><sup>1</sup>, <a class="person" href="person15950.html">Alexis Saurin</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Paris Cité, INRIA, CNRS, IRIF</div>
                                 <div class="affiliation_item"><sup>2</sup> Université Paris Cité, CNRS, INRIA, IRIF</div>
@@ -700,7 +703,7 @@ In the present paper, we give a new proof of Čubrić's proof-relevant interpola
                             <td>
                                 <div class="title">Invited talk by CAV Award awardees <a class="abstract_link" href="CAV-2026-07-28.html#talk:199">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11481.html">TBA na</a><sup>1</sup>                                </div>
+<a class="person" href="person15796.html">TBA na</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> na</div>
                                 </div>
@@ -728,7 +731,7 @@ In the present paper, we give a new proof of Čubrić's proof-relevant interpola
                             <td>
                                 <div class="title">A Composable Game-Theoretic Framework for Blockchains <a class="abstract_link" href="CSF-2026-07-28.html#talk:230">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11823.html">Pim Keer</a><sup>1</sup>, <a class="person" href="person11824.html">Fabian Regen</a><sup>1</sup>, <a class="person" href="person11825.html">Georg Fuchsbauer</a><sup>1</sup>, <a class="person" href="person11826.html">Matteo Maffei</a><sup>1</sup>, <a class="person" href="person11827.html">Zeta Avarikioti</a><sup>2</sup>                                </div>
+<a class="person" href="person16138.html">Pim Keer</a><sup>1</sup>, <a class="person" href="person16139.html">Fabian Regen</a><sup>1</sup>, <a class="person" href="person16140.html">Georg Fuchsbauer</a><sup>1</sup>, <a class="person" href="person16141.html">Matteo Maffei</a><sup>1</sup>, <a class="person" href="person16142.html">Zeta Avarikioti</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Wien & Common Prefix</div>
@@ -747,7 +750,7 @@ We illustrate our framework through case studies on Hashed Timelock Contracts (H
                             <td>
                                 <div class="title">NTRU with Hints: Secret Key Recovery under Partial Leakage on NTRU-based Signatures <a class="abstract_link" href="CSF-2026-07-28.html#talk:231">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11828.html">Honglin Shao</a><sup>1</sup>, <a class="person" href="person11829.html">Yuejun Liu</a><sup>1</sup>, <a class="person" href="person11830.html">Mingyao Shao</a><sup>2,3,6</sup>, <a class="person" href="person11831.html">Wei Cheng</a><sup>1,4</sup>, <a class="person" href="person11832.html">Yongbin Zhou</a><sup>1,5</sup>                                </div>
+<a class="person" href="person16143.html">Honglin Shao</a><sup>1</sup>, <a class="person" href="person16144.html">Yuejun Liu</a><sup>1</sup>, <a class="person" href="person16145.html">Mingyao Shao</a><sup>2,3,6</sup>, <a class="person" href="person16146.html">Wei Cheng</a><sup>1,4</sup>, <a class="person" href="person16147.html">Yongbin Zhou</a><sup>1,5</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> School of Cyber Science and Engineering, Nanjing University of Science and Technology, Nanjing 210094, China</div>
                                 <div class="affiliation_item"><sup>2</sup> Institute of Information Engineering, Chinese Academy of Sciences</div>
@@ -766,7 +769,7 @@ We illustrate our framework through case studies on Hashed Timelock Contracts (H
                             <td>
                                 <div class="title">Self-Guarding Arbitrary Cryptographic Primitives and 2PC Protocols <a class="abstract_link" href="CSF-2026-07-28.html#talk:232">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11833.html">Daniele Friolo</a><sup>1</sup>, <a class="person" href="person11834.html">Andrea Reale</a><sup>1</sup>, <a class="person" href="person11835.html">Daniele Venturi</a><sup>1</sup>                                </div>
+<a class="person" href="person16148.html">Daniele Friolo</a><sup>1</sup>, <a class="person" href="person16149.html">Andrea Reale</a><sup>1</sup>, <a class="person" href="person16150.html">Daniele Venturi</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Sapienza University of Rome</div>
                                 </div>
@@ -781,7 +784,7 @@ Whilst the proposed solutions in CSF '18  support a bounded number of executions
                             <td>
                                 <div class="title">Revisiting Beimel-Weinreb Weighted Threshold Secret Sharing Schemes <a class="abstract_link" href="CSF-2026-07-28.html#talk:233">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11836.html">Oriol Farràs</a><sup>1</sup>, <a class="person" href="person11837.html">Miquel Guiot</a><sup>1</sup>                                </div>
+<a class="person" href="person16151.html">Oriol Farràs</a><sup>1</sup>, <a class="person" href="person16152.html">Miquel Guiot</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universitat Rovira i Virgili</div>
                                 </div>
@@ -803,7 +806,7 @@ Second, extending these techniques, we obtain improved information-theoretic ram
                             <td>
                                 <div class="title">Time-Lock Puzzles with Preprocessing: an Instantiation from Average-Case Hardness Assumptions on Graphs and Lattices <a class="abstract_link" href="CSF-2026-07-28.html#talk:234">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11838.html">Raz Rosie</a><sup>1</sup>                                </div>
+<a class="person" href="person16153.html">Raz Rosie</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Lombard International (part of Utmost Group)</div>
                                 </div>
@@ -841,7 +844,7 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                             <td>
                                 <div class="title">Tao’s Equational Proof Challenge Accepted <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:352">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12607.html">Lydia Kondylidou</a><sup>1</sup>, <a class="person" href="person12608.html">Jasmin Blanchette</a><sup>1</sup>, <a class="person" href="person12609.html">Marijn Heule</a><sup>2</sup>                                </div>
+<a class="person" href="person16922.html">Lydia Kondylidou</a><sup>1</sup>, <a class="person" href="person16923.html">Jasmin Blanchette</a><sup>1</sup>, <a class="person" href="person16924.html">Marijn Heule</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Ludwig-Maximilians-Universität München</div>
                                 <div class="affiliation_item"><sup>2</sup> Carnegie Mellon University</div>
@@ -856,7 +859,7 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                             <td>
                                 <div class="title">Generating Theorems by Generating Proof Structures <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:353">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11604.html">Christoph Wernhard</a><sup>1</sup>                                </div>
+<a class="person" href="person15919.html">Christoph Wernhard</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
                                 </div>
@@ -870,7 +873,7 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                             <td>
                                 <div class="title">Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:354">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12611.html">Emanuele Civini</a><sup>1</sup>, <a class="person" href="person12612.html">Gabriele Masina</a><sup>1</sup>, <a class="person" href="person12613.html">Giuseppe Spallitta</a><sup>2</sup>, <a class="person" href="person12614.html">Roberto Sebastiani</a><sup>1</sup>                                </div>
+<a class="person" href="person16926.html">Emanuele Civini</a><sup>1</sup>, <a class="person" href="person16927.html">Gabriele Masina</a><sup>1</sup>, <a class="person" href="person16928.html">Giuseppe Spallitta</a><sup>2</sup>, <a class="person" href="person16929.html">Roberto Sebastiani</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Trento</div>
                                 <div class="affiliation_item"><sup>2</sup> Rice University</div>
@@ -888,7 +891,7 @@ In this paper, we present theory-agnostic methods for enumerating complete sets 
                             <td>
                                 <div class="title">A Superposition Calculus for Separation Logic <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:355">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12615.html">Tanguy Bozec</a><sup>1</sup>, <a class="person" href="person12616.html">Nicolas Peltier</a><sup>2</sup>                                </div>
+<a class="person" href="person16930.html">Tanguy Bozec</a><sup>1</sup>, <a class="person" href="person16931.html">Nicolas Peltier</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
                                 <div class="affiliation_item"><sup>2</sup> CNRS LIG</div>
@@ -903,7 +906,7 @@ In this paper, we present theory-agnostic methods for enumerating complete sets 
                             <td>
                                 <div class="title">Twitch: Learning Abstractions for Equational Theorem Proving <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:356">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12617.html">Guy Axelrod</a><sup>1</sup>, <a class="person" href="person12618.html">Moa Johansson</a><sup>1</sup>, <a class="person" href="person12619.html">Nicholas Smallbone</a><sup>1</sup>                                </div>
+<a class="person" href="person16932.html">Guy Axelrod</a><sup>1</sup>, <a class="person" href="person16933.html">Moa Johansson</a><sup>1</sup>, <a class="person" href="person16934.html">Nicholas Smallbone</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Chalmers University of Technology</div>
                                 </div>
@@ -919,7 +922,7 @@ tasks. Twitch can produce abstractions in two ways: (1) from a partial, failed p
                             <td>
                                 <div class="title">On Constructing Most General Solutions for Parametric Constraints <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:357">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12534.html">Viorica Sofronie-Stokkermans</a><sup>1</sup>                                </div>
+<a class="person" href="person16849.html">Viorica Sofronie-Stokkermans</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Koblenz</div>
                                 </div>
@@ -963,7 +966,7 @@ varieties. We illustrate the ideas on examples.</p>
                             <td>
                                 <div class="title">Enhancing Interactive Theorem Prover Error Messages with Hints <a class="abstract_link" href="ITP-2026-07-28.html#talk:386">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12786.html">Maria Khakimova</a><sup>1</sup>, <a class="person" href="person12787.html">Sára Juhošová</a><sup>1</sup>, <a class="person" href="person12788.html">Jaro Reinders</a><sup>1</sup>, <a class="person" href="person12789.html">Jesper Cockx</a><sup>1</sup>                                </div>
+<a class="person" href="person17101.html">Maria Khakimova</a><sup>1</sup>, <a class="person" href="person17102.html">Sára Juhošová</a><sup>1</sup>, <a class="person" href="person17103.html">Jaro Reinders</a><sup>1</sup>, <a class="person" href="person17104.html">Jesper Cockx</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
                                 </div>
@@ -977,7 +980,7 @@ varieties. We illustrate the ideas on examples.</p>
                             <td>
                                 <div class="title">Formalization of a Realistic Verification-Condition Generator for an Intermediate Verification Language <a class="abstract_link" href="ITP-2026-07-28.html#talk:387">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11377.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person12791.html">K. Rustan M. Leino</a><sup>2</sup>                                </div>
+<a class="person" href="person15692.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person17106.html">K. Rustan M. Leino</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National University of Singapore</div>
                                 <div class="affiliation_item"><sup>2</sup> Amazon Web Services</div>
@@ -994,7 +997,7 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                             <td>
                                 <div class="title">Panbench: A Comparative Benchmarking Tool for Dependently-Typed Languages <a class="abstract_link" href="ITP-2026-07-28.html#talk:388">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12792.html">Reed Mullanix</a><sup>1</sup>, <a class="person" href="person12793.html">Jacques Carette</a><sup>1</sup>                                </div>
+<a class="person" href="person17107.html">Reed Mullanix</a><sup>1</sup>, <a class="person" href="person17108.html">Jacques Carette</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> McMaster University</div>
                                 </div>
@@ -1045,7 +1048,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">Liveness Proofs for Hardware Model Checking <a class="abstract_link" href="CAV-2026-07-28.html#talk:1154">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11482.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person11483.html">Emily Yu</a><sup>2</sup>, <a class="person" href="person11484.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person11485.html">Armin Biere</a><sup>3</sup>, <a class="person" href="person11486.html">Keijo Heljanko</a><sup>4</sup>                                </div>
+<a class="person" href="person15797.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person15798.html">Emily Yu</a><sup>2</sup>, <a class="person" href="person15799.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person15800.html">Armin Biere</a><sup>3</sup>, <a class="person" href="person15801.html">Keijo Heljanko</a><sup>4</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
                                 <div class="affiliation_item"><sup>2</sup> Leiden University</div>
@@ -1062,7 +1065,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">Transition Invariants Revisited: Termination Witnesses and Their Validation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1155">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11487.html">Dirk Beyer</a><sup>1</sup>, <a class="person" href="person11488.html">Marek Jankola</a><sup>1</sup>, <a class="person" href="person11083.html">Marian Lingsch-Rosenfeld</a><sup>1</sup>                                </div>
+<a class="person" href="person15802.html">Dirk Beyer</a><sup>1</sup>, <a class="person" href="person15803.html">Marek Jankola</a><sup>1</sup>, <a class="person" href="person15398.html">Marian Lingsch-Rosenfeld</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
                                 </div>
@@ -1076,7 +1079,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">KoAT: Automatic Complexity and Termination Analysis of Integer Programs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1156">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11490.html">Nils Lommen</a><sup>1</sup>, <a class="person" href="person11491.html">Jürgen Giesl</a><sup>1</sup>, <a class="person" href="person11492.html">Eleanore Meyer</a><sup>1</sup>                                </div>
+<a class="person" href="person15805.html">Nils Lommen</a><sup>1</sup>, <a class="person" href="person15806.html">Jürgen Giesl</a><sup>1</sup>, <a class="person" href="person15807.html">Eleanore Meyer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
                                 </div>
@@ -1142,7 +1145,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">Sound and Precise Symbolic Automata Model for Stateful Software Systems <a class="abstract_link" href="CAV-2026-07-28.html#talk:1157">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11493.html">Xinlong Wu</a><sup>1</sup>, <a class="person" href="person11494.html">Ruiyu Zhou</a><sup>1</sup>, <a class="person" href="person11495.html">Peisen Yao</a><sup>2</sup>, <a class="person" href="person11496.html">Qingkai Shi</a><sup>1</sup>                                </div>
+<a class="person" href="person15808.html">Xinlong Wu</a><sup>1</sup>, <a class="person" href="person15809.html">Ruiyu Zhou</a><sup>1</sup>, <a class="person" href="person15810.html">Peisen Yao</a><sup>2</sup>, <a class="person" href="person15811.html">Qingkai Shi</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Nanjing University</div>
                                 <div class="affiliation_item"><sup>2</sup> Zhejiang University</div>
@@ -1158,7 +1161,7 @@ We introduce Seal, an abstract interpreter that automatically derives sound and 
                             <td>
                                 <div class="title">Automated Amortised Analysis of Skew Heaps and Leftist Heaps <a class="abstract_link" href="CAV-2026-07-28.html#talk:1158">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11497.html">Armin Walch</a><sup>1</sup>, <a class="person" href="person11498.html">Georg Moser</a><sup>1</sup>, <a class="person" href="person11499.html">Berry Schoenmakers</a><sup>2</sup>, <a class="person" href="person11500.html">Florian Zuleger</a><sup>3</sup>                                </div>
+<a class="person" href="person15812.html">Armin Walch</a><sup>1</sup>, <a class="person" href="person15813.html">Georg Moser</a><sup>1</sup>, <a class="person" href="person15814.html">Berry Schoenmakers</a><sup>2</sup>, <a class="person" href="person15815.html">Florian Zuleger</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Eindhoven, Netherlands</div>
@@ -1176,7 +1179,7 @@ More specifically, we extend the work on the ATLAS system by Leutgeb et al., whi
                             <td>
                                 <div class="title">Polynomial Invariant Generation for Floating-Point Programs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1159">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11501.html">Xuran Cai</a><sup>1</sup>, <a class="person" href="person11502.html">Liqian Chen</a><sup>2</sup>, <a class="person" href="person11503.html">Hongfei Fu</a><sup>3</sup>                                </div>
+<a class="person" href="person15816.html">Xuran Cai</a><sup>1</sup>, <a class="person" href="person15817.html">Liqian Chen</a><sup>2</sup>, <a class="person" href="person15818.html">Hongfei Fu</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
                                 <div class="affiliation_item"><sup>2</sup> National University of Defense Technology</div>
@@ -1192,7 +1195,7 @@ More specifically, we extend the work on the ATLAS system by Leutgeb et al., whi
                             <td>
                                 <div class="title">Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions <a class="abstract_link" href="CAV-2026-07-28.html#talk:1160">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11504.html">S. Akshay</a><sup>1</sup>, <a class="person" href="person11119.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person11506.html">Soroush Farokhnia</a><sup>3</sup>, <a class="person" href="person11507.html">Amir Goharshady</a><sup>4</sup>, <a class="person" href="person11508.html">Harshit Jitendra Motwani</a><sup>5</sup>, <a class="person" href="person11509.html">Đorđe Žikelić</a><sup>6</sup>                                </div>
+<a class="person" href="person15819.html">S. Akshay</a><sup>1</sup>, <a class="person" href="person15434.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person15821.html">Soroush Farokhnia</a><sup>3</sup>, <a class="person" href="person15822.html">Amir Goharshady</a><sup>4</sup>, <a class="person" href="person15823.html">Harshit Jitendra Motwani</a><sup>5</sup>, <a class="person" href="person15824.html">Đorđe Žikelić</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology Bombay</div>
                                 <div class="affiliation_item"><sup>2</sup> IIT Bombay</div>
@@ -1227,7 +1230,7 @@ including a commercial-grade tool.</p>
                             <td>
                                 <div class="title">Incremental Inference for Probabilistic Datalog <a class="abstract_link" href="CAV-2026-07-28.html#talk:1161">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11510.html">Xuyang Li</a><sup>1</sup>, <a class="person" href="person11511.html">Weiyi Chen</a><sup>1</sup>, <a class="person" href="person11512.html">Isil Dillig</a><sup>2</sup>, <a class="person" href="person11513.html">Jingbo Wang</a><sup>1</sup>                                </div>
+<a class="person" href="person15825.html">Xuyang Li</a><sup>1</sup>, <a class="person" href="person15826.html">Weiyi Chen</a><sup>1</sup>, <a class="person" href="person15827.html">Isil Dillig</a><sup>2</sup>, <a class="person" href="person15828.html">Jingbo Wang</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Purdue University</div>
                                 <div class="affiliation_item"><sup>2</sup> UT Austin</div>
@@ -1242,7 +1245,7 @@ including a commercial-grade tool.</p>
                             <td>
                                 <div class="title">Automatic Detection of Reference Counting Bugs in Linux Kernel Drivers <a class="abstract_link" href="CAV-2026-07-28.html#talk:1162">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11514.html">Joe Hattori</a><sup>1</sup>, <a class="person" href="person11515.html">Naoki Kobayashi</a><sup>1</sup>, <a class="person" href="person11516.html">Ken Sakayori</a><sup>1</sup>                                </div>
+<a class="person" href="person15829.html">Joe Hattori</a><sup>1</sup>, <a class="person" href="person15830.html">Naoki Kobayashi</a><sup>1</sup>, <a class="person" href="person15831.html">Ken Sakayori</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The University of Tokyo</div>
                                 </div>
@@ -1262,21 +1265,6 @@ submitted patches to the Linux kernel, and 45 of them were merged.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:725">
-                    <div class="heading">
-                        <span class="interval">16:00-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">CSF</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:807">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
@@ -1292,51 +1280,20 @@ submitted patches to the Linux kernel, and 45 of them were merged.</p>
 
 
                 </div>
-                <div class="session" id="session:808">
+                <div class="session interval_session" id="session:725">
                     <div class="heading">
-                        <span class="interval">16:30-17:00</span>
-                        <span class="title">Confluence Analysis & Rewriting</span>
-                        <span class="group_tag">IJCAR</span>
+                        <span class="interval">16:00-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">CSF</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
+                        <a class="room_name" href="room31.html">B2.03</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk" id="talk:1276">
-                            <td class="time">16:30-16:50</td>
-                            <td>
-                                <div class="title">An Applicative Multiset Path Order <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1276">(abstract)</a> <span class="duration">20 min</span></div>
-                                <div class="authors">
-<a class="person" href="person12621.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person12622.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person12623.html">Teppei Tanaka</a><sup>1</sup>, <a class="person" href="person12624.html">Wataru Yachi</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a variant of the multiset path order for untyped applicative term rewriting.  Compared to existing work, our variant incorporates two distinctive features, dubbed arity assignment and reification, to overcome difficulties in handling partial and variable application.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1277">
-                            <td class="time">16:50-17:00</td>
-                            <td>
-                                <div class="title">The ARI Infrastructure for Automated Confluence Analysis <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1277">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person12621.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person12551.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person12622.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person12177.html">René Thiemann</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We report on the new ARI infrastructure that supports tools and competitions in term rewriting. It offers ARI-COPS, a database for confluence problems and competition results, and ARIWeb, a convenient web interface for tools that participate in the annual confluence competition. These are built on top of the new ARI format for rewrite systems, a format converter, certifiers for competition results, and a duplicate checker.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:726">
                     <div class="heading">
@@ -1358,7 +1315,7 @@ submitted patches to the Linux kernel, and 45 of them were merged.</p>
                             <td>
                                 <div class="title">Efficient Homomorphic Encryption-Based CNN Batch Inference Using Channel-Interleaved Packing with Small Rotation Key Set <a class="abstract_link" href="CSF-2026-07-28.html#talk:235">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11839.html">Haun-Chih Wang</a><sup>1</sup>, <a class="person" href="person11840.html">Ja-Ling Wu</a><sup>1</sup>                                </div>
+<a class="person" href="person16154.html">Haun-Chih Wang</a><sup>1</sup>, <a class="person" href="person16155.html">Ja-Ling Wu</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National Taiwan University</div>
                                 </div>
@@ -1376,7 +1333,7 @@ Experimental results demonstrate the superior efficiency of our method compared 
                             <td>
                                 <div class="title">Towards Strong Certified Defense with Universal Asymmetric Randomization <a class="abstract_link" href="CSF-2026-07-28.html#talk:236">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11841.html">Hanbin Hong</a><sup>1</sup>, <a class="person" href="person11842.html">Ali Payani</a><sup>2</sup>, <a class="person" href="person11843.html">Ashish Kundu</a><sup>2</sup>, <a class="person" href="person11844.html">Binghui Wang</a><sup>3</sup>, <a class="person" href="person11845.html">Yuan Hong</a><sup>1</sup>                                </div>
+<a class="person" href="person16156.html">Hanbin Hong</a><sup>1</sup>, <a class="person" href="person16157.html">Ali Payani</a><sup>2</sup>, <a class="person" href="person16158.html">Ashish Kundu</a><sup>2</sup>, <a class="person" href="person16159.html">Binghui Wang</a><sup>3</sup>, <a class="person" href="person16160.html">Yuan Hong</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Connecticut</div>
                                 <div class="affiliation_item"><sup>2</sup> Cisco</div>
@@ -1392,7 +1349,7 @@ Experimental results demonstrate the superior efficiency of our method compared 
                             <td>
                                 <div class="title">LAP$_2$: Revisiting Laplace DP-SGD for High Dimensions via Majorization Theory <a class="abstract_link" href="CSF-2026-07-28.html#talk:237">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person11846.html">Meisam Mohammady</a><sup>1</sup>, <a class="person" href="person11847.html">Qin Yang</a><sup>2</sup>, <a class="person" href="person11848.html">Nicholas Stout</a><sup>1</sup>, <a class="person" href="person11849.html">Ayesha Samreen</a><sup>1</sup>, <a class="person" href="person11850.html">Han Wang</a><sup>3</sup>, <a class="person" href="person11851.html">Christopher J Quinn</a><sup>1</sup>, <a class="person" href="person11845.html">Yuan Hong</a><sup>2</sup>                                </div>
+<a class="person" href="person16161.html">Meisam Mohammady</a><sup>1</sup>, <a class="person" href="person16162.html">Qin Yang</a><sup>2</sup>, <a class="person" href="person16163.html">Nicholas Stout</a><sup>1</sup>, <a class="person" href="person16164.html">Ayesha Samreen</a><sup>1</sup>, <a class="person" href="person16165.html">Han Wang</a><sup>3</sup>, <a class="person" href="person16166.html">Christopher J Quinn</a><sup>1</sup>, <a class="person" href="person16160.html">Yuan Hong</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Iowa State University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Connecticut</div>
@@ -1402,6 +1359,52 @@ Experimental results demonstrate the superior efficiency of our method compared 
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Differentially Private Stochastic Gradient Descent (DP-SGD) is a cornerstone technique for ensuring privacy in deep learning, widely used in both training from scratch and fine-tuning large-scale language models. While DP-SGD predominantly relies on the Gaussian mechanism, the Laplace mechanism remains underutilized due to its reliance on $\ell_1$ norm clipping. This constraint severely limits its practicality in high-dimensional models because the $\ell_1$ norm of an $n$-dimensional gradient can be up to sqrt{n} times larger than its $\ell_2$ norm. As a result, the required noise scale—and thus the privacy loss—grows significantly with model size, leading to poor utility or untrainable models.
 
 In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clipping for Laplace DP-SGD while preserving strong privacy guarantees. We overcome the dimensionality-driven clipping barrier, by computing coordinate-wise moment bounds and applying majorization theory to construct a tight, data-independent upper bound over the full model. By exploiting the Schur-convexity of the moment accountant function, we aggregate these bounds using a carefully designed majorization set that respects the $\ell_2$ clipping constraint. This yields a multivariate privacy accountant that scales gracefully with model dimension and enables the use of thousands of moments. Empirical evaluations demonstrate that our approach significantly improves the performance of Laplace DP-SGD, achieving results comparable to or better than Gaussian DP-SGD under strong privacy constraints. For instance, fine-tuning RoBERTa-base (125M parameters) on SST-2 achieves 87.88% accuracy at $\epsilon$ = 0.54, outperforming Gaussian (87.16%) and standard Laplace (48.97%) under the same budget. On image classification, a CNN on MNIST achieves 93.29% accuracy at $\epsilon$ = 0.88 with LAP$_2$, compared to 96.08% (Gaussian) and only 16.44% (Laplace).</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:808">
+                    <div class="heading">
+                        <span class="interval">16:30-17:00</span>
+                        <span class="title">Confluence Analysis & Rewriting</span>
+                        <span class="group_tag">IJCAR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1276">
+                            <td class="time">16:30-16:50</td>
+                            <td>
+                                <div class="title">An Applicative Multiset Path Order <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1276">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16936.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person16937.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person16938.html">Teppei Tanaka</a><sup>1</sup>, <a class="person" href="person16939.html">Wataru Yachi</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a variant of the multiset path order for untyped applicative term rewriting.  Compared to existing work, our variant incorporates two distinctive features, dubbed arity assignment and reification, to overcome difficulties in handling partial and variable application.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1277">
+                            <td class="time">16:50-17:00</td>
+                            <td>
+                                <div class="title">The ARI Infrastructure for Automated Confluence Analysis <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1277">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person16936.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person16866.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person16937.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person16492.html">René Thiemann</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> JAIST</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We report on the new ARI infrastructure that supports tools and competitions in term rewriting. It offers ARI-COPS, a database for confluence problems and competition results, and ARIWeb, a convenient web interface for tools that participate in the annual confluence competition. These are built on top of the new ARI format for rewrite systems, a format converter, certifiers for competition results, and a duplicate checker.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1427,7 +1430,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">A Lean Tactic for Normalizing Expressions in an Algebra over a Ring (Short Paper) <a class="abstract_link" href="ITP-2026-07-28.html#talk:1295">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12794.html">Arend Mellendijk</a><sup>1</sup>                                </div>
+<a class="person" href="person17109.html">Arend Mellendijk</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Bonn</div>
                                 </div>
@@ -1441,7 +1444,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">Lean on Vampire Proofs (Short Paper) <a class="abstract_link" href="ITP-2026-07-28.html#talk:1296">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12795.html">Jonas Bodingbauer</a><sup>1</sup>, <a class="person" href="person12796.html">Marton Hajdu</a><sup>1</sup>, <a class="person" href="person12797.html">Laura Kovacs</a><sup>1</sup>, <a class="person" href="person12798.html">Axel Polaczek</a><sup>1</sup>, <a class="person" href="person12799.html">Michael Rawson</a><sup>2</sup>                                </div>
+<a class="person" href="person17110.html">Jonas Bodingbauer</a><sup>1</sup>, <a class="person" href="person17111.html">Marton Hajdu</a><sup>1</sup>, <a class="person" href="person17112.html">Laura Kovacs</a><sup>1</sup>, <a class="person" href="person17113.html">Axel Polaczek</a><sup>1</sup>, <a class="person" href="person17114.html">Michael Rawson</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Southampton</div>
@@ -1456,7 +1459,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">TableauxRocq: A Deep Embedding of Free-Variable Tableaux in Rocq <a class="abstract_link" href="ITP-2026-07-28.html#talk:1297">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12800.html">Johann Rosain</a><sup>1</sup>, <a class="person" href="person12564.html">Julie Cailler</a><sup>2</sup>                                </div>
+<a class="person" href="person17115.html">Johann Rosain</a><sup>1</sup>, <a class="person" href="person16879.html">Julie Cailler</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ENS de Lyon</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Lorraine, CNRS, Inria, LORIA, Nancy, France</div>
@@ -1483,7 +1486,7 @@ Skolemization-related optimizations are present in the proof.</p>
                             <td>
                                 <div class="title">Faster Verified Real Root Isolation with Descartes' Rule of Signs (Short Paper) <a class="abstract_link" href="ITP-2026-07-28.html#talk:1298">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person12802.html">Aeacus Sheng</a><sup>1</sup>, <a class="person" href="person12803.html">Wenda Li</a><sup>1</sup>, <a class="person" href="person12804.html">Paul Jackson</a><sup>1</sup>                                </div>
+<a class="person" href="person17117.html">Aeacus Sheng</a><sup>1</sup>, <a class="person" href="person17118.html">Wenda Li</a><sup>1</sup>, <a class="person" href="person17119.html">Paul Jackson</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
                                 </div>
