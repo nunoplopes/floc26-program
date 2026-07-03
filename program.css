@@ -18,14 +18,14 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 #menu2 a.selected:hover, #menu3 a.selected:hover { background: #c33; }
 #menu2 .separator, #menu3 .separator { display: none; }
 
-#pagetitle { font-size: 18px; font-weight: bold; padding: 12px 0 6px 0; }
+#pagetitle { position: sticky; top: 0; z-index: 11; background: #fff; font-size: 18px; font-weight: bold; padding: 12px 0 6px 0; }
 
 .days_line { margin: 6px 0 14px 0; }
 .days_line a { margin-right: 14px; color: #225; }
 .days_line a.selected { font-weight: bold; color: #000; }
 .day_icon { height: 14px; width: 14px; vertical-align: -2px; margin: 0 4px; }
 
-.date { position: sticky; top: 0; z-index: 10; background: #ddd; padding: 6px 10px; margin-top: 18px; font-weight: bold; }
+.date { position: sticky; top: 36px; z-index: 10; background: #ddd; padding: 6px 10px; margin-top: 18px; font-weight: bold; }
 
 .session { border-left: 3px solid #cce; padding: 8px 12px; margin: 8px 0; background: #fafaff; }
 .session.subsession { margin-left: 28px; border-left-color: #99b; background: #f3f3fb; }
