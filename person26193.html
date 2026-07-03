@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jakub Med — Federated Logic Conference 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639186947114466489" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#225" />
 </head>
 <body>
 <table class="page_table" cellpadding="0" cellspacing="0">
@@ -12,9 +14,11 @@
     <tr>
         <td class="central_td_column">
             <div id="header">
-                <img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" />
+                <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
+                <button id="install_pwa_btn" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
             </div>
+
 
             <div id="main_menu">
                 <a href="index.html">PROGRAM</a>
@@ -23,8 +27,11 @@
                 <a href="search.html">Search</a>
             </div>
 
+
             <div id="menu2">
             </div>
+            
+
 
             <div id="content">
                 <div id="pagetitle"></div>
@@ -66,5 +73,10 @@
     </tr>
 </tbody>
 </table>
+
+<a id="fab_search" href="search.html" aria-label="Search">🔍</a>
+
+
+<script src="install-detection.js?v=639186947114466489"></script>
 </body>
 </html>

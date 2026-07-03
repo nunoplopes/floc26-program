@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Search</title>
-    <link rel="stylesheet" type="text/css" href="program.css" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639186947114466489" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#225" />
     <style>
         #search_input {
             width: 100%;
+            box-sizing: border-box;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
             margin-bottom: 20px;
             font-family: inherit;
+            position: relative;
+            z-index: 30;
         }
         .search-results {
             list-style: none;
@@ -52,6 +57,8 @@
             color: #666;
             margin-top: 5px;
             font-style: italic;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         .search-no-results {
             padding: 20px 0;
@@ -73,7 +80,9 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
+                <button id="install_pwa_btn" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
             </div>
+
 
             <div id="main_menu">
                 <a href="index.html">PROGRAM</a>
@@ -82,6 +91,7 @@
                 <a href="search.html" class="selected">Search</a>
             </div>
 
+
             <div id="content">
                 <div id="pagetitle">SEARCH</div>
 
@@ -89,7 +99,8 @@
                     type="text"
                     id="search_input"
                     placeholder="Search by title, authors, or content..."
-                    autocomplete="off" />
+                    autocomplete="off"
+                    autofocus />
 
                 <div id="search_loading" class="search-loading" style="display:none;">Loading data...</div>
                 <ul class="search-results" id="search_results"></ul>
@@ -209,7 +220,21 @@
         debounceTimer = setTimeout(performSearch, 300);
     });
 
-    window.addEventListener('load', loadSearchData);
+    searchInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            clearTimeout(debounceTimer);
+            performSearch();
+            searchInput.blur();
+        }
+    });
+
+    window.addEventListener('load', () => {
+        loadSearchData();
+        searchInput.focus();
+    });
 </script>
+
+<script src="install-detection.js?v=639186947114466489"></script>
 </body>
 </html>

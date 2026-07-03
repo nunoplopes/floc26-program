@@ -1,4 +1,6 @@
 body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; background: #fff; overflow-wrap: break-word; word-wrap: break-word; }
+
+#fab_search { display: none; }
 .page_table { width: 100%; border-collapse: collapse; }
 .central_td_column { padding: 16px 24px; }
 
@@ -7,8 +9,8 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 #header #title { font-size: 22px; font-weight: bold; padding: 0; border: none; }
 #title { font-size: 22px; font-weight: bold; padding: 8px 0; border-bottom: 1px solid #ccc; }
 
-#main_menu { padding: 10px 0; border-bottom: 1px solid #eee; }
-#main_menu a { display: inline-block; padding: 8px 18px; margin-right: 8px; font-size: 15px; font-weight: 600; background: #eef; color: #225; text-decoration: none; border-radius: 4px; }
+#main_menu { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0; border-bottom: 1px solid #eee; }
+#main_menu a { display: inline-block; padding: 8px 18px; font-size: 15px; font-weight: 600; background: #eef; color: #225; text-decoration: none; border-radius: 4px; }
 #main_menu a.selected { background: #c33; color: #fff; }
 
 #menu2, #menu3 { display: flex; flex-wrap: wrap; align-items: center; row-gap: 6px; column-gap: 7px; padding: 10px 0; font-size: 14px;border-bottom: 1px solid #eee;}
@@ -18,14 +20,14 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 #menu2 a.selected:hover, #menu3 a.selected:hover { background: #c33; }
 #menu2 .separator, #menu3 .separator { display: none; }
 
-#pagetitle { position: sticky; top: 0; z-index: 11; background: #fff; font-size: 18px; font-weight: bold; padding: 12px 0 6px 0; }
+#pagetitle { position: sticky; top: 0; z-index: 11; background: #fff; font-size: 18px; line-height: 21px; font-weight: bold; padding: 12px 0 6px 0; }
 
 .days_line { margin: 6px 0 14px 0; }
 .days_line a { margin-right: 14px; color: #225; }
 .days_line a.selected { font-weight: bold; color: #000; }
 .day_icon { height: 14px; width: 14px; vertical-align: -2px; margin: 0 4px; }
 
-.date { position: sticky; top: 36px; z-index: 10; background: #ddd; padding: 6px 10px; margin-top: 18px; font-weight: bold; }
+.date { position: sticky; top: 39px; z-index: 10; background: #ddd; padding: 6px 10px; margin-top: 18px; margin-bottom: 12px; font-weight: bold; }
 
 .session { border-left: 3px solid #cce; padding: 8px 12px; margin: 8px 0; background: #fafaff; }
 .session.subsession { margin-left: 28px; border-left-color: #99b; background: #f3f3fb; }
@@ -42,8 +44,8 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 
 .session_desc { font-size: 13px; color: #555; margin: 6px 0; }
 
-.group_tiles { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
-.group_tile { display: flex; flex-direction: column; gap: 4px; min-width: 180px; padding: 14px 16px; background: #fafaff; border-left: 3px solid #cce; text-decoration: none; color: inherit; }
+.group_tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 10px; }
+.group_tile { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: #fafaff; border-left: 3px solid #cce; text-decoration: none; color: inherit; }
 .group_tile:hover { background: #f3f3fb; border-left-color: #99b; }
 .group_tile_label { font-weight: bold; color: #225; }
 .group_tile_count { font-size: 13px; color: #555; }
@@ -55,8 +57,8 @@ table.talks td.time { width: 60px; font-size: 12px; font-weight: bold; color: #2
 .title .duration { display: inline-block; font-weight: normal; font-size: 11px; color: #338; background: #eef; border-radius: 3px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
 .authors { font-size: 13px; color: #225; }
 .authors sup { font-size: 10px; }
-.affiliations { font-size: 12px; color: #666; font-style: italic; margin-top: 2px; }
-.affiliation_item { display: inline; margin-right: 10px; white-space: nowrap; }
+.affiliations { font-size: 12px; color: #666; font-style: italic; margin-top: 2px; word-wrap: break-word; overflow-wrap: break-word; }
+.affiliation_item { display: inline; margin-right: 10px; }
 .affiliation_item sup { font-size: 10px; margin-right: 1px; font-style: normal; }
 a.person { color: #225; text-decoration: underline; }
 a.person:hover { color: #c33; }
@@ -125,14 +127,34 @@ table.bio_layout { width: 100%; border-collapse: collapse; margin-top: 8px; }
 
 @media (max-width: 700px) {
     .page_table { table-layout: fixed; }
-    .central_td_column { padding: 12px; word-wrap: break-word; overflow-wrap: break-word; }
+    .central_td_column { padding: 12px 12px 76px 12px; word-wrap: break-word; overflow-wrap: break-word; }
+
+    #fab_search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #ffffff;
+        color: #225;
+        font-size: 17px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        z-index: 20;
+    }
+
+    .group_tiles { grid-template-columns: 1fr; }
 
     #header { flex-wrap: wrap; }
     #header .event_logo { height: 60px; }
     #header #title, #title { font-size: 18px; }
 
     #main_menu a { padding: 6px 12px; margin-right: 4px; font-size: 14px; }
-    #menu2, #menu3 { row-gap: 5px; column-gap: 6px; font-size: 13px; }
+    #menu2, #menu3 { row-gap: 5px; column-gap: 6px; font-size: 13px; max-height: 25vh; overflow-y: auto; }
     #menu2 a, #menu3 a { padding: 6px 13px; }
 
     .session .group_tag { float: none; display: inline-block; margin-top: 4px; }
