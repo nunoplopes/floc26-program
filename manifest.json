@@ -1,7 +1,7 @@
 {
-  "name": "Program ofFederated Logic Conference 2026",
-  "short_name": "Program ofFederated Logic Conference 2026",
-  "description": "Program Federated Logic Conference 2026",
+  "name": "Program of Federated Logic Conference 2026",
+  "short_name": "Program of Federated Logic Conference 2026",
+  "description": "Program of Federated Logic Conference 2026",
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
