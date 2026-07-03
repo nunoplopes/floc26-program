@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Federated Logic Conference 2026 — Search</title>
+    <link rel="stylesheet" type="text/css" href="program.css" />
+    <style>
+        #search_input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-family: inherit;
+        }
+        .search-results {
+            list-style: none;
+            padding: 0;
+        }
+        .search-result-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        .search-result-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .search-result-authors {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .search-result-session {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+        .search-result-abstract {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.4;
+        }
+        .search-result-affiliations {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        .search-no-results {
+            padding: 20px 0;
+            color: #999;
+            text-align: center;
+        }
+        .search-loading {
+            padding: 20px 0;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table class="page_table" cellpadding="0" cellspacing="0">
+<tbody>
+    <tr>
+        <td class="central_td_column">
+            <div id="header">
+                <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
+                <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
+            </div>
+
+            <div id="main_menu">
+                <a href="index.html">PROGRAM</a>
+                <a href="talk_author_index.html">AUTHORS</a>
+                <a href="talk_keyword_index.html">KEYWORDS</a>
+                <a href="search.html" class="selected">Search</a>
+            </div>
+
+            <div id="content">
+                <div id="pagetitle">SEARCH</div>
+
+                <input
+                    type="text"
+                    id="search_input"
+                    placeholder="Search by title, authors, or content..."
+                    autocomplete="off" />
+
+                <div id="search_loading" class="search-loading" style="display:none;">Loading data...</div>
+                <ul class="search-results" id="search_results"></ul>
+                <div id="search_no_results" class="search-no-results" style="display:none;">No results for your search.</div>
+            </div>
+
+            <div id="disclaimer">
+                Designed and Developed by EventKey | Copyright 2026 EventKey
+                <span id="last_updated">Last updated: <span id="last_updated_value"></span></span>
+            </div>
+            <script src="last-updated.js"></script>
+
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<script>
+    const searchInput = document.getElementById('search_input');
+    const resultsList = document.getElementById('search_results');
+    const loadingDiv = document.getElementById('search_loading');
+    const noResultsDiv = document.getElementById('search_no_results');
+
+    let allTalks = [];
+    let debounceTimer;
+
+    async function loadSearchData() {
+        loadingDiv.style.display = 'block';
+        resultsList.innerHTML = '';
+        noResultsDiv.style.display = 'none';
+
+        try {
+            const manifest = await fetch('data/manifest.json');
+            if (manifest.ok) {
+                const manifestData = await manifest.json();
+                for (const groupId of manifestData.groupIds) {
+                    const jsonFile = `data/group-${groupId}.json`;
+                    const response = await fetch(jsonFile);
+                    if (response.ok) {
+                        const data = await response.json();
+                        allTalks = allTalks.concat(data.talks || []);
+                    }
+                }
+            }
+        } catch (e) {
+            console.error('Failed to load search data:', e);
+        }
+
+        loadingDiv.style.display = 'none';
+        performSearch();
+    }
+
+    function performSearch() {
+        const query = searchInput.value.toLowerCase().trim();
+
+        if (!query) {
+            resultsList.innerHTML = '';
+            noResultsDiv.style.display = 'none';
+            return;
+        }
+
+        const results = allTalks.filter(talk => {
+            const searchText = [
+                talk.title,
+                talk.authors,
+                talk.abstract,
+                talk.sessionName,
+                talk.affiliations.join(' ')
+            ].join(' ').toLowerCase();
+
+            return searchText.includes(query);
+        });
+
+        if (results.length === 0) {
+            resultsList.innerHTML = '';
+            noResultsDiv.style.display = 'block';
+            return;
+        }
+
+        resultsList.innerHTML = '';
+        noResultsDiv.style.display = 'none';
+
+        results.forEach(talk => {
+            const li = document.createElement('li');
+            li.className = 'search-result-item';
+
+            const affiliationsHtml = talk.affiliations.length > 0
+                ? `<div class="search-result-affiliations">${escapeHtml(talk.affiliations.join(', '))}</div>`
+                : '';
+
+            li.innerHTML = `
+                <a href="${escapeHtml(talk.href)}" style="text-decoration: none; color: inherit;">
+                    <div class="search-result-title">${escapeHtml(talk.title)}</div>
+                    <div class="search-result-authors">${escapeHtml(talk.authors)}</div>
+                    <div class="search-result-session">${escapeHtml(talk.sessionName)} • ${escapeHtml(talk.day)} ${escapeHtml(talk.startTime)}</div>
+                    ${affiliationsHtml}
+                    <div class="search-result-abstract">${escapeHtml(talk.abstract.substring(0, 200))}${talk.abstract.length > 200 ? '...' : ''}</div>
+                </a>
+            `;
+            resultsList.appendChild(li);
+        });
+    }
+
+    function escapeHtml(text) {
+        const map = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#039;'
+        };
+        return text.replace(/[&<>"']/g, m => map[m]);
+    }
+
+    searchInput.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(performSearch, 300);
+    });
+
+    window.addEventListener('load', loadSearchData);
+</script>
+</body>
+</html>
