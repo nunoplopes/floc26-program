@@ -7,7 +7,17 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     Promise.all([
       caches.open(STATIC_CACHE).then((cache) => cache.addAll(staticAssets)),
-      caches.open(CACHE_NAME)
+      caches.open(CACHE_NAME).then(async (cache) => {
+        try {
+          const response = await fetch('precache-pages.json', { cache: 'no-store' });
+          if (response.ok) {
+            const { pages } = await response.json();
+            await cache.addAll(pages);
+          }
+        } catch (e) {
+          // best-effort precache; offline capability degrades gracefully
+        }
+      })
     ])
   );
   self.skipWaiting();
