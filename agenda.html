@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — My Agenda</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189593309993064" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189681128369102" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
     <style>
@@ -64,6 +64,7 @@
 </table>
 
 <script>
+(function () {
     const AGENDA_STORAGE_KEY = 'floc:agenda-favorites';
     const emptyDiv = document.getElementById('agenda_empty');
     const listContainer = document.getElementById('agenda_list_container');
@@ -146,8 +147,9 @@
     }
 
     render();
+})();
 </script>
 
-<script src="site.js?v=639189593309993064"></script>
+<script src="site.js?v=639189681128369102"></script>
 </body>
 </html>
