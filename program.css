@@ -22,6 +22,10 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; backgr
 
 #pagetitle { position: sticky; top: 0; z-index: 11; background: #fff; font-size: 18px; line-height: 21px; font-weight: bold; padding: 12px 0 6px 0; }
 
+.sticky_header { position: sticky; top: 0; z-index: 11; background: #fff; }
+.sticky_header #pagetitle { position: static; }
+.sticky_header .shortcuts { position: static; }
+
 .days_line { margin: 6px 0 14px 0; }
 .days_line a { margin-right: 14px; color: #225; }
 .days_line a.selected { font-weight: bold; color: #000; }

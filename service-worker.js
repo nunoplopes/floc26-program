@@ -1,7 +1,7 @@
 const CACHE_NAME = 'floc-2026-cache-v1';
 const STATIC_CACHE = 'floc-2026-static-v1';
 
-const staticAssets = ['/program.css', '/install-detection.js', '/service-worker.js'];
+const staticAssets = ['program.css', 'install-detection.js', 'service-worker.js'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -39,7 +39,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   event.respondWith(
-    caches.match(event.request).then((response) => {
+    caches.match(event.request, { ignoreSearch: true }).then((response) => {
       return response || fetch(event.request);
     })
   );
