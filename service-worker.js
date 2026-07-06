@@ -1,7 +1,7 @@
-const CACHE_NAME = 'floc-2026-cache-v2';
-const STATIC_CACHE = 'floc-2026-static-v2';
+const CACHE_NAME = 'floc-2026-cache-v3';
+const STATIC_CACHE = 'floc-2026-static-v3';
 
-const staticAssets = ['program.css', 'install-detection.js', 'service-worker.js'];
+const staticAssets = ['program.css', 'site.js', 'service-worker.js'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8" />
+    <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Federated Logic Conference 2026 — My Agenda</title>
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189579606936702" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#225" />
+    <style>
+        .agenda-day { font-size: 13px; font-weight: bold; color: var(--color-text-muted-2); margin: 18px 0 6px 0; }
+        .agenda-list { list-style: none; padding: 0; margin: 0; }
+        .agenda-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--color-border-light); }
+        .agenda-item-link { flex: 1; text-decoration: none; color: inherit; }
+        .agenda-item-title { font-weight: bold; font-size: 15px; }
+        .agenda-item-meta { font-size: 13px; color: var(--color-text-muted-3); margin-top: 2px; }
+        .agenda-remove-btn { background: none; border: 1px solid var(--color-border); color: var(--color-text-muted-2); border-radius: 3px; padding: 4px 10px; font-size: 12px; cursor: pointer; white-space: nowrap; }
+        .agenda-remove-btn:hover { color: var(--color-accent); border-color: var(--color-accent); }
+        .agenda-empty { padding: 20px 0; color: var(--color-text-icon); text-align: center; }
+    </style>
+</head>
+<body>
+<a class="skip_link" href="#content">Skip to content</a>
+<table class="page_table" cellpadding="0" cellspacing="0">
+<tbody>
+    <tr>
+        <td class="central_td_column">
+            <div id="header">
+                <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
+                <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+            </div>
+
+
+            <div id="main_menu">
+                <a href="index.html">PROGRAM</a>
+                <a href="talk_author_index.html">AUTHORS</a>
+                <a href="talk_keyword_index.html">KEYWORDS</a>
+                <a href="search.html">Search</a>
+            </div>
+
+
+            <div id="content">
+                <div id="pagetitle">MY AGENDA</div>
+
+                <div id="agenda_empty" class="agenda-empty" style="display:none;">You haven't saved any sessions yet. Click the ☆ star next to a session in the program to add it here.</div>
+                <div id="agenda_list_container"></div>
+            </div>
+
+            <div id="disclaimer">
+                Designed and Developed by EventKey | Copyright 2026 EventKey
+                <span id="last_updated">Last updated: <span id="last_updated_value"></span></span>
+            </div>
+            <script src="last-updated.js"></script>
+
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<script>
+    const AGENDA_STORAGE_KEY = 'floc:agenda-favorites';
+    const emptyDiv = document.getElementById('agenda_empty');
+    const listContainer = document.getElementById('agenda_list_container');
+    const removeWord = "Remove";
+
+    function escapeHtml(text) {
+        const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+        return String(text || '').replace(/[&<>"']/g, m => map[m]);
+    }
+
+    function getFavorites() {
+        try {
+            return JSON.parse(localStorage.getItem(AGENDA_STORAGE_KEY) || '[]');
+        } catch (e) {
+            return [];
+        }
+    }
+
+    function saveFavorites(favorites) {
+        localStorage.setItem(AGENDA_STORAGE_KEY, JSON.stringify(favorites));
+    }
+
+    function removeFavorite(id) {
+        saveFavorites(getFavorites().filter(f => f.id !== id));
+        render();
+    }
+
+    function render() {
+        const favorites = getFavorites();
+        listContainer.innerHTML = '';
+
+        if (favorites.length === 0) {
+            emptyDiv.style.display = 'block';
+            return;
+        }
+        emptyDiv.style.display = 'none';
+
+        const byDay = new Map();
+        favorites.forEach((f) => {
+            const day = f.day || '';
+            if (!byDay.has(day)) byDay.set(day, []);
+            byDay.get(day).push(f);
+        });
+
+        byDay.forEach((items, day) => {
+            items.sort((a, b) => String(a.time || '').localeCompare(String(b.time || '')));
+
+            if (day) {
+                const dayHeading = document.createElement('div');
+                dayHeading.className = 'agenda-day';
+                dayHeading.textContent = day;
+                listContainer.appendChild(dayHeading);
+            }
+
+            const ul = document.createElement('ul');
+            ul.className = 'agenda-list';
+
+            items.forEach((item) => {
+                const li = document.createElement('li');
+                li.className = 'agenda-item';
+
+                const metaParts = [item.time, item.room, item.group].filter(Boolean).map(escapeHtml);
+
+                li.innerHTML = `
+                    <a class="agenda-item-link" href="${escapeHtml(item.href)}">
+                        <div class="agenda-item-title">${escapeHtml(item.title)}</div>
+                        <div class="agenda-item-meta">${metaParts.join(' &middot; ')}</div>
+                    </a>
+                    <button type="button" class="agenda-remove-btn" data-id="${escapeHtml(item.id)}">${escapeHtml(removeWord)}</button>
+                `;
+                ul.appendChild(li);
+            });
+
+            listContainer.appendChild(ul);
+        });
+
+        listContainer.querySelectorAll('.agenda-remove-btn').forEach((btn) => {
+            btn.addEventListener('click', () => removeFavorite(btn.dataset.id));
+        });
+    }
+
+    render();
+</script>
+
+<script src="site.js?v=639189579606936702"></script>
+</body>
+</html>

@@ -154,20 +154,22 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 
 .header_fab {
     position: absolute;
-    top: 20px;
+    top: 18px;
     width: 44px;
     height: 44px;
     padding: 0;
-    background: var(--color-fab-bg);
-    border: none;
+    background: var(--color-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
     border-radius: 50%;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
     box-shadow: 0 2px 8px var(--color-shadow);
-    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.header_fab:hover { transform: scale(1.1); background: var(--color-fab-bg-hover); box-shadow: 0 4px 12px var(--color-shadow); }
-#theme_toggle_btn { right: 72px; font-size: 20px; }
+.header_fab:hover { transform: scale(1.1); box-shadow: 0 4px 12px var(--color-shadow); }
+#theme_toggle_btn { right: 124px; }
+#agenda_link { right: 72px; display: flex; align-items: center; justify-content: center; text-decoration: none; }
 #install_pwa_btn { right: 20px; }
 
 #main_menu { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--color-border-light); }
@@ -202,6 +204,12 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .session.interval_session { border-left-color: var(--color-border-interval); background: var(--color-bg-muted); }
 .session.interval_session .title { font-weight: normal; color: var(--color-text-muted-3); }
 .session .heading { margin-bottom: 4px; }
+.favorite_btn { background: none; border: none; cursor: pointer; font-size: 22px; color: var(--color-text-muted-4); vertical-align: middle; margin-right: 6px; padding: 0; line-height: 1; }
+.favorite_btn:hover { color: var(--color-accent); }
+.favorite_btn.favorited { color: var(--color-accent); }
+
+.skip_link { position: absolute; left: -9999px; top: 0; z-index: 100; background: var(--color-bg); color: var(--color-text); padding: 8px 16px; border: 1px solid var(--color-border); }
+.skip_link:focus { left: 8px; top: 8px; }
 .session .interval { font-weight: bold; color: var(--color-link); margin-right: 8px; }
 .session .title { font-weight: bold; }
 .session .group_tag { float: right; font-size: 11px; background: var(--color-tag-bg); color: var(--color-accent-contrast); padding: 2px 6px; border-radius: 3px; }
