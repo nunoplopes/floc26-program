@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — FSCD — Program for Monday, 20 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -132,6 +132,12 @@
                     <a class="program_days" href="FSCD-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Monday, 20 July 2026</div>
 
                 <div class="session interval_session" id="session:732">
@@ -174,7 +180,7 @@
                             <td>
                                 <div class="title">Approximation theory for distant Bang calculus <a class="abstract_link" href="FSCD-2026-07-20.html#talk:244">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40291.html">Kostia Chardonnet</a><sup>1</sup>, <a class="person" href="person40292.html">Jules Chouquet</a><sup>2</sup>, <a class="person" href="person40293.html">Axel Kerinec</a><sup>3</sup>                                </div>
+<a class="person" href="person40291.html">Kostia Chardonnet</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40292.html">Jules Chouquet</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40293.html">Axel Kerinec</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université de Lorraine, CNRS, Inria, LORIA, F-54000 Nancy, France</div>
                                 <div class="affiliation_item"><sup>2</sup> Université d’Orléans, INSA CVL, LIFO, UR 4022, Orléans, France</div>
@@ -190,7 +196,7 @@
                             <td>
                                 <div class="title">Groups and Inverse Semigroups in Lambda Calculus <a class="abstract_link" href="FSCD-2026-07-20.html#talk:245">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40294.html">Antonio Bucciarelli</a><sup>1</sup>, <a class="person" href="person40295.html">Arturo De Faveri</a><sup>1</sup>, <a class="person" href="person40296.html">Giulio Manzonetto</a><sup>1</sup>, <a class="person" href="person40297.html">Antonino Salibra</a><sup>1</sup>                                </div>
+<a class="person" href="person40294.html">Antonio Bucciarelli</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40295.html">Arturo De Faveri</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40296.html">Giulio Manzonetto</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40297.html">Antonino Salibra</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Paris Cité, CNRS, IRIF</div>
                                 </div>
@@ -205,7 +211,7 @@ An inverse semigroup comes equipped with a natural order. We prove that the natu
                             <td>
                                 <div class="title">Non-Wellfounded Derivations for Intersection Subtyping with Fixpoints <a class="abstract_link" href="FSCD-2026-07-20.html#talk:246">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40298.html">Olivier Laurent</a><sup>1</sup>, <a class="person" href="person40299.html">Jui-Hsuan Wu</a><sup>1</sup>                                </div>
+<a class="person" href="person40298.html">Olivier Laurent</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40299.html">Jui-Hsuan Wu</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ENS Lyon</div>
                                 </div>
@@ -271,7 +277,7 @@ first use of infinitary derivations.</p>
                             <td>
                                 <div class="title">How Term Rewriting Structures Shape the Decidability of Knowledge Problems <a class="abstract_link" href="FSCD-2026-07-20.html#talk:247">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40300.html">Raja Damanik</a><sup>1</sup>, <a class="person" href="person40301.html">Alwen Tiu</a><sup>1</sup>                                </div>
+<a class="person" href="person40300.html">Raja Damanik</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40301.html">Alwen Tiu</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The Australian National University</div>
                                 </div>
@@ -291,7 +297,7 @@ Overall, our results show that controlling symbol dynamics in rewrite rules prov
                             <td>
                                 <div class="title">Undecidability for semirings with fixed points <a class="abstract_link" href="FSCD-2026-07-20.html#talk:248">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40302.html">Anupam Das</a><sup>1</sup>, <a class="person" href="person40303.html">Abhishek De</a><sup>2</sup>, <a class="person" href="person40304.html">Stepan L. Kuznetsov</a><sup>3</sup>                                </div>
+<a class="person" href="person40302.html">Anupam Das</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40303.html">Abhishek De</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40304.html">Stepan L. Kuznetsov</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Birmingham</div>
                                 <div class="affiliation_item"><sup>2</sup> Krea University</div>
@@ -307,7 +313,7 @@ Overall, our results show that controlling symbol dynamics in rewrite rules prov
                             <td>
                                 <div class="title">New and Formalized Proofs for Right-Forward Closures and Core Matrix Interpretations <a class="abstract_link" href="FSCD-2026-07-20.html#talk:249">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40305.html">René Thiemann</a><sup>1</sup>, <a class="person" href="person40306.html">Dieter Hofbauer</a><sup>2</sup>, <a class="person" href="person40307.html">Ulysse Le Huitouze</a><sup>3</sup>, <a class="person" href="person40308.html">Johannes Waldmann</a><sup>4</sup>                                </div>
+<a class="person" href="person40305.html">René Thiemann</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40306.html">Dieter Hofbauer</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40307.html">Ulysse Le Huitouze</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40308.html">Johannes Waldmann</a><sup>4</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
                                 <div class="affiliation_item"><sup>2</sup> ASW Saarland</div>
@@ -380,7 +386,7 @@ generalize previous approaches.</p>
                             <td>
                                 <div class="title">Investigations on Higher-Order Infinitary Logic <a class="abstract_link" href="FSCD-2026-07-20.html#talk:250">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40309.html">Thomas Traversié</a><sup>1</sup>, <a class="person" href="person40310.html">Olivier Hermant</a><sup>2</sup>, <a class="person" href="person40311.html">Marc Aiguier</a><sup>1</sup>                                </div>
+<a class="person" href="person40309.html">Thomas Traversié</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40310.html">Olivier Hermant</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40311.html">Marc Aiguier</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Paris-Saclay, CentraleSupélec, MICS</div>
                                 <div class="affiliation_item"><sup>2</sup> Université PSL, Mines Paris, CRI</div>
@@ -401,7 +407,7 @@ Moreover, we prove an extension of Barr's theorem, allowing us to constructivize
                             <td>
                                 <div class="title">Polymorphism Meets Dependently Typed Higher-Order Logic <a class="abstract_link" href="FSCD-2026-07-20.html#talk:251">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40312.html">Daniel Ranalter</a><sup>1</sup>, <a class="person" href="person40313.html">Florian Rabe</a><sup>2</sup>, <a class="person" href="person40314.html">Cezary Kaliszyk</a><sup>3,1</sup>                                </div>
+<a class="person" href="person40312.html">Daniel Ranalter</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40313.html">Florian Rabe</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40314.html">Cezary Kaliszyk</a><sup>3,1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Erlangen-Nuremberg</div>
@@ -435,6 +441,6 @@ accordingly. We implement the translation in the logic-embedding tool and evalua
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Isabelle — Program for Friday, 24 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -132,6 +132,12 @@
                     <a class="program_days" href="Isabelle-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Friday, 24 July 2026</div>
 
                 <div class="session" id="session:1231">
@@ -154,7 +160,7 @@
                             <td>
                                 <div class="title">Isabelle: the last 40 years (and the next) <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:695">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40814.html">Lawrence Paulson</a><sup>1</sup>                                </div>
+<a class="person" href="person40814.html">Lawrence Paulson</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> FRS</div>
                                 </div>
@@ -182,7 +188,7 @@
                             <td>
                                 <div class="title">A Tale of Two Multiset-like Types in Isabelle/HOL <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:696">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40815.html">Mathias Schack Rabing</a><sup>1</sup>, <a class="person" href="person40816.html">Dmitriy Traytel</a><sup>1</sup>                                </div>
+<a class="person" href="person40815.html">Mathias Schack Rabing</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40816.html">Dmitriy Traytel</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Copenhagen</div>
                                 </div>
@@ -228,7 +234,7 @@
                             <td>
                                 <div class="title">IsaSearch: Semantic Natural-Language Search for the Archive of Formal Proofs <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:1282">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40817.html">Fabian Kadlez</a><sup>1</sup>, <a class="person" href="person40818.html">Balazs Toth</a><sup>1</sup>                                </div>
+<a class="person" href="person40817.html">Fabian Kadlez</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40818.html">Balazs Toth</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Ludwig-Maximilians-Universität München</div>
                                 </div>
@@ -242,7 +248,7 @@
                             <td>
                                 <div class="title">Isabelle in a Compiler-Construction Class --- Conception, Tooling, and Experiences <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:1283">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40819.html">Burkhart Wolff</a><sup>1</sup>, <a class="person" href="person40820.html">Achim D. Brucker</a><sup>2</sup>                                </div>
+<a class="person" href="person40819.html">Burkhart Wolff</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40820.html">Achim D. Brucker</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universite Paris-Saclay</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Exeter</div>
@@ -259,7 +265,7 @@ from the initial run of this class within the fourth-year computer science progr
                             <td>
                                 <div class="title">Teaching AutoCorrode in an Automated Reasoning Course <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:1284">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40821.html">Örs Nagy</a><sup>1</sup>, <a class="person" href="person40822.html">Jónas Mittún Peltonen</a><sup>1</sup>, <a class="person" href="person40823.html">Jørgen Villadsen</a><sup>1</sup>                                </div>
+<a class="person" href="person40821.html">Örs Nagy</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40822.html">Jónas Mittún Peltonen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40823.html">Jørgen Villadsen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 </div>
@@ -307,7 +313,7 @@ We demonstrate its utility through a worked example of an iterative Fibonacci fu
                             <td>
                                 <div class="title">Isabelle/ML tool development <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:697">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40736.html">Jasmin Blanchette</a><sup>1</sup>, <a class="person" href="person40816.html">Dmitriy Traytel</a><sup>2</sup>                                </div>
+<a class="person" href="person40736.html">Jasmin Blanchette</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40816.html">Dmitriy Traytel</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LMU</div>
                                 <div class="affiliation_item"><sup>2</sup> UCPH</div>
@@ -336,7 +342,7 @@ We demonstrate its utility through a worked example of an iterative Fibonacci fu
                             <td>
                                 <div class="title">Designing a Verification Condition Generator with Eisbach and a bit of Isabelle/ML -- An experience report <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:698">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40826.html">Peter LAMMICH</a><sup>1</sup>                                </div>
+<a class="person" href="person40826.html">Peter LAMMICH</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Twente</div>
                                 </div>
@@ -394,7 +400,7 @@ independent of the underlying logic and may be useful for Isabelle automation mo
                             <td>
                                 <div class="title">Mechanising Local Rely-Guarantee Reasoning over the seL4 Trace Monad <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:1285">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40827.html">Junming Zhao</a><sup>1</sup>                                </div>
+<a class="person" href="person40827.html">Junming Zhao</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The University of New South Wales</div>
                                 </div>
@@ -410,7 +416,7 @@ The development so far has: (i) LRG's frame and hide rules, mechanised over the 
                             <td>
                                 <div class="title">Two interfaces for seL4 kernel verification: Time Protection and the Kernel–Userland Gap (Extended Abstract) <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:1286">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40828.html">Rob Sison</a><sup>1</sup>                                </div>
+<a class="person" href="person40828.html">Rob Sison</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> UNSW Sydney</div>
                                 </div>
@@ -424,7 +430,7 @@ The development so far has: (i) LRG's frame and hide rules, mechanised over the 
                             <td>
                                 <div class="title">Issues and Solutions in Autoformalization of Munkres’ Topology in Isabelle/HOL <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:1287">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40829.html">Josef Urban</a><sup>1</sup>                                </div>
+<a class="person" href="person40829.html">Josef Urban</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> AI4REASON and University of Gothenburg</div>
                                 </div>
@@ -458,7 +464,7 @@ during an LLM-assisted autoformalization of Munkres’ Topology (§§12–
                             <td>
                                 <div class="title">The next 3 killer features of proof assistants in the next 10 years <a class="abstract_link" href="Isabelle-2026-07-24.html#talk:699">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40830.html">Mohammad Abdulaziz (chair)</a><sup>1</sup>, <a class="person" href="person40820.html">Achim D. Brucker</a><sup>2</sup>, <a class="person" href="person40832.html">Manuel Eberl</a><sup>3</sup>, <a class="person" href="person40833.html">Dominic Mulligan</a><sup>4</sup>, <a class="person" href="person40829.html">Josef Urban</a><sup>5</sup>                                </div>
+<a class="person" href="person40830.html">Mohammad Abdulaziz (chair)</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40820.html">Achim D. Brucker</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40832.html">Manuel Eberl</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40833.html">Dominic Mulligan</a><sup>4</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40829.html">Josef Urban</a><sup>5</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KCL</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Exeter</div>
@@ -489,6 +495,6 @@ during an LLM-assisted autoformalization of Munkres’ Topology (§§12–
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

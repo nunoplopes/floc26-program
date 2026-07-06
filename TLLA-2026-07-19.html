@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — TLLA — Program for Sunday, 19 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -132,6 +132,12 @@
                     <a class="program_days" href="TLLA-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Sunday, 19 July 2026</div>
 
                 <div class="session" id="session:1621">
@@ -194,7 +200,7 @@
                             <td>
                                 <div class="title">Internal Models of Linear Type Theories <a class="abstract_link" href="TLLA-2026-07-19.html#talk:992">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42894.html">Sam Speight</a><sup>1</sup>, <a class="person" href="person42895.html">Niels van der Weide</a><sup>2,3</sup>                                </div>
+<a class="person" href="person42894.html">Sam Speight</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42895.html">Niels van der Weide</a><sup>2,3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Birmingham</div>
                                 <div class="affiliation_item"><sup>2</sup> Radboud University</div>
@@ -214,7 +220,7 @@ We show that LNL adjunctions are preserved by pseudofunctors that preserve finit
                             <td>
                                 <div class="title">Linear and Monoidal Differential Turing Categories <a class="abstract_link" href="TLLA-2026-07-19.html#talk:993">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42896.html">Isaiah Hilsenrath</a><sup>1</sup>, <a class="person" href="person42897.html">Jean-Simon Pacaud Lemay</a><sup>2</sup>                                </div>
+<a class="person" href="person42896.html">Isaiah Hilsenrath</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42897.html">Jean-Simon Pacaud Lemay</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Pennsylvania</div>
                                 <div class="affiliation_item"><sup>2</sup> Macquarie University</div>
@@ -255,7 +261,7 @@ We solve this problem in two stages. First, we define a type of linear category 
                             <td>
                                 <div class="title">An Algebraic View on the Linear Lambda Calculus <a class="abstract_link" href="TLLA-2026-07-19.html#talk:994">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40295.html">Arturo De Faveri</a><sup>1</sup>                                </div>
+<a class="person" href="person40295.html">Arturo De Faveri</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Paris Cité, CNRS, IRIF</div>
                                 </div>
@@ -269,7 +275,7 @@ We solve this problem in two stages. First, we define a type of linear category 
                             <td>
                                 <div class="title">The lambda calculus as a 2-dimensional operad <a class="abstract_link" href="TLLA-2026-07-19.html#talk:995">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42899.html">Emilie Uthaiwat</a><sup>1</sup>                                </div>
+<a class="person" href="person42899.html">Emilie Uthaiwat</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Aix-Marseille Université</div>
                                 </div>
@@ -287,7 +293,7 @@ Cartesian operads are equivalent to clones. This equivalence gives us an abstrac
                             <td>
                                 <div class="title">Multicategories and representability for substructural intuitionistic modal logics <a class="abstract_link" href="TLLA-2026-07-19.html#talk:996">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42900.html">Michel Smykalla</a><sup>1</sup>, <a class="person" href="person42052.html">Tarmo Uustalu</a><sup>2</sup>, <a class="person" href="person42902.html">Niccolò Veltri</a><sup>1</sup>, <a class="person" href="person42903.html">Cheng-Syuan Wan</a><sup>1</sup>                                </div>
+<a class="person" href="person42900.html">Michel Smykalla</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42052.html">Tarmo Uustalu</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42902.html">Niccolò Veltri</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42903.html">Cheng-Syuan Wan</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Tallinn University of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Reykjavik University and Tallinn University of Technology</div>
@@ -359,7 +365,7 @@ Cartesian operads are equivalent to clones. This equivalence gives us an abstrac
                             <td>
                                 <div class="title">Generating Functions for Probabilistic Programs via the Weighted Relational Model of Linear Logic <a class="abstract_link" href="TLLA-2026-07-19.html#talk:998">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41608.html">Ugo Dal Lago</a><sup>1</sup>, <a class="person" href="person41609.html">Guido Fiorillo</a><sup>2</sup>, <a class="person" href="person41610.html">Paolo Pistone</a><sup>2</sup>                                </div>
+<a class="person" href="person41608.html">Ugo Dal Lago</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person41609.html">Guido Fiorillo</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41610.html">Paolo Pistone</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Bologna and INRIA Sophia Antipolis</div>
                                 <div class="affiliation_item"><sup>2</sup> Université Claude Bernard Lyon 1</div>
@@ -412,7 +418,7 @@ In this abstract, we show that this framework is also fruitful for different qua
                             <td>
                                 <div class="title">Semi-quantitative semantics <a class="abstract_link" href="TLLA-2026-07-19.html#talk:997">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40012.html">Lê Thành Dũng (Tito) Nguyễn</a><sup>2,3</sup>, <a class="person" href="person41678.html">Vincent Moreau</a><sup>1</sup>                                </div>
+<a class="person" href="person40012.html">Lê Thành Dũng (Tito) Nguyễn</a><sup>2,3</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person41678.html">Vincent Moreau</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Tallinn University of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> CNRS</div>
@@ -428,7 +434,7 @@ In this abstract, we show that this framework is also fruitful for different qua
                             <td>
                                 <div class="title">The Reasonable Effectiveness of Linear Logic in Quantitative Methods <a class="abstract_link" href="TLLA-2026-07-19.html#talk:999">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42909.html">Matteo Capucci</a><sup>1,2</sup>                                </div>
+<a class="person" href="person42909.html">Matteo Capucci</a><sup>1,2</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Strathclyde</div>
                                 <div class="affiliation_item"><sup>2</sup> Independent Researcher</div>
@@ -444,7 +450,7 @@ The talk is based on recent work joint with Atkey, Komendantskaya, and Grellois,
                             <td>
                                 <div class="title">Syntactic linearity and Linear hyperdoctrines for second-order intuitionistic Linear Logic <a class="abstract_link" href="TLLA-2026-07-19.html#talk:1000">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42910.html">Alejandro Díaz-Caro</a><sup>1,5</sup>, <a class="person" href="person42911.html">Malena Ivnisky</a><sup>2,4</sup>, <a class="person" href="person42912.html">Octavio Malherbe</a><sup>3</sup>                                </div>
+<a class="person" href="person42910.html">Alejandro Díaz-Caro</a><sup>1,5</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42911.html">Malena Ivnisky</a><sup>2,4</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42912.html">Octavio Malherbe</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université de Lorraine, Inria</div>
                                 <div class="affiliation_item"><sup>2</sup> Universidad de Buenos Aires, DC</div>
@@ -479,6 +485,6 @@ We develop a sound and adequate denotational semantics based on hyperdoctrines v
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

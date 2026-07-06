@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — OVERLAY — Program for Sunday, 19 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -132,6 +132,12 @@
                     <a class="program_days" href="OVERLAY-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Sunday, 19 July 2026</div>
 
                 <div class="session" id="session:1422">
@@ -159,7 +165,7 @@
                             <td>
                                 <div class="title">Learning Formal Models of Parametrized Systems <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:860">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41294.html">Dana Fisman</a><sup>1</sup>, <a class="person" href="person41295.html">Noa Izsak</a><sup>2</sup>, <a class="person" href="person39543.html">Swen Jacobs</a><sup>2</sup>                                </div>
+<a class="person" href="person41294.html">Dana Fisman</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person41295.html">Noa Izsak</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39543.html">Swen Jacobs</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Ben-Gurion University of the Negev</div>
                                 <div class="affiliation_item"><sup>2</sup> CISPA Helmholtz Center for Information Security</div>
@@ -176,7 +182,7 @@ We summarize our recent work on passive learning of broadcast protocols (BPs), a
                             <td>
                                 <div class="title">Fairness Certificates via a Lean-Backed Trustworthy Probabilistic Typed Natural Deduction <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:861">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42190.html">Fabio Aurelio D'Asaro</a><sup>1</sup>, <a class="person" href="person42174.html">Giuseppe Primiero</a><sup>2</sup>                                </div>
+<a class="person" href="person42190.html">Fabio Aurelio D'Asaro</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42174.html">Giuseppe Primiero</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Verona, University College London</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Milan</div>
@@ -228,7 +234,7 @@ We summarize our recent work on passive learning of broadcast protocols (BPs), a
                             <td>
                                 <div class="title">Progress-Aware Runtime Monitoring of Abstract Scenario Specifications <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:862">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42192.html">Nelson Brüchmann</a><sup>1</sup>, <a class="person" href="person42193.html">Ishan Saxena</a><sup>1</sup>, <a class="person" href="person42194.html">Bernd Westphal</a><sup>1</sup>                                </div>
+<a class="person" href="person42192.html">Nelson Brüchmann</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42193.html">Ishan Saxena</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42194.html">Bernd Westphal</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> German Aerospace Center (DLR)</div>
                                 </div>
@@ -244,7 +250,7 @@ To improve the analysis of unexpected system behaviours, we propose progress-awa
                             <td>
                                 <div class="title">Verified Computational Graph for Safety-Critical ML: From static model to execution semantics <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:863">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42195.html">João Machado</a><sup>1</sup>, <a class="person" href="person42196.html">Ricardo Silva</a><sup>1</sup>, <a class="person" href="person42197.html">João Galego</a><sup>2</sup>, <a class="person" href="person42198.html">Eric Jenn</a><sup>3</sup>, <a class="person" href="person42199.html">Hugo Daniel Macedo</a><sup>4,5</sup>, <a class="person" href="person42200.html">Jorge Sousa Pinto</a><sup>4,5</sup>                                </div>
+<a class="person" href="person42195.html">João Machado</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42196.html">Ricardo Silva</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42197.html">João Galego</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42198.html">Eric Jenn</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42199.html">Hugo Daniel Macedo</a><sup>4,5</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42200.html">Jorge Sousa Pinto</a><sup>4,5</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universidade do Minho & Critical Software, Portugal</div>
                                 <div class="affiliation_item"><sup>2</sup> ISEG Executive Education & Critical Software, Portugal</div>
@@ -263,7 +269,7 @@ This paper provides a formalization of ONNX computation graphs that addresses th
                             <td>
                                 <div class="title">Widest Path Games and Maximality Inheritance in Bounded Value Iteration for Stochastic Games <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:864">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42201.html">Kittiphon Phalakarn</a><sup>1</sup>, <a class="person" href="person41680.html">Yun Chen Tsai</a><sup>1</sup>, <a class="person" href="person42203.html">Ichiro Hasuo</a><sup>1</sup>                                </div>
+<a class="person" href="person42201.html">Kittiphon Phalakarn</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person41680.html">Yun Chen Tsai</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42203.html">Ichiro Hasuo</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National Institute of Informatics</div>
                                 </div>
@@ -314,7 +320,7 @@ This paper provides a formalization of ONNX computation graphs that addresses th
                             <td>
                                 <div class="title">Preservation Theorems: From Tarski to Graph Neural Networks <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:865">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41207.html">Przemyslaw Walega</a><sup>1</sup>                                </div>
+<a class="person" href="person41207.html">Przemyslaw Walega</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
                                 </div>
@@ -362,7 +368,7 @@ This paper provides a formalization of ONNX computation graphs that addresses th
                             <td>
                                 <div class="title">AIRD: Auditable Composite Distillation on a Sparse Tactical Frontier <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:866">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42205.html">Derun Ai</a><sup>1</sup>, <a class="person" href="person42206.html">Laurent Perrussel</a><sup>1</sup>                                </div>
+<a class="person" href="person42205.html">Derun Ai</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42206.html">Laurent Perrussel</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> IRIT - Université Toulouse Capitole, France</div>
                                 </div>
@@ -379,7 +385,7 @@ As a first testbed, we audit Connect4 5x6 environment and show that AIRD extends
                             <td>
                                 <div class="title">Explaining Visual Models with Logic and Concept-Part Networks <a class="abstract_link" href="OVERLAY-2026-07-19.html#talk:867">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42207.html">Mathilde Bonin</a><sup>1</sup>, <a class="person" href="person42208.html">Sergio Mover</a><sup>1</sup>                                </div>
+<a class="person" href="person42207.html">Mathilde Bonin</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42208.html">Sergio Mover</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Ecole Polytechnique</div>
                                 </div>
@@ -433,6 +439,6 @@ Our initial experiments show that ConPNet retains competitive classification eff
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Program for Tuesday, 28 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -133,6 +133,12 @@
                     <a class="program_days" href="index-full.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Tuesday, 28 July 2026</div>
 
                 <div class="session" id="session:1003">
@@ -154,7 +160,7 @@
                             <td>
                                 <div class="title">Trustworthy Neuro-Symbolic Programming with Informal Specifications <a class="abstract_link" href="WithoutGroup-2026-07-28.html#talk:552">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person43201.html">Işıl Dillig</a>                                </div>
+<a class="person" href="person43201.html">Işıl Dillig</a><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neuro-Symbolic Programming (NSP) treats learning-enabled systems as programs that compose symbolic control structure composed with learned neural primitives for perception and prediction. NSP offers a principled response to a central challenge for logic and formal methods in the age of machine learning: how to obtain trustworthy, compositional behavior when key components are statistical and uncertain. This talk gives an gives an overview of recent advances in NSP along three axes: (1) domain-specific languages targeting real-world use cases, (2) learning techniques for fitting program structure based on informal specifications, and (3) approaches for ensuring correctness despite noisy neural components and incomplete specifications.</p>
                                 </div>
@@ -247,7 +253,7 @@
                             <td>
                                 <div class="title">VNN-LIB 2.0: Rigorous Foundations for Neural Network Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1146">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39549.html">Ann Roy</a><sup>1</sup>, <a class="person" href="person39550.html">Allen Antony</a><sup>1</sup>, <a class="person" href="person39551.html">Andrea Gimelli</a><sup>2</sup>, <a class="person" href="person39552.html">Matthew Daggitt</a><sup>1</sup>                                </div>
+<a class="person" href="person39549.html">Ann Roy</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39550.html">Allen Antony</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39551.html">Andrea Gimelli</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39552.html">Matthew Daggitt</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Western Australia</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Genova</div>
@@ -265,7 +271,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">QAV-FT: Quadratic Approximation-based Neural Network Verification via Fourier Series and Taylor Truncation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1147">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39553.html">Han Wang</a><sup>1</sup>, <a class="person" href="person39554.html">Xuyang Ding</a><sup>1</sup>, <a class="person" href="person39555.html">Xie Ying</a><sup>2</sup>, <a class="person" href="person39556.html">Yakun Sheng</a><sup>1</sup>                                </div>
+<a class="person" href="person39553.html">Han Wang</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39554.html">Xuyang Ding</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39555.html">Xie Ying</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39556.html">Yakun Sheng</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> School of Computer Science and Engineering, University of Electronic Science and Technology of China</div>
                                 <div class="affiliation_item"><sup>2</sup> College of Computer Science and Artificial Intelligence, Southwest Minzu University</div>
@@ -280,7 +286,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">The Rocq-NN-Roll Prover: Soundly Verifying Hyperproperties of Neural Networks in Rocq <a class="abstract_link" href="CAV-2026-07-28.html#talk:1148">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39557.html">Andrei Aleksandrov</a><sup>1</sup>, <a class="person" href="person39558.html">Malte Jackisch</a><sup>2</sup>, <a class="person" href="person39559.html">Kim Völlinger</a><sup>2</sup>                                </div>
+<a class="person" href="person39557.html">Andrei Aleksandrov</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39558.html">Malte Jackisch</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39559.html">Kim Völlinger</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Fraunhofer Institute FOKUS Berlin</div>
                                 <div class="affiliation_item"><sup>2</sup> Technische Universität Berlin</div>
@@ -295,7 +301,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">ATKVerifier: Adaptive Top-K Constraints for Tighter Verification of Semantic Segmentation Networks <a class="abstract_link" href="CAV-2026-07-28.html#talk:1149">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39560.html">Yuehao Liu</a><sup>1</sup>, <a class="person" href="person39519.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person39562.html">Yansong Dong</a><sup>2</sup>, <a class="person" href="person39563.html">Liang Zhao</a><sup>1</sup>, <a class="person" href="person39564.html">Chao Huang</a><sup>1</sup>, <a class="person" href="person39520.html">Wensheng Wang</a><sup>1</sup>                                </div>
+<a class="person" href="person39560.html">Yuehao Liu</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39519.html">Cong Tian</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39562.html">Yansong Dong</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39563.html">Liang Zhao</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39564.html">Chao Huang</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39520.html">Wensheng Wang</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ICTT and ISN Laboratory, Xidian University</div>
                                 <div class="affiliation_item"><sup>2</sup> KylinSoft Co., Ltd.</div>
@@ -310,7 +316,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">Precise Verification of Transformers through ReLU-Catalyzed Abstraction Refinement <a class="abstract_link" href="CAV-2026-07-28.html#talk:1150">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39566.html">Hengjie Liu</a><sup>1</sup>, <a class="person" href="person39567.html">Zhenya Zhang</a><sup>1</sup>, <a class="person" href="person39568.html">Jianjun Zhao</a><sup>1</sup>                                </div>
+<a class="person" href="person39566.html">Hengjie Liu</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39567.html">Zhenya Zhang</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39568.html">Jianjun Zhao</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Kyushu University</div>
                                 </div>
@@ -324,7 +330,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">Quantifying Sensitivity for Tree Ensembles : A symbolic and compositional approach <a class="abstract_link" href="CAV-2026-07-28.html#talk:1151">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39569.html">Ajinkya Naik</a><sup>1</sup>, <a class="person" href="person39570.html">Akshay S</a><sup>1</sup>, <a class="person" href="person39571.html">Ashutosh Gupta</a><sup>1</sup>, <a class="person" href="person39572.html">Chaitanya Garg</a><sup>1</sup>, <a class="person" href="person39573.html">Kuldeep S. Meel</a><sup>2</sup>                                </div>
+<a class="person" href="person39569.html">Ajinkya Naik</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39570.html">Akshay S</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39571.html">Ashutosh Gupta</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39572.html">Chaitanya Garg</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39573.html">Kuldeep S. Meel</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> IIT Bombay</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
@@ -339,7 +345,7 @@ This abstraction enables VNN-LIB to be defined independently of any specific ONN
                             <td>
                                 <div class="title">Shields to Guarantee Probabilistic Safety in MDPs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1152">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39187.html">Linus Heck</a><sup>1</sup>, <a class="person" href="person39188.html">Filip Macák</a><sup>2</sup>, <a class="person" href="person39576.html">Roman Andriushchenko</a><sup>2</sup>, <a class="person" href="person39577.html">Milan Ceska</a><sup>2</sup>, <a class="person" href="person39190.html">Sebastian Junges</a><sup>1</sup>                                </div>
+<a class="person" href="person39187.html">Linus Heck</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39188.html">Filip Macák</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39576.html">Roman Andriushchenko</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39577.html">Milan Ceska</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39190.html">Sebastian Junges</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Radboud University</div>
                                 <div class="affiliation_item"><sup>2</sup> Brno University of Technology</div>
@@ -365,7 +371,7 @@ of the new shields as well as computational feasibility.</p>
                             <td>
                                 <div class="title">A Neurosymbolic Approach to Natural Language Formalization and Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1153">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39579.html">Chenyang An</a><sup>1</sup>, <a class="person" href="person39580.html">Sam Bayless</a><sup>1</sup>, <a class="person" href="person39581.html">Stefano Buliani</a><sup>1</sup>, <a class="person" href="person39582.html">Darion Cassel</a><sup>1</sup>, <a class="person" href="person39583.html">Byron Cook</a><sup>2</sup>, <a class="person" href="person39584.html">Duncan Clough</a><sup>1</sup>, <a class="person" href="person39585.html">Rémi Delmas</a><sup>1</sup>, <a class="person" href="person39586.html">Nafi Diallo</a><sup>1</sup>, <a class="person" href="person39587.html">Ferhat Erata</a><sup>1</sup>, <a class="person" href="person39588.html">Nick Feng</a><sup>1</sup>, <a class="person" href="person39589.html">Dimitra Giannakopoulou</a><sup>1</sup>, <a class="person" href="person39590.html">Aman Goel</a><sup>1</sup>, <a class="person" href="person39591.html">Aditya Gokhale</a><sup>1</sup>, <a class="person" href="person39592.html">Joe Hendrix</a><sup>1</sup>, <a class="person" href="person39593.html">Victor Heorhiadi</a><sup>1</sup>, <a class="person" href="person39594.html">Marc Hudak</a><sup>1</sup>, <a class="person" href="person39595.html">Dejan Jovanović</a><sup>1</sup>, <a class="person" href="person39596.html">Andrew M. Kent</a><sup>1</sup>, <a class="person" href="person39597.html">Benjamin Kiesl-Reiter</a><sup>1</sup>, <a class="person" href="person39598.html">Jeffrey J. Kuna</a><sup>1</sup>, <a class="person" href="person39599.html">Nadia Labai</a><sup>1</sup>, <a class="person" href="person39600.html">Joseph Lilien</a><sup>1</sup>, <a class="person" href="person39601.html">Divya Raghunathan</a><sup>1</sup>, <a class="person" href="person39602.html">Zvonimir Rakamarić</a><sup>1</sup>, <a class="person" href="person39603.html">Niloofar Razavi</a><sup>1</sup>, <a class="person" href="person39604.html">Michael Tautschnig</a><sup>1</sup>, <a class="person" href="person39605.html">Ali Torkamani</a><sup>1</sup>, <a class="person" href="person39606.html">Nathaniel Weir</a><sup>1</sup>, <a class="person" href="person39607.html">Michael W. Whalen</a><sup>1</sup>, <a class="person" href="person39608.html">Jianan Yao</a><sup>3</sup>                                </div>
+<a class="person" href="person39579.html">Chenyang An</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39580.html">Sam Bayless</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39581.html">Stefano Buliani</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39582.html">Darion Cassel</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39583.html">Byron Cook</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39584.html">Duncan Clough</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39585.html">Rémi Delmas</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39586.html">Nafi Diallo</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39587.html">Ferhat Erata</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39588.html">Nick Feng</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39589.html">Dimitra Giannakopoulou</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39590.html">Aman Goel</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39591.html">Aditya Gokhale</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39592.html">Joe Hendrix</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39593.html">Victor Heorhiadi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39594.html">Marc Hudak</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39595.html">Dejan Jovanović</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39596.html">Andrew M. Kent</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39597.html">Benjamin Kiesl-Reiter</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39598.html">Jeffrey J. Kuna</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39599.html">Nadia Labai</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39600.html">Joseph Lilien</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39601.html">Divya Raghunathan</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39602.html">Zvonimir Rakamarić</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39603.html">Niloofar Razavi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39604.html">Michael Tautschnig</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39605.html">Ali Torkamani</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39606.html">Nathaniel Weir</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39607.html">Michael W. Whalen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39608.html">Jianan Yao</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Amazon Web Services</div>
                                 <div class="affiliation_item"><sup>2</sup> Amazon Web Services, University College London</div>
@@ -398,7 +404,7 @@ of the new shields as well as computational feasibility.</p>
                             <td>
                                 <div class="title">On the necessity of pre-agreed secrets for thwarting last-minute coercion: vulnerabilities and lessons from the Loki e-voting protocol <a class="abstract_link" href="CSF-2026-07-28.html#talk:225">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39934.html">Jingxin Qiao</a><sup>1</sup>, <a class="person" href="person39906.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person39936.html">Thomas Zacharias</a><sup>2</sup>                                </div>
+<a class="person" href="person39934.html">Jingxin Qiao</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39906.html">Myrto Arapinis</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39936.html">Thomas Zacharias</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The University of Edinburgh</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Glasgow</div>
@@ -415,7 +421,7 @@ In this work, we identify two vulnerabilities in Loki. The first is a brute-forc
                             <td>
                                 <div class="title">Setup Protocols for Sender Anonymity <a class="abstract_link" href="CSF-2026-07-28.html#talk:226">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39937.html">Tian Huang</a><sup>1</sup>, <a class="person" href="person39938.html">Jiatai Zhang</a><sup>2</sup>, <a class="person" href="person39939.html">Megumi Ando</a><sup>1</sup>                                </div>
+<a class="person" href="person39937.html">Tian Huang</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39938.html">Jiatai Zhang</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39939.html">Megumi Ando</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Tufts University</div>
                                 <div class="affiliation_item"><sup>2</sup> Rensselaer Polytechnic Institute</div>
@@ -432,7 +438,7 @@ In this work, we introduce the notion of enhanced dialing protocols, a broad cla
                             <td>
                                 <div class="title">Simultaneously Proving Privacy and Verifiability: A ProVerif Framework for Internet Voting <a class="abstract_link" href="CSF-2026-07-28.html#talk:227">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39940.html">Vincent Cheval</a><sup>1</sup>, <a class="person" href="person39941.html">Veronique Cortier</a><sup>2</sup>, <a class="person" href="person39942.html">Alexandre Debant</a><sup>3</sup>, <a class="person" href="person39943.html">Florian Moser</a><sup>3</sup>                                </div>
+<a class="person" href="person39940.html">Vincent Cheval</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39941.html">Veronique Cortier</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39942.html">Alexandre Debant</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39943.html">Florian Moser</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
                                 <div class="affiliation_item"><sup>2</sup> CNRS Nancy</div>
@@ -450,7 +456,7 @@ We present in this work a proof framework for ProVerif that models an extensible
                             <td>
                                 <div class="title">Beyond Blockchain Ballots: UC-Secure Layer-2 Voting and Governance <a class="abstract_link" href="CSF-2026-07-28.html#talk:228">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39944.html">Raghav Bhaskar</a><sup>1</sup>, <a class="person" href="person39945.html">Pooya Farshim</a><sup>2</sup>, <a class="person" href="person39946.html">Matthias Fitzi</a><sup>2</sup>, <a class="person" href="person39947.html">Aggelos Kiayias</a><sup>3</sup>                                </div>
+<a class="person" href="person39944.html">Raghav Bhaskar</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39945.html">Pooya Farshim</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39946.html">Matthias Fitzi</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39947.html">Aggelos Kiayias</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> None</div>
                                 <div class="affiliation_item"><sup>2</sup> Input Output</div>
@@ -472,7 +478,7 @@ To the best of our knowledge, this work presents the first blockchain layer-2 vo
                             <td>
                                 <div class="title">BlindReview: Anonymous and End-to-End Verifiable Peer Review <a class="abstract_link" href="CSF-2026-07-28.html#talk:229">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39948.html">Xavier Bultel</a><sup>1</sup>, <a class="person" href="person39949.html">Ashley Fraser</a><sup>2</sup>, <a class="person" href="person39950.html">Elizabeth A. Quaglia</a><sup>3</sup>                                </div>
+<a class="person" href="person39948.html">Xavier Bultel</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39949.html">Ashley Fraser</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39950.html">Elizabeth A. Quaglia</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> INSA Centre Val de Loire, Inria</div>
                                 <div class="affiliation_item"><sup>2</sup> Lancaster University</div>
@@ -505,7 +511,7 @@ To the best of our knowledge, this work presents the first blockchain layer-2 vo
                             <td>
                                 <div class="title">Finite Model Finding in First-order Modal Logics <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1272">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40723.html">Happy Khairunnisa Sariyanto</a><sup>1</sup>, <a class="person" href="person40724.html">Alexander Steen</a><sup>1</sup>, <a class="person" href="person40676.html">Geoff Sutcliffe</a><sup>2</sup>                                </div>
+<a class="person" href="person40723.html">Happy Khairunnisa Sariyanto</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40724.html">Alexander Steen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40676.html">Geoff Sutcliffe</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Greifswald</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Miami</div>
@@ -532,7 +538,7 @@ Up to the authors' knowledge, MoMo is the first model finder for first-order mod
                             <td>
                                 <div class="title">Completeness of Synthesis under Realizability Assumptions using Superposition <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1273">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40726.html">Márton Hajdu</a><sup>1</sup>, <a class="person" href="person40727.html">Petra Hozzová</a><sup>1</sup>, <a class="person" href="person40315.html">Laura Kovács</a><sup>1</sup>, <a class="person" href="person40729.html">Eva Wagner</a><sup>1</sup>                                </div>
+<a class="person" href="person40726.html">Márton Hajdu</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40727.html">Petra Hozzová</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40315.html">Laura Kovács</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40729.html">Eva Wagner</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -548,7 +554,7 @@ We present cases where the calculus fails and refine it to solve them. We prove 
                             <td>
                                 <div class="title">Hardware Model Checking Certification with Certifaiger and Cerbtora <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1274">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39610.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person39611.html">Emily Yu</a><sup>2</sup>                                </div>
+<a class="person" href="person39610.html">Nils Froleyks</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39611.html">Emily Yu</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
                                 <div class="affiliation_item"><sup>2</sup> Leiden University</div>
@@ -563,7 +569,7 @@ We present cases where the calculus fails and refine it to solve them. We prove 
                             <td>
                                 <div class="title">Pgeon: Generating Tableau-Based Provers from Declarative Specifications of Logical Calculi <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1275">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40732.html">Romain Sidhoum</a><sup>1</sup>, <a class="person" href="person40733.html">Simon Robillard</a><sup>1</sup>, <a class="person" href="person40734.html">David Delahaye</a><sup>1</sup>                                </div>
+<a class="person" href="person40732.html">Romain Sidhoum</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40733.html">Simon Robillard</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40734.html">David Delahaye</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LIRMM, Univ Montpellier, CNRS, Montpellier, France</div>
                                 </div>
@@ -599,7 +605,7 @@ We describe the design of the specification language, the execution model of the
                             <td>
                                 <div class="title">Don't Sweat Interaction Trees: Proof-Guided Local Variable Lifting for Interaction Trees <a class="abstract_link" href="ITP-2026-07-28.html#talk:384">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40909.html">Yiming Lin</a><sup>1</sup>, <a class="person" href="person40910.html">Ian Kariniemi</a><sup>1</sup>, <a class="person" href="person40911.html">Yao Li</a><sup>1</sup>                                </div>
+<a class="person" href="person40909.html">Yiming Lin</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40910.html">Ian Kariniemi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40911.html">Yao Li</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Portland State University</div>
                                 </div>
@@ -613,7 +619,7 @@ We describe the design of the specification language, the execution model of the
                             <td>
                                 <div class="title">Bidirectional Interpolation for the Lambda-Calculus – Revisiting and Formalising Craig-Čubrić Interpolation <a class="abstract_link" href="ITP-2026-07-28.html#talk:385">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40912.html">Meven Lennon-Bertrand</a><sup>1</sup>, <a class="person" href="person39763.html">Alexis Saurin</a><sup>2</sup>                                </div>
+<a class="person" href="person40912.html">Meven Lennon-Bertrand</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39763.html">Alexis Saurin</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Paris Cité, INRIA, CNRS, IRIF</div>
                                 <div class="affiliation_item"><sup>2</sup> Université Paris Cité, CNRS, INRIA, IRIF</div>
@@ -714,7 +720,7 @@ In the present paper, we give a new proof of Čubrić's proof-relevant interpola
                             <td>
                                 <div class="title">Invited talk by CAV Award awardees <a class="abstract_link" href="CAV-2026-07-28.html#talk:199">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39609.html">TBA na</a><sup>1</sup>                                </div>
+<a class="person" href="person39609.html">TBA na</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> na</div>
                                 </div>
@@ -742,7 +748,7 @@ In the present paper, we give a new proof of Čubrić's proof-relevant interpola
                             <td>
                                 <div class="title">A Composable Game-Theoretic Framework for Blockchains <a class="abstract_link" href="CSF-2026-07-28.html#talk:230">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39951.html">Pim Keer</a><sup>1</sup>, <a class="person" href="person39952.html">Fabian Regen</a><sup>1</sup>, <a class="person" href="person39953.html">Georg Fuchsbauer</a><sup>1</sup>, <a class="person" href="person39954.html">Matteo Maffei</a><sup>1</sup>, <a class="person" href="person39955.html">Zeta Avarikioti</a><sup>2</sup>                                </div>
+<a class="person" href="person39951.html">Pim Keer</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39952.html">Fabian Regen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39953.html">Georg Fuchsbauer</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39954.html">Matteo Maffei</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39955.html">Zeta Avarikioti</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Wien & Common Prefix</div>
@@ -761,7 +767,7 @@ We illustrate our framework through case studies on Hashed Timelock Contracts (H
                             <td>
                                 <div class="title">NTRU with Hints: Secret Key Recovery under Partial Leakage on NTRU-based Signatures <a class="abstract_link" href="CSF-2026-07-28.html#talk:231">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39956.html">Honglin Shao</a><sup>1</sup>, <a class="person" href="person39957.html">Yuejun Liu</a><sup>1</sup>, <a class="person" href="person39958.html">Mingyao Shao</a><sup>2,3,6</sup>, <a class="person" href="person39959.html">Wei Cheng</a><sup>1,4</sup>, <a class="person" href="person39960.html">Yongbin Zhou</a><sup>1,5</sup>                                </div>
+<a class="person" href="person39956.html">Honglin Shao</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39957.html">Yuejun Liu</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39958.html">Mingyao Shao</a><sup>2,3,6</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39959.html">Wei Cheng</a><sup>1,4</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39960.html">Yongbin Zhou</a><sup>1,5</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> School of Cyber Science and Engineering, Nanjing University of Science and Technology, Nanjing 210094, China</div>
                                 <div class="affiliation_item"><sup>2</sup> Institute of Information Engineering, Chinese Academy of Sciences</div>
@@ -780,7 +786,7 @@ We illustrate our framework through case studies on Hashed Timelock Contracts (H
                             <td>
                                 <div class="title">Self-Guarding Arbitrary Cryptographic Primitives and 2PC Protocols <a class="abstract_link" href="CSF-2026-07-28.html#talk:232">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39961.html">Daniele Friolo</a><sup>1</sup>, <a class="person" href="person39962.html">Andrea Reale</a><sup>1</sup>, <a class="person" href="person39963.html">Daniele Venturi</a><sup>1</sup>                                </div>
+<a class="person" href="person39961.html">Daniele Friolo</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39962.html">Andrea Reale</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39963.html">Daniele Venturi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Sapienza University of Rome</div>
                                 </div>
@@ -795,7 +801,7 @@ Whilst the proposed solutions in CSF '18  support a bounded number of executions
                             <td>
                                 <div class="title">Revisiting Beimel-Weinreb Weighted Threshold Secret Sharing Schemes <a class="abstract_link" href="CSF-2026-07-28.html#talk:233">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39964.html">Oriol Farràs</a><sup>1</sup>, <a class="person" href="person39965.html">Miquel Guiot</a><sup>1</sup>                                </div>
+<a class="person" href="person39964.html">Oriol Farràs</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39965.html">Miquel Guiot</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universitat Rovira i Virgili</div>
                                 </div>
@@ -817,7 +823,7 @@ Second, extending these techniques, we obtain improved information-theoretic ram
                             <td>
                                 <div class="title">Time-Lock Puzzles with Preprocessing: an Instantiation from Average-Case Hardness Assumptions on Graphs and Lattices <a class="abstract_link" href="CSF-2026-07-28.html#talk:234">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39966.html">Raz Rosie</a><sup>1</sup>                                </div>
+<a class="person" href="person39966.html">Raz Rosie</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Lombard International (part of Utmost Group)</div>
                                 </div>
@@ -855,7 +861,7 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                             <td>
                                 <div class="title">Tao’s Equational Proof Challenge Accepted <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:352">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40735.html">Lydia Kondylidou</a><sup>1</sup>, <a class="person" href="person40736.html">Jasmin Blanchette</a><sup>1</sup>, <a class="person" href="person40737.html">Marijn Heule</a><sup>2</sup>                                </div>
+<a class="person" href="person40735.html">Lydia Kondylidou</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40736.html">Jasmin Blanchette</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40737.html">Marijn Heule</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Ludwig-Maximilians-Universität München</div>
                                 <div class="affiliation_item"><sup>2</sup> Carnegie Mellon University</div>
@@ -870,7 +876,7 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                             <td>
                                 <div class="title">Generating Theorems by Generating Proof Structures <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:353">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39732.html">Christoph Wernhard</a><sup>1</sup>                                </div>
+<a class="person" href="person39732.html">Christoph Wernhard</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
                                 </div>
@@ -884,7 +890,7 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                             <td>
                                 <div class="title">Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:354">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40739.html">Emanuele Civini</a><sup>1</sup>, <a class="person" href="person40740.html">Gabriele Masina</a><sup>1</sup>, <a class="person" href="person40741.html">Giuseppe Spallitta</a><sup>2</sup>, <a class="person" href="person40742.html">Roberto Sebastiani</a><sup>1</sup>                                </div>
+<a class="person" href="person40739.html">Emanuele Civini</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40740.html">Gabriele Masina</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40741.html">Giuseppe Spallitta</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40742.html">Roberto Sebastiani</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Trento</div>
                                 <div class="affiliation_item"><sup>2</sup> Rice University</div>
@@ -902,7 +908,7 @@ In this paper, we present theory-agnostic methods for enumerating complete sets 
                             <td>
                                 <div class="title">A Superposition Calculus for Separation Logic <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:355">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40743.html">Tanguy Bozec</a><sup>1</sup>, <a class="person" href="person40744.html">Nicolas Peltier</a><sup>2</sup>                                </div>
+<a class="person" href="person40743.html">Tanguy Bozec</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40744.html">Nicolas Peltier</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
                                 <div class="affiliation_item"><sup>2</sup> CNRS LIG</div>
@@ -917,7 +923,7 @@ In this paper, we present theory-agnostic methods for enumerating complete sets 
                             <td>
                                 <div class="title">Twitch: Learning Abstractions for Equational Theorem Proving <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:356">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40745.html">Guy Axelrod</a><sup>1</sup>, <a class="person" href="person40746.html">Moa Johansson</a><sup>1</sup>, <a class="person" href="person40747.html">Nicholas Smallbone</a><sup>1</sup>                                </div>
+<a class="person" href="person40745.html">Guy Axelrod</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40746.html">Moa Johansson</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40747.html">Nicholas Smallbone</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Chalmers University of Technology</div>
                                 </div>
@@ -933,7 +939,7 @@ tasks. Twitch can produce abstractions in two ways: (1) from a partial, failed p
                             <td>
                                 <div class="title">On Constructing Most General Solutions for Parametric Constraints <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:357">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40662.html">Viorica Sofronie-Stokkermans</a><sup>1</sup>                                </div>
+<a class="person" href="person40662.html">Viorica Sofronie-Stokkermans</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Koblenz</div>
                                 </div>
@@ -977,7 +983,7 @@ varieties. We illustrate the ideas on examples.</p>
                             <td>
                                 <div class="title">Enhancing Interactive Theorem Prover Error Messages with Hints <a class="abstract_link" href="ITP-2026-07-28.html#talk:386">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40914.html">Maria Khakimova</a><sup>1</sup>, <a class="person" href="person40915.html">Sára Juhošová</a><sup>1</sup>, <a class="person" href="person40916.html">Jaro Reinders</a><sup>1</sup>, <a class="person" href="person40917.html">Jesper Cockx</a><sup>1</sup>                                </div>
+<a class="person" href="person40914.html">Maria Khakimova</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40915.html">Sára Juhošová</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40916.html">Jaro Reinders</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40917.html">Jesper Cockx</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
                                 </div>
@@ -991,7 +997,7 @@ varieties. We illustrate the ideas on examples.</p>
                             <td>
                                 <div class="title">Formalization of a Realistic Verification-Condition Generator for an Intermediate Verification Language <a class="abstract_link" href="ITP-2026-07-28.html#talk:387">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39505.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person40919.html">K. Rustan M. Leino</a><sup>2</sup>                                </div>
+<a class="person" href="person39505.html">Vladimir Gladshtein</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40919.html">K. Rustan M. Leino</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National University of Singapore</div>
                                 <div class="affiliation_item"><sup>2</sup> Amazon Web Services</div>
@@ -1008,7 +1014,7 @@ B3 is a new IVL. This paper presents a formalization of B3's semantics, a VC Gen
                             <td>
                                 <div class="title">Panbench: A Comparative Benchmarking Tool for Dependently-Typed Languages <a class="abstract_link" href="ITP-2026-07-28.html#talk:388">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40920.html">Reed Mullanix</a><sup>1</sup>, <a class="person" href="person40921.html">Jacques Carette</a><sup>1</sup>                                </div>
+<a class="person" href="person40920.html">Reed Mullanix</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40921.html">Jacques Carette</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> McMaster University</div>
                                 </div>
@@ -1059,7 +1065,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">Liveness Proofs for Hardware Model Checking (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-28.html#talk:1154">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39610.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person39611.html">Emily Yu</a><sup>2</sup>, <a class="person" href="person39612.html">Bart Bogaerts</a><sup>1</sup>, <a class="person" href="person39613.html">Armin Biere</a><sup>3</sup>, <a class="person" href="person39614.html">Keijo Heljanko</a><sup>4</sup>                                </div>
+<a class="person" href="person39610.html">Nils Froleyks</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39611.html">Emily Yu</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39612.html">Bart Bogaerts</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39613.html">Armin Biere</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39614.html">Keijo Heljanko</a><sup>4</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
                                 <div class="affiliation_item"><sup>2</sup> Leiden University</div>
@@ -1076,7 +1082,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">Transition Invariants Revisited: Termination Witnesses and Their Validation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1155">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39615.html">Dirk Beyer</a><sup>1</sup>, <a class="person" href="person39616.html">Marek Jankola</a><sup>1</sup>, <a class="person" href="person39196.html">Marian Lingsch-Rosenfeld</a><sup>1</sup>                                </div>
+<a class="person" href="person39615.html">Dirk Beyer</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39616.html">Marek Jankola</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39196.html">Marian Lingsch-Rosenfeld</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
                                 </div>
@@ -1090,7 +1096,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">KoAT: Automatic Complexity and Termination Analysis of Integer Programs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1156">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39618.html">Nils Lommen</a><sup>1</sup>, <a class="person" href="person39619.html">Jürgen Giesl</a><sup>1</sup>, <a class="person" href="person39620.html">Eleanore Meyer</a><sup>1</sup>                                </div>
+<a class="person" href="person39618.html">Nils Lommen</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39619.html">Jürgen Giesl</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39620.html">Eleanore Meyer</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
                                 </div>
@@ -1186,7 +1192,7 @@ structures of all four systems.</p>
                             <td>
                                 <div class="title">Sound and Precise Symbolic Automata Model for Stateful Software Systems <a class="abstract_link" href="CAV-2026-07-28.html#talk:1157">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39621.html">Xinlong Wu</a><sup>1</sup>, <a class="person" href="person39622.html">Ruiyu Zhou</a><sup>1</sup>, <a class="person" href="person39623.html">Peisen Yao</a><sup>2</sup>, <a class="person" href="person39624.html">Qingkai Shi</a><sup>1</sup>                                </div>
+<a class="person" href="person39621.html">Xinlong Wu</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39622.html">Ruiyu Zhou</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39623.html">Peisen Yao</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39624.html">Qingkai Shi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Nanjing University</div>
                                 <div class="affiliation_item"><sup>2</sup> Zhejiang University</div>
@@ -1202,7 +1208,7 @@ We introduce Seal, an abstract interpreter that automatically derives sound and 
                             <td>
                                 <div class="title">Automated Amortised Analysis of Skew Heaps and Leftist Heaps <a class="abstract_link" href="CAV-2026-07-28.html#talk:1158">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39625.html">Armin Walch</a><sup>1</sup>, <a class="person" href="person39626.html">Georg Moser</a><sup>1</sup>, <a class="person" href="person39627.html">Berry Schoenmakers</a><sup>2</sup>, <a class="person" href="person39628.html">Florian Zuleger</a><sup>3</sup>                                </div>
+<a class="person" href="person39625.html">Armin Walch</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39626.html">Georg Moser</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39627.html">Berry Schoenmakers</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39628.html">Florian Zuleger</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Eindhoven, Netherlands</div>
@@ -1220,7 +1226,7 @@ More specifically, we extend the work on the ATLAS system by Leutgeb et al., whi
                             <td>
                                 <div class="title">Polynomial Invariant Generation for Floating-Point Programs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1159">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39629.html">Xuran Cai</a><sup>1</sup>, <a class="person" href="person39630.html">Liqian Chen</a><sup>2</sup>, <a class="person" href="person39631.html">Hongfei Fu</a><sup>3</sup>                                </div>
+<a class="person" href="person39629.html">Xuran Cai</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39630.html">Liqian Chen</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39631.html">Hongfei Fu</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
                                 <div class="affiliation_item"><sup>2</sup> National University of Defense Technology</div>
@@ -1236,7 +1242,7 @@ More specifically, we extend the work on the ATLAS system by Leutgeb et al., whi
                             <td>
                                 <div class="title">Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions <a class="abstract_link" href="CAV-2026-07-28.html#talk:1160">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39632.html">S. Akshay</a><sup>1</sup>, <a class="person" href="person39234.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person39634.html">Soroush Farokhnia</a><sup>3</sup>, <a class="person" href="person39635.html">Amir Goharshady</a><sup>4</sup>, <a class="person" href="person39636.html">Harshit Jitendra Motwani</a><sup>5</sup>, <a class="person" href="person39637.html">Đorđe Žikelić</a><sup>6</sup>                                </div>
+<a class="person" href="person39632.html">S. Akshay</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39234.html">Supratik Chakraborty</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39634.html">Soroush Farokhnia</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39635.html">Amir Goharshady</a><sup>4</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39636.html">Harshit Jitendra Motwani</a><sup>5</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39637.html">Đorđe Žikelić</a><sup>6</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology Bombay</div>
                                 <div class="affiliation_item"><sup>2</sup> IIT Bombay</div>
@@ -1271,7 +1277,7 @@ including a commercial-grade tool.</p>
                             <td>
                                 <div class="title">Incremental Inference for Probabilistic Datalog <a class="abstract_link" href="CAV-2026-07-28.html#talk:1161">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39638.html">Xuyang Li</a><sup>1</sup>, <a class="person" href="person39639.html">Weiyi Chen</a><sup>1</sup>, <a class="person" href="person39640.html">Isil Dillig</a><sup>2</sup>, <a class="person" href="person39641.html">Jingbo Wang</a><sup>1</sup>                                </div>
+<a class="person" href="person39638.html">Xuyang Li</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39639.html">Weiyi Chen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39640.html">Isil Dillig</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39641.html">Jingbo Wang</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Purdue University</div>
                                 <div class="affiliation_item"><sup>2</sup> UT Austin</div>
@@ -1286,7 +1292,7 @@ including a commercial-grade tool.</p>
                             <td>
                                 <div class="title">Automatic Detection of Reference Counting Bugs in Linux Kernel Drivers (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-28.html#talk:1162">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39642.html">Joe Hattori</a><sup>1</sup>, <a class="person" href="person39643.html">Naoki Kobayashi</a><sup>1</sup>, <a class="person" href="person39644.html">Ken Sakayori</a><sup>1</sup>                                </div>
+<a class="person" href="person39642.html">Joe Hattori</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39643.html">Naoki Kobayashi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39644.html">Ken Sakayori</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The University of Tokyo</div>
                                 </div>
@@ -1326,7 +1332,7 @@ submitted patches to the Linux kernel, and 45 of them were merged.</p>
                             <td>
                                 <div class="title">Efficient Homomorphic Encryption-Based CNN Batch Inference Using Channel-Interleaved Packing with Small Rotation Key Set <a class="abstract_link" href="CSF-2026-07-28.html#talk:235">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39967.html">Haun-Chih Wang</a><sup>1</sup>, <a class="person" href="person39968.html">Ja-Ling Wu</a><sup>1</sup>                                </div>
+<a class="person" href="person39967.html">Haun-Chih Wang</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39968.html">Ja-Ling Wu</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National Taiwan University</div>
                                 </div>
@@ -1344,7 +1350,7 @@ Experimental results demonstrate the superior efficiency of our method compared 
                             <td>
                                 <div class="title">Towards Strong Certified Defense with Universal Asymmetric Randomization <a class="abstract_link" href="CSF-2026-07-28.html#talk:236">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39969.html">Hanbin Hong</a><sup>1</sup>, <a class="person" href="person39970.html">Ali Payani</a><sup>2</sup>, <a class="person" href="person39971.html">Ashish Kundu</a><sup>2</sup>, <a class="person" href="person39972.html">Binghui Wang</a><sup>3</sup>, <a class="person" href="person39973.html">Yuan Hong</a><sup>1</sup>                                </div>
+<a class="person" href="person39969.html">Hanbin Hong</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39970.html">Ali Payani</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39971.html">Ashish Kundu</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39972.html">Binghui Wang</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39973.html">Yuan Hong</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Connecticut</div>
                                 <div class="affiliation_item"><sup>2</sup> Cisco</div>
@@ -1360,7 +1366,7 @@ Experimental results demonstrate the superior efficiency of our method compared 
                             <td>
                                 <div class="title">LAP$_2$: Revisiting Laplace DP-SGD for High Dimensions via Majorization Theory <a class="abstract_link" href="CSF-2026-07-28.html#talk:237">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39974.html">Meisam Mohammady</a><sup>1</sup>, <a class="person" href="person39975.html">Qin Yang</a><sup>2</sup>, <a class="person" href="person39976.html">Nicholas Stout</a><sup>1</sup>, <a class="person" href="person39977.html">Ayesha Samreen</a><sup>1</sup>, <a class="person" href="person39978.html">Han Wang</a><sup>3</sup>, <a class="person" href="person39979.html">Christopher J Quinn</a><sup>1</sup>, <a class="person" href="person39973.html">Yuan Hong</a><sup>2</sup>                                </div>
+<a class="person" href="person39974.html">Meisam Mohammady</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39975.html">Qin Yang</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39976.html">Nicholas Stout</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39977.html">Ayesha Samreen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39978.html">Han Wang</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39979.html">Christopher J Quinn</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39973.html">Yuan Hong</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Iowa State University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Connecticut</div>
@@ -1395,7 +1401,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">An Applicative Multiset Path Order <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1276">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person40751.html">Teppei Tanaka</a><sup>1</sup>, <a class="person" href="person40752.html">Wataru Yachi</a><sup>1</sup>                                </div>
+<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40751.html">Teppei Tanaka</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40752.html">Wataru Yachi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JAIST</div>
                                 </div>
@@ -1409,7 +1415,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">The ARI Infrastructure for Automated Confluence Analysis <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1277">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person40679.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person40305.html">René Thiemann</a><sup>2</sup>                                </div>
+<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40679.html">Aart Middeldorp</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40305.html">René Thiemann</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JAIST</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
@@ -1441,7 +1447,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">A Lean Tactic for Normalizing Expressions in an Algebra over a Ring (Short Paper) <a class="abstract_link" href="ITP-2026-07-28.html#talk:1295">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40922.html">Arend Mellendijk</a><sup>1</sup>                                </div>
+<a class="person" href="person40922.html">Arend Mellendijk</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Bonn</div>
                                 </div>
@@ -1455,7 +1461,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">Lean on Vampire Proofs (Short Paper) <a class="abstract_link" href="ITP-2026-07-28.html#talk:1296">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40923.html">Jonas Bodingbauer</a><sup>1</sup>, <a class="person" href="person40924.html">Marton Hajdu</a><sup>1</sup>, <a class="person" href="person40925.html">Laura Kovacs</a><sup>1</sup>, <a class="person" href="person40926.html">Axel Polaczek</a><sup>1</sup>, <a class="person" href="person40927.html">Michael Rawson</a><sup>2</sup>                                </div>
+<a class="person" href="person40923.html">Jonas Bodingbauer</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40924.html">Marton Hajdu</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40925.html">Laura Kovacs</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40926.html">Axel Polaczek</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40927.html">Michael Rawson</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Southampton</div>
@@ -1470,7 +1476,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">TableauxRocq: A Deep Embedding of Free-Variable Tableaux in Rocq <a class="abstract_link" href="ITP-2026-07-28.html#talk:1297">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40928.html">Johann Rosain</a><sup>1</sup>, <a class="person" href="person40692.html">Julie Cailler</a><sup>2</sup>                                </div>
+<a class="person" href="person40928.html">Johann Rosain</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40692.html">Julie Cailler</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ENS de Lyon</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Lorraine, CNRS, Inria, LORIA, Nancy, France</div>
@@ -1497,7 +1503,7 @@ Skolemization-related optimizations are present in the proof.</p>
                             <td>
                                 <div class="title">Faster Verified Real Root Isolation with Descartes' Rule of Signs (Short Paper) <a class="abstract_link" href="ITP-2026-07-28.html#talk:1298">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40930.html">Aeacus Sheng</a><sup>1</sup>, <a class="person" href="person40931.html">Wenda Li</a><sup>1</sup>, <a class="person" href="person40932.html">Paul Jackson</a><sup>1</sup>                                </div>
+<a class="person" href="person40930.html">Aeacus Sheng</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40931.html">Wenda Li</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40932.html">Paul Jackson</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
                                 </div>
@@ -1578,6 +1584,6 @@ We take an initial step toward efficient verified real root isolation by formall
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

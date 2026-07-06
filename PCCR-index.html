@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — PCCR — Program</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -132,6 +132,12 @@
                     <a class="program_days" href="PCCR-2026-07-25.html">Saturday, 25 July 2026</a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Friday, 24 July 2026</div>
 
                 <div class="session" id="session:1454">
@@ -179,7 +185,7 @@
                             <td>
                                 <div class="title">tba <a class="abstract_link" href="PCCR-2026-07-24.html#talk:895">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41338.html">George Osipov</a><sup>1</sup>                                </div>
+<a class="person" href="person41338.html">George Osipov</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Royal Holloway, University of London</div>
                                 </div>
@@ -227,7 +233,7 @@
                             <td>
                                 <div class="title">Parameterized Hardness of Zonotope Containment and Neural Network Verification <a class="abstract_link" href="PCCR-2026-07-24.html#talk:896">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42278.html">Moritz Stargalla</a><sup>1</sup>                                </div>
+<a class="person" href="person42278.html">Moritz Stargalla</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Technology Nuremberg</div>
                                 </div>
@@ -238,7 +244,7 @@
                             <td>
                                 <div class="title">Non-Clashing Teaching in Graphs <a class="abstract_link" href="PCCR-2026-07-24.html#talk:897">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42279.html">Liana Khazaliya</a><sup>1</sup>, <a class="person" href="person42280.html">Fionn Mc Inerney</a><sup>2</sup>, <a class="person" href="person42281.html">Sujoy Bhore</a><sup>3</sup>                                </div>
+<a class="person" href="person42279.html">Liana Khazaliya</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42280.html">Fionn Mc Inerney</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42281.html">Sujoy Bhore</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 <div class="affiliation_item"><sup>2</sup> Telefonica</div>
@@ -251,7 +257,7 @@
                             <td>
                                 <div class="title">An Optimal Algorithm for Fair Gerrymandering <a class="abstract_link" href="PCCR-2026-07-24.html#talk:898">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42282.html">Kevin Kurien Alex</a><sup>1</sup>, <a class="person" href="person42283.html">Rajesh Chitnis</a><sup>1</sup>                                </div>
+<a class="person" href="person42282.html">Kevin Kurien Alex</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42283.html">Rajesh Chitnis</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Birmingham</div>
                                 </div>
@@ -299,7 +305,7 @@
                             <td>
                                 <div class="title">tba <a class="abstract_link" href="PCCR-2026-07-24.html#talk:899">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42284.html">Roohani Sharma</a><sup>1</sup>                                </div>
+<a class="person" href="person42284.html">Roohani Sharma</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institute for Basic Science, Daejeon, South Korea</div>
                                 </div>
@@ -332,7 +338,7 @@
                             <td>
                                 <div class="title">tba <a class="abstract_link" href="PCCR-2026-07-24.html#talk:900">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41614.html">Sebastian Siebertz</a><sup>1</sup>                                </div>
+<a class="person" href="person41614.html">Sebastian Siebertz</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Bremen</div>
                                 </div>
@@ -380,7 +386,7 @@
                             <td>
                                 <div class="title">tba <a class="abstract_link" href="PCCR-2026-07-24.html#talk:901">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41911.html">Johannes Fichte</a><sup>1</sup>                                </div>
+<a class="person" href="person41911.html">Johannes Fichte</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Linköping University</div>
                                 </div>
@@ -415,7 +421,7 @@
                             <td>
                                 <div class="title">tba <a class="abstract_link" href="PCCR-2026-07-25.html#talk:902">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41712.html">Daniel Neuen</a><sup>1</sup>                                </div>
+<a class="person" href="person41712.html">Daniel Neuen</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Dresden</div>
                                 </div>
@@ -463,7 +469,7 @@
                             <td>
                                 <div class="title">Eliminating Majority Illusion in Social Networks <a class="abstract_link" href="PCCR-2026-07-25.html#talk:903">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42288.html">Pankaj Kumar</a><sup>1</sup>                                </div>
+<a class="person" href="person42288.html">Pankaj Kumar</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Birmingham</div>
                                 </div>
@@ -474,7 +480,7 @@
                             <td>
                                 <div class="title">Gateways to Tractability for Satisfiability in Pearl's Causal Hierarchy <a class="abstract_link" href="PCCR-2026-07-25.html#talk:904">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42289.html">Robert Ganian</a><sup>1</sup>, <a class="person" href="person42290.html">Marlene Gründel</a><sup>1</sup>, <a class="person" href="person42291.html">Simon Wietheger</a><sup>1</sup>                                </div>
+<a class="person" href="person42289.html">Robert Ganian</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42290.html">Marlene Gründel</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42291.html">Simon Wietheger</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -485,7 +491,7 @@
                             <td>
                                 <div class="title">Width Parameters for Flow Decompositions on DAGs <a class="abstract_link" href="PCCR-2026-07-25.html#talk:905">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42292.html">Andreas Grigorjew</a><sup>1</sup>                                </div>
+<a class="person" href="person42292.html">Andreas Grigorjew</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Warsaw</div>
                                 </div>
@@ -533,7 +539,7 @@
                             <td>
                                 <div class="title">Logic-Based Explainable AI <a class="abstract_link" href="PCCR-2026-07-25.html#talk:906">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41184.html">Joao Marques-Silva</a><sup>1</sup>                                </div>
+<a class="person" href="person41184.html">Joao Marques-Silva</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ICREA & University of Lleida</div>
                                 </div>
@@ -566,7 +572,7 @@
                             <td>
                                 <div class="title">tba <a class="abstract_link" href="PCCR-2026-07-25.html#talk:907">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42294.html">Robert Ganian</a><sup>1</sup>                                </div>
+<a class="person" href="person42294.html">Robert Ganian</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -628,6 +634,6 @@
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

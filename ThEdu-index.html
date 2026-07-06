@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — ThEdu — Program</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -131,6 +131,12 @@
                     <a class="program_days" href="ThEdu-2026-07-19.html">Sunday, 19 July 2026</a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Sunday, 19 July 2026</div>
 
                 <div class="session" id="session:1597">
@@ -158,7 +164,7 @@
                             <td>
                                 <div class="title">Isabelle/jEdit — a Generic Frontend for Formal Mathematics <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:974">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42860.html">Walther Neuper</a><sup>1</sup>                                </div>
+<a class="person" href="person42860.html">Walther Neuper</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JKU University Linz</div>
                                 </div>
@@ -169,7 +175,7 @@
                             <td>
                                 <div class="title">MiniHOL: A minimal object logic for teaching Isabelle/HOL’s foundations <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:975">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42861.html">Terru Stübinger</a><sup>1</sup>, <a class="person" href="person42862.html">Henriette Färber</a><sup>1</sup>                                </div>
+<a class="person" href="person42861.html">Terru Stübinger</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42862.html">Henriette Färber</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
                                 </div>
@@ -180,7 +186,7 @@
                             <td>
                                 <div class="title">CoreCalc: A Core Sequent Calculus Tool <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:976">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40823.html">Jørgen Villadsen</a><sup>1</sup>                                </div>
+<a class="person" href="person40823.html">Jørgen Villadsen</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 </div>
@@ -228,7 +234,7 @@
                             <td>
                                 <div class="title">Addressing, with the concourse of CAS, diverse open issues dealing with the manifold and subtle concept of geometric locus <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:977">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42864.html">Rosario Rubio</a><sup>1</sup>, <a class="person" href="person42865.html">Tomás Recio</a><sup>1</sup>, <a class="person" href="person42866.html">María Pilar Vélez Melón</a><sup>1</sup>                                </div>
+<a class="person" href="person42864.html">Rosario Rubio</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42865.html">Tomás Recio</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42866.html">María Pilar Vélez Melón</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universidad Nebrija</div>
                                 </div>
@@ -239,7 +245,7 @@
                             <td>
                                 <div class="title">Teaching Isabelle to Secondary-School Students: A Case Study <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:978">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42867.html">Daniel Luckhardt</a><sup>1</sup>, <a class="person" href="person42868.html">Paul Baumgartner</a><sup>2</sup>                                </div>
+<a class="person" href="person42867.html">Daniel Luckhardt</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42868.html">Paul Baumgartner</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> None</div>
                                 <div class="affiliation_item"><sup>2</sup> Gymnasium Mariano-Josephinum</div>
@@ -288,7 +294,7 @@
                             <td>
                                 <div class="title">The Educational Proof Assistant Waterproof in an Introductory Proof Course: Proof Construction and Learning Processes <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:979">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42869.html">Pim Otte</a><sup>1</sup>, <a class="person" href="person42870.html">Rogier Bos</a><sup>1</sup>, <a class="person" href="person42871.html">Johan Commelin</a><sup>1</sup>, <a class="person" href="person42872.html">Jim Portegies</a><sup>2</sup>                                </div>
+<a class="person" href="person42869.html">Pim Otte</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42870.html">Rogier Bos</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42871.html">Johan Commelin</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42872.html">Jim Portegies</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Utrecht University</div>
                                 <div class="affiliation_item"><sup>2</sup> Eindhoven University Of Technology</div>
@@ -300,7 +306,7 @@
                             <td>
                                 <div class="title">Waterproof River: An AI Tutor for Waterproof <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:980">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42873.html">Dick Arends</a><sup>1</sup>, <a class="person" href="person42869.html">Pim Otte</a><sup>2</sup>, <a class="person" href="person42875.html">Mikołaj Pujanek</a><sup>3</sup>, <a class="person" href="person42872.html">Jim Portegies</a><sup>3</sup>                                </div>
+<a class="person" href="person42873.html">Dick Arends</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42869.html">Pim Otte</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42875.html">Mikołaj Pujanek</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42872.html">Jim Portegies</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Radboud University Nijmegen</div>
                                 <div class="affiliation_item"><sup>2</sup> Eindhoven University Of Technology & Utrecht University</div>
@@ -313,7 +319,7 @@
                             <td>
                                 <div class="title">A Readable Formalization of Propositional Logic in Lean with Yalep <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:981">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42877.html">Sébastien Lahaye</a><sup>1</sup>                                </div>
+<a class="person" href="person42877.html">Sébastien Lahaye</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> IRIF</div>
                                 </div>
@@ -361,7 +367,7 @@
                             <td>
                                 <div class="title">Complete, Transparent & Interactive Systems for Highschool Mathematics <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:982">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42860.html">Walther Neuper</a><sup>1</sup>                                </div>
+<a class="person" href="person42860.html">Walther Neuper</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JKU University Linz</div>
                                 </div>
@@ -372,7 +378,7 @@
                             <td>
                                 <div class="title">Rocq Game: A Gamified Web-Based Environment for Interactive Learning with a Proof Assistant <a class="abstract_link" href="ThEdu-2026-07-19.html#talk:983">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42879.html">Khaled Jamal Suliman</a><sup>1</sup>, <a class="person" href="person42880.html">Ján Perháč</a><sup>1</sup>, <a class="person" href="person42881.html">Samuel Novotný</a><sup>1</sup>                                </div>
+<a class="person" href="person42879.html">Khaled Jamal Suliman</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42880.html">Ján Perháč</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42881.html">Samuel Novotný</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Košice</div>
                                 </div>
@@ -419,6 +425,6 @@
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

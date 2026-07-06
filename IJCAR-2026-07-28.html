@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — IJCAR — Program for Tuesday, 28 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -133,6 +133,12 @@
                     <a class="program_days" href="IJCAR-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Tuesday, 28 July 2026</div>
 
                 <div class="session interval_session" id="session:803">
@@ -170,7 +176,7 @@
                             <td>
                                 <div class="title">Finite Model Finding in First-order Modal Logics <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1272">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40723.html">Happy Khairunnisa Sariyanto</a><sup>1</sup>, <a class="person" href="person40724.html">Alexander Steen</a><sup>1</sup>, <a class="person" href="person40676.html">Geoff Sutcliffe</a><sup>2</sup>                                </div>
+<a class="person" href="person40723.html">Happy Khairunnisa Sariyanto</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40724.html">Alexander Steen</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40676.html">Geoff Sutcliffe</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Greifswald</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Miami</div>
@@ -197,7 +203,7 @@ Up to the authors' knowledge, MoMo is the first model finder for first-order mod
                             <td>
                                 <div class="title">Completeness of Synthesis under Realizability Assumptions using Superposition <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1273">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40726.html">Márton Hajdu</a><sup>1</sup>, <a class="person" href="person40727.html">Petra Hozzová</a><sup>1</sup>, <a class="person" href="person40315.html">Laura Kovács</a><sup>1</sup>, <a class="person" href="person40729.html">Eva Wagner</a><sup>1</sup>                                </div>
+<a class="person" href="person40726.html">Márton Hajdu</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40727.html">Petra Hozzová</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40315.html">Laura Kovács</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40729.html">Eva Wagner</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -213,7 +219,7 @@ We present cases where the calculus fails and refine it to solve them. We prove 
                             <td>
                                 <div class="title">Hardware Model Checking Certification with Certifaiger and Cerbtora <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1274">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39610.html">Nils Froleyks</a><sup>1</sup>, <a class="person" href="person39611.html">Emily Yu</a><sup>2</sup>                                </div>
+<a class="person" href="person39610.html">Nils Froleyks</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39611.html">Emily Yu</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
                                 <div class="affiliation_item"><sup>2</sup> Leiden University</div>
@@ -228,7 +234,7 @@ We present cases where the calculus fails and refine it to solve them. We prove 
                             <td>
                                 <div class="title">Pgeon: Generating Tableau-Based Provers from Declarative Specifications of Logical Calculi <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1275">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40732.html">Romain Sidhoum</a><sup>1</sup>, <a class="person" href="person40733.html">Simon Robillard</a><sup>1</sup>, <a class="person" href="person40734.html">David Delahaye</a><sup>1</sup>                                </div>
+<a class="person" href="person40732.html">Romain Sidhoum</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40733.html">Simon Robillard</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40734.html">David Delahaye</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LIRMM, Univ Montpellier, CNRS, Montpellier, France</div>
                                 </div>
@@ -279,7 +285,7 @@ We describe the design of the specification language, the execution model of the
                             <td>
                                 <div class="title">Tao’s Equational Proof Challenge Accepted <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:352">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40735.html">Lydia Kondylidou</a><sup>1</sup>, <a class="person" href="person40736.html">Jasmin Blanchette</a><sup>1</sup>, <a class="person" href="person40737.html">Marijn Heule</a><sup>2</sup>                                </div>
+<a class="person" href="person40735.html">Lydia Kondylidou</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40736.html">Jasmin Blanchette</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40737.html">Marijn Heule</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Ludwig-Maximilians-Universität München</div>
                                 <div class="affiliation_item"><sup>2</sup> Carnegie Mellon University</div>
@@ -294,7 +300,7 @@ We describe the design of the specification language, the execution model of the
                             <td>
                                 <div class="title">Generating Theorems by Generating Proof Structures <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:353">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39732.html">Christoph Wernhard</a><sup>1</sup>                                </div>
+<a class="person" href="person39732.html">Christoph Wernhard</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
                                 </div>
@@ -308,7 +314,7 @@ We describe the design of the specification language, the execution model of the
                             <td>
                                 <div class="title">Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:354">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40739.html">Emanuele Civini</a><sup>1</sup>, <a class="person" href="person40740.html">Gabriele Masina</a><sup>1</sup>, <a class="person" href="person40741.html">Giuseppe Spallitta</a><sup>2</sup>, <a class="person" href="person40742.html">Roberto Sebastiani</a><sup>1</sup>                                </div>
+<a class="person" href="person40739.html">Emanuele Civini</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40740.html">Gabriele Masina</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40741.html">Giuseppe Spallitta</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40742.html">Roberto Sebastiani</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Trento</div>
                                 <div class="affiliation_item"><sup>2</sup> Rice University</div>
@@ -326,7 +332,7 @@ In this paper, we present theory-agnostic methods for enumerating complete sets 
                             <td>
                                 <div class="title">A Superposition Calculus for Separation Logic <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:355">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40743.html">Tanguy Bozec</a><sup>1</sup>, <a class="person" href="person40744.html">Nicolas Peltier</a><sup>2</sup>                                </div>
+<a class="person" href="person40743.html">Tanguy Bozec</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40744.html">Nicolas Peltier</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LMU Munich</div>
                                 <div class="affiliation_item"><sup>2</sup> CNRS LIG</div>
@@ -341,7 +347,7 @@ In this paper, we present theory-agnostic methods for enumerating complete sets 
                             <td>
                                 <div class="title">Twitch: Learning Abstractions for Equational Theorem Proving <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:356">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40745.html">Guy Axelrod</a><sup>1</sup>, <a class="person" href="person40746.html">Moa Johansson</a><sup>1</sup>, <a class="person" href="person40747.html">Nicholas Smallbone</a><sup>1</sup>                                </div>
+<a class="person" href="person40745.html">Guy Axelrod</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40746.html">Moa Johansson</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40747.html">Nicholas Smallbone</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Chalmers University of Technology</div>
                                 </div>
@@ -357,7 +363,7 @@ tasks. Twitch can produce abstractions in two ways: (1) from a partial, failed p
                             <td>
                                 <div class="title">On Constructing Most General Solutions for Parametric Constraints <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:357">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40662.html">Viorica Sofronie-Stokkermans</a><sup>1</sup>                                </div>
+<a class="person" href="person40662.html">Viorica Sofronie-Stokkermans</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Koblenz</div>
                                 </div>
@@ -416,7 +422,7 @@ varieties. We illustrate the ideas on examples.</p>
                             <td>
                                 <div class="title">An Applicative Multiset Path Order <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1276">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person40751.html">Teppei Tanaka</a><sup>1</sup>, <a class="person" href="person40752.html">Wataru Yachi</a><sup>1</sup>                                </div>
+<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40751.html">Teppei Tanaka</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40752.html">Wataru Yachi</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JAIST</div>
                                 </div>
@@ -430,7 +436,7 @@ varieties. We illustrate the ideas on examples.</p>
                             <td>
                                 <div class="title">The ARI Infrastructure for Automated Confluence Analysis <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1277">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person40679.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person40305.html">René Thiemann</a><sup>2</sup>                                </div>
+<a class="person" href="person40749.html">Nao Hirokawa</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40679.html">Aart Middeldorp</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40750.html">Teppei Saito</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40305.html">René Thiemann</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JAIST</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
@@ -481,6 +487,6 @@ varieties. We illustrate the ideas on examples.</p>
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

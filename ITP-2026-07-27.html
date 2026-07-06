@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — ITP — Program for Monday, 27 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -133,6 +133,12 @@
                     <a class="program_days" href="ITP-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Monday, 27 July 2026</div>
 
                 <div class="session" id="session:823">
@@ -185,7 +191,7 @@
                             <td>
                                 <div class="title">Automated Verification of Robot Software Models with Assume-Guarantee Reasoning in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-27.html#talk:379">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40884.html">Fang Yan</a><sup>1</sup>, <a class="person" href="person40885.html">Benoît Ballenghien</a><sup>2</sup>, <a class="person" href="person40886.html">Simon Foster</a><sup>1</sup>, <a class="person" href="person40887.html">Ana Cavalcanti</a><sup>1</sup>, <a class="person" href="person40888.html">James Baxter</a><sup>1</sup>, <a class="person" href="person40889.html">Burkhart Wolff</a><sup>2</sup>                                </div>
+<a class="person" href="person40884.html">Fang Yan</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40885.html">Benoît Ballenghien</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40886.html">Simon Foster</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40887.html">Ana Cavalcanti</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40888.html">James Baxter</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40889.html">Burkhart Wolff</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of York</div>
                                 <div class="affiliation_item"><sup>2</sup> Université Paris-Saclay</div>
@@ -200,7 +206,7 @@
                             <td>
                                 <div class="title">Securing the Foundations of an Intermediate Language for Probabilistic Program Verification <a class="abstract_link" href="ITP-2026-07-27.html#talk:380">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40890.html">Oliver Emil Bøving</a><sup>1</sup>, <a class="person" href="person39721.html">Christoph Matheja</a><sup>2</sup>                                </div>
+<a class="person" href="person40890.html">Oliver Emil Bøving</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39721.html">Christoph Matheja</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oldenburg and Technical University of Denmark</div>
@@ -253,7 +259,7 @@ All of our results have been formalized in the interactive theorem prover Lean o
                             <td>
                                 <div class="title">ProofWala: A Framework for Multilingual Proof Data Synthesis and Theorem-Proving <a class="abstract_link" href="ITP-2026-07-27.html#talk:381">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40892.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person40893.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person40894.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person40895.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
+<a class="person" href="person40892.html">Amitayush Thakur</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40893.html">George Tsoukalas</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40894.html">Greg Durrett</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40895.html">Swarat Chaudhuri</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Texas at Austin</div>
                                 <div class="affiliation_item"><sup>2</sup> New York University</div>
@@ -270,7 +276,7 @@ We open-source the full framework, including the parallel proof search module, t
                             <td>
                                 <div class="title">Feedback & Synthesis in LLM-Assisted Termination Proofs <a class="abstract_link" href="ITP-2026-07-27.html#talk:382">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40896.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person40897.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
+<a class="person" href="person40896.html">Zeke Medley</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40897.html">Panagiotis Manolios</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Northeastern University</div>
                                 </div>
@@ -296,7 +302,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">LeanArchitect: Automating Blueprint Generation for Humans and AI <a class="abstract_link" href="ITP-2026-07-27.html#talk:383">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40898.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person40899.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person40900.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person40901.html">Sean Welleck</a><sup>1</sup>                                </div>
+<a class="person" href="person40898.html">Thomas Zhu</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40899.html">Pietro Monticone</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40900.html">Jeremy Avigad</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40901.html">Sean Welleck</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Trento</div>
@@ -343,7 +349,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Formalizing the Bruck-Ryser-Chowla Theorem: Combinatorial Design Theory in Lean <a class="abstract_link" href="ITP-2026-07-27.html#talk:1291">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40902.html">Eric Jonathan Wang</a><sup>1</sup>, <a class="person" href="person40903.html">Elif Uskuplu</a><sup>2</sup>                                </div>
+<a class="person" href="person40902.html">Eric Jonathan Wang</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40903.html">Elif Uskuplu</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> Indiana University Bloomington</div>
@@ -358,7 +364,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Three Roads to de Finetti's Theorem in Lean: Short Paper <a class="abstract_link" href="ITP-2026-07-27.html#talk:1292">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40904.html">Cameron Freer</a><sup>1</sup>                                </div>
+<a class="person" href="person40904.html">Cameron Freer</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Massachusetts Institute of Technology</div>
                                 </div>
@@ -372,7 +378,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Formal Primal-Dual Algorithm Analysis (Short Paper) <a class="abstract_link" href="ITP-2026-07-27.html#talk:1293">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40905.html">Thomas Ammer</a><sup>1</sup>, <a class="person" href="person40858.html">Mohammad Abdulaziz</a><sup>1</sup>, <a class="person" href="person40907.html">Christoph Madlener</a>                                </div>
+<a class="person" href="person40905.html">Thomas Ammer</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40858.html">Mohammad Abdulaziz</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40907.html">Christoph Madlener</a><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> King's College London</div>
                                 </div>
@@ -387,7 +393,7 @@ We discuss a number of example formalisations from the theory of matching algori
                             <td>
                                 <div class="title">130k Lines of Formal Topology in Two Weeks: Simple and Cheap Autoformalization for Everyone? (Short Paper) <a class="abstract_link" href="ITP-2026-07-27.html#talk:1294">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40829.html">JOSEF URBAN</a><sup>1</sup>                                </div>
+<a class="person" href="person40829.html">JOSEF URBAN</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> AI4REASON and University of Gothenburg</div>
                                 </div>
@@ -447,6 +453,6 @@ We discuss a number of example formalisations from the theory of matching algori
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

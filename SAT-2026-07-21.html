@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — SAT — Program for Tuesday, 21 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -133,6 +133,12 @@
                     <a class="program_days" href="SAT-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Tuesday, 21 July 2026</div>
 
                 <div class="session" id="session:979">
@@ -185,7 +191,7 @@
                             <td>
                                 <div class="title">Beyond Core-Guided MaxSAT <a class="abstract_link" href="SAT-2026-07-21.html#talk:1474">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42244.html">Ilario Bonacina</a><sup>1</sup>, <a class="person" href="person42252.html">Jordi Levy</a><sup>2</sup>, <a class="person" href="person42253.html">Ion Mikel Liberal</a><sup>2</sup>                                </div>
+<a class="person" href="person42244.html">Ilario Bonacina</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42252.html">Jordi Levy</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42253.html">Ion Mikel Liberal</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> UPC</div>
                                 <div class="affiliation_item"><sup>2</sup> IIIA-CSIC</div>
@@ -204,7 +210,7 @@ We evaluate and compare our solvers with OLL on instances from the MaxSAT evalua
                             <td>
                                 <div class="title">Scuttle: A System for Multi-Objective MaxSAT <a class="abstract_link" href="SAT-2026-07-21.html#talk:1475">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42596.html">Christoph Jabs</a><sup>1</sup>, <a class="person" href="person42597.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person41269.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+<a class="person" href="person42596.html">Christoph Jabs</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42597.html">Jeremias Berg</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41269.html">Matti Järvisalo</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
                                 </div>
@@ -218,7 +224,7 @@ We evaluate and compare our solvers with OLL on instances from the MaxSAT evalua
                             <td>
                                 <div class="title">Hermax: A Unified MaxSAT library <a class="abstract_link" href="SAT-2026-07-21.html#talk:1476">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42599.html">Josep Maria Salvia Hornos</a><sup>1</sup>, <a class="person" href="person42600.html">Cèsar Fernández Camón</a><sup>1</sup>, <a class="person" href="person42601.html">Carles Mateu Piñol</a><sup>1</sup>                                </div>
+<a class="person" href="person42599.html">Josep Maria Salvia Hornos</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42600.html">Cèsar Fernández Camón</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42601.html">Carles Mateu Piñol</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Lleida</div>
                                 </div>
@@ -232,7 +238,7 @@ We evaluate and compare our solvers with OLL on instances from the MaxSAT evalua
                             <td>
                                 <div class="title">HitPBO: An Implicit Hitting Set Solver for Pseudo-Boolean Optimization <a class="abstract_link" href="SAT-2026-07-21.html#talk:1477">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42602.html">Hannes Ihalainen</a><sup>1</sup>, <a class="person" href="person42603.html">Dieter Vandesande</a><sup>2</sup>, <a class="person" href="person42604.html">Andre Schidler</a><sup>3</sup>, <a class="person" href="person42597.html">Jeremias Berg</a><sup>1</sup>, <a class="person" href="person41269.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+<a class="person" href="person42602.html">Hannes Ihalainen</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42603.html">Dieter Vandesande</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42604.html">Andre Schidler</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42597.html">Jeremias Berg</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41269.html">Matti Järvisalo</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
                                 <div class="affiliation_item"><sup>2</sup> Vrije Universiteit Brussel, KU Leuven</div>
@@ -248,7 +254,7 @@ We evaluate and compare our solvers with OLL on instances from the MaxSAT evalua
                             <td>
                                 <div class="title">NLIPSat: Satisfiability-based Nonlinear Integer Programing Encoding Toolkit <a class="abstract_link" href="SAT-2026-07-21.html#talk:1478">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42607.html">Zhengling Yangli</a><sup>1</sup>, <a class="person" href="person42608.html">Zhifei Zheng</a><sup>2</sup>, <a class="person" href="person42609.html">Sami Cherif</a><sup>3</sup>, <a class="person" href="person42610.html">Rui Sá Shibasaki</a><sup>3</sup>, <a class="person" href="person42611.html">Chu-Min Li</a><sup>3</sup>                                </div>
+<a class="person" href="person42607.html">Zhengling Yangli</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42608.html">Zhifei Zheng</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42609.html">Sami Cherif</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42610.html">Rui Sá Shibasaki</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42611.html">Chu-Min Li</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Yunnan University</div>
                                 <div class="affiliation_item"><sup>2</sup> Gaoling School of AI, Renmin University of China</div>
@@ -296,7 +302,7 @@ We evaluate and compare our solvers with OLL on instances from the MaxSAT evalua
                             <td>
                                 <div class="title">Simplify, Order, Break, Repeat <a class="abstract_link" href="SAT-2026-07-21.html#talk:535">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42612.html">Markus Anders</a><sup>1</sup>, <a class="person" href="person40947.html">Cayden Codel</a><sup>2</sup>, <a class="person" href="person40761.html">Marijn J. H. Heule</a><sup>2</sup>                                </div>
+<a class="person" href="person42612.html">Markus Anders</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person40947.html">Cayden Codel</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40761.html">Marijn J. H. Heule</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RPTU Kaiserslautern-Landau</div>
                                 <div class="affiliation_item"><sup>2</sup> Carnegie Mellon University</div>
@@ -313,7 +319,7 @@ In this paper, we treat symmetry breaking not merely as a restriction mechanism,
                             <td>
                                 <div class="title">New Algorithms for Parity-SAT and Its Bounded-Occurrence Versions <a class="abstract_link" href="SAT-2026-07-21.html#talk:536">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42615.html">Sanjay Jain</a><sup>1</sup>, <a class="person" href="person42616.html">Junqiang Peng</a><sup>2</sup>, <a class="person" href="person42617.html">Frank Stephan</a><sup>3,1</sup>, <a class="person" href="person42618.html">Haoyun Tang</a><sup>1</sup>, <a class="person" href="person42619.html">Mingyu Xiao</a><sup>2</sup>                                </div>
+<a class="person" href="person42615.html">Sanjay Jain</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42616.html">Junqiang Peng</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42617.html">Frank Stephan</a><sup>3,1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42618.html">Haoyun Tang</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42619.html">Mingyu Xiao</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> School of Computing, National University of Singapore, Singapore</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Electronic Science and Technology of China, China</div>
@@ -350,7 +356,7 @@ All algorithms use only polynomial space. Notably, our running-time bounds are b
                             <td>
                                 <div class="title">The Compilability Thresholds of 2-CNF to OBDD <a class="abstract_link" href="SAT-2026-07-21.html#talk:537">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41032.html">Alexis de Colnet</a><sup>1</sup>, <a class="person" href="person39686.html">Alfons Laarman</a><sup>1</sup>, <a class="person" href="person42622.html">Joon Hyung Lee</a><sup>1</sup>                                </div>
+<a class="person" href="person41032.html">Alexis de Colnet</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39686.html">Alfons Laarman</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42622.html">Joon Hyung Lee</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Leiden University</div>
                                 </div>
@@ -364,7 +370,7 @@ All algorithms use only polynomial space. Notably, our running-time bounds are b
                             <td>
                                 <div class="title">A canonical generalization of OBDD <a class="abstract_link" href="SAT-2026-07-21.html#talk:538">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42623.html">Florent Capelli</a><sup>1</sup>, <a class="person" href="person42624.html">YooJung Choi</a><sup>2</sup>, <a class="person" href="person42625.html">Stefan Mengel</a><sup>3</sup>, <a class="person" href="person42626.html">Martin Munoz</a><sup>3</sup>, <a class="person" href="person42627.html">Guy Van den Broeck</a><sup>4</sup>                                </div>
+<a class="person" href="person42623.html">Florent Capelli</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42624.html">YooJung Choi</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42625.html">Stefan Mengel</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42626.html">Martin Munoz</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42627.html">Guy Van den Broeck</a><sup>4</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université d'Artois, CRIL</div>
                                 <div class="affiliation_item"><sup>2</sup> Arizona State University</div>
@@ -413,7 +419,7 @@ All algorithms use only polynomial space. Notably, our running-time bounds are b
                             <td>
                                 <div class="title">PASSAT: Deep Cooperation of Unit Propagation and Local Search in Incomplete SAT Solving <a class="abstract_link" href="SAT-2026-07-21.html#talk:1479">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42628.html">Mingming Jin</a><sup>1</sup>, <a class="person" href="person42629.html">Zhijie Kuang</a><sup>1</sup>, <a class="person" href="person42630.html">Jiongzhi Zheng</a><sup>2</sup>, <a class="person" href="person42631.html">Kun Mao</a><sup>2</sup>, <a class="person" href="person42632.html">Kun He</a><sup>1</sup>                                </div>
+<a class="person" href="person42628.html">Mingming Jin</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42629.html">Zhijie Kuang</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42630.html">Jiongzhi Zheng</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42631.html">Kun Mao</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42632.html">Kun He</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Huazhong University of Science and Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Huawei OptVerse Solver,China</div>
@@ -428,7 +434,7 @@ All algorithms use only polynomial space. Notably, our running-time bounds are b
                             <td>
                                 <div class="title">Generalizing CDCL with Graph Backtracking <a class="abstract_link" href="SAT-2026-07-21.html#talk:1480">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42633.html">Robin Coutelier</a><sup>1</sup>, <a class="person" href="person42634.html">Thomas Hader</a><sup>1</sup>, <a class="person" href="person40315.html">Laura Kovács</a><sup>1</sup>                                </div>
+<a class="person" href="person42633.html">Robin Coutelier</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42634.html">Thomas Hader</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40315.html">Laura Kovács</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -442,7 +448,7 @@ All algorithms use only polynomial space. Notably, our running-time bounds are b
                             <td>
                                 <div class="title">A Natively Parallel Proof Framework for Clause-Sharing SAT Solving <a class="abstract_link" href="SAT-2026-07-21.html#talk:1481">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42636.html">Ruben Götz</a><sup>1</sup>, <a class="person" href="person42637.html">Michael Dörr</a><sup>1</sup>, <a class="person" href="person39478.html">Dominik Schreiber</a><sup>1</sup>                                </div>
+<a class="person" href="person42636.html">Ruben Götz</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42637.html">Michael Dörr</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39478.html">Dominik Schreiber</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology (KIT)</div>
                                 </div>
@@ -456,7 +462,7 @@ All algorithms use only polynomial space. Notably, our running-time bounds are b
                             <td>
                                 <div class="title">CaDiCaL 3.0 <a class="abstract_link" href="SAT-2026-07-21.html#talk:1482">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42560.html">Florian Pollitt</a><sup>1</sup>, <a class="person" href="person42325.html">Mathias Fleury</a><sup>1</sup>, <a class="person" href="person42641.html">Katalin Fazekas</a><sup>2</sup>, <a class="person" href="person39610.html">Nils Froleyks</a><sup>3</sup>, <a class="person" href="person42324.html">André Schidler</a><sup>1</sup>, <a class="person" href="person39478.html">Dominik Schreiber</a><sup>4</sup>, <a class="person" href="person39613.html">Armin Biere</a><sup>1</sup>                                </div>
+<a class="person" href="person42560.html">Florian Pollitt</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42325.html">Mathias Fleury</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42641.html">Katalin Fazekas</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39610.html">Nils Froleyks</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42324.html">André Schidler</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39478.html">Dominik Schreiber</a><sup>4</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person39613.html">Armin Biere</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Freiburg</div>
                                 <div class="affiliation_item"><sup>2</sup> Vienna University of Technology</div>
@@ -473,7 +479,7 @@ All algorithms use only polynomial space. Notably, our running-time bounds are b
                             <td>
                                 <div class="title">Efficient Identification of Isomorphic SAT Instances <a class="abstract_link" href="SAT-2026-07-21.html#talk:1483">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42646.html">Frederick Gehm</a><sup>1</sup>, <a class="person" href="person42586.html">Ashlin Iser</a><sup>1</sup>                                </div>
+<a class="person" href="person42646.html">Frederick Gehm</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42586.html">Ashlin Iser</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KIT</div>
                                 </div>
@@ -521,6 +527,6 @@ When integrated into our benchmark toolset, the method eliminates false positive
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

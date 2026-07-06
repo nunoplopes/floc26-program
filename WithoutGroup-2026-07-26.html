@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Without Group — Program for Sunday, 26 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -133,6 +133,12 @@
                     <a class="program_days" href="WithoutGroup-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Sunday, 26 July 2026</div>
 
                 <div class="session" id="session:1002">
@@ -154,7 +160,7 @@
                             <td>
                                 <div class="title">The Lean Theorem Prover: Design, Evolution, and Impact <a class="abstract_link" href="WithoutGroup-2026-07-26.html#talk:551">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40687.html">Leonardo de Moura</a>                                </div>
+<a class="person" href="person40687.html">Leonardo de Moura</a><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Lean is an open-source theorem prover and dependently-typed programming language that has seen rapid adoption across mathematics, software verification, and AI research. Its Mathlib library is among the largest formalized mathematical developments in existence. Lean's design emphasizes extensibility: the system is implemented in Lean itself, and a powerful meta-programming framework enables users to build custom automation and domain-specific tools. This talk traces Lean's history from its origins in 2013 through four major rewrites to the present day, discusses the design decisions that shaped the system and the lessons learned along the way, and concludes with current priorities at the Lean Focused Research Organization.</p>
                                 </div>
@@ -195,6 +201,6 @@
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>

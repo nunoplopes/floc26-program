@@ -152,6 +152,24 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 #header #title { font-size: 22px; font-weight: bold; padding: 0; border: none; }
 #title { font-size: 22px; font-weight: bold; padding: 8px 0; border-bottom: 1px solid var(--color-border); }
 
+.header_fab {
+    position: absolute;
+    top: 20px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: var(--color-fab-bg);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 2px 8px var(--color-shadow);
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.header_fab:hover { transform: scale(1.1); background: var(--color-fab-bg-hover); box-shadow: 0 4px 12px var(--color-shadow); }
+#theme_toggle_btn { right: 72px; font-size: 20px; }
+#install_pwa_btn { right: 20px; }
+
 #main_menu { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--color-border-light); }
 #main_menu a { display: inline-block; padding: 8px 18px; font-size: 15px; font-weight: 600; background: var(--color-bg-menu); color: var(--color-link); text-decoration: none; border-radius: 4px; text-transform: uppercase; }
 #main_menu a.selected { background: var(--color-accent); color: var(--color-accent-contrast); }
@@ -168,6 +186,9 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .sticky_header { position: sticky; top: 0; z-index: 11; background: var(--color-bg); }
 .sticky_header #pagetitle { position: static; }
 .sticky_header .shortcuts { position: static; }
+
+.author_function_legend { font-size: 12px; color: var(--color-text-muted-2); margin: 0 0 14px 0; }
+.author_function_legend .author_function { margin: 0 2px 0 4px; }
 
 .days_line { margin: 6px 0 14px 0; }
 .days_line a { margin-right: 14px; color: var(--color-link); }
@@ -206,6 +227,7 @@ table.talks td.time { width: 60px; font-size: 12px; font-weight: bold; color: va
 .title .duration { display: inline-block; font-weight: normal; font-size: 11px; color: var(--color-tag-bg); background: var(--color-bg-menu); border-radius: 3px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
 .authors { font-size: 13px; color: var(--color-link); }
 .authors sup { font-size: 10px; }
+.authors sup.author_function { color: var(--color-accent); font-weight: bold; margin-left: 1px; cursor: help; }
 .affiliations { font-size: 12px; color: var(--color-text-muted-3); font-style: italic; margin-top: 2px; word-wrap: break-word; overflow-wrap: break-word; }
 .affiliation_item { display: inline; margin-right: 10px; }
 .affiliation_item sup { font-size: 10px; margin-right: 1px; font-style: normal; }

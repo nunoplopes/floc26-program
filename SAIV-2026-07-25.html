@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — SAIV — Program for Saturday, 25 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189547183474605" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -17,8 +17,8 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
-                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
-                <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
+                <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
             </div>
 
 
@@ -132,6 +132,12 @@
                     <a class="program_days" href="SAIV-index.html">all days<img class="day_icon" src="refresh.png" alt="" /></a>
                 </p>
 
+                <div class="author_function_legend">Legend:
+                    <sup class="author_function">P</sup> Presenter &middot;
+                    <sup class="author_function">1st</sup> First Author &middot;
+                    <sup class="author_function">C</sup> Co-Author
+                </div>
+
                 <div class="date">Saturday, 25 July 2026</div>
 
                 <div class="session" id="session:1517">
@@ -159,7 +165,7 @@
                             <td>
                                 <div class="title">Latent space navigation – interpretation, probing and steering <a class="abstract_link" href="SAIV-2026-07-25.html#talk:929">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42494.html">Lenka Tetková</a><sup>1</sup>                                </div>
+<a class="person" href="person42494.html">Lenka Tetková</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 </div>
@@ -170,7 +176,7 @@
                             <td>
                                 <div class="title">When Control Changes the Data: Safety under Interaction-Driven Distribution Shifts <a class="abstract_link" href="SAIV-2026-07-25.html#talk:930">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person39691.html">Lars Lindemann</a><sup>1</sup>                                </div>
+<a class="person" href="person39691.html">Lars Lindemann</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ETH Zurich</div>
                                 </div>
@@ -181,7 +187,7 @@
                             <td>
                                 <div class="title">Round-table discussion <a class="abstract_link" href="SAIV-2026-07-25.html#talk:931">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42494.html">Lenka Tetková</a><sup>1</sup>, <a class="person" href="person39691.html">Lars Lindemann</a><sup>2</sup>                                </div>
+<a class="person" href="person42494.html">Lenka Tetková</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person39691.html">Lars Lindemann</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 <div class="affiliation_item"><sup>2</sup> ETH Zurich</div>
@@ -230,7 +236,7 @@
                             <td>
                                 <div class="title">Certified Neural Approximations of Nonlinear Dynamics <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1467">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42498.html">Frederik Baymler Mathiesen</a><sup>1</sup>, <a class="person" href="person42499.html">Nikolaus Vertovec</a><sup>2</sup>, <a class="person" href="person42500.html">Francesco Fabiano</a><sup>2</sup>, <a class="person" href="person42501.html">Luca Laurenti</a><sup>1</sup>, <a class="person" href="person41464.html">Alessandro Abate</a><sup>2</sup>                                </div>
+<a class="person" href="person42498.html">Frederik Baymler Mathiesen</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42499.html">Nikolaus Vertovec</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42500.html">Francesco Fabiano</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42501.html">Luca Laurenti</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41464.html">Alessandro Abate</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
@@ -245,7 +251,7 @@
                             <td>
                                 <div class="title">Verification of LTL properties on Neural Networks for Chemical Process Monitoring <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1468">(abstract)</a> <span class="duration">7 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42503.html">Julien Girard-Satabin</a><sup>1</sup>, <a class="person" href="person42504.html">Simon Lutz</a><sup>2</sup>, <a class="person" href="person40712.html">Daniel Neider</a><sup>2</sup>                                </div>
+<a class="person" href="person42503.html">Julien Girard-Satabin</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42504.html">Simon Lutz</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40712.html">Daniel Neider</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Paris-Saclay, CEA, List, F-91120, Palaiseau, France</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Dortmund University</div>
@@ -267,7 +273,7 @@ We were able to successfully specify and verify most of the properties in a smal
                             <td>
                                 <div class="title">Vancomycert: A Certified Neuro-Symbolic Drug Delivery System (Case Study) <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1469">(abstract)</a> <span class="duration">7 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42506.html">Alistair Sirman</a><sup>1</sup>, <a class="person" href="person42507.html">Fleur Conway</a><sup>2</sup>, <a class="person" href="person42508.html">Jessica Ciupa</a><sup>2</sup>, <a class="person" href="person42509.html">Gusts Gustavs Grīnbergs</a><sup>3</sup>, <a class="person" href="person42510.html">Ekaterina Komendantskaya</a><sup>1</sup>, <a class="person" href="person42511.html">Alessandro Bruni</a><sup>3</sup>, <a class="person" href="person42512.html">Michael John Williams</a><sup>4</sup>, <a class="person" href="person42513.html">Vaishak Belle</a><sup>2</sup>, <a class="person" href="person42514.html">Thai Son Hoang</a><sup>1</sup>, <a class="person" href="person42515.html">Michael Rawson</a><sup>1</sup>                                </div>
+<a class="person" href="person42506.html">Alistair Sirman</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42507.html">Fleur Conway</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42508.html">Jessica Ciupa</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42509.html">Gusts Gustavs Grīnbergs</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42510.html">Ekaterina Komendantskaya</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42511.html">Alessandro Bruni</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42512.html">Michael John Williams</a><sup>4</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42513.html">Vaishak Belle</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42514.html">Thai Son Hoang</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42515.html">Michael Rawson</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Southampton</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Edinburgh</div>
@@ -303,7 +309,7 @@ whilst maintaining safety for each specific patient.</p>
                             <td>
                                 <div class="title">veriFIRE: An Industrial Case Study in Verifying Consistency Properties for DNN-Based Wildfire Detection System <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1470">(abstract)</a> <span class="duration">7 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42461.html">Idan Refaeli</a><sup>1</sup>, <a class="person" href="person42517.html">Maya Swisa</a><sup>1</sup>, <a class="person" href="person42518.html">Itay Buchnik</a><sup>2</sup>, <a class="person" href="person42519.html">Alon Zada</a><sup>2</sup>, <a class="person" href="person42520.html">Guy Amir</a><sup>3</sup>, <a class="person" href="person42521.html">Elad Mandelbaum</a><sup>2</sup>, <a class="person" href="person42522.html">Ziv Freund</a><sup>2</sup>, <a class="person" href="person42464.html">Guy Katz</a><sup>1</sup>                                </div>
+<a class="person" href="person42461.html">Idan Refaeli</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42517.html">Maya Swisa</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42518.html">Itay Buchnik</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42519.html">Alon Zada</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42520.html">Guy Amir</a><sup>3</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42521.html">Elad Mandelbaum</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42522.html">Ziv Freund</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42464.html">Guy Katz</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The Hebrew University of Jerusalem</div>
                                 <div class="affiliation_item"><sup>2</sup> Elbit Systems --- EW & SIGINT --- Elisra Ltd.</div>
@@ -319,7 +325,7 @@ whilst maintaining safety for each specific patient.</p>
                             <td>
                                 <div class="title">ProofBridge: Auto-Formalization of Natural Language Proofs in Lean via Joint Embeddings <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1471">(abstract)</a> <span class="duration">7 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42524.html">Prithwish Jana</a><sup>1</sup>, <a class="person" href="person42525.html">Kaan Kale</a><sup>1</sup>, <a class="person" href="person42526.html">Ahmet Ege Tanriverdi</a><sup>2</sup>, <a class="person" href="person42527.html">Cruise Song</a><sup>1</sup>, <a class="person" href="person42528.html">Sriram Vishwanath</a><sup>1</sup>, <a class="person" href="person41862.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+<a class="person" href="person42524.html">Prithwish Jana</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42525.html">Kaan Kale</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42526.html">Ahmet Ege Tanriverdi</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42527.html">Cruise Song</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42528.html">Sriram Vishwanath</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41862.html">Vijay Ganesh</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Bogazici University</div>
@@ -336,7 +342,7 @@ We present ProofBridge, a unified framework for automatically translating entire
                             <td>
                                 <div class="title">Of Good Demons and Bad Angels: Guaranteeing Safe Control under Finite Precision <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1472">(abstract)</a> <span class="duration">7 min</span></div>
                                 <div class="authors">
-<a class="person" href="person40280.html">Samuel Teuber</a><sup>1</sup>, <a class="person" href="person42531.html">Debasmita Lohar</a><sup>2</sup>, <a class="person" href="person40283.html">Bernhard Beckert</a><sup>1</sup>                                </div>
+<a class="person" href="person40280.html">Samuel Teuber</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42531.html">Debasmita Lohar</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person40283.html">Bernhard Beckert</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> IT University of Copenhagen</div>
@@ -354,7 +360,7 @@ This paper bridges the gap between theoretical guarantees and real-world impleme
                             <td>
                                 <div class="title">Optimizing VNN Solver Configuration Selection using Large Language Models <a class="abstract_link" href="SAIV-2026-07-25.html#talk:1473">(abstract)</a> <span class="duration">7 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42533.html">Salil Kamath</a><sup>1</sup>, <a class="person" href="person42534.html">Matthew Davis</a><sup>1</sup>, <a class="person" href="person42535.html">Jonathan Andreason</a><sup>2</sup>, <a class="person" href="person42536.html">Yatis Dodia</a><sup>2</sup>, <a class="person" href="person41862.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+<a class="person" href="person42533.html">Salil Kamath</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42534.html">Matthew Davis</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42535.html">Jonathan Andreason</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42536.html">Yatis Dodia</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41862.html">Vijay Ganesh</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Georgia Tech Research Institute</div>
@@ -411,7 +417,7 @@ hours involved in hyperparameter-tuning.</p>
                             <td>
                                 <div class="title">Reliable AI code generation through sound program analysis <a class="abstract_link" href="SAIV-2026-07-25.html#talk:932">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42375.html">Armando Solar-Lezama</a><sup>1</sup>                                </div>
+<a class="person" href="person42375.html">Armando Solar-Lezama</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> MIT</div>
                                 </div>
@@ -459,7 +465,7 @@ hours involved in hyperparameter-tuning.</p>
                             <td>
                                 <div class="title">Value Functions as Supermartingale Certificates <a class="abstract_link" href="SAIV-2026-07-25.html#talk:933">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person41464.html">Alessandro Abate</a><sup>1</sup>, <a class="person" href="person42540.html">Daniel Contro</a><sup>2</sup>, <a class="person" href="person41605.html">Mirco Giacobbe</a><sup>2</sup>, <a class="person" href="person42542.html">Agustín Martínez-Suñé</a><sup>1</sup>, <a class="person" href="person41607.html">Diptarko Roy</a><sup>2</sup>                                </div>
+<a class="person" href="person41464.html">Alessandro Abate</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42540.html">Daniel Contro</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41605.html">Mirco Giacobbe</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42542.html">Agustín Martínez-Suñé</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41607.html">Diptarko Roy</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Birmingham</div>
@@ -480,7 +486,7 @@ Our results, validated experimentally on finite Markov decision processes, hold 
                             <td>
                                 <div class="title">Principled Rewriting of ONNX Operators for Reluctant Solvers <a class="abstract_link" href="SAIV-2026-07-25.html#talk:934">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42544.html">Alban Grastien</a><sup>1</sup>, <a class="person" href="person42545.html">Guilhem Ardouin</a><sup>1</sup>, <a class="person" href="person42503.html">Julien Girard-Satabin</a><sup>1</sup>                                </div>
+<a class="person" href="person42544.html">Alban Grastien</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42545.html">Guilhem Ardouin</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person42503.html">Julien Girard-Satabin</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> CEA-List</div>
                                 </div>
@@ -494,7 +500,7 @@ Our results, validated experimentally on finite Markov decision processes, hold 
                             <td>
                                 <div class="title">Incremental Invariant-based Safety Verification of Neural Controllers <a class="abstract_link" href="SAIV-2026-07-25.html#talk:935">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42547.html">Vladislav Nenchev</a><sup>1</sup>                                </div>
+<a class="person" href="person42547.html">Vladislav Nenchev</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of the Bundeswehr Munich</div>
                                 </div>
@@ -508,7 +514,7 @@ Our results, validated experimentally on finite Markov decision processes, hold 
                             <td>
                                 <div class="title">Faster Optimization of Decision Tree Policies for Markov Decision Processes <a class="abstract_link" href="SAIV-2026-07-25.html#talk:936">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42548.html">Daniël Vos</a><sup>1</sup>, <a class="person" href="person42459.html">Anna Lukina</a><sup>1</sup>                                </div>
+<a class="person" href="person42548.html">Daniël Vos</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42459.html">Anna Lukina</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
                                 </div>
@@ -522,7 +528,7 @@ Our results, validated experimentally on finite Markov decision processes, hold 
                             <td>
                                 <div class="title">Enhancing the Robustness of Counterfactual Explanations via Adversarial Training <a class="abstract_link" href="SAIV-2026-07-25.html#talk:937">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person42550.html">Rithik Appachi Senthilkumar</a><sup>1</sup>, <a class="person" href="person42551.html">Francesco Leofante</a><sup>2</sup>, <a class="person" href="person41862.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+<a class="person" href="person42550.html">Rithik Appachi Senthilkumar</a><sup>1</sup><sup class="author_function" title="Presenter, First Author">P,1st</sup>, <a class="person" href="person42551.html">Francesco Leofante</a><sup>2</sup><sup class="author_function" title="Co-Author">C</sup>, <a class="person" href="person41862.html">Vijay Ganesh</a><sup>1</sup><sup class="author_function" title="Co-Author">C</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial College London</div>
@@ -553,6 +559,6 @@ Our results, validated experimentally on finite Markov decision processes, hold 
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="install-detection.js?v=639189334049793407"></script>
+<script src="install-detection.js?v=639189547183474605"></script>
 </body>
 </html>
