@@ -2,9 +2,10 @@
 <html lang="pt-PT">
 <head>
     <meta charset="UTF-8" />
+    <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Search</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189305242476946" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189334049793407" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
     <style>
@@ -13,10 +14,12 @@
             box-sizing: border-box;
             padding: 10px;
             font-size: 16px;
-            border: 1px solid #ccc;
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             margin-bottom: 20px;
             font-family: inherit;
+            background: var(--color-bg);
+            color: var(--color-text);
             position: relative;
             z-index: 30;
         }
@@ -26,7 +29,7 @@
         }
         .search-result-item {
             padding: 15px 0;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--color-border-light);
             margin-bottom: 10px;
         }
         .search-result-item:last-child {
@@ -39,22 +42,22 @@
         }
         .search-result-authors {
             font-size: 14px;
-            color: #666;
+            color: var(--color-text-muted-3);
             margin-bottom: 5px;
         }
         .search-result-session {
             font-size: 13px;
-            color: #999;
+            color: var(--color-text-icon);
             margin-bottom: 8px;
         }
         .search-result-abstract {
             font-size: 14px;
-            color: #333;
+            color: var(--color-text-muted);
             line-height: 1.4;
         }
         .search-result-affiliations {
             font-size: 12px;
-            color: #666;
+            color: var(--color-text-muted-3);
             margin-top: 5px;
             font-style: italic;
             word-wrap: break-word;
@@ -62,12 +65,12 @@
         }
         .search-no-results {
             padding: 20px 0;
-            color: #999;
+            color: var(--color-text-icon);
             text-align: center;
         }
         .search-loading {
             padding: 20px 0;
-            color: #999;
+            color: var(--color-text-icon);
             text-align: center;
         }
     </style>
@@ -80,6 +83,7 @@
             <div id="header">
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
+                <button id="theme_toggle_btn" title="Toggle light/dark theme" aria-label="Toggle light/dark theme" style="position: absolute; right: 72px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">🌙</button>
                 <button id="install_pwa_btn" title="Install as app" aria-label="Install as app" style="display:none; position: absolute; right: 20px; top: 20px; width: 44px; height: 44px; padding: 0; background: #ffffff; border: none; border-radius: 50%; cursor: pointer; font-size: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">📥</button>
             </div>
 
@@ -286,6 +290,6 @@
     });
 </script>
 
-<script src="install-detection.js?v=639189305242476946"></script>
+<script src="install-detection.js?v=639189334049793407"></script>
 </body>
 </html>

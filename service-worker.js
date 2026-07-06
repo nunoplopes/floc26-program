@@ -1,5 +1,5 @@
-const CACHE_NAME = 'floc-2026-cache-v1';
-const STATIC_CACHE = 'floc-2026-static-v1';
+const CACHE_NAME = 'floc-2026-cache-v2';
+const STATIC_CACHE = 'floc-2026-static-v2';
 
 const staticAssets = ['program.css', 'install-detection.js', 'service-worker.js'];
 
@@ -25,21 +25,26 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
+  const isStaticAsset = staticAssets.some((path) => url.pathname.endsWith(path));
 
-  if (event.request.destination === 'document') {
+  if (event.request.destination === 'document' || isStaticAsset) {
+    const cacheName = isStaticAsset ? STATIC_CACHE : CACHE_NAME;
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone()));
+          caches.open(cacheName).then(async (cache) => {
+            await cache.delete(event.request, { ignoreSearch: true });
+            await cache.put(event.request, response.clone());
+          });
           return response;
         })
-        .catch(() => caches.match(event.request))
+        .catch(() => caches.match(event.request, { ignoreSearch: true }))
     );
     return;
   }
 
   event.respondWith(
-    caches.match(event.request, { ignoreSearch: true }).then((response) => {
+    caches.match(event.request).then((response) => {
       return response || fetch(event.request);
     })
   );
