@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — ML4SP — Program for Saturday, 18 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639188637547121883" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639189181811293164" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -53,6 +53,7 @@
             <span class="separator"> | </span>    <a href="FORCE-index.html">FORCE</a>
             <span class="separator"> | </span>    <a href="FSCD-index.html">FSCD</a>
             <span class="separator"> | </span>    <a href="GALOP-index.html">GALOP</a>
+            <span class="separator"> | </span>    <a href="GOE-index.html">GOE</a>
             <span class="separator"> | </span>    <a href="HCVS-index.html">HCVS</a>
             <span class="separator"> | </span>    <a href="ICLPDCSS-index.html">ICLP-DC-SS</a>
             <span class="separator"> | </span>    <a href="ICLP-index.html">ICLP</a>
@@ -130,6 +131,21 @@
 
                 <div class="date">Saturday, 18 July 2026</div>
 
+                <div class="session" id="session:1761">
+                    <div class="heading">
+                        <span class="interval">09:30-10:30</span>
+                        <span class="title">Invited talk 1</span>
+                        <span class="group_tag">ML4SP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
+                    </div>
+
+
+                </div>
                 <div class="session interval_session" id="session:1335">
                     <div class="heading">
                         <span class="interval">10:00-11:00</span>
@@ -145,9 +161,110 @@
 
 
                 </div>
+                <div class="session" id="session:1762">
+                    <div class="heading">
+                        <span class="interval">11:00-12:40</span>
+                        <span class="title">Paper talks 1</span>
+                        <span class="group_tag">ML4SP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1614">
+                            <td class="time">11:00-11:20</td>
+                            <td>
+                                <div class="title">An LLM-based Recommendation System for PVS <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1614">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person37901.html">Nikson Bernardes Fernandes Ferreira</a><sup>1</sup>, <a class="person" href="person37902.html">Mariano Miguel Moscato</a><sup>2</sup>, <a class="person" href="person37490.html">Mauricio Ayala-Rincon</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade de Brasília</div>
+                                <div class="affiliation_item"><sup>2</sup> Analytical Mechanics Associates Inc.</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Interactive Theorem Provers are crucial for certifying system correctness, but they impose a steep learning curve and require a high level of user expertise. 
+While Machine Learning techniques have been employed to suggest proof commands, current approaches often rely on resource-intensive pipelines to process the proof data used as input to the model. This work addresses this inefficiency by proposing a methodology that trains autoregressive language models directly on raw proof states, along with LLM-PVS, a prototype implementation integrated into the VSCode IDE. This approach allows PVS users to receive proof-command recommendations and lemma suggestions from local models without depending on extensive preprocessing of the proof data. While initial empirical evaluation indicates that this direct approach achieves competitive performance in restricted contexts, challenges regarding model hallucinations, lack of explainability, and scalability in premise selection remain to be addressed.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1615">
+                            <td class="time">11:20-11:40</td>
+                            <td>
+                                <div class="title">Neural Local Search Enhanced with Knowledge Compilation <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1615">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person37904.html">Alexandre Dubray</a><sup>1</sup>, <a class="person" href="person37905.html">Hélène Verhaeghe</a><sup>2</sup>, <a class="person" href="person37906.html">Quentin Cappart</a><sup>3</sup>, <a class="person" href="person37907.html">Siegfried Nijssen</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
+                                <div class="affiliation_item"><sup>2</sup> UCLouvain</div>
+                                <div class="affiliation_item"><sup>3</sup> UC Louvain and Polytechnique Montréal</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Constraint satisfaction, the task of finding an assignment of variables that respects a set of constraints, is a key area in artificial intelligence, with many industrial applications.
+In general, many constraint satisfaction problems are NP-hard; hence, exhaustive searches are intractable.
+Local search is a popular paradigm for solving such problems: instead of exploring the entire search space, local search solvers transition, for a limited number of steps, from one assignment to another, guided by hand-crafted, problem-dependent heuristics.
+Recently, neural networks have been studied as a means of automatically learning heuristics for transitioning between assignments.
+A particular class of neural local search solvers uses neural networks as generative models to produce joint probability distributions over the problem's variables, conditioned on the current assignment.
+Then, transitioning to the next assignment is done by sampling from the generated probability distribution.
+However, these solvers do not integrate constraint reasoning; hence, any assignment can be generated during the local search.
+In this work, we propose to integrate knowledge compilation into neural local search solvers.
+By first compiling constraint satisfaction problems into multi-valued decision diagrams (MDDs) and sampling assignments in them, constraints can be applied to reduce the number of unsatisfying assignments in the sampling space.
+Our experiments show that using MDDs yields a sampling space that can be orders of magnitude smaller while incurring negligible overhead.
+Moreover, our MDD-based sampling procedure significantly improves the number of instances solved on Sudoku and graph colouring problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1616">
+                            <td class="time">11:40-12:00</td>
+                            <td>
+                                <div class="title">Algorithm Selection with Zero Domain Knowledge via Text Embeddings <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1616">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person34271.html">Stefan Szeider</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We propose a feature-free approach to algorithm selection that replaces hand-crafted instance features with pretrained text embeddings. Our method, ZeroFolio, proceeds in three steps: it reads the raw instance file as plain text, embeds it with a pretrained embedding model, and selects an algorithm via weighted $k$-nearest neighbors. The key to our approach is the observation that pretrained embeddings produce representations that distinguish problem instances without any domain knowledge or task-specific training. This allows us to apply the same three-step pipeline (serialize, embed, select) across diverse problem domains with text-based instance formats. We evaluate our approach on 11 ASlib scenarios spanning 7 domains (SAT, MaxSAT, QBF, ASP, CSP, MIP, and graph problems). Our experiments show that this approach outperforms a random forest trained on hand-crafted features in 10 of 11 scenarios with a single fixed configuration, and in all 11 with two-seed voting; the margin is often substantial. On the three scenarios with published AutoFolio results from the 2015 ASlib competition, ZeroFolio with two-seed voting matches or outperforms AutoFolio without per-scenario configuration tuning. Our ablation study shows that inverse-distance weighting, line shuffling, and Manhattan distance are the key design choices.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1617">
+                            <td class="time">12:00-12:20</td>
+                            <td>
+                                <div class="title">Do LLMs Scale on Inductive Proofs? A Controlled Study of Elementary Arithmetical Proofs <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1617">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person37909.html">Risako Ando</a><sup>1</sup>, <a class="person" href="person37910.html">Koji Mineshima</a><sup>1</sup>, <a class="person" href="person37911.html">Mitsuhiro Okada</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Keio University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We investigate theorem proving by large language models (LLMs) in a controlled proof-from-scratch setting, where models must construct induction proofs using only recursive definitions and mathematical induction. Building on our previous Direct Induction Proof Challenge, we introduce variable-generalization settings that systematically increase formula and proof complexity. We compare a reasoning-oriented model (GPT-5.2) with a non-reasoning baseline (GPT-4o) on Lean 4 proof generation tasks. While GPT-5.2 nearly saturates the original 20-problem benchmark, performance degrades rapidly as the number of variables and required commutativity applications increase. These results suggest that controlled induction benchmarks provide a useful diagnostic framework for evaluating the limits of current LLM theorem proving systems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1618">
+                            <td class="time">12:20-12:40</td>
+                            <td>
+                                <div class="title">Learning Better Representations From Less Data For Propositional Satisfiability <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1618">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person34772.html">Mohamed Ghanem</a><sup>1</sup>, <a class="person" href="person34767.html">Frederik Schmitt</a><sup>1</sup>, <a class="person" href="person34770.html">Julian Siber</a><sup>1</sup>, <a class="person" href="person35399.html">Bernd Finkbeiner</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Training neural networks on NP-complete problems typically demands very large amounts of training data and often needs to be coupled with computationally expensive symbolic verifiers to ensure output correctness. In this paper, we present NeuRes, a neuro-symbolic approach to address both challenges for propositional satisfiability, being the quintessential NP-complete problem. By combining certificate-driven training and expert iteration, our model learns better representations than models trained for classification only, with a much higher data efficiency -- requiring orders of magnitude less training data. NeuRes employs propositional resolution as a proof system to generate proofs of unsatisfiability and to accelerate the process of finding satisfying truth assignments, exploring both possibilities in parallel. To realize this, we propose an attention-based architecture that autoregressively selects pairs of clauses from a dynamic formula embedding to derive new clauses. Furthermore, we employ expert iteration whereby model-generated proofs progressively replace longer teacher proofs as the new ground truth. This enables our model to reduce a dataset of proofs generated by an advanced solver by $\sim$$32\%$ after training on it with no extra guidance. This shows that NeuRes is not limited by the optimality of the teacher algorithm owing to its self-improving workflow. We show that our model achieves far better performance than NeuroSAT in terms of both correctly classified and proven instances.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session interval_session" id="session:1336">
                     <div class="heading">
-                        <span class="interval">12:00-14:00</span>
+                        <span class="interval">12:40-14:00</span>
                         <span class="title">Lunch</span>
                         <span class="group_tag">ML4SP</span>
                     </div>
@@ -160,10 +277,153 @@
 
 
                 </div>
+                <div class="session" id="session:1763">
+                    <div class="heading">
+                        <span class="interval">14:00-15:00</span>
+                        <span class="title">Invited talk 2</span>
+                        <span class="group_tag">ML4SP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1764">
+                    <div class="heading">
+                        <span class="interval">15:00-15:40</span>
+                        <span class="title">Paper talks 2</span>
+                        <span class="group_tag">ML4SP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1619">
+                            <td class="time">15:00-15:20</td>
+                            <td>
+                                <div class="title">Predicting Assignments of MaxSAT Variables with Graph Neural Networks <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1619">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person37916.html">Jonathan Oliva</a><sup>1</sup>, <a class="person" href="person37917.html">Peter Nightingale</a><sup>1</sup>, <a class="person" href="person37918.html">Felix Ulrich-Oltean</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of York</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The partial weighted MaxSAT problem is an important generalization of SAT, useful for expressing and solving a variety of constrained optimization problems. Efficient solving methods have been developed based on SAT and MIP, including core-guided search, the implicit hitting set approach, and branch-and-bound. The problem is naturally expressed as a graph, with vertices representing literals and clauses, while a set of edges connect literals to the clauses that contain them. In this paper we propose a graph neural network architecture that is trained to predict the truth value of each MaxSAT variable in an optimal solution (with a confidence score). The machine learning model is initially trained on small random MaxSAT instances, then fine-tuned for a particular class of MaxSAT instances. A model such as this could be used to warm-start a solver or to guide search in some way. We chose to apply the model as part of a learning-to-prune method, where some literals (the most confident predictions) are chosen to assign before applying a conventional solver. Using learning-to-prune, we demonstrate significant improvements in performance compared to a current branch-and-bound MaxSAT solver.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1620">
+                            <td class="time">15:20-15:40</td>
+                            <td>
+                                <div class="title">Caching and Batching for Neural Clause Selection in Saturation-Based Theorem Proving <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1620">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person34883.html">Alexander Pluska</a><sup>1</sup>, <a class="person" href="person34884.html">Florian Zuleger</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> A neural clause selector sits in the hot path of a saturation-based theorem prover: the model is invoked on every generated clause and the prover blocks on each result. Whether the ML guidance pays off under a fixed wall budget depends on two axes, the model's selection quality and the per-call cost the integration imposes. This paper holds the first axis fixed -- a GCN encoder paired with a transformer scorer -- and isolates two engineering decisions on the second: whether clause embeddings are cached across iterations, and whether embed requests are fired one at a time (eager) or buffered to the selection boundary (batched). On 16 TPTP problems run to a 256-iteration cap, caching changes per-problem wall time by at least a factor of about 28x, and without it the prover routinely exhausts the 60-second wall budget; the batching decision is smaller and workload-dependent (eager wins by 1-40% on this set, where |Delta| <= 20 new clauses are generated per iteration; on heavier workloads the ordering reverses). The two decisions are independent and orthogonal to the model, so the same trade-off recurs in any encoder/scorer-shaped clause selector.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session interval_session" id="session:1337">
                     <div class="heading">
-                        <span class="interval">15:30-16:30</span>
+                        <span class="interval">15:40-16:10</span>
                         <span class="title">Coffee Break</span>
+                        <span class="group_tag">ML4SP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:1765">
+                    <div class="heading">
+                        <span class="interval">16:10-17:10</span>
+                        <span class="title">Paper talks 3</span>
+                        <span class="group_tag">ML4SP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room62.html">C4.08</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1621">
+                            <td class="time">16:10-16:30</td>
+                            <td>
+                                <div class="title">A priori knowledge for learning combinations of heuristics for CSPs <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1621">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person37921.html">Anastasia Paparrizou</a><sup>1</sup>, <a class="person" href="person37922.html">Michael Sioutis</a><sup>1</sup>, <a class="person" href="person37923.html">Yoan Thomas</a><sup>1</sup>, <a class="person" href="person37924.html">Christian Bessiere</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CNRS, University of Montpellier</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Selecting the right variable ordering heuristic to solve a given constraint satisfaction problem (CSP) instance can dramatically influence solver efficiency.  Yet, no single heuristic universally outperforms others across all instances.  Recent works have shown that interleaving multiple heuristics during search can significantly improve performance.  In this paper, we introduce a formal definition to quantify the degree of complementarity between pairs of heuristics. To validate this concept, we solved instances from the XCSP competition using every possible combination of modern heuristic pairs.  Our results reveal a strong correlation between the complementarity score of a pair of heuristics and the performance improvement achieved by interleaving them in the search strategy. Even complementary heuristics with poor standalone performance can, when combined, deliver surprisingly good results.  These findings suggest that our notion of complementarity represents a critical step forward in understanding why and how alternating heuristics enhances CSP solving.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1622">
+                            <td class="time">16:30-16:50</td>
+                            <td>
+                                <div class="title">KissatEvolve: Controllable and Scalable Synthesis of SAT Heuristics with Densely Annotated Memory Bank <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1622">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person37812.html">Meru Gopalan</a><sup>1</sup>, <a class="person" href="person37813.html">Jialin Lu</a><sup>2</sup>, <a class="person" href="person37814.html">Jialin Song</a><sup>2</sup>, <a class="person" href="person37815.html">Shimin Zhang</a><sup>1</sup>, <a class="person" href="person37816.html">Hieu Nguyen</a><sup>1</sup>, <a class="person" href="person37817.html">Wuyang Chen</a><sup>2</sup>, <a class="person" href="person34320.html">Vijay Ganesh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Georgia Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Simon Fraser University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present KissatEvolve, an LLM-based framework for fully automatic, scalable, and controllable synthesis of SAT solver heuristics. Modern CDCL solvers such as Kissat employ a large ensemble of tightly coupled heuristic components whose joint configuration space is prohibitively large to search exhaustively. Existing LLM-based approaches explore only a narrow slice of this space, confining search to a single solver or a small set of heuristic functions, and optimize exclusively for aggregate PAR-2 without regard for targeted problem subcategories. KissatEvolve is the first framework to address both limitations simultaneously. For scalability, KissatEvolve combines a self-adaptive agentic workflow with a fully parallelized generation-and-evaluation pipeline that spans multiple solver families and heuristic functions concurrently, substantially reducing the wall-clock time required to cover the design space while minimizing human intervention. For controllability, KissatEvolve maintains a densely annotated memory bank that records both high- and low-performing heuristic variants, each enriched with solver analyses, search statistics, and code-diff traces. Selectively retrieved examples condition subsequent LLM generations toward targeting user-specified subcategories (SAT, UNSAT, easy, or hard problems), enabling fine-grained steering of solver behavior. Using KissatEvolve, we conduct a comprehensive study of 17 heuristic functions across 6 SAT solvers, finding improved heuristics for 3 solvers that reduce PAR-2 by 12.80% on average over their respective baselines. We also find that controlled retrieval reduces PAR-2 by up to 43.76% relative to uncontrolled retrieval.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1623">
+                            <td class="time">16:50-17:10</td>
+                            <td>
+                                <div class="title">Revealing the limits of Machine Learning for Satisfiability Testing: a dataset for learning minimal moves <a class="abstract_link" href="ML4SP-2026-07-18.html#talk:1623">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person34543.html">Laurent Simon</a><sup>1,2,3,4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LaBRI</div>
+                                <div class="affiliation_item"><sup>2</sup> Bordeaux INP</div>
+                                <div class="affiliation_item"><sup>3</sup> Univ Bordeaux</div>
+                                <div class="affiliation_item"><sup>4</sup> CNRS</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Despite the progress observed in machine learning, its successful application to SAT is still very modest. One of the reasons for this is probably the lack of clear challenges and datasets for the ML community to focus on. This would stimulate the community to propose, for example, new neural network architectures that are well suited for SAT search.
+    We propose a methodology and a dataset for training machine learning systems to solve satisfiable formulas. Our dataset consists of random formulas of relatively small size (250 variables) at the threshold, all of which are satisfiable. The task to be predicted is to identify, given an overall assignment, the set of variables that must be flipped to make the formula satisfiable. Our dataset consists of hundreds of thousands of examples (each on a different random formula) with the minimum number of flips that need to be performed, given a total assignment. 
+    
+    One of our result is to show that, despite impressive predicting qualities of a Graph Neural Network predictive model on them, a pure machine learning method based solely on the prediction failed on 100\% of the benchmarks while they are trivial for local search SAT solvers from the late 90's. 
+
+    We think that this unveils a key missing piece of current ML approach that could be identified by focusing on our proposed dataset.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1766">
+                    <div class="heading">
+                        <span class="interval">17:10-18:00</span>
+                        <span class="title">Panel discussion</span>
                         <span class="group_tag">ML4SP</span>
                     </div>
 
@@ -191,6 +451,6 @@
 <a id="fab_search" href="search.html" title="Search" aria-label="Search">🔍</a>
 
 
-<script src="install-detection.js?v=639188637547121883"></script>
+<script src="install-detection.js?v=639189181811293164"></script>
 </body>
 </html>
