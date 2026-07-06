@@ -33,7 +33,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     deferredPrompt = event;
     if (installButton) {
-        installButton.style.display = 'block';
+        installButton.style.display = 'flex';
     }
 });
 

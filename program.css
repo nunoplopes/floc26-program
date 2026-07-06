@@ -147,14 +147,14 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .page_table { width: 100%; border-collapse: collapse; }
 .central_td_column { padding: 16px 24px; }
 
-#header { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--color-border); }
+#header { position: relative; display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--color-border); }
 #header .event_logo { max-height: 75px; width: auto; flex: 0 0 auto; }
 #header #title { font-size: 22px; font-weight: bold; padding: 0; border: none; }
 #title { font-size: 22px; font-weight: bold; padding: 8px 0; border-bottom: 1px solid var(--color-border); }
 
+.header_fabs { position: absolute; top: 18px; right: 20px; display: flex; align-items: center; gap: 8px; }
+
 .header_fab {
-    position: absolute;
-    top: 18px;
     width: 44px;
     height: 44px;
     padding: 0;
@@ -166,11 +166,12 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
     font-size: 20px;
     box-shadow: 0 2px 8px var(--color-shadow);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 .header_fab:hover { transform: scale(1.1); box-shadow: 0 4px 12px var(--color-shadow); }
-#theme_toggle_btn { right: 124px; }
-#agenda_link { right: 72px; display: flex; align-items: center; justify-content: center; text-decoration: none; }
-#install_pwa_btn { right: 20px; }
 
 #main_menu { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--color-border-light); }
 #main_menu a { display: inline-block; padding: 8px 18px; font-size: 15px; font-weight: 600; background: var(--color-bg-menu); color: var(--color-link); text-decoration: none; border-radius: 4px; text-transform: uppercase; }
