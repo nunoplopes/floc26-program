@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Program for Sunday, 26 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639189741913892199" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639190223908342877" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -36,6 +36,7 @@
 
             <div id="menu2">
                 <a href="ACV-index.html">ACV</a>
+            <span class="separator"> | </span>    <a href="ADU-index.html">ADU</a>
             <span class="separator"> | </span>    <a href="AIMACS-index.html">AIMACS</a>
             <span class="separator"> | </span>    <a href="AR4Space-index.html">AR4Space</a>
             <span class="separator"> | </span>    <a href="ARQNL-index.html">ARQNL</a>
@@ -168,6 +169,21 @@
                         </tr>
                     </table>
                 </div>
+                <div class="session interval_session" id="session:708">
+                    <div class="heading">
+                        <span class="interval">10:00-10:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">CSF</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room31.html">B2.03</a>
+                    </div>
+
+
+                </div>
                 <div class="session interval_session" id="session:654">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
@@ -179,21 +195,6 @@
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room28.html">Grande Auditório</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:817">
-                    <div class="heading">
-                        <span class="interval">10:00-11:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">ITP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
                     </div>
 
 
@@ -213,120 +214,20 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:708">
+                <div class="session interval_session" id="session:817">
                     <div class="heading">
-                        <span class="interval">10:00-10:30</span>
+                        <span class="interval">10:00-11:00</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">CSF</span>
+                        <span class="group_tag">ITP</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
+                        <a class="room_name" href="room34.html">B1.04</a>
                     </div>
 
 
-                </div>
-                <div class="session" id="session:709">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="709" data-title="Differential Privacy" data-time="10:30-12:30" data-room="B2.03" data-group="CSF" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-12:30</span>
-                        <span class="title">Differential Privacy</span>
-                        <span class="group_tag">CSF</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:201">
-                            <td class="time">10:30-10:54</td>
-                            <td>
-                                <div class="title">Optimizing Differential Privacy in Federated Analytics under Known Input Distributions <a class="abstract_link" href="CSF-2026-07-26.html#talk:201">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25226_39851.html">Ferran Alborch Escobar</a><sup>1</sup>, <a class="person" href="person39852.html">Andreas Athanasiou</a><sup>2</sup>, <a class="person" href="person39853.html">Pascal Reisert</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Orange Innovation</div>
-                                <div class="affiliation_item"><sup>2</sup> TU Delft</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Stuttgart</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Differential privacy (DP) is one of the most efficient tools for protecting the privacy of individual data holders under computation. This property guarantees that the computation outputs for every pair of adjacent input sets are statistically indistinguishable with respect to a given parameter ε, which is independent of the likelihood that specific inputs occur or not. While the distribution of input sets is generally unknown, in some use cases (approximate) information about it might be available. If the latter is the case, two adjacent inputs of one individual are sometimes already obfuscated by other inputs and the computation itself (i.e., without any additional noise). For example, if the sum of n independent and identically distributed uniformly random bits outputs approximately n/2, both values for the first bit remain (almost) equally likely for large n.
-
-Based on this observation, we present a new DP mechanism that uses an estimate of the input distribution to reduce the noise addition (compared to standard DP) and hence improves the accuracy of the output. We first explore this idea in the central model, where a single central party collects all data. Then, we provide a new technique (possibly of independent interest) that allows multiple entities to jointly generate reduced noise, using the property of infinite divisibility. This allows each party to individually add noise to their respective inputs, e.g., in Federated Analytics applications.
-   
-We apply our theoretical results, both for the single and multi-party setups, to perform data analysis over human resources data from different subsidiaries within a corporate group. Our benchmarks show that our new DP mechanism provides more accurate outputs while retaining the same privacy level as state-of-the-art DP approaches using the geometric mechanism.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:202">
-                            <td class="time">10:54-11:18</td>
-                            <td>
-                                <div class="title">Interpreting Differential Privacy in Terms of Disclosure Risk <a class="abstract_link" href="CSF-2026-07-26.html#talk:202">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25227_39854.html">Zeki Kazan</a><sup>1</sup>, <a class="person" href="person39855.html">Sagar Sharma</a><sup>2</sup>, <a class="person" href="person39856.html">Wanrong Zhang</a><sup>2</sup>, <a class="person" href="person39857.html">Bo Jiang</a><sup>2</sup>, <a class="person" href="person39858.html">Qiang Yan</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Duke University</div>
-                                <div class="affiliation_item"><sup>2</sup> TikTok Inc</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> As the use of differential privacy (DP) becomes widespread, the development of effective tools for reasoning about the privacy guarantee becomes increasingly critical. In pursuit of this goal, we demonstrate novel relationships between DP and measures of statistical disclosure risk. We suggest how experts and non-experts can use these results to explain the DP guarantee, interpret DP composition theorems, select and justify privacy parameters, and identify worst-case adversary prior probabilities.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:203">
-                            <td class="time">11:18-11:42</td>
-                            <td>
-                                <div class="title">Bayesian Advantage of Re-Identification Attack in the Shuffle Model <a class="abstract_link" href="CSF-2026-07-26.html#talk:203">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25228_39859.html">Pengcheng Su</a><sup>1</sup>, <a class="person" href="person39860.html">Haibo Cheng</a><sup>1</sup>, <a class="person" href="person39861.html">Ping Wang</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Peking University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The shuffle model, which anonymizes data by randomly permuting user messages, has been widely adopted in both cryptography and differential privacy. In this work, we present the first systematic study of the Bayesian advantage in re-identifying a user's message under the shuffle model. We begin with a basic setting: one sample is drawn from a distribution $P$, and $n - 1$ samples are drawn from a distribution $Q$, after which all $n$ samples are randomly shuffled. We define $\beta_n(P, Q)$ as the success probability of a Bayes-optimal adversary in identifying the sample from $P$, and define the additive and multiplicative Bayesian advantages as $\mathsf{Adv}_n^{+}(P, Q) = \beta_n(P,Q) - \frac{1}{n}$ and $\mathsf{Adv}_n^{\times}(P, Q) = n \cdot \beta_n(P,Q)$, respectively.
-
-We derive exact analytical expressions and asymptotic characterizations of $\beta_n(P, Q)$, along with evaluations in several representative scenarios. Furthermore, we establish (nearly) tight mutual bounds between the additive Bayesian advantage and the total variation distance.
-
-Finally, we extend our analysis beyond the basic setting and present, for the first time, an upper bound on the success probability of Bayesian attacks in shuffle differential privacy. Specifically, when the outputs of $n$ users—each processed through an $\varepsilon$-differentially private local randomizer—are shuffled, the probability that an attacker successfully re-identifies any target user's message is at most $e^{\varepsilon}/n$.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:204">
-                            <td class="time">11:42-12:06</td>
-                            <td>
-                                <div class="title">Privacy Mechanism Design based on Empirical Distributions <a class="abstract_link" href="CSF-2026-07-26.html#talk:204">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23172_39862.html">Leonhard Grosse</a><sup>1</sup>, <a class="person" href="person23332.html">Sara Saeidian</a><sup>2</sup>, <a class="person" href="person39864.html">Mikael Skoglund</a><sup>1</sup>, <a class="person" href="person39865.html">Tobias J. Oechtering</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> KTH Royal Institute of Technology</div>
-                                <div class="affiliation_item"><sup>2</sup> KTH Royal Institute of Technology and Inria Saclay</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Pointwise maximal leakage (PML) is a per-outcome privacy measure based on threat models from quantitative information flow. Privacy guarantees with PML rely on knowledge about the distribution that generated the private data. In this work, we propose a framework for PML privacy assessment and mechanism design with empirical estimates of this data-generating distribution. By extending the PML framework to consider sets of data-generating  distributions, we arrive at bounds on the worst-case leakage within a given set. We use these bounds alongside large-deviation bounds from the literature to provide a method for obtaining distribution-independent $(\varepsilon,\delta)$-PML guarantees when the data-generating distribution is estimated from available data samples. We provide an optimal binary mechanism, and show that mechanism design with this type of uncertainty about the data-generating distribution reduces to a linearly constrained convex program. Further, we show that optimal mechanisms designed for a distribution estimate can be used. Finally, we apply these tools to leakage assessment of the Laplace mechanism and the Gaussian mechanism for binary private data, and numerically show that the presented approach to mechanism design can yield significant utility increase compared to local differential privacy, while retaining similar privacy guarantees.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:205">
-                            <td class="time">12:06-12:30</td>
-                            <td>
-                                <div class="title">DPEI: Privacy Budget Savings for Edge Information Protection in Synthetic Graph Publishing <a class="abstract_link" href="CSF-2026-07-26.html#talk:205">(abstract)</a> <span class="duration">24 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25229_39866.html">Ruizhong Du</a><sup>1</sup>, <a class="person" href="person39867.html">Zizhan Wei</a><sup>1</sup>, <a class="person" href="person39868.html">Mingyue Li</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Hebei University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> With the widespread adoption of graph-structured data, protecting the complex relational information between nodes and edges while preventing sensitive information leakage has become a critical challenge. However, existing edge protection methods either introduce noise directly into the adjacency matrix, resulting in significant information loss, or uniformly apply noise across all edges, leading to imbalanced privacy budget allocation and inefficiency. To address these issues, we propose DPEI, a Differential Privacy-based Edge Information protection solution designed to safeguard the edge relationships between two nodes, thus reducing the risk of privacy leakage and preventing attackers from repeatedly inferring internal community relationships from the released graph data. Specifically, DPEI achieves protection through PPO (Proximal Policy Optimization) based selection of locally optimal thresholds combined with adaptive Laplace noise operations, and attachment nodes below the threshold into high-information edges to enhance relational information protection. Subsequently, unlike traditional uniform allocation, DPEI distributes the privacy budget in proportion to the information content of each edge, ensuring that edges with higher information content receive stronger privacy protection. Extensive experiments conducted on three real-world graph datasets demonstrate that DPEI significantly outperforms existing methods across seven commonly used graph metrics, thereby validating its effectiveness and practicality.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:655">
                     <div class="heading">
@@ -354,7 +255,7 @@ Finally, we extend our analysis beyond the basic setting and present, for the fi
                             <td>
                                 <div class="title">On the Complexity of Checking Soundness of Natural Reductions <a class="abstract_link" href="CAV-2026-07-26.html#talk:1105">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25187_39361.html">Constantin Enea</a><sup>1</sup>, <a class="person" href="person39362.html">Azadeh Farzan</a><sup>2</sup>, <a class="person" href="person39363.html">Dominik Klumpp</a><sup>1</sup>                                </div>
+<a class="person" href="person25187_43400.html">Constantin Enea</a><sup>1</sup>, <a class="person" href="person43401.html">Azadeh Farzan</a><sup>2</sup>, <a class="person" href="person43402.html">Dominik Klumpp</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LIX - CNRS - Ecole Polytechnique</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
@@ -376,7 +277,7 @@ and show that the problem is coNP-hard already for a simple mechanism like locki
                             <td>
                                 <div class="title">Deadlock Verification via Ordering-Constrained Mutex Modeling <a class="abstract_link" href="CAV-2026-07-26.html#talk:1106">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23291.html">Pei Wang</a><sup>1</sup>, <a class="person" href="person39365.html">Zhilei Han</a><sup>1</sup>, <a class="person" href="person39366.html">Zhihang Sun</a><sup>1</sup>, <a class="person" href="person39367.html">Fei He</a><sup>1</sup>                                </div>
+<a class="person" href="person23291.html">Pei Wang</a><sup>1</sup>, <a class="person" href="person43404.html">Zhilei Han</a><sup>1</sup>, <a class="person" href="person43405.html">Zhihang Sun</a><sup>1</sup>, <a class="person" href="person43406.html">Fei He</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Tsinghua University</div>
                                 </div>
@@ -396,7 +297,7 @@ Our experiments show that DEAGLE-DL significantly outperforms both tools in term
                             <td>
                                 <div class="title">Complete Local Reasoning About Parameterized Programs Over Topologies (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-26.html#talk:1107">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23310.html">Ruotong Cheng</a><sup>1</sup>, <a class="person" href="person39362.html">Azadeh Farzan</a><sup>1</sup>                                </div>
+<a class="person" href="person23310.html">Ruotong Cheng</a><sup>1</sup>, <a class="person" href="person43401.html">Azadeh Farzan</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
                                 </div>
@@ -410,7 +311,7 @@ Our experiments show that DEAGLE-DL significantly outperforms both tools in term
                             <td>
                                 <div class="title">Scalable Deductive Verification of Data-Level Parallel Programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1108">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25188_39370.html">Lars van den Haak</a><sup>1</sup>, <a class="person" href="person23373.html">Marieke Huisman</a><sup>2</sup>, <a class="person" href="person39372.html">Anton Wijs</a><sup>1</sup>                                </div>
+<a class="person" href="person25188_43409.html">Lars van den Haak</a><sup>1</sup>, <a class="person" href="person23373.html">Marieke Huisman</a><sup>2</sup>, <a class="person" href="person43411.html">Anton Wijs</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Eindhoven University of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Twente</div>
@@ -425,7 +326,7 @@ Our experiments show that DEAGLE-DL significantly outperforms both tools in term
                             <td>
                                 <div class="title">On the Verification Problem of Remote Direct Memory Access programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1109">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25189_39373.html">Parosh Aziz Abdulla</a><sup>1</sup>, <a class="person" href="person39374.html">Mohamed Faouzi Atig</a><sup>1</sup>, <a class="person" href="person39375.html">R Govind</a><sup>2</sup>, <a class="person" href="person39376.html">Stephan Spengler</a><sup>1</sup>                                </div>
+<a class="person" href="person25189_43412.html">Parosh Aziz Abdulla</a><sup>1</sup>, <a class="person" href="person43413.html">Mohamed Faouzi Atig</a><sup>1</sup>, <a class="person" href="person43414.html">R Govind</a><sup>2</sup>, <a class="person" href="person43415.html">Stephan Spengler</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Uppsala University</div>
                                 <div class="affiliation_item"><sup>2</sup> The Institute of Mathematical Sciences, Chennai</div>
@@ -442,7 +343,7 @@ In this paper, we study the reachability and robustness problems for RDMA progra
                             <td>
                                 <div class="title">Model Checking for Flexible Network Protocols <a class="abstract_link" href="CAV-2026-07-26.html#talk:1110">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25190_39377.html">Andrew Johnson</a><sup>1</sup>, <a class="person" href="person39378.html">Dennis Fetterly</a><sup>2</sup>, <a class="person" href="person39379.html">Jon Zolla</a><sup>2</sup>, <a class="person" href="person39380.html">Sean Song</a><sup>2</sup>                                </div>
+<a class="person" href="person25190_43416.html">Andrew Johnson</a><sup>1</sup>, <a class="person" href="person43417.html">Dennis Fetterly</a><sup>2</sup>, <a class="person" href="person43418.html">Jon Zolla</a><sup>2</sup>, <a class="person" href="person43419.html">Sean Song</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Princeton University</div>
                                 <div class="affiliation_item"><sup>2</sup> Google, Inc</div>
@@ -475,7 +376,7 @@ recreating bugs and verifying our fixes to those bugs.</p>
                             <td>
                                 <div class="title">The TLA+ Model Checker Apalache <a class="abstract_link" href="CAV-2026-07-26.html#talk:1111">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23342.html">Rodrigo Otoni</a><sup>1</sup>, <a class="person" href="person39382.html">Shon Feder</a><sup>2</sup>, <a class="person" href="person39383.html">Jure Kukovec</a><sup>3</sup>, <a class="person" href="person39384.html">Andrey Kupriyanov</a><sup>3</sup>, <a class="person" href="person39385.html">Gabriela Moreira</a><sup>4</sup>, <a class="person" href="person39386.html">Philip Offtermatt</a><sup>4</sup>, <a class="person" href="person39387.html">Thomas Pani</a><sup>3</sup>, <a class="person" href="person39388.html">Thanh-Hai Tran</a><sup>5</sup>, <a class="person" href="person39389.html">Igor Konnov</a><sup>3</sup>                                </div>
+<a class="person" href="person23342.html">Rodrigo Otoni</a><sup>1</sup>, <a class="person" href="person43421.html">Shon Feder</a><sup>2</sup>, <a class="person" href="person43422.html">Jure Kukovec</a><sup>3</sup>, <a class="person" href="person43423.html">Andrey Kupriyanov</a><sup>3</sup>, <a class="person" href="person43424.html">Gabriela Moreira</a><sup>4</sup>, <a class="person" href="person43425.html">Philip Offtermatt</a><sup>4</sup>, <a class="person" href="person43426.html">Thomas Pani</a><sup>3</sup>, <a class="person" href="person43427.html">Thanh-Hai Tran</a><sup>5</sup>, <a class="person" href="person43428.html">Igor Konnov</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Groningen</div>
                                 <div class="affiliation_item"><sup>2</sup> Tarides</div>
@@ -493,7 +394,7 @@ recreating bugs and verifying our fixes to those bugs.</p>
                             <td>
                                 <div class="title">PSF: A Generic and Extensible Framework for Protocol State Fuzzing <a class="abstract_link" href="CAV-2026-07-26.html#talk:1112">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23904.html">Konstantinos Sagonas</a><sup>1</sup>, <a class="person" href="person39391.html">Thanos Typaldos</a><sup>2</sup>                                </div>
+<a class="person" href="person23904.html">Konstantinos Sagonas</a><sup>1</sup>, <a class="person" href="person43430.html">Thanos Typaldos</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Uppsala University & National Technical University of Athens</div>
                                 <div class="affiliation_item"><sup>2</sup> Yale University & National Technical University of Athens</div>
@@ -510,7 +411,7 @@ We describe the distinctive features and support that PSF offers, its system arc
                             <td>
                                 <div class="title">Kofola 1.0: A Modular Approach to 𝝎-Regular Complementation and Inclusion Checking <a class="abstract_link" href="CAV-2026-07-26.html#talk:1113">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25191_39392.html">Ondrej Alexaj</a><sup>1</sup>, <a class="person" href="person39393.html">Vojtěch Havlena</a><sup>1</sup>, <a class="person" href="person39394.html">Lukáš Holík</a><sup>2</sup>, <a class="person" href="person24096.html">Ondřej Lengál</a><sup>1</sup>, <a class="person" href="person39396.html">Yong Li</a><sup>3</sup>, <a class="person" href="person39397.html">Nicolas Mazzocchi</a><sup>4</sup>                                </div>
+<a class="person" href="person25191_43431.html">Ondrej Alexaj</a><sup>1</sup>, <a class="person" href="person43432.html">Vojtěch Havlena</a><sup>1</sup>, <a class="person" href="person43433.html">Lukáš Holík</a><sup>2</sup>, <a class="person" href="person24096.html">Ondřej Lengál</a><sup>1</sup>, <a class="person" href="person43435.html">Yong Li</a><sup>3</sup>, <a class="person" href="person43436.html">Nicolas Mazzocchi</a><sup>4</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Brno University of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Brno University of Technology and Aalborg University</div>
@@ -527,12 +428,112 @@ We describe the distinctive features and support that PSF offers, its system arc
                             <td>
                                 <div class="title">Octopus: Practical Equivalence Checking of P4 Packet Parsers <a class="abstract_link" href="CAV-2026-07-26.html#talk:1114">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23459_39398.html">Jort van Leenen</a><sup>1</sup>, <a class="person" href="person39399.html">Tobias Kappé</a><sup>1</sup>                                </div>
+<a class="person" href="person23459_43437.html">Jort van Leenen</a><sup>1</sup>, <a class="person" href="person43438.html">Tobias Kappé</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LIACS, Leiden University</div>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> P4 is a domain-specific language for programming protocol-independent packet processors, where packet parsers describe how incoming bit streams are structured into headers and fields. Building on work by Doenges et al. (2022), we present Octopus, a tool that translates P4 packet parsers into automata and then attempts to (symbolically) check their equivalence. Octopus produces evidence, either in the form of a bisimulation demonstrating equivalence, or a counterexample packet witnessing a behavioral difference between the two parsers. In contrast with earlier work, our tool can check equivalence between non-trivial parsers within minutes on consumer hardware. We report on the tool’s implementation and evaluate its usability in networking contexts.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:709">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="709" data-title="Differential Privacy" data-time="10:30-12:30" data-room="B2.03" data-group="CSF" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-12:30</span>
+                        <span class="title">Differential Privacy</span>
+                        <span class="group_tag">CSF</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room31.html">B2.03</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:201">
+                            <td class="time">10:30-10:54</td>
+                            <td>
+                                <div class="title">Optimizing Differential Privacy in Federated Analytics under Known Input Distributions <a class="abstract_link" href="CSF-2026-07-26.html#talk:201">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25226_43890.html">Ferran Alborch Escobar</a><sup>1</sup>, <a class="person" href="person43891.html">Andreas Athanasiou</a><sup>2</sup>, <a class="person" href="person43892.html">Pascal Reisert</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Orange Innovation</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Delft</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Stuttgart</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Differential privacy (DP) is one of the most efficient tools for protecting the privacy of individual data holders under computation. This property guarantees that the computation outputs for every pair of adjacent input sets are statistically indistinguishable with respect to a given parameter ε, which is independent of the likelihood that specific inputs occur or not. While the distribution of input sets is generally unknown, in some use cases (approximate) information about it might be available. If the latter is the case, two adjacent inputs of one individual are sometimes already obfuscated by other inputs and the computation itself (i.e., without any additional noise). For example, if the sum of n independent and identically distributed uniformly random bits outputs approximately n/2, both values for the first bit remain (almost) equally likely for large n.
+
+Based on this observation, we present a new DP mechanism that uses an estimate of the input distribution to reduce the noise addition (compared to standard DP) and hence improves the accuracy of the output. We first explore this idea in the central model, where a single central party collects all data. Then, we provide a new technique (possibly of independent interest) that allows multiple entities to jointly generate reduced noise, using the property of infinite divisibility. This allows each party to individually add noise to their respective inputs, e.g., in Federated Analytics applications.
+   
+We apply our theoretical results, both for the single and multi-party setups, to perform data analysis over human resources data from different subsidiaries within a corporate group. Our benchmarks show that our new DP mechanism provides more accurate outputs while retaining the same privacy level as state-of-the-art DP approaches using the geometric mechanism.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:202">
+                            <td class="time">10:54-11:18</td>
+                            <td>
+                                <div class="title">Interpreting Differential Privacy in Terms of Disclosure Risk <a class="abstract_link" href="CSF-2026-07-26.html#talk:202">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25227_43893.html">Zeki Kazan</a><sup>1</sup>, <a class="person" href="person43894.html">Sagar Sharma</a><sup>2</sup>, <a class="person" href="person43895.html">Wanrong Zhang</a><sup>2</sup>, <a class="person" href="person43896.html">Bo Jiang</a><sup>2</sup>, <a class="person" href="person43897.html">Qiang Yan</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Duke University</div>
+                                <div class="affiliation_item"><sup>2</sup> TikTok Inc</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> As the use of differential privacy (DP) becomes widespread, the development of effective tools for reasoning about the privacy guarantee becomes increasingly critical. In pursuit of this goal, we demonstrate novel relationships between DP and measures of statistical disclosure risk. We suggest how experts and non-experts can use these results to explain the DP guarantee, interpret DP composition theorems, select and justify privacy parameters, and identify worst-case adversary prior probabilities.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:203">
+                            <td class="time">11:18-11:42</td>
+                            <td>
+                                <div class="title">Bayesian Advantage of Re-Identification Attack in the Shuffle Model <a class="abstract_link" href="CSF-2026-07-26.html#talk:203">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25228_43898.html">Pengcheng Su</a><sup>1</sup>, <a class="person" href="person43899.html">Haibo Cheng</a><sup>1</sup>, <a class="person" href="person43900.html">Ping Wang</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Peking University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The shuffle model, which anonymizes data by randomly permuting user messages, has been widely adopted in both cryptography and differential privacy. In this work, we present the first systematic study of the Bayesian advantage in re-identifying a user's message under the shuffle model. We begin with a basic setting: one sample is drawn from a distribution $P$, and $n - 1$ samples are drawn from a distribution $Q$, after which all $n$ samples are randomly shuffled. We define $\beta_n(P, Q)$ as the success probability of a Bayes-optimal adversary in identifying the sample from $P$, and define the additive and multiplicative Bayesian advantages as $\mathsf{Adv}_n^{+}(P, Q) = \beta_n(P,Q) - \frac{1}{n}$ and $\mathsf{Adv}_n^{\times}(P, Q) = n \cdot \beta_n(P,Q)$, respectively.
+
+We derive exact analytical expressions and asymptotic characterizations of $\beta_n(P, Q)$, along with evaluations in several representative scenarios. Furthermore, we establish (nearly) tight mutual bounds between the additive Bayesian advantage and the total variation distance.
+
+Finally, we extend our analysis beyond the basic setting and present, for the first time, an upper bound on the success probability of Bayesian attacks in shuffle differential privacy. Specifically, when the outputs of $n$ users—each processed through an $\varepsilon$-differentially private local randomizer—are shuffled, the probability that an attacker successfully re-identifies any target user's message is at most $e^{\varepsilon}/n$.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:204">
+                            <td class="time">11:42-12:06</td>
+                            <td>
+                                <div class="title">Privacy Mechanism Design based on Empirical Distributions <a class="abstract_link" href="CSF-2026-07-26.html#talk:204">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23172_43901.html">Leonhard Grosse</a><sup>1</sup>, <a class="person" href="person23332.html">Sara Saeidian</a><sup>2</sup>, <a class="person" href="person43903.html">Mikael Skoglund</a><sup>1</sup>, <a class="person" href="person43904.html">Tobias J. Oechtering</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KTH Royal Institute of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> KTH Royal Institute of Technology and Inria Saclay</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Pointwise maximal leakage (PML) is a per-outcome privacy measure based on threat models from quantitative information flow. Privacy guarantees with PML rely on knowledge about the distribution that generated the private data. In this work, we propose a framework for PML privacy assessment and mechanism design with empirical estimates of this data-generating distribution. By extending the PML framework to consider sets of data-generating  distributions, we arrive at bounds on the worst-case leakage within a given set. We use these bounds alongside large-deviation bounds from the literature to provide a method for obtaining distribution-independent $(\varepsilon,\delta)$-PML guarantees when the data-generating distribution is estimated from available data samples. We provide an optimal binary mechanism, and show that mechanism design with this type of uncertainty about the data-generating distribution reduces to a linearly constrained convex program. Further, we show that optimal mechanisms designed for a distribution estimate can be used. Finally, we apply these tools to leakage assessment of the Laplace mechanism and the Gaussian mechanism for binary private data, and numerically show that the presented approach to mechanism design can yield significant utility increase compared to local differential privacy, while retaining similar privacy guarantees.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:205">
+                            <td class="time">12:06-12:30</td>
+                            <td>
+                                <div class="title">DPEI: Privacy Budget Savings for Edge Information Protection in Synthetic Graph Publishing <a class="abstract_link" href="CSF-2026-07-26.html#talk:205">(abstract)</a> <span class="duration">24 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25229_43905.html">Ruizhong Du</a><sup>1</sup>, <a class="person" href="person43906.html">Zizhan Wei</a><sup>1</sup>, <a class="person" href="person43907.html">Mingyue Li</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Hebei University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> With the widespread adoption of graph-structured data, protecting the complex relational information between nodes and edges while preventing sensitive information leakage has become a critical challenge. However, existing edge protection methods either introduce noise directly into the adjacency matrix, resulting in significant information loss, or uniformly apply noise across all edges, leading to imbalanced privacy budget allocation and inefficiency. To address these issues, we propose DPEI, a Differential Privacy-based Edge Information protection solution designed to safeguard the edge relationships between two nodes, thus reducing the risk of privacy leakage and preventing attackers from repeatedly inferring internal community relationships from the released graph data. Specifically, DPEI achieves protection through PPO (Proximal Policy Optimization) based selection of locally optimal thresholds combined with adaptive Laplace noise operations, and attachment nodes below the threshold into high-information edges to enhance relational information protection. Subsequently, unlike traditional uniform allocation, DPEI distributes the privacy budget in proportion to the information content of each edge, ensuring that edges with higher information content receive stronger privacy protection. Extensive experiments conducted on three real-world graph datasets demonstrate that DPEI significantly outperforms existing methods across seven commonly used graph metrics, thereby validating its effectiveness and practicality.</p>
                                 </div>
                             </td>
                         </tr>
@@ -559,7 +560,7 @@ We describe the distinctive features and support that PSF offers, its system arc
                             <td>
                                 <div class="title">A Deductive Refinement Calculus for Differential-Algebraic Programs <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:340">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24338.html">Jonathan Hellwig</a><sup>1</sup>, <a class="person" href="person40649.html">Long Qian</a><sup>2</sup>, <a class="person" href="person40282.html">André Platzer</a><sup>1</sup>                                </div>
+<a class="person" href="person24338.html">Jonathan Hellwig</a><sup>1</sup>, <a class="person" href="person44688.html">Long Qian</a><sup>2</sup>, <a class="person" href="person44321.html">André Platzer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Carnegie Mellon University</div>
@@ -574,7 +575,7 @@ We describe the distinctive features and support that PSF offers, its system arc
                             <td>
                                 <div class="title">Refactoring-as-Propositions: Proved Refactoring of Hybrid Systems via Proved Refinements <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:341">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23754.html">Enguerrand Prebet</a><sup>1</sup>, <a class="person" href="person40282.html">André Platzer</a><sup>1</sup>                                </div>
+<a class="person" href="person23754.html">Enguerrand Prebet</a><sup>1</sup>, <a class="person" href="person44321.html">André Platzer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
                                 </div>
@@ -588,7 +589,7 @@ We describe the distinctive features and support that PSF offers, its system arc
                             <td>
                                 <div class="title">Complete Robust Hybrid Systems Reachability <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:342">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24297.html">Noah Abou El Wafa</a><sup>1</sup>, <a class="person" href="person40282.html">André Platzer</a><sup>1</sup>                                </div>
+<a class="person" href="person24297.html">Noah Abou El Wafa</a><sup>1</sup>, <a class="person" href="person44321.html">André Platzer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
                                 </div>
@@ -622,7 +623,7 @@ The main result is a proof of absolute completeness of robust differential dynam
                             <td>
                                 <div class="title">Complex Bounded Operators in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-26.html#talk:371">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25293_40863.html">Dominique Unruh</a><sup>1</sup>                                </div>
+<a class="person" href="person25293_44905.html">Dominique Unruh</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RWTH Aachen, University of Tartu</div>
                                 </div>
@@ -636,7 +637,7 @@ The main result is a proof of absolute completeness of robust differential dynam
                             <td>
                                 <div class="title">Lean Formalization of Generalization Error Bound by Rademacher Complexity and Dudley's Entropy Integral <a class="abstract_link" href="ITP-2026-07-26.html#talk:372">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25080.html">Sho Sonoda</a><sup>1,5</sup>, <a class="person" href="person40865.html">Kazumi Kasaura</a><sup>2</sup>, <a class="person" href="person40866.html">Yuma Mizuno</a><sup>3</sup>, <a class="person" href="person40867.html">Kei Tsukamoto</a><sup>4</sup>, <a class="person" href="person40868.html">Naoto Onda</a><sup>2</sup>                                </div>
+<a class="person" href="person25080.html">Sho Sonoda</a><sup>1,5</sup>, <a class="person" href="person44907.html">Kazumi Kasaura</a><sup>2</sup>, <a class="person" href="person44908.html">Yuma Mizuno</a><sup>3</sup>, <a class="person" href="person44909.html">Kei Tsukamoto</a><sup>4</sup>, <a class="person" href="person44910.html">Naoto Onda</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RIKEN AIP</div>
                                 <div class="affiliation_item"><sup>2</sup> OMRON SINIC X Corporation</div>
@@ -742,7 +743,7 @@ As worked applications of the abstract theorem, we mechanize standard empirical 
                             <td>
                                 <div class="title">Randomise Alone, Reach Together <a class="abstract_link" href="CAV-2026-07-26.html#talk:1115">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25193_39400.html">Léonard Brice</a><sup>1</sup>, <a class="person" href="person25206_39544.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person39402.html">Alipasha Montaseri</a><sup>1</sup>, <a class="person" href="person39403.html">Ali Shafiee</a><sup>1</sup>, <a class="person" href="person39404.html">K. S. Thejaswini</a><sup>1</sup>                                </div>
+<a class="person" href="person25193_43439.html">Léonard Brice</a><sup>1</sup>, <a class="person" href="person25206_43583.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person43441.html">Alipasha Montaseri</a><sup>1</sup>, <a class="person" href="person43442.html">Ali Shafiee</a><sup>1</sup>, <a class="person" href="person43443.html">K. S. Thejaswini</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institute of Science and Technology Austria</div>
                                 </div>
@@ -760,7 +761,7 @@ We introduce Individually Randomised Alternating-time Temporal Logic (IRATL). Th
                             <td>
                                 <div class="title">Decoupled Planning for Multiple Omega-Regular Objectives <a class="abstract_link" href="CAV-2026-07-26.html#talk:1116">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24249.html">Guy Avni</a><sup>1</sup>, <a class="person" href="person25206_39544.html">Thomas A. Henzinger</a><sup>2</sup>, <a class="person" href="person39407.html">Kaushik Mallik</a><sup>3</sup>, <a class="person" href="person39408.html">Suman Sadhukhan</a><sup>4</sup>, <a class="person" href="person39409.html">K.S. Thejaswini</a><sup>2</sup>                                </div>
+<a class="person" href="person24249.html">Guy Avni</a><sup>1</sup>, <a class="person" href="person25206_43583.html">Thomas A. Henzinger</a><sup>2</sup>, <a class="person" href="person42846.html">Kaushik Mallik</a><sup>3</sup>, <a class="person" href="person42847.html">Suman Sadhukhan</a><sup>4</sup>, <a class="person" href="person43448.html">K.S. Thejaswini</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Haifa, Israel</div>
                                 <div class="affiliation_item"><sup>2</sup> Institute of Science and Technology, Austria</div>
@@ -779,7 +780,7 @@ For non-safety objectives, we introduce conventions---simple, a priori restricti
                             <td>
                                 <div class="title">Repairing Regex-Dependent String-Manipulation Programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1117">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24209.html">Nariyoshi Chida</a><sup>1</sup>, <a class="person" href="person39411.html">Tachio Terauchi</a><sup>2</sup>                                </div>
+<a class="person" href="person24209.html">Nariyoshi Chida</a><sup>1</sup>, <a class="person" href="person43450.html">Tachio Terauchi</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> NTT Social Informatics Laboratories</div>
                                 <div class="affiliation_item"><sup>2</sup> Waseda University</div>
@@ -794,7 +795,7 @@ For non-safety objectives, we introduce conventions---simple, a priori restricti
                             <td>
                                 <div class="title">Liquid Tree Automata <a class="abstract_link" href="CAV-2026-07-26.html#talk:1118">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24329.html">Ashish Mishra</a><sup>1</sup>, <a class="person" href="person39413.html">Suresh Jagannathan</a><sup>2</sup>                                </div>
+<a class="person" href="person24329.html">Ashish Mishra</a><sup>1</sup>, <a class="person" href="person43452.html">Suresh Jagannathan</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology Hyderabad</div>
                                 <div class="affiliation_item"><sup>2</sup> Purdue University</div>
@@ -835,7 +836,7 @@ the capabilities of the existing state-of-the-art.</p>
                             <td>
                                 <div class="title">SemML 2.0: Synthesizing Controllers from LTL <a class="abstract_link" href="CAV-2026-07-26.html#talk:1119">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25001.html">Maximilian Prokop</a><sup>1</sup>, <a class="person" href="person39415.html">Tobias Meggendorfer</a><sup>2</sup>, <a class="person" href="person39416.html">Jan Kretinsky</a><sup>3</sup>                                </div>
+<a class="person" href="person25001.html">Maximilian Prokop</a><sup>1</sup>, <a class="person" href="person43454.html">Tobias Meggendorfer</a><sup>2</sup>, <a class="person" href="person43455.html">Jan Kretinsky</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Munich</div>
                                 <div class="affiliation_item"><sup>2</sup> Lancaster University Leipzig</div>
@@ -864,7 +865,7 @@ tools, while maintaining state-of-the-art solution quality.</p>
                             <td>
                                 <div class="title">Fast Obligation Translation and Synthesis (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-26.html#talk:1120">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25195_39417.html">Alexandre Duret-Lutz</a><sup>1,7</sup>, <a class="person" href="person23182.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person39419.html">Marcin Jurdzinski</a><sup>3</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>4</sup>, <a class="person" href="person39421.html">Moshe Y. Vardi</a><sup>5</sup>, <a class="person" href="person39422.html">Shufang Zhu</a><sup>6</sup>                                </div>
+<a class="person" href="person25195_43456.html">Alexandre Duret-Lutz</a><sup>1,7</sup>, <a class="person" href="person23182.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person42826.html">Marcin Jurdzinski</a><sup>3</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>4</sup>, <a class="person" href="person43460.html">Moshe Y. Vardi</a><sup>5</sup>, <a class="person" href="person42824.html">Shufang Zhu</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LRE</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
@@ -886,7 +887,7 @@ Our implementation in Spot shows huge runtime improvements in translation and sy
                             <td>
                                 <div class="title">sweap: Reactive Synthesis for Infinite-State Integer Problems <a class="abstract_link" href="CAV-2026-07-26.html#talk:1121">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25196_39423.html">Shaun Azzopardi</a><sup>1</sup>, <a class="person" href="person39424.html">Luca Di Stefano</a><sup>2</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>3</sup>                                </div>
+<a class="person" href="person25196_43462.html">Shaun Azzopardi</a><sup>1</sup>, <a class="person" href="person43463.html">Luca Di Stefano</a><sup>2</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Dedaub</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Wien</div>
@@ -925,7 +926,7 @@ Experimental evaluation shows that sweap outperforms its only competitor in this
                             <td>
                                 <div class="title">A new measure for dynamic leakage based on quantitative information flow <a class="abstract_link" href="CSF-2026-07-26.html#talk:206">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23329_39869.html">Luigi D. C. Soares</a><sup>1</sup>, <a class="person" href="person39870.html">Mário S. Alvim</a><sup>2</sup>, <a class="person" href="person39871.html">Natasha Fernandes</a><sup>3</sup>                                </div>
+<a class="person" href="person23329_43908.html">Luigi D. C. Soares</a><sup>1</sup>, <a class="person" href="person43909.html">Mário S. Alvim</a><sup>2</sup>, <a class="person" href="person43910.html">Natasha Fernandes</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> UFMG and Macquarie University</div>
                                 <div class="affiliation_item"><sup>2</sup> UFMG</div>
@@ -941,7 +942,7 @@ Experimental evaluation shows that sweap outperforms its only competitor in this
                             <td>
                                 <div class="title">Information Leakage Envelopes <a class="abstract_link" href="CSF-2026-07-26.html#talk:207">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23332.html">Sara Saeidian</a><sup>1</sup>, <a class="person" href="person39873.html">Carlos Pinzón</a><sup>2</sup>, <a class="person" href="person39874.html">Catuscia Palamidessi</a><sup>2</sup>                                </div>
+<a class="person" href="person23332.html">Sara Saeidian</a><sup>1</sup>, <a class="person" href="person43912.html">Carlos Pinzón</a><sup>2</sup>, <a class="person" href="person43913.html">Catuscia Palamidessi</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> KTH Royal Institute of Technology and Inria</div>
                                 <div class="affiliation_item"><sup>2</sup> Inria and École Polytechnique</div>
@@ -956,7 +957,7 @@ Experimental evaluation shows that sweap outperforms its only competitor in this
                             <td>
                                 <div class="title">Beyond Epsilon: A Principled QIF Framework for Local Differential Privacy <a class="abstract_link" href="CSF-2026-07-26.html#talk:208">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25230_39875.html">Ramon G. Gonze</a><sup>1,5</sup>, <a class="person" href="person39871.html">Natasha Fernandes</a><sup>2</sup>, <a class="person" href="person39877.html">Heber H. Arcolezi</a><sup>3</sup>, <a class="person" href="person39874.html">Catuscia Palamidessi</a><sup>4</sup>, <a class="person" href="person39879.html">Nataliia Bielova</a><sup>4</sup>                                </div>
+<a class="person" href="person25230_43914.html">Ramon G. Gonze</a><sup>1,5</sup>, <a class="person" href="person43910.html">Natasha Fernandes</a><sup>2</sup>, <a class="person" href="person43916.html">Heber H. Arcolezi</a><sup>3</sup>, <a class="person" href="person43913.html">Catuscia Palamidessi</a><sup>4</sup>, <a class="person" href="person43918.html">Nataliia Bielova</a><sup>4</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institut Polytechnique de Paris</div>
                                 <div class="affiliation_item"><sup>2</sup> Macquarie University</div>
@@ -1054,7 +1055,7 @@ implementation in the tool LoAT shows the power of our approach.</p>
                             <td>
                                 <div class="title">Certified Intersection of Commutative Regular Expressions as Solutions of Systems of Linear Diophantine Equations <a class="abstract_link" href="ITP-2026-07-26.html#talk:373">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24171.html">Ricardo Almeida</a><sup>1</sup>, <a class="person" href="person40870.html">Blair Archibald</a><sup>1</sup>, <a class="person" href="person40871.html">Basile Pesin</a><sup>2</sup>, <a class="person" href="person40872.html">Michele Sevegnani</a><sup>1</sup>                                </div>
+<a class="person" href="person24171.html">Ricardo Almeida</a><sup>1</sup>, <a class="person" href="person44912.html">Blair Archibald</a><sup>1</sup>, <a class="person" href="person44913.html">Basile Pesin</a><sup>2</sup>, <a class="person" href="person44914.html">Michele Sevegnani</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> School of Computing Science, University of Glasgow, Glasgow, Scotland</div>
                                 <div class="affiliation_item"><sup>2</sup> Fédération ENAC ISAE-SUPAERO ONERA, Université de Toulouse, France</div>
@@ -1070,7 +1071,7 @@ when building type systems for process calculi. In these applications, a useful 
                             <td>
                                 <div class="title">Functional correctness of an optimized modular inversion algorithm <a class="abstract_link" href="ITP-2026-07-26.html#talk:374">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25294_40873.html">Assia Mahboubi</a><sup>1</sup>, <a class="person" href="person40874.html">Guillaume Melquiond</a><sup>1</sup>, <a class="person" href="person40875.html">Pierre-Yves Strub</a><sup>2</sup>, <a class="person" href="person40876.html">Tomás Vallejos Parada</a><sup>1</sup>                                </div>
+<a class="person" href="person25294_44915.html">Assia Mahboubi</a><sup>1</sup>, <a class="person" href="person44916.html">Guillaume Melquiond</a><sup>1</sup>, <a class="person" href="person44917.html">Pierre-Yves Strub</a><sup>2</sup>, <a class="person" href="person44918.html">Tomás Vallejos Parada</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> INRIA</div>
                                 <div class="affiliation_item"><sup>2</sup> PQShield</div>
@@ -1127,7 +1128,7 @@ Unlike all previous presentations of the algorithm, these variants construct the
                             <td>
                                 <div class="title">Presentation of the Best Paper Award <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:1256">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23365.html">Carsten Lutz</a><sup>1</sup>, <a class="person" href="person40659.html">Sara Negri</a><sup>2</sup>                                </div>
+<a class="person" href="person23365.html">Carsten Lutz</a><sup>1</sup>, <a class="person" href="person44698.html">Sara Negri</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Leipzig University, Germany</div>
                                 <div class="affiliation_item"><sup>2</sup> Università degli Studi di Genova, Italy</div>
@@ -1139,7 +1140,7 @@ Unlike all previous presentations of the algorithm, these variants construct the
                             <td>
                                 <div class="title">Presentation of the Best Student Paper Award <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:1257">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23365.html">Carsten Lutz</a><sup>1</sup>, <a class="person" href="person40659.html">Sara Negri</a><sup>2</sup>                                </div>
+<a class="person" href="person23365.html">Carsten Lutz</a><sup>1</sup>, <a class="person" href="person44698.html">Sara Negri</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Leipzig University, Germany</div>
                                 <div class="affiliation_item"><sup>2</sup> Università degli Studi di Genova, Italy</div>
@@ -1151,7 +1152,7 @@ Unlike all previous presentations of the algorithm, these variants construct the
                             <td>
                                 <div class="title">Presentation of the Bill McCune PhD Award <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:1258">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24138.html">Viorica Sofronie-Stokkermans</a><sup>1</sup>, <a class="person" href="person40663.html">Pascal Fontaine</a><sup>2</sup>, <a class="person" href="person24057.html">Carsten Fuhs</a><sup>3</sup>, <a class="person" href="person40665.html">Ullrich Hustadt</a><sup>4</sup>, <a class="person" href="person24597_42924.html">Mikoláš Janota</a><sup>5</sup>, <a class="person" href="person40314.html">Cezary Kaliszyk</a><sup>6</sup>, <a class="person" href="person23320.html">Philipp Rümmer</a><sup>7</sup>, <a class="person" href="person23562.html">Sophie Tourret</a><sup>8</sup>                                </div>
+<a class="person" href="person24138.html">Viorica Sofronie-Stokkermans</a><sup>1</sup>, <a class="person" href="person44702.html">Pascal Fontaine</a><sup>2</sup>, <a class="person" href="person24057.html">Carsten Fuhs</a><sup>3</sup>, <a class="person" href="person44704.html">Ullrich Hustadt</a><sup>4</sup>, <a class="person" href="person24597_42924.html">Mikoláš Janota</a><sup>5</sup>, <a class="person" href="person44353.html">Cezary Kaliszyk</a><sup>6</sup>, <a class="person" href="person23320.html">Philipp Rümmer</a><sup>7</sup>, <a class="person" href="person23562.html">Sophie Tourret</a><sup>8</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Koblenz</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Lorraine</div>
@@ -1180,7 +1181,7 @@ Unlike all previous presentations of the algorithm, these variants construct the
                             <td>
                                 <div class="title">Presentation of the Herbrand Award <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:1260">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25280_40671.html">Nikolaj Bjørner</a><sup>1</sup>, <a class="person" href="person40672.html">Amy Felty</a><sup>2</sup>, <a class="person" href="person24496.html">Cynthia Kop</a><sup>3</sup>, <a class="person" href="person39276.html">Cláudia Nalon</a><sup>4</sup>, <a class="person" href="person24375.html">Andrew Reynolds</a><sup>5</sup>, <a class="person" href="person23131.html">Geoff Sutcliffe</a><sup>6</sup>                                </div>
+<a class="person" href="person25280_44710.html">Nikolaj Bjørner</a><sup>1</sup>, <a class="person" href="person44711.html">Amy Felty</a><sup>2</sup>, <a class="person" href="person24496.html">Cynthia Kop</a><sup>3</sup>, <a class="person" href="person43315.html">Cláudia Nalon</a><sup>4</sup>, <a class="person" href="person24375.html">Andrew Reynolds</a><sup>5</sup>, <a class="person" href="person23131.html">Geoff Sutcliffe</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Microsoft Research</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Ottawa</div>
@@ -1208,21 +1209,6 @@ Unlike all previous presentations of the algorithm, these variants construct the
 
 
                 </div>
-                <div class="session interval_session" id="session:821">
-                    <div class="heading">
-                        <span class="interval">15:30-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">ITP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:658">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
@@ -1234,6 +1220,21 @@ Unlike all previous presentations of the algorithm, these variants construct the
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room28.html">Grande Auditório</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:821">
+                    <div class="heading">
+                        <span class="interval">15:30-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">ITP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room34.html">B1.04</a>
                     </div>
 
 
@@ -1264,7 +1265,7 @@ Unlike all previous presentations of the algorithm, these variants construct the
                             <td>
                                 <div class="title">A-IC3: Learning-Guided Adaptive Inductive Generalization for Hardware Model Checking <a class="abstract_link" href="CAV-2026-07-26.html#talk:193">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25197_39426.html">Xiaofeng Zhou</a><sup>1</sup>, <a class="person" href="person39427.html">Guangyu Hu</a><sup>1</sup>, <a class="person" href="person39428.html">Hongce Zhang</a><sup>2</sup>, <a class="person" href="person39429.html">Wei Zhang</a><sup>1</sup>                                </div>
+<a class="person" href="person25197_43465.html">Xiaofeng Zhou</a><sup>1</sup>, <a class="person" href="person43466.html">Guangyu Hu</a><sup>1</sup>, <a class="person" href="person43467.html">Hongce Zhang</a><sup>2</sup>, <a class="person" href="person43468.html">Wei Zhang</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Hong Kong University of Science and Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Hong Kong University of Science and Technology (Guangzhou)</div>
@@ -1286,7 +1287,7 @@ When implemented on rIC3, our method solves 28 more cases than the baseline, and
                             <td>
                                 <div class="title">A Multi-Width Parametric Equivalence Solver <a class="abstract_link" href="CAV-2026-07-26.html#talk:194">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25198_39430.html">Luigi Rinaldi</a><sup>1</sup>, <a class="person" href="person39431.html">John Wickerson</a><sup>2</sup>, <a class="person" href="person39432.html">Samuel Coward</a><sup>1</sup>                                </div>
+<a class="person" href="person25198_43469.html">Luigi Rinaldi</a><sup>1</sup>, <a class="person" href="person43470.html">John Wickerson</a><sup>2</sup>, <a class="person" href="person43471.html">Samuel Coward</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University College London</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial College London</div>
@@ -1303,7 +1304,7 @@ provide a translation into equivalences in modular arithmetic. We then show how 
                             <td>
                                 <div class="title">Massively Parallel Mining of Specifications for Hardware Designs <a class="abstract_link" href="CAV-2026-07-26.html#talk:195">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23340.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person39434.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person39435.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person39436.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
+<a class="person" href="person23340.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person43473.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person43474.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person42857.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
                                 </div>
@@ -1318,7 +1319,7 @@ In this work, we present MAPminer, a parallel framework for synthesis-based hard
                             <td>
                                 <div class="title">A mechanised, bidirectional type system for bit-width determination in SystemVerilog <a class="abstract_link" href="CAV-2026-07-26.html#talk:196">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23543.html">Gabriel Desfrene</a><sup>1</sup>, <a class="person" href="person39438.html">Quentin Corradi</a><sup>2</sup>, <a class="person" href="person39439.html">Michalis Pardalos</a><sup>2</sup>, <a class="person" href="person39431.html">John Wickerson</a><sup>2</sup>                                </div>
+<a class="person" href="person23543.html">Gabriel Desfrene</a><sup>1</sup>, <a class="person" href="person43477.html">Quentin Corradi</a><sup>2</sup>, <a class="person" href="person43478.html">Michalis Pardalos</a><sup>2</sup>, <a class="person" href="person43470.html">John Wickerson</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> École normale supérieure – PSL</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial College London</div>
@@ -1353,7 +1354,7 @@ We focus on SystemVerilog's mechanism for determining the bit-width of each expr
                             <td>
                                 <div class="title">Formal Verification of Probing Security via Conditional Independence <a class="abstract_link" href="CSF-2026-07-26.html#talk:209">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23288.html">Satoshi Kura</a><sup>1</sup>, <a class="person" href="person39881.html">Katsuyuki Takashima</a><sup>1</sup>                                </div>
+<a class="person" href="person23288.html">Satoshi Kura</a><sup>1</sup>, <a class="person" href="person43920.html">Katsuyuki Takashima</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Waseda University</div>
                                 </div>
@@ -1367,7 +1368,7 @@ We focus on SystemVerilog's mechanism for determining the bit-width of each expr
                             <td>
                                 <div class="title">Triosecuris: Formally Verified Protection Against Speculative Control-Flow Hijacking <a class="abstract_link" href="CSF-2026-07-26.html#talk:210">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23863.html">Jonathan Baumann</a><sup>1</sup>, <a class="person" href="person39883.html">Yonghyun Kim</a><sup>1</sup>, <a class="person" href="person39884.html">Yan Farba</a><sup>2</sup>, <a class="person" href="person39885.html">Catalin Hritcu</a><sup>1</sup>, <a class="person" href="person39886.html">Julay Leatherman-Brooks</a><sup>3</sup>                                </div>
+<a class="person" href="person23863.html">Jonathan Baumann</a><sup>1</sup>, <a class="person" href="person43922.html">Yonghyun Kim</a><sup>1</sup>, <a class="person" href="person43923.html">Yan Farba</a><sup>2</sup>, <a class="person" href="person43924.html">Catalin Hritcu</a><sup>1</sup>, <a class="person" href="person43925.html">Julay Leatherman-Brooks</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> MPI-SP</div>
                                 <div class="affiliation_item"><sup>2</sup> MPI-SP and Ruhr University Bochum</div>
@@ -1444,7 +1445,7 @@ input vector via fractional permissions.</p>
                             <td>
                                 <div class="title">Lazy Proof Automation for Separation Logic <a class="abstract_link" href="ITP-2026-07-26.html#talk:377">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23507.html">Valentin Mikhalchuk</a><sup>1</sup>, <a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person39511.html">Ilya Sergey</a><sup>1</sup>                                </div>
+<a class="person" href="person23507.html">Valentin Mikhalchuk</a><sup>1</sup>, <a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person43550.html">Ilya Sergey</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National University of Singapore</div>
                                 </div>
@@ -1460,7 +1461,7 @@ We observe that existing techniques for automating entailment proofs in foundati
                             <td>
                                 <div class="title">Formalizing a Hoare Calculus for Choreographic Programming <a class="abstract_link" href="ITP-2026-07-26.html#talk:378">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25295_40882.html">Luís Cruz-Filipe</a><sup>1</sup>, <a class="person" href="person40883.html">Thomas Wulff Heissel</a><sup>2</sup>                                </div>
+<a class="person" href="person25295_44924.html">Luís Cruz-Filipe</a><sup>1</sup>, <a class="person" href="person44925.html">Thomas Wulff Heissel</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> IT University of Copenhagen</div>
                                 <div class="affiliation_item"><sup>2</sup> Independent Researcher</div>
@@ -1508,6 +1509,6 @@ Previous work has introduced a Hoare calculus for reasoning about choreographies
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=639189741913892199"></script>
+<script src="site.js?v=639190223908342877"></script>
 </body>
 </html>
