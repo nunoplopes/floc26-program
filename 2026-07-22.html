@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Program for Wednesday, 22 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639191034731925321" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639191047126948806" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -203,17 +203,17 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:745">
+                <div class="session interval_session" id="session:774">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">FSCD</span>
+                        <span class="group_tag">ICLP</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room30.html">One03</a>
+                        <a class="room_name" href="room33.html">B2.04</a>
                     </div>
 
 
@@ -278,17 +278,17 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:774">
+                <div class="session interval_session" id="session:745">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">ICLP</span>
+                        <span class="group_tag">FSCD</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
+                        <a class="room_name" href="room30.html">One03</a>
                     </div>
 
 
@@ -323,90 +323,71 @@
 
 
                 </div>
-                <div class="session" id="session:775">
+                <div class="session" id="session:746">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="775" data-title="Block 7 (4 TPLP)" data-time="10:30-12:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-12:30</span>
-                        <span class="title">Block 7 (4 TPLP)</span>
-                        <span class="group_tag">ICLP</span>
+                        <button type="button" class="favorite_btn" data-session-id="746" data-title="Substructural Logics" data-time="10:30-12:00" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-12:00</span>
+                        <span class="title">Substructural Logics</span>
+                        <span class="group_tag">FSCD</span>
                     </div>
 
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23753.html">Olivier Laurent</a>
+                        </div>
+                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
+                        <a class="room_name" href="room30.html">One03</a>
                     </div>
 
 
                     <table class="talks">
-                        <tr class="talk" id="talk:308">
+                        <tr class="talk" id="talk:262">
                             <td class="time">10:30-11:00</td>
                             <td>
-                                <div class="title">Reducing Arbitrary Metric Temporal Formulas into Logic Programs under Answer Set Semantics <a class="abstract_link" href="ICLP-2026-07-22.html#talk:308">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">Absolute convergence and Taylor expansion in web based models of linear logic <a class="abstract_link" href="FSCD-2026-07-22.html#talk:262">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23811_55803.html">Martin Diéguez</a><sup>1</sup>, <a class="person" href="person24528.html">Susana Hahn</a><sup>2</sup>, <a class="person" href="person54577.html">Torsten Schaub</a><sup>2</sup>, <a class="person" href="person55806.html">Igor Stéphan</a><sup>1</sup>                                </div>
+<a class="person" href="person25254_55621.html">Christine Tasson</a><sup>1</sup>, <a class="person" href="person55622.html">Aymeric Walch</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Angers</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Potsdam</div>
+                                <div class="affiliation_item"><sup>1</sup> ISAE-SUPAERO</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Metric temporal equilibrium logic (MEL) extends temporal equilibrium logic (TEL)
-  by incorporating quantitative timing constraints,
-  enabling the specification and analysis of deadlines and durations.
-  MEL is particularly suited for domains where time-bound properties are crucial,
-  such as embedded systems, cyber-physical systems, and real-time software.
-  It facilitates the precise expression of timing behaviors,
-  such as the requirement that an event must occur within 5 milliseconds of a trigger,
-  which often elude traditional qualitative temporal logics.
-
-  In this paper, we present a Tseitin-like translation that maps any metric temporal formula into
-  a logic programming fragment restricted to past operators.
-  This translation provides a formal bridge to leverage existing Answer Set Programming (ASP) solvers for reasoning about metric temporal constraints.
-  By restricting the target fragment to past operators, we enable more effective evaluation and integration with current ASP-based toolchains for multi-shot solving.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The differential λ-calculus studies how the quantitative aspects of programs correspond to differentiation and to Taylor expansion inside models of linear logic. Recent work has generalized the axioms of Taylor expansion so they apply to many models that only feature partial sums. However, that work does not cover the classic web based models of Köthe spaces and finiteness spaces. 
+First, we provide a generic construction of web based models with partial sums. It captures models, ranging from coherence spaces to probabilistic coherence spaces, finiteness spaces and Köthe spaces. Second, we generalize the theory of Taylor expansion to models in which coefficients can be non-positive. We then use our generic web model construction to provide a unified proof that all the aforementioned web based models feature such Taylor expansion.</p>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:309">
+                        <tr class="talk" id="talk:263">
                             <td class="time">11:00-11:30</td>
                             <td>
-                                <div class="title">Meta Programming for Linear-time Temporal Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:309">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">Quantum Bayesian Networks: Compositionality and Typing via Linear Logic <a class="abstract_link" href="FSCD-2026-07-22.html#talk:263">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24528.html">Susana Hahn</a><sup>1</sup>, <a class="person" href="person25515_54576.html">Amade Nemes</a><sup>1</sup>, <a class="person" href="person54590.html">Javier Romero</a><sup>1</sup>, <a class="person" href="person54577.html">Torsten Schaub</a><sup>1</sup>                                </div>
+<a class="person" href="person23652.html">Remi Di Guardia</a><sup>1</sup>, <a class="person" href="person55624.html">Thomas Ehrhard</a><sup>1</sup>, <a class="person" href="person24340.html">Claudia Faggian</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
+                                <div class="affiliation_item"><sup>1</sup> IRIF</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The development of temporal extensions to Answer Set Programming (ASP) has led to the emergence of linear-time (TEL), dynamic (DEL), and metric (MEL) temporal logics. However, the inherent rigidity of highly optimized ASP systems often hinders the rapid exploration and implementation of alternative logical designs. In this work, we propose a flexible meta-programming framework that operationalizes the semantics of varied temporal logics through a unified, declarative framework. Our approach extends standard ASP meta-programming by augmenting clingo’s theory grammar with formal type specifications and nesting capabilities. To ensure semantic correctness, we introduce a transformation pipeline that protects nested modalities from stable- model-based simplifications during grounding. We demonstrate the extensibility of our framework by implementing meta-encodings for TEL, MEL, and DEL. We provide a comprehensive account of TEL and highlight the key features for for managing the interval constraints of MEL and the Fischer-Ladner closure in DEL. Finally, we introduce the metasp system, a versatile tool that encapsulates workflow.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Quantum causal models extend classical causal models to quantum systems. In particular, Quantum Bayesian networks, first introduced in foundational work by Henson, Lal, and Pusey (2014) provide a mathematical formalism to describe causal relations, to analyse correlations, and to predict the probabilities of measurement outcomes, in systems involving both classical and quantum data. Such a framework generalizes Pearl's Bayesian networks—prominent graphical models for classical probabilistic reasoning and inference.
+
+Our paper brings compositional principles and a typing discipline into the setting of Quantum Bayesian Networks, with two main contributions.
+- First, a compositional semantics with a key feature: when all causes are classical, it coincides with the standard semantics of Bayesian networks (which is key to inference algorithms), while in the purely quantum case it reduces to tensor networks.
+- Second, a typed graphical formalism based on linear logic proof nets, where types ensure well-behaved composition of systems.</p>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:310">
+                        <tr class="talk" id="talk:264">
                             <td class="time">11:30-12:00</td>
                             <td>
-                                <div class="title">Long-term Power Grid Planning via Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:310">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">On the consistency of naive set theories over substructural and fuzzy logics <a class="abstract_link" href="FSCD-2026-07-22.html#talk:264">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23795.html">Antonio Ielo</a><sup>1</sup>, <a class="person" href="person55812.html">Francesco Doria</a><sup>1</sup>, <a class="person" href="person55813.html">Sandra Castellanos-Paez</a><sup>2</sup>, <a class="person" href="person55814.html">Marco Maratea</a><sup>1</sup>, <a class="person" href="person55815.html">Francesco Percassi</a><sup>2</sup>, <a class="person" href="person55816.html">Mauro Vallati</a><sup>2</sup>                                </div>
+<a class="person" href="person24580.html">Kazushige Terui</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Huddersfield</div>
+                                <div class="affiliation_item"><sup>1</sup> Kyoto University</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Power grid is a critical infrastructure underpinning all aspects of modern society and its services. Maintaining its effectiveness requires continuous adaptations. In particular, addressing sustainability targets, demand patterns, and urbanisation trends requires implementing changes to the network. Actual developments can potentially span over a decade, with supply continuity and service quality that must be preserved throughout by ensuring conformance to several topological and combinatorial invariants. Long-term power grid planning deals with the above process, and although planning languages could be a natural choice, the kind of properties and invariants needed are cumbersome to express in such languages; on the contrary, they can be elegantly and succinctly encoded in Answer Set Programming (ASP).  In this paper, we propose the first approach to automate and optimise the long-term power grid planning process using ASP. Experimental evaluations conducted on synthetic and real‑world grid data confirm the expressive power of the proposed ASP‑based approach and demonstrate its effectiveness.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:299">
-                            <td class="time">12:00-12:30</td>
-                            <td>
-                                <div class="title">From Time to Space: The Impact of Linearity in Higher-Order Datalog <a class="abstract_link" href="ICLP-2026-07-22.html#talk:299">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25266_55762.html">Angelos Charalambidis</a><sup>1</sup>, <a class="person" href="person55764.html">Babis Kostopoulos</a><sup>1</sup>, <a class="person" href="person55765.html">Panos Rondogiannis</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Harokopio University of Athens</div>
-                                <div class="affiliation_item"><sup>2</sup> National and Kapodistrian University of Athens</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider a fragment of Higher-Order Datalog with negation and argue that it generalizes the familiar and important fragment of Linear Datalog. We investigate the expressive power of this fragment, establishing a tight connection with the hierarchy of space complexity classes. In particular, we demonstrate that for all k >= 1, the (k+1)-order fragment of Stratified Linear Higher-Order Datalog$^\neg$ captures (k-1)-EXPSPACE. This result suggests that restricting programs to linear recursion shifts the expressive power of the corresponding fragments from time to space, generalizing the classical result that (Stratified) Linear Datalog captures NL. Unlike the first-order setting where an ordering assumption is required to capture NL, our results hold without any such assumption on the input database. The proof relies on simulating space-bounded Turing machines using Stratified Linear Higher-Order Datalog$^\neg$ programs and providing a space-efficient evaluation of the query program. We argue that identifying such computationally well-behaved fragments is a crucial step towards paving the way for practical implementations of Higher-Order Datalog.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The purpose of this paper is to invite structural proof theorists to a challenging problem in substructural and fuzzy logics: the consistency of Cantor-Lukasiewicz naive set theory. To this end, we consider two logics: FLew (Full Lambek calculus with exchange and weakening) and its extension \L (Lukasiewicz' infinite-valued logic). The former is equivalently specified as the !-free intuitionistic linear logic with weakening, while the latter is the most important system of mathematical fuzzy logic. For each of them, we consider two extensions: one with simultaneous fixed points of formulas and the other with naive set theory with unrestricted comprehension, so that we end up with four systems: FLew-fix, FLew-set, \L-fix and \L-set. The first two admit an easy proof of consistency by cut elimination, while the third admits a proof by Brouwer's fixed point theorem. The last system \L-set (Cantor-Lukasiewicz set theory) is our main target. Although its consistency is still open, we prove the consistency of a restricted fragment.</p>
                                 </div>
                             </td>
                         </tr>
@@ -515,7 +496,7 @@ a lower bound under the ETH showing our algorithm is almost optimal.</p>
                             <td>
                                 <div class="title">What Would You Do? Dilemmas from Academic Life <a class="abstract_link" href="KR-2026-07-22.html#talk:426">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23872_57267.html">Lucia Gomez</a><sup>1</sup>, <a class="person" href="person24121.html">Sanja Lukumbuzya</a><sup>2</sup>, <a class="person" href="person47998.html">Vanina Martinez</a><sup>3</sup>                                </div>
+<a class="person" href="person23872_57267.html">Lucia Gomez</a><sup>1</sup>, <a class="person" href="person24121.html">Sanja Lukumbuzya</a><sup>2</sup>, <a class="person" href="person57269.html">Vanina Martinez</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Inria</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Wien</div>
@@ -525,71 +506,90 @@ a lower bound under the ETH showing our algorithm is almost optimal.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:746">
+                <div class="session" id="session:775">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="746" data-title="Substructural Logics" data-time="10:30-12:00" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-12:00</span>
-                        <span class="title">Substructural Logics</span>
-                        <span class="group_tag">FSCD</span>
+                        <button type="button" class="favorite_btn" data-session-id="775" data-title="Block 7 (4 TPLP)" data-time="10:30-12:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-12:30</span>
+                        <span class="title">Block 7 (4 TPLP)</span>
+                        <span class="group_tag">ICLP</span>
                     </div>
 
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person23753.html">Olivier Laurent</a>
-                        </div>
-                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room30.html">One03</a>
+                        <a class="room_name" href="room33.html">B2.04</a>
                     </div>
 
 
                     <table class="talks">
-                        <tr class="talk" id="talk:262">
+                        <tr class="talk" id="talk:308">
                             <td class="time">10:30-11:00</td>
                             <td>
-                                <div class="title">Absolute convergence and Taylor expansion in web based models of linear logic <a class="abstract_link" href="FSCD-2026-07-22.html#talk:262">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">Reducing Arbitrary Metric Temporal Formulas into Logic Programs under Answer Set Semantics <a class="abstract_link" href="ICLP-2026-07-22.html#talk:308">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25254_55621.html">Christine Tasson</a><sup>1</sup>, <a class="person" href="person55622.html">Aymeric Walch</a><sup>1</sup>                                </div>
+<a class="person" href="person23811_55803.html">Martin Diéguez</a><sup>1</sup>, <a class="person" href="person24528.html">Susana Hahn</a><sup>2</sup>, <a class="person" href="person54577.html">Torsten Schaub</a><sup>2</sup>, <a class="person" href="person55806.html">Igor Stéphan</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> ISAE-SUPAERO</div>
+                                <div class="affiliation_item"><sup>1</sup> University of Angers</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Potsdam</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The differential λ-calculus studies how the quantitative aspects of programs correspond to differentiation and to Taylor expansion inside models of linear logic. Recent work has generalized the axioms of Taylor expansion so they apply to many models that only feature partial sums. However, that work does not cover the classic web based models of Köthe spaces and finiteness spaces. 
-First, we provide a generic construction of web based models with partial sums. It captures models, ranging from coherence spaces to probabilistic coherence spaces, finiteness spaces and Köthe spaces. Second, we generalize the theory of Taylor expansion to models in which coefficients can be non-positive. We then use our generic web model construction to provide a unified proof that all the aforementioned web based models feature such Taylor expansion.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Metric temporal equilibrium logic (MEL) extends temporal equilibrium logic (TEL)
+  by incorporating quantitative timing constraints,
+  enabling the specification and analysis of deadlines and durations.
+  MEL is particularly suited for domains where time-bound properties are crucial,
+  such as embedded systems, cyber-physical systems, and real-time software.
+  It facilitates the precise expression of timing behaviors,
+  such as the requirement that an event must occur within 5 milliseconds of a trigger,
+  which often elude traditional qualitative temporal logics.
+
+  In this paper, we present a Tseitin-like translation that maps any metric temporal formula into
+  a logic programming fragment restricted to past operators.
+  This translation provides a formal bridge to leverage existing Answer Set Programming (ASP) solvers for reasoning about metric temporal constraints.
+  By restricting the target fragment to past operators, we enable more effective evaluation and integration with current ASP-based toolchains for multi-shot solving.</p>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:263">
+                        <tr class="talk" id="talk:309">
                             <td class="time">11:00-11:30</td>
                             <td>
-                                <div class="title">Quantum Bayesian Networks: Compositionality and Typing via Linear Logic <a class="abstract_link" href="FSCD-2026-07-22.html#talk:263">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">Meta Programming for Linear-time Temporal Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:309">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23652.html">Remi Di Guardia</a><sup>1</sup>, <a class="person" href="person55624.html">Thomas Ehrhard</a><sup>1</sup>, <a class="person" href="person24340.html">Claudia Faggian</a><sup>1</sup>                                </div>
+<a class="person" href="person24528.html">Susana Hahn</a><sup>1</sup>, <a class="person" href="person25515_54576.html">Amade Nemes</a><sup>1</sup>, <a class="person" href="person54590.html">Javier Romero</a><sup>1</sup>, <a class="person" href="person54577.html">Torsten Schaub</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> IRIF</div>
+                                <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Quantum causal models extend classical causal models to quantum systems. In particular, Quantum Bayesian networks, first introduced in foundational work by Henson, Lal, and Pusey (2014) provide a mathematical formalism to describe causal relations, to analyse correlations, and to predict the probabilities of measurement outcomes, in systems involving both classical and quantum data. Such a framework generalizes Pearl's Bayesian networks—prominent graphical models for classical probabilistic reasoning and inference.
-
-Our paper brings compositional principles and a typing discipline into the setting of Quantum Bayesian Networks, with two main contributions.
-- First, a compositional semantics with a key feature: when all causes are classical, it coincides with the standard semantics of Bayesian networks (which is key to inference algorithms), while in the purely quantum case it reduces to tensor networks.
-- Second, a typed graphical formalism based on linear logic proof nets, where types ensure well-behaved composition of systems.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The development of temporal extensions to Answer Set Programming (ASP) has led to the emergence of linear-time (TEL), dynamic (DEL), and metric (MEL) temporal logics. However, the inherent rigidity of highly optimized ASP systems often hinders the rapid exploration and implementation of alternative logical designs. In this work, we propose a flexible meta-programming framework that operationalizes the semantics of varied temporal logics through a unified, declarative framework. Our approach extends standard ASP meta-programming by augmenting clingo’s theory grammar with formal type specifications and nesting capabilities. To ensure semantic correctness, we introduce a transformation pipeline that protects nested modalities from stable- model-based simplifications during grounding. We demonstrate the extensibility of our framework by implementing meta-encodings for TEL, MEL, and DEL. We provide a comprehensive account of TEL and highlight the key features for for managing the interval constraints of MEL and the Fischer-Ladner closure in DEL. Finally, we introduce the metasp system, a versatile tool that encapsulates workflow.</p>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:264">
+                        <tr class="talk" id="talk:310">
                             <td class="time">11:30-12:00</td>
                             <td>
-                                <div class="title">On the consistency of naive set theories over substructural and fuzzy logics <a class="abstract_link" href="FSCD-2026-07-22.html#talk:264">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">Long-term Power Grid Planning via Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:310">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24580.html">Kazushige Terui</a><sup>1</sup>                                </div>
+<a class="person" href="person23795.html">Antonio Ielo</a><sup>1</sup>, <a class="person" href="person55812.html">Francesco Doria</a><sup>1</sup>, <a class="person" href="person55813.html">Sandra Castellanos-Paez</a><sup>2</sup>, <a class="person" href="person55814.html">Marco Maratea</a><sup>1</sup>, <a class="person" href="person55815.html">Francesco Percassi</a><sup>2</sup>, <a class="person" href="person55816.html">Mauro Vallati</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Kyoto University</div>
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Huddersfield</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The purpose of this paper is to invite structural proof theorists to a challenging problem in substructural and fuzzy logics: the consistency of Cantor-Lukasiewicz naive set theory. To this end, we consider two logics: FLew (Full Lambek calculus with exchange and weakening) and its extension \L (Lukasiewicz' infinite-valued logic). The former is equivalently specified as the !-free intuitionistic linear logic with weakening, while the latter is the most important system of mathematical fuzzy logic. For each of them, we consider two extensions: one with simultaneous fixed points of formulas and the other with naive set theory with unrestricted comprehension, so that we end up with four systems: FLew-fix, FLew-set, \L-fix and \L-set. The first two admit an easy proof of consistency by cut elimination, while the third admits a proof by Brouwer's fixed point theorem. The last system \L-set (Cantor-Lukasiewicz set theory) is our main target. Although its consistency is still open, we prove the consistency of a restricted fragment.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Power grid is a critical infrastructure underpinning all aspects of modern society and its services. Maintaining its effectiveness requires continuous adaptations. In particular, addressing sustainability targets, demand patterns, and urbanisation trends requires implementing changes to the network. Actual developments can potentially span over a decade, with supply continuity and service quality that must be preserved throughout by ensuring conformance to several topological and combinatorial invariants. Long-term power grid planning deals with the above process, and although planning languages could be a natural choice, the kind of properties and invariants needed are cumbersome to express in such languages; on the contrary, they can be elegantly and succinctly encoded in Answer Set Programming (ASP).  In this paper, we propose the first approach to automate and optimise the long-term power grid planning process using ASP. Experimental evaluations conducted on synthetic and real‑world grid data confirm the expressive power of the proposed ASP‑based approach and demonstrate its effectiveness.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:299">
+                            <td class="time">12:00-12:30</td>
+                            <td>
+                                <div class="title">From Time to Space: The Impact of Linearity in Higher-Order Datalog <a class="abstract_link" href="ICLP-2026-07-22.html#talk:299">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25266_55762.html">Angelos Charalambidis</a><sup>1</sup>, <a class="person" href="person55764.html">Babis Kostopoulos</a><sup>1</sup>, <a class="person" href="person55765.html">Panos Rondogiannis</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Harokopio University of Athens</div>
+                                <div class="affiliation_item"><sup>2</sup> National and Kapodistrian University of Athens</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider a fragment of Higher-Order Datalog with negation and argue that it generalizes the familiar and important fragment of Linear Datalog. We investigate the expressive power of this fragment, establishing a tight connection with the hierarchy of space complexity classes. In particular, we demonstrate that for all k >= 1, the (k+1)-order fragment of Stratified Linear Higher-Order Datalog$^\neg$ captures (k-1)-EXPSPACE. This result suggests that restricting programs to linear recursion shifts the expressive power of the corresponding fragments from time to space, generalizing the classical result that (Stratified) Linear Datalog captures NL. Unlike the first-order setting where an ordering assumption is required to capture NL, our results hold without any such assumption on the input database. The proof relies on simulating space-bounded Turing machines using Stratified Linear Higher-Order Datalog$^\neg$ programs and providing a space-efficient evaluation of the query program. We argue that identifying such computationally well-behaved fragments is a crucial step towards paving the way for practical implementations of Higher-Order Datalog.</p>
                                 </div>
                             </td>
                         </tr>
@@ -653,7 +653,7 @@ In this paper, we provide an entry point for category-theorists into the study o
                             <td>
                                 <div class="title">A cartesian closed fibration of regular languages <a class="abstract_link" href="LICS-2026-07-22.html#talk:482">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25374_55668.html">Paul-André Melliès</a><sup>1</sup>, <a class="person" href="person47701.html">Vincent Moreau</a><sup>2</sup>                                </div>
+<a class="person" href="person25374_55668.html">Paul-André Melliès</a><sup>1</sup>, <a class="person" href="person57691.html">Vincent Moreau</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> CNRS, Université Paris Cité, INRIA</div>
                                 <div class="affiliation_item"><sup>2</sup> Tallinn University of Technology</div>
@@ -878,7 +878,7 @@ benchmark suite.</p>
                             <td>
                                 <div class="title">SAT-based ASP Solving and Optimization via a General Transitive Closure Framework <a class="abstract_link" href="KR-2026-07-22.html#talk:430">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25331_57281.html">Masood Feyzbakhsh Rankooh</a><sup>1</sup>, <a class="person" href="person47811.html">Matti Järvisalo</a><sup>1</sup>                                </div>
+<a class="person" href="person25331_57281.html">Masood Feyzbakhsh Rankooh</a><sup>1</sup>, <a class="person" href="person57282.html">Matti Järvisalo</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Helsinki</div>
                                 </div>
@@ -959,21 +959,6 @@ made in case of an emergency.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:747">
-                    <div class="heading">
-                        <span class="interval">12:00-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">FSCD</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room30.html">One03</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:989">
                     <div class="heading">
                         <span class="interval">12:00-13:30</span>
@@ -985,6 +970,21 @@ made in case of an emergency.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room38.html">JJ Laginha</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:747">
+                    <div class="heading">
+                        <span class="interval">12:00-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">FSCD</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room30.html">One03</a>
                     </div>
 
 
@@ -1015,51 +1015,6 @@ made in case of an emergency.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room29.html">One02</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:776">
-                    <div class="heading">
-                        <span class="interval">12:30-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">ICLP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:952">
-                    <div class="heading">
-                        <span class="interval">12:30-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">LICS</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:953">
-                    <div class="heading">
-                        <span class="interval">12:30-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">LICS</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room36.html">C1.03</a>
                     </div>
 
 
@@ -1105,6 +1060,51 @@ made in case of an emergency.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room31.html">B2.03</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:952">
+                    <div class="heading">
+                        <span class="interval">12:30-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">LICS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:953">
+                    <div class="heading">
+                        <span class="interval">12:30-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">LICS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room36.html">C1.03</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:776">
+                    <div class="heading">
+                        <span class="interval">12:30-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">ICLP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
                     </div>
 
 
@@ -1200,13 +1200,224 @@ In this paper, we explore #QBF proof systems to count the number of Skolem funct
                             <td>
                                 <div class="title">Long-Distance Q(D^{std})Consensus is sound <a class="abstract_link" href="SAT-2026-07-22.html#talk:1488">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25406_58456.html">Abhimanyu Choudhury</a><sup>1</sup>, <a class="person" href="person58327.html">Meena Mahajan</a><sup>1</sup>, <a class="person" href="person25523_47382.html">Friedrich Slivovsky</a><sup>2</sup>                                </div>
+<a class="person" href="person25406_58456.html">Abhimanyu Choudhury</a><sup>1</sup>, <a class="person" href="person58327.html">Meena Mahajan</a><sup>1</sup>, <a class="person" href="person25523_58944.html">Friedrich Slivovsky</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institute of Mathematical Sciences, HBNI, Chennai</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Liverpool, UK</div>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We describe a procedure that extracts existential strategies from verification proofs in the Long-Distance Consensus (i.e.\ Term-Resolution) proof system when augmented with dependency schemes. We prove that when the standard dependency scheme D^{std} is used, the extracted strategies are winning strategies, thus establishing soundness of the proof system LDQ(D^{std})Consensus. We show through a counterexample that this approach fails to show soundness for LDQ(D^{rrs})Consensus.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:777">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="777" data-title="10 Years Test of Time Award" data-time="14:00-14:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-14:30</span>
+                        <span class="title">10 Years Test of Time Award</span>
+                        <span class="group_tag">ICLP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session" id="session:954">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="954" data-title="Session 8A Foundations of Probabilistic Computation" data-time="14:00-16:00" data-room="B1.04" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-16:00</span>
+                        <span class="title">Session 8A Foundations of Probabilistic Computation</span>
+                        <span class="group_tag">LICS</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23885.html">Hugo Paquet</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:488">
+                            <td class="time">14:00-14:30</td>
+                            <td>
+                                <div class="title">Fixed-parameter tractable inference for discrete probabilistic programs, via string diagram algebraisation <a class="abstract_link" href="LICS-2026-07-22.html#talk:488">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23380.html">Benedikt Peterseim</a><sup>1</sup>, <a class="person" href="person55276.html">Milan Lopuhaä-Zwakenberg</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Twente</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Discrete probabilistic programs (DPPs) provide a highly expressive formalism for compactly defining arbitrary finite probabilistic models. This expressivity comes at a price: DPP inference is PSPACE-hard. In this work, we show that DPP inference only takes polynomial time for programs that are `structurally simple'. More precisely, inference can be performed in polynomial time when the primal graph of each function appearing in the probabilistic program has bounded treewidth, and the inverse acceptance probability is at most exponential in the size of the probabilistic program. Existing  algorithms do not achieve this performance guarantee. Our method relies on finding suitable decompositions, algebraisations, of the string diagrams underlying DPPs, employing existing algorithms for tree decompositions. This is independent of the probabilistic setting of DPPs and has direct applications to many problems, such as evaluating queries on relational databases and cybersecurity risk assessment via attack trees.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:489">
+                            <td class="time">14:30-15:00</td>
+                            <td>
+                                <div class="title">A synthetic account of Metropolis--Hastings via categorical probability <a class="abstract_link" href="LICS-2026-07-22.html#talk:489">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25377_57710.html">Rob Cornish</a><sup>1</sup>, <a class="person" href="person57711.html">Andi Wang</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Nanyang Technological University</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Warwick</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Metropolis--Hastings (MH) algorithm is a foundational Markov chain Monte Carlo algorithm.
+In this paper, we ask whether it is possible to formulate and analyse MH with existing tools from categorical probability theory, using a recent involutive framework proposed for MH-type algorithms as a concrete case study. We first show how basic concepts such as invariance and reversibility can be formulated in Markov categories, and how aspects of the involutive framework can be captured using CD categories. We then study enrichments of CD categories over commutative monoids. These provide a rich setting for reasoning synthetically about a range of important probabilistic concepts, including substochastic kernels, finite and $\sigma$-finite measures, absolute continuity, singular measures, and Lebesgue decompositions. This structure allows us to give very general necessary and sufficient conditions for an MH-type sampler to be reversible with respect to a given target distribution.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:490">
+                            <td class="time">15:00-15:30</td>
+                            <td>
+                                <div class="title">Interpreting De Finetti's Theorem in the Category of Integrable Cones <a class="abstract_link" href="LICS-2026-07-22.html#talk:490">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24186.html">Raphaëlle Crubillé</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LIS, Aix-Marseille Université</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We establish a connection between two results in the literature on probabilistic semantics: a formulation of De Finetti's theorem in the language of category theory due to Jacobs and Staton, and the generic construction of the free exponential of Linear Logic by Melliès et al, that has been instantiated in the model of probabilistic coherence spaces by Crubillé et al. The structural proximity of these two construction is manifest, but making this connection formal requires technical developments on the relationship between the category of stochastic kernels and the category of integrable cones, two well-known categories in probabilistic semantics.  We then use this connection to give a characterization of the total elements of the probabilistic coherence space $!\Bool$.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:491">
+                            <td class="time">15:30-16:00</td>
+                            <td>
+                                <div class="title">A convenient fibration for dependently-typed probability theory <a class="abstract_link" href="LICS-2026-07-22.html#talk:491">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23277.html">Danel Ahman</a><sup>1</sup>, <a class="person" href="person23769.html">Ohad Kammar</a><sup>2</sup>, <a class="person" href="person24278.html">Rasmus Ejlers Møgelberg</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Tartu</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>3</sup> IT University of Copenhagen</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We describe semantic structures relevant for interpreting dependent
+types for statistical and probabilistic modelling.  Our development
+extends the theory of quasi-Borel spaces (qbses) of Staton et. al,
+which support simply-typed, higher-order probability theory with
+continuous distributions. It is well-known that qbses can interpret a
+dependent-type theory supporting dependent function-spaces through the
+codomain fibration. We define an equivalent split fibration based on
+the family fibration, which we call quasi-Borel families (qbfs),
+characterise its structure, equip it with fibred monads of measures
+and probability, and use them to develop dependently-typed probability
+theory.
+
+We characterise the structure of the qbf fibration that is relevant
+for dependently-typed probability theory in elementary form. Our
+characterisations include: context extension, dependent pairs,
+dependent functions, extensional identity types, fibred products and
+coproducts, subspaces, a universe of propositions, and straightforward
+internalisation and externalisation principles for discrete spaces. We
+use these concepts to define fibred distribution and probability
+monads, the semantic structure needed to interpret probability
+distributions under a dependent context. We show that this structure
+satisfies a fibred version of Kock's synthetic measure theory. We also
+use these concepts to develop a qbs counterpart to Kolmogorov's
+conditional expectation. Our main result is a version of the
+conditional expectation that, under standard regularity assumptions,
+is measurable in both the random variables we are conditioning, and
+the observation map we are conditioning by.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:955">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="955" data-title="Session 8B Graph Isomorphism, Homomorphisms, and Combinatorial Invariants" data-time="14:00-16:00" data-room="C1.03" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-16:00</span>
+                        <span class="title">Session 8B Graph Isomorphism, Homomorphisms, and Combinatorial Invariants</span>
+                        <span class="group_tag">LICS</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23437.html">Martin Grohe</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room36.html">C1.03</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:492">
+                            <td class="time">14:00-14:30</td>
+                            <td>
+                                <div class="title">Local combinatorial analogues for bounded VC dimension <a class="abstract_link" href="LICS-2026-07-22.html#talk:492">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23777.html">Olga Medrano Martin del Campo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The University of Chicago</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Stable graphs, or equivalently Littlestone classes, were characterized by existence of linear-sized 'good' sets, a kind of strongly homogeneous set, in work of Malliaris-Shelah and Malliaris-Moran. We prove a parallel result for VC classes, showing these are characterized by existence of linear-sized symmetric or asymmetric good pairs (which we define). We give several proofs, each requiring drawing from methods and results from different areas, and resulting in different kinds of bounds. We finish with a few words on our learning theory motivation for these investigations and state some further research directions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:493">
+                            <td class="time">14:30-15:00</td>
+                            <td>
+                                <div class="title">Dynamic Planar Graph Isomorphism is in DynFO <a class="abstract_link" href="LICS-2026-07-22.html#talk:493">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25378_57717.html">Samir Datta</a><sup>1</sup>, <a class="person" href="person57718.html">Asif Khan</a><sup>1</sup>, <a class="person" href="person57719.html">Felix Tschirbs</a><sup>2</sup>, <a class="person" href="person57720.html">Nils Vortmeier</a><sup>2</sup>, <a class="person" href="person57209.html">Thomas Zeume</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Chennai Mathematical Institute, India</div>
+                                <div class="affiliation_item"><sup>2</sup> Ruhr University Bochum, Germany</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Consider two planar graphs which are subject to edge insertions and deletions. We show that whether the two graphs are isomorphic can be maintained with first-order logic formulas and auxiliary data of polynomial size. This places the dynamic planar graph isomorphism problem into the dynamic descriptive complexity class DynFO. As a consequence, there is a dynamic constant-time parallel algorithm with polynomial-size auxiliary data which maintains whether two dynamic planar graphs are isomorphic.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:494">
+                            <td class="time">15:00-15:30</td>
+                            <td>
+                                <div class="title">The Finite Length Property of the Rado graph and Friends <a class="abstract_link" href="LICS-2026-07-22.html#talk:494">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23153.html">Jingjie Yang</a><sup>1</sup>, <a class="person" href="person24690_57628.html">Mikołaj Bojańczyk</a><sup>2</sup>, <a class="person" href="person57724.html">Bartek Klin</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Warsaw</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> An infinite structure has the finite length property (over a given field) if, for each of its finite powers, strict chains of equivariant subspaces in the corresponding free vector space are bounded in length. Prior work showed that the countable pure set and the dense linear order without endpoints have this property.We generalise these results to (a) structures approximated by finite substructures with few orbits, provided the field is of characteristic zero, and (b) generically ordered expansions of Fraïssé limits with free amalgamation, in vocabularies consisting of unary and binary relations. As a special case, we deduce the finite length property of the Rado graph using both methods. We also describe some connections with function spaces, weighted register automata, and solving orbit-finite systems of linear equations.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:495">
+                            <td class="time">15:30-16:00</td>
+                            <td>
+                                <div class="title">Distinguishing Graphs by Counting Homomorphisms from Sparse Graphs <a class="abstract_link" href="LICS-2026-07-22.html#talk:495">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23996.html">Daniel Neuen</a><sup>1</sup>, <a class="person" href="person57726.html">Tim Seppelt</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Max Planck Institute for Informatics</div>
+                                <div class="affiliation_item"><sup>2</sup> IT-University of Copenhagen</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Lovász (1967) showed that two graphs $G$ and $H$ are isomorphic if, and only if, they are homomorphism indistinguishable over all graphs, i.e., $G$ and $H$ admit the same number of number of homomorphisms from every graph $F$. Subsequently, a substantial line of work studied homomorphism indistinguishability over restricted graph classes. For example, homomorphism indistinguishability over minor-closed graph classes $\mathcal{F}$ such as the class of planar graphs, the class of graphs of treewidth $\leq k$, pathwidth $\leq k$, or treedepth $\leq k$, was shown to be equivalent to quantum isomorphism and equivalences with respect to counting logic fragments, respectively.
+
+Via such characterizations, the distinguishing power of e.g. logical or quantum graph isomorphism relaxations can be studied with graph-theoretic means. In this vein, Roberson (2022) conjectured that homomorphism indistinguishability over every graph class excluding some minor is not the same as isomorphism. We prove this conjecture for all vortex-free graph classes. In particular, homomorphism indistinguishability over graphs of bounded Euler genus is not the same as isomorphism. As a negative result, we show that Roberson's conjecture fails when generalized to graph classes excluding a topological minor.
+
+Furthermore, we show homomorphism distinguishing closedness for several graph classes including all topological-minor-closed and union-closed classes of forests, and show that homomorphism indistinguishability over graphs of genus $\leq g$ (and other parameters) forms a strict hierarchy.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1467,201 +1678,6 @@ for cs-tree–consistent CP-theory preferences, and prove that it subsumes all p
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:954">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="954" data-title="Session 8A Foundations of Probabilistic Computation" data-time="14:00-16:00" data-room="B1.04" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">14:00-16:00</span>
-                        <span class="title">Session 8A Foundations of Probabilistic Computation</span>
-                        <span class="group_tag">LICS</span>
-                    </div>
-
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person23885.html">Hugo Paquet</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:488">
-                            <td class="time">14:00-14:30</td>
-                            <td>
-                                <div class="title">Fixed-parameter tractable inference for discrete probabilistic programs, via string diagram algebraisation <a class="abstract_link" href="LICS-2026-07-22.html#talk:488">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23380.html">Benedikt Peterseim</a><sup>1</sup>, <a class="person" href="person55276.html">Milan Lopuhaä-Zwakenberg</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Twente</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Discrete probabilistic programs (DPPs) provide a highly expressive formalism for compactly defining arbitrary finite probabilistic models. This expressivity comes at a price: DPP inference is PSPACE-hard. In this work, we show that DPP inference only takes polynomial time for programs that are `structurally simple'. More precisely, inference can be performed in polynomial time when the primal graph of each function appearing in the probabilistic program has bounded treewidth, and the inverse acceptance probability is at most exponential in the size of the probabilistic program. Existing  algorithms do not achieve this performance guarantee. Our method relies on finding suitable decompositions, algebraisations, of the string diagrams underlying DPPs, employing existing algorithms for tree decompositions. This is independent of the probabilistic setting of DPPs and has direct applications to many problems, such as evaluating queries on relational databases and cybersecurity risk assessment via attack trees.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:489">
-                            <td class="time">14:30-15:00</td>
-                            <td>
-                                <div class="title">A synthetic account of Metropolis--Hastings via categorical probability <a class="abstract_link" href="LICS-2026-07-22.html#talk:489">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25377_57710.html">Rob Cornish</a><sup>1</sup>, <a class="person" href="person57711.html">Andi Wang</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Nanyang Technological University</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Warwick</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Metropolis--Hastings (MH) algorithm is a foundational Markov chain Monte Carlo algorithm.
-In this paper, we ask whether it is possible to formulate and analyse MH with existing tools from categorical probability theory, using a recent involutive framework proposed for MH-type algorithms as a concrete case study. We first show how basic concepts such as invariance and reversibility can be formulated in Markov categories, and how aspects of the involutive framework can be captured using CD categories. We then study enrichments of CD categories over commutative monoids. These provide a rich setting for reasoning synthetically about a range of important probabilistic concepts, including substochastic kernels, finite and $\sigma$-finite measures, absolute continuity, singular measures, and Lebesgue decompositions. This structure allows us to give very general necessary and sufficient conditions for an MH-type sampler to be reversible with respect to a given target distribution.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:490">
-                            <td class="time">15:00-15:30</td>
-                            <td>
-                                <div class="title">Interpreting De Finetti's Theorem in the Category of Integrable Cones <a class="abstract_link" href="LICS-2026-07-22.html#talk:490">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person24186.html">Raphaëlle Crubillé</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> LIS, Aix-Marseille Université</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We establish a connection between two results in the literature on probabilistic semantics: a formulation of De Finetti's theorem in the language of category theory due to Jacobs and Staton, and the generic construction of the free exponential of Linear Logic by Melliès et al, that has been instantiated in the model of probabilistic coherence spaces by Crubillé et al. The structural proximity of these two construction is manifest, but making this connection formal requires technical developments on the relationship between the category of stochastic kernels and the category of integrable cones, two well-known categories in probabilistic semantics.  We then use this connection to give a characterization of the total elements of the probabilistic coherence space $!\Bool$.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:491">
-                            <td class="time">15:30-16:00</td>
-                            <td>
-                                <div class="title">A convenient fibration for dependently-typed probability theory <a class="abstract_link" href="LICS-2026-07-22.html#talk:491">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23277.html">Danel Ahman</a><sup>1</sup>, <a class="person" href="person23769.html">Ohad Kammar</a><sup>2</sup>, <a class="person" href="person24278.html">Rasmus Ejlers Møgelberg</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Tartu</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Edinburgh</div>
-                                <div class="affiliation_item"><sup>3</sup> IT University of Copenhagen</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We describe semantic structures relevant for interpreting dependent
-types for statistical and probabilistic modelling.  Our development
-extends the theory of quasi-Borel spaces (qbses) of Staton et. al,
-which support simply-typed, higher-order probability theory with
-continuous distributions. It is well-known that qbses can interpret a
-dependent-type theory supporting dependent function-spaces through the
-codomain fibration. We define an equivalent split fibration based on
-the family fibration, which we call quasi-Borel families (qbfs),
-characterise its structure, equip it with fibred monads of measures
-and probability, and use them to develop dependently-typed probability
-theory.
-
-We characterise the structure of the qbf fibration that is relevant
-for dependently-typed probability theory in elementary form. Our
-characterisations include: context extension, dependent pairs,
-dependent functions, extensional identity types, fibred products and
-coproducts, subspaces, a universe of propositions, and straightforward
-internalisation and externalisation principles for discrete spaces. We
-use these concepts to define fibred distribution and probability
-monads, the semantic structure needed to interpret probability
-distributions under a dependent context. We show that this structure
-satisfies a fibred version of Kock's synthetic measure theory. We also
-use these concepts to develop a qbs counterpart to Kolmogorov's
-conditional expectation. Our main result is a version of the
-conditional expectation that, under standard regularity assumptions,
-is measurable in both the random variables we are conditioning, and
-the observation map we are conditioning by.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:955">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="955" data-title="Session 8B Graph Isomorphism, Homomorphisms, and Combinatorial Invariants" data-time="14:00-16:00" data-room="C1.03" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">14:00-16:00</span>
-                        <span class="title">Session 8B Graph Isomorphism, Homomorphisms, and Combinatorial Invariants</span>
-                        <span class="group_tag">LICS</span>
-                    </div>
-
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person23437.html">Martin Grohe</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room36.html">C1.03</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:492">
-                            <td class="time">14:00-14:30</td>
-                            <td>
-                                <div class="title">Local combinatorial analogues for bounded VC dimension <a class="abstract_link" href="LICS-2026-07-22.html#talk:492">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23777.html">Olga Medrano Martin del Campo</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> The University of Chicago</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Stable graphs, or equivalently Littlestone classes, were characterized by existence of linear-sized 'good' sets, a kind of strongly homogeneous set, in work of Malliaris-Shelah and Malliaris-Moran. We prove a parallel result for VC classes, showing these are characterized by existence of linear-sized symmetric or asymmetric good pairs (which we define). We give several proofs, each requiring drawing from methods and results from different areas, and resulting in different kinds of bounds. We finish with a few words on our learning theory motivation for these investigations and state some further research directions.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:493">
-                            <td class="time">14:30-15:00</td>
-                            <td>
-                                <div class="title">Dynamic Planar Graph Isomorphism is in DynFO <a class="abstract_link" href="LICS-2026-07-22.html#talk:493">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25378_57717.html">Samir Datta</a><sup>1</sup>, <a class="person" href="person57718.html">Asif Khan</a><sup>1</sup>, <a class="person" href="person57719.html">Felix Tschirbs</a><sup>2</sup>, <a class="person" href="person57720.html">Nils Vortmeier</a><sup>2</sup>, <a class="person" href="person47753.html">Thomas Zeume</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Chennai Mathematical Institute, India</div>
-                                <div class="affiliation_item"><sup>2</sup> Ruhr University Bochum, Germany</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Consider two planar graphs which are subject to edge insertions and deletions. We show that whether the two graphs are isomorphic can be maintained with first-order logic formulas and auxiliary data of polynomial size. This places the dynamic planar graph isomorphism problem into the dynamic descriptive complexity class DynFO. As a consequence, there is a dynamic constant-time parallel algorithm with polynomial-size auxiliary data which maintains whether two dynamic planar graphs are isomorphic.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:494">
-                            <td class="time">15:00-15:30</td>
-                            <td>
-                                <div class="title">The Finite Length Property of the Rado graph and Friends <a class="abstract_link" href="LICS-2026-07-22.html#talk:494">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23153.html">Jingjie Yang</a><sup>1</sup>, <a class="person" href="person24690_57628.html">Mikołaj Bojańczyk</a><sup>2</sup>, <a class="person" href="person57724.html">Bartek Klin</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Oxford</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Warsaw</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> An infinite structure has the finite length property (over a given field) if, for each of its finite powers, strict chains of equivariant subspaces in the corresponding free vector space are bounded in length. Prior work showed that the countable pure set and the dense linear order without endpoints have this property.We generalise these results to (a) structures approximated by finite substructures with few orbits, provided the field is of characteristic zero, and (b) generically ordered expansions of Fraïssé limits with free amalgamation, in vocabularies consisting of unary and binary relations. As a special case, we deduce the finite length property of the Rado graph using both methods. We also describe some connections with function spaces, weighted register automata, and solving orbit-finite systems of linear equations.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:495">
-                            <td class="time">15:30-16:00</td>
-                            <td>
-                                <div class="title">Distinguishing Graphs by Counting Homomorphisms from Sparse Graphs <a class="abstract_link" href="LICS-2026-07-22.html#talk:495">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23996.html">Daniel Neuen</a><sup>1</sup>, <a class="person" href="person57726.html">Tim Seppelt</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Max Planck Institute for Informatics</div>
-                                <div class="affiliation_item"><sup>2</sup> IT-University of Copenhagen</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Lovász (1967) showed that two graphs $G$ and $H$ are isomorphic if, and only if, they are homomorphism indistinguishable over all graphs, i.e., $G$ and $H$ admit the same number of number of homomorphisms from every graph $F$. Subsequently, a substantial line of work studied homomorphism indistinguishability over restricted graph classes. For example, homomorphism indistinguishability over minor-closed graph classes $\mathcal{F}$ such as the class of planar graphs, the class of graphs of treewidth $\leq k$, pathwidth $\leq k$, or treedepth $\leq k$, was shown to be equivalent to quantum isomorphism and equivalences with respect to counting logic fragments, respectively.
-
-Via such characterizations, the distinguishing power of e.g. logical or quantum graph isomorphism relaxations can be studied with graph-theoretic means. In this vein, Roberson (2022) conjectured that homomorphism indistinguishability over every graph class excluding some minor is not the same as isomorphism. We prove this conjecture for all vortex-free graph classes. In particular, homomorphism indistinguishability over graphs of bounded Euler genus is not the same as isomorphism. As a negative result, we show that Roberson's conjecture fails when generalized to graph classes excluding a topological minor.
-
-Furthermore, we show homomorphism distinguishing closedness for several graph classes including all topological-minor-closed and union-closed classes of forests, and show that homomorphism indistinguishability over graphs of genus $\leq g$ (and other parameters) forms a strict hierarchy.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
                 <div class="session" id="session:748">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="748" data-title="Concurrency" data-time="14:00-15:30" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -1742,22 +1758,6 @@ positive formulae on function types.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:777">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="777" data-title="10 Years Test of Time Award" data-time="14:00-14:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">14:00-14:30</span>
-                        <span class="title">10 Years Test of Time Award</span>
-                        <span class="group_tag">ICLP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
-                    </div>
-
-
-                </div>
                 <div class="session" id="session:778">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="778" data-title="Block 8 (2 TPLP)" data-time="14:30-15:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -1796,7 +1796,7 @@ that proposed several optimal operators for unification and matching. We have im
                             <td>
                                 <div class="title">Exploiting Multiple Abstract Call Patterns for Optimizing Run-Time Checks <a class="abstract_link" href="ICLP-2026-07-22.html#talk:313">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24002_55822.html">Daniel Jurjo-Rivas</a><sup>1</sup>, <a class="person" href="person55823.html">Daniela Ferreiro</a><sup>1</sup>, <a class="person" href="person55824.html">Marco Ciccalè</a><sup>1</sup>, <a class="person" href="person55800.html">Jose F. Morales</a><sup>1</sup>, <a class="person" href="person47948.html">Pedro López-García</a><sup>2</sup>, <a class="person" href="person55827.html">Manuel Hermenegildo</a><sup>1</sup>                                </div>
+<a class="person" href="person24002_55822.html">Daniel Jurjo-Rivas</a><sup>1</sup>, <a class="person" href="person55823.html">Daniela Ferreiro</a><sup>1</sup>, <a class="person" href="person55824.html">Marco Ciccalè</a><sup>1</sup>, <a class="person" href="person55800.html">Jose F. Morales</a><sup>1</sup>, <a class="person" href="person55799.html">Pedro López-García</a><sup>2</sup>, <a class="person" href="person55827.html">Manuel Hermenegildo</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Instituto IMDEA Software & UPM</div>
                                 <div class="affiliation_item"><sup>2</sup> Instituto IMDEA Software & CSIC</div>
@@ -1840,6 +1840,36 @@ that proposed several optimal operators for unification and matching. We have im
 
 
                 </div>
+                <div class="session interval_session" id="session:991">
+                    <div class="heading">
+                        <span class="interval">15:30-16:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">SAT</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room38.html">JJ Laginha</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:749">
+                    <div class="heading">
+                        <span class="interval">15:30-16:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">FSCD</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room30.html">One03</a>
+                    </div>
+
+
+                </div>
                 <div class="session interval_session" id="session:700">
                     <div class="heading">
                         <span class="interval">15:30-16:30</span>
@@ -1866,36 +1896,6 @@ that proposed several optimal operators for unification and matching. We have im
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room29.html">One02</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:749">
-                    <div class="heading">
-                        <span class="interval">15:30-16:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">FSCD</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room30.html">One03</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:991">
-                    <div class="heading">
-                        <span class="interval">15:30-16:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">SAT</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room38.html">JJ Laginha</a>
                     </div>
 
 
@@ -2018,7 +2018,7 @@ framework for modelling argumentative reasoning, yet existing approaches remain 
                             <td>
                                 <div class="title">Argumentation for Explainable and Globally Contestable Decision Support with LLMs <a class="abstract_link" href="KR-2026-07-22.html#talk:1372">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23889.html">Adam Dejl</a><sup>1</sup>, <a class="person" href="person47989.html">Matthew Williams</a><sup>1</sup>, <a class="person" href="person47982.html">Francesca Toni</a><sup>1</sup>                                </div>
+<a class="person" href="person23889.html">Adam Dejl</a><sup>1</sup>, <a class="person" href="person57330.html">Matthew Williams</a><sup>1</sup>, <a class="person" href="person57070.html">Francesca Toni</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Imperial College London</div>
                                 </div>
@@ -2032,7 +2032,7 @@ framework for modelling argumentative reasoning, yet existing approaches remain 
                             <td>
                                 <div class="title">X-ABALearn: Argumentative Learning with Semantics `a la Carte <a class="abstract_link" href="KR-2026-07-22.html#talk:1373">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24137.html">Emanuele De Angelis</a><sup>1</sup>, <a class="person" href="person57333.html">Maurizio Proietti</a><sup>1</sup>, <a class="person" href="person47982.html">Francesca Toni</a><sup>2</sup>                                </div>
+<a class="person" href="person24137.html">Emanuele De Angelis</a><sup>1</sup>, <a class="person" href="person57333.html">Maurizio Proietti</a><sup>1</sup>, <a class="person" href="person57070.html">Francesca Toni</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> CNR-IASI</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial</div>
@@ -2101,7 +2101,7 @@ problems, including tabular data and beyond.</p>
                             <td>
                                 <div class="title">Time Robustness for Point-Based Semantics of Metric Interval Temporal Logic <a class="abstract_link" href="KR-2026-07-22.html#talk:1375">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24348_57338.html">Simone Silvetti</a><sup>1</sup>, <a class="person" href="person57339.html">Ivan Compagnucci</a><sup>2</sup>, <a class="person" href="person57340.html">Francesca Cairoli</a><sup>1</sup>, <a class="person" href="person57341.html">Catia Trubiani</a><sup>2</sup>, <a class="person" href="person47802.html">Laura Nenzi</a><sup>1</sup>                                </div>
+<a class="person" href="person24348_57338.html">Simone Silvetti</a><sup>1</sup>, <a class="person" href="person57339.html">Ivan Compagnucci</a><sup>2</sup>, <a class="person" href="person57340.html">Francesca Cairoli</a><sup>1</sup>, <a class="person" href="person57341.html">Catia Trubiani</a><sup>2</sup>, <a class="person" href="person57342.html">Laura Nenzi</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Trieste</div>
                                 <div class="affiliation_item"><sup>2</sup> Gran Sasso Science Institute</div>
@@ -2282,35 +2282,163 @@ can express logical classifiers beyond C2.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:750">
+                <div class="session" id="session:780">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="750" data-title="FSCD Business Meeting" data-time="16:00-17:00" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">16:00-17:00</span>
-                        <span class="title">FSCD Business Meeting</span>
-                        <span class="group_tag">FSCD</span>
+                        <button type="button" class="favorite_btn" data-session-id="780" data-title="Block 9 (8 TC)" data-time="16:00-18:00" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">16:00-18:00</span>
+                        <span class="title">Block 9 (8 TC)</span>
+                        <span class="group_tag">ICLP</span>
                     </div>
 
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person23653.html">Patrick Baillot</a>
-                        </div>
-                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room30.html">One03</a>
+                        <a class="room_name" href="room33.html">B2.04</a>
                     </div>
 
 
                     <table class="talks">
-                        <tr class="talk" id="talk:268">
-                            <td class="time">16:00-17:00</td>
+                        <tr class="talk" id="talk:314">
+                            <td class="time">16:00-16:15</td>
                             <td>
-                                <div class="title">FSCD Business Meeting <a class="abstract_link" href="FSCD-2026-07-22.html#talk:268">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="title">Streamliners for Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:314">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23653.html">Patrick Baillot</a><sup>1</sup>                                </div>
+<a class="person" href="person23831.html">Florentina Voboril</a><sup>1</sup>, <a class="person" href="person54598.html">Martin Gebser</a><sup>2</sup>, <a class="person" href="person24050.html">Stefan Szeider</a><sup>1</sup>, <a class="person" href="person25261.html">Alice Tarzariol</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Université de Lille</div>
+                                <div class="affiliation_item"><sup>1</sup> Technical University of Vienna</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Klagenfurt</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Streamliner constraints reduce the search space of combinatorial problems by ruling out portions of the solution space. We adapt the StreamLLM approach, which uses Large Language Models to generate streamliners for Constraint Programming, to Answer Set Programming (ASP). Given an ASP encoding and a few small training instances, we prompt multiple LLMs to propose candidate constraints. Candidates that cause syntax errors render satisfiable instances unsatisfiable, or degrade performance on all training instances are discarded. The surviving streamliners are deployed in a parallel portfolio alongside the original encoding, ensuring correctness even if a streamliner is unsound. On three ASP Competition benchmarks (Partner Units Problem, Sokoban, Towers of Hanoi), the portfolio achieves speedups of up to 4-5x over the original encoding. Different LLMs produce semantically diverse constraints, not mere syntactic variations, indicating that the approach captures genuine problem structure.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:315">
+                            <td class="time">16:15-16:30</td>
+                            <td>
+                                <div class="title">Declarative Problem Solving in UAM Strategic Deconfliction <a class="abstract_link" href="ICLP-2026-07-22.html#talk:315">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25262_55832.html">Gioacchino Sterlicchio</a><sup>1</sup>, <a class="person" href="person55833.html">Angelo Oddi</a><sup>2</sup>, <a class="person" href="person55834.html">Riccardo rasconi</a><sup>2</sup>, <a class="person" href="person55745.html">Francesca Alessandra Lisi</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Polytechnic University of Bari</div>
+                                <div class="affiliation_item"><sup>2</sup> Institute of Cognitive Sciences and Technologies, National Research Council</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Bari "Aldo Moro"</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The growing demand for Urban Air Mobility (UAM) introduces significant challenges in airspace management, particularly within densely populated metropolitan regions. As the number of aerial vehicles---such as drones, air taxis, and helicopters---continues to rise, so does the risk of mid-air collisions and conflicts with existing air traffic and obstacles. Ensuring safe and efficient UAM operations requires robust strategic deconfliction mechanisms. We propose an Answer Set Programming (ASP) based approach for strategic deconfliction, focusing on time synchronization and route optimization for conflict-free flight plans. The solution is benchmarked against Constraint Programming (CP), emphasizing scalability and resource use. Results show ASP offers faster execution and better scalability for small to medium cases, while CP maintains stable memory but degrades with complexity.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:316">
+                            <td class="time">16:30-16:45</td>
+                            <td>
+                                <div class="title">ASPIC: Proof-of-Concept ASP to Picat Transpiler <a class="abstract_link" href="ICLP-2026-07-22.html#talk:316">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25271.html">Cristian Grozea</a><sup>1</sup>, <a class="person" href="person55837.html">Marius Popescu</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Fraunhofer</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Bucharest</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This article presents ASPIC, a new proof-of-concept library that converts extended syntax ASP-Core-2 programs to Picat predicates  that can be solved right away with the integrated Picat SAT solver, or embedded in larger Picat programs (``ASP in Picat''), and that can in turn make use of various Picat predicates and functions (``Picat in ASP'').
+The first tests prove good compatibility with clingo (when the special Picat features are not used). With the embedded Picat, it touches the application field of clingcon as well, by being able to efficiently model with both ASP atoms and with finite domain variables, but goes beyond that by being able to model also non-linear constraints.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:317">
+                            <td class="time">16:45-17:00</td>
+                            <td>
+                                <div class="title">EZASP - Facilitating the usage of ASP <a class="abstract_link" href="ICLP-2026-07-22.html#talk:317">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25272_55838.html">Rafael Martins</a><sup>1</sup>, <a class="person" href="person23193.html">Matthias Knorr</a><sup>2</sup>, <a class="person" href="person55840.html">Ricardo Gonçalves</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia</div>
+                                <div class="affiliation_item"><sup>2</sup> NOVA FCT Lisbon</div>
+                                <div class="affiliation_item"><sup>3</sup> NOVA University Lisbon</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming (ASP) is a declarative programming language used for modeling and solving complex combinatorial problems. It has been successfully applied to a number of different real-world problems. However, learning its usage can prove challenging as the declarative language, from a conceptual perspective, differs substantially from imperative programming, and programs are not required to adhere to any particular structure, offering arguably almost too much freedom for a beginner. Recently, a new methodology called Easy Answer Set Programming (Easy ASP) has been introduced that aims to aid in this learning process by focussing on a well-defined fragment of the ASP language and introducing additional structure to the programs. However, while this methodology can indeed be employed, to the best of our knowledge, no tool integrates its features currently. In this paper, we present EZASP, a Visual Studio Code extension designed to support the development of ASP programs following the Easy ASP methodology. It covers and extends the language fragment of Easy ASP and provides the user with warnings in the case of deviations from the methodology as well as the possibility to automatically reorder the program. Complementarily, it also adds syntax error highlighting, including detection of non-safe variables directly while editing, and configurability, as all features can be optionally disabled. A small user study in the context of university teaching suggests that these features are benefitial for both new and experienced users.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:318">
+                            <td class="time">17:00-17:15</td>
+                            <td>
+                                <div class="title">Walk-In Multi-Stage Patient Flow Scheduling: An ASP Model with DES-Based Evaluation <a class="abstract_link" href="ICLP-2026-07-22.html#talk:318">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25273_55841.html">Ngoc-Mai Pham</a><sup>1</sup>, <a class="person" href="person55842.html">Trang-Linh Nguyen</a><sup>1</sup>, <a class="person" href="person55843.html">Thi-Hai-Yen Vuong</a><sup>1</sup>, <a class="person" href="person55844.html">Ha-Thanh Nguyen</a><sup>2</sup>, <a class="person" href="person55845.html">Van-Giang Trinh</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Knowledge Technology Laboratory, Faculty of Information Technology, VNU University of Engineering and Technology, Hanoi, Vietnam</div>
+                                <div class="affiliation_item"><sup>2</sup> National Institute of Informatics, Tokyo, Japan</div>
+                                <div class="affiliation_item"><sup>3</sup> Faculty of Computer Science and Engineering, Ho Chi Minh City University of Technology (HCMUT), VNU-HCM, Ho Chi Minh City, Vietnam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> An effective examination and test schedule for patients plays a crucial role in hospital resource management. In this work, we formulate a new reactive patient-flow scheduling problem in multi-department hospitals where walk-in patients arrive over time and each patient requires multiple examinations per visit. Upon each arrival, the scheduler computes a feasible examination pathway---both the sequence of examinations and the room assignment---for the incoming patient only, while previously scheduled assignments remain fixed. This process is subject to medical precedence constraints and room capacity limitations. We model the problem declaratively in Answer Set Programming (ASP) with clingo, and optimize a two-part cost: travel time between consecutive examination locations and queue-induced waiting time, weighted by the duration of the upcoming examination. To assess robustness under stochastic service times, we propose a Discrete-Event Simulation (DES) evaluation layer and a baseline greedy policy for comparison. On large-scale synthetic datasets across various capacity regimes and patient loads, the ASP approach reduces median stay time and increases the proportion of zero-wait patients compared to DES-based baselines. These improvements are most pronounced under heavy load, while the approach still outperforms baselines across all capacity settings, with smaller gains at higher capacities.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:319">
+                            <td class="time">17:15-17:30</td>
+                            <td>
+                                <div class="title">Towards a Certifying Grounder <a class="abstract_link" href="ICLP-2026-07-22.html#talk:319">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23584.html">Daimy Van Caudenberg</a><sup>1</sup>, <a class="person" href="person55847.html">Alexander Ek</a><sup>1</sup>, <a class="person" href="person55848.html">Carlos Cantero</a><sup>1</sup>, <a class="person" href="person23343.html">Bart Bogaerts</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Grounding, the translation of high-level models into equivalent quantifier-free formulas, is a crucial step in declarative solving, yet it has so far escaped the proof-logging revolution. When this grounding step is not certified, there is no way of knowing that the obtained solutions actually correspond to the original problem specification, resulting in a trust gap. In this paper, we close the trust gap between the user's high-level specification and the solver's low-level input by introducing a novel certifying grounding framework for first-order logic model expansion (FOX) over finite domains. We present CertiFOX, a certified grounding framework consisting of: (1) a proof format for grounding derivations, (2) GroundFOX, a certifying grounder operating on theories in Grounding Normal Form (GNF)—a new normal form designed for compact, domain-aware grounding—and (3) CheckFOX, an independent proof checker. Our approach guarantees that the grounder's output is equivalent to the input specification, setting the stage for trustworthy end-to-end certified solving pipelines for declarative languages. Experimental evaluation confirms that CertiFOX is a feasible approach. The GroundFOX grounder is competitive with other grounders, and proof checking with CheckFOX remains within a constant factor of grounding time.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:320">
+                            <td class="time">17:30-17:45</td>
+                            <td>
+                                <div class="title">Modeling Deontic Modal Logic in ASP <a class="abstract_link" href="ICLP-2026-07-22.html#talk:320">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23595.html">Gopal Gupta</a><sup>1</sup>, <a class="person" href="person55851.html">Alexis Tudor</a><sup>1</sup>, <a class="person" href="person55767.html">Joaquín Arias</a><sup>2</sup>, <a class="person" href="person55853.html">Elmer Salazar</a><sup>1</sup>, <a class="person" href="person55854.html">Abhiramon.Rajasekharan@UTDallas.edu</a>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Texas at Dallas</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidad Rey Juan Carlos</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider the problem of implementing deontic modal logic. We show how (deontic) modal operators can be elegantly and directly expressed using default negation (negation-as-failure) and strong negation present in answer set programming (ASP). We propose using global constraints of ASP to represent obligations, prohibitions, and permissions in deontic modal logic. We show that our proposed representation results in the various decades-old paradoxes of deontic modal logic being simply and elegantly resolved. Our method also serves as a means for modeling conditional obligations and conditional prohibitions in knowledge representation.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:321">
+                            <td class="time">17:45-18:00</td>
+                            <td>
+                                <div class="title">An Approach to the Abstract Interpretation of Goal-Directed Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:321">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24002_55822.html">Daniel Jurjo-Rivas</a><sup>1</sup>, <a class="person" href="person55767.html">Joaquín Arias</a><sup>2</sup>, <a class="person" href="person23595.html">Gopal Gupta</a><sup>3</sup>, <a class="person" href="person55800.html">Jose F. Morales</a><sup>1</sup>, <a class="person" href="person55799.html">Pedro López-García</a><sup>4</sup>, <a class="person" href="person55801.html">Manuel V. Hermenegildo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Instituto IMDEA Software & UPM</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidad Rey Juan Carlos</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Texas at Dallas</div>
+                                <div class="affiliation_item"><sup>4</sup> Instituto IMDEA Software & CSIC</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Abstract Interpretation infers and verifies program properties by
+  over-approximating program semantics. It has been highly successful
+  for (Constraint) Logic Programming, enabling the analysis of
+  determinism, types, aliasing, costs, and its application in
+  verification and program optimization.  However, Abstract
+  Interpretation has not yet been studied in the context of Goal
+  Directed Answer Set Programming (ASP).  In this work we take a first
+  step in this direction.  We present a top-down algorithm based in
+  the PLAI fixpoint, implemented in the abstract interpreter of the
+  Ciao Prolog Preprocessor, to perform abstract interpretation of
+  goal-directed ASP.  We also introduce the Shared-Constraints
+  abstract domain, designed to capture potential relations among
+  variables induced by constraints.  Finally, we study the
+  practicality of the approach in s(CASP) through three applications:
+  detection of false odd loops over negation, efficient
+  forall evaluation enabled by the Shared-Constraints domain,
+  and abstract specialization (including the simplification of
+  required global constraints). Our results show that compile-time
+  static analysis can improve the evaluation of goal-directed ASP
+  programs.</p>
                                 </div>
                             </td>
                         </tr>
@@ -2429,163 +2557,35 @@ We provide a proof-of-concept implementation of $\text{CDCL}(\oplus)$ called \te
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:780">
+                <div class="session" id="session:750">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="780" data-title="Block 9 (8 TC)" data-time="16:00-18:00" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">16:00-18:00</span>
-                        <span class="title">Block 9 (8 TC)</span>
-                        <span class="group_tag">ICLP</span>
+                        <button type="button" class="favorite_btn" data-session-id="750" data-title="FSCD Business Meeting" data-time="16:00-17:00" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">16:00-17:00</span>
+                        <span class="title">FSCD Business Meeting</span>
+                        <span class="group_tag">FSCD</span>
                     </div>
 
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23653.html">Patrick Baillot</a>
+                        </div>
+                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
+                        <a class="room_name" href="room30.html">One03</a>
                     </div>
 
 
                     <table class="talks">
-                        <tr class="talk" id="talk:314">
-                            <td class="time">16:00-16:15</td>
+                        <tr class="talk" id="talk:268">
+                            <td class="time">16:00-17:00</td>
                             <td>
-                                <div class="title">Streamliners for Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:314">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="title">FSCD Business Meeting <a class="abstract_link" href="FSCD-2026-07-22.html#talk:268">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23831.html">Florentina Voboril</a><sup>1</sup>, <a class="person" href="person54598.html">Martin Gebser</a><sup>2</sup>, <a class="person" href="person24050.html">Stefan Szeider</a><sup>1</sup>, <a class="person" href="person25261.html">Alice Tarzariol</a><sup>2</sup>                                </div>
+<a class="person" href="person23653.html">Patrick Baillot</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Technical University of Vienna</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Klagenfurt</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Streamliner constraints reduce the search space of combinatorial problems by ruling out portions of the solution space. We adapt the StreamLLM approach, which uses Large Language Models to generate streamliners for Constraint Programming, to Answer Set Programming (ASP). Given an ASP encoding and a few small training instances, we prompt multiple LLMs to propose candidate constraints. Candidates that cause syntax errors render satisfiable instances unsatisfiable, or degrade performance on all training instances are discarded. The surviving streamliners are deployed in a parallel portfolio alongside the original encoding, ensuring correctness even if a streamliner is unsound. On three ASP Competition benchmarks (Partner Units Problem, Sokoban, Towers of Hanoi), the portfolio achieves speedups of up to 4-5x over the original encoding. Different LLMs produce semantically diverse constraints, not mere syntactic variations, indicating that the approach captures genuine problem structure.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:315">
-                            <td class="time">16:15-16:30</td>
-                            <td>
-                                <div class="title">Declarative Problem Solving in UAM Strategic Deconfliction <a class="abstract_link" href="ICLP-2026-07-22.html#talk:315">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25262_55832.html">Gioacchino Sterlicchio</a><sup>1</sup>, <a class="person" href="person55833.html">Angelo Oddi</a><sup>2</sup>, <a class="person" href="person55834.html">Riccardo rasconi</a><sup>2</sup>, <a class="person" href="person55745.html">Francesca Alessandra Lisi</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Polytechnic University of Bari</div>
-                                <div class="affiliation_item"><sup>2</sup> Institute of Cognitive Sciences and Technologies, National Research Council</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Bari "Aldo Moro"</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The growing demand for Urban Air Mobility (UAM) introduces significant challenges in airspace management, particularly within densely populated metropolitan regions. As the number of aerial vehicles---such as drones, air taxis, and helicopters---continues to rise, so does the risk of mid-air collisions and conflicts with existing air traffic and obstacles. Ensuring safe and efficient UAM operations requires robust strategic deconfliction mechanisms. We propose an Answer Set Programming (ASP) based approach for strategic deconfliction, focusing on time synchronization and route optimization for conflict-free flight plans. The solution is benchmarked against Constraint Programming (CP), emphasizing scalability and resource use. Results show ASP offers faster execution and better scalability for small to medium cases, while CP maintains stable memory but degrades with complexity.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:316">
-                            <td class="time">16:30-16:45</td>
-                            <td>
-                                <div class="title">ASPIC: Proof-of-Concept ASP to Picat Transpiler <a class="abstract_link" href="ICLP-2026-07-22.html#talk:316">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25271.html">Cristian Grozea</a><sup>1</sup>, <a class="person" href="person55837.html">Marius Popescu</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Fraunhofer</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Bucharest</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This article presents ASPIC, a new proof-of-concept library that converts extended syntax ASP-Core-2 programs to Picat predicates  that can be solved right away with the integrated Picat SAT solver, or embedded in larger Picat programs (``ASP in Picat''), and that can in turn make use of various Picat predicates and functions (``Picat in ASP'').
-The first tests prove good compatibility with clingo (when the special Picat features are not used). With the embedded Picat, it touches the application field of clingcon as well, by being able to efficiently model with both ASP atoms and with finite domain variables, but goes beyond that by being able to model also non-linear constraints.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:317">
-                            <td class="time">16:45-17:00</td>
-                            <td>
-                                <div class="title">EZASP - Facilitating the usage of ASP <a class="abstract_link" href="ICLP-2026-07-22.html#talk:317">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25272_55838.html">Rafael Martins</a><sup>1</sup>, <a class="person" href="person23193.html">Matthias Knorr</a><sup>2</sup>, <a class="person" href="person55840.html">Ricardo Gonçalves</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia</div>
-                                <div class="affiliation_item"><sup>2</sup> NOVA FCT Lisbon</div>
-                                <div class="affiliation_item"><sup>3</sup> NOVA University Lisbon</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Answer Set Programming (ASP) is a declarative programming language used for modeling and solving complex combinatorial problems. It has been successfully applied to a number of different real-world problems. However, learning its usage can prove challenging as the declarative language, from a conceptual perspective, differs substantially from imperative programming, and programs are not required to adhere to any particular structure, offering arguably almost too much freedom for a beginner. Recently, a new methodology called Easy Answer Set Programming (Easy ASP) has been introduced that aims to aid in this learning process by focussing on a well-defined fragment of the ASP language and introducing additional structure to the programs. However, while this methodology can indeed be employed, to the best of our knowledge, no tool integrates its features currently. In this paper, we present EZASP, a Visual Studio Code extension designed to support the development of ASP programs following the Easy ASP methodology. It covers and extends the language fragment of Easy ASP and provides the user with warnings in the case of deviations from the methodology as well as the possibility to automatically reorder the program. Complementarily, it also adds syntax error highlighting, including detection of non-safe variables directly while editing, and configurability, as all features can be optionally disabled. A small user study in the context of university teaching suggests that these features are benefitial for both new and experienced users.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:318">
-                            <td class="time">17:00-17:15</td>
-                            <td>
-                                <div class="title">Walk-In Multi-Stage Patient Flow Scheduling: An ASP Model with DES-Based Evaluation <a class="abstract_link" href="ICLP-2026-07-22.html#talk:318">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25273_55841.html">Ngoc-Mai Pham</a><sup>1</sup>, <a class="person" href="person55842.html">Trang-Linh Nguyen</a><sup>1</sup>, <a class="person" href="person55843.html">Thi-Hai-Yen Vuong</a><sup>1</sup>, <a class="person" href="person55844.html">Ha-Thanh Nguyen</a><sup>2</sup>, <a class="person" href="person55845.html">Van-Giang Trinh</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Knowledge Technology Laboratory, Faculty of Information Technology, VNU University of Engineering and Technology, Hanoi, Vietnam</div>
-                                <div class="affiliation_item"><sup>2</sup> National Institute of Informatics, Tokyo, Japan</div>
-                                <div class="affiliation_item"><sup>3</sup> Faculty of Computer Science and Engineering, Ho Chi Minh City University of Technology (HCMUT), VNU-HCM, Ho Chi Minh City, Vietnam</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> An effective examination and test schedule for patients plays a crucial role in hospital resource management. In this work, we formulate a new reactive patient-flow scheduling problem in multi-department hospitals where walk-in patients arrive over time and each patient requires multiple examinations per visit. Upon each arrival, the scheduler computes a feasible examination pathway---both the sequence of examinations and the room assignment---for the incoming patient only, while previously scheduled assignments remain fixed. This process is subject to medical precedence constraints and room capacity limitations. We model the problem declaratively in Answer Set Programming (ASP) with clingo, and optimize a two-part cost: travel time between consecutive examination locations and queue-induced waiting time, weighted by the duration of the upcoming examination. To assess robustness under stochastic service times, we propose a Discrete-Event Simulation (DES) evaluation layer and a baseline greedy policy for comparison. On large-scale synthetic datasets across various capacity regimes and patient loads, the ASP approach reduces median stay time and increases the proportion of zero-wait patients compared to DES-based baselines. These improvements are most pronounced under heavy load, while the approach still outperforms baselines across all capacity settings, with smaller gains at higher capacities.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:319">
-                            <td class="time">17:15-17:30</td>
-                            <td>
-                                <div class="title">Towards a Certifying Grounder <a class="abstract_link" href="ICLP-2026-07-22.html#talk:319">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23584.html">Daimy Van Caudenberg</a><sup>1</sup>, <a class="person" href="person48001.html">Alexander Ek</a><sup>1</sup>, <a class="person" href="person55848.html">Carlos Cantero</a><sup>1</sup>, <a class="person" href="person23343.html">Bart Bogaerts</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Grounding, the translation of high-level models into equivalent quantifier-free formulas, is a crucial step in declarative solving, yet it has so far escaped the proof-logging revolution. When this grounding step is not certified, there is no way of knowing that the obtained solutions actually correspond to the original problem specification, resulting in a trust gap. In this paper, we close the trust gap between the user's high-level specification and the solver's low-level input by introducing a novel certifying grounding framework for first-order logic model expansion (FOX) over finite domains. We present CertiFOX, a certified grounding framework consisting of: (1) a proof format for grounding derivations, (2) GroundFOX, a certifying grounder operating on theories in Grounding Normal Form (GNF)—a new normal form designed for compact, domain-aware grounding—and (3) CheckFOX, an independent proof checker. Our approach guarantees that the grounder's output is equivalent to the input specification, setting the stage for trustworthy end-to-end certified solving pipelines for declarative languages. Experimental evaluation confirms that CertiFOX is a feasible approach. The GroundFOX grounder is competitive with other grounders, and proof checking with CheckFOX remains within a constant factor of grounding time.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:320">
-                            <td class="time">17:30-17:45</td>
-                            <td>
-                                <div class="title">Modeling Deontic Modal Logic in ASP <a class="abstract_link" href="ICLP-2026-07-22.html#talk:320">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23595.html">Gopal Gupta</a><sup>1</sup>, <a class="person" href="person55851.html">Alexis Tudor</a><sup>1</sup>, <a class="person" href="person55767.html">Joaquín Arias</a><sup>2</sup>, <a class="person" href="person55853.html">Elmer Salazar</a><sup>1</sup>, <a class="person" href="person55854.html">Abhiramon.Rajasekharan@UTDallas.edu</a>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Texas at Dallas</div>
-                                <div class="affiliation_item"><sup>2</sup> Universidad Rey Juan Carlos</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider the problem of implementing deontic modal logic. We show how (deontic) modal operators can be elegantly and directly expressed using default negation (negation-as-failure) and strong negation present in answer set programming (ASP). We propose using global constraints of ASP to represent obligations, prohibitions, and permissions in deontic modal logic. We show that our proposed representation results in the various decades-old paradoxes of deontic modal logic being simply and elegantly resolved. Our method also serves as a means for modeling conditional obligations and conditional prohibitions in knowledge representation.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:321">
-                            <td class="time">17:45-18:00</td>
-                            <td>
-                                <div class="title">An Approach to the Abstract Interpretation of Goal-Directed Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:321">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person24002_55822.html">Daniel Jurjo-Rivas</a><sup>1</sup>, <a class="person" href="person55767.html">Joaquín Arias</a><sup>2</sup>, <a class="person" href="person23595.html">Gopal Gupta</a><sup>3</sup>, <a class="person" href="person55800.html">Jose F. Morales</a><sup>1</sup>, <a class="person" href="person47948.html">Pedro López-García</a><sup>4</sup>, <a class="person" href="person55801.html">Manuel V. Hermenegildo</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Instituto IMDEA Software & UPM</div>
-                                <div class="affiliation_item"><sup>2</sup> Universidad Rey Juan Carlos</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Texas at Dallas</div>
-                                <div class="affiliation_item"><sup>4</sup> Instituto IMDEA Software & CSIC</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Abstract Interpretation infers and verifies program properties by
-  over-approximating program semantics. It has been highly successful
-  for (Constraint) Logic Programming, enabling the analysis of
-  determinism, types, aliasing, costs, and its application in
-  verification and program optimization.  However, Abstract
-  Interpretation has not yet been studied in the context of Goal
-  Directed Answer Set Programming (ASP).  In this work we take a first
-  step in this direction.  We present a top-down algorithm based in
-  the PLAI fixpoint, implemented in the abstract interpreter of the
-  Ciao Prolog Preprocessor, to perform abstract interpretation of
-  goal-directed ASP.  We also introduce the Shared-Constraints
-  abstract domain, designed to capture potential relations among
-  variables induced by constraints.  Finally, we study the
-  practicality of the approach in s(CASP) through three applications:
-  detection of false odd loops over negation, efficient
-  forall evaluation enabled by the Shared-Constraints domain,
-  and abstract specialization (including the simplification of
-  required global constraints). Our results show that compile-time
-  static analysis can improve the evaluation of goal-directed ASP
-  programs.</p>
+                                <div class="affiliation_item"><sup>1</sup> Université de Lille</div>
                                 </div>
                             </td>
                         </tr>
@@ -2759,6 +2759,6 @@ We prove that for any payoff for which the expectation is well-defined under all
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=639191034731925321"></script>
+<script src="site.js?v=639191047126948806"></script>
 </body>
 </html>

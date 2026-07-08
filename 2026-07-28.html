@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Program for Tuesday, 28 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639191034731925321" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639191047126948806" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -165,7 +165,7 @@
                             <td>
                                 <div class="title">Trustworthy Neuro-Symbolic Programming with Informal Specifications <a class="abstract_link" href="WithoutGroup-2026-07-28.html#talk:552">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23184_48017.html">Işıl Dillig</a>                                </div>
+<a class="person" href="person23184_59347.html">Işıl Dillig</a>                                </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neuro-Symbolic Programming (NSP) treats learning-enabled systems as programs that compose symbolic control structure composed with learned neural primitives for perception and prediction. NSP offers a principled response to a central challenge for logic and formal methods in the age of machine learning: how to obtain trustworthy, compositional behavior when key components are statistical and uncertain. This talk gives an gives an overview of recent advances in NSP along three axes: (1) domain-specific languages targeting real-world use cases, (2) learning techniques for fitting program structure based on informal specifications, and (3) approaches for ensuring correctness despite noisy neural components and incomplete specifications.</p>
                                 </div>
@@ -203,21 +203,6 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:721">
-                    <div class="heading">
-                        <span class="interval">10:00-10:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">CSF</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:669">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
@@ -233,162 +218,20 @@
 
 
                 </div>
-                <div class="session" id="session:670">
+                <div class="session interval_session" id="session:721">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="670" data-title="Machine Learning, AI and Verification" data-time="10:30-12:25" data-room="Grande Auditório" data-group="CAV" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-12:25</span>
-                        <span class="title">Machine Learning, AI and Verification</span>
-                        <span class="group_tag">CAV</span>
+                        <span class="interval">10:00-10:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">CSF</span>
                     </div>
 
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person23183.html">Guy Katz</a>
-                        </div>
-                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room28.html">Grande Auditório</a>
+                        <a class="room_name" href="room31.html">B2.03</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk" id="talk:1146">
-                            <td class="time">10:30-10:45</td>
-                            <td>
-                                <div class="title">VNN-LIB 2.0: Rigorous Foundations for Neural Network Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1146">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25208_54832.html">Ann Roy</a><sup>1</sup>, <a class="person" href="person54833.html">Allen Antony</a><sup>1</sup>, <a class="person" href="person54834.html">Andrea Gimelli</a><sup>2</sup>, <a class="person" href="person54835.html">Matthew Daggitt</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Western Australia</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Genova</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neural network verification is active and rapidly maturing research area, with a growing ecosystem of solvers and tools. The VNN-LIB standard was introduced to support interoperability in this ecosystem, but Version 1.0 has several serious short-comings as a formal foundation: it lacks a precise syntax, semantics, and type system, offers limited expressivity, and relies on externally defined ONNX models whose semantics are informal and constantly evolving. The latter distinguishes VNN-LIB from established standards such as SMT-LIB, where queries are self-contained and have fixed semantics.
-
-In this paper we address these challenges by developing the theoretical foundations of VNN-LIB 2.0. Our key contribution is the introduction of the notion of a network theory, which abstractly characterises the minimal semantic interface required from a neural network model format.
-This abstraction enables VNN-LIB to be defined independently of any specific ONNX version while remaining compatible with evolving model representations. Building on this foundation, we present a formal syntax for a more expressive query language, a type system for it over the numeric domains provided by the network theory, and finally a formal semantics. To ensure internal consistency, the standard is mechanised in the Agda theorem prover. VNN-LIB 2.0 therefore provides robust and rigorous foundations for trustworthy neural network verification.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1147">
-                            <td class="time">10:45-11:00</td>
-                            <td>
-                                <div class="title">QAV-FT: Quadratic Approximation-based Neural Network Verification via Fourier Series and Taylor Truncation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1147">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23661.html">Han Wang</a><sup>1</sup>, <a class="person" href="person54837.html">Xuyang Ding</a><sup>1</sup>, <a class="person" href="person54838.html">Xie Ying</a><sup>2</sup>, <a class="person" href="person54839.html">Yakun Sheng</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> School of Computer Science and Engineering, University of Electronic Science and Technology of China</div>
-                                <div class="affiliation_item"><sup>2</sup> College of Computer Science and Artificial Intelligence, Southwest Minzu University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification is paramount for neural networks in safetycritical domains yet remains constrained by the trade-off between precision and scalability, especially with modern high frequency activation functions. However, the inherent NP-hardness of the problem forces a fundamental trade-off between scalability and precision in existing methods, which fail to adequately capture the high-frequency nonlinearities of modern activations. To address this, Quadratic Approximation based Verification via Fourier series and Taylor truncation (QAV-FT) is proposed as a framework unifying Fourier-enhanced quadratic approximation and Taylor remainder aware error control. Specifically: (i) A Fourierbased quadratic abstraction is formulated for arbitrary activations, with a rigorous error bound established via Jackson’s theorem and Lebesgue constant analysis; (ii) A second-order propagation scheme utilizing Lagrange remainder theory is devised to analytically derive sound, tight bounds with reduced symbolic complexity; and (iii) These mechanisms are integrated into a scalable full-network verification algorithm. Empirical results on MNIST-FC and other benchmarks demonstrate that QAV-FT achieves an average certification accuracy of 96.8% across complex activations like Swish, GELU, and Mish, with favorable accuracy and efficiency over comparable methods on partial models.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1148">
-                            <td class="time">11:00-11:15</td>
-                            <td>
-                                <div class="title">The Rocq-NN-Roll Prover: Soundly Verifying Hyperproperties of Neural Networks in Rocq <a class="abstract_link" href="CAV-2026-07-28.html#talk:1148">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25209_54840.html">Andrei Aleksandrov</a><sup>1</sup>, <a class="person" href="person54841.html">Malte Jackisch</a><sup>2</sup>, <a class="person" href="person54842.html">Kim Völlinger</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Fraunhofer Institute FOKUS Berlin</div>
-                                <div class="affiliation_item"><sup>2</sup> Technische Universität Berlin</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Research on neural network verification has traditionally emphasized scalability. However, recent invalidations of formally verified neural networks highlight soundness as an equally important goal. Pursuing inherent soundness, we present Rocq-NN-Roll, the first verified prover for real-valued piecewise-affine neural networks. Rocq-NN-Roll combines a network and its specification into a piecewise-affine function and reduces the verification task to solving linear inequalities over each polyhedral region. Verified in Rocq, it also provides the first automated proof support for neural networks in any interactive theorem prover, highlighting their still underexplored role in this field.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1149">
-                            <td class="time">11:15-11:30</td>
-                            <td>
-                                <div class="title">ATKVerifier: Adaptive Top-K Constraints for Tighter Verification of Semantic Segmentation Networks <a class="abstract_link" href="CAV-2026-07-28.html#talk:1149">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23786.html">Yuehao Liu</a><sup>1</sup>, <a class="person" href="person54802.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person54845.html">Yansong Dong</a><sup>2</sup>, <a class="person" href="person54846.html">Liang Zhao</a><sup>1</sup>, <a class="person" href="person54847.html">Chao Huang</a><sup>1</sup>, <a class="person" href="person54803.html">Wensheng Wang</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> ICTT and ISN Laboratory, Xidian University</div>
-                                <div class="affiliation_item"><sup>2</sup> KylinSoft Co., Ltd.</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of Semantic Segmentation Networks is challenging due to high-dimensional output spaces and cumulative over-approximation errors in deep architectures. Existing verification methods based on specific Star-set reachability suffer from either exponential state explosion (exact splitting) or excessive conservativeness (interval-based relaxation). In this work, we present ATKVerifier, a verification framework for SSNs operating on an abstract domain named constrained-star (C-star), which captures spatial dependencies within MaxPool receptive fields through explicit predicate constraints. Our framework features: (1) an adaptive top-K lower bound mechanism that dynamically encodes K potential maximizers based on layer depth and interval overlap, balancing precision and computational cost through parameter-free adaptation; (2) an adaptive affine upper bound exploiting linear relationships between top candidates to replace conservative constant bounds; (3) region-level completeness (RLC), a spatial robustness metric quantifying the integrity of verified contiguous object regions. Experiments on M2NIST with three SSN architectures (16~24 layers) demonstrate 8~25% improvement in robust IoU over the state-of-the-art tool NNV, with the improvement scaling with the network's depth. For the 24-layer architecture, ATKVerifier achieves 59.2% RLC versus 43.8% of NNV, certifying 35.2% more complete semantic objects.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1150">
-                            <td class="time">11:30-11:45</td>
-                            <td>
-                                <div class="title">Precise Verification of Transformers through ReLU-Catalyzed Abstraction Refinement <a class="abstract_link" href="CAV-2026-07-28.html#talk:1150">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23787.html">Hengjie Liu</a><sup>1</sup>, <a class="person" href="person54850.html">Zhenya Zhang</a><sup>1</sup>, <a class="person" href="person54851.html">Jianjun Zhao</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Kyushu University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of transformers has become increasingly important due to their widespread deployment in safety-critical applications. Compared to classic neural networks, the inferences of transformers involve highly complex computations, such as dot products in self-attention layers, rendering their verification extremely difficult. Existing approaches explored over-approximation methods by constructing convex constraints to bound the output ranges of transformers, which can achieve high efficiency. However, they may sacrifice verification precision, and consequently introduce significant approximation error that leads to frequent occurrences of false alarms. In this paper, we propose a transformer verification approach that can achieve improved precision. At the core of our approach is a novel usage of ReLU, by which we represent a precise but non-linear bound for dot products such that we can further exploit the rich body of literature for convex relaxation of ReLU to derive precise bounds. We extend two classic approaches to the context of transformers, a rule-based one and an optimization-based one, resulting in two new frameworks for efficient and precise verification. We evaluate our approaches on different model architectures and robustness properties derived from two datasets about sentiment analysis, and compare with the state-of-the-art baseline approach. Compared to the baseline, our approach can achieve significant precision improvement for most of the verification tasks with acceptable compromise of efficiency, which demonstrates the effectiveness of our approach.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1151">
-                            <td class="time">11:45-12:00</td>
-                            <td>
-                                <div class="title">Quantifying Sensitivity for Tree Ensembles : A symbolic and compositional approach <a class="abstract_link" href="CAV-2026-07-28.html#talk:1151">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person24284.html">Ajinkya Naik</a><sup>1</sup>, <a class="person" href="person54853.html">Akshay S</a><sup>1</sup>, <a class="person" href="person54854.html">Ashutosh Gupta</a><sup>1</sup>, <a class="person" href="person54855.html">Chaitanya Garg</a><sup>1</sup>, <a class="person" href="person47784.html">Kuldeep S. Meel</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> IIT Bombay</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead  to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1152">
-                            <td class="time">12:00-12:15</td>
-                            <td>
-                                <div class="title">Shields to Guarantee Probabilistic Safety in MDPs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1152">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23963_54430.html">Linus Heck</a><sup>1</sup>, <a class="person" href="person54431.html">Filip Macák</a><sup>2</sup>, <a class="person" href="person54859.html">Roman Andriushchenko</a><sup>2</sup>, <a class="person" href="person24085_47785.html">Milan Ceska</a><sup>2</sup>, <a class="person" href="person54433.html">Sebastian Junges</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Radboud University</div>
-                                <div class="affiliation_item"><sup>2</sup> Brno University of Technology</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Shielding is a prominent model-based technique to ensure
-safety of autonomous agents. Classical shielding aims to ensure that some-
-thing bad never happens and comes with strong guarantees about safety
-and maximal permissiveness. However, shielding systems for probabilistic
-safety, where something bad can happen, but only with an acceptable
-probability, has proven more intricate. This paper presents a formal
-framework that conservatively extends classical shields to probabilistic
-safety. In this framework, we demonstrate the impossibility to preserve
-the strong guarantees, provide natural shields with weaker guarantees,
-and offline and online shield constructions that provide strong safety
-guarantees. The empirical evaluation highlights the practical advantage
-of the new shields as well as computational feasibility.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1153">
-                            <td class="time">12:15-12:25</td>
-                            <td>
-                                <div class="title">A Neurosymbolic Approach to Natural Language Formalization and Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1153">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25210_54862.html">Chenyang An</a><sup>1</sup>, <a class="person" href="person54863.html">Sam Bayless</a><sup>1</sup>, <a class="person" href="person54864.html">Stefano Buliani</a><sup>1</sup>, <a class="person" href="person54865.html">Darion Cassel</a><sup>1</sup>, <a class="person" href="person54866.html">Byron Cook</a><sup>2</sup>, <a class="person" href="person54867.html">Duncan Clough</a><sup>1</sup>, <a class="person" href="person54868.html">Rémi Delmas</a><sup>1</sup>, <a class="person" href="person54869.html">Nafi Diallo</a><sup>1</sup>, <a class="person" href="person54870.html">Ferhat Erata</a><sup>1</sup>, <a class="person" href="person54871.html">Nick Feng</a><sup>1</sup>, <a class="person" href="person54872.html">Dimitra Giannakopoulou</a><sup>1</sup>, <a class="person" href="person54873.html">Aman Goel</a><sup>1</sup>, <a class="person" href="person54874.html">Aditya Gokhale</a><sup>1</sup>, <a class="person" href="person54875.html">Joe Hendrix</a><sup>1</sup>, <a class="person" href="person54876.html">Victor Heorhiadi</a><sup>1</sup>, <a class="person" href="person54877.html">Marc Hudak</a><sup>1</sup>, <a class="person" href="person54878.html">Dejan Jovanović</a><sup>1</sup>, <a class="person" href="person54879.html">Andrew M. Kent</a><sup>1</sup>, <a class="person" href="person54880.html">Benjamin Kiesl-Reiter</a><sup>1</sup>, <a class="person" href="person54881.html">Jeffrey J. Kuna</a><sup>1</sup>, <a class="person" href="person54882.html">Nadia Labai</a><sup>1</sup>, <a class="person" href="person54883.html">Joseph Lilien</a><sup>1</sup>, <a class="person" href="person54884.html">Divya Raghunathan</a><sup>1</sup>, <a class="person" href="person54885.html">Zvonimir Rakamarić</a><sup>1</sup>, <a class="person" href="person54886.html">Niloofar Razavi</a><sup>1</sup>, <a class="person" href="person54887.html">Michael Tautschnig</a><sup>1</sup>, <a class="person" href="person54888.html">Ali Torkamani</a><sup>1</sup>, <a class="person" href="person54889.html">Nathaniel Weir</a><sup>1</sup>, <a class="person" href="person54890.html">Michael W. Whalen</a><sup>1</sup>, <a class="person" href="person54891.html">Jianan Yao</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Amazon Web Services</div>
-                                <div class="affiliation_item"><sup>2</sup> Amazon Web Services, University College London</div>
-                                <div class="affiliation_item"><sup>3</sup> University of Toronto</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models perform well at natural language interpretation and reasoning, but their inherent stochasticity limits their adoption in regulated industries like finance and healthcare that operate under strict policies. To address this limitation, we launched Automated Reasoning checks (ARc): a public service that (1) uses LLMs with optional human guidance to formalize natural language policies, allowing fine-grained control of the formalization process, and (2) uses inference-time autoformalization to validate logical correctness of natural language statements against those policies. When correctness is paramount, we perform multiple redundant formalization steps at inference time, checking the formalizations for semantic equivalence. Our benchmarks show that ARc exceeds 99% soundness and achieves a near-zero false positive rate in identifying logical validity. Our approach produces auditable artifacts that substantiate the verification outcomes and can be used to improve the original text. ARc is the first commercial offering from a major cloud provider to integrate automated reasoning into a generative AI guardrail.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:722">
                     <div class="heading">
@@ -493,6 +336,163 @@ To the best of our knowledge, this work presents the first blockchain layer-2 vo
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce BlindReview, an anonymous and end-to-end verifiable peer review system that cryptographically guarantees both privacy and auditability through-out the reviewing process. We formally define these security properties and provide rigorous proofs that BlindReview satisfies them. We also present an implementation demonstrating our protocol’s practicality. This work serves as a foundation for verifiable and privacy-preserving peer review, offering a concrete solution to enhance transparency and reduce bias in the academic peer review process.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:670">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="670" data-title="Machine Learning, AI and Verification" data-time="10:30-12:25" data-room="Grande Auditório" data-group="CAV" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-12:25</span>
+                        <span class="title">Machine Learning, AI and Verification</span>
+                        <span class="group_tag">CAV</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23183.html">Guy Katz</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room28.html">Grande Auditório</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1146">
+                            <td class="time">10:30-10:45</td>
+                            <td>
+                                <div class="title">VNN-LIB 2.0: Rigorous Foundations for Neural Network Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1146">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25208_54832.html">Ann Roy</a><sup>1</sup>, <a class="person" href="person54833.html">Allen Antony</a><sup>1</sup>, <a class="person" href="person54834.html">Andrea Gimelli</a><sup>2</sup>, <a class="person" href="person54835.html">Matthew Daggitt</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Western Australia</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Genova</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Neural network verification is active and rapidly maturing research area, with a growing ecosystem of solvers and tools. The VNN-LIB standard was introduced to support interoperability in this ecosystem, but Version 1.0 has several serious short-comings as a formal foundation: it lacks a precise syntax, semantics, and type system, offers limited expressivity, and relies on externally defined ONNX models whose semantics are informal and constantly evolving. The latter distinguishes VNN-LIB from established standards such as SMT-LIB, where queries are self-contained and have fixed semantics.
+
+In this paper we address these challenges by developing the theoretical foundations of VNN-LIB 2.0. Our key contribution is the introduction of the notion of a network theory, which abstractly characterises the minimal semantic interface required from a neural network model format.
+This abstraction enables VNN-LIB to be defined independently of any specific ONNX version while remaining compatible with evolving model representations. Building on this foundation, we present a formal syntax for a more expressive query language, a type system for it over the numeric domains provided by the network theory, and finally a formal semantics. To ensure internal consistency, the standard is mechanised in the Agda theorem prover. VNN-LIB 2.0 therefore provides robust and rigorous foundations for trustworthy neural network verification.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1147">
+                            <td class="time">10:45-11:00</td>
+                            <td>
+                                <div class="title">QAV-FT: Quadratic Approximation-based Neural Network Verification via Fourier Series and Taylor Truncation <a class="abstract_link" href="CAV-2026-07-28.html#talk:1147">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23661.html">Han Wang</a><sup>1</sup>, <a class="person" href="person54837.html">Xuyang Ding</a><sup>1</sup>, <a class="person" href="person54838.html">Xie Ying</a><sup>2</sup>, <a class="person" href="person54839.html">Yakun Sheng</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> School of Computer Science and Engineering, University of Electronic Science and Technology of China</div>
+                                <div class="affiliation_item"><sup>2</sup> College of Computer Science and Artificial Intelligence, Southwest Minzu University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification is paramount for neural networks in safetycritical domains yet remains constrained by the trade-off between precision and scalability, especially with modern high frequency activation functions. However, the inherent NP-hardness of the problem forces a fundamental trade-off between scalability and precision in existing methods, which fail to adequately capture the high-frequency nonlinearities of modern activations. To address this, Quadratic Approximation based Verification via Fourier series and Taylor truncation (QAV-FT) is proposed as a framework unifying Fourier-enhanced quadratic approximation and Taylor remainder aware error control. Specifically: (i) A Fourierbased quadratic abstraction is formulated for arbitrary activations, with a rigorous error bound established via Jackson’s theorem and Lebesgue constant analysis; (ii) A second-order propagation scheme utilizing Lagrange remainder theory is devised to analytically derive sound, tight bounds with reduced symbolic complexity; and (iii) These mechanisms are integrated into a scalable full-network verification algorithm. Empirical results on MNIST-FC and other benchmarks demonstrate that QAV-FT achieves an average certification accuracy of 96.8% across complex activations like Swish, GELU, and Mish, with favorable accuracy and efficiency over comparable methods on partial models.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1148">
+                            <td class="time">11:00-11:15</td>
+                            <td>
+                                <div class="title">The Rocq-NN-Roll Prover: Soundly Verifying Hyperproperties of Neural Networks in Rocq <a class="abstract_link" href="CAV-2026-07-28.html#talk:1148">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25209_54840.html">Andrei Aleksandrov</a><sup>1</sup>, <a class="person" href="person54841.html">Malte Jackisch</a><sup>2</sup>, <a class="person" href="person54842.html">Kim Völlinger</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Fraunhofer Institute FOKUS Berlin</div>
+                                <div class="affiliation_item"><sup>2</sup> Technische Universität Berlin</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Research on neural network verification has traditionally emphasized scalability. However, recent invalidations of formally verified neural networks highlight soundness as an equally important goal. Pursuing inherent soundness, we present Rocq-NN-Roll, the first verified prover for real-valued piecewise-affine neural networks. Rocq-NN-Roll combines a network and its specification into a piecewise-affine function and reduces the verification task to solving linear inequalities over each polyhedral region. Verified in Rocq, it also provides the first automated proof support for neural networks in any interactive theorem prover, highlighting their still underexplored role in this field.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1149">
+                            <td class="time">11:15-11:30</td>
+                            <td>
+                                <div class="title">ATKVerifier: Adaptive Top-K Constraints for Tighter Verification of Semantic Segmentation Networks <a class="abstract_link" href="CAV-2026-07-28.html#talk:1149">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23786.html">Yuehao Liu</a><sup>1</sup>, <a class="person" href="person54802.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person54845.html">Yansong Dong</a><sup>2</sup>, <a class="person" href="person54846.html">Liang Zhao</a><sup>1</sup>, <a class="person" href="person54847.html">Chao Huang</a><sup>1</sup>, <a class="person" href="person54803.html">Wensheng Wang</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ICTT and ISN Laboratory, Xidian University</div>
+                                <div class="affiliation_item"><sup>2</sup> KylinSoft Co., Ltd.</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of Semantic Segmentation Networks is challenging due to high-dimensional output spaces and cumulative over-approximation errors in deep architectures. Existing verification methods based on specific Star-set reachability suffer from either exponential state explosion (exact splitting) or excessive conservativeness (interval-based relaxation). In this work, we present ATKVerifier, a verification framework for SSNs operating on an abstract domain named constrained-star (C-star), which captures spatial dependencies within MaxPool receptive fields through explicit predicate constraints. Our framework features: (1) an adaptive top-K lower bound mechanism that dynamically encodes K potential maximizers based on layer depth and interval overlap, balancing precision and computational cost through parameter-free adaptation; (2) an adaptive affine upper bound exploiting linear relationships between top candidates to replace conservative constant bounds; (3) region-level completeness (RLC), a spatial robustness metric quantifying the integrity of verified contiguous object regions. Experiments on M2NIST with three SSN architectures (16~24 layers) demonstrate 8~25% improvement in robust IoU over the state-of-the-art tool NNV, with the improvement scaling with the network's depth. For the 24-layer architecture, ATKVerifier achieves 59.2% RLC versus 43.8% of NNV, certifying 35.2% more complete semantic objects.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1150">
+                            <td class="time">11:30-11:45</td>
+                            <td>
+                                <div class="title">Precise Verification of Transformers through ReLU-Catalyzed Abstraction Refinement <a class="abstract_link" href="CAV-2026-07-28.html#talk:1150">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23787.html">Hengjie Liu</a><sup>1</sup>, <a class="person" href="person54850.html">Zhenya Zhang</a><sup>1</sup>, <a class="person" href="person54851.html">Jianjun Zhao</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Kyushu University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of transformers has become increasingly important due to their widespread deployment in safety-critical applications. Compared to classic neural networks, the inferences of transformers involve highly complex computations, such as dot products in self-attention layers, rendering their verification extremely difficult. Existing approaches explored over-approximation methods by constructing convex constraints to bound the output ranges of transformers, which can achieve high efficiency. However, they may sacrifice verification precision, and consequently introduce significant approximation error that leads to frequent occurrences of false alarms. In this paper, we propose a transformer verification approach that can achieve improved precision. At the core of our approach is a novel usage of ReLU, by which we represent a precise but non-linear bound for dot products such that we can further exploit the rich body of literature for convex relaxation of ReLU to derive precise bounds. We extend two classic approaches to the context of transformers, a rule-based one and an optimization-based one, resulting in two new frameworks for efficient and precise verification. We evaluate our approaches on different model architectures and robustness properties derived from two datasets about sentiment analysis, and compare with the state-of-the-art baseline approach. Compared to the baseline, our approach can achieve significant precision improvement for most of the verification tasks with acceptable compromise of efficiency, which demonstrates the effectiveness of our approach.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1151">
+                            <td class="time">11:45-12:00</td>
+                            <td>
+                                <div class="title">Quantifying Sensitivity for Tree Ensembles : A symbolic and compositional approach <a class="abstract_link" href="CAV-2026-07-28.html#talk:1151">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24284.html">Ajinkya Naik</a><sup>1</sup>, <a class="person" href="person54853.html">Akshay S</a><sup>1</sup>, <a class="person" href="person54854.html">Ashutosh Gupta</a><sup>1</sup>, <a class="person" href="person54855.html">Chaitanya Garg</a><sup>1</sup>, <a class="person" href="person54856.html">Kuldeep S. Meel</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IIT Bombay</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead  to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1152">
+                            <td class="time">12:00-12:15</td>
+                            <td>
+                                <div class="title">Shields to Guarantee Probabilistic Safety in MDPs <a class="abstract_link" href="CAV-2026-07-28.html#talk:1152">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23963_54430.html">Linus Heck</a><sup>1</sup>, <a class="person" href="person54431.html">Filip Macák</a><sup>2</sup>, <a class="person" href="person54859.html">Roman Andriushchenko</a><sup>2</sup>, <a class="person" href="person24085_59115.html">Milan Ceska</a><sup>2</sup>, <a class="person" href="person54433.html">Sebastian Junges</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Radboud University</div>
+                                <div class="affiliation_item"><sup>2</sup> Brno University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Shielding is a prominent model-based technique to ensure
+safety of autonomous agents. Classical shielding aims to ensure that some-
+thing bad never happens and comes with strong guarantees about safety
+and maximal permissiveness. However, shielding systems for probabilistic
+safety, where something bad can happen, but only with an acceptable
+probability, has proven more intricate. This paper presents a formal
+framework that conservatively extends classical shields to probabilistic
+safety. In this framework, we demonstrate the impossibility to preserve
+the strong guarantees, provide natural shields with weaker guarantees,
+and offline and online shield constructions that provide strong safety
+guarantees. The empirical evaluation highlights the practical advantage
+of the new shields as well as computational feasibility.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1153">
+                            <td class="time">12:15-12:25</td>
+                            <td>
+                                <div class="title">A Neurosymbolic Approach to Natural Language Formalization and Verification <a class="abstract_link" href="CAV-2026-07-28.html#talk:1153">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25210_54862.html">Chenyang An</a><sup>1</sup>, <a class="person" href="person54863.html">Sam Bayless</a><sup>1</sup>, <a class="person" href="person54864.html">Stefano Buliani</a><sup>1</sup>, <a class="person" href="person54865.html">Darion Cassel</a><sup>1</sup>, <a class="person" href="person54866.html">Byron Cook</a><sup>2</sup>, <a class="person" href="person54867.html">Duncan Clough</a><sup>1</sup>, <a class="person" href="person54868.html">Rémi Delmas</a><sup>1</sup>, <a class="person" href="person54869.html">Nafi Diallo</a><sup>1</sup>, <a class="person" href="person54870.html">Ferhat Erata</a><sup>1</sup>, <a class="person" href="person54871.html">Nick Feng</a><sup>1</sup>, <a class="person" href="person54872.html">Dimitra Giannakopoulou</a><sup>1</sup>, <a class="person" href="person54873.html">Aman Goel</a><sup>1</sup>, <a class="person" href="person54874.html">Aditya Gokhale</a><sup>1</sup>, <a class="person" href="person54875.html">Joe Hendrix</a><sup>1</sup>, <a class="person" href="person54876.html">Victor Heorhiadi</a><sup>1</sup>, <a class="person" href="person54877.html">Marc Hudak</a><sup>1</sup>, <a class="person" href="person54878.html">Dejan Jovanović</a><sup>1</sup>, <a class="person" href="person54879.html">Andrew M. Kent</a><sup>1</sup>, <a class="person" href="person54880.html">Benjamin Kiesl-Reiter</a><sup>1</sup>, <a class="person" href="person54881.html">Jeffrey J. Kuna</a><sup>1</sup>, <a class="person" href="person54882.html">Nadia Labai</a><sup>1</sup>, <a class="person" href="person54883.html">Joseph Lilien</a><sup>1</sup>, <a class="person" href="person54884.html">Divya Raghunathan</a><sup>1</sup>, <a class="person" href="person54885.html">Zvonimir Rakamarić</a><sup>1</sup>, <a class="person" href="person54886.html">Niloofar Razavi</a><sup>1</sup>, <a class="person" href="person54887.html">Michael Tautschnig</a><sup>1</sup>, <a class="person" href="person54888.html">Ali Torkamani</a><sup>1</sup>, <a class="person" href="person54889.html">Nathaniel Weir</a><sup>1</sup>, <a class="person" href="person54890.html">Michael W. Whalen</a><sup>1</sup>, <a class="person" href="person54891.html">Jianan Yao</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Amazon Web Services</div>
+                                <div class="affiliation_item"><sup>2</sup> Amazon Web Services, University College London</div>
+                                <div class="affiliation_item"><sup>3</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Large Language Models perform well at natural language interpretation and reasoning, but their inherent stochasticity limits their adoption in regulated industries like finance and healthcare that operate under strict policies. To address this limitation, we launched Automated Reasoning checks (ARc): a public service that (1) uses LLMs with optional human guidance to formalize natural language policies, allowing fine-grained control of the formalization process, and (2) uses inference-time autoformalization to validate logical correctness of natural language statements against those policies. When correctness is paramount, we perform multiple redundant formalization steps at inference time, checking the formalizations for semantic equivalence. Our benchmarks show that ARc exceeds 99% soundness and achieves a near-zero false positive rate in identifying logical validity. Our approach produces auditable artifacts that substantiate the verification outcomes and can be used to improve the original text. ARc is the first commercial offering from a major cloud provider to integrate automated reasoning into a generative AI guardrail.</p>
                                 </div>
                             </td>
                         </tr>
@@ -873,7 +873,7 @@ holders of appropriate attribute-keys to evaluate the branching program. To ensu
                             <td>
                                 <div class="title">Tao’s Equational Proof Challenge Accepted <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:352">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23409.html">Lydia Kondylidou</a><sup>1</sup>, <a class="person" href="person23950.html">Jasmin Blanchette</a><sup>1</sup>, <a class="person" href="person25737_47835.html">Marijn Heule</a><sup>2</sup>                                </div>
+<a class="person" href="person23409.html">Lydia Kondylidou</a><sup>1</sup>, <a class="person" href="person23950.html">Jasmin Blanchette</a><sup>1</sup>, <a class="person" href="person25737_59165.html">Marijn Heule</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Ludwig-Maximilians-Universität München</div>
                                 <div class="affiliation_item"><sup>2</sup> Carnegie Mellon University</div>
@@ -1010,7 +1010,7 @@ varieties. We illustrate the ideas on examples.</p>
                             <td>
                                 <div class="title">Formalization of a Realistic Verification-Condition Generator for an Intermediate Verification Language <a class="abstract_link" href="ITP-2026-07-28.html#talk:387">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person47900.html">K. Rustan M. Leino</a><sup>2</sup>                                </div>
+<a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person56205.html">K. Rustan M. Leino</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National University of Singapore</div>
                                 <div class="affiliation_item"><sup>2</sup> Amazon Web Services</div>
@@ -1151,6 +1151,21 @@ structures of all four systems.</p>
 
 
                 </div>
+                <div class="session interval_session" id="session:807">
+                    <div class="heading">
+                        <span class="interval">16:00-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">IJCAR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:675">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="675" data-title="Program Analysis Session" data-time="16:00-17:25" data-room="Grande Auditório" data-group="CAV" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -1193,7 +1208,7 @@ We introduce Seal, an abstract interpreter that automatically derives sound and 
                             <td>
                                 <div class="title">Automated Amortised Analysis of Skew Heaps and Leftist Heaps <a class="abstract_link" href="CAV-2026-07-28.html#talk:1158">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23853.html">Armin Walch</a><sup>1</sup>, <a class="person" href="person54909.html">Georg Moser</a><sup>1</sup>, <a class="person" href="person54910.html">Berry Schoenmakers</a><sup>2</sup>, <a class="person" href="person47747.html">Florian Zuleger</a><sup>3</sup>                                </div>
+<a class="person" href="person23853.html">Armin Walch</a><sup>1</sup>, <a class="person" href="person54909.html">Georg Moser</a><sup>1</sup>, <a class="person" href="person54910.html">Berry Schoenmakers</a><sup>2</sup>, <a class="person" href="person54911.html">Florian Zuleger</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Eindhoven, Netherlands</div>
@@ -1227,7 +1242,7 @@ More specifically, we extend the work on the ATLAS system by Leutgeb et al., whi
                             <td>
                                 <div class="title">Parallel Abstract Interpretation for Polynomial Programs with Range Bound Assertions <a class="abstract_link" href="CAV-2026-07-28.html#talk:1160">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24325.html">S. Akshay</a><sup>1</sup>, <a class="person" href="person24155.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person54917.html">Soroush Farokhnia</a><sup>3</sup>, <a class="person" href="person54918.html">Amir Goharshady</a><sup>4</sup>, <a class="person" href="person54919.html">Harshit Jitendra Motwani</a><sup>5</sup>, <a class="person" href="person47766.html">Đorđe Žikelić</a><sup>6</sup>                                </div>
+<a class="person" href="person24325.html">S. Akshay</a><sup>1</sup>, <a class="person" href="person24155.html">Supratik Chakraborty</a><sup>2</sup>, <a class="person" href="person54917.html">Soroush Farokhnia</a><sup>3</sup>, <a class="person" href="person54918.html">Amir Goharshady</a><sup>4</sup>, <a class="person" href="person54919.html">Harshit Jitendra Motwani</a><sup>5</sup>, <a class="person" href="person54920.html">Đorđe Žikelić</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology Bombay</div>
                                 <div class="affiliation_item"><sup>2</sup> IIT Bombay</div>
@@ -1296,21 +1311,6 @@ submitted patches to the Linux kernel, and 45 of them were merged.</p>
                             </td>
                         </tr>
                     </table>
-                </div>
-                <div class="session interval_session" id="session:807">
-                    <div class="heading">
-                        <span class="interval">16:00-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">IJCAR</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
-                    </div>
-
-
                 </div>
                 <div class="session interval_session" id="session:725">
                     <div class="heading">
@@ -1432,7 +1432,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">The ARI Infrastructure for Automated Confluence Analysis <a class="abstract_link" href="IJCAR-2026-07-28.html#talk:1277">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25287_56035.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person47935.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person23900.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person23489.html">René Thiemann</a><sup>2</sup>                                </div>
+<a class="person" href="person25287_56035.html">Nao Hirokawa</a><sup>1</sup>, <a class="person" href="person55965.html">Aart Middeldorp</a><sup>2</sup>, <a class="person" href="person23900.html">Teppei Saito</a><sup>1</sup>, <a class="person" href="person23489.html">René Thiemann</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> JAIST</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
@@ -1479,7 +1479,7 @@ In this work, we introduce LAP$_2$, a new solution that enables $\ell_2$ clippin
                             <td>
                                 <div class="title">Lean on Vampire Proofs (Short Paper) <a class="abstract_link" href="ITP-2026-07-28.html#talk:1296">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24159.html">Jonas Bodingbauer</a><sup>1</sup>, <a class="person" href="person23506.html">Marton Hajdu</a><sup>1</sup>, <a class="person" href="person25248.html">Laura Kovacs</a><sup>1</sup>, <a class="person" href="person24442.html">Axel Polaczek</a><sup>1</sup>, <a class="person" href="person47709.html">Michael Rawson</a><sup>2</sup>                                </div>
+<a class="person" href="person24159.html">Jonas Bodingbauer</a><sup>1</sup>, <a class="person" href="person23506.html">Marton Hajdu</a><sup>1</sup>, <a class="person" href="person25248.html">Laura Kovacs</a><sup>1</sup>, <a class="person" href="person24442.html">Axel Polaczek</a><sup>1</sup>, <a class="person" href="person56213.html">Michael Rawson</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Southampton</div>
@@ -1605,6 +1605,6 @@ We take an initial step toward efficient verified real root isolation by formall
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=639191034731925321"></script>
+<script src="site.js?v=639191047126948806"></script>
 </body>
 </html>
