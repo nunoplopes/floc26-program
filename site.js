@@ -44,6 +44,14 @@ window.addEventListener('appinstalled', () => {
     deferredPrompt = null;
 });
 
+const backBtn = document.getElementById('back_btn');
+if (backBtn && window.history.length > 1 && document.referrer) {
+    backBtn.classList.add('visible');
+    backBtn.addEventListener('click', () => {
+        history.back();
+    });
+}
+
 const themeToggleBtn = document.getElementById('theme_toggle_btn');
 const prefersDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
