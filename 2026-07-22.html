@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Program for Wednesday, 22 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639191380906001452" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639191383194919432" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
@@ -46,6 +46,7 @@
             <span class="separator"> | </span>    <a href="CAV-index.html">CAV</a>
             <span class="separator"> | </span>    <a href="CIBDSOQE-index.html">CI-BD-SOQE</a>
             <span class="separator"> | </span>    <a href="CMSB-index.html">CMSB</a>
+            <span class="separator"> | </span>    <a href="CompBench-index.html">CompBench</a>
             <span class="separator"> | </span>    <a href="CP-index.html">CP</a>
             <span class="separator"> | </span>    <a href="CPSATDP-index.html">CPSATDP</a>
             <span class="separator"> | </span>    <a href="CREST-index.html">CREST</a>
@@ -204,17 +205,17 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:774">
+                <div class="session interval_session" id="session:987">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">ICLP</span>
+                        <span class="group_tag">SAT</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
+                        <a class="room_name" href="room38.html">JJ Laginha</a>
                     </div>
 
 
@@ -264,17 +265,17 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:987">
+                <div class="session interval_session" id="session:774">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">SAT</span>
+                        <span class="group_tag">ICLP</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room38.html">JJ Laginha</a>
+                        <a class="room_name" href="room33.html">B2.04</a>
                     </div>
 
 
@@ -394,6 +395,126 @@ Our paper brings compositional principles and a typing discipline into the setti
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:775">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="775" data-title="Block 7 (4 TPLP)" data-time="10:30-12:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-12:30</span>
+                        <span class="title">Block 7 (4 TPLP)</span>
+                        <span class="group_tag">ICLP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:308">
+                            <td class="time">10:30-11:00</td>
+                            <td>
+                                <div class="title">Reducing Arbitrary Metric Temporal Formulas into Logic Programs under Answer Set Semantics <a class="abstract_link" href="ICLP-2026-07-22.html#talk:308">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23811_55803.html">Martin Diéguez</a><sup>1</sup>, <a class="person" href="person24528.html">Susana Hahn</a><sup>2</sup>, <a class="person" href="person55445.html">Torsten Schaub</a><sup>2</sup>, <a class="person" href="person55806.html">Igor Stéphan</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Angers</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Potsdam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Metric temporal equilibrium logic (MEL) extends temporal equilibrium logic (TEL)
+  by incorporating quantitative timing constraints,
+  enabling the specification and analysis of deadlines and durations.
+  MEL is particularly suited for domains where time-bound properties are crucial,
+  such as embedded systems, cyber-physical systems, and real-time software.
+  It facilitates the precise expression of timing behaviors,
+  such as the requirement that an event must occur within 5 milliseconds of a trigger,
+  which often elude traditional qualitative temporal logics.
+
+  In this paper, we present a Tseitin-like translation that maps any metric temporal formula into
+  a logic programming fragment restricted to past operators.
+  This translation provides a formal bridge to leverage existing Answer Set Programming (ASP) solvers for reasoning about metric temporal constraints.
+  By restricting the target fragment to past operators, we enable more effective evaluation and integration with current ASP-based toolchains for multi-shot solving.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:309">
+                            <td class="time">11:00-11:30</td>
+                            <td>
+                                <div class="title">Meta Programming for Linear-time Temporal Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:309">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24528.html">Susana Hahn</a><sup>1</sup>, <a class="person" href="person25515_59854.html">Amade Nemes</a><sup>1</sup>, <a class="person" href="person55809.html">Javier Romero</a><sup>1</sup>, <a class="person" href="person55445.html">Torsten Schaub</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The development of temporal extensions to Answer Set Programming (ASP) has led to the emergence of linear-time (TEL), dynamic (DEL), and metric (MEL) temporal logics. However, the inherent rigidity of highly optimized ASP systems often hinders the rapid exploration and implementation of alternative logical designs. In this work, we propose a flexible meta-programming framework that operationalizes the semantics of varied temporal logics through a unified, declarative framework. Our approach extends standard ASP meta-programming by augmenting clingo’s theory grammar with formal type specifications and nesting capabilities. To ensure semantic correctness, we introduce a transformation pipeline that protects nested modalities from stable- model-based simplifications during grounding. We demonstrate the extensibility of our framework by implementing meta-encodings for TEL, MEL, and DEL. We provide a comprehensive account of TEL and highlight the key features for for managing the interval constraints of MEL and the Fischer-Ladner closure in DEL. Finally, we introduce the metasp system, a versatile tool that encapsulates workflow.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:310">
+                            <td class="time">11:30-12:00</td>
+                            <td>
+                                <div class="title">Long-term Power Grid Planning via Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:310">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23795.html">Antonio Ielo</a><sup>1</sup>, <a class="person" href="person55812.html">Francesco Doria</a><sup>1</sup>, <a class="person" href="person55813.html">Sandra Castellanos-Paez</a><sup>2</sup>, <a class="person" href="person55814.html">Marco Maratea</a><sup>1</sup>, <a class="person" href="person55815.html">Francesco Percassi</a><sup>2</sup>, <a class="person" href="person55816.html">Mauro Vallati</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Huddersfield</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Power grid is a critical infrastructure underpinning all aspects of modern society and its services. Maintaining its effectiveness requires continuous adaptations. In particular, addressing sustainability targets, demand patterns, and urbanisation trends requires implementing changes to the network. Actual developments can potentially span over a decade, with supply continuity and service quality that must be preserved throughout by ensuring conformance to several topological and combinatorial invariants. Long-term power grid planning deals with the above process, and although planning languages could be a natural choice, the kind of properties and invariants needed are cumbersome to express in such languages; on the contrary, they can be elegantly and succinctly encoded in Answer Set Programming (ASP).  In this paper, we propose the first approach to automate and optimise the long-term power grid planning process using ASP. Experimental evaluations conducted on synthetic and real‑world grid data confirm the expressive power of the proposed ASP‑based approach and demonstrate its effectiveness.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:299">
+                            <td class="time">12:00-12:30</td>
+                            <td>
+                                <div class="title">From Time to Space: The Impact of Linearity in Higher-Order Datalog <a class="abstract_link" href="ICLP-2026-07-22.html#talk:299">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25266_55762.html">Angelos Charalambidis</a><sup>1</sup>, <a class="person" href="person55764.html">Babis Kostopoulos</a><sup>1</sup>, <a class="person" href="person55765.html">Panos Rondogiannis</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Harokopio University of Athens</div>
+                                <div class="affiliation_item"><sup>2</sup> National and Kapodistrian University of Athens</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider a fragment of Higher-Order Datalog with negation and argue that it generalizes the familiar and important fragment of Linear Datalog. We investigate the expressive power of this fragment, establishing a tight connection with the hierarchy of space complexity classes. In particular, we demonstrate that for all k >= 1, the (k+1)-order fragment of Stratified Linear Higher-Order Datalog$^\neg$ captures (k-1)-EXPSPACE. This result suggests that restricting programs to linear recursion shifts the expressive power of the corresponding fragments from time to space, generalizing the classical result that (Stratified) Linear Datalog captures NL. Unlike the first-order setting where an ordering assumption is required to capture NL, our results hold without any such assumption on the input database. The proof relies on simulating space-bounded Turing machines using Stratified Linear Higher-Order Datalog$^\neg$ programs and providing a space-efficient evaluation of the query program. We argue that identifying such computationally well-behaved fragments is a crucial step towards paving the way for practical implementations of Higher-Order Datalog.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:886">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="886" data-title="Diversity and inclusion" data-time="10:30-11:30" data-room="Grande Auditório" data-group="KR" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-11:30</span>
+                        <span class="title">Diversity and inclusion</span>
+                        <span class="group_tag">KR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room28.html">Grande Auditório</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:426">
+                            <td class="time">10:30-11:30</td>
+                            <td>
+                                <div class="title">What Would You Do? Dilemmas from Academic Life <a class="abstract_link" href="KR-2026-07-22.html#talk:426">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23872_57267.html">Lucia Gomez</a><sup>1</sup>, <a class="person" href="person24121.html">Sanja Lukumbuzya</a><sup>2</sup>, <a class="person" href="person57269.html">Vanina Martinez</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Inria</div>
+                                <div class="affiliation_item"><sup>2</sup> TU Wien</div>
+                                <div class="affiliation_item"><sup>3</sup> IIIA - CSIC</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session" id="session:988">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="988" data-title="Session G: QBF Algorithms" data-time="10:30-12:00" data-room="JJ Laginha" data-group="SAT" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -471,126 +592,6 @@ restricted case of QBF with only two quantifier blocks ($\forall\exists$-QBF).
 We show that in this case the situation improves dramatically: for each $d\ge
 3$ we show an algorithm with running time $k^{O_d(k ^{d-1})}|\phi|^{O(1)}$ and
 a lower bound under the ETH showing our algorithm is almost optimal.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:886">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="886" data-title="Diversity and inclusion" data-time="10:30-11:30" data-room="Grande Auditório" data-group="KR" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-11:30</span>
-                        <span class="title">Diversity and inclusion</span>
-                        <span class="group_tag">KR</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room28.html">Grande Auditório</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:426">
-                            <td class="time">10:30-11:30</td>
-                            <td>
-                                <div class="title">What Would You Do? Dilemmas from Academic Life <a class="abstract_link" href="KR-2026-07-22.html#talk:426">(abstract)</a> <span class="duration">60 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23872_57267.html">Lucia Gomez</a><sup>1</sup>, <a class="person" href="person24121.html">Sanja Lukumbuzya</a><sup>2</sup>, <a class="person" href="person57269.html">Vanina Martinez</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Inria</div>
-                                <div class="affiliation_item"><sup>2</sup> TU Wien</div>
-                                <div class="affiliation_item"><sup>3</sup> IIIA - CSIC</div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:775">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="775" data-title="Block 7 (4 TPLP)" data-time="10:30-12:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-12:30</span>
-                        <span class="title">Block 7 (4 TPLP)</span>
-                        <span class="group_tag">ICLP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:308">
-                            <td class="time">10:30-11:00</td>
-                            <td>
-                                <div class="title">Reducing Arbitrary Metric Temporal Formulas into Logic Programs under Answer Set Semantics <a class="abstract_link" href="ICLP-2026-07-22.html#talk:308">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23811_55803.html">Martin Diéguez</a><sup>1</sup>, <a class="person" href="person24528.html">Susana Hahn</a><sup>2</sup>, <a class="person" href="person55445.html">Torsten Schaub</a><sup>2</sup>, <a class="person" href="person55806.html">Igor Stéphan</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Angers</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Potsdam</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Metric temporal equilibrium logic (MEL) extends temporal equilibrium logic (TEL)
-  by incorporating quantitative timing constraints,
-  enabling the specification and analysis of deadlines and durations.
-  MEL is particularly suited for domains where time-bound properties are crucial,
-  such as embedded systems, cyber-physical systems, and real-time software.
-  It facilitates the precise expression of timing behaviors,
-  such as the requirement that an event must occur within 5 milliseconds of a trigger,
-  which often elude traditional qualitative temporal logics.
-
-  In this paper, we present a Tseitin-like translation that maps any metric temporal formula into
-  a logic programming fragment restricted to past operators.
-  This translation provides a formal bridge to leverage existing Answer Set Programming (ASP) solvers for reasoning about metric temporal constraints.
-  By restricting the target fragment to past operators, we enable more effective evaluation and integration with current ASP-based toolchains for multi-shot solving.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:309">
-                            <td class="time">11:00-11:30</td>
-                            <td>
-                                <div class="title">Meta Programming for Linear-time Temporal Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:309">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person24528.html">Susana Hahn</a><sup>1</sup>, <a class="person" href="person25515_59602.html">Amade Nemes</a><sup>1</sup>, <a class="person" href="person55809.html">Javier Romero</a><sup>1</sup>, <a class="person" href="person55445.html">Torsten Schaub</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Potsdam</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The development of temporal extensions to Answer Set Programming (ASP) has led to the emergence of linear-time (TEL), dynamic (DEL), and metric (MEL) temporal logics. However, the inherent rigidity of highly optimized ASP systems often hinders the rapid exploration and implementation of alternative logical designs. In this work, we propose a flexible meta-programming framework that operationalizes the semantics of varied temporal logics through a unified, declarative framework. Our approach extends standard ASP meta-programming by augmenting clingo’s theory grammar with formal type specifications and nesting capabilities. To ensure semantic correctness, we introduce a transformation pipeline that protects nested modalities from stable- model-based simplifications during grounding. We demonstrate the extensibility of our framework by implementing meta-encodings for TEL, MEL, and DEL. We provide a comprehensive account of TEL and highlight the key features for for managing the interval constraints of MEL and the Fischer-Ladner closure in DEL. Finally, we introduce the metasp system, a versatile tool that encapsulates workflow.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:310">
-                            <td class="time">11:30-12:00</td>
-                            <td>
-                                <div class="title">Long-term Power Grid Planning via Answer Set Programming <a class="abstract_link" href="ICLP-2026-07-22.html#talk:310">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23795.html">Antonio Ielo</a><sup>1</sup>, <a class="person" href="person55812.html">Francesco Doria</a><sup>1</sup>, <a class="person" href="person55813.html">Sandra Castellanos-Paez</a><sup>2</sup>, <a class="person" href="person55814.html">Marco Maratea</a><sup>1</sup>, <a class="person" href="person55815.html">Francesco Percassi</a><sup>2</sup>, <a class="person" href="person55816.html">Mauro Vallati</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Calabria</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Huddersfield</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Power grid is a critical infrastructure underpinning all aspects of modern society and its services. Maintaining its effectiveness requires continuous adaptations. In particular, addressing sustainability targets, demand patterns, and urbanisation trends requires implementing changes to the network. Actual developments can potentially span over a decade, with supply continuity and service quality that must be preserved throughout by ensuring conformance to several topological and combinatorial invariants. Long-term power grid planning deals with the above process, and although planning languages could be a natural choice, the kind of properties and invariants needed are cumbersome to express in such languages; on the contrary, they can be elegantly and succinctly encoded in Answer Set Programming (ASP).  In this paper, we propose the first approach to automate and optimise the long-term power grid planning process using ASP. Experimental evaluations conducted on synthetic and real‑world grid data confirm the expressive power of the proposed ASP‑based approach and demonstrate its effectiveness.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:299">
-                            <td class="time">12:00-12:30</td>
-                            <td>
-                                <div class="title">From Time to Space: The Impact of Linearity in Higher-Order Datalog <a class="abstract_link" href="ICLP-2026-07-22.html#talk:299">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25266_55762.html">Angelos Charalambidis</a><sup>1</sup>, <a class="person" href="person55764.html">Babis Kostopoulos</a><sup>1</sup>, <a class="person" href="person55765.html">Panos Rondogiannis</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Harokopio University of Athens</div>
-                                <div class="affiliation_item"><sup>2</sup> National and Kapodistrian University of Athens</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We consider a fragment of Higher-Order Datalog with negation and argue that it generalizes the familiar and important fragment of Linear Datalog. We investigate the expressive power of this fragment, establishing a tight connection with the hierarchy of space complexity classes. In particular, we demonstrate that for all k >= 1, the (k+1)-order fragment of Stratified Linear Higher-Order Datalog$^\neg$ captures (k-1)-EXPSPACE. This result suggests that restricting programs to linear recursion shifts the expressive power of the corresponding fragments from time to space, generalizing the classical result that (Stratified) Linear Datalog captures NL. Unlike the first-order setting where an ordering assumption is required to capture NL, our results hold without any such assumption on the input database. The proof relies on simulating space-bounded Turing machines using Stratified Linear Higher-Order Datalog$^\neg$ programs and providing a space-efficient evaluation of the query program. We argue that identifying such computationally well-behaved fragments is a crucial step towards paving the way for practical implementations of Higher-Order Datalog.</p>
                                 </div>
                             </td>
                         </tr>
@@ -960,21 +961,6 @@ made in case of an emergency.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:989">
-                    <div class="heading">
-                        <span class="interval">12:00-13:30</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">SAT</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room38.html">JJ Laginha</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:747">
                     <div class="heading">
                         <span class="interval">12:00-14:00</span>
@@ -986,6 +972,21 @@ made in case of an emergency.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room30.html">One03</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:989">
+                    <div class="heading">
+                        <span class="interval">12:00-13:30</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">SAT</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room38.html">JJ Laginha</a>
                     </div>
 
 
@@ -1016,51 +1017,6 @@ made in case of an emergency.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room29.html">One02</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:890">
-                    <div class="heading">
-                        <span class="interval">12:30-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">KR</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room28.html">Grande Auditório</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:891">
-                    <div class="heading">
-                        <span class="interval">12:30-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">KR</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room35.html">B1.03</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:892">
-                    <div class="heading">
-                        <span class="interval">12:30-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">KR</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
                     </div>
 
 
@@ -1106,6 +1062,51 @@ made in case of an emergency.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room33.html">B2.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:890">
+                    <div class="heading">
+                        <span class="interval">12:30-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">KR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room28.html">Grande Auditório</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:891">
+                    <div class="heading">
+                        <span class="interval">12:30-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">KR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room35.html">B1.03</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:892">
+                    <div class="heading">
+                        <span class="interval">12:30-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">KR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room31.html">B2.03</a>
                     </div>
 
 
@@ -1212,22 +1213,6 @@ In this paper, we explore #QBF proof systems to count the number of Skolem funct
                             </td>
                         </tr>
                     </table>
-                </div>
-                <div class="session" id="session:777">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="777" data-title="10 Years Test of Time Award" data-time="14:00-14:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">14:00-14:30</span>
-                        <span class="title">10 Years Test of Time Award</span>
-                        <span class="group_tag">ICLP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
-                    </div>
-
-
                 </div>
                 <div class="session" id="session:954">
                     <div class="heading">
@@ -1679,6 +1664,22 @@ for cs-tree–consistent CP-theory preferences, and prove that it subsumes all p
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:777">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="777" data-title="10 Years Test of Time Award" data-time="14:00-14:30" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-14:30</span>
+                        <span class="title">10 Years Test of Time Award</span>
+                        <span class="group_tag">ICLP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
+                    </div>
+
+
+                </div>
                 <div class="session" id="session:748">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="748" data-title="Concurrency" data-time="14:00-15:30" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -1841,21 +1842,6 @@ that proposed several optimal operators for unification and matching. We have im
 
 
                 </div>
-                <div class="session interval_session" id="session:991">
-                    <div class="heading">
-                        <span class="interval">15:30-16:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">SAT</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room38.html">JJ Laginha</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:749">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
@@ -1867,6 +1853,21 @@ that proposed several optimal operators for unification and matching. We have im
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room30.html">One03</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:991">
+                    <div class="heading">
+                        <span class="interval">15:30-16:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">SAT</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room38.html">JJ Laginha</a>
                     </div>
 
 
@@ -2283,6 +2284,40 @@ can express logical classifiers beyond C2.</p>
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:750">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="750" data-title="FSCD Business Meeting" data-time="16:00-17:00" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">16:00-17:00</span>
+                        <span class="title">FSCD Business Meeting</span>
+                        <span class="group_tag">FSCD</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23653.html">Patrick Baillot</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room30.html">One03</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:268">
+                            <td class="time">16:00-17:00</td>
+                            <td>
+                                <div class="title">FSCD Business Meeting <a class="abstract_link" href="FSCD-2026-07-22.html#talk:268">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23653.html">Patrick Baillot</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université de Lille</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session" id="session:780">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="780" data-title="Block 9 (8 TC)" data-time="16:00-18:00" data-room="B2.04" data-group="ICLP" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -2445,36 +2480,6 @@ The first tests prove good compatibility with clingo (when the special Picat fea
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:956">
-                    <div class="heading">
-                        <span class="interval">16:00-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">LICS</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                </div>
-                <div class="session interval_session" id="session:957">
-                    <div class="heading">
-                        <span class="interval">16:00-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">LICS</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room36.html">C1.03</a>
-                    </div>
-
-
-                </div>
                 <div class="session" id="session:992">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="992" data-title="Session I: Beyond Propositional SAT" data-time="16:00-18:00" data-room="JJ Laginha" data-group="SAT" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -2558,39 +2563,35 @@ We provide a proof-of-concept implementation of $\text{CDCL}(\oplus)$ called \te
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:750">
+                <div class="session interval_session" id="session:956">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="750" data-title="FSCD Business Meeting" data-time="16:00-17:00" data-room="One03" data-group="FSCD" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">16:00-17:00</span>
-                        <span class="title">FSCD Business Meeting</span>
-                        <span class="group_tag">FSCD</span>
+                        <span class="interval">16:00-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">LICS</span>
                     </div>
 
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person23653.html">Patrick Baillot</a>
-                        </div>
-                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room30.html">One03</a>
+                        <a class="room_name" href="room34.html">B1.04</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk" id="talk:268">
-                            <td class="time">16:00-17:00</td>
-                            <td>
-                                <div class="title">FSCD Business Meeting <a class="abstract_link" href="FSCD-2026-07-22.html#talk:268">(abstract)</a> <span class="duration">60 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23653.html">Patrick Baillot</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Université de Lille</div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                </div>
+                <div class="session interval_session" id="session:957">
+                    <div class="heading">
+                        <span class="interval">16:00-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">LICS</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room36.html">C1.03</a>
+                    </div>
+
+
                 </div>
                 <div class="session" id="session:958">
                     <div class="heading">
@@ -2763,6 +2764,6 @@ We prove that for any payoff for which the expectation is well-defined under all
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=639191380906001452"></script>
+<script src="site.js?v=639191383194919432"></script>
 </body>
 </html>
