@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — SMT — Program for Saturday, 25 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639191011399140150" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639191034731925321" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -159,10 +159,44 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1710">
+                            <td class="time">09:00-10:00</td>
+                            <td>
+                                <div class="title">From Distributed SAT to Distributed SMT? Successes and Challenges <a class="abstract_link" href="SMT-2026-07-25.html#talk:1710">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24262_58840.html">Dominik Schreiber</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1711">
+                            <td class="time">10:00-10:30</td>
+                            <td>
+                                <div class="title">Accelerating Parallel SMT Solving with Fixed First Decisions <a class="abstract_link" href="SMT-2026-07-25.html#talk:1711">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25880_58841.html">Amalee Wilson</a><sup>1</sup>, <a class="person" href="person24375.html">Andrew Reynolds</a><sup>2</sup>, <a class="person" href="person54783.html">Robert Jones</a><sup>3</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>2</sup>, <a class="person" href="person25838_54468.html">Clark Barrett</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Stanford University</div>
+                                <div class="affiliation_item"><sup>2</sup> The University of Iowa</div>
+                                <div class="affiliation_item"><sup>3</sup> AWS</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Parallel approaches to SMT solving are an appealing avenue for improving SMT performance, especially with the increased availability of high-performance computing and cloud computing resources. 
+One such approach is partitioning, a divide-and-conquer technique which endeavors to break the problem down into easier subproblems which can be solved in parallel.
+Unfortunately, this vision has been challenging to realize in practice.
+Specific challenges include the difficulty of finding good partitioning formulas, the inability to share information among subproblems, and the instability problem in SMT, all of which can contribute to some subproblems requiring even more time than the original problem.
+In this paper, we present fixed first decisions, a new technique which addresses the latter two challenges: it enables sharing of information among different partitions, and it enables a collaborative partitioning mode which mitigates the impact of difficult subproblems.
+We implement our approach using SMT-D and cvc5 and evaluate the implementation on SMT-LIB benchmarks, showing that it demonstrates a significant speedup over prior partitioning approaches.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session interval_session" id="session:1800">
                     <div class="heading">
-                        <span class="interval">10:00-11:00</span>
+                        <span class="interval">10:30-11:00</span>
                         <span class="title">Coffee Break</span>
                         <span class="group_tag">SMT</span>
                     </div>
@@ -190,10 +224,66 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1712">
+                            <td class="time">11:00-11:30</td>
+                            <td>
+                                <div class="title">Automated Reasoning with Nested Datatypes <a class="abstract_link" href="SMT-2026-07-25.html#talk:1712">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25881_58846.html">Tomer Hakak</a><sup>1</sup>, <a class="person" href="person54782.html">Yoni Zohar</a><sup>1</sup>, <a class="person" href="person24375.html">Andrew Reynolds</a><sup>2</sup>, <a class="person" href="person25838_54468.html">Clark Barrett</a><sup>3</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Bar-Ilan University</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Iowa, Amazon</div>
+                                <div class="affiliation_item"><sup>3</sup> Stanford University</div>
+                                <div class="affiliation_item"><sup>4</sup> The University of Iowa</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce a theory of nested datatypes. The theory is obtained
+  by restricting the naive combination of datatypes and arrays, so as to prevent
+  non-standard models from emerging.
+  A reduction-based decision procedure for the theory is given.
+  Finally, we describe an implementation of the procedure,
+  as well as an evaluation over both real-world and crafted benchmarks.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1713">
+                            <td class="time">11:30-12:00</td>
+                            <td>
+                                <div class="title">Local Reasoning with Expressive Array Specifications <a class="abstract_link" href="SMT-2026-07-25.html#talk:1713">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25882_58851.html">Rodrigo Raya</a><sup>1</sup>, <a class="person" href="person58852.html">Christophe Ringeissen</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Technical University of Madrid, Spain</div>
+                                <div class="affiliation_item"><sup>2</sup> Université de Lorraine, CNRS, Inria, LORIA, 54000 Nancy, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Locality properties enable hierarchic and incremental satisfiability checking in theory extensions. In the context of Satisfiability Modulo Theories (SMT), locality reasoning provides an attractive way
+to obtain satisfiability procedures for various extensions of the theory of equality, including theories specifying data structures. We establish locality properties of expressive array theories that incorporate universal quantifiers and cardinality constraints.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1714">
+                            <td class="time">12:00-12:30</td>
+                            <td>
+                                <div class="title">Extending the cvc5 Relational Solver with Cyclicity Reasoning <a class="abstract_link" href="SMT-2026-07-25.html#talk:1714">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24941.html">Rachel Cleaveland</a><sup>1</sup>, <a class="person" href="person58854.html">Mudathir Mohamed</a><sup>2</sup>, <a class="person" href="person25838_54468.html">Clark Barrett</a><sup>1</sup>, <a class="person" href="person58856.html">Caroline Trippel</a><sup>1</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Stanford University</div>
+                                <div class="affiliation_item"><sup>2</sup> The University of Iowa</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Many verification tasks in computing require precise, unbounded relational reasoning. The cvc5 SMT solver provides some support for such tasks in the form of a relational solver that can automatically determine the satisfiability of sets of constraints over a simple set of relational operators. However, the current solver is quite limited in its ability to reason about more complicated concepts, such as transitive closure and cyclicity.
+    In this paper, we propose extending the cvc5 relational solver with native support for reasoning about relational cyclicity. We propose two new predicates, acyclic and minimal, and we argue that these extensions will enable cvc5 to tackle more challenging tasks, such as reasoning about microarchitectural memory consistency models.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session interval_session" id="session:1802">
                     <div class="heading">
-                        <span class="interval">12:00-14:00</span>
+                        <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
                         <span class="group_tag">SMT</span>
                     </div>
@@ -206,9 +296,55 @@
 
 
                 </div>
+                <div class="session" id="session:1823">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="1823" data-title="SMT" data-time="14:00-15:30" data-room="C1.04" data-group="SMT" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-15:30</span>
+                        <span class="title">SMT</span>
+                        <span class="group_tag">SMT</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room37.html">C1.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1715">
+                            <td class="time">14:00-14:30</td>
+                            <td>
+                                <div class="title">Characterizing Sets of Theories That Can Be Disjointly Combined <a class="abstract_link" href="SMT-2026-07-25.html#talk:1715">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24018.html">Benjamin Przybocki</a><sup>1</sup>, <a class="person" href="person58859.html">Guilherme V. Toledo</a><sup>2</sup>, <a class="person" href="person54782.html">Yoni Zohar</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
+                                <div class="affiliation_item"><sup>2</sup> Bar-Ilan University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We study properties that allow first-order theories to be disjointly combined, including stable infiniteness, shininess, strong politeness, and gentleness. Specifically, we describe a Galois connection between sets of decidable theories, which picks out the largest set of decidable theories that can be combined with a given set of decidable theories. Using this, we exactly characterize the sets of decidable theories that can be combined with those satisfying well-known theory combination properties. This strengthens previous results and answers in the negative several long-standing open questions about the possibility of improving existing theory combination methods to apply to larger sets of theories. Additionally, the Galois connection gives rise to a complete lattice of theory combination properties, which allows one to generate new theory combination methods by taking meets and joins of elements of this lattice. We provide examples of this process, introducing new combination theorems. We situate both new and old combination methods within this lattice.
+
+This paper was originally presented at POPL 2026.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1716">
+                            <td class="time">14:30-15:30</td>
+                            <td>
+                                <div class="title">SMT-LIB Discussion <a class="abstract_link" href="SMT-2026-07-25.html#talk:1716">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24377.html">Cesare Tinelli</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> The University of Iowa</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session interval_session" id="session:1803">
                     <div class="heading">
-                        <span class="interval">15:30-16:30</span>
+                        <span class="interval">15:30-16:00</span>
                         <span class="title">Coffee Break</span>
                         <span class="group_tag">SMT</span>
                     </div>
@@ -220,6 +356,46 @@
                     </div>
 
 
+                </div>
+                <div class="session" id="session:1824">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="1824" data-title="SMT-COMP & Business Meeting" data-time="16:00-17:30" data-room="C1.04" data-group="SMT" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">16:00-17:30</span>
+                        <span class="title">SMT-COMP & Business Meeting</span>
+                        <span class="group_tag">SMT</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room37.html">C1.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1717">
+                            <td class="time">16:00-17:00</td>
+                            <td>
+                                <div class="title">SMT-COMP Presentation <a class="abstract_link" href="SMT-2026-07-25.html#talk:1717">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25883_58862.html">Dominik Winterer</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Manchester</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1718">
+                            <td class="time">17:00-17:30</td>
+                            <td>
+                                <div class="title">Business Meeting <a class="abstract_link" href="SMT-2026-07-25.html#talk:1718">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24353.html">Haniel Barbosa</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade Federal de Minas Gerais</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
@@ -240,6 +416,6 @@
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=639191011399140150"></script>
+<script src="site.js?v=639191034731925321"></script>
 </body>
 </html>

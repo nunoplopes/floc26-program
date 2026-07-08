@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — SMT — Program for Friday, 24 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639191011399140150" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639191034731925321" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
 </head>
@@ -192,7 +192,7 @@
                             <td>
                                 <div class="title">An Eager Encoding of Array Summation Constraints <a class="abstract_link" href="SMT-2026-07-24.html#talk:1674">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25858_47299.html">Patrick Janoschek</a><sup>1</sup>, <a class="person" href="person47300.html">Roland Herrmann</a><sup>1</sup>, <a class="person" href="person23320.html">Philipp Rümmer</a><sup>2</sup>                                </div>
+<a class="person" href="person25858_58808.html">Patrick Janoschek</a><sup>1</sup>, <a class="person" href="person58809.html">Roland Herrmann</a><sup>1</sup>, <a class="person" href="person23320.html">Philipp Rümmer</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Regensburg</div>
                                 <div class="affiliation_item"><sup>2</sup> Uppsala University, University of Regensburg</div>
@@ -234,10 +234,68 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1701">
+                            <td class="time">11:00-11:30</td>
+                            <td>
+                                <div class="title">A Modern View on MCSat <a class="abstract_link" href="SMT-2026-07-24.html#talk:1701">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25878_58811.html">Thomas Hader</a><sup>1</sup>, <a class="person" href="person58812.html">Theo Jauschneg</a><sup>1</sup>, <a class="person" href="person24005.html">Daniela Kaufmann</a><sup>1</sup>, <a class="person" href="person25248.html">Laura Kovacs</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> TU Wien</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Model Constructing Satisfiability (MCSat) approach has shown strong performance in solving complex SMT problems, in particular in algebraic SMT theories such as non-linear integer and real arithmetic. 
+In this paper we revisit the theory-independent MCSat framework as a proof system to provide a modern perspective that refines the original formulation of MCSat.
+
+By closely formalizing the implementation of MCSat within the Yices2 SMT solver, we incorporate design decisions that diverge from those in the seminal MCSat paper and thereby capture the current state-of-the-art in MCSat-based SMT reasoning.
+	
+We present a general, theory-agnostic rule scheme for MCSat and instantiate it for several theories, including propositional logic, non-linear real arithmetic, and uninterpreted functions. 
+We provide several detailed examples to illustrate the applicability of the presented calculus.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1702">
+                            <td class="time">11:30-12:00</td>
+                            <td>
+                                <div class="title">MCSAT Modulo Transcendental Arithmetics <a class="abstract_link" href="SMT-2026-07-24.html#talk:1702">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23716.html">Jorge Gallego Hernández</a><sup>1</sup>, <a class="person" href="person58816.html">Enrico Lipparini</a><sup>2</sup>, <a class="person" href="person47949.html">Alessio Mansutti</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IMDEA Software</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Cagliari</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We propose a framework for solving quantifier-free formulas from (undecidable) extensions of 
+non-linear real arithmetic (NRA) with transcendental functions, such as exponential and trigonometric ones. The framework extends the Model Constructive Satisfiability calculus (MCSAT), and leverages procedures for NRA and methods from real analysis.
+
+At its core, our procedure abstracts the input formula to NRA, and lets MCSAT and an NRA plugin incrementally builds a partial model of the abstracted formula. A Transcendental Real Arithmetic plugin, acting as an intermediary between MCSAT and the NRA plugin, ensures the consistency of the partial model and is responsible for refining the abstracted formula.
+
+We implemented our procedure in the Yices2 SMT solver for the sine and exponential functions, and conducted an extensive empirical evaluation that shows that our implementation outperforms state-of-the-art solvers on both SAT and UNSAT instances.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1703">
+                            <td class="time">12:00-12:30</td>
+                            <td>
+                                <div class="title">Exploration Heuristics for the NuCAD and CAlC Algorithms <a class="abstract_link" href="SMT-2026-07-24.html#talk:1703">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24940.html">Alexej Kolbin</a><sup>1</sup>, <a class="person" href="person58819.html">Jasper Nalbach</a><sup>1</sup>, <a class="person" href="person58820.html">Erika Ábrahám</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Satisfiability modulo non-linear real arithmetic is about checking Boolean combinations of polynomial constraints. The non-uniform CAD (NuCAD) and cylindrical algebraic covering (CAlC) algorithms are variants of the complete cylindrical algebraic decomposition (CAD) algorithm which reduce effort by transferring the exploration-guided technique from SAT solving, so that the trace of these algorithms can be described as a search tree.
+
+The modification in this paper alters the order in which the search tree is explored, deferring the exploration of branches with expensive computations to potentially find an easier-to-compute solution. We adapt both the NuCAD and CAlC algorithms. In the experimental evaluation, NuCAD solves a significant number of previously unsolved instances, whereas CAlC does not benefit from the modification.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session interval_session" id="session:1795">
                     <div class="heading">
-                        <span class="interval">12:00-14:00</span>
+                        <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
                         <span class="group_tag">SMT</span>
                     </div>
@@ -265,10 +323,67 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1704">
+                            <td class="time">14:00-14:30</td>
+                            <td>
+                                <div class="title">Incremental Linearization for Quantified Nonlinear Integer Arithmetic <a class="abstract_link" href="SMT-2026-07-24.html#talk:1704">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25879_58821.html">Marek Dančo</a><sup>1</sup>, <a class="person" href="person24597.html">Mikoláš Janota</a><sup>1</sup>, <a class="person" href="person58823.html">Karel Chvalovsky</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Czech Institute of of Informatics, Robotics and Cybernetics (CIIRC)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We address the satisfiability problem for quantified nonlinear integer
+arithmetic (NIA), which is undecidable even in the quantifier-free case. Our
+approach reduces NIA formulas to linear integer arithmetic (LIA) by replacing
+nonlinear terms with fresh existential variables---a process we call
+purification. The resulting LIA abstraction over-approximates the original
+problem and is iteratively refined by adding axioms that constrain the
+abstracted terms to respect their nonlinear semantics.
+Experimental evaluation on SMT-LIB benchmarks and randomly generated polynomial
+representation problems outperforms state-of-the-art solvers.
+In the case of representation problems, our prototype solves more than twice as many
+instances as the next-best solver (yicesQS).</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1705">
+                            <td class="time">14:30-15:00</td>
+                            <td>
+                                <div class="title">SMT-based Automation for Overwhelming Truth: A Polymorphic and Higher-Order Extension <a class="abstract_link" href="SMT-2026-07-24.html#talk:1705">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23434_58824.html">David Baelde</a><sup>1</sup>, <a class="person" href="person23200_57738.html">Stéphanie Delaune</a><sup>1</sup>, <a class="person" href="person58826.html">Stanislas Riou</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Univ Rennes, CNRS, IRISA</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Formal verification of cryptographic protocols in the computational model provides strong security guarantees but remains challenging to automate. The Computationally Complete Symbolic Attacker (CCSA) logic, implemented in the Squirrel proof assistant, provides computationally sound reasoning in a polymorphic higher-order logic whose validity is defined as overwhelming truth.
+Recently, we introduced an SMT-based tactic to automate a first-order fragment of that logic, but higher-order constructs and polymorphism were left unsupported.
+
+In this paper, we extend our approach to automate the full local logic of Squirrel. We implement this translation in Squirrel's SMT tactic and demonstrate its effectiveness on generic benchmarks and several case studies.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1706">
+                            <td class="time">15:00-15:30</td>
+                            <td>
+                                <div class="title">Floating‑Point Arithmetic of Symbolic Size in SMT‑LIB 3 <a class="abstract_link" href="SMT-2026-07-24.html#talk:1706">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23708.html">Kristoffer Norrman</a><sup>1</sup>, <a class="person" href="person58828.html">Tjark Weber</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce a dependently typed theory of floating-point arithmetic for SMT-LIB 3 in which exponent and significand widths are symbolic parameters. This enables reasoning about format-parametric properties that cannot be expressed in SMT-LIB 2. We implement MC-Hammer, an extension of Isabelle/HOL's Sledgehammer, which translates polymorphic floating-point terms into SMT-LIB 3 with dependent types. Using this infrastructure, we generate over 600 benchmark problems covering both fixed and symbolic sizes. Our work provides the first practical bridge between interactive theorem provers and SMT-LIB 3 for floating-point reasoning.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session interval_session" id="session:1797">
                     <div class="heading">
-                        <span class="interval">15:30-16:30</span>
+                        <span class="interval">15:30-16:00</span>
                         <span class="title">Coffee Break</span>
                         <span class="group_tag">SMT</span>
                     </div>
@@ -296,6 +411,76 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:1707">
+                            <td class="time">16:00-16:30</td>
+                            <td>
+                                <div class="title">LLM2SMT: Building an SMT Solver with Zero Human-Written Code <a class="abstract_link" href="SMT-2026-07-24.html#talk:1707">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24597.html">Mikoláš Janota</a><sup>1</sup>, <a class="person" href="person58830.html">Mirek Olšák</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Czech Institute of of Informatics, Robotics and Cybernetics (CIIRC)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Whether LLMs can reason or write software is widely debated, but whether they
+  can write software that itself reasons is largely unexplored. We
+  present a case study in which an LLM coding agent builds a complete
+  DPLL(T)-style SMT solver for QF_UF with zero human-written code. The solver
+  implements the Nieuwenhuis-Oliveras congruence closure algorithm, includes
+  preprocessing, and emits Lean proofs for unsatisfiable instances. We describe
+  the development process and key challenges, and show that the resulting solver
+  is competitive on SMT-LIB benchmarks. While full proof emission for
+  unsatisfiable instances appears to be beyond the capabilities of the LLM, the
+  solver achieves competitive performance and passes correctness tests.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1708">
+                            <td class="time">16:30-17:00</td>
+                            <td>
+                                <div class="title">Learning Unified Graph and Language Representations for SMT Algorithm Selection <a class="abstract_link" href="SMT-2026-07-24.html#talk:1708">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24224.html">Zhengyang (John) Lu</a><sup>1</sup>, <a class="person" href="person58832.html">Paul Sarnighausen-Cahn</a><sup>2</sup>, <a class="person" href="person58833.html">Jiahao Chen</a><sup>3</sup>, <a class="person" href="person25524_55032.html">Arie Gurfinkel</a><sup>1</sup>, <a class="person" href="person58835.html">Florin Manea</a><sup>2</sup>, <a class="person" href="person57875.html">Vijay Ganesh</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Waterloo</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Göttingen and CIDAS</div>
+                                <div class="affiliation_item"><sup>3</sup> Georgia Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Algorithm selection is important in satisfiability and constraint solving, since no single solver
+performs best across all instances. Traditional learning-based approaches represent problem instances
+using expert-designed features to predict solver performance, while recent work explores graph
+representations derived from ASTs. However, most existing approaches overlook high-level contextual
+information, such as the application domain or the benchmark origin. In practice, such cues often
+help practitioners choose an appropriate solver.
+We present SMT-Select, a multimodal framework for SMT algorithm selection. It learns
+graph representations from formula ASTs and textual representations from natural-language context
+descriptions. These representations are then combined to guide solver selection. Evaluated across
+nine SMT logics, SMT-Select consistently outperforms existing selectors and SMT-COMP winning
+solvers. Across all evaluated logics, it closes at least 30% of the performance gap between the
+competition winner and the virtual best solver (VBS), and nearly matches the VBS in two logics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1709">
+                            <td class="time">17:00-17:30</td>
+                            <td>
+                                <div class="title">Efficient Volume Computation for SMT Formulas <a class="abstract_link" href="SMT-2026-07-24.html#talk:1709">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24189.html">Arijit Shaw</a><sup>1</sup>, <a class="person" href="person24419.html">Uddalok Sarkar</a><sup>2</sup>, <a class="person" href="person47784.html">Kuldeep S. Meel</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Chennai Mathematical Institute</div>
+                                <div class="affiliation_item"><sup>2</sup> Indian Statistical Institute</div>
+                                <div class="affiliation_item"><sup>3</sup> Georgia Institute of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Satisfiability Modulo Theory (SMT) has recently emerged as a powerful tool for solving various automated reasoning problems across diverse domains. Unlike traditional satisfiability methods confined to Boolean variables, SMT can reason on real-life variables like bitvectors, integers, and reals. A natural extension in this context is to ask quantitative questions. One such query in the SMT theory of Linear Real Arithmetic (LRA) is computing the volume of the entire satisfiable region defined by SMT formulas. This problem is important in solving different quantitative verification queries in software verification, cyber-physical systems, and neural networks, to mention a few.
+
+We introduce ttc, an efficient algorithm that extends the capabilities of SMT solvers to volume computation. Our method decomposes the solution space of SMT Linear Real Arithmetic formulas into a union of overlapping convex polytopes, then computes their volumes and calculates their union. Our algorithm builds on recent developments in streaming-mode set unions, volume computation algorithms, and AllSAT techniques. Experimental evaluations demonstrate significant performance improvements over existing state-of-the-art approaches.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
@@ -316,6 +501,6 @@
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=639191011399140150"></script>
+<script src="site.js?v=639191034731925321"></script>
 </body>
 </html>
