@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Search</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=639191906294413122" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=639191926818702556" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#225" />
@@ -159,11 +159,13 @@
         const manifest = await fetch('data/manifest.json', { cache: 'no-store' });
         if (manifest.ok) {
             const manifestData = await manifest.json();
-            for (const groupId of manifestData.groupIds) {
+            const groupResults = await Promise.all(manifestData.groupIds.map(async groupId => {
                 const jsonFile = `data/group-${groupId}.json`;
                 const response = await fetch(jsonFile, { cache: 'no-store' });
-                if (response.ok) {
-                    const data = await response.json();
+                return response.ok ? await response.json() : null;
+            }));
+            for (const data of groupResults) {
+                if (data) {
                     talks.push(...(data.talks || []));
                 }
             }
@@ -325,6 +327,6 @@
     });
 </script>
 
-<script src="site.js?v=639191906294413122"></script>
+<script src="site.js?v=639191926818702556"></script>
 </body>
 </html>
