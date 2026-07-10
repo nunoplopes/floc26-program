@@ -1,5 +1,5 @@
-const CACHE_NAME = 'floc-2026-cache-v12';
-const STATIC_CACHE = 'floc-2026-static-v12';
+const CACHE_NAME = 'floc-2026-cache-v13';
+const STATIC_CACHE = 'floc-2026-static-v13';
 
 const staticAssets = [
   'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json',

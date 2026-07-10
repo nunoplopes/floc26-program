@@ -16,11 +16,20 @@
         timeZoneName: "short",
     };
 
+    function showOffline() {
+        if (utcEl)
+            utcEl.textContent = utcEl.dataset.offlineLabel || "Offline";
+        if (localGroupEl)
+            localGroupEl.style.display = "none";
+    }
+
     fetch("build-info.json", { cache: "no-store" })
         .then(function (response) { return response.ok ? response.json() : null; })
         .then(function (data) {
-            if (!data || !data.generatedAtUtc)
+            if (!data || !data.generatedAtUtc) {
+                showOffline();
                 return;
+            }
 
             var date = new Date(data.generatedAtUtc);
 
@@ -37,5 +46,5 @@
                 }
             }
         })
-        .catch(function () { });
+        .catch(showOffline);
 })();
