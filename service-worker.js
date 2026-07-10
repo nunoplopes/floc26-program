@@ -1,5 +1,5 @@
-const CACHE_NAME = 'floc-2026-cache-v9';
-const STATIC_CACHE = 'floc-2026-static-v9';
+const CACHE_NAME = 'floc-2026-cache-v10';
+const STATIC_CACHE = 'floc-2026-static-v10';
 
 const staticAssets = [
   'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json',
@@ -54,6 +54,12 @@ self.addEventListener('fetch', (event) => {
 
   if (event.request.destination === 'document' || isStaticAsset) {
     const cacheName = isStaticAsset ? STATIC_CACHE : CACHE_NAME;
+    // Static assets are requested with a `?v=...` cache-busting query that changes on every
+    // generator run. Caching under the full URL would fragment the entry on each deploy and
+    // could leave an offline visitor with a cache miss (and a blank stylesheet) if the query
+    // in the currently-loaded HTML doesn't match what's stored. Cache/match them under the
+    // bare URL instead, matching the key the install-time precache already uses.
+    const cacheKey = isStaticAsset ? new Request(url.origin + url.pathname) : event.request;
     event.respondWith(
       fetch(event.request)
         .then((response) => {
@@ -62,13 +68,13 @@ self.addEventListener('fetch', (event) => {
           // dropping the write and leaving the just-visited page missing offline.
           event.waitUntil(
             caches.open(cacheName).then(async (cache) => {
-              await cache.delete(event.request, { ignoreSearch: true });
-              await putWithoutRedirect(cache, event.request, response);
+              await cache.delete(cacheKey, { ignoreSearch: true });
+              await putWithoutRedirect(cache, cacheKey, response);
             })
           );
           return response;
         })
-        .catch(() => caches.match(event.request, { ignoreSearch: true }))
+        .catch(() => caches.match(cacheKey, { ignoreSearch: true }))
     );
     return;
   }
