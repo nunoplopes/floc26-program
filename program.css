@@ -234,7 +234,8 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .skip_link:focus { left: 8px; top: 8px; }
 .session .interval { font-weight: bold; color: var(--color-link); margin-right: 8px; }
 .session .title { font-weight: bold; }
-.session .group_tag { float: right; font-size: 11px; background: var(--color-tag-bg); color: var(--color-accent-contrast); padding: 2px 6px; border-radius: 3px; }
+.group_tag { font-size: 11px; background: var(--color-tag-bg); color: var(--color-accent-contrast); padding: 2px 6px; border-radius: 3px; }
+.session .group_tag { float: right; }
 
 .session_chair, .room { font-size: 13px; color: var(--color-text-muted); margin: 2px 0; }
 .session_chair .chair_word, .room .room_word { display: inline-block; min-width: 60px; font-weight: bold; }
@@ -278,7 +279,7 @@ tr.talk:target td { background: var(--color-bg-target); }
 .room_sessions .session_link { color: var(--color-link); text-decoration: underline; font-weight: bold; }
 .room_sessions .session_link:hover { color: var(--color-accent); }
 .room_sessions .session_meta { color: var(--color-text-muted-2); font-family: Consolas, "Courier New", monospace; font-size: 13px; margin-left: 6px; }
-.room_sessions .group_tag { font-size: 11px; background: var(--color-tag-bg); color: var(--color-accent-contrast); padding: 2px 6px; border-radius: 3px; margin-left: 8px; }
+.room_sessions .group_tag { margin-left: 8px; }
 .room_sessions_empty { color: var(--color-text-muted-5); font-style: italic; }
 
 #disclaimer { margin-top: 30px; padding-top: 10px; border-top: 1px solid var(--color-border-light); font-size: 11px; color: var(--color-text-muted-5); }
