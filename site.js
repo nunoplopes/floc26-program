@@ -6,9 +6,6 @@ if ('serviceWorker' in navigator) {
                 if (!newWorker) return;
 
                 newWorker.addEventListener('statechange', () => {
-                    // 'installed' with an existing controller means this is a genuine update,
-                    // not the very first install (which has no controller yet) — only prompt
-                    // for a reload in that case.
                     if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
                         showUpdateToast();
                     }
@@ -70,8 +67,6 @@ const isIos = /iphone|ipad|ipod/i.test(window.navigator.userAgent)
 
 if (installButton) {
     if (isIos && !isStandalone) {
-        // iOS never fires beforeinstallprompt, so the button is shown up front
-        // and routes to a static explainer instead of the native install flow.
         installButton.style.display = 'flex';
         installButton.addEventListener('click', () => {
             window.location.href = 'install-ios.html';

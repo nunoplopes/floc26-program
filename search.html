@@ -299,8 +299,10 @@
                 ? `<span class="group_tag">${escapeHtml(talk.groupName)}</span>`
                 : '';
 
+            const targetHref = (!navigator.onLine && talk.groupIndexHref) ? talk.groupIndexHref : talk.href;
+
             li.innerHTML = `
-                <a href="${escapeHtml(talk.href)}" class="search-result-link">
+                <a href="${escapeHtml(targetHref)}" class="search-result-link">
                     <div class="search-result-title-row">
                         <div class="search-result-title">${escapeHtml(talk.title)}</div>
                         ${groupHtml}
@@ -347,6 +349,6 @@
     });
 </script>
 
-<script src="site.js?v=4c3b10d001"></script>
+<script src="site.js?v=49c8ce5ba3"></script>
 </body>
 </html>
