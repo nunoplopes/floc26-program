@@ -1,5 +1,5 @@
-const CACHE_NAME = 'floc-2026-cache-v14';
-const STATIC_CACHE = 'floc-2026-static-v14';
+const CACHE_NAME = 'floc-2026-cache-v16';
+const STATIC_CACHE = 'floc-2026-static-v16';
 
 const staticAssets = [
   'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json',
@@ -95,9 +95,25 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Everything else (images: event logo, speaker photos, favicon, etc.) — cache-first with a
+  // network write-through on success, so once an image has loaded online it stays available
+  // offline. Previously these fell through to a read-only cache lookup that never wrote
+  // anything back, so images (most visibly the event logo, shown in the header on every page)
+  // were never actually cached and just broke offline.
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
+    caches.match(event.request).then((cached) => {
+      if (cached) return cached;
+
+      return fetch(event.request)
+        .then((response) => {
+          if (event.request.method === 'GET' && url.origin === self.location.origin && response.ok) {
+            event.waitUntil(
+              caches.open(CACHE_NAME).then((cache) => putWithoutRedirect(cache, event.request, response))
+            );
+          }
+          return response;
+        })
+        .catch(() => undefined);
     })
   );
 });

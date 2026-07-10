@@ -1,5 +1,53 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    navigator.serviceWorker.register('service-worker.js')
+        .then((registration) => {
+            registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                if (!newWorker) return;
+
+                newWorker.addEventListener('statechange', () => {
+                    // 'installed' with an existing controller means this is a genuine update,
+                    // not the very first install (which has no controller yet) — only prompt
+                    // for a reload in that case.
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        showUpdateToast();
+                    }
+                });
+            });
+        })
+        .catch(() => {});
+}
+
+function showUpdateToast() {
+    if (document.getElementById('pwa_update_toast')) return;
+
+    const labelsEl = document.getElementById('pwa_labels');
+    const message = (labelsEl && labelsEl.dataset.updateMessage) || 'New version available.';
+    const actionLabel = (labelsEl && labelsEl.dataset.updateAction) || 'Reload';
+
+    const toast = document.createElement('div');
+    toast.id = 'pwa_update_toast';
+
+    const text = document.createElement('span');
+    text.textContent = message;
+
+    const reloadBtn = document.createElement('button');
+    reloadBtn.type = 'button';
+    reloadBtn.className = 'pwa_update_reload';
+    reloadBtn.textContent = actionLabel;
+    reloadBtn.addEventListener('click', () => window.location.reload());
+
+    const dismissBtn = document.createElement('button');
+    dismissBtn.type = 'button';
+    dismissBtn.className = 'pwa_update_dismiss';
+    dismissBtn.textContent = '✕';
+    dismissBtn.setAttribute('aria-label', 'Dismiss');
+    dismissBtn.addEventListener('click', () => toast.remove());
+
+    toast.appendChild(text);
+    toast.appendChild(reloadBtn);
+    toast.appendChild(dismissBtn);
+    document.body.appendChild(toast);
 }
 
 window.addEventListener('load', () => {
