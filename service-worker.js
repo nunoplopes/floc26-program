@@ -1,5 +1,5 @@
-const CACHE_NAME = 'floc-2026-cache-v10';
-const STATIC_CACHE = 'floc-2026-static-v10';
+const CACHE_NAME = 'floc-2026-cache-v11';
+const STATIC_CACHE = 'floc-2026-static-v11';
 
 const staticAssets = [
   'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json',
@@ -22,9 +22,16 @@ async function putWithoutRedirect(cache, request, response) {
 }
 
 async function fetchAndCache(cache, url) {
-  const response = await fetch(url);
-  if (response.ok) {
-    await putWithoutRedirect(cache, url, response);
+  // Never let one bad asset sink the whole precache: an uncaught rejection here propagates
+  // through Promise.all and fails the entire 'install' event, which can leave other assets
+  // (e.g. program.css) uncached too — that's what made the offline page look unstyled.
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      await putWithoutRedirect(cache, url, response);
+    }
+  } catch (e) {
+    // best-effort precache; offline capability degrades gracefully
   }
 }
 
