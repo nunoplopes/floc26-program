@@ -15,18 +15,32 @@ window.addEventListener('load', () => {
 let deferredPrompt;
 const installButton = document.getElementById('install_pwa_btn');
 
+const isStandalone = window.matchMedia('(display-mode: standalone)').matches
+    || window.navigator.standalone === true;
+const isIos = /iphone|ipad|ipod/i.test(window.navigator.userAgent)
+    || (window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1);
+
 if (installButton) {
-    installButton.addEventListener('click', () => {
-        if (deferredPrompt) {
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    deferredPrompt = null;
-                    installButton.style.display = 'none';
-                }
-            });
-        }
-    });
+    if (isIos && !isStandalone) {
+        // iOS never fires beforeinstallprompt, so the button is shown up front
+        // and routes to a static explainer instead of the native install flow.
+        installButton.style.display = 'flex';
+        installButton.addEventListener('click', () => {
+            window.location.href = 'install-ios.html';
+        });
+    } else {
+        installButton.addEventListener('click', () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        deferredPrompt = null;
+                        installButton.style.display = 'none';
+                    }
+                });
+            }
+        });
+    }
 }
 
 window.addEventListener('beforeinstallprompt', (event) => {

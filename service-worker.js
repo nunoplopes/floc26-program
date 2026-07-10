@@ -1,18 +1,43 @@
-const CACHE_NAME = 'floc-2026-cache-v5';
-const STATIC_CACHE = 'floc-2026-static-v5';
+const CACHE_NAME = 'floc-2026-cache-v9';
+const STATIC_CACHE = 'floc-2026-static-v9';
 
-const staticAssets = ['program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json', 'app-icon.svg'];
+const staticAssets = [
+  'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json',
+  'app-icon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png',
+];
+
+// Safari refuses to serve a cached Response whose `redirected` flag is set
+// ("Response served by service worker has redirections"), so any response that
+// went through a redirect is rebuilt as a plain, non-redirected Response before
+// it's stored — this applies both at install-time precache and at fetch-time.
+async function putWithoutRedirect(cache, request, response) {
+  const storable = response.redirected
+    ? new Response(await response.clone().blob(), {
+        status: response.status,
+        statusText: response.statusText,
+        headers: response.headers,
+      })
+    : response.clone();
+  await cache.put(request, storable);
+}
+
+async function fetchAndCache(cache, url) {
+  const response = await fetch(url);
+  if (response.ok) {
+    await putWithoutRedirect(cache, url, response);
+  }
+}
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     Promise.all([
-      caches.open(STATIC_CACHE).then((cache) => cache.addAll(staticAssets)),
+      caches.open(STATIC_CACHE).then((cache) => Promise.all(staticAssets.map((asset) => fetchAndCache(cache, asset)))),
       caches.open(CACHE_NAME).then(async (cache) => {
         try {
           const response = await fetch('precache-pages.json', { cache: 'no-store' });
           if (response.ok) {
             const { pages } = await response.json();
-            await cache.addAll(pages);
+            await Promise.all(pages.map((page) => fetchAndCache(cache, page)));
           }
         } catch (e) {
           // best-effort precache; offline capability degrades gracefully
@@ -32,10 +57,15 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          caches.open(cacheName).then(async (cache) => {
-            await cache.delete(event.request, { ignoreSearch: true });
-            await cache.put(event.request, response.clone());
-          });
+          // Keep the SW alive until the cache write lands — without waitUntil, the
+          // browser can recycle the worker right after respondWith resolves, silently
+          // dropping the write and leaving the just-visited page missing offline.
+          event.waitUntil(
+            caches.open(cacheName).then(async (cache) => {
+              await cache.delete(event.request, { ignoreSearch: true });
+              await putWithoutRedirect(cache, event.request, response);
+            })
+          );
           return response;
         })
         .catch(() => caches.match(event.request, { ignoreSearch: true }))
