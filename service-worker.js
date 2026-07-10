@@ -1,5 +1,5 @@
-const CACHE_NAME = 'floc-2026-cache-v11';
-const STATIC_CACHE = 'floc-2026-static-v11';
+const CACHE_NAME = 'floc-2026-cache-v12';
+const STATIC_CACHE = 'floc-2026-static-v12';
 
 const staticAssets = [
   'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json',
@@ -81,7 +81,16 @@ self.addEventListener('fetch', (event) => {
           );
           return response;
         })
-        .catch(() => caches.match(cacheKey, { ignoreSearch: true }))
+        .catch(async () => {
+          const cached = await caches.match(cacheKey, { ignoreSearch: true });
+          if (cached) return cached;
+          // Hitting an uncached page while offline: show a dedicated "no internet" page
+          // instead of the browser's generic offline error.
+          if (event.request.destination === 'document') {
+            return caches.match('offline.html');
+          }
+          return undefined;
+        })
     );
     return;
   }
