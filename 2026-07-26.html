@@ -111,6 +111,7 @@
             <span class="separator"> | </span>    <a href="SAT-index.html">SAT</a>
             <span class="separator"> | </span>    <a href="SD-index.html">SD</a>
             <span class="separator"> | </span>    <a href="SKILLEDLLMs-index.html">SKILLED-LLMs</a>
+            <span class="separator"> | </span>    <a href="SmP-index.html">SmP</a>
             <span class="separator"> | </span>    <a href="SMT-index.html">SMT</a>
             <span class="separator"> | </span>    <a href="Soft-index.html">Soft</a>
             <span class="separator"> | </span>    <a href="ST4DM-index.html">ST4DM</a>
@@ -437,7 +438,7 @@ We describe the distinctive features and support that PSF offers, its system arc
                             <td>
                                 <div class="title">Octopus: Practical Equivalence Checking of P4 Packet Parsers <a class="abstract_link" href="CAV-2026-07-26.html#talk:1114">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23459_86028.html">Jort van Leenen</a><sup>1</sup>, <a class="person" href="person85373.html">Tobias Kappé</a><sup>1</sup>                                </div>
+<a class="person" href="person23459_86028.html">Jort van Leenen</a><sup>1</sup>, <a class="person" href="person86029.html">Tobias Kappé</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LIACS, Leiden University</div>
                                 </div>
@@ -548,61 +549,6 @@ Finally, we extend our analysis beyond the basic setting and present, for the fi
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:818">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="818" data-title="ITP Papers: Formalisation of Mathematics" data-time="11:00-12:00" data-room="B1.04" data-group="ITP" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">11:00-12:00</span>
-                        <span class="title">ITP Papers: Formalisation of Mathematics</span>
-                        <span class="group_tag">ITP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:371">
-                            <td class="time">11:00-11:30</td>
-                            <td>
-                                <div class="title">Complex Bounded Operators in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-26.html#talk:371">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25293_87502.html">Dominique Unruh</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen, University of Tartu</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a formalization of bounded operators on complex vector spaces in Isabelle/HOL.  Our formalization contains material on complex vector spaces (normed spaces, Banach spaces, Hilbert spaces) that complements and goes beyond the developments of real vectors spaces in the Isabelle/HOL standard library.  We define the type of bounded operators between complex vector spaces (cblinfun) and develop the theory of unitaries, projectors, extension of bounded linear functions (BLT theorem), adjoints, Loewner order, closed subspaces and more.  For the finite-dimensional case, we provide code generation support by identifying finite-dimensional operators with matrices as formalized in the Jordan_Normal_Form AFP entry.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:372">
-                            <td class="time">11:30-12:00</td>
-                            <td>
-                                <div class="title">Lean Formalization of Generalization Error Bound by Rademacher Complexity and Dudley's Entropy Integral <a class="abstract_link" href="ITP-2026-07-26.html#talk:372">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25080.html">Sho Sonoda</a><sup>1,5</sup>, <a class="person" href="person87504.html">Kazumi Kasaura</a><sup>2</sup>, <a class="person" href="person87505.html">Yuma Mizuno</a><sup>3</sup>, <a class="person" href="person87506.html">Kei Tsukamoto</a><sup>4</sup>, <a class="person" href="person87507.html">Naoto Onda</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> RIKEN AIP</div>
-                                <div class="affiliation_item"><sup>2</sup> OMRON SINIC X Corporation</div>
-                                <div class="affiliation_item"><sup>3</sup> University College Cork</div>
-                                <div class="affiliation_item"><sup>4</sup> The University of Tokyo</div>
-                                <div class="affiliation_item"><sup>5</sup> CyberAgent Inc</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Understanding and certifying the generalization performance of machine learning algorithms---i.e.\ obtaining \emph{theoretical} estimates of the test error from a finite training sample---is a central theme of statistical learning theory.
-Among the many complexity measures used to derive such guarantees, \emph{Rademacher complexity} yields sharp, data-dependent bounds that apply well beyond classical $0$--$1$ classification.
-In this study, we formalize the generalization error bound by \emph{Rademacher complexity} in Lean~4, building on measure-theoretic probability theory available in the Mathlib library.
-Our development provides a mechanically-checked pipeline from the definitions of empirical and expected Rademacher complexity, through a formal symmetrization argument and a bounded-differences analysis, to high-probability uniform deviation bounds via a formally proved McDiarmid inequality.
-A key technical contribution is a reusable mechanism for lifting results from \emph{countable} hypothesis classes (where measurability of suprema is straightforward in Mathlib) to \emph{separable} topological index sets via a reduction to a countable dense subset.
-As worked applications of the abstract theorem, we mechanize standard empirical Rademacher bounds for linear predictors under $\ell_2$ and $\ell_1$ regularization, and we also formalize a Dudley-type entropy integral bound based on covering numbers and a chaining construction.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
                 <div class="session" id="session:790">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="790" data-title="Differential Equations & Hybrid Systems" data-time="11:00-12:00" data-room="B2.04" data-group="IJCAR" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -671,20 +617,60 @@ The main result is a proof of absolute completeness of robust differential dynam
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:791">
+                <div class="session" id="session:818">
                     <div class="heading">
-                        <span class="interval">12:00-14:00</span>
-                        <span class="title">Lunch</span>
-                        <span class="group_tag">IJCAR</span>
+                        <button type="button" class="favorite_btn" data-session-id="818" data-title="ITP Papers: Formalisation of Mathematics" data-time="11:00-12:00" data-room="B1.04" data-group="ITP" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">11:00-12:00</span>
+                        <span class="title">ITP Papers: Formalisation of Mathematics</span>
+                        <span class="group_tag">ITP</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
+                        <a class="room_name" href="room34.html">B1.04</a>
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:371">
+                            <td class="time">11:00-11:30</td>
+                            <td>
+                                <div class="title">Complex Bounded Operators in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-26.html#talk:371">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25293_87502.html">Dominique Unruh</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen, University of Tartu</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a formalization of bounded operators on complex vector spaces in Isabelle/HOL.  Our formalization contains material on complex vector spaces (normed spaces, Banach spaces, Hilbert spaces) that complements and goes beyond the developments of real vectors spaces in the Isabelle/HOL standard library.  We define the type of bounded operators between complex vector spaces (cblinfun) and develop the theory of unitaries, projectors, extension of bounded linear functions (BLT theorem), adjoints, Loewner order, closed subspaces and more.  For the finite-dimensional case, we provide code generation support by identifying finite-dimensional operators with matrices as formalized in the Jordan_Normal_Form AFP entry.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:372">
+                            <td class="time">11:30-12:00</td>
+                            <td>
+                                <div class="title">Lean Formalization of Generalization Error Bound by Rademacher Complexity and Dudley's Entropy Integral <a class="abstract_link" href="ITP-2026-07-26.html#talk:372">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25080.html">Sho Sonoda</a><sup>1,5</sup>, <a class="person" href="person87504.html">Kazumi Kasaura</a><sup>2</sup>, <a class="person" href="person87505.html">Yuma Mizuno</a><sup>3</sup>, <a class="person" href="person87506.html">Kei Tsukamoto</a><sup>4</sup>, <a class="person" href="person87507.html">Naoto Onda</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RIKEN AIP</div>
+                                <div class="affiliation_item"><sup>2</sup> OMRON SINIC X Corporation</div>
+                                <div class="affiliation_item"><sup>3</sup> University College Cork</div>
+                                <div class="affiliation_item"><sup>4</sup> The University of Tokyo</div>
+                                <div class="affiliation_item"><sup>5</sup> CyberAgent Inc</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Understanding and certifying the generalization performance of machine learning algorithms---i.e.\ obtaining \emph{theoretical} estimates of the test error from a finite training sample---is a central theme of statistical learning theory.
+Among the many complexity measures used to derive such guarantees, \emph{Rademacher complexity} yields sharp, data-dependent bounds that apply well beyond classical $0$--$1$ classification.
+In this study, we formalize the generalization error bound by \emph{Rademacher complexity} in Lean~4, building on measure-theoretic probability theory available in the Mathlib library.
+Our development provides a mechanically-checked pipeline from the definitions of empirical and expected Rademacher complexity, through a formal symmetrization argument and a bounded-differences analysis, to high-probability uniform deviation bounds via a formally proved McDiarmid inequality.
+A key technical contribution is a reusable mechanism for lifting results from \emph{countable} hypothesis classes (where measurability of suprema is straightforward in Mathlib) to \emph{separable} topological index sets via a reduction to a countable dense subset.
+As worked applications of the abstract theorem, we mechanize standard empirical Rademacher bounds for linear predictors under $\ell_2$ and $\ell_1$ regularization, and we also formalize a Dudley-type entropy integral bound based on covering numbers and a chaining construction.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session interval_session" id="session:819">
                     <div class="heading">
@@ -697,6 +683,21 @@ The main result is a proof of absolute completeness of robust differential dynam
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:791">
+                    <div class="heading">
+                        <span class="interval">12:00-14:00</span>
+                        <span class="title">Lunch</span>
+                        <span class="group_tag">IJCAR</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
                     </div>
 
 
@@ -775,7 +776,7 @@ We introduce Individually Randomised Alternating-time Temporal Logic (IRATL). Th
                             <td>
                                 <div class="title">Decoupled Planning for Multiple Omega-Regular Objectives <a class="abstract_link" href="CAV-2026-07-26.html#talk:1116">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24249.html">Guy Avni</a><sup>1</sup>, <a class="person" href="person25206_86174.html">Thomas A. Henzinger</a><sup>2</sup>, <a class="person" href="person85348.html">Kaushik Mallik</a><sup>3</sup>, <a class="person" href="person85349.html">Suman Sadhukhan</a><sup>4</sup>, <a class="person" href="person86039.html">K.S. Thejaswini</a><sup>2</sup>                                </div>
+<a class="person" href="person24249.html">Guy Avni</a><sup>1</sup>, <a class="person" href="person25206_86174.html">Thomas A. Henzinger</a><sup>2</sup>, <a class="person" href="person86037.html">Kaushik Mallik</a><sup>3</sup>, <a class="person" href="person86038.html">Suman Sadhukhan</a><sup>4</sup>, <a class="person" href="person86039.html">K.S. Thejaswini</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Haifa, Israel</div>
                                 <div class="affiliation_item"><sup>2</sup> Institute of Science and Technology, Austria</div>
@@ -879,7 +880,7 @@ tools, while maintaining state-of-the-art solution quality.</p>
                             <td>
                                 <div class="title">Fast Obligation Translation and Synthesis (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-26.html#talk:1120">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25195_86047.html">Alexandre Duret-Lutz</a><sup>1,7</sup>, <a class="person" href="person23182.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person85328.html">Marcin Jurdzinski</a><sup>3</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>4</sup>, <a class="person" href="person86051.html">Moshe Y. Vardi</a><sup>5</sup>, <a class="person" href="person85326.html">Shufang Zhu</a><sup>6</sup>                                </div>
+<a class="person" href="person25195_86047.html">Alexandre Duret-Lutz</a><sup>1,7</sup>, <a class="person" href="person23182.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person86049.html">Marcin Jurdzinski</a><sup>3</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>4</sup>, <a class="person" href="person86051.html">Moshe Y. Vardi</a><sup>5</sup>, <a class="person" href="person86052.html">Shufang Zhu</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LRE</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
@@ -989,6 +990,65 @@ We provide a formal QIF-based treatment of seven state-of-the-art protocols, inc
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:792">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="792" data-title="Arrays & Interpolation" data-time="14:00-14:40" data-room="B2.04" data-group="IJCAR" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-14:40</span>
+                        <span class="title">Arrays & Interpolation</span>
+                        <span class="group_tag">IJCAR</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23365.html">Carsten Lutz</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room33.html">B2.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:343">
+                            <td class="time">14:00-14:20</td>
+                            <td>
+                                <div class="title">Accelerating Loops with Arrays <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:343">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23632.html">Florian Frohn</a><sup>1</sup>, <a class="person" href="person23680.html">Jürgen Giesl</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We propose a novel acceleration technique for loops operating
+on arrays. The goal of acceleration is to characterize the transitive closure
+of loops in a logic which is suitable for automated reasoning. Using the
+new notion of inductive lvalues, our technique can handle loops where
+previous techniques fail, and it unifies acceleration for arrays and scalar
+variables by regarding scalars as arrays of dimension 0. Moreover, our
+approach uses λs instead of quantifiers. Then the resulting SMT problems
+can be solved via lemmas on demand. An empirical evaluation of our
+implementation in the tool LoAT shows the power of our approach.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:344">
+                            <td class="time">14:20-14:40</td>
+                            <td>
+                                <div class="title">Saving Craig in the Fluted Fragment <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:344">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23491.html">Hongkai Yin</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Central European University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The fluted fragment lacks the Craig Interpolation Property. In this paper we establish a weakened form of interpolation. Given an entailment in the fluted fragment, we distinguish predicates that only take an argument sequence starting with $x_1$ from those that do not. A predicate of the former kind is allowed to appear in a weak interpolant only if it occurs in both the premise and the conclusion; and any predicate of the latter kind can be used in a weak interpolant no matter whether it is in the shared signature. Our proof also shows that the weakened interpolation holds in every finite variable subfragment of the fluted fragment. In addition, this work provides a generalization of A. Herzig's translation of the ordered fragment, as well as a new proof of the finite model property of the fluted fragment.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session" id="session:820">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="820" data-title="ITP Papers: Formalisation of Algorithms" data-time="14:00-15:30" data-room="B1.04" data-group="ITP" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -1052,65 +1112,6 @@ The algorithm comes in two versions, the naive and the optimized.
 Both versions have quadratic time complexity, but the optimized version can be fine-tuned with a suitable data structure to yield an O(n log n)-time algorithm.
 I implement and verify a variant of each version of the algorithm in the verification-aware programming language Dafny.
 Unlike all previous presentations of the algorithm, these variants construct the desired optimum tree directly, without detour through a "nonalphabetic" tree whose leaf sequence is a rearrangement of the input sequence.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:792">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="792" data-title="Arrays & Interpolation" data-time="14:00-14:40" data-room="B2.04" data-group="IJCAR" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">14:00-14:40</span>
-                        <span class="title">Arrays & Interpolation</span>
-                        <span class="group_tag">IJCAR</span>
-                    </div>
-
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person23365.html">Carsten Lutz</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room33.html">B2.04</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:343">
-                            <td class="time">14:00-14:20</td>
-                            <td>
-                                <div class="title">Accelerating Loops with Arrays <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:343">(abstract)</a> <span class="duration">20 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23632.html">Florian Frohn</a><sup>1</sup>, <a class="person" href="person23680.html">Jürgen Giesl</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We propose a novel acceleration technique for loops operating
-on arrays. The goal of acceleration is to characterize the transitive closure
-of loops in a logic which is suitable for automated reasoning. Using the
-new notion of inductive lvalues, our technique can handle loops where
-previous techniques fail, and it unifies acceleration for arrays and scalar
-variables by regarding scalars as arrays of dimension 0. Moreover, our
-approach uses λs instead of quantifiers. Then the resulting SMT problems
-can be solved via lemmas on demand. An empirical evaluation of our
-implementation in the tool LoAT shows the power of our approach.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:344">
-                            <td class="time">14:20-14:40</td>
-                            <td>
-                                <div class="title">Saving Craig in the Fluted Fragment <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:344">(abstract)</a> <span class="duration">20 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23491.html">Hongkai Yin</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Central European University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The fluted fragment lacks the Craig Interpolation Property. In this paper we establish a weakened form of interpolation. Given an entailment in the fluted fragment, we distinguish predicates that only take an argument sequence starting with $x_1$ from those that do not. A predicate of the former kind is allowed to appear in a weak interpolant only if it occurs in both the premise and the conclusion; and any predicate of the latter kind can be used in a weak interpolant no matter whether it is in the shared signature. Our proof also shows that the weakened interpolation holds in every finite variable subfragment of the fluted fragment. In addition, this work provides a generalization of A. Herzig's translation of the ordered fragment, as well as a new proof of the finite model property of the fluted fragment.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1208,21 +1209,6 @@ implementation in the tool LoAT shows the power of our approach.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:821">
-                    <div class="heading">
-                        <span class="interval">15:30-16:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">ITP</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:712">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
@@ -1249,6 +1235,21 @@ implementation in the tool LoAT shows the power of our approach.</p>
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room28.html">Grande Auditório</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:821">
+                    <div class="heading">
+                        <span class="interval">15:30-16:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">ITP</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room34.html">B1.04</a>
                     </div>
 
 
@@ -1318,7 +1319,7 @@ provide a translation into equivalences in modular arithmetic. We then show how 
                             <td>
                                 <div class="title">Massively Parallel Mining of Specifications for Hardware Designs <a class="abstract_link" href="CAV-2026-07-26.html#talk:195">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23340.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person86064.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person86065.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person85359.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
+<a class="person" href="person23340.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person86064.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person86065.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person86066.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
                                 </div>
