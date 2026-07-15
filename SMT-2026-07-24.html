@@ -197,18 +197,25 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:1674">
+                        <tr class="talk" id="talk:1712">
                             <td class="time">10:00-10:30</td>
                             <td>
-                                <div class="title">An Eager Encoding of Array Summation Constraints <a class="abstract_link" href="SMT-2026-07-24.html#talk:1674">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">Automated Reasoning with Nested Datatypes <a class="abstract_link" href="SMT-2026-07-24.html#talk:1712">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25858_98274.html">Patrick Janoschek</a><sup>1</sup>, <a class="person" href="person98275.html">Roland Herrmann</a><sup>1</sup>, <a class="person" href="person23320.html">Philipp Rümmer</a><sup>2</sup>                                </div>
+<a class="person" href="person25881_102646.html">Tomer Hakak</a><sup>1</sup>, <a class="person" href="person99211.html">Yoni Zohar</a><sup>1</sup>, <a class="person" href="person24375.html">Andrew Reynolds</a><sup>2</sup>, <a class="person" href="person25838_98871.html">Clark Barrett</a><sup>3</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>4</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Regensburg</div>
-                                <div class="affiliation_item"><sup>2</sup> Uppsala University, University of Regensburg</div>
+                                <div class="affiliation_item"><sup>1</sup> Bar-Ilan University</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Iowa, Amazon</div>
+                                <div class="affiliation_item"><sup>3</sup> Stanford University</div>
+                                <div class="affiliation_item"><sup>4</sup> The University of Iowa</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The theory of arrays with select and store plays an important role in software verification and is therefore supported by virtually all state-of-the-art SMT solvers. There are many extensions, for instance by constant arrays, element-wise function applications, counting, or projections, that have been shown to preserve decidability. In recent work, a theory of arrays extended by constant arrays and sum predicates, called summation array logic (SAL), has been introduced and proven to be decidable in non-deterministic polynomial time. In SAL, it is possible to state assertions about the sum of all entries in a (finite or infinite) array of integers. This paper provides an eager approach to the satisfiability problem in SAL. The approach transforms a SAL formula to an equi-satisfiable formula in the theory of extensional arrays (extended with constant array operator), which can then be decided by an off-the-shelf SMT solver. The transformation produces a formula at most quadratic in the size of the input formula. Since there are no standard array benchmarks with sum constraints yet, the paper presents a new set of such benchmarks obtained by mutating existing SMT-LIB array benchmarks. The experiments show that the transformation-based decision procedure incurs only a relatively small overhead in terms of solving time.</p>
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce a theory of nested datatypes. The theory is obtained
+  by restricting the naive combination of datatypes and arrays, so as to prevent
+  non-standard models from emerging.
+  A reduction-based decision procedure for the theory is given.
+  Finally, we describe an implementation of the procedure,
+  as well as an evaluation over both real-world and crafted benchmarks.</p>
                                 </div>
                             </td>
                         </tr>
@@ -250,7 +257,7 @@
                             <td>
                                 <div class="title">A Modern View on MCSat <a class="abstract_link" href="SMT-2026-07-24.html#talk:1701">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25878_98277.html">Thomas Hader</a><sup>1</sup>, <a class="person" href="person98278.html">Theo Jauschneg</a><sup>1</sup>, <a class="person" href="person24005.html">Daniela Kaufmann</a><sup>1</sup>, <a class="person" href="person25248.html">Laura Kovacs</a><sup>1</sup>                                </div>
+<a class="person" href="person25878_102651.html">Thomas Hader</a><sup>1</sup>, <a class="person" href="person102652.html">Theo Jauschneg</a><sup>1</sup>, <a class="person" href="person24005.html">Daniela Kaufmann</a><sup>1</sup>, <a class="person" href="person25248.html">Laura Kovacs</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -270,7 +277,7 @@ We provide several detailed examples to illustrate the applicability of the pres
                             <td>
                                 <div class="title">MCSAT Modulo Transcendental Arithmetics <a class="abstract_link" href="SMT-2026-07-24.html#talk:1702">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23716.html">Jorge Gallego Hernández</a><sup>1</sup>, <a class="person" href="person98282.html">Enrico Lipparini</a><sup>2</sup>, <a class="person" href="person98283.html">Alessio Mansutti</a><sup>1</sup>                                </div>
+<a class="person" href="person23716.html">Jorge Gallego Hernández</a><sup>1</sup>, <a class="person" href="person102656.html">Enrico Lipparini</a><sup>2</sup>, <a class="person" href="person102657.html">Alessio Mansutti</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> IMDEA Software</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Cagliari</div>
@@ -290,7 +297,7 @@ We implemented our procedure in the Yices2 SMT solver for the sine and exponenti
                             <td>
                                 <div class="title">Exploration Heuristics for the NuCAD and CAlC Algorithms <a class="abstract_link" href="SMT-2026-07-24.html#talk:1703">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24940.html">Alexej Kolbin</a><sup>1</sup>, <a class="person" href="person98285.html">Jasper Nalbach</a><sup>1</sup>, <a class="person" href="person98286.html">Erika Ábrahám</a><sup>1</sup>                                </div>
+<a class="person" href="person24940.html">Alexej Kolbin</a><sup>1</sup>, <a class="person" href="person102659.html">Jasper Nalbach</a><sup>1</sup>, <a class="person" href="person102660.html">Erika Ábrahám</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
                                 </div>
@@ -339,7 +346,7 @@ The modification in this paper alters the order in which the search tree is expl
                             <td>
                                 <div class="title">Incremental Linearization for Quantified Nonlinear Integer Arithmetic <a class="abstract_link" href="SMT-2026-07-24.html#talk:1704">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25879_98287.html">Marek Dančo</a><sup>1</sup>, <a class="person" href="person24597.html">Mikoláš Janota</a><sup>1</sup>, <a class="person" href="person98289.html">Karel Chvalovsky</a><sup>1</sup>                                </div>
+<a class="person" href="person25879_102661.html">Marek Dančo</a><sup>1</sup>, <a class="person" href="person24597.html">Mikoláš Janota</a><sup>1</sup>, <a class="person" href="person102663.html">Karel Chvalovsky</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Czech Institute of of Informatics, Robotics and Cybernetics (CIIRC)</div>
                                 </div>
@@ -363,7 +370,7 @@ instances as the next-best solver (yicesQS).</p>
                             <td>
                                 <div class="title">SMT-based Automation for Overwhelming Truth: A Polymorphic and Higher-Order Extension <a class="abstract_link" href="SMT-2026-07-24.html#talk:1705">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23434_98290.html">David Baelde</a><sup>1</sup>, <a class="person" href="person23200_97105.html">Stéphanie Delaune</a><sup>1</sup>, <a class="person" href="person98292.html">Stanislas Riou</a><sup>1</sup>                                </div>
+<a class="person" href="person23434_102664.html">David Baelde</a><sup>1</sup>, <a class="person" href="person23200_101468.html">Stéphanie Delaune</a><sup>1</sup>, <a class="person" href="person102666.html">Stanislas Riou</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Univ Rennes, CNRS, IRISA</div>
                                 </div>
@@ -380,7 +387,7 @@ In this paper, we extend our approach to automate the full local logic of Squirr
                             <td>
                                 <div class="title">Floating‑Point Arithmetic of Symbolic Size in SMT‑LIB 3 <a class="abstract_link" href="SMT-2026-07-24.html#talk:1706">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23708.html">Kristoffer Norrman</a><sup>1</sup>, <a class="person" href="person98294.html">Tjark Weber</a><sup>1</sup>                                </div>
+<a class="person" href="person23708.html">Kristoffer Norrman</a><sup>1</sup>, <a class="person" href="person102668.html">Tjark Weber</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Uppsala University</div>
                                 </div>
@@ -427,7 +434,7 @@ In this paper, we extend our approach to automate the full local logic of Squirr
                             <td>
                                 <div class="title">LLM2SMT: Building an SMT Solver with Zero Human-Written Code <a class="abstract_link" href="SMT-2026-07-24.html#talk:1707">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24597.html">Mikoláš Janota</a><sup>1</sup>, <a class="person" href="person98296.html">Mirek Olšák</a><sup>1</sup>                                </div>
+<a class="person" href="person24597.html">Mikoláš Janota</a><sup>1</sup>, <a class="person" href="person102670.html">Mirek Olšák</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Czech Institute of of Informatics, Robotics and Cybernetics (CIIRC)</div>
                                 </div>
@@ -450,7 +457,7 @@ In this paper, we extend our approach to automate the full local logic of Squirr
                             <td>
                                 <div class="title">Learning Unified Graph and Language Representations for SMT Algorithm Selection <a class="abstract_link" href="SMT-2026-07-24.html#talk:1708">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24224.html">Zhengyang (John) Lu</a><sup>1</sup>, <a class="person" href="person98298.html">Paul Sarnighausen-Cahn</a><sup>2</sup>, <a class="person" href="person98299.html">Jiahao Chen</a><sup>3</sup>, <a class="person" href="person25524_95101.html">Arie Gurfinkel</a><sup>1</sup>, <a class="person" href="person98301.html">Florin Manea</a><sup>2</sup>, <a class="person" href="person97242.html">Vijay Ganesh</a><sup>3</sup>                                </div>
+<a class="person" href="person24224.html">Zhengyang (John) Lu</a><sup>1</sup>, <a class="person" href="person102672.html">Paul Sarnighausen-Cahn</a><sup>2</sup>, <a class="person" href="person102673.html">Jiahao Chen</a><sup>3</sup>, <a class="person" href="person25524_99461.html">Arie Gurfinkel</a><sup>1</sup>, <a class="person" href="person102675.html">Florin Manea</a><sup>2</sup>, <a class="person" href="person101605.html">Vijay Ganesh</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Waterloo</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Göttingen and CIDAS</div>
@@ -477,7 +484,7 @@ competition winner and the virtual best solver (VBS), and nearly matches the VBS
                             <td>
                                 <div class="title">Efficient Volume Computation for SMT Formulas <a class="abstract_link" href="SMT-2026-07-24.html#talk:1709">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24189.html">Arijit Shaw</a><sup>1</sup>, <a class="person" href="person24419.html">Uddalok Sarkar</a><sup>2</sup>, <a class="person" href="person94925.html">Kuldeep S. Meel</a><sup>3</sup>                                </div>
+<a class="person" href="person24189.html">Arijit Shaw</a><sup>1</sup>, <a class="person" href="person24419.html">Uddalok Sarkar</a><sup>2</sup>, <a class="person" href="person99285.html">Kuldeep S. Meel</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Chennai Mathematical Institute</div>
                                 <div class="affiliation_item"><sup>2</sup> Indian Statistical Institute</div>
