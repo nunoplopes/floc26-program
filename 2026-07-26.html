@@ -179,17 +179,17 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:708">
+                <div class="session interval_session" id="session:654">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
-                        <span class="group_tag">CSF</span>
+                        <span class="group_tag">CAV</span>
                     </div>
 
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
+                        <a class="room_name" href="room28.html">Grande Auditório</a>
                     </div>
 
 
@@ -209,21 +209,6 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:654">
-                    <div class="heading">
-                        <span class="interval">10:00-10:30</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">CAV</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room28.html">Grande Auditório</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:817">
                     <div class="heading">
                         <span class="interval">10:00-11:00</span>
@@ -239,215 +224,20 @@
 
 
                 </div>
-                <div class="session" id="session:655">
+                <div class="session interval_session" id="session:708">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="655" data-title="Verification of Parallel, Concurrent, and Distributed Systems" data-time="10:30-12:35" data-room="Grande Auditório" data-group="CAV" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-12:35</span>
-                        <span class="title">Verification of Parallel, Concurrent, and Distributed Systems</span>
-                        <span class="group_tag">CAV</span>
+                        <span class="interval">10:00-10:30</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">CSF</span>
                     </div>
 
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person24350.html">Borzoo Bonakdarpour</a>
-                        </div>
-                    </div>
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room28.html">Grande Auditório</a>
+                        <a class="room_name" href="room31.html">B2.03</a>
                     </div>
 
 
-                    <table class="talks">
-                        <tr class="talk" id="talk:1105">
-                            <td class="time">10:30-10:45</td>
-                            <td>
-                                <div class="title">On the Complexity of Checking Soundness of Natural Reductions <a class="abstract_link" href="CAV-2026-07-26.html#talk:1105">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25187_99073.html">Constantin Enea</a><sup>1</sup>, <a class="person" href="person99074.html">Azadeh Farzan</a><sup>2</sup>, <a class="person" href="person99075.html">Dominik Klumpp</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> LIX - CNRS - Ecole Polytechnique</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The verification of \emph{reductions}, representative subsets of interleavings, simplifies correctness proofs of parameterized concurrent programs.
-We introduce an expressive class of syntactic reductions, which we call \emph{natural reductions}.
-Natural reductions are specified by introducing atomic blocks and global rendezvous points in the parameterized program's thread template.
-We study the problem of deciding whether a given natural reduction is sound wrt.\ a given (semi-)commutativity relation.
-In the case that there is no synchronization between threads, we present a sound and complete polynomial-time algorithm.
-In the case where synchronization is considered,
-we provide a general lower bound for the problem (parametric in the synchronization mechanism),
-and show that the problem is coNP-hard already for a simple mechanism like locking.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1106">
-                            <td class="time">10:45-11:00</td>
-                            <td>
-                                <div class="title">Deadlock Verification via Ordering-Constrained Mutex Modeling <a class="abstract_link" href="CAV-2026-07-26.html#talk:1106">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23291.html">Pei Wang</a><sup>1</sup>, <a class="person" href="person99077.html">Zhilei Han</a><sup>1</sup>, <a class="person" href="person99078.html">Zhihang Sun</a><sup>1</sup>, <a class="person" href="person99079.html">Fei He</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Tsinghua University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Mutexes are fundamental synchronization primitives in concurrent programming, but their improper use can lead to deadlocks.
-Conventional assume-based modeling abstracts mutex semantics via assumptions, simplifying safety verification but hindering deadlock verification.
-Although prior efforts have aimed to address this limitation, we show that state-of-the-art methods remain inaccurate.
-In this paper, we propose a novel modeling approach that captures mutex semantics using ordering constraints, enabling accurate deadlock verification within partial-order-based verification frameworks.
-We formally prove the correctness of our method and implement it in a prototype tool, DEAGLE-DL.
-We evaluate DEAGLE-DL against a state-of-the-art bounded model checker ESBMC that employs the conventional modeling approach, and a state-of-the-art static analysis tool for deadlock detection.
-Our experiments show that DEAGLE-DL significantly outperforms both tools in terms of precision, while maintaining substantial efficiency.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1107">
-                            <td class="time">11:00-11:15</td>
-                            <td>
-                                <div class="title">Complete Local Reasoning About Parameterized Programs Over Topologies (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-26.html#talk:1107">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23310.html">Ruotong Cheng</a><sup>1</sup>, <a class="person" href="person99074.html">Azadeh Farzan</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper investigates the algorithmic safety verification problem of infinite-state parameterized concurrent programs over a rich set of communication topologies. The goal is to automatically produce a proof of correctness for them in the form of a universally quantified inductive invariant, where the quantification is over the nodes in the topology. We illustrate that under reasonable assumptions on the underlying topology, the problem can be reduced to and solved as a compositional scheme in which the verification of the parameterized family is reduced to a set of local proofs, in a complete manner. We propose a verification algorithm,  which is implemented as a tool, and demonstrate through a set of benchmarks over several different topologies that our approach is effective in proving parameterized programs safe.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1108">
-                            <td class="time">11:15-11:30</td>
-                            <td>
-                                <div class="title">Scalable Deductive Verification of Data-Level Parallel Programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1108">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25188_99082.html">Lars van den Haak</a><sup>1</sup>, <a class="person" href="person23373.html">Marieke Huisman</a><sup>2</sup>, <a class="person" href="person99084.html">Anton Wijs</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Eindhoven University of Technology</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Twente</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper introduces several techniques that improve the scalability of the deductive verification of data-level programs working on arrays and matrices. First of all, we introduce a technique to rewrite expressions with (nested) quantifiers, so suitable triggers can be generated for these expressions. We have proven this rewrite technique correct in a theorem prover. Second, we make reasoning about potentially overlapping arrays easier, by providing specification constructs to indicate and verify that two arrays are not aliases, or that they are immutable, so they can be modelled as mathematical sequences. All our techniques are implemented in the \vercors program verifier. We illustrate how our techniques improve scalability on a large number of experiments. Using our techniques on a set of typical GPU kernels, we achieve a reduction of verification time by, on average, a factor of 9, with outliers being up to 150 times faster. Additionally, applying these techniques to earlier experiments and an earlier case study of a radio telescope pipeline permitted the verification of results which were previously unobtainable and significantly reduced the verification time.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1109">
-                            <td class="time">11:30-11:45</td>
-                            <td>
-                                <div class="title">On the Verification Problem of Remote Direct Memory Access programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1109">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25189_99085.html">Parosh Aziz Abdulla</a><sup>1</sup>, <a class="person" href="person99086.html">Mohamed Faouzi Atig</a><sup>1</sup>, <a class="person" href="person99087.html">R Govind</a><sup>2</sup>, <a class="person" href="person99088.html">Stephan Spengler</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Uppsala University</div>
-                                <div class="affiliation_item"><sup>2</sup> The Institute of Mathematical Sciences, Chennai</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Remote Direct Memory Access (RDMA) is a technology that allows direct memory access from the memory of one computer into that of another without involving either one’s operating system. This enables high-throughput, low-latency networking, which is especially useful in massively parallel computer clusters.
-
-In this paper, we study the reachability and robustness problems for RDMA programs. We show that reachability is undecidable in general, even for a restricted fragment of the model. We then focus on robustness, which asks whether a program exhibits the same behaviours under the RDMA and sequential consistency (SC) semantics, and prove that this problem is decidable. Our central technical result establishes a normal form for robustness violations, showing that any non-robust program admits a violating execution of a specific form. We then leverage this normal form to obtain a decision procedure that reduces robustness to reachability in finite-state programs with counters, yielding an EXPSPACE upper bound in the general case, and a PSPACE upper bound in the absence of poll operations. Finally, we also show that both of these bounds are optimal.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1110">
-                            <td class="time">11:45-11:55</td>
-                            <td>
-                                <div class="title">Model Checking for Flexible Network Protocols <a class="abstract_link" href="CAV-2026-07-26.html#talk:1110">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25190_99089.html">Andrew Johnson</a><sup>1</sup>, <a class="person" href="person99090.html">Dennis Fetterly</a><sup>2</sup>, <a class="person" href="person99091.html">Jon Zolla</a><sup>2</sup>, <a class="person" href="person99092.html">Sean Song</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Princeton University</div>
-                                <div class="affiliation_item"><sup>2</sup> Google, Inc</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Operating a network is a daunting task. Operating one at
-a global scale, with stringent service objectives and requirements to be
-available during maintenance and failures, is even more so. At Google,
-we operate such a network. This paper details our experience applying
-formal methods to some of the networking protocols that are developed
-and maintained by in-house engineers. These protocols centrally route
-network traffic to respond to changes in demand, react to network failures, 
-and allow for maintenance and upgrades.
-
-We used formal methods to target a class of bugs stemming from unclear 
-specifications, unintended system interactions, and logical errors at
-the specification level. We show how we modeled our protocols using an
-off-the-shelf model checker and a custom harness to scale the model horizontally. 
-We were able to recreate several recent bugs and verify
-that the fixes implemented were correct. Finally, we present a method
-called state projection that we used to increase confidence in the coverage
-of our models, which we added to the TLC model checker for TLA+. We
-created 7 different TLA+ models and showed that they were effective at
-recreating bugs and verifying our fixes to those bugs.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1111">
-                            <td class="time">11:55-12:05</td>
-                            <td>
-                                <div class="title">The TLA+ Model Checker Apalache <a class="abstract_link" href="CAV-2026-07-26.html#talk:1111">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23342.html">Rodrigo Otoni</a><sup>1</sup>, <a class="person" href="person99094.html">Shon Feder</a><sup>2</sup>, <a class="person" href="person99095.html">Jure Kukovec</a><sup>3</sup>, <a class="person" href="person99096.html">Andrey Kupriyanov</a><sup>3</sup>, <a class="person" href="person99097.html">Gabriela Moreira</a><sup>4</sup>, <a class="person" href="person99098.html">Philip Offtermatt</a><sup>4</sup>, <a class="person" href="person99099.html">Thomas Pani</a><sup>3</sup>, <a class="person" href="person99100.html">Thanh-Hai Tran</a><sup>5</sup>, <a class="person" href="person99101.html">Igor Konnov</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> University of Groningen</div>
-                                <div class="affiliation_item"><sup>2</sup> Tarides</div>
-                                <div class="affiliation_item"><sup>3</sup> Independent Researcher</div>
-                                <div class="affiliation_item"><sup>4</sup> Informal Systems</div>
-                                <div class="affiliation_item"><sup>5</sup> Université Paris-Saclay, CEA, List</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The TLA+ language has been widely used, both in academia and industry, to specify and reason about distributed systems. This paper presents Apalache, an efficient and flexible symbolic model checker for TLA+. Apalache's engine is based on bounded model checking, with symbolic transitions being extracted from TLA+ specifications and verification conditions suitable for satisfiability modulo theories (SMT) solvers being generated from them. Reasoning can be done in terms of safety and liveness properties, with liveness checking realised via a liveness-to-safety reduction. Apalache's flexibility lies in its three complementary functionalities: bounded exhaustive verification, for bounded guarantees, randomised symbolic execution, for prototyping and bug detection, and inductiveness checking, for unbounded guarantees. The paper describes Apalache's architecture and features, including its support for PlusCal and Quint, two languages that share the same semantic foundation as TLA+. Industrial usage of Apalache is also presented, together with a case study which illustrates how Apalache can be used to verify the agreement property of a consensus protocol.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1112">
-                            <td class="time">12:05-12:15</td>
-                            <td>
-                                <div class="title">PSF: A Generic and Extensible Framework for Protocol State Fuzzing <a class="abstract_link" href="CAV-2026-07-26.html#talk:1112">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23904.html">Konstantinos Sagonas</a><sup>1</sup>, <a class="person" href="person99103.html">Thanos Typaldos</a><sup>2</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Uppsala University & National Technical University of Athens</div>
-                                <div class="affiliation_item"><sup>2</sup> Yale University & National Technical University of Athens</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In recent years, protocol state fuzzing has emerged as an effective technique to analyze and test network protocol implementations, uncovering numerous security vulnerabilities, bugs, and non-conformance issues in them.
-This tool paper presents ProtocolState-Fuzzer (PSF for short), an open source, generic, modular, and extensible framework for state machine learning and testing of network protocol implementations.
-We describe the distinctive features and support that PSF offers, its system architecture, and briefly overview the protocol-specific state fuzzers that currently use PSF as their basis.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1113">
-                            <td class="time">12:15-12:25</td>
-                            <td>
-                                <div class="title">Kofola 1.0: A Modular Approach to 𝝎-Regular Complementation and Inclusion Checking <a class="abstract_link" href="CAV-2026-07-26.html#talk:1113">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25191_99104.html">Ondrej Alexaj</a><sup>1</sup>, <a class="person" href="person99105.html">Vojtěch Havlena</a><sup>1</sup>, <a class="person" href="person99106.html">Lukáš Holík</a><sup>2</sup>, <a class="person" href="person24096.html">Ondřej Lengál</a><sup>1</sup>, <a class="person" href="person99108.html">Yong Li</a><sup>3</sup>, <a class="person" href="person99109.html">Nicolas Mazzocchi</a><sup>4</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Brno University of Technology</div>
-                                <div class="affiliation_item"><sup>2</sup> Brno University of Technology and Aalborg University</div>
-                                <div class="affiliation_item"><sup>3</sup> Institute of Software, Chinese Academy of Sciences</div>
-                                <div class="affiliation_item"><sup>4</sup> Slovak University of Technology in Bratislava</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present Kofola, an efficient tool for complementing and inclusion checking over Büchi automata. Complementation and inclusion checking for Büchi automata are the cornerstones of many verification problems such as model checking, monitoring, and theorem proving. Kofola implements the state-of-the-art modular complementation framework that partitions the input Büchi automata to apply, for each strongly connected component, the complementation algorithm leveraging the most its structural properties. Inspired by the modular complementation, Kofola also supports modular inclusion checking along with new heuristics. Notably, to allow termination as soon as possible, we have developed a new on-the-fly emptiness checking algorithm for the simple generalized Rabin pair condition, which is the acceptance condition used by our complementation. Empirical evaluation shows that Kofola is highly competitive against the state-of-the-art complementation and inclusion checking tools, being the most robust of the tools that we evaluated and outrunning them often by several orders of magnitude on many benchmarks obtained from practical applications.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1114">
-                            <td class="time">12:25-12:35</td>
-                            <td>
-                                <div class="title">Octopus: Practical Equivalence Checking of P4 Packet Parsers <a class="abstract_link" href="CAV-2026-07-26.html#talk:1114">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23459_99110.html">Jort van Leenen</a><sup>1</sup>, <a class="person" href="person99111.html">Tobias Kappé</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> LIACS, Leiden University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> P4 is a domain-specific language for programming protocol-independent packet processors, where packet parsers describe how incoming bit streams are structured into headers and fields. Building on work by Doenges et al. (2022), we present Octopus, a tool that translates P4 packet parsers into automata and then attempts to (symbolically) check their equivalence. Octopus produces evidence, either in the form of a bisimulation demonstrating equivalence, or a counterexample packet witnessing a behavioral difference between the two parsers. In contrast with earlier work, our tool can check equivalence between non-trivial parsers within minutes on consumer hardware. We report on the tool’s implementation and evaluate its usability in networking contexts.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                 </div>
                 <div class="session" id="session:709">
                     <div class="heading">
@@ -544,6 +334,216 @@ Finally, we extend our analysis beyond the basic setting and present, for the fi
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> With the widespread adoption of graph-structured data, protecting the complex relational information between nodes and edges while preventing sensitive information leakage has become a critical challenge. However, existing edge protection methods either introduce noise directly into the adjacency matrix, resulting in significant information loss, or uniformly apply noise across all edges, leading to imbalanced privacy budget allocation and inefficiency. To address these issues, we propose DPEI, a Differential Privacy-based Edge Information protection solution designed to safeguard the edge relationships between two nodes, thus reducing the risk of privacy leakage and preventing attackers from repeatedly inferring internal community relationships from the released graph data. Specifically, DPEI achieves protection through PPO (Proximal Policy Optimization) based selection of locally optimal thresholds combined with adaptive Laplace noise operations, and attachment nodes below the threshold into high-information edges to enhance relational information protection. Subsequently, unlike traditional uniform allocation, DPEI distributes the privacy budget in proportion to the information content of each edge, ensuring that edges with higher information content receive stronger privacy protection. Extensive experiments conducted on three real-world graph datasets demonstrate that DPEI significantly outperforms existing methods across seven commonly used graph metrics, thereby validating its effectiveness and practicality.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:655">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="655" data-title="Verification of Parallel, Concurrent, and Distributed Systems" data-time="10:30-12:35" data-room="Grande Auditório" data-group="CAV" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-12:35</span>
+                        <span class="title">Verification of Parallel, Concurrent, and Distributed Systems</span>
+                        <span class="group_tag">CAV</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person24350.html">Borzoo Bonakdarpour</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room28.html">Grande Auditório</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1105">
+                            <td class="time">10:30-10:45</td>
+                            <td>
+                                <div class="title">On the Complexity of Checking Soundness of Natural Reductions <a class="abstract_link" href="CAV-2026-07-26.html#talk:1105">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25187_103450.html">Constantin Enea</a><sup>1</sup>, <a class="person" href="person103451.html">Azadeh Farzan</a><sup>2</sup>, <a class="person" href="person101891.html">Dominik Klumpp</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LIX - CNRS - Ecole Polytechnique</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The verification of \emph{reductions}, representative subsets of interleavings, simplifies correctness proofs of parameterized concurrent programs.
+We introduce an expressive class of syntactic reductions, which we call \emph{natural reductions}.
+Natural reductions are specified by introducing atomic blocks and global rendezvous points in the parameterized program's thread template.
+We study the problem of deciding whether a given natural reduction is sound wrt.\ a given (semi-)commutativity relation.
+In the case that there is no synchronization between threads, we present a sound and complete polynomial-time algorithm.
+In the case where synchronization is considered,
+we provide a general lower bound for the problem (parametric in the synchronization mechanism),
+and show that the problem is coNP-hard already for a simple mechanism like locking.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1106">
+                            <td class="time">10:45-11:00</td>
+                            <td>
+                                <div class="title">Deadlock Verification via Ordering-Constrained Mutex Modeling <a class="abstract_link" href="CAV-2026-07-26.html#talk:1106">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23291.html">Pei Wang</a><sup>1</sup>, <a class="person" href="person103454.html">Zhilei Han</a><sup>1</sup>, <a class="person" href="person103455.html">Zhihang Sun</a><sup>1</sup>, <a class="person" href="person103456.html">Fei He</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Tsinghua University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Mutexes are fundamental synchronization primitives in concurrent programming, but their improper use can lead to deadlocks.
+Conventional assume-based modeling abstracts mutex semantics via assumptions, simplifying safety verification but hindering deadlock verification.
+Although prior efforts have aimed to address this limitation, we show that state-of-the-art methods remain inaccurate.
+In this paper, we propose a novel modeling approach that captures mutex semantics using ordering constraints, enabling accurate deadlock verification within partial-order-based verification frameworks.
+We formally prove the correctness of our method and implement it in a prototype tool, DEAGLE-DL.
+We evaluate DEAGLE-DL against a state-of-the-art bounded model checker ESBMC that employs the conventional modeling approach, and a state-of-the-art static analysis tool for deadlock detection.
+Our experiments show that DEAGLE-DL significantly outperforms both tools in terms of precision, while maintaining substantial efficiency.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1107">
+                            <td class="time">11:00-11:15</td>
+                            <td>
+                                <div class="title">Complete Local Reasoning About Parameterized Programs Over Topologies (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-26.html#talk:1107">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23310.html">Ruotong Cheng</a><sup>1</sup>, <a class="person" href="person103451.html">Azadeh Farzan</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper investigates the algorithmic safety verification problem of infinite-state parameterized concurrent programs over a rich set of communication topologies. The goal is to automatically produce a proof of correctness for them in the form of a universally quantified inductive invariant, where the quantification is over the nodes in the topology. We illustrate that under reasonable assumptions on the underlying topology, the problem can be reduced to and solved as a compositional scheme in which the verification of the parameterized family is reduced to a set of local proofs, in a complete manner. We propose a verification algorithm,  which is implemented as a tool, and demonstrate through a set of benchmarks over several different topologies that our approach is effective in proving parameterized programs safe.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1108">
+                            <td class="time">11:15-11:30</td>
+                            <td>
+                                <div class="title">Scalable Deductive Verification of Data-Level Parallel Programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1108">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25188_103459.html">Lars van den Haak</a><sup>1</sup>, <a class="person" href="person23373.html">Marieke Huisman</a><sup>2</sup>, <a class="person" href="person103461.html">Anton Wijs</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Eindhoven University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Twente</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper introduces several techniques that improve the scalability of the deductive verification of data-level programs working on arrays and matrices. First of all, we introduce a technique to rewrite expressions with (nested) quantifiers, so suitable triggers can be generated for these expressions. We have proven this rewrite technique correct in a theorem prover. Second, we make reasoning about potentially overlapping arrays easier, by providing specification constructs to indicate and verify that two arrays are not aliases, or that they are immutable, so they can be modelled as mathematical sequences. All our techniques are implemented in the \vercors program verifier. We illustrate how our techniques improve scalability on a large number of experiments. Using our techniques on a set of typical GPU kernels, we achieve a reduction of verification time by, on average, a factor of 9, with outliers being up to 150 times faster. Additionally, applying these techniques to earlier experiments and an earlier case study of a radio telescope pipeline permitted the verification of results which were previously unobtainable and significantly reduced the verification time.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1109">
+                            <td class="time">11:30-11:45</td>
+                            <td>
+                                <div class="title">On the Verification Problem of Remote Direct Memory Access programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1109">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25189_103462.html">Parosh Aziz Abdulla</a><sup>1</sup>, <a class="person" href="person103463.html">Mohamed Faouzi Atig</a><sup>1</sup>, <a class="person" href="person103464.html">R Govind</a><sup>2</sup>, <a class="person" href="person103465.html">Stephan Spengler</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala University</div>
+                                <div class="affiliation_item"><sup>2</sup> The Institute of Mathematical Sciences, Chennai</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Remote Direct Memory Access (RDMA) is a technology that allows direct memory access from the memory of one computer into that of another without involving either one’s operating system. This enables high-throughput, low-latency networking, which is especially useful in massively parallel computer clusters.
+
+In this paper, we study the reachability and robustness problems for RDMA programs. We show that reachability is undecidable in general, even for a restricted fragment of the model. We then focus on robustness, which asks whether a program exhibits the same behaviours under the RDMA and sequential consistency (SC) semantics, and prove that this problem is decidable. Our central technical result establishes a normal form for robustness violations, showing that any non-robust program admits a violating execution of a specific form. We then leverage this normal form to obtain a decision procedure that reduces robustness to reachability in finite-state programs with counters, yielding an EXPSPACE upper bound in the general case, and a PSPACE upper bound in the absence of poll operations. Finally, we also show that both of these bounds are optimal.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1110">
+                            <td class="time">11:45-11:55</td>
+                            <td>
+                                <div class="title">Model Checking for Flexible Network Protocols <a class="abstract_link" href="CAV-2026-07-26.html#talk:1110">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25190_103466.html">Andrew Johnson</a><sup>1</sup>, <a class="person" href="person103467.html">Dennis Fetterly</a><sup>2</sup>, <a class="person" href="person103468.html">Jon Zolla</a><sup>2</sup>, <a class="person" href="person103469.html">Sean Song</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Princeton University</div>
+                                <div class="affiliation_item"><sup>2</sup> Google, Inc</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Operating a network is a daunting task. Operating one at
+a global scale, with stringent service objectives and requirements to be
+available during maintenance and failures, is even more so. At Google,
+we operate such a network. This paper details our experience applying
+formal methods to some of the networking protocols that are developed
+and maintained by in-house engineers. These protocols centrally route
+network traffic to respond to changes in demand, react to network failures, 
+and allow for maintenance and upgrades.
+
+We used formal methods to target a class of bugs stemming from unclear 
+specifications, unintended system interactions, and logical errors at
+the specification level. We show how we modeled our protocols using an
+off-the-shelf model checker and a custom harness to scale the model horizontally. 
+We were able to recreate several recent bugs and verify
+that the fixes implemented were correct. Finally, we present a method
+called state projection that we used to increase confidence in the coverage
+of our models, which we added to the TLC model checker for TLA+. We
+created 7 different TLA+ models and showed that they were effective at
+recreating bugs and verifying our fixes to those bugs.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1111">
+                            <td class="time">11:55-12:05</td>
+                            <td>
+                                <div class="title">The TLA+ Model Checker Apalache <a class="abstract_link" href="CAV-2026-07-26.html#talk:1111">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23342.html">Rodrigo Otoni</a><sup>1</sup>, <a class="person" href="person103471.html">Shon Feder</a><sup>2</sup>, <a class="person" href="person103472.html">Jure Kukovec</a><sup>3</sup>, <a class="person" href="person103473.html">Andrey Kupriyanov</a><sup>3</sup>, <a class="person" href="person103474.html">Gabriela Moreira</a><sup>4</sup>, <a class="person" href="person103475.html">Philip Offtermatt</a><sup>4</sup>, <a class="person" href="person103476.html">Thomas Pani</a><sup>3</sup>, <a class="person" href="person103477.html">Thanh-Hai Tran</a><sup>5</sup>, <a class="person" href="person103478.html">Igor Konnov</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Groningen</div>
+                                <div class="affiliation_item"><sup>2</sup> Tarides</div>
+                                <div class="affiliation_item"><sup>3</sup> Independent Researcher</div>
+                                <div class="affiliation_item"><sup>4</sup> Informal Systems</div>
+                                <div class="affiliation_item"><sup>5</sup> Université Paris-Saclay, CEA, List</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The TLA+ language has been widely used, both in academia and industry, to specify and reason about distributed systems. This paper presents Apalache, an efficient and flexible symbolic model checker for TLA+. Apalache's engine is based on bounded model checking, with symbolic transitions being extracted from TLA+ specifications and verification conditions suitable for satisfiability modulo theories (SMT) solvers being generated from them. Reasoning can be done in terms of safety and liveness properties, with liveness checking realised via a liveness-to-safety reduction. Apalache's flexibility lies in its three complementary functionalities: bounded exhaustive verification, for bounded guarantees, randomised symbolic execution, for prototyping and bug detection, and inductiveness checking, for unbounded guarantees. The paper describes Apalache's architecture and features, including its support for PlusCal and Quint, two languages that share the same semantic foundation as TLA+. Industrial usage of Apalache is also presented, together with a case study which illustrates how Apalache can be used to verify the agreement property of a consensus protocol.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1112">
+                            <td class="time">12:05-12:15</td>
+                            <td>
+                                <div class="title">PSF: A Generic and Extensible Framework for Protocol State Fuzzing <a class="abstract_link" href="CAV-2026-07-26.html#talk:1112">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23904.html">Konstantinos Sagonas</a><sup>1</sup>, <a class="person" href="person103480.html">Thanos Typaldos</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Uppsala University & National Technical University of Athens</div>
+                                <div class="affiliation_item"><sup>2</sup> Yale University & National Technical University of Athens</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> In recent years, protocol state fuzzing has emerged as an effective technique to analyze and test network protocol implementations, uncovering numerous security vulnerabilities, bugs, and non-conformance issues in them.
+This tool paper presents ProtocolState-Fuzzer (PSF for short), an open source, generic, modular, and extensible framework for state machine learning and testing of network protocol implementations.
+We describe the distinctive features and support that PSF offers, its system architecture, and briefly overview the protocol-specific state fuzzers that currently use PSF as their basis.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1113">
+                            <td class="time">12:15-12:25</td>
+                            <td>
+                                <div class="title">Kofola 1.0: A Modular Approach to 𝝎-Regular Complementation and Inclusion Checking <a class="abstract_link" href="CAV-2026-07-26.html#talk:1113">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25191_103481.html">Ondrej Alexaj</a><sup>1</sup>, <a class="person" href="person103482.html">Vojtěch Havlena</a><sup>1</sup>, <a class="person" href="person103483.html">Lukáš Holík</a><sup>2</sup>, <a class="person" href="person24096.html">Ondřej Lengál</a><sup>1</sup>, <a class="person" href="person103485.html">Yong Li</a><sup>3</sup>, <a class="person" href="person103486.html">Nicolas Mazzocchi</a><sup>4</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Brno University of Technology</div>
+                                <div class="affiliation_item"><sup>2</sup> Brno University of Technology and Aalborg University</div>
+                                <div class="affiliation_item"><sup>3</sup> Institute of Software, Chinese Academy of Sciences</div>
+                                <div class="affiliation_item"><sup>4</sup> Slovak University of Technology in Bratislava</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present Kofola, an efficient tool for complementing and inclusion checking over Büchi automata. Complementation and inclusion checking for Büchi automata are the cornerstones of many verification problems such as model checking, monitoring, and theorem proving. Kofola implements the state-of-the-art modular complementation framework that partitions the input Büchi automata to apply, for each strongly connected component, the complementation algorithm leveraging the most its structural properties. Inspired by the modular complementation, Kofola also supports modular inclusion checking along with new heuristics. Notably, to allow termination as soon as possible, we have developed a new on-the-fly emptiness checking algorithm for the simple generalized Rabin pair condition, which is the acceptance condition used by our complementation. Empirical evaluation shows that Kofola is highly competitive against the state-of-the-art complementation and inclusion checking tools, being the most robust of the tools that we evaluated and outrunning them often by several orders of magnitude on many benchmarks obtained from practical applications.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1114">
+                            <td class="time">12:25-12:35</td>
+                            <td>
+                                <div class="title">Octopus: Practical Equivalence Checking of P4 Packet Parsers <a class="abstract_link" href="CAV-2026-07-26.html#talk:1114">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23459_103487.html">Jort van Leenen</a><sup>1</sup>, <a class="person" href="person102818.html">Tobias Kappé</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LIACS, Leiden University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> P4 is a domain-specific language for programming protocol-independent packet processors, where packet parsers describe how incoming bit streams are structured into headers and fields. Building on work by Doenges et al. (2022), we present Octopus, a tool that translates P4 packet parsers into automata and then attempts to (symbolically) check their equivalence. Octopus produces evidence, either in the form of a bisimulation demonstrating equivalence, or a counterexample packet witnessing a behavioral difference between the two parsers. In contrast with earlier work, our tool can check equivalence between non-trivial parsers within minutes on consumer hardware. We report on the tool’s implementation and evaluate its usability in networking contexts.</p>
                                 </div>
                             </td>
                         </tr>
@@ -808,6 +808,79 @@ We provide a formal QIF-based treatment of seven state-of-the-art protocols, inc
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:820">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="820" data-title="ITP Papers: Formalisation of Algorithms" data-time="14:00-15:30" data-room="B1.04" data-group="ITP" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-15:30</span>
+                        <span class="title">ITP Papers: Formalisation of Algorithms</span>
+                        <span class="group_tag">ITP</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person25184.html">Yannick Forster</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:373">
+                            <td class="time">14:00-14:30</td>
+                            <td>
+                                <div class="title">Certified Intersection of Commutative Regular Expressions as Solutions of Systems of Linear Diophantine Equations <a class="abstract_link" href="ITP-2026-07-26.html#talk:373">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24171.html">Ricardo Almeida</a><sup>1</sup>, <a class="person" href="person100592.html">Blair Archibald</a><sup>1</sup>, <a class="person" href="person100593.html">Basile Pesin</a><sup>2</sup>, <a class="person" href="person100594.html">Michele Sevegnani</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> School of Computing Science, University of Glasgow, Glasgow, Scotland</div>
+                                <div class="affiliation_item"><sup>2</sup> Fédération ENAC ISAE-SUPAERO ONERA, Université de Toulouse, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Commutative regular expressions describe sets of unordered words, and are used, for example,
+when building type systems for process calculi. In these applications, a useful operation is finding the intersection of two expressions, but no algorithm currently exists. We remedy this by proposing an algorithm for computing intersections of commutative regular expressions, which we implement and prove correct in the Rocq prover. The algorithm encodes the intersection of two expressions as systems of linear diophantine equations, and extracts from their solution an intersection expression. To solve these systems we implement and verify the algorithm proposed by Contejean and Devie. We detail the implementation of the intersection algorithm, highlight essential aspects of the proofs (including the complex proof of termination of the equation system solver), and evaluate the OCaml-extracted solver on random and real-world commutative regular expressions.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:374">
+                            <td class="time">14:30-15:00</td>
+                            <td>
+                                <div class="title">Functional correctness of an optimized modular inversion algorithm <a class="abstract_link" href="ITP-2026-07-26.html#talk:374">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25294_100595.html">Assia Mahboubi</a><sup>1</sup>, <a class="person" href="person100596.html">Guillaume Melquiond</a><sup>1</sup>, <a class="person" href="person100597.html">Pierre-Yves Strub</a><sup>2</sup>, <a class="person" href="person100598.html">Tomás Vallejos Parada</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> INRIA</div>
+                                <div class="affiliation_item"><sup>2</sup> PQShield</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This article describes the first mechanized proof of functional correctness of an algorithm due to Pornin (2020), for computing modular inverses via an optimized extended binary GCD algorithm. This algorithm is widely used in cryptography applications, due to its speed and constant-timeness. But this speed comes from the use of approximate computations during its loop iterations. In particular, the pen-and-paper proof of the fact that sufficiently many loop iterations were performed is especially intricate (and the originally published version was actually wrong), which negatively impacts the trust in the applications that rely on the algorithm. In this work, we expand the notes provided in the original description by Pornin into a complete formal proof. We discuss the challenges raised by its mechanization, which eventually relies on the collaboration of deductive program verification and interactive theorem proving through the use of the tools Rocq and Why3.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:375">
+                            <td class="time">15:00-15:30</td>
+                            <td>
+                                <div class="title">Verification of the Garsia–Wachs Algorithm <a class="abstract_link" href="ITP-2026-07-26.html#talk:375">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23394.html">Makoto Kanazawa</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Hosei University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Garsia–Wachs algorithm is an algorithm for finding a leaf-labeled binary tree whose leaf sequence exactly matches the input weight sequence and whose cost is as small as possible, where the cost is the sum of the weights labeling the leaves multiplied by their levels.
+The algorithm, along with a proof of correctness due to Kingston, is presented in Knuth's The Art of Computer Programming, Vol. 3. 
+The algorithm comes in two versions, the naive and the optimized.
+Both versions have quadratic time complexity, but the optimized version can be fine-tuned with a suitable data structure to yield an O(n log n)-time algorithm.
+I implement and verify a variant of each version of the algorithm in the verification-aware programming language Dafny.
+Unlike all previous presentations of the algorithm, these variants construct the desired optimum tree directly, without detour through a "nonalphabetic" tree whose leaf sequence is a rearrangement of the input sequence.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session" id="session:657">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="657" data-title="Synthesis" data-time="14:00-15:30" data-room="Grande Auditório" data-group="CAV" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -834,7 +907,7 @@ We provide a formal QIF-based treatment of seven state-of-the-art protocols, inc
                             <td>
                                 <div class="title">Randomise Alone, Reach Together <a class="abstract_link" href="CAV-2026-07-26.html#talk:1115">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25193_99112.html">Léonard Brice</a><sup>1</sup>, <a class="person" href="person25206_99256.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person99114.html">Alipasha Montaseri</a><sup>1</sup>, <a class="person" href="person99115.html">Ali Shafiee</a><sup>1</sup>, <a class="person" href="person99116.html">K. S. Thejaswini</a><sup>1</sup>                                </div>
+<a class="person" href="person25193_103489.html">Léonard Brice</a><sup>1</sup>, <a class="person" href="person25206_103633.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person103491.html">Alipasha Montaseri</a><sup>1</sup>, <a class="person" href="person103492.html">Ali Shafiee</a><sup>1</sup>, <a class="person" href="person101465.html">K. S. Thejaswini</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institute of Science and Technology Austria</div>
                                 </div>
@@ -852,7 +925,7 @@ We introduce Individually Randomised Alternating-time Temporal Logic (IRATL). Th
                             <td>
                                 <div class="title">Decoupled Planning for Multiple Omega-Regular Objectives <a class="abstract_link" href="CAV-2026-07-26.html#talk:1116">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24249.html">Guy Avni</a><sup>1</sup>, <a class="person" href="person25206_99256.html">Thomas A. Henzinger</a><sup>2</sup>, <a class="person" href="person99119.html">Kaushik Mallik</a><sup>3</sup>, <a class="person" href="person99120.html">Suman Sadhukhan</a><sup>4</sup>, <a class="person" href="person99121.html">K.S. Thejaswini</a><sup>2</sup>                                </div>
+<a class="person" href="person24249.html">Guy Avni</a><sup>1</sup>, <a class="person" href="person25206_103633.html">Thomas A. Henzinger</a><sup>2</sup>, <a class="person" href="person102793.html">Kaushik Mallik</a><sup>3</sup>, <a class="person" href="person102794.html">Suman Sadhukhan</a><sup>4</sup>, <a class="person" href="person103498.html">K.S. Thejaswini</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Haifa, Israel</div>
                                 <div class="affiliation_item"><sup>2</sup> Institute of Science and Technology, Austria</div>
@@ -871,7 +944,7 @@ For non-safety objectives, we introduce conventions---simple, a priori restricti
                             <td>
                                 <div class="title">Repairing Regex-Dependent String-Manipulation Programs <a class="abstract_link" href="CAV-2026-07-26.html#talk:1117">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24209.html">Nariyoshi Chida</a><sup>1</sup>, <a class="person" href="person99123.html">Tachio Terauchi</a><sup>2</sup>                                </div>
+<a class="person" href="person24209.html">Nariyoshi Chida</a><sup>1</sup>, <a class="person" href="person103500.html">Tachio Terauchi</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> NTT Social Informatics Laboratories</div>
                                 <div class="affiliation_item"><sup>2</sup> Waseda University</div>
@@ -886,7 +959,7 @@ For non-safety objectives, we introduce conventions---simple, a priori restricti
                             <td>
                                 <div class="title">Liquid Tree Automata <a class="abstract_link" href="CAV-2026-07-26.html#talk:1118">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24329.html">Ashish Mishra</a><sup>1</sup>, <a class="person" href="person99125.html">Suresh Jagannathan</a><sup>2</sup>                                </div>
+<a class="person" href="person24329.html">Ashish Mishra</a><sup>1</sup>, <a class="person" href="person103502.html">Suresh Jagannathan</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Indian Institute of Technology Hyderabad</div>
                                 <div class="affiliation_item"><sup>2</sup> Purdue University</div>
@@ -927,7 +1000,7 @@ the capabilities of the existing state-of-the-art.</p>
                             <td>
                                 <div class="title">SemML 2.0: Synthesizing Controllers from LTL <a class="abstract_link" href="CAV-2026-07-26.html#talk:1119">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25001.html">Maximilian Prokop</a><sup>1</sup>, <a class="person" href="person99127.html">Tobias Meggendorfer</a><sup>2</sup>, <a class="person" href="person99128.html">Jan Kretinsky</a><sup>3</sup>                                </div>
+<a class="person" href="person25001.html">Maximilian Prokop</a><sup>1</sup>, <a class="person" href="person103504.html">Tobias Meggendorfer</a><sup>2</sup>, <a class="person" href="person103505.html">Jan Kretinsky</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Munich</div>
                                 <div class="affiliation_item"><sup>2</sup> Lancaster University Leipzig</div>
@@ -956,7 +1029,7 @@ tools, while maintaining state-of-the-art solution quality.</p>
                             <td>
                                 <div class="title">Fast Obligation Translation and Synthesis (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-26.html#talk:1120">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25195_99129.html">Alexandre Duret-Lutz</a><sup>1,7</sup>, <a class="person" href="person23182.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person99131.html">Marcin Jurdzinski</a><sup>3</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>4</sup>, <a class="person" href="person99133.html">Moshe Y. Vardi</a><sup>5</sup>, <a class="person" href="person99134.html">Shufang Zhu</a><sup>6</sup>                                </div>
+<a class="person" href="person25195_103506.html">Alexandre Duret-Lutz</a><sup>1,7</sup>, <a class="person" href="person23182.html">Giuseppe De Giacomo</a><sup>2</sup>, <a class="person" href="person102773.html">Marcin Jurdzinski</a><sup>3</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>4</sup>, <a class="person" href="person100951.html">Moshe Y. Vardi</a><sup>5</sup>, <a class="person" href="person100952.html">Shufang Zhu</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> LRE</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
@@ -978,7 +1051,7 @@ Our implementation in Spot shows huge runtime improvements in translation and sy
                             <td>
                                 <div class="title">sweap: Reactive Synthesis for Infinite-State Integer Problems <a class="abstract_link" href="CAV-2026-07-26.html#talk:1121">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25196_99135.html">Shaun Azzopardi</a><sup>1</sup>, <a class="person" href="person99136.html">Luca Di Stefano</a><sup>2</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>3</sup>                                </div>
+<a class="person" href="person25196_103512.html">Shaun Azzopardi</a><sup>1</sup>, <a class="person" href="person103513.html">Luca Di Stefano</a><sup>2</sup>, <a class="person" href="person25380.html">Nir Piterman</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Dedaub</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Wien</div>
@@ -1050,79 +1123,6 @@ implementation in the tool LoAT shows the power of our approach.</p>
                                 </div>
                                 <div class="abstract">
                                     <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The fluted fragment lacks the Craig Interpolation Property. In this paper we establish a weakened form of interpolation. Given an entailment in the fluted fragment, we distinguish predicates that only take an argument sequence starting with $x_1$ from those that do not. A predicate of the former kind is allowed to appear in a weak interpolant only if it occurs in both the premise and the conclusion; and any predicate of the latter kind can be used in a weak interpolant no matter whether it is in the shared signature. Our proof also shows that the weakened interpolation holds in every finite variable subfragment of the fluted fragment. In addition, this work provides a generalization of A. Herzig's translation of the ordered fragment, as well as a new proof of the finite model property of the fluted fragment.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:820">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="820" data-title="ITP Papers: Formalisation of Algorithms" data-time="14:00-15:30" data-room="B1.04" data-group="ITP" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">14:00-15:30</span>
-                        <span class="title">ITP Papers: Formalisation of Algorithms</span>
-                        <span class="group_tag">ITP</span>
-                    </div>
-
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person25184.html">Yannick Forster</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:373">
-                            <td class="time">14:00-14:30</td>
-                            <td>
-                                <div class="title">Certified Intersection of Commutative Regular Expressions as Solutions of Systems of Linear Diophantine Equations <a class="abstract_link" href="ITP-2026-07-26.html#talk:373">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person24171.html">Ricardo Almeida</a><sup>1</sup>, <a class="person" href="person100592.html">Blair Archibald</a><sup>1</sup>, <a class="person" href="person100593.html">Basile Pesin</a><sup>2</sup>, <a class="person" href="person100594.html">Michele Sevegnani</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> School of Computing Science, University of Glasgow, Glasgow, Scotland</div>
-                                <div class="affiliation_item"><sup>2</sup> Fédération ENAC ISAE-SUPAERO ONERA, Université de Toulouse, France</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Commutative regular expressions describe sets of unordered words, and are used, for example,
-when building type systems for process calculi. In these applications, a useful operation is finding the intersection of two expressions, but no algorithm currently exists. We remedy this by proposing an algorithm for computing intersections of commutative regular expressions, which we implement and prove correct in the Rocq prover. The algorithm encodes the intersection of two expressions as systems of linear diophantine equations, and extracts from their solution an intersection expression. To solve these systems we implement and verify the algorithm proposed by Contejean and Devie. We detail the implementation of the intersection algorithm, highlight essential aspects of the proofs (including the complex proof of termination of the equation system solver), and evaluate the OCaml-extracted solver on random and real-world commutative regular expressions.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:374">
-                            <td class="time">14:30-15:00</td>
-                            <td>
-                                <div class="title">Functional correctness of an optimized modular inversion algorithm <a class="abstract_link" href="ITP-2026-07-26.html#talk:374">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25294_100595.html">Assia Mahboubi</a><sup>1</sup>, <a class="person" href="person100596.html">Guillaume Melquiond</a><sup>1</sup>, <a class="person" href="person100597.html">Pierre-Yves Strub</a><sup>2</sup>, <a class="person" href="person100598.html">Tomás Vallejos Parada</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> INRIA</div>
-                                <div class="affiliation_item"><sup>2</sup> PQShield</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This article describes the first mechanized proof of functional correctness of an algorithm due to Pornin (2020), for computing modular inverses via an optimized extended binary GCD algorithm. This algorithm is widely used in cryptography applications, due to its speed and constant-timeness. But this speed comes from the use of approximate computations during its loop iterations. In particular, the pen-and-paper proof of the fact that sufficiently many loop iterations were performed is especially intricate (and the originally published version was actually wrong), which negatively impacts the trust in the applications that rely on the algorithm. In this work, we expand the notes provided in the original description by Pornin into a complete formal proof. We discuss the challenges raised by its mechanization, which eventually relies on the collaboration of deductive program verification and interactive theorem proving through the use of the tools Rocq and Why3.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:375">
-                            <td class="time">15:00-15:30</td>
-                            <td>
-                                <div class="title">Verification of the Garsia–Wachs Algorithm <a class="abstract_link" href="ITP-2026-07-26.html#talk:375">(abstract)</a> <span class="duration">30 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23394.html">Makoto Kanazawa</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Hosei University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Garsia–Wachs algorithm is an algorithm for finding a leaf-labeled binary tree whose leaf sequence exactly matches the input weight sequence and whose cost is as small as possible, where the cost is the sum of the weights labeling the leaves multiplied by their levels.
-The algorithm, along with a proof of correctness due to Kingston, is presented in Knuth's The Art of Computer Programming, Vol. 3. 
-The algorithm comes in two versions, the naive and the optimized.
-Both versions have quadratic time complexity, but the optimized version can be fine-tuned with a suitable data structure to yield an O(n log n)-time algorithm.
-I implement and verify a variant of each version of the algorithm in the verification-aware programming language Dafny.
-Unlike all previous presentations of the algorithm, these variants construct the desired optimum tree directly, without detour through a "nonalphabetic" tree whose leaf sequence is a rearrangement of the input sequence.</p>
                                 </div>
                             </td>
                         </tr>
@@ -1207,7 +1207,7 @@ Unlike all previous presentations of the algorithm, these variants construct the
                             <td>
                                 <div class="title">Presentation of the Herbrand Award <a class="abstract_link" href="IJCAR-2026-07-26.html#talk:1820">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25280_100389.html">Nikolaj Bjørner</a><sup>1</sup>, <a class="person" href="person100390.html">Amy Felty</a><sup>2</sup>, <a class="person" href="person24496.html">Cynthia Kop</a><sup>3</sup>, <a class="person" href="person98944.html">Cláudia Nalon</a><sup>4</sup>, <a class="person" href="person24375.html">Andrew Reynolds</a><sup>5</sup>, <a class="person" href="person23131.html">Geoff Sutcliffe</a><sup>6</sup>                                </div>
+<a class="person" href="person25280_100389.html">Nikolaj Bjørner</a><sup>1</sup>, <a class="person" href="person100390.html">Amy Felty</a><sup>2</sup>, <a class="person" href="person24496.html">Cynthia Kop</a><sup>3</sup>, <a class="person" href="person100392.html">Cláudia Nalon</a><sup>4</sup>, <a class="person" href="person24375.html">Andrew Reynolds</a><sup>5</sup>, <a class="person" href="person23131.html">Geoff Sutcliffe</a><sup>6</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Microsoft Research</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Ottawa</div>
@@ -1235,21 +1235,6 @@ Unlike all previous presentations of the algorithm, these variants construct the
 
 
                 </div>
-                <div class="session interval_session" id="session:712">
-                    <div class="heading">
-                        <span class="interval">15:30-16:00</span>
-                        <span class="title">Coffee Break</span>
-                        <span class="group_tag">CSF</span>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:821">
                     <div class="heading">
                         <span class="interval">15:30-16:30</span>
@@ -1261,6 +1246,21 @@ Unlike all previous presentations of the algorithm, these variants construct the
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:712">
+                    <div class="heading">
+                        <span class="interval">15:30-16:00</span>
+                        <span class="title">Coffee Break</span>
+                        <span class="group_tag">CSF</span>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room31.html">B2.03</a>
                     </div>
 
 
@@ -1342,7 +1342,7 @@ This strong security guarantee applies to arbitrary programs, even those not fol
                             <td>
                                 <div class="title">A-IC3: Learning-Guided Adaptive Inductive Generalization for Hardware Model Checking <a class="abstract_link" href="CAV-2026-07-26.html#talk:193">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25197_99138.html">Xiaofeng Zhou</a><sup>1</sup>, <a class="person" href="person99139.html">Guangyu Hu</a><sup>1</sup>, <a class="person" href="person99140.html">Hongce Zhang</a><sup>2</sup>, <a class="person" href="person99141.html">Wei Zhang</a><sup>1</sup>                                </div>
+<a class="person" href="person25197_103515.html">Xiaofeng Zhou</a><sup>1</sup>, <a class="person" href="person103516.html">Guangyu Hu</a><sup>1</sup>, <a class="person" href="person103517.html">Hongce Zhang</a><sup>2</sup>, <a class="person" href="person103518.html">Wei Zhang</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Hong Kong University of Science and Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Hong Kong University of Science and Technology (Guangzhou)</div>
@@ -1364,7 +1364,7 @@ When implemented on rIC3, our method solves 28 more cases than the baseline, and
                             <td>
                                 <div class="title">A Multi-Width Parametric Equivalence Solver <a class="abstract_link" href="CAV-2026-07-26.html#talk:194">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25198_99142.html">Luigi Rinaldi</a><sup>1</sup>, <a class="person" href="person99143.html">John Wickerson</a><sup>2</sup>, <a class="person" href="person99144.html">Samuel Coward</a><sup>1</sup>                                </div>
+<a class="person" href="person25198_103519.html">Luigi Rinaldi</a><sup>1</sup>, <a class="person" href="person103520.html">John Wickerson</a><sup>2</sup>, <a class="person" href="person103521.html">Samuel Coward</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University College London</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial College London</div>
@@ -1381,7 +1381,7 @@ provide a translation into equivalences in modular arithmetic. We then show how 
                             <td>
                                 <div class="title">Massively Parallel Mining of Specifications for Hardware Designs <a class="abstract_link" href="CAV-2026-07-26.html#talk:195">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23340.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person99146.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person99147.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person99148.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
+<a class="person" href="person23340.html">Leiqi Ye</a><sup>1</sup>, <a class="person" href="person103523.html">Guy Frankel</a><sup>1</sup>, <a class="person" href="person103524.html">Jianyi Cheng</a><sup>1</sup>, <a class="person" href="person102804.html">Elizabeth Polgreen</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
                                 </div>
@@ -1396,7 +1396,7 @@ In this work, we present MAPminer, a parallel framework for synthesis-based hard
                             <td>
                                 <div class="title">A mechanised, bidirectional type system for bit-width determination in SystemVerilog <a class="abstract_link" href="CAV-2026-07-26.html#talk:196">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23543.html">Gabriel Desfrene</a><sup>1</sup>, <a class="person" href="person99150.html">Quentin Corradi</a><sup>2</sup>, <a class="person" href="person99151.html">Michalis Pardalos</a><sup>2</sup>, <a class="person" href="person99143.html">John Wickerson</a><sup>2</sup>                                </div>
+<a class="person" href="person23543.html">Gabriel Desfrene</a><sup>1</sup>, <a class="person" href="person103527.html">Quentin Corradi</a><sup>2</sup>, <a class="person" href="person103528.html">Michalis Pardalos</a><sup>2</sup>, <a class="person" href="person103520.html">John Wickerson</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> École normale supérieure – PSL</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial College London</div>
@@ -1476,7 +1476,7 @@ input vector via fractional permissions.</p>
                             <td>
                                 <div class="title">Lazy Proof Automation for Separation Logic <a class="abstract_link" href="ITP-2026-07-26.html#talk:377">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23507.html">Valentin Mikhalchuk</a><sup>1</sup>, <a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person99223.html">Ilya Sergey</a><sup>1</sup>                                </div>
+<a class="person" href="person23507.html">Valentin Mikhalchuk</a><sup>1</sup>, <a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person100603.html">Ilya Sergey</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National University of Singapore</div>
                                 </div>

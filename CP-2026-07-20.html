@@ -142,6 +142,7 @@
 
                 <div id="menu3">
                     <a href="CP-index.html" class="selected">PROGRAM</a>
+                <span class="separator"> | </span>    <a href="CP-talk_author_index.html">AUTHORS</a>
                 </div>
 
 
@@ -183,9 +184,245 @@
 
 
                 </div>
+                <div class="session" id="session:1918">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="1918" data-title="CP Opening" data-time="10:30-10:45" data-room="One02" data-group="CP" data-day="Monday, 20 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-10:45</span>
+                        <span class="title">CP Opening</span>
+                        <span class="group_tag">CP</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person25097.html">Nicolas Beldiceanu</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room29.html">One02</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1886">
+                            <td class="time">10:30-10:45</td>
+                            <td>
+                                <div class="title">CP Opening <a class="abstract_link" href="CP-2026-07-20.html#talk:1886">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25097.html">Nicolas Beldiceanu</a><sup>1</sup>, <a class="person" href="person103914.html">Inês Lynce</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> IMT Atlantique</div>
+                                <div class="affiliation_item"><sup>2</sup> Universidade de Lisboa</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1919">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="1919" data-title="Scheduling" data-time="10:50-12:30" data-room="One02" data-group="CP" data-day="Monday, 20 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:50-12:30</span>
+                        <span class="title">Scheduling</span>
+                        <span class="group_tag">CP</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person24177.html">Laurent Michel</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room29.html">One02</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1887">
+                            <td class="time">10:50-11:10</td>
+                            <td>
+                                <div class="title">On Inferring Cumulative Constraints <a class="abstract_link" href="CP-2026-07-20.html#talk:1887">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24190.html">Konstantin Sidorov</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Cumulative constraints are central in scheduling with constraint programming, yet propagation is typically performed per constraint, missing multi-resource interactions and causing severe slowdowns on some benchmarks. I present a preprocessing method for inferring additional cumulative constraints that capture such interactions without search-time probing. This approach interprets cumulative constraints as linear inequalities over occupancy vectors and generates valid inequalities by (i) discovering covers, the sets of tasks that cannot run in parallel, (ii) strengthening the cover inequalities for the discovered sets with lifting, and (iii) injecting the resulting constraints back into the scheduling problem instance. Experiments on standard RCPSP and RCPSP/max test suites show that these inferred constraints improve search performance and tighten objective bounds on favorable instances, while incurring little degradation on unfavorable ones. Additionally, these experiments discover 25 new lower bounds and five new best solutions; eight of the lower bounds are obtained directly from the inferred constraints.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1888">
+                            <td class="time">11:10-11:30</td>
+                            <td>
+                                <div class="title">Augmenting the Cumulative Overload Check with Integral Resource Usage Reasoning <a class="abstract_link" href="CP-2026-07-20.html#talk:1888">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24039.html">Samuel Cloutier</a><sup>1</sup>, <a class="person" href="person103917.html">Claude-Guy Quimper</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Université Laval</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Few amongst the rules that filter the Cumulative constraint reason on the integrity of resource consumption. We augment the overload check with an integral reasoning that better evaluates resource availability. This reasoning is based on the knapsack problem, which we solve using dynamic programming. Our new rule subsumes the time table horizontally elastic overload check while its running time complexity is O(Cn^2), only increasing by a factor C (the resource capacity) due to solving knapsack problems. Our algorithm generates explanations for lazy clause generation solvers. With our new knapsack augmented overload check, we are able to solve all but 5 instances of the Pack benchmark. By performing a small transformation of the instances, we show that our method is more robust than known pre-solving methods that perform well on the original benchmark.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1889">
+                            <td class="time">11:30-11:50</td>
+                            <td>
+                                <div class="title">Revisiting Optional Variables in Lazy Clause Generation Solvers for Flexible Scheduling <a class="abstract_link" href="CP-2026-07-20.html#talk:1889">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24689_103918.html">Arthur Bit-Monnot</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> LAAS-CNRS</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Optional variables have for a long time been identified as a crucial component of state-of-the-art scheduling solvers.
+They not only offer a natural way to model many scheduling problems but also play an important role in the efficiency of such solvers by enabling a stronger inference in a constraint propagation engine.
+Despite this recognition, their adoption in modern solvers remains extremely scarce presumably because their native support requires pervasive changes to a solver and handling many subtleties that have not been extensively studied.
+
+In this paper, we aim to provide a good foundation in this direction by providing a formal characterization of optional variables and of their interactions with key component of constraint programming solver including propagators, reification and lazy clause generation.
+In addition, we present a new lazy clause generation solver with native support for optional variables and demonstrate its efficiency on variants of the flexible jobshop problem.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1890">
+                            <td class="time">11:50-12:10</td>
+                            <td>
+                                <div class="title">Instance Space Analysis and Complexity Estimation for Scheduling Problem <a class="abstract_link" href="CP-2026-07-20.html#talk:1890">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person27070_103919.html">Christian Pérez Bernal</a><sup>1</sup>, <a class="person" href="person103920.html">Isabel Català Fort</a><sup>1</sup>, <a class="person" href="person103921.html">Unai Lopez</a><sup>1</sup>, <a class="person" href="person103922.html">Miguel A. Salido</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universitat Politècnica de València (UPV)</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Benchmarking scheduling instances solely by nominal size is often misleading: instances with the same number of jobs and machines can differ by orders of magnitude in empirical hardness. This paper proposes a fully supervised, solver-aligned difficulty estimator for the Job Shop Scheduling Problem (JSP). Each instance is represented in an instance space through structural descriptors extracted from the disjunctive graph and instance-derived summaries, while supervision is obtained from normalized solver traces aggregated across OR-Tools, Gurobi, and CPLEX. A Random Forest regressor learns a bounded hardness score P(x) in [0,1], from which balanced easy/medium/hard categories are induced. The empirical evaluation shows that the learned score is strongly aligned with solver-effort indicators, provides interpretable feature-level explanations, and preserves meaningful ordinal relationships on classical JSPLIB benchmarks under distribution shift. The proposed framework provides a practical and interpretable basis for difficulty-aware benchmarking, instance selection, and solver-behaviour analysis beyond nominal size parameters.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1891">
+                            <td class="time">12:10-12:30</td>
+                            <td>
+                                <div class="title">Accelerating Constraint Programming Solver with Parallel External Heuristics: Experiments on Scheduling and Routing Problems <a class="abstract_link" href="CP-2026-07-20.html#talk:1891">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person27071_103923.html">Vilém Heinz</a><sup>1</sup>, <a class="person" href="person103924.html">Šimon Zvára</a><sup>1</sup>, <a class="person" href="person103925.html">Vít Knobloch</a><sup>1</sup>, <a class="person" href="person103926.html">Zdeněk Hanzálek</a><sup>1</sup>, <a class="person" href="person103927.html">Petr Vilím</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Czech Technical University in Prague</div>
+                                <div class="affiliation_item"><sup>2</sup> ScheduleOpt, Novy Knin</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Constraint Programming (CP) is a powerful optimization method that provides optimality guarantees, but due to its exact nature, its scalability to large instances is often limited.
+To address this, we propose a hybrid approach that combines a CP solver with heuristic methods, directly and asynchronously exchanging solutions and objective values during runtime.
+This real-time cooperation yields faster convergence to good solutions across various problem domains than the solver alone, while retaining the ability to guarantee optimality, leveraging the complementary nature of the CP solver and heuristics.
+The efficiency of this approach is evaluated on three well-known scheduling problems and three well-known routing problems.
+Noticeable improvements are observed for the Flow-shop Scheduling Problem (FSSP), the Traveling Salesman Problem (TSP), and the Vehicle Routing Problem with Time Windows (VRP-TW).
+Even for problems where improvements are marginal, the portfolio of methods increases the robustness of the approach.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:1920">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="1920" data-title="SAT, MAXSAT, CP-SAT" data-time="10:50-12:30" data-room="One01" data-group="CP" data-day="Monday, 20 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:50-12:30</span>
+                        <span class="title">SAT, MAXSAT, CP-SAT</span>
+                        <span class="group_tag">CP</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person23196.html">Peter Stuckey</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room32.html">One01</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1892">
+                            <td class="time">10:50-11:10</td>
+                            <td>
+                                <div class="title">Not All Restarts are Equal: MAB-Learning at the Right Time Scale for SAT <a class="abstract_link" href="CP-2026-07-20.html#talk:1892">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23688.html">Jinghu Liang</a><sup>1</sup>, <a class="person" href="person102471.html">Sami Cherif</a><sup>1</sup>, <a class="person" href="person102473.html">Chu-Min Li</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Laboratoire MIS UR 4290, Université de Picardie Jules Verne, Amiens, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Multi-Armed Bandit (MAB) mechanisms have proven effective for adaptive heuristic switching in modern CDCL SAT solvers, with Kissat_MAB and its variants demonstrating strong performance in recent SAT Competitions. However, while strategies like the Luby series generate restarts with high duration variability, standard bandit models treat each restart as a homogeneous unit. This mismatch can bias credit assignment and lead to suboptimal exploration–exploitation trade-offs between short and long restarts. In this paper, we study MAB-based heuristic selection under variable-duration restart policies and propose a duration-aware modification to both bandit feedback and selection mechanisms. Our approach normalizes and conditions rewards on the restarts and adapts exploration and exploitation accordingly, thereby better aligning bandit updates with the solver’s restart dynamics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1893">
+                            <td class="time">11:10-11:30</td>
+                            <td>
+                                <div class="title">Efficient Explanations for Rule Ensembles <a class="abstract_link" href="CP-2026-07-20.html#talk:1893">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23764.html">Hao Hu</a><sup>1</sup>, <a class="person" href="person102296.html">Alexey Ignatiev</a><sup>2</sup>, <a class="person" href="person23185.html">Joao Marques-Silva</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Lleida</div>
+                                <div class="affiliation_item"><sup>2</sup> Monash University</div>
+                                <div class="affiliation_item"><sup>3</sup> ICREA, University of Lleida</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Tree ensembles (TEs) are among the most widely used machine learning models, yet explaining their predictions remains a computational challenge. Recent work in formal explainable AI (FXAI) has focused on computing abductive explanations for TEs using Boolean satisfiability (SAT) and maximum satisfiability (MaxSAT). However, these methods often fail to scale with the growth of the number and depth of the trees in the ensemble. This paper addresses these scalability limitations by shifting focus to Rule Ensembles (REs), a structurally simpler alternative to TEs. We make three primary contributions. First, we adapt an existing MaxSAT-based explanation framework designed for TEs to function with general REs. Second, we devise a dedicated logic encoding for REs combining SAT solving with pseudo-Boolean (PB) constraints for determining the winning class. Finally, empirical experiments on standard tabular and image datasets demonstrate a significant advantage of the proposed SAT-based approach for REs over the state-of-the-art MaxSAT-based approach for TEs.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1894">
+                            <td class="time">11:30-11:50</td>
+                            <td>
+                                <div class="title">Enhanced Lower Bound Computation in Branch-and-Bound for MaxSAT <a class="abstract_link" href="CP-2026-07-20.html#talk:1894">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23639.html">Jialu Zhang</a><sup>1</sup>, <a class="person" href="person102473.html">Chu-Min Li</a><sup>2</sup>, <a class="person" href="person102471.html">Sami Cherif</a><sup>2</sup>, <a class="person" href="person102728.html">Shuolin Li</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Laboratoire MIS UR 4290, Université de Picardie Jules Verne, Amiens, France</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Picardie Jules Verne</div>
+                                <div class="affiliation_item"><sup>3</sup> Aix Marseille Univ, Université de Toulon, CNRS, LIS, Marseille, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Maximum Satisfiability (MaxSAT) is an optimization extension of the Satisfiability (SAT) problem. In Branch-and-Bound (BnB) MaxSAT solving, the quality of the lower bound estimation is critical for effective search space pruning. State-of-the-art BnB solvers typically estimate this bound by identifying disjoint inconsistent subformulas (cores) via Unit Propagation (UP). However, a limitation of this standard approach is that UP fails to detect cores that exhibit complex dependencies with already identified cores. In this paper, we propose a further lookahead algorithm that leverages pre-detected cores to uncover additional disjoint inconsistencies, thereby tightening the lower bound. Experimental results demonstrate that the proposed algorithm significantly tightens the lower bound, enabling the state of the art BnB solver MaxCDCL to solve more instances.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1895">
+                            <td class="time">11:50-12:10</td>
+                            <td>
+                                <div class="title">From Literals to Atomic Constraints: Generalising Conflict-Driven Clause Learning for Constraint Programming <a class="abstract_link" href="CP-2026-07-20.html#talk:1895">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23710.html">Imko Marijnissen</a><sup>1</sup>, <a class="person" href="person24230.html">Maarten Flippo</a><sup>1</sup>, <a class="person" href="person99855.html">Emir Demirović</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Delft University of Technology</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Conflict-Driven Clause Learning (CDCL) is central to the success of SAT solvers, and its adaptation to Constraint Programming (CP) through Lazy Clause Generation (LCG) has been a major breakthrough for CP solving. A core requirement of LCG is to maintain both a CP and SAT view of the problem. Because maintaining a full SAT encoding is impractical, solvers rely on partial and solver-specific encodings—an approach that has evolved as folklore rather than formal design. We present the first systematic analysis of how leading LCG solvers maintain their SAT encodings, based on source-code inspection and developer correspondence. Our analysis reveals substantial differences in explanation lifting, backwards explanations, linking clauses, and nogood minimisation, all driven by the need to preserve a SAT view. To overcome these compromises, we propose a native CDCL framework for CP. We replace SAT literals with atomic constraints, enabling conflict analysis, nogood learning, and nogood propagation directly at the CP level. This results in cleaner algorithmic design, eliminates SAT-specific complications, and allows us to introduce extended nogood propagation, a generalisation of SAT-based clause propagation, as well as CPIP nogoods, a generalisation of SAT-based learned nogoods. Our implementation of the framework in Solver demonstrates competitive performance in the MiniZinc Challenge 2025. Additionally, we empirically show that extended nogood propagation combined with CPIP nogoods can significantly reduce failures, especially on problems with constraints that reason over domain holes. Overall, our framework provides a principled and semantically rich generalisation of CDCL for CP.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1896">
+                            <td class="time">12:10-12:30</td>
+                            <td>
+                                <div class="title">Satisfiability for Large Weight Syndrome Decoding <a class="abstract_link" href="CP-2026-07-20.html#talk:1896">(abstract)</a> <span class="duration">20 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23676.html">Carl Berton</a><sup>1</sup>, <a class="person" href="person102471.html">Sami Cherif</a><sup>1</sup>, <a class="person" href="person103943.html">Claire Delaplace</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Laboratoire MIS UR 4290, Université de Picardie Jules Verne, Amiens, France</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The Large Weight Syndrome Decoding problem LWSD is a fundamental problem in coding theory. It consists in determining whether a given linear code admits a high Hamming weight vector associated with a specific syndrome. LWSD is a variant of the classical syndrome decoding problem, which conversely seeks a low Hamming weight solution for a linear system defined over the binary field $\mathbb{F}_2$. In this paper, we investigate a generalization of this problem to the case of a prime finite field $\mathbb{F}_Z$, referred to as LWZSD. We propose several models using Boolean Satisfiability (SAT) formulas and compare the efficiency of our approaches against state-of-the-art solvers.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session interval_session" id="session:686">
                     <div class="heading">
-                        <span class="interval">12:00-14:00</span>
+                        <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
                         <span class="group_tag">CP</span>
                     </div>
@@ -200,7 +437,7 @@
                 </div>
                 <div class="session interval_session" id="session:687">
                     <div class="heading">
-                        <span class="interval">12:00-14:00</span>
+                        <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
                         <span class="group_tag">CP</span>
                     </div>
@@ -213,9 +450,55 @@
 
 
                 </div>
+                <div class="session" id="session:1921">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="1921" data-title="Routing/Scheduling & GPU for Propagation" data-time="14:00-16:00" data-room="One02" data-group="CP" data-day="Monday, 20 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">14:00-16:00</span>
+                        <span class="title">Routing/Scheduling & GPU for Propagation</span>
+                        <span class="group_tag">CP</span>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person24144.html">Roland Yap Hock Chuan</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room29.html">One02</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1897">
+                            <td class="time">14:00-15:00</td>
+                            <td>
+                                <div class="title">From CP Fundamentals with MiniCP to Solving Routing and Scheduling Applications with MaxiCP <a class="abstract_link" href="CP-2026-07-20.html#talk:1897">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23844.html">Augustin Delecluse</a><sup>1</sup>, <a class="person" href="person99865.html">Pierre Schaus</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> KU Leuven</div>
+                                <div class="affiliation_item"><sup>2</sup> UCLouvain</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1898">
+                            <td class="time">15:00-16:00</td>
+                            <td>
+                                <div class="title">Despicable Cores: Thousands of GPU Minions for Constraint Propagation <a class="abstract_link" href="CP-2026-07-20.html#talk:1898">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24177.html">Laurent Michel</a><sup>1</sup>, <a class="person" href="person25557_99861.html">Fabio Tardivo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> University of Connecticut</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session interval_session" id="session:688">
                     <div class="heading">
-                        <span class="interval">15:30-16:30</span>
+                        <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
                         <span class="group_tag">CP</span>
                     </div>
@@ -230,7 +513,7 @@
                 </div>
                 <div class="session interval_session" id="session:689">
                     <div class="heading">
-                        <span class="interval">15:30-16:30</span>
+                        <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
                         <span class="group_tag">CP</span>
                     </div>
