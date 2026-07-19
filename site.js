@@ -274,6 +274,10 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
             link.textContent = nowLabelsEl.dataset.jumpLabel || 'Jump to current session';
             pageTitle.insertAdjacentElement('afterend', link);
         }
+
+        if (matched && !location.hash) {
+            matched.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     }
 })();
 
@@ -318,6 +322,18 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
                 todayLink.style.display = 'flex';
             }
         }
+
+        const liveGroupIds = new Set(
+            sessions.filter((s) => s.end && `${s.date}T${s.start}` <= nowStamp && nowStamp < `${s.date}T${s.end}`)
+                .map((s) => s.groupId)
+        );
+        document.querySelectorAll('#menu2 a[data-group-id]').forEach((chip) => {
+            if (liveGroupIds.has(Number(chip.dataset.groupId)) && !chip.querySelector('.live_dot')) {
+                const dot = document.createElement('span');
+                dot.className = 'live_dot';
+                chip.appendChild(dot);
+            }
+        });
     }).catch(() => {});
 })();
 

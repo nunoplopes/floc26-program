@@ -252,9 +252,11 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
     box-shadow: 0 4px 16px var(--color-shadow);
     padding: 6px;
     z-index: 20;
+    box-sizing: border-box;
 }
 .header_menu_panel.open { display: flex; flex-direction: column; }
 .header_menu_panel a, .header_menu_panel button {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -282,6 +284,7 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 #menu2 a.selected, #menu3 a.selected { background: var(--color-accent); color: var(--color-accent-contrast); font-weight: bold; }
 #menu2 a.selected:hover, #menu3 a.selected:hover { background: var(--color-accent); }
 #menu2 .separator, #menu3 .separator { display: none; }
+.live_dot { display: inline-block; width: 7px; height: 7px; margin-left: 6px; border-radius: 50%; background: var(--color-accent); vertical-align: middle; }
 
 #pagetitle { position: sticky; top: 0; z-index: 11; background: var(--color-bg); font-size: 18px; line-height: 21px; font-weight: bold; padding: 12px 0 6px 0; }
 
