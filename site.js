@@ -327,11 +327,12 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
             sessions.filter((s) => s.end && `${s.date}T${s.start}` <= nowStamp && nowStamp < `${s.date}T${s.end}`)
                 .map((s) => s.groupId)
         );
-        document.querySelectorAll('#menu2 a[data-group-id]').forEach((chip) => {
+        document.querySelectorAll('#menu2 a[data-group-id], .group_tile[data-group-id]').forEach((chip) => {
             if (liveGroupIds.has(Number(chip.dataset.groupId)) && !chip.querySelector('.live_dot')) {
                 const dot = document.createElement('span');
                 dot.className = 'live_dot';
-                chip.appendChild(dot);
+                const label = chip.querySelector('.group_tile_label');
+                (label || chip).appendChild(dot);
             }
         });
     }).catch(() => {});
