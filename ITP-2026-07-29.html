@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — ITP — Program for Wednesday, 29 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -155,7 +163,7 @@
 
                 <div class="date">Wednesday, 29 July 2026</div>
 
-                <div class="session" id="session:838">
+                <div class="session" id="session:838" data-date="2026-07-29" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="838" data-title="ITP Invited Talk: Dominique Unruh, RWTH Aachen and University of Tartu" data-time="09:00-10:00" data-room="B1.04" data-group="ITP" data-day="Wednesday, 29 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -176,7 +184,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:839">
+                <div class="session interval_session" id="session:839" data-date="2026-07-29" data-start="10:00" data-end="11:00">
                     <div class="heading">
                         <span class="interval">10:00-11:00</span>
                         <span class="title">Coffee Break</span>
@@ -191,7 +199,7 @@
 
 
                 </div>
-                <div class="session" id="session:840">
+                <div class="session" id="session:840" data-date="2026-07-29" data-start="11:00" data-end="12:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="840" data-title="ITP Paper: Automata and Coinduction" data-time="11:00-12:00" data-room="B1.04" data-group="ITP" data-day="Wednesday, 29 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:00-12:00</span>
@@ -254,7 +262,7 @@ Along the way we contribute reusable Isabelle lemmas for $\omega$-regular reason
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:841">
+                <div class="session interval_session" id="session:841" data-date="2026-07-29" data-start="12:00" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:00-14:00</span>
                         <span class="title">Lunch</span>
@@ -269,7 +277,7 @@ Along the way we contribute reusable Isabelle lemmas for $\omega$-regular reason
 
 
                 </div>
-                <div class="session" id="session:842">
+                <div class="session" id="session:842" data-date="2026-07-29" data-start="14:00" data-end="15:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="842" data-title="ITP Papers: Formalisation of Mathematics-3" data-time="14:00-15:30" data-room="B1.04" data-group="ITP" data-day="Wednesday, 29 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:30</span>
@@ -343,7 +351,7 @@ In this paper, we present an end-to-end verification in Lean 4 of Keller’s con
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:843">
+                <div class="session interval_session" id="session:843" data-date="2026-07-29" data-start="15:30" data-end="16:30">
                     <div class="heading">
                         <span class="interval">15:30-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -358,7 +366,7 @@ In this paper, we present an end-to-end verification in Lean 4 of Keller’s con
 
 
                 </div>
-                <div class="session" id="session:844">
+                <div class="session" id="session:844" data-date="2026-07-29" data-start="16:30" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="844" data-title="ITP Papers" data-time="16:30-18:00" data-room="B1.04" data-group="ITP" data-day="Wednesday, 29 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:00</span>
@@ -453,6 +461,6 @@ Together with an external tool for visualising and editing string diagrams, this
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8" />
+    <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Federated Logic Conference 2026 — Now and Next</title>
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#225" />
+    <style>
+        .agenda-list { list-style: none; padding: 0; margin: 0 0 6px 0; }
+        .now-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--color-border-light); }
+        .now-item-link { flex: 1; text-decoration: none; color: inherit; }
+        .now-item-title { font-weight: bold; font-size: 15px; }
+        .now-item-meta { font-size: 13px; color: var(--color-text-muted-3); margin-top: 2px; }
+        .now-item-tag { font-size: 11px; font-weight: bold; color: var(--color-text-muted-2); text-transform: uppercase; margin-top: 2px; }
+        .now-current .now-item-tag { color: var(--color-accent); }
+        .agenda-empty { padding: 20px 0; color: var(--color-text-icon); text-align: center; }
+    </style>
+</head>
+<body>
+<a class="skip_link" href="#content">Skip to content</a>
+<table class="page_table" cellpadding="0" cellspacing="0">
+<tbody>
+    <tr>
+        <td class="central_td_column">
+            <div id="header">
+                <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
+                <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
+                <div class="header_fabs">
+                    <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
+
+
+            <div id="main_menu">
+                <a href="index.html">PROGRAM</a>
+                <a href="talk_author_index.html">AUTHORS</a>
+                <a href="search.html">Search</a>
+            </div>
+
+
+            <div id="content">
+                <div id="pagetitle">NOW AND NEXT</div>
+
+                <div id="now_empty" class="agenda-empty" style="display:none;">No session is running right now.</div>
+                <div id="now_groups_container"></div>
+            </div>
+
+            <div id="disclaimer">
+                Designed and Developed by EventKey | Copyright 2026 EventKey
+                <span id="last_updated">Last updated: <span id="last_updated_value" data-offline-label="Offline"></span><span id="last_updated_local_group"> &middot; Local time: <span id="last_updated_value_local"></span></span></span>
+            </div>
+            <script src="last-updated.js"></script>
+
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<div class="fab_bar">
+    <a id="fab_search" class="fab_btn" href="search.html" title="Search" aria-label="Search">🔍</a>
+    <button id="back_btn" class="fab_btn" title="Back" aria-label="Back">←</button>
+</div>
+
+
+<script>
+(function () {
+    const container = document.getElementById('now_groups_container');
+    const emptyDiv = document.getElementById('now_empty');
+    const currentHeading = "Happening now";
+    const nextHeading = "Up next";
+    const noCurrentLabel = "No session is running right now.";
+    const noNextLabel = "No upcoming session scheduled.";
+
+    function escapeHtml(text) {
+        const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+        return String(text || '').replace(/[&<>"']/g, m => map[m]);
+    }
+
+    function getEventNowStamp(timeZone) {
+        const parts = new Intl.DateTimeFormat('en-CA', {
+            timeZone,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+        }).formatToParts(new Date());
+        const get = (type) => parts.find((p) => p.type === type).value;
+        return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}`;
+    }
+
+    function render(sessions, nowStamp) {
+        container.innerHTML = '';
+
+        const byGroup = new Map();
+        sessions.forEach((s) => {
+            const key = s.groupName || '';
+            if (!byGroup.has(key)) byGroup.set(key, { groupName: key, sessions: [] });
+            byGroup.get(key).sessions.push(s);
+        });
+
+        const groups = [...byGroup.values()];
+
+        groups.forEach((group) => {
+            group.sessions.sort((a, b) => `${a.date}T${a.start}`.localeCompare(`${b.date}T${b.start}`));
+
+            group.current = group.sessions.find((s) => s.end
+                && nowStamp >= `${s.date}T${s.start}` && nowStamp < `${s.date}T${s.end}`);
+            group.next = group.sessions.find((s) => `${s.date}T${s.start}` > nowStamp);
+        });
+
+        const sortStamp = (group) => {
+            const s = group.current || group.next;
+            return s ? `${s.date}T${s.start}` : '';
+        };
+        groups.sort((a, b) => sortStamp(a).localeCompare(sortStamp(b)));
+
+        groups.forEach((group) => {
+            const { current, next } = group;
+            if (!current && !next) return;
+
+            const heading = document.createElement('div');
+            heading.className = 'date';
+            heading.textContent = group.groupName;
+            container.appendChild(heading);
+
+            const ul = document.createElement('ul');
+            ul.className = 'agenda-list';
+            if (current) ul.appendChild(renderItem(current, true, currentHeading));
+            if (next) ul.appendChild(renderItem(next, false, nextHeading));
+            container.appendChild(ul);
+        });
+
+        emptyDiv.style.display = container.children.length === 0 ? 'block' : 'none';
+    }
+
+    function renderItem(s, isCurrent, tag) {
+        const metaParts = [s.dayLabel, `${s.start}-${s.end}`, s.roomName].filter(Boolean).map(escapeHtml);
+        const li = document.createElement('li');
+        li.className = `now-item${isCurrent ? ' now-current' : ''}`;
+        li.innerHTML = `
+            <a class="now-item-link" href="${escapeHtml(s.href)}">
+                <div class="now-item-tag">${escapeHtml(tag)}</div>
+                <div class="now-item-title">${escapeHtml(s.title)}</div>
+                <div class="now-item-meta">${metaParts.join(' &middot; ')}</div>
+            </a>
+        `;
+        return li;
+    }
+
+    Promise.all([
+        fetch('now-data.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : [])),
+        fetch('build-info.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)),
+    ]).then(([sessions, buildInfo]) => {
+        const timeZone = (buildInfo && buildInfo.eventTimeZone) || 'UTC';
+
+        function tick() {
+            render(sessions, getEventNowStamp(timeZone));
+        }
+
+        tick();
+        setInterval(tick, 30000);
+    }).catch(() => {});
+})();
+</script>
+
+<a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
+
+
+<script src="site.js?v=28a1179458"></script>
+</body>
+</html>

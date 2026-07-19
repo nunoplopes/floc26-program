@@ -1,8 +1,8 @@
-const CACHE_NAME = 'floc-2026-cache-v16';
-const STATIC_CACHE = 'floc-2026-static-v16';
+const CACHE_NAME = 'floc-2026-cache-v17';
+const STATIC_CACHE = 'floc-2026-static-v17';
 
 const staticAssets = [
-  'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json',
+  'program.css', 'site.js', 'service-worker.js', 'last-updated.js', 'build-info.json', 'now-data.json',
   'app-icon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png',
 ];
 

@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — LICS — Program for Wednesday, 22 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -156,7 +164,7 @@
 
                 <div class="date">Wednesday, 22 July 2026</div>
 
-                <div class="session" id="session:2015">
+                <div class="session" id="session:2015" data-date="2026-07-22" data-start="08:45" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="2015" data-title="Keynote: Learning with Logic: Neuro-Symbolic Methods for Grounded and Robust AI" data-time="08:45-10:00" data-room="Grande Auditório" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">08:45-10:00</span>
@@ -185,7 +193,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:948">
+                <div class="session interval_session" id="session:948" data-date="2026-07-22" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -200,7 +208,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:949">
+                <div class="session interval_session" id="session:949" data-date="2026-07-22" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -215,7 +223,7 @@
 
 
                 </div>
-                <div class="session" id="session:950">
+                <div class="session" id="session:950" data-date="2026-07-22" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="950" data-title="Session 7A Categorical models: effects, automata & model theory" data-time="10:30-12:30" data-room="B1.04" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -302,7 +310,7 @@ using glueing techniques combined with a fibered refinement of the usual Frobeni
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:951">
+                <div class="session" id="session:951" data-date="2026-07-22" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="951" data-title="Session 7B Decidability in Arithmetic and Linear Theories" data-time="10:30-12:30" data-room="C1.03" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -388,7 +396,7 @@ In this paper, we show that the Orbit Problem is decidable if the target subspac
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:952">
+                <div class="session interval_session" id="session:952" data-date="2026-07-22" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -403,7 +411,7 @@ In this paper, we show that the Orbit Problem is decidable if the target subspac
 
 
                 </div>
-                <div class="session interval_session" id="session:953">
+                <div class="session interval_session" id="session:953" data-date="2026-07-22" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -418,7 +426,7 @@ In this paper, we show that the Orbit Problem is decidable if the target subspac
 
 
                 </div>
-                <div class="session" id="session:954">
+                <div class="session" id="session:954" data-date="2026-07-22" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="954" data-title="Session 8A Foundations of Probabilistic Computation" data-time="14:00-16:00" data-room="B1.04" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -527,7 +535,7 @@ the observation map we are conditioning by.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:955">
+                <div class="session" id="session:955" data-date="2026-07-22" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="955" data-title="Session 8B Graph Isomorphism, Homomorphisms, and Combinatorial Invariants" data-time="14:00-16:00" data-room="C1.03" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -613,7 +621,7 @@ Furthermore, we show homomorphism distinguishing closedness for several graph cl
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:956">
+                <div class="session interval_session" id="session:956" data-date="2026-07-22" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -628,7 +636,7 @@ Furthermore, we show homomorphism distinguishing closedness for several graph cl
 
 
                 </div>
-                <div class="session interval_session" id="session:957">
+                <div class="session interval_session" id="session:957" data-date="2026-07-22" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -643,7 +651,7 @@ Furthermore, we show homomorphism distinguishing closedness for several graph cl
 
 
                 </div>
-                <div class="session" id="session:958">
+                <div class="session" id="session:958" data-date="2026-07-22" data-start="16:30" data-end="17:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="958" data-title="Session 9A Semantics of Programming Languages" data-time="16:30-17:30" data-room="B1.04" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-17:30</span>
@@ -717,7 +725,7 @@ involving laziness in probabilistic programming.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:959">
+                <div class="session" id="session:959" data-date="2026-07-22" data-start="16:30" data-end="17:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="959" data-title="Session 9B Games and Strategies under Uncertainty" data-time="16:30-17:30" data-room="C1.03" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-17:30</span>
@@ -777,7 +785,7 @@ We prove that for any payoff for which the expectation is well-defined under all
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1995">
+                <div class="session" id="session:1995" data-date="2026-07-22" data-start="19:00" data-end="23:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1995" data-title="Banquet" data-time="19:00-23:00" data-room="Praça de Touros do Campo Pequeno" data-group="LICS" data-day="Wednesday, 22 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">19:00-23:00</span>
@@ -815,6 +823,6 @@ We prove that for any payoff for which the expectation is well-defined under all
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

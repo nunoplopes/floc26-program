@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — LICS — Program for Thursday, 23 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -155,7 +163,7 @@
 
                 <div class="date">Thursday, 23 July 2026</div>
 
-                <div class="session" id="session:960">
+                <div class="session" id="session:960" data-date="2026-07-23" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="960" data-title="Keynote by Stéphanie Delaune" data-time="09:00-10:00" data-room="B1.04" data-group="LICS" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -189,7 +197,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:961">
+                <div class="session interval_session" id="session:961" data-date="2026-07-23" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -204,7 +212,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:962">
+                <div class="session interval_session" id="session:962" data-date="2026-07-23" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -219,7 +227,7 @@
 
 
                 </div>
-                <div class="session" id="session:963">
+                <div class="session" id="session:963" data-date="2026-07-23" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="963" data-title="Session 10B Constraint Satisfaction" data-time="10:30-12:30" data-room="C1.03" data-group="LICS" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -329,7 +337,7 @@ colouring conjecture of Barto, Battistelli, and Berg (STACS ’21).</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:964">
+                <div class="session" id="session:964" data-date="2026-07-23" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="964" data-title="Session 10A Constructive Mathematics  & Type Theory" data-time="10:30-12:30" data-room="B1.04" data-group="LICS" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -414,7 +422,7 @@ Our conservativity result applies to "idealized" cubical type theories without e
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:965">
+                <div class="session interval_session" id="session:965" data-date="2026-07-23" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -429,7 +437,7 @@ Our conservativity result applies to "idealized" cubical type theories without e
 
 
                 </div>
-                <div class="session interval_session" id="session:966">
+                <div class="session interval_session" id="session:966" data-date="2026-07-23" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -444,7 +452,7 @@ Our conservativity result applies to "idealized" cubical type theories without e
 
 
                 </div>
-                <div class="session" id="session:967">
+                <div class="session" id="session:967" data-date="2026-07-23" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="967" data-title="Session 11B Modal and Guarded Logics" data-time="14:00-16:00" data-room="C1.03" data-group="LICS" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -541,7 +549,7 @@ Furthermore, we show that the model checking problem for GNTC is $P^{NP[O(log^2 
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:968">
+                <div class="session" id="session:968" data-date="2026-07-23" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="968" data-title="Session 11A Constructive Mathematics  & Type Theory" data-time="14:00-16:00" data-room="B1.04" data-group="LICS" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -626,7 +634,7 @@ Even classically, we think this work can be interesting, since these models are 
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:969">
+                <div class="session interval_session" id="session:969" data-date="2026-07-23" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -641,7 +649,7 @@ Even classically, we think this work can be interesting, since these models are 
 
 
                 </div>
-                <div class="session interval_session" id="session:970">
+                <div class="session interval_session" id="session:970" data-date="2026-07-23" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -656,7 +664,7 @@ Even classically, we think this work can be interesting, since these models are 
 
 
                 </div>
-                <div class="session" id="session:971">
+                <div class="session" id="session:971" data-date="2026-07-23" data-start="16:30" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="971" data-title="Session 12B Proof Theory, Fixed Points, and Meta-Complexity" data-time="16:30-18:00" data-room="C1.03" data-group="LICS" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:00</span>
@@ -750,7 +758,7 @@ This wide range of applicability has sparked interest in designing formal specif
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:972">
+                <div class="session" id="session:972" data-date="2026-07-23" data-start="16:30" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="972" data-title="Session 12A Constructive Mathematics  & Type Theory" data-time="16:30-18:00" data-room="B1.04" data-group="LICS" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:00</span>
@@ -844,6 +852,6 @@ operator with a folding property reminiscent of the covering principles at work 
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

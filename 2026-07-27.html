@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Program for Monday, 27 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -152,7 +160,7 @@
 
                 <div class="date">Monday, 27 July 2026</div>
 
-                <div class="session" id="session:660">
+                <div class="session" id="session:660" data-date="2026-07-27" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="660" data-title="Invited Talk" data-time="09:00-10:00" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -186,7 +194,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1889">
+                <div class="session" id="session:1889" data-date="2026-07-27" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1889" data-title="Invited Talk" data-time="09:00-10:00" data-room="B2.04" data-group="IJCAR" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -220,7 +228,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:823">
+                <div class="session" id="session:823" data-date="2026-07-27" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="823" data-title="ITP Invited Talk: Dominic Mulligan, Amazon Web Services" data-time="09:00-10:00" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -241,7 +249,7 @@
 
 
                 </div>
-                <div class="session" id="session:714">
+                <div class="session" id="session:714" data-date="2026-07-27" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="714" data-title="Invited Talk" data-time="09:00-10:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -270,7 +278,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:715">
+                <div class="session interval_session" id="session:715" data-date="2026-07-27" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -285,7 +293,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:824">
+                <div class="session interval_session" id="session:824" data-date="2026-07-27" data-start="10:00" data-end="11:00">
                     <div class="heading">
                         <span class="interval">10:00-11:00</span>
                         <span class="title">Coffee Break</span>
@@ -300,7 +308,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:1890">
+                <div class="session interval_session" id="session:1890" data-date="2026-07-27" data-start="10:00" data-end="11:00">
                     <div class="heading">
                         <span class="interval">10:00-11:00</span>
                         <span class="title">Coffee Break</span>
@@ -315,7 +323,7 @@
 
 
                 </div>
-                <div class="session" id="session:1891">
+                <div class="session" id="session:1891" data-date="2026-07-27" data-start="10:00" data-end="11:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1891" data-title="Live Competitions Kickoff" data-time="10:00-11:00" data-room="" data-group="IJCAR" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:00-11:00</span>
@@ -352,7 +360,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:661">
+                <div class="session interval_session" id="session:661" data-date="2026-07-27" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -367,7 +375,7 @@
 
 
                 </div>
-                <div class="session" id="session:662">
+                <div class="session" id="session:662" data-date="2026-07-27" data-start="10:30" data-end="11:20">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="662" data-title="Security, Privacy and Hyperproperties" data-time="10:30-11:20" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-11:20</span>
@@ -448,7 +456,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:716">
+                <div class="session" id="session:716" data-date="2026-07-27" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="716" data-title="Symbolic Protocol Verification" data-time="10:30-12:30" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -559,7 +567,7 @@ transfer to OpenLDAP.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:825">
+                <div class="session" id="session:825" data-date="2026-07-27" data-start="11:00" data-end="12:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="825" data-title="ITP Papers: Verification and Model Checking" data-time="11:00-12:00" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:00-12:00</span>
@@ -618,7 +626,7 @@ All of our results have been formalized in the interactive theorem prover Lean o
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1892">
+                <div class="session" id="session:1892" data-date="2026-07-27" data-start="11:00" data-end="12:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1892" data-title="Automation & Unification" data-time="11:00-12:00" data-room="B2.04" data-group="IJCAR" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:00-12:00</span>
@@ -712,7 +720,7 @@ remains an open question.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:663">
+                <div class="session" id="session:663" data-date="2026-07-27" data-start="11:20" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="663" data-title="SMT, SAT & Decision Procedures" data-time="11:20-12:30" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:20-12:30</span>
@@ -812,7 +820,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1893">
+                <div class="session interval_session" id="session:1893" data-date="2026-07-27" data-start="12:00" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:00-14:00</span>
                         <span class="title">Lunch</span>
@@ -827,7 +835,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
 
 
                 </div>
-                <div class="session interval_session" id="session:826">
+                <div class="session interval_session" id="session:826" data-date="2026-07-27" data-start="12:00" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:00-14:00</span>
                         <span class="title">Lunch</span>
@@ -842,7 +850,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
 
 
                 </div>
-                <div class="session interval_session" id="session:717">
+                <div class="session interval_session" id="session:717" data-date="2026-07-27" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -857,7 +865,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
 
 
                 </div>
-                <div class="session interval_session" id="session:664">
+                <div class="session interval_session" id="session:664" data-date="2026-07-27" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -872,7 +880,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
 
 
                 </div>
-                <div class="session" id="session:665">
+                <div class="session" id="session:665" data-date="2026-07-27" data-start="14:00" data-end="15:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="665" data-title="Deductive Verification & Certified Verification" data-time="14:00-15:30" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:30</span>
@@ -1032,7 +1040,7 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1894">
+                <div class="session" id="session:1894" data-date="2026-07-27" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1894" data-title="Formalization & Interactive Proof" data-time="14:00-16:00" data-room="B2.04" data-group="IJCAR" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -1159,7 +1167,7 @@ The deductive engine performs an automated proof search in the labelled sequent 
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:718">
+                <div class="session" id="session:718" data-date="2026-07-27" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="718" data-title="Computer-Aided Cryptography" data-time="14:00-16:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -1262,7 +1270,7 @@ We expand the support for rewinding in EasyCrypt by implementing a version of th
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:827">
+                <div class="session" id="session:827" data-date="2026-07-27" data-start="14:00" data-end="15:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="827" data-title="ITP Papers: AI and ITP" data-time="14:00-15:30" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:30</span>
@@ -1343,7 +1351,7 @@ model decomposes problems.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:828">
+                <div class="session interval_session" id="session:828" data-date="2026-07-27" data-start="15:30" data-end="16:30">
                     <div class="heading">
                         <span class="interval">15:30-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -1358,7 +1366,7 @@ model decomposes problems.</p>
 
 
                 </div>
-                <div class="session interval_session" id="session:666">
+                <div class="session interval_session" id="session:666" data-date="2026-07-27" data-start="15:30" data-end="16:00">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
                         <span class="title">Coffee Break</span>
@@ -1373,7 +1381,7 @@ model decomposes problems.</p>
 
 
                 </div>
-                <div class="session" id="session:667">
+                <div class="session" id="session:667" data-date="2026-07-27" data-start="16:00" data-end="17:50">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="667" data-title="Automata" data-time="16:00-17:50" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:00-17:50</span>
@@ -1530,7 +1538,7 @@ We address this gap by extending the Quantitative Automata Kit (QuAK), a softwar
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1895">
+                <div class="session interval_session" id="session:1895" data-date="2026-07-27" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -1545,7 +1553,7 @@ We address this gap by extending the Quantitative Automata Kit (QuAK), a softwar
 
 
                 </div>
-                <div class="session interval_session" id="session:719">
+                <div class="session interval_session" id="session:719" data-date="2026-07-27" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -1560,7 +1568,7 @@ We address this gap by extending the Quantitative Automata Kit (QuAK), a softwar
 
 
                 </div>
-                <div class="session" id="session:720">
+                <div class="session" id="session:720" data-date="2026-07-27" data-start="16:30" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="720" data-title="Information Flow & Secure Composition" data-time="16:30-18:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:00</span>
@@ -1643,7 +1651,7 @@ In this paper, we present a partial cast calculus λp for gradual information se
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:829">
+                <div class="session" id="session:829" data-date="2026-07-27" data-start="16:30" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="829" data-title="ITP Papers: Formalisation of Mathematics & AI" data-time="16:30-18:00" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:00</span>
@@ -1724,7 +1732,7 @@ We discuss a number of example formalisations from the theory of matching algori
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1896">
+                <div class="session" id="session:1896" data-date="2026-07-27" data-start="16:30" data-end="18:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1896" data-title="Rewriting, Automata, Verification & Fuzzy Logic" data-time="16:30-18:30" data-room="B2.04" data-group="IJCAR" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:30</span>
@@ -1855,7 +1863,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:668">
+                <div class="session" id="session:668" data-date="2026-07-27" data-start="18:00" data-end="19:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="668" data-title="Logic Lounge" data-time="18:00-19:00" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">18:00-19:00</span>
@@ -1889,7 +1897,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1096">
+                <div class="session" id="session:1096" data-date="2026-07-27" data-start="18:00" data-end="19:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1096" data-title="Business meeting" data-time="18:00-19:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">18:00-19:00</span>
@@ -1905,7 +1913,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
 
 
                 </div>
-                <div class="session" id="session:830">
+                <div class="session" id="session:830" data-date="2026-07-27" data-start="18:00" data-end="19:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="830" data-title="Business meeting: AI and ITP conference Series" data-time="18:00-19:00" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">18:00-19:00</span>
@@ -1921,7 +1929,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
 
 
                 </div>
-                <div class="session" id="session:1897">
+                <div class="session" id="session:1897" data-date="2026-07-27" data-start="18:30" data-end="20:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1897" data-title="Business Meeting" data-time="18:30-20:00" data-room="B2.04" data-group="IJCAR" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">18:30-20:00</span>
@@ -1937,7 +1945,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
 
 
                 </div>
-                <div class="session" id="session:831">
+                <div class="session" id="session:831" data-date="2026-07-27" data-start="19:00" data-end="20:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="831" data-title="AI for Math Happy Hour (“Differentiated” Networking)" data-time="19:00-20:00" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">19:00-20:00</span>
@@ -1975,6 +1983,6 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

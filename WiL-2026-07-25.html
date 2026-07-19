@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — WiL — Program for Saturday, 25 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -155,7 +163,7 @@
 
                 <div class="date">Saturday, 25 July 2026</div>
 
-                <div class="session" id="session:1673">
+                <div class="session" id="session:1673" data-date="2026-07-25" data-start="09:00" data-end="09:20">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1673" data-title="Automata" data-time="09:00-09:20" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-09:20</span>
@@ -187,7 +195,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1674">
+                <div class="session" id="session:1674" data-date="2026-07-25" data-start="09:20" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1674" data-title="Graph Theory" data-time="09:20-10:00" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:20-10:00</span>
@@ -245,7 +253,7 @@ bounds on vertex definability.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1675">
+                <div class="session" id="session:1675" data-date="2026-07-25" data-start="10:00" data-end="10:40">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1675" data-title="Algebraic Logic" data-time="10:00-10:40" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:00-10:40</span>
@@ -297,7 +305,7 @@ Taken together, these results establish quad algebras as a coherent and novel co
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1676">
+                <div class="session interval_session" id="session:1676" data-date="2026-07-25" data-start="10:40" data-end="11:00">
                     <div class="heading">
                         <span class="interval">10:40-11:00</span>
                         <span class="title">Coffee Break</span>
@@ -312,7 +320,7 @@ Taken together, these results establish quad algebras as a coherent and novel co
 
 
                 </div>
-                <div class="session" id="session:1677">
+                <div class="session" id="session:1677" data-date="2026-07-25" data-start="11:00" data-end="12:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1677" data-title="Epistemic Logic" data-time="11:00-12:00" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:00-12:00</span>
@@ -398,7 +406,7 @@ Another consideration is about relaxing groundedness for structural inference. S
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1678">
+                <div class="session" id="session:1678" data-date="2026-07-25" data-start="12:00" data-end="12:20">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1678" data-title="Dynamic Epistemic Logic" data-time="12:00-12:20" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">12:00-12:20</span>
@@ -430,7 +438,7 @@ Another consideration is about relaxing groundedness for structural inference. S
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1679">
+                <div class="session" id="session:1679" data-date="2026-07-25" data-start="12:20" data-end="12:40">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1679" data-title="Logic and ML" data-time="12:20-12:40" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">12:20-12:40</span>
@@ -462,7 +470,7 @@ Another consideration is about relaxing groundedness for structural inference. S
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1680">
+                <div class="session interval_session" id="session:1680" data-date="2026-07-25" data-start="12:40" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:40-14:00</span>
                         <span class="title">Lunch</span>
@@ -477,7 +485,7 @@ Another consideration is about relaxing groundedness for structural inference. S
 
 
                 </div>
-                <div class="session" id="session:1681">
+                <div class="session" id="session:1681" data-date="2026-07-25" data-start="14:00" data-end="15:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1681" data-title="Invited Talk: Valeria de Paiva" data-time="14:00-15:00" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:00</span>
@@ -493,7 +501,7 @@ Another consideration is about relaxing groundedness for structural inference. S
 
 
                 </div>
-                <div class="session" id="session:1682">
+                <div class="session" id="session:1682" data-date="2026-07-25" data-start="15:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1682" data-title="Proof Theory" data-time="15:00-16:00" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">15:00-16:00</span>
@@ -557,7 +565,7 @@ We present a translation from a restricted class of cyclic proofs in the system 
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1683">
+                <div class="session interval_session" id="session:1683" data-date="2026-07-25" data-start="16:00" data-end="16:20">
                     <div class="heading">
                         <span class="interval">16:00-16:20</span>
                         <span class="title">Coffee Break</span>
@@ -572,7 +580,7 @@ We present a translation from a restricted class of cyclic proofs in the system 
 
 
                 </div>
-                <div class="session" id="session:1684">
+                <div class="session" id="session:1684" data-date="2026-07-25" data-start="16:20" data-end="17:20">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1684" data-title="Modal Logic" data-time="16:20-17:20" data-room="C5.06" data-group="WiL" data-day="Saturday, 25 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:20-17:20</span>
@@ -743,6 +751,6 @@ Among the simplest and historically most influential systems of DEL is Public An
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

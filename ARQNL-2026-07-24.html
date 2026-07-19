@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — ARQNL — Program for Friday, 24 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -154,7 +162,7 @@
 
                 <div class="date">Friday, 24 July 2026</div>
 
-                <div class="session" id="session:1739">
+                <div class="session" id="session:1739" data-date="2026-07-24" data-start="08:55" data-end="09:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1739" data-title="ARQNL Opening" data-time="08:55-09:00" data-room="C4.01" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">08:55-09:00</span>
@@ -185,7 +193,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1740">
+                <div class="session" id="session:1740" data-date="2026-07-24" data-start="09:00" data-end="09:50">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1740" data-title="ARQNL Invited Talk" data-time="09:00-09:50" data-room="C4.01" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-09:50</span>
@@ -214,7 +222,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1741">
+                <div class="session" id="session:1741" data-date="2026-07-24" data-start="09:50" data-end="10:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1741" data-title="ARQNL Session 1: Modal Logics" data-time="09:50-10:30" data-room="C4.01" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:50-10:30</span>
@@ -257,7 +265,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1742">
+                <div class="session" id="session:1742" data-date="2026-07-24" data-start="10:30" data-end="11:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1742" data-title="Coffee Break (I)" data-time="10:30-11:00" data-room="" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-11:00</span>
@@ -269,7 +277,7 @@
 
 
                 </div>
-                <div class="session" id="session:1744">
+                <div class="session" id="session:1744" data-date="2026-07-24" data-start="11:00" data-end="12:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1744" data-title="ARQNL Session 3: Proof Theory and Substructural Logics" data-time="11:00-12:00" data-room="C4.01" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:00-12:00</span>
@@ -320,7 +328,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1040">
+                <div class="session interval_session" id="session:1040" data-date="2026-07-24" data-start="12:00" data-end="13:30">
                     <div class="heading">
                         <span class="interval">12:00-13:30</span>
                         <span class="title">Lunch</span>
@@ -335,7 +343,7 @@
 
 
                 </div>
-                <div class="session" id="session:1743">
+                <div class="session" id="session:1743" data-date="2026-07-24" data-start="13:30" data-end="14:45">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1743" data-title="ARQNL Session 2: Definite Descriptions and Free Logics" data-time="13:30-14:45" data-room="C4.01" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">13:30-14:45</span>
@@ -398,7 +406,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1745">
+                <div class="session" id="session:1745" data-date="2026-07-24" data-start="14:45" data-end="15:10">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1745" data-title="Coffee Break (II)" data-time="14:45-15:10" data-room="" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:45-15:10</span>
@@ -410,7 +418,7 @@
 
 
                 </div>
-                <div class="session" id="session:1746">
+                <div class="session" id="session:1746" data-date="2026-07-24" data-start="15:10" data-end="16:10">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1746" data-title="ARQNL Session 4: Tableaux" data-time="15:10-16:10" data-room="C4.01" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">15:10-16:10</span>
@@ -461,7 +469,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1747">
+                <div class="session" id="session:1747" data-date="2026-07-24" data-start="16:10" data-end="16:40">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1747" data-title="Coffee Break (III)" data-time="16:10-16:40" data-room="" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:10-16:40</span>
@@ -473,7 +481,7 @@
 
 
                 </div>
-                <div class="session" id="session:1748">
+                <div class="session" id="session:1748" data-date="2026-07-24" data-start="16:40" data-end="17:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1748" data-title="ARQNL Session 5: Embeddings and Benchmarks" data-time="16:40-17:30" data-room="C4.01" data-group="ARQNL" data-day="Friday, 24 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:40-17:30</span>
@@ -547,6 +555,6 @@
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

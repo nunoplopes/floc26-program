@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — KR — Program for Thursday, 23 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -155,7 +163,7 @@
 
                 <div class="date">Thursday, 23 July 2026</div>
 
-                <div class="session" id="session:902">
+                <div class="session" id="session:902" data-date="2026-07-23" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="902" data-title="KR Invited: Joao Marques-Silva" data-time="09:00-10:00" data-room="Grande Auditório" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -189,7 +197,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:903">
+                <div class="session interval_session" id="session:903" data-date="2026-07-23" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -204,7 +212,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:904">
+                <div class="session interval_session" id="session:904" data-date="2026-07-23" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -219,7 +227,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:905">
+                <div class="session interval_session" id="session:905" data-date="2026-07-23" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -234,7 +242,7 @@
 
 
                 </div>
-                <div class="session" id="session:906">
+                <div class="session" id="session:906" data-date="2026-07-23" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="906" data-title="Argumentation 2" data-time="10:30-12:30" data-room="B1.03" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -342,7 +350,7 @@ with maximal consistent sets of norms and defaults and stable extensions of argu
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:907">
+                <div class="session" id="session:907" data-date="2026-07-23" data-start="10:30" data-end="12:25">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="907" data-title="Description logic and learning" data-time="10:30-12:25" data-room="B2.03" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:25</span>
@@ -443,7 +451,7 @@ However, the power of convexity is rarely leveraged during the actual learning t
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:908">
+                <div class="session" id="session:908" data-date="2026-07-23" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="908" data-title="Neural-symbolic learning and logic" data-time="10:30-12:30" data-room="Grande Auditório" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -548,7 +556,7 @@ Experiments across eight benchmark domains validate our approach.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:909">
+                <div class="session interval_session" id="session:909" data-date="2026-07-23" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -563,7 +571,7 @@ Experiments across eight benchmark domains validate our approach.</p>
 
 
                 </div>
-                <div class="session interval_session" id="session:910">
+                <div class="session interval_session" id="session:910" data-date="2026-07-23" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -578,7 +586,7 @@ Experiments across eight benchmark domains validate our approach.</p>
 
 
                 </div>
-                <div class="session interval_session" id="session:911">
+                <div class="session interval_session" id="session:911" data-date="2026-07-23" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -593,7 +601,7 @@ Experiments across eight benchmark domains validate our approach.</p>
 
 
                 </div>
-                <div class="session" id="session:912">
+                <div class="session" id="session:912" data-date="2026-07-23" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="912" data-title="Answer Set Programming 2" data-time="14:00-16:00" data-room="B1.03" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -700,7 +708,7 @@ Experimental results demonstrate that our technique consistently outperforms sta
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:913">
+                <div class="session" id="session:913" data-date="2026-07-23" data-start="14:00" data-end="15:40">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="913" data-title="Beyond SAT" data-time="14:00-15:40" data-room="B2.03" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:40</span>
@@ -786,7 +794,7 @@ Experiments demonstrate that our method improves performance compared to current
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:914">
+                <div class="session" id="session:914" data-date="2026-07-23" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="914" data-title="Machine learning and explanation" data-time="14:00-16:00" data-room="Grande Auditório" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -890,7 +898,7 @@ We ask whether trained networks actually implement the logical circuits that the
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:915">
+                <div class="session interval_session" id="session:915" data-date="2026-07-23" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -905,7 +913,7 @@ We ask whether trained networks actually implement the logical circuits that the
 
 
                 </div>
-                <div class="session interval_session" id="session:916">
+                <div class="session interval_session" id="session:916" data-date="2026-07-23" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -920,7 +928,7 @@ We ask whether trained networks actually implement the logical circuits that the
 
 
                 </div>
-                <div class="session interval_session" id="session:917">
+                <div class="session interval_session" id="session:917" data-date="2026-07-23" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -935,7 +943,7 @@ We ask whether trained networks actually implement the logical circuits that the
 
 
                 </div>
-                <div class="session" id="session:918">
+                <div class="session" id="session:918" data-date="2026-07-23" data-start="16:30" data-end="17:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="918" data-title="KR closing session" data-time="16:30-17:00" data-room="Grande Auditório" data-group="KR" data-day="Thursday, 23 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-17:00</span>
@@ -973,6 +981,6 @@ We ask whether trained networks actually implement the logical circuits that the
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

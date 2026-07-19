@@ -136,6 +136,32 @@ if (themeToggleBtn) {
     prefersDarkQuery.addEventListener('change', updateThemeToggleIcon);
 }
 
+const headerMenuBtn = document.getElementById('header_menu_btn');
+const headerMenuPanel = document.getElementById('header_menu_panel');
+
+if (headerMenuBtn && headerMenuPanel) {
+    const closeHeaderMenu = () => {
+        headerMenuPanel.classList.remove('open');
+        headerMenuBtn.setAttribute('aria-expanded', 'false');
+    };
+
+    headerMenuBtn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isOpen = headerMenuPanel.classList.toggle('open');
+        headerMenuBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!headerMenuPanel.classList.contains('open')) return;
+        if (event.target === headerMenuBtn || headerMenuPanel.contains(event.target)) return;
+        closeHeaderMenu();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeHeaderMenu();
+    });
+}
+
 const AGENDA_STORAGE_KEY = 'floc:agenda-favorites';
 
 function getAgendaFavorites() {
@@ -187,6 +213,113 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
         applyState(index < 0);
     });
 });
+
+(function () {
+    const nowLabelsEl = document.getElementById('now_labels');
+    const sessionEls = document.querySelectorAll('.session[data-date]');
+    if (!nowLabelsEl || sessionEls.length === 0) return;
+
+    fetch('build-info.json', { cache: 'no-store' })
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data) => {
+            const timeZone = (data && data.eventTimeZone) || 'UTC';
+            highlightCurrentSession(getEventNowStamp(timeZone));
+        })
+        .catch(() => {});
+
+    function getEventNowStamp(timeZone) {
+        const parts = new Intl.DateTimeFormat('en-CA', {
+            timeZone,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+        }).formatToParts(new Date());
+        const get = (type) => parts.find((p) => p.type === type).value;
+        return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}`;
+    }
+
+    function highlightCurrentSession(nowStamp) {
+        let matched = null;
+
+        sessionEls.forEach((el) => {
+            const date = el.dataset.date;
+            const start = el.dataset.start;
+            const end = el.dataset.end;
+            if (!date || !start || !end) return;
+
+            const isNow = nowStamp >= `${date}T${start}` && nowStamp < `${date}T${end}`;
+            if (!isNow) return;
+
+            el.classList.add('session_now');
+            if (!el.querySelector('.now_badge')) {
+                const badge = document.createElement('span');
+                badge.className = 'now_badge';
+                badge.textContent = nowLabelsEl.dataset.badgeLabel || 'NOW';
+                const heading = el.querySelector('.heading');
+                if (heading) heading.appendChild(badge);
+            }
+
+            if (!matched) matched = el;
+        });
+
+        const pageTitle = document.getElementById('pagetitle');
+        if (matched && pageTitle && !document.getElementById('jump_to_now_link')) {
+            const link = document.createElement('a');
+            link.id = 'jump_to_now_link';
+            link.className = 'jump_to_now_link';
+            link.href = `#${matched.id}`;
+            link.textContent = nowLabelsEl.dataset.jumpLabel || 'Jump to current session';
+            pageTitle.insertAdjacentElement('afterend', link);
+        }
+    }
+})();
+
+(function () {
+    const nowLink = document.getElementById('now_link');
+    const todayLink = document.getElementById('today_link');
+    if (!nowLink && !todayLink) return;
+
+    function getEventNowStamp(timeZone) {
+        const parts = new Intl.DateTimeFormat('en-CA', {
+            timeZone,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+        }).formatToParts(new Date());
+        const get = (type) => parts.find((p) => p.type === type).value;
+        return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}`;
+    }
+
+    Promise.all([
+        fetch('now-data.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : [])),
+        fetch('build-info.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)),
+    ]).then(([sessions, buildInfo]) => {
+        const timeZone = (buildInfo && buildInfo.eventTimeZone) || 'UTC';
+        const nowStamp = getEventNowStamp(timeZone);
+
+        if (nowLink) {
+            const hasCurrentOrUpcoming = sessions.some((s) => s.end && `${s.date}T${s.end}` > nowStamp);
+            if (!hasCurrentOrUpcoming) {
+                nowLink.style.display = 'none';
+            }
+        }
+
+        if (todayLink) {
+            const todayIso = nowStamp.slice(0, 10);
+            const eventDays = (buildInfo && buildInfo.eventDays) || [];
+            if (eventDays.includes(todayIso)) {
+                todayLink.href = `${todayIso}.html`;
+                todayLink.style.display = 'flex';
+            }
+        }
+    }).catch(() => {});
+})();
 
 const fabTop = document.getElementById('fab_top');
 if (fabTop) {

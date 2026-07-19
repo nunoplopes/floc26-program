@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — DL — Program for Sunday, 19 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -155,7 +163,7 @@
 
                 <div class="date">Sunday, 19 July 2026</div>
 
-                <div class="session" id="session:1130">
+                <div class="session" id="session:1130" data-date="2026-07-19" data-start="09:15" data-end="10:10">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1130" data-title="Invited Speaker: Stefan Borgwardt" data-time="09:15-10:10" data-room="B1.03" data-group="DL" data-day="Sunday, 19 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:15-10:10</span>
@@ -189,7 +197,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1131">
+                <div class="session interval_session" id="session:1131" data-date="2026-07-19" data-start="10:10" data-end="10:40">
                     <div class="heading">
                         <span class="interval">10:10-10:40</span>
                         <span class="title">Coffee Break</span>
@@ -204,7 +212,7 @@
 
 
                 </div>
-                <div class="session" id="session:1132">
+                <div class="session" id="session:1132" data-date="2026-07-19" data-start="10:40" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1132" data-title="Explanations" data-time="10:40-12:30" data-room="B1.03" data-group="DL" data-day="Sunday, 19 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:40-12:30</span>
@@ -315,7 +323,7 @@ These findings indicate that even when reasoning is provided, current LLMs face 
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1133">
+                <div class="session interval_session" id="session:1133" data-date="2026-07-19" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -330,7 +338,7 @@ These findings indicate that even when reasoning is provided, current LLMs face 
 
 
                 </div>
-                <div class="session" id="session:1134">
+                <div class="session" id="session:1134" data-date="2026-07-19" data-start="14:00" data-end="15:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1134" data-title="Temporal Extensions" data-time="14:00-15:00" data-room="B1.03" data-group="DL" data-day="Sunday, 19 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:00</span>
@@ -398,7 +406,7 @@ These findings indicate that even when reasoning is provided, current LLMs face 
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1135">
+                <div class="session" id="session:1135" data-date="2026-07-19" data-start="15:10" data-end="16:10">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1135" data-title="All about DL-Lite" data-time="15:10-16:10" data-room="B1.03" data-group="DL" data-day="Sunday, 19 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">15:10-16:10</span>
@@ -465,7 +473,7 @@ horn.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1136">
+                <div class="session" id="session:1136" data-date="2026-07-19" data-start="16:10" data-end="16:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1136" data-title="Espresso Break" data-time="16:10-16:30" data-room="" data-group="DL" data-day="Sunday, 19 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:10-16:30</span>
@@ -477,7 +485,7 @@ horn.</p>
 
 
                 </div>
-                <div class="session" id="session:1137">
+                <div class="session" id="session:1137" data-date="2026-07-19" data-start="16:30" data-end="17:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1137" data-title="Business Meeting" data-time="16:30-17:30" data-room="B1.03" data-group="DL" data-day="Sunday, 19 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-17:30</span>
@@ -515,6 +523,6 @@ horn.</p>
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

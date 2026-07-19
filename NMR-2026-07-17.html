@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — NMR — Program for Friday, 17 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -155,7 +163,7 @@
 
                 <div class="date">Friday, 17 July 2026</div>
 
-                <div class="session" id="session:1390">
+                <div class="session" id="session:1390" data-date="2026-07-17" data-start="09:15" data-end="09:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1390" data-title="Opening" data-time="09:15-09:30" data-room="B1.04" data-group="NMR" data-day="Friday, 17 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:15-09:30</span>
@@ -176,7 +184,7 @@
 
 
                 </div>
-                <div class="session" id="session:1391">
+                <div class="session" id="session:1391" data-date="2026-07-17" data-start="09:30" data-end="10:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1391" data-title="Leila Amgoud" data-time="09:30-10:30" data-room="B1.04" data-group="NMR" data-day="Friday, 17 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:30-10:30</span>
@@ -197,7 +205,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:1392">
+                <div class="session interval_session" id="session:1392" data-date="2026-07-17" data-start="10:30" data-end="11:00">
                     <div class="heading">
                         <span class="interval">10:30-11:00</span>
                         <span class="title">Coffee Break</span>
@@ -212,7 +220,7 @@
 
 
                 </div>
-                <div class="session" id="session:1393">
+                <div class="session" id="session:1393" data-date="2026-07-17" data-start="11:00" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1393" data-title="Argumentation 1" data-time="11:00-12:30" data-room="B1.04" data-group="NMR" data-day="Friday, 17 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:00-12:30</span>
@@ -284,7 +292,7 @@ Finally, we identified a connection between labelling-based realizability and th
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1394">
+                <div class="session interval_session" id="session:1394" data-date="2026-07-17" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -299,7 +307,7 @@ Finally, we identified a connection between labelling-based realizability and th
 
 
                 </div>
-                <div class="session" id="session:1395">
+                <div class="session" id="session:1395" data-date="2026-07-17" data-start="14:00" data-end="15:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1395" data-title="Belief Change" data-time="14:00-15:30" data-room="B1.04" data-group="NMR" data-day="Friday, 17 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:30</span>
@@ -372,7 +380,7 @@ Epistemic preferences form the backbone of \emph{belief contraction operators}, 
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:1396">
+                <div class="session interval_session" id="session:1396" data-date="2026-07-17" data-start="15:30" data-end="16:00">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
                         <span class="title">Coffee Break</span>
@@ -387,7 +395,7 @@ Epistemic preferences form the backbone of \emph{belief contraction operators}, 
 
 
                 </div>
-                <div class="session" id="session:1397">
+                <div class="session" id="session:1397" data-date="2026-07-17" data-start="16:00" data-end="17:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1397" data-title="NMR & Explainable AI" data-time="16:00-17:30" data-room="B1.04" data-group="NMR" data-day="Friday, 17 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:00-17:30</span>
@@ -463,7 +471,7 @@ Finally, we prove \textsf{NP-completeness} of the bounded-horizon feasibility de
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1398">
+                <div class="session" id="session:1398" data-date="2026-07-17" data-start="17:00" data-end="17:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1398" data-title="Closing" data-time="17:00-17:30" data-room="B1.04" data-group="NMR" data-day="Friday, 17 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">17:00-17:30</span>
@@ -501,6 +509,6 @@ Finally, we prove \textsf{NP-completeness} of the bounded-horizon feasibility de
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

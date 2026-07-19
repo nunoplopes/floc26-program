@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — CSF — Program</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -157,7 +165,7 @@
 
                 <div class="date">Sunday, 26 July 2026</div>
 
-                <div class="session" id="session:2002">
+                <div class="session" id="session:2002" data-date="2026-07-26" data-start="08:45" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="2002" data-title="Keynote: The Lean Theorem Prover: Design, Evolution, and Impact" data-time="08:45-10:00" data-room="Grande Auditório" data-group="CSF" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">08:45-10:00</span>
@@ -183,7 +191,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:708">
+                <div class="session interval_session" id="session:708" data-date="2026-07-26" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -198,7 +206,7 @@
 
 
                 </div>
-                <div class="session" id="session:709">
+                <div class="session" id="session:709" data-date="2026-07-26" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="709" data-title="Differential Privacy" data-time="10:30-12:30" data-room="B2.03" data-group="CSF" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -275,7 +283,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:710">
+                <div class="session interval_session" id="session:710" data-date="2026-07-26" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -290,7 +298,7 @@
 
 
                 </div>
-                <div class="session" id="session:711">
+                <div class="session" id="session:711" data-date="2026-07-26" data-start="14:00" data-end="15:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="711" data-title="Quantitative Information Flow" data-time="14:00-15:30" data-room="B2.03" data-group="CSF" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-15:30</span>
@@ -348,7 +356,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:712">
+                <div class="session interval_session" id="session:712" data-date="2026-07-26" data-start="15:30" data-end="16:00">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
                         <span class="title">Coffee Break</span>
@@ -363,7 +371,7 @@
 
 
                 </div>
-                <div class="session" id="session:713">
+                <div class="session" id="session:713" data-date="2026-07-26" data-start="16:00" data-end="17:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="713" data-title="Side-Channel & Speculative Defenses" data-time="16:00-17:00" data-room="B2.03" data-group="CSF" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:00-17:00</span>
@@ -405,7 +413,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1981">
+                <div class="session" id="session:1981" data-date="2026-07-26" data-start="18:00" data-end="20:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1981" data-title="Reception" data-time="18:00-20:00" data-room="Pátio da Galé" data-group="CSF" data-day="Sunday, 26 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">18:00-20:00</span>
@@ -423,7 +431,7 @@
                 </div>
                 <div class="date">Monday, 27 July 2026</div>
 
-                <div class="session" id="session:714">
+                <div class="session" id="session:714" data-date="2026-07-27" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="714" data-title="Invited Talk" data-time="09:00-10:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -452,7 +460,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:715">
+                <div class="session interval_session" id="session:715" data-date="2026-07-27" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -467,7 +475,7 @@
 
 
                 </div>
-                <div class="session" id="session:716">
+                <div class="session" id="session:716" data-date="2026-07-27" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="716" data-title="Symbolic Protocol Verification" data-time="10:30-12:30" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -542,7 +550,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:717">
+                <div class="session interval_session" id="session:717" data-date="2026-07-27" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -557,7 +565,7 @@
 
 
                 </div>
-                <div class="session" id="session:718">
+                <div class="session" id="session:718" data-date="2026-07-27" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="718" data-title="Computer-Aided Cryptography" data-time="14:00-16:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -637,7 +645,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:719">
+                <div class="session interval_session" id="session:719" data-date="2026-07-27" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -652,7 +660,7 @@
 
 
                 </div>
-                <div class="session" id="session:720">
+                <div class="session" id="session:720" data-date="2026-07-27" data-start="16:30" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="720" data-title="Information Flow & Secure Composition" data-time="16:30-18:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:00</span>
@@ -707,7 +715,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1096">
+                <div class="session" id="session:1096" data-date="2026-07-27" data-start="18:00" data-end="19:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1096" data-title="Business meeting" data-time="18:00-19:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">18:00-19:00</span>
@@ -725,7 +733,7 @@
                 </div>
                 <div class="date">Tuesday, 28 July 2026</div>
 
-                <div class="session" id="session:2003">
+                <div class="session" id="session:2003" data-date="2026-07-28" data-start="08:45" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="2003" data-title="Keynote: Trustworthy Neuro-Symbolic Programming with Informal Specifications" data-time="08:45-10:00" data-room="Grande Auditório" data-group="CSF" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">08:45-10:00</span>
@@ -751,7 +759,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:721">
+                <div class="session interval_session" id="session:721" data-date="2026-07-28" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -766,7 +774,7 @@
 
 
                 </div>
-                <div class="session" id="session:722">
+                <div class="session" id="session:722" data-date="2026-07-28" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="722" data-title="E-Voting & Anonymity" data-time="10:30-12:30" data-room="B2.03" data-group="CSF" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -847,7 +855,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:723">
+                <div class="session interval_session" id="session:723" data-date="2026-07-28" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -862,7 +870,7 @@
 
 
                 </div>
-                <div class="session" id="session:724">
+                <div class="session" id="session:724" data-date="2026-07-28" data-start="14:00" data-end="16:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="724" data-title="Cryptographic Primitives & Protocols" data-time="14:00-16:00" data-room="B2.03" data-group="CSF" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-16:00</span>
@@ -941,7 +949,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:725">
+                <div class="session interval_session" id="session:725" data-date="2026-07-28" data-start="16:00" data-end="16:30">
                     <div class="heading">
                         <span class="interval">16:00-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -956,7 +964,7 @@
 
 
                 </div>
-                <div class="session" id="session:726">
+                <div class="session" id="session:726" data-date="2026-07-28" data-start="16:30" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="726" data-title="Machine Learning Security & Privacy" data-time="16:30-18:00" data-room="B2.03" data-group="CSF" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:30-18:00</span>
@@ -1011,7 +1019,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1982">
+                <div class="session" id="session:1982" data-date="2026-07-28" data-start="19:00" data-end="23:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1982" data-title="Banquet" data-time="19:00-23:00" data-room="Pavilhão Carlos Lopes" data-group="CSF" data-day="Tuesday, 28 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">19:00-23:00</span>
@@ -1029,7 +1037,7 @@
                 </div>
                 <div class="date">Wednesday, 29 July 2026</div>
 
-                <div class="session" id="session:727">
+                <div class="session" id="session:727" data-date="2026-07-29" data-start="09:00" data-end="10:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="727" data-title="Authenticity & Identity" data-time="09:00-10:30" data-room="B2.03" data-group="CSF" data-day="Wednesday, 29 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:30</span>
@@ -1082,7 +1090,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:728">
+                <div class="session interval_session" id="session:728" data-date="2026-07-29" data-start="10:30" data-end="11:00">
                     <div class="heading">
                         <span class="interval">10:30-11:00</span>
                         <span class="title">Coffee Break</span>
@@ -1097,7 +1105,7 @@
 
 
                 </div>
-                <div class="session" id="session:729">
+                <div class="session" id="session:729" data-date="2026-07-29" data-start="11:00" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="729" data-title="Attack Trees & Risk Analysis" data-time="11:00-12:30" data-room="B2.03" data-group="CSF" data-day="Wednesday, 29 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">11:00-12:30</span>
@@ -1150,7 +1158,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:730">
+                <div class="session interval_session" id="session:730" data-date="2026-07-29" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -1165,7 +1173,7 @@
 
 
                 </div>
-                <div class="session interval_session" id="session:731">
+                <div class="session interval_session" id="session:731" data-date="2026-07-29" data-start="15:30" data-end="16:30">
                     <div class="heading">
                         <span class="interval">15:30-16:30</span>
                         <span class="title">Coffee Break</span>
@@ -1202,6 +1210,6 @@
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

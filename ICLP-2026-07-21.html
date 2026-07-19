@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — ICLP — Program for Tuesday, 21 July 2026</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=82e1e2915c" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=f3599a3b0b" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -21,12 +21,20 @@
                 <a href="index.html"><img class="event_logo" src="event_logo.png" alt="Federated Logic Conference 2026" /></a>
                 <div id="title">FEDERATED LOGIC CONFERENCE 2026</div>
                 <div class="header_fabs">
-                    <a id="agenda_link" class="header_fab" href="agenda.html" title="My Agenda" aria-label="My Agenda">★</a>
                     <button id="theme_toggle_btn" class="header_fab" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
-                    <button id="install_pwa_btn" class="header_fab" style="display:none;" title="Install as app" aria-label="Install as app">📥</button>
+                    <div class="header_menu">
+                        <button id="header_menu_btn" class="header_fab" title="Menu" aria-label="Menu" aria-haspopup="true" aria-expanded="false">☰</button>
+                        <div id="header_menu_panel" class="header_menu_panel">
+                            <a id="today_link" href="#" style="display:none;" aria-label="Today"><span class="header_menu_icon">📅</span>Today</a>
+                            <a id="now_link" href="now.html" aria-label="Now and Next"><span class="header_menu_icon">🕐</span>Now and Next</a>
+                            <a id="agenda_link" href="agenda.html" aria-label="My Agenda"><span class="header_menu_icon">★</span>My Agenda</a>
+                            <button id="install_pwa_btn" type="button" style="display:none;" aria-label="Install as app"><span class="header_menu_icon">📥</span>Install as app</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="pwa_labels" style="display:none;" data-update-message="A new version is available." data-update-action="Reload"></div>
+            <div id="now_labels" style="display:none;" data-badge-label="NOW" data-jump-label="Jump to the session happening now"></div>
 
 
             <div id="main_menu">
@@ -156,7 +164,7 @@
 
                 <div class="date">Tuesday, 21 July 2026</div>
 
-                <div class="session" id="session:766">
+                <div class="session" id="session:766" data-date="2026-07-21" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="766" data-title="Invited Talk 1" data-time="09:00-10:00" data-room="C1.04" data-group="ICLP" data-day="Tuesday, 21 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">09:00-10:00</span>
@@ -185,7 +193,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:767">
+                <div class="session interval_session" id="session:767" data-date="2026-07-21" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
                         <span class="title">Coffee Break</span>
@@ -200,7 +208,7 @@
 
 
                 </div>
-                <div class="session" id="session:768">
+                <div class="session" id="session:768" data-date="2026-07-21" data-start="10:30" data-end="12:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="768" data-title="Block 4 (4 TPLP)" data-time="10:30-12:30" data-room="C1.04" data-group="ICLP" data-day="Tuesday, 21 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">10:30-12:30</span>
@@ -303,7 +311,7 @@ symbolic reasoning and interpreter-based feedback.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:769">
+                <div class="session interval_session" id="session:769" data-date="2026-07-21" data-start="12:30" data-end="14:00">
                     <div class="heading">
                         <span class="interval">12:30-14:00</span>
                         <span class="title">Lunch</span>
@@ -318,7 +326,7 @@ symbolic reasoning and interpreter-based feedback.</p>
 
 
                 </div>
-                <div class="session" id="session:770">
+                <div class="session" id="session:770" data-date="2026-07-21" data-start="14:00" data-end="14:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="770" data-title="20 Years Test of Time Award" data-time="14:00-14:30" data-room="C1.04" data-group="ICLP" data-day="Tuesday, 21 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:00-14:30</span>
@@ -334,7 +342,7 @@ symbolic reasoning and interpreter-based feedback.</p>
 
 
                 </div>
-                <div class="session" id="session:771">
+                <div class="session" id="session:771" data-date="2026-07-21" data-start="14:30" data-end="15:30">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="771" data-title="Block 5 (2 TPLP)" data-time="14:30-15:30" data-room="C1.04" data-group="ICLP" data-day="Tuesday, 21 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">14:30-15:30</span>
@@ -392,7 +400,7 @@ symbolic reasoning and interpreter-based feedback.</p>
                         </tr>
                     </table>
                 </div>
-                <div class="session interval_session" id="session:772">
+                <div class="session interval_session" id="session:772" data-date="2026-07-21" data-start="15:30" data-end="16:00">
                     <div class="heading">
                         <span class="interval">15:30-16:00</span>
                         <span class="title">Coffee Break</span>
@@ -407,7 +415,7 @@ symbolic reasoning and interpreter-based feedback.</p>
 
 
                 </div>
-                <div class="session" id="session:773">
+                <div class="session" id="session:773" data-date="2026-07-21" data-start="16:00" data-end="18:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="773" data-title="Block 6 (8 TC)" data-time="16:00-18:00" data-room="C1.04" data-group="ICLP" data-day="Tuesday, 21 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">16:00-18:00</span>
@@ -596,7 +604,7 @@ This paper describes this experiment and provides the main details so that it ca
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:1985">
+                <div class="session" id="session:1985" data-date="2026-07-21" data-start="18:00" data-end="19:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="1985" data-title="ALP Business Meeting" data-time="18:00-19:00" data-room="C1.04" data-group="ICLP" data-day="Tuesday, 21 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
                         <span class="interval">18:00-19:00</span>
@@ -634,6 +642,6 @@ This paper describes this experiment and provides the main details so that it ca
 <a id="fab_top" href="#" title="Back to top" aria-label="Back to top">↑</a>
 
 
-<script src="site.js?v=49c8ce5ba3"></script>
+<script src="site.js?v=28a1179458"></script>
 </body>
 </html>

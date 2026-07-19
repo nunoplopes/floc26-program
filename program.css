@@ -239,6 +239,39 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 }
 .header_fab:hover { transform: scale(1.1); box-shadow: 0 4px 12px var(--color-shadow); }
 
+.header_menu { position: relative; }
+.header_menu_panel {
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    min-width: 190px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px var(--color-shadow);
+    padding: 6px;
+    z-index: 20;
+}
+.header_menu_panel.open { display: flex; flex-direction: column; }
+.header_menu_panel a, .header_menu_panel button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+.header_menu_panel a:hover, .header_menu_panel button:hover { background: var(--color-bg-menu2-hover); }
+.header_menu_icon { font-size: 17px; width: 20px; text-align: center; flex: 0 0 auto; }
+
 #main_menu { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--color-border-light); }
 #main_menu a { display: inline-block; padding: 8px 18px; font-size: 15px; font-weight: 600; background: var(--color-bg-menu); color: var(--color-link); text-decoration: none; border-radius: 4px; text-transform: uppercase; }
 #main_menu a.selected { background: var(--color-accent); color: var(--color-accent-contrast); }
@@ -271,6 +304,10 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .session.interval_session { border-left-color: var(--color-border-interval); background: var(--color-bg-muted); }
 .session.interval_session .title { font-weight: normal; color: var(--color-text-muted-3); }
 .session .heading { margin-bottom: 4px; }
+.session.session_now { border-left-color: var(--color-accent); box-shadow: 0 0 0 1px var(--color-accent); }
+.now_badge { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 10px; background: var(--color-accent); color: #fff; font-size: 11px; font-weight: bold; letter-spacing: 0.5px; vertical-align: middle; }
+.jump_to_now_link { display: inline-block; margin: 4px 0 14px 0; padding: 4px 10px; border: 1px solid var(--color-accent); border-radius: 4px; color: var(--color-accent); text-decoration: none; font-size: 13px; }
+.jump_to_now_link:hover { background: var(--color-accent); color: #fff; }
 .favorite_btn { background: none; border: none; cursor: pointer; font-size: 22px; color: var(--color-text-muted-4); vertical-align: middle; margin-right: 6px; padding: 0; line-height: 1; }
 .favorite_btn:hover { color: var(--color-accent); }
 .favorite_btn.favorited { color: var(--color-accent); }
