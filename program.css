@@ -311,6 +311,8 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .now_badge { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 10px; background: var(--color-accent); color: #fff; font-size: 11px; font-weight: bold; letter-spacing: 0.5px; vertical-align: middle; }
 .jump_to_now_link { display: inline-block; margin: 4px 0 14px 0; padding: 4px 10px; border: 1px solid var(--color-accent); border-radius: 4px; color: var(--color-accent); text-decoration: none; font-size: 13px; }
 .jump_to_now_link:hover { background: var(--color-accent); color: #fff; }
+#toggle_abstracts_btn { font-family: inherit; }
+#content.abstracts_hidden .abstract { display: none; }
 .favorite_btn { background: none; border: none; cursor: pointer; font-size: 22px; color: var(--color-text-muted-4); vertical-align: middle; margin-right: 6px; padding: 0; line-height: 1; }
 .favorite_btn:hover { color: var(--color-accent); }
 .favorite_btn.favorited { color: var(--color-accent); }

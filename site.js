@@ -162,6 +162,28 @@ if (headerMenuBtn && headerMenuPanel) {
     });
 }
 
+const toggleAbstractsBtn = document.getElementById('toggle_abstracts_btn');
+const contentEl = document.getElementById('content');
+
+if (toggleAbstractsBtn && contentEl) {
+    const ABSTRACTS_HIDDEN_KEY = 'floc:hide-abstracts';
+    const hideLabel = toggleAbstractsBtn.dataset.hideLabel || toggleAbstractsBtn.textContent;
+    const showLabel = toggleAbstractsBtn.dataset.showLabel || toggleAbstractsBtn.textContent;
+
+    const applyAbstractsState = (hidden) => {
+        contentEl.classList.toggle('abstracts_hidden', hidden);
+        toggleAbstractsBtn.textContent = hidden ? showLabel : hideLabel;
+    };
+
+    applyAbstractsState(localStorage.getItem(ABSTRACTS_HIDDEN_KEY) === '1');
+
+    toggleAbstractsBtn.addEventListener('click', () => {
+        const hidden = !contentEl.classList.contains('abstracts_hidden');
+        localStorage.setItem(ABSTRACTS_HIDDEN_KEY, hidden ? '1' : '0');
+        applyAbstractsState(hidden);
+    });
+}
+
 const AGENDA_STORAGE_KEY = 'floc:agenda-favorites';
 
 function getAgendaFavorites() {
