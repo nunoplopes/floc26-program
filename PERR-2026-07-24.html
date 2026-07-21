@@ -188,6 +188,11 @@
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Radboud University Nijmegen</div>
                                 </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Rewriting induction is a form of inductive theorem proving to show that two terms in a term rewriting system compute the same value. This is a basic, easily understandable proof system -- for term rewriting systems. But what if we want to use it on functional programs? We can deal with in-built data structures like integers, but once we encounter higher-order variables -- a staple in any functional language -- new questions arise. Questions such as "what does equivalence even mean?" and "can I analyse these two tiny functions without knowing the entire program around it?" and "okay, but does this ever work for actually practical questions?".
+
+In this talk, I will discuss some possible answers to these questions, and show how we can use rewriting induction in general to analyse simple functional programs.</p>
+                                </div>
                             </td>
                         </tr>
                         <tr class="talk" id="talk:1984">
@@ -195,7 +200,7 @@
                             <td>
                                 <div class="title">Interaction Equivalence <a class="abstract_link" href="PERR-2026-07-24.html#talk:1984">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person27123_146796.html">Beniamino Accattoli</a><sup>1</sup>, <a class="person" href="person24244.html">Adrienne Lancelot</a><sup>2</sup>, <a class="person" href="person144559.html">Giulio Manzonetto</a><sup>3</sup>, <a class="person" href="person24978.html">Gabriele Vanoni</a><sup>3</sup>                                </div>
+<a class="person" href="person27123_151578.html">Beniamino Accattoli</a><sup>1</sup>, <a class="person" href="person24244.html">Adrienne Lancelot</a><sup>2</sup>, <a class="person" href="person149341.html">Giulio Manzonetto</a><sup>3</sup>, <a class="person" href="person24978.html">Gabriele Vanoni</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> INRIA & LIX, Ecole Polytechnique</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Bologna</div>
@@ -246,7 +251,7 @@ In the paradigmatic case of the untyped 𝝺-calculus, the talk will introduce _
                             <td>
                                 <div class="title">Semantically Descriptive Similarity <a class="abstract_link" href="PERR-2026-07-24.html#talk:1985">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24899.html">Oskar Hovmøller Dinesen</a><sup>1</sup>, <a class="person" href="person146801.html">Christian Gram Kalhauge</a><sup>1</sup>                                </div>
+<a class="person" href="person24899.html">Oskar Hovmøller Dinesen</a><sup>1</sup>, <a class="person" href="person151583.html">Christian Gram Kalhauge</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> DTU (Technical University of Denmark)</div>
                                 </div>
@@ -269,7 +274,7 @@ This indicates that these approaches are sensitive to the varying formatting of 
                             <td>
                                 <div class="title">Semantic Foundations for the Static Analysis of Program Revisions <a class="abstract_link" href="PERR-2026-07-24.html#talk:1986">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25077.html">Dakota Bryan</a><sup>1</sup>, <a class="person" href="person146803.html">Bor-Yuh Evan Chang</a><sup>2</sup>                                </div>
+<a class="person" href="person25077.html">Dakota Bryan</a><sup>1</sup>, <a class="person" href="person151585.html">Bor-Yuh Evan Chang</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Colorado Boulder</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Colorado Boulder & Amazon</div>
@@ -341,6 +346,15 @@ To address this gap, we present a system for proving safety properties of ``adde
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> EPFL</div>
                                 </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Hyperproperties relate multiple executions of a program and capture essential correctness and security properties such as determinism, monotonicity, transitivity, reachability, and (generalized) non-interference. Existing program logics for hyperproperties typically reason about a fixed number of states, which limits the kinds of hyperproperties they can express and prove, and hinders the reuse of proofs across different formalisms.
+
+In this talk, I will present Hyper Hoare Logic (HHL), a generalization of Hoare logic whose assertions range over sets of states rather than individual states. This generalization enables uniform reasoning for a wide range of hyperproperties, including those beyond the reach of existing logics. Despite its expressiveness, HHL admits simple and intuitive inference rules that support key reasoning principles, such as composing different kinds of hyperproperties in the same proof or reasoning about loops where different executions perform different numbers of iterations.
+
+I will then show that HHL lends itself to automation through Hypra, an automated verifier that translates a program and its HHL specification into a Viper program, with each Viper execution representing a set of executions of the original program. Our evaluation on new and existing benchmarks shows that Hypra can automatically prove diverse hyperproperties efficiently and with minimal annotation overhead.
+
+Finally, I will turn to Hyper Separation Logic, a recent extension of HHL that brings modular reasoning about hyperproperties to heap-manipulating programs. Its key ingredient is a hyper separating conjunction that lifts the standard separating conjunction to sets of states, yielding a generalized frame rule for hyperproperties.</p>
+                                </div>
                             </td>
                         </tr>
                         <tr class="talk" id="talk:1989">
@@ -348,7 +362,7 @@ To address this gap, we present a system for proving safety properties of ``adde
                             <td>
                                 <div class="title">Proving Program Equivalence in Dafny <a class="abstract_link" href="PERR-2026-07-24.html#talk:1989">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person27124_146806.html">Nathaniel Victor</a><sup>1</sup>, <a class="person" href="person146807.html">Dragana Milovancevic</a><sup>1</sup>, <a class="person" href="person146808.html">Sophia Drossopoulou</a><sup>1</sup>                                </div>
+<a class="person" href="person27124_151588.html">Nathaniel Victor</a><sup>1</sup>, <a class="person" href="person151589.html">Dragana Milovancevic</a><sup>1</sup>, <a class="person" href="person151590.html">Sophia Drossopoulou</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Imperial College London</div>
                                 </div>
@@ -395,7 +409,7 @@ To address this gap, we present a system for proving safety properties of ``adde
                             <td>
                                 <div class="title">Refuting Equivalence in Probabilistic Programs with Conditioning <a class="abstract_link" href="PERR-2026-07-24.html#talk:1990">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25732_146809.html">Krishnendu Chatterjee</a><sup>1</sup>, <a class="person" href="person146810.html">Ehsan Kafshdar Goharshady</a><sup>1</sup>, <a class="person" href="person146811.html">Petr Novotný</a><sup>2</sup>, <a class="person" href="person143664.html">Đorđe Žikelić</a><sup>3</sup>                                </div>
+<a class="person" href="person25732_151591.html">Krishnendu Chatterjee</a><sup>1</sup>, <a class="person" href="person151592.html">Ehsan Kafshdar Goharshady</a><sup>1</sup>, <a class="person" href="person151593.html">Petr Novotný</a><sup>2</sup>, <a class="person" href="person148446.html">Đorđe Žikelić</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institute of Science and Technology Austria</div>
                                 <div class="affiliation_item"><sup>2</sup> Masaryk University</div>
@@ -411,7 +425,7 @@ To address this gap, we present a system for proving safety properties of ``adde
                             <td>
                                 <div class="title">Differential Verification of Neural Networks: Theory and Applications <a class="abstract_link" href="PERR-2026-07-24.html#talk:1991">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24589.html">Samuel Teuber</a><sup>1</sup>, <a class="person" href="person146814.html">Philipp Kern</a><sup>1</sup>                                </div>
+<a class="person" href="person24589.html">Samuel Teuber</a><sup>1</sup>, <a class="person" href="person151596.html">Philipp Kern</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology (KIT)</div>
                                 </div>
@@ -426,7 +440,7 @@ One promising approach to the specification of neural networks are relational pr
                             <td>
                                 <div class="title">Discussion and Closing <a class="abstract_link" href="PERR-2026-07-24.html#talk:1992">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person27125_146815.html">Mattias Ulbrich</a><sup>1</sup>, <a class="person" href="person146807.html">Dragana Milovancevic</a><sup>2</sup>                                </div>
+<a class="person" href="person27125_151597.html">Mattias Ulbrich</a><sup>1</sup>, <a class="person" href="person151589.html">Dragana Milovancevic</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Imperial College London</div>

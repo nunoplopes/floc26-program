@@ -225,6 +225,13 @@
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien, Austria</div>
                                 </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Program analyzers and solvers are increasingly trusted as infrastructure for software correctness: they prove safety properties, find bugs, discharge verification conditions, and support automated-reasoning pipelines. Yet these tools are themselves complex software systems. Fully verifying modern analyzers and solvers in the verification stack is rarely realistic, which raises a complementary question: how do we test the tools that verify our programs?
+
+The central obstacle is the oracle problem. For many interesting inputs, we do not know in advance what the tool should report. This talk presents a journey through techniques for deriving such oracles. I will start with specification-based testing of analyzer components, then discuss program generation, differential testing, and metamorphic testing as ways to derive expected results when full specifications or ground truth are unavailable. I will then focus on interrogation testing, which makes testing adaptive by using previous answers to generate follow-up queries and expose contradictions.
+
+I will close by showing how the same oracle-centric view extends beyond analyzers to zero-knowledge systems, secure multiparty computation compilers, and machine-learning models. Across these domains, the goal is to make correctness claims testable by turning the artifacts that systems expose into oracles.</p>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -271,9 +278,20 @@
                             <td>
                                 <div class="title">Analyzing the Security of Privacy Preserving Systems Built from Ideal Cryptographic Functionalities <a class="abstract_link" href="CSF-2026-07-27.html#talk:211">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24703_144150.html">Kenny Paterson</a><sup>1</sup>                                </div>
+<a class="person" href="person24703_148932.html">Kenny Paterson</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ETH Zurich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Cryptography is a powerful tool for building privacy preserving data processing systems. General-purpose techniques like Multi-Party Computation have become reasonably efficient and scalable. More niche methods like Private Set Intersection (PSI), Private Set Union (PSU), Meta’s “Multi-key Private Matching for Compute” or Google’s “Private Join and Compute” can be used to carry out specific operations over complex datasets in a privacy-preserving manner. A characteristic of all of these systems is that they come with security definitions that say, roughly speaking: the system leaks nothing more than the intended functionality. For example, in the case of PSI, two parties each having an input set both learn the intersection of their two sets, but nothing more. This is the “best possible” security one can hope for from such a functionality – after all, correctness demands that the participating parties do obtain certain outputs.
+
+But what happens when we integrate such a cryptographic functionality into a more complex system, where the functionality is used repeatedly and where the parties using the system may adaptively vary their inputs? In this setting, all privacy guarantees may be voided. That this is possible is not a new observation. However, it becomes a critical issue as these cryptographic functionalities start to become more widely deployed.
+
+We illustrate this phenomenon for the above-mentioned systems from Meta and Google. Specifically, we show query-efficient attacks against both systems allowing a party who varies their input to recover partial or full information about the other party’s private inputs [1,2]. These attacks do not violate the security guarantees of the underlying cryptographic primitives, but they do highlight the limitations of current security definitions when taking a system-level perspective. They motivate a call for careful privacy analysis of systems using advanced cryptographic techniques prior to their deployment, and the development of system-level techniques to counter leakage. They may also indicate the need for a more nuanced discussion about what ideal security for cryptographic primitives actually implies in practice.
+
+[1] F. Falzon and T. Tang. Learning from Functionality Outputs: Private Join and Compute in the Real World. USENIX Security 2025, full version at https://eprint.iacr.org/2025/162
+
+[2] F. Falzon K.G. Paterson, A. Raguso. T. Tang. Beyond the Output: Inference Attacks on Private Set Union and Multi-Key Private Matching. PoPETS 2026, to appear.</p>
                                 </div>
                             </td>
                         </tr>
@@ -402,7 +420,7 @@
                             <td>
                                 <div class="title">Differentially Private Runtime Monitoring <a class="abstract_link" href="CAV-2026-07-27.html#talk:1122">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23942.html">Frederik Scheerer</a><sup>1</sup>, <a class="person" href="person143470.html">Bernd Finkbeiner</a><sup>1</sup>                                </div>
+<a class="person" href="person23942.html">Frederik Scheerer</a><sup>1</sup>, <a class="person" href="person148252.html">Bernd Finkbeiner</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
                                 </div>
@@ -416,7 +434,7 @@
                             <td>
                                 <div class="title">HyperLasso: Bounded Model Checking of ∀+∃+-Liveness Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1123">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25199_143471.html">Alcino Cunha</a><sup>1</sup>, <a class="person" href="person143472.html">Hugo Pacheco</a><sup>1</sup>, <a class="person" href="person143473.html">Nuno Macedo</a><sup>1</sup>                                </div>
+<a class="person" href="person25199_148253.html">Alcino Cunha</a><sup>1</sup>, <a class="person" href="person148254.html">Hugo Pacheco</a><sup>1</sup>, <a class="person" href="person148255.html">Nuno Macedo</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Universidade do Minho & INESC TEC</div>
                                 </div>
@@ -430,7 +448,7 @@
                             <td>
                                 <div class="title">The Simulator’s Blueprint: Automata Learning from Cybersecurity Logs <a class="abstract_link" href="CAV-2026-07-27.html#talk:1124">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24393.html">Tudor Braicu</a><sup>1</sup>, <a class="person" href="person143475.html">Benjamin Ylvisaker</a><sup>1</sup>, <a class="person" href="person143476.html">Nico Espinosa Dice</a><sup>1</sup>, <a class="person" href="person143477.html">Yiding Chen</a><sup>1</sup>, <a class="person" href="person143478.html">Yiyi Zhang</a><sup>1</sup>, <a class="person" href="person143479.html">Nate Foster</a><sup>2</sup>, <a class="person" href="person143480.html">Hossein Hojjat</a><sup>3</sup>                                </div>
+<a class="person" href="person24393.html">Tudor Braicu</a><sup>1</sup>, <a class="person" href="person148257.html">Benjamin Ylvisaker</a><sup>1</sup>, <a class="person" href="person148258.html">Nico Espinosa Dice</a><sup>1</sup>, <a class="person" href="person148259.html">Yiding Chen</a><sup>1</sup>, <a class="person" href="person148260.html">Yiyi Zhang</a><sup>1</sup>, <a class="person" href="person148261.html">Nate Foster</a><sup>2</sup>, <a class="person" href="person148262.html">Hossein Hojjat</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Cornell</div>
                                 <div class="affiliation_item"><sup>2</sup> EPFL</div>
@@ -446,7 +464,7 @@
                             <td>
                                 <div class="title">HyperQB 2.0: A Bounded Model Checker for Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1125">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25200_143481.html">Tzu-Han Hsu</a><sup>1</sup>, <a class="person" href="person143482.html">Milad Rabizadeh</a><sup>1</sup>, <a class="person" href="person143483.html">Kenneth Rogale</a><sup>1</sup>, <a class="person" href="person143484.html">Fedor Filippov</a><sup>1</sup>, <a class="person" href="person143485.html">Marco A. de Oliveira Batista</a><sup>1</sup>, <a class="person" href="person24350.html">Borzoo Bonakdarpour</a><sup>1</sup>                                </div>
+<a class="person" href="person25200_148263.html">Tzu-Han Hsu</a><sup>1</sup>, <a class="person" href="person148264.html">Milad Rabizadeh</a><sup>1</sup>, <a class="person" href="person148265.html">Kenneth Rogale</a><sup>1</sup>, <a class="person" href="person148266.html">Fedor Filippov</a><sup>1</sup>, <a class="person" href="person148267.html">Marco A. de Oliveira Batista</a><sup>1</sup>, <a class="person" href="person24350.html">Borzoo Bonakdarpour</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Michigan State University</div>
                                 </div>
@@ -478,7 +496,7 @@
                             <td>
                                 <div class="title">Beyond the Finite Variant Property: Extending Symbolic Diffie-Hellman Group Models <a class="abstract_link" href="CSF-2026-07-27.html#talk:212">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23246.html">Sofia Giampietro</a><sup>1</sup>, <a class="person" href="person144152.html">Ralf Sasse</a><sup>1</sup>, <a class="person" href="person144153.html">David Basin</a><sup>1</sup>                                </div>
+<a class="person" href="person23246.html">Sofia Giampietro</a><sup>1</sup>, <a class="person" href="person148934.html">Ralf Sasse</a><sup>1</sup>, <a class="person" href="person148935.html">David Basin</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ETH Zürich</div>
                                 </div>
@@ -493,7 +511,7 @@ the theory describing all Diffie-Hellman operators. In this paper we approximate
                             <td>
                                 <div class="title">Tamarin Unchained: Handling User-Defined AC Operators <a class="abstract_link" href="CSF-2026-07-27.html#talk:213">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23864.html">Jannik Dreier</a><sup>1</sup>, <a class="person" href="person144155.html">Elise Klein</a><sup>1</sup>, <a class="person" href="person27120_144707.html">Steve Kremer</a><sup>1</sup>                                </div>
+<a class="person" href="person23864.html">Jannik Dreier</a><sup>1</sup>, <a class="person" href="person148937.html">Elise Klein</a><sup>1</sup>, <a class="person" href="person27120_149489.html">Steve Kremer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université de Lorraine, CNRS, Inria, LORIA</div>
                                 </div>
@@ -509,7 +527,7 @@ We illustrate the effectiveness and efficiency of our approach using different e
                             <td>
                                 <div class="title">Incremental Fingerprinting in an Open World <a class="abstract_link" href="CSF-2026-07-27.html#talk:214">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23556.html">Loes Kruger</a><sup>1</sup>, <a class="person" href="person144158.html">Paul Kobialka</a><sup>2</sup>, <a class="person" href="person144159.html">Andrea Pferscher</a><sup>2</sup>, <a class="person" href="person144160.html">Einar Broch Johnsen</a><sup>2</sup>, <a class="person" href="person143151.html">Sebastian Junges</a><sup>1</sup>, <a class="person" href="person144162.html">Jurriaan Rot</a><sup>1</sup>                                </div>
+<a class="person" href="person23556.html">Loes Kruger</a><sup>1</sup>, <a class="person" href="person148940.html">Paul Kobialka</a><sup>2</sup>, <a class="person" href="person148941.html">Andrea Pferscher</a><sup>2</sup>, <a class="person" href="person148942.html">Einar Broch Johnsen</a><sup>2</sup>, <a class="person" href="person147933.html">Sebastian Junges</a><sup>1</sup>, <a class="person" href="person148944.html">Jurriaan Rot</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Radboud University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oslo</div>
@@ -527,7 +545,7 @@ We prove the correctness of our approach and improvements in asymptotic complexi
                             <td>
                                 <div class="title">Mind the Gap -- Connecting Protocol Representations in Squirrel <a class="abstract_link" href="CSF-2026-07-27.html#talk:215">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23434_147384.html">David Baelde</a><sup>1</sup>, <a class="person" href="person23200_146114.html">Stéphanie Delaune</a><sup>1</sup>, <a class="person" href="person144165.html">Julia Gabet</a>, <a class="person" href="person25562.html">Clément Hérouard</a><sup>1</sup>                                </div>
+<a class="person" href="person23434_152166.html">David Baelde</a><sup>1</sup>, <a class="person" href="person23200_150896.html">Stéphanie Delaune</a><sup>1</sup>, <a class="person" href="person148947.html">Julia Gabet</a>, <a class="person" href="person25562.html">Clément Hérouard</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Univ Rennes, CNRS, IRISA</div>
                                 </div>
@@ -543,7 +561,7 @@ We consider this problem within the Squirrel prover framework, where processes a
                             <td>
                                 <div class="title">Verifying and Monitoring the Lightweight Directory Access Protocol (LDAP) <a class="abstract_link" href="CSF-2026-07-27.html#talk:216">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24571.html">Ndzebelai Precious Zemoh</a><sup>1</sup>, <a class="person" href="person144168.html">Robert Künnemann</a><sup>2</sup>                                </div>
+<a class="person" href="person24571.html">Ndzebelai Precious Zemoh</a><sup>1</sup>, <a class="person" href="person148950.html">Robert Künnemann</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Bamenda</div>
                                 <div class="affiliation_item"><sup>2</sup> CISPA Helmholtz Center for Information Security</div>
@@ -594,7 +612,7 @@ transfer to OpenLDAP.</p>
                             <td>
                                 <div class="title">Automated Verification of Robot Software Models with Assume-Guarantee Reasoning in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-27.html#talk:379">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24504.html">Fang Yan</a><sup>1</sup>, <a class="person" href="person145249.html">Benoît Ballenghien</a><sup>2</sup>, <a class="person" href="person145250.html">Simon Foster</a><sup>1</sup>, <a class="person" href="person145251.html">Ana Cavalcanti</a><sup>1</sup>, <a class="person" href="person145252.html">James Baxter</a><sup>1</sup>, <a class="person" href="person24503.html">Burkhart Wolff</a><sup>2</sup>                                </div>
+<a class="person" href="person24504.html">Fang Yan</a><sup>1</sup>, <a class="person" href="person150031.html">Benoît Ballenghien</a><sup>2</sup>, <a class="person" href="person150032.html">Simon Foster</a><sup>1</sup>, <a class="person" href="person150033.html">Ana Cavalcanti</a><sup>1</sup>, <a class="person" href="person150034.html">James Baxter</a><sup>1</sup>, <a class="person" href="person24503.html">Burkhart Wolff</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of York</div>
                                 <div class="affiliation_item"><sup>2</sup> Université Paris-Saclay</div>
@@ -609,7 +627,7 @@ transfer to OpenLDAP.</p>
                             <td>
                                 <div class="title">Securing the Foundations of an Intermediate Language for Probabilistic Program Verification <a class="abstract_link" href="ITP-2026-07-27.html#talk:380">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24333.html">Oliver Emil Bøving</a><sup>1</sup>, <a class="person" href="person143748.html">Christoph Matheja</a><sup>2</sup>                                </div>
+<a class="person" href="person24333.html">Oliver Emil Bøving</a><sup>1</sup>, <a class="person" href="person148530.html">Christoph Matheja</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oldenburg and Technical University of Denmark</div>
@@ -653,7 +671,7 @@ All of our results have been formalized in the interactive theorem prover Lean o
                             <td>
                                 <div class="title">Unification of Deterministic Higher-Order Patterns <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1824">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23392.html">Johannes Niederhauser</a><sup>1</sup>, <a class="person" href="person144996.html">Aart Middeldorp</a><sup>1</sup>                                </div>
+<a class="person" href="person23392.html">Johannes Niederhauser</a><sup>1</sup>, <a class="person" href="person149778.html">Aart Middeldorp</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Innsbruck</div>
                                 </div>
@@ -680,7 +698,7 @@ remains an open question.</p>
                             <td>
                                 <div class="title">Automating proof search when equality is a logical connective <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1825">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25281_144997.html">Kaustuv Chaudhuri</a><sup>1,2</sup>, <a class="person" href="person144998.html">Arunava Gantait</a><sup>1,2</sup>, <a class="person" href="person23505.html">Dale Miller</a><sup>1,2</sup>                                </div>
+<a class="person" href="person25281_149779.html">Kaustuv Chaudhuri</a><sup>1,2</sup>, <a class="person" href="person149780.html">Arunava Gantait</a><sup>1,2</sup>, <a class="person" href="person23505.html">Dale Miller</a><sup>1,2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Inria-Saclay & LIX</div>
                                 <div class="affiliation_item"><sup>2</sup> IPP</div>
@@ -695,7 +713,7 @@ remains an open question.</p>
                             <td>
                                 <div class="title">SMT-Based Deontic Reasoning for Aqvist Logics <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1826">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25282_145000.html">Christian Köll</a><sup>1</sup>, <a class="person" href="person145001.html">Agata Ciabattoni</a><sup>1</sup>, <a class="person" href="person145002.html">Dmitry Rozplokhas</a><sup>1</sup>                                </div>
+<a class="person" href="person25282_149782.html">Christian Köll</a><sup>1</sup>, <a class="person" href="person149783.html">Agata Ciabattoni</a><sup>1</sup>, <a class="person" href="person149784.html">Dmitry Rozplokhas</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -709,7 +727,7 @@ remains an open question.</p>
                             <td>
                                 <div class="title">grind: An SMT-Inspired Tactic for Lean 4 <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1827">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25283_145003.html">Kim Morrison</a><sup>1</sup>, <a class="person" href="person23189.html">Leonardo de Moura</a><sup>2</sup>                                </div>
+<a class="person" href="person25283_149785.html">Kim Morrison</a><sup>1</sup>, <a class="person" href="person23189.html">Leonardo de Moura</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Lean FRO</div>
                                 <div class="affiliation_item"><sup>2</sup> Amazon Web Services, and Lean FRO</div>
@@ -747,7 +765,7 @@ remains an open question.</p>
                             <td>
                                 <div class="title">Improving Stability of SMT Solvers via Context-Driven Normalization <a class="abstract_link" href="CAV-2026-07-27.html#talk:1126">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23898.html">Xiang Zhang</a><sup>1</sup>, <a class="person" href="person143488.html">Mengyu Zhao</a><sup>1</sup>, <a class="person" href="person143489.html">Shaohuang Chen</a><sup>1</sup>, <a class="person" href="person143490.html">Jian Zhang</a><sup>1</sup>, <a class="person" href="person143491.html">Shaowei Cai</a><sup>2,1</sup>                                </div>
+<a class="person" href="person23898.html">Xiang Zhang</a><sup>1</sup>, <a class="person" href="person148270.html">Mengyu Zhao</a><sup>1</sup>, <a class="person" href="person148271.html">Shaohuang Chen</a><sup>1</sup>, <a class="person" href="person148272.html">Jian Zhang</a><sup>1</sup>, <a class="person" href="person148273.html">Shaowei Cai</a><sup>2,1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institute of Software, Chinese Academy of Sciences</div>
                                 <div class="affiliation_item"><sup>2</sup> Beihang University</div>
@@ -762,7 +780,7 @@ remains an open question.</p>
                             <td>
                                 <div class="title">Satisfiability Modulo Extensional Constant Arrays (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-27.html#talk:1127">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25201_143492.html">Mathias Preiner</a><sup>1</sup>, <a class="person" href="person143493.html">Aina Niemetz</a><sup>1</sup>, <a class="person" href="person25838_143186.html">Clark Barrett</a><sup>1</sup>                                </div>
+<a class="person" href="person25201_148274.html">Mathias Preiner</a><sup>1</sup>, <a class="person" href="person148275.html">Aina Niemetz</a><sup>1</sup>, <a class="person" href="person25838_147968.html">Clark Barrett</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Stanford University</div>
                                 </div>
@@ -777,7 +795,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
                             <td>
                                 <div class="title">String Solving with Stabilization and Transducers <a class="abstract_link" href="CAV-2026-07-27.html#talk:1128">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24089_143495.html">David Chocholatý</a><sup>1</sup>, <a class="person" href="person143420.html">Vojtěch Havlena</a><sup>1</sup>, <a class="person" href="person143497.html">Juraj Síč</a><sup>1</sup>, <a class="person" href="person143421.html">Lukáš Holík</a><sup>2</sup>, <a class="person" href="person143499.html">Michal Šedý</a><sup>2</sup>                                </div>
+<a class="person" href="person24089_148277.html">David Chocholatý</a><sup>1</sup>, <a class="person" href="person148202.html">Vojtěch Havlena</a><sup>1</sup>, <a class="person" href="person148279.html">Juraj Síč</a><sup>1</sup>, <a class="person" href="person148203.html">Lukáš Holík</a><sup>2</sup>, <a class="person" href="person148281.html">Michal Šedý</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Brno University of Technology</div>
                                 <div class="affiliation_item"><sup>2</sup> Aalborg University</div>
@@ -792,7 +810,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
                             <td>
                                 <div class="title">Lagrangian-Based Duality for Quantified SMT Algorithms <a class="abstract_link" href="CAV-2026-07-27.html#talk:1129">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23534.html">Ivana Bocevska</a><sup>1</sup>, <a class="person" href="person24042.html">Takeshi Tsukada</a><sup>2</sup>, <a class="person" href="person143502.html">Hiroshi Unno</a><sup>3</sup>, <a class="person" href="person143503.html">Oded Padon</a><sup>4</sup>, <a class="person" href="person143504.html">Sharon Shoham</a><sup>5</sup>                                </div>
+<a class="person" href="person23534.html">Ivana Bocevska</a><sup>1</sup>, <a class="person" href="person24042.html">Takeshi Tsukada</a><sup>2</sup>, <a class="person" href="person148284.html">Hiroshi Unno</a><sup>3</sup>, <a class="person" href="person148285.html">Oded Padon</a><sup>4</sup>, <a class="person" href="person148286.html">Sharon Shoham</a><sup>5</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 <div class="affiliation_item"><sup>2</sup> Chiba University</div>
@@ -810,7 +828,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
                             <td>
                                 <div class="title">Mallob: Scalable Automated Reasoning On Demand (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-27.html#talk:1130">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24262_147400.html">Dominik Schreiber</a><sup>1</sup>, <a class="person" href="person143506.html">Niccolò Rigi-Luperti</a><sup>1</sup>, <a class="person" href="person143507.html">Peter Sanders</a><sup>1</sup>                                </div>
+<a class="person" href="person24262_152182.html">Dominik Schreiber</a><sup>1</sup>, <a class="person" href="person148288.html">Niccolò Rigi-Luperti</a><sup>1</sup>, <a class="person" href="person148289.html">Peter Sanders</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Karlsruhe Institute of Technology</div>
                                 </div>
@@ -907,7 +925,7 @@ for constant arrays are limited to arrays with infinite index domains, and exist
                             <td>
                                 <div class="title">Modular Reasoning about Object Relations (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-27.html#talk:1131">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25202_143508.html">Micha Greutmann</a><sup>1</sup>, <a class="person" href="person23531.html">Marco Eilers</a><sup>1</sup>, <a class="person" href="person143510.html">Peter Müller</a><sup>1</sup>                                </div>
+<a class="person" href="person25202_148290.html">Micha Greutmann</a><sup>1</sup>, <a class="person" href="person23531.html">Marco Eilers</a><sup>1</sup>, <a class="person" href="person148292.html">Peter Müller</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ETH Zurich</div>
                                 </div>
@@ -925,7 +943,7 @@ Our key idea is to express algebraic properties in a novel, expressive normal fo
                             <td>
                                 <div class="title">Formally Verified Linear-Time Invertible Lexing <a class="abstract_link" href="CAV-2026-07-27.html#talk:1132">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23570.html">Samuel Chassot</a><sup>1</sup>, <a class="person" href="person23203_145074.html">Viktor Kunčak</a><sup>1</sup>                                </div>
+<a class="person" href="person23570.html">Samuel Chassot</a><sup>1</sup>, <a class="person" href="person23203_149856.html">Viktor Kunčak</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> EPFL</div>
                                 </div>
@@ -958,7 +976,7 @@ that to come with invertibility proofs for printing token sequences.</p>
                             <td>
                                 <div class="title">Automating Bitvector and Finite Field Equivalence Proofs in Lean <a class="abstract_link" href="CAV-2026-07-27.html#talk:1133">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24414.html">Elizaveta Pertseva</a><sup>1</sup>, <a class="person" href="person143514.html">Valentin Robert</a><sup>2</sup>, <a class="person" href="person25838_143186.html">Clark Barrett</a><sup>1</sup>, <a class="person" href="person143516.html">James Parker</a><sup>2</sup>                                </div>
+<a class="person" href="person24414.html">Elizaveta Pertseva</a><sup>1</sup>, <a class="person" href="person148296.html">Valentin Robert</a><sup>2</sup>, <a class="person" href="person25838_147968.html">Clark Barrett</a><sup>1</sup>, <a class="person" href="person148298.html">James Parker</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Stanford University</div>
                                 <div class="affiliation_item"><sup>2</sup> Galois, Inc.</div>
@@ -973,7 +991,7 @@ that to come with invertibility proofs for printing token sequences.</p>
                             <td>
                                 <div class="title">The Cooperating Proof Calculus: Comprehensive Proofs for an SMT Solver <a class="abstract_link" href="CAV-2026-07-27.html#talk:1134">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24375.html">Andrew Reynolds</a><sup>1</sup>, <a class="person" href="person143518.html">Hans-Jörg Schurr</a><sup>1</sup>, <a class="person" href="person24353.html">Haniel Barbosa</a><sup>2</sup>, <a class="person" href="person25289_145081.html">Ofec Israel</a><sup>3</sup>, <a class="person" href="person143521.html">Jibiana Zoe Jakpor</a><sup>4</sup>, <a class="person" href="person143522.html">Hanna Lachnitt</a><sup>4</sup>, <a class="person" href="person143523.html">Abdalrhman Mohamed</a><sup>4</sup>, <a class="person" href="person143493.html">Aina Niemetz</a><sup>4</sup>, <a class="person" href="person25201_143492.html">Mathias Preiner</a><sup>4</sup>, <a class="person" href="person143526.html">Yoni Zohar</a><sup>3</sup>, <a class="person" href="person143527.html">Robert Jones</a><sup>5</sup>, <a class="person" href="person25838_143186.html">Clark Barrett</a><sup>4</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>1</sup>                                </div>
+<a class="person" href="person24375.html">Andrew Reynolds</a><sup>1</sup>, <a class="person" href="person148300.html">Hans-Jörg Schurr</a><sup>1</sup>, <a class="person" href="person24353.html">Haniel Barbosa</a><sup>2</sup>, <a class="person" href="person25289_149863.html">Ofec Israel</a><sup>3</sup>, <a class="person" href="person148303.html">Jibiana Zoe Jakpor</a><sup>4</sup>, <a class="person" href="person148304.html">Hanna Lachnitt</a><sup>4</sup>, <a class="person" href="person148305.html">Abdalrhman Mohamed</a><sup>4</sup>, <a class="person" href="person148275.html">Aina Niemetz</a><sup>4</sup>, <a class="person" href="person25201_148274.html">Mathias Preiner</a><sup>4</sup>, <a class="person" href="person148308.html">Yoni Zohar</a><sup>3</sup>, <a class="person" href="person148309.html">Robert Jones</a><sup>5</sup>, <a class="person" href="person25838_147968.html">Clark Barrett</a><sup>4</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The University of Iowa</div>
                                 <div class="affiliation_item"><sup>2</sup> Universidade Federal de Minas Gerais</div>
@@ -991,7 +1009,7 @@ that to come with invertibility proofs for printing token sequences.</p>
                             <td>
                                 <div class="title">Burrow: A Proof Framework for Weak Memory <a class="abstract_link" href="CAV-2026-07-27.html#talk:1135">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24006.html">Dennis Sprokholt</a><sup>1</sup>, <a class="person" href="person143531.html">Soham Chakraborty</a><sup>2</sup>                                </div>
+<a class="person" href="person24006.html">Dennis Sprokholt</a><sup>1</sup>, <a class="person" href="person148313.html">Soham Chakraborty</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Munich</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Delft</div>
@@ -1006,7 +1024,7 @@ that to come with invertibility proofs for printing token sequences.</p>
                             <td>
                                 <div class="title">Velvet: A Foundational Multi-Modal Verifier for Imperative Programs in Lean (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-27.html#talk:1136">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person143533.html">Vitaly Kurin</a><sup>2</sup>, <a class="person" href="person143534.html">Yueyang Feng</a><sup>1</sup>, <a class="person" href="person143535.html">Dipesh Kafle</a><sup>1</sup>, <a class="person" href="person143536.html">George Pîrlea</a><sup>1</sup>, <a class="person" href="person143537.html">Qiyuan Zhao</a><sup>1</sup>, <a class="person" href="person143538.html">Ilya Sergey</a><sup>1</sup>                                </div>
+<a class="person" href="person23508.html">Vladimir Gladshtein</a><sup>1</sup>, <a class="person" href="person148315.html">Vitaly Kurin</a><sup>2</sup>, <a class="person" href="person148316.html">Yueyang Feng</a><sup>1</sup>, <a class="person" href="person148317.html">Dipesh Kafle</a><sup>1</sup>, <a class="person" href="person148318.html">George Pîrlea</a><sup>1</sup>, <a class="person" href="person148319.html">Qiyuan Zhao</a><sup>1</sup>, <a class="person" href="person148320.html">Ilya Sergey</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> National University of Singapore</div>
                                 <div class="affiliation_item"><sup>2</sup> Neapolis University Pafos</div>
@@ -1021,7 +1039,7 @@ that to come with invertibility proofs for printing token sequences.</p>
                             <td>
                                 <div class="title">Automatic Heap-Memory Diagrams for Separation-Logic Proofs <a class="abstract_link" href="CAV-2026-07-27.html#talk:1137">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23862.html">Yawen Guan</a><sup>1</sup>, <a class="person" href="person143540.html">Shardul Chiplunkar</a><sup>1</sup>, <a class="person" href="person143541.html">Clément Pit-Claudel</a><sup>1</sup>                                </div>
+<a class="person" href="person23862.html">Yawen Guan</a><sup>1</sup>, <a class="person" href="person148322.html">Shardul Chiplunkar</a><sup>1</sup>, <a class="person" href="person148323.html">Clément Pit-Claudel</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> EPFL</div>
                                 </div>
@@ -1062,7 +1080,7 @@ We demonstrate these features by implementing frontends for CFML and Iris, integ
                             <td>
                                 <div class="title">Are ideal functionalities really ideal? <a class="abstract_link" href="CSF-2026-07-27.html#talk:217">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25231_144169.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person144170.html">Véronique Cortier</a><sup>2</sup>, <a class="person" href="person144171.html">Hubert de Groote</a><sup>3</sup>, <a class="person" href="person144172.html">Charlie Jacomme</a><sup>4</sup>, <a class="person" href="person27120_144707.html">Steve Kremer</a><sup>4</sup>                                </div>
+<a class="person" href="person25231_148951.html">Myrto Arapinis</a><sup>1</sup>, <a class="person" href="person148952.html">Véronique Cortier</a><sup>2</sup>, <a class="person" href="person148953.html">Hubert de Groote</a><sup>3</sup>, <a class="person" href="person148954.html">Charlie Jacomme</a><sup>4</sup>, <a class="person" href="person27120_149489.html">Steve Kremer</a><sup>4</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The University of Edinburgh</div>
                                 <div class="affiliation_item"><sup>2</sup> Université de Lorraine, CNRS, Inria, LORIA</div>
@@ -1081,7 +1099,7 @@ We argue that ideal functionalities should not merely be justified secure at a h
                             <td>
                                 <div class="title">Computationally Sound Symbolic Cryptography in Lean <a class="abstract_link" href="CSF-2026-07-27.html#talk:218">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25232.html">Stefan Dziembowski</a><sup>1</sup>, <a class="person" href="person144175.html">Grzegorz Fabiański</a><sup>2</sup>, <a class="person" href="person144176.html">Daniele Micciancio</a><sup>3</sup>, <a class="person" href="person144177.html">Rafał Stefański</a><sup>2</sup>                                </div>
+<a class="person" href="person25232.html">Stefan Dziembowski</a><sup>1</sup>, <a class="person" href="person148957.html">Grzegorz Fabiański</a><sup>2</sup>, <a class="person" href="person148958.html">Daniele Micciancio</a><sup>3</sup>, <a class="person" href="person148959.html">Rafał Stefański</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Warsaw and IDEAS Institute</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Warsaw</div>
@@ -1101,7 +1119,7 @@ We believe that our work will serve as a foundation for future research in the a
                             <td>
                                 <div class="title">Mechanizing Nested Hybrid Arguments <a class="abstract_link" href="CSF-2026-07-27.html#talk:219">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24188.html">Markus Krabbe Larsen</a><sup>1</sup>, <a class="person" href="person144179.html">Carsten Schürmann</a><sup>1</sup>                                </div>
+<a class="person" href="person24188.html">Markus Krabbe Larsen</a><sup>1</sup>, <a class="person" href="person148961.html">Carsten Schürmann</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> IT University of Copenhagen</div>
                                 </div>
@@ -1115,7 +1133,7 @@ We believe that our work will serve as a foundation for future research in the a
                             <td>
                                 <div class="title">Interactive Proofs in Higher-Order Logic with Errors and Application to Concrete Cryptography <a class="abstract_link" href="CSF-2026-07-27.html#talk:220">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25233_144180.html">Caroline Fontaine</a><sup>1</sup>, <a class="person" href="person144181.html">Adrien Koutsos</a><sup>2</sup>, <a class="person" href="person144182.html">Guillaume Scerri</a><sup>1</sup>, <a class="person" href="person144183.html">Théo Vignon</a><sup>1</sup>                                </div>
+<a class="person" href="person25233_148962.html">Caroline Fontaine</a><sup>1</sup>, <a class="person" href="person148963.html">Adrien Koutsos</a><sup>2</sup>, <a class="person" href="person148964.html">Guillaume Scerri</a><sup>1</sup>, <a class="person" href="person148965.html">Théo Vignon</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Paris-Saclay, CNRS, ENS Paris-Saclay, Laboratoire Méthodes Formelles</div>
                                 <div class="affiliation_item"><sup>2</sup> Inria</div>
@@ -1130,7 +1148,7 @@ We believe that our work will serve as a foundation for future research in the a
                             <td>
                                 <div class="title">Forking Lemma in EasyCrypt <a class="abstract_link" href="CSF-2026-07-27.html#talk:221">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24382.html">Jakub Janků</a><sup>1</sup>, <a class="person" href="person144185.html">Denis Firsov</a><sup>2</sup>                                </div>
+<a class="person" href="person24382.html">Jakub Janků</a><sup>1</sup>, <a class="person" href="person148967.html">Denis Firsov</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Masaryk University</div>
                                 <div class="affiliation_item"><sup>2</sup> Tallinn University of Technology, Input Output</div>
@@ -1170,7 +1188,7 @@ We expand the support for rewinding in EasyCrypt by implementing a version of th
                             <td>
                                 <div class="title">ProofWala: A Framework for Multilingual Proof Data Synthesis and Theorem-Proving <a class="abstract_link" href="ITP-2026-07-27.html#talk:381">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25296_145256.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person25842_143195.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person145258.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person25684.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
+<a class="person" href="person25296_150038.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person25842_147977.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person150040.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person25684.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Texas at Austin</div>
                                 <div class="affiliation_item"><sup>2</sup> New York University</div>
@@ -1187,7 +1205,7 @@ We open-source the full framework, including the parallel proof search module, t
                             <td>
                                 <div class="title">Feedback & Synthesis in LLM-Assisted Termination Proofs <a class="abstract_link" href="ITP-2026-07-27.html#talk:382">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25297_145260.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person145261.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
+<a class="person" href="person25297_150042.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person150043.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Northeastern University</div>
                                 </div>
@@ -1213,7 +1231,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">LeanArchitect: Automating Blueprint Generation for Humans and AI <a class="abstract_link" href="ITP-2026-07-27.html#talk:383">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25298_145262.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person145263.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person145264.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person145265.html">Sean Welleck</a><sup>1</sup>                                </div>
+<a class="person" href="person25298_150044.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person150045.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person150046.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person150047.html">Sean Welleck</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Trento</div>
@@ -1251,7 +1269,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">A Unified Formalization of Context-Free Grammar Theory <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1828">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23259.html">Tobias Nipkow</a><sup>1</sup>, <a class="person" href="person145006.html">Fabian Lehr</a><sup>1</sup>, <a class="person" href="person145007.html">Moritz Roos</a><sup>1</sup>, <a class="person" href="person145008.html">Akihisa Yamada</a><sup>2</sup>                                </div>
+<a class="person" href="person23259.html">Tobias Nipkow</a><sup>1</sup>, <a class="person" href="person149788.html">Fabian Lehr</a><sup>1</sup>, <a class="person" href="person149789.html">Moritz Roos</a><sup>1</sup>, <a class="person" href="person149790.html">Akihisa Yamada</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Munich</div>
                                 <div class="affiliation_item"><sup>2</sup> AIST</div>
@@ -1268,7 +1286,7 @@ formalizations of an executable translation into Greibach Normal Form, the Choms
                             <td>
                                 <div class="title">Towards Term-based Verification of Diagrammatic Equivalence <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1829">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23510.html">Julie Cailler</a><sup>1</sup>, <a class="person" href="person145010.html">Noé Delorme</a><sup>2</sup>, <a class="person" href="person145011.html">Simon Perdrix</a><sup>2</sup>, <a class="person" href="person23562.html">Sophie Tourret</a><sup>2</sup>                                </div>
+<a class="person" href="person23510.html">Julie Cailler</a><sup>1</sup>, <a class="person" href="person149792.html">Noé Delorme</a><sup>2</sup>, <a class="person" href="person149793.html">Simon Perdrix</a><sup>2</sup>, <a class="person" href="person23562.html">Sophie Tourret</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Lorraine, CNRS, INRIA, LORIA</div>
                                 <div class="affiliation_item"><sup>2</sup> INRIA</div>
@@ -1298,7 +1316,7 @@ formalizations of an executable translation into Greibach Normal Form, the Choms
                             <td>
                                 <div class="title">Formally Verified Graph Generation with SAT modulo Symmetries and Lean <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1831">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23837.html">Markus Kirchweger</a><sup>1</sup>, <a class="person" href="person145016.html">Pablo Manrique</a><sup>1</sup>, <a class="person" href="person24050.html">Stefan Szeider</a><sup>1</sup>                                </div>
+<a class="person" href="person23837.html">Markus Kirchweger</a><sup>1</sup>, <a class="person" href="person149798.html">Pablo Manrique</a><sup>1</sup>, <a class="person" href="person24050.html">Stefan Szeider</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien</div>
                                 </div>
@@ -1336,7 +1354,7 @@ Our results will allow for extending semantic methods for HOL to DHOL and can se
                             <td>
                                 <div class="title">Growing HOLMS: A Verified Automated Prover for Grzegorczyk Logic in HOL Light <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1833">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24269.html">Antonella Bilotta</a><sup>1</sup>, <a class="person" href="person145020.html">Marco Maggesi</a><sup>2</sup>, <a class="person" href="person145021.html">Cosimo Perini Brogi</a><sup>3</sup>                                </div>
+<a class="person" href="person24269.html">Antonella Bilotta</a><sup>1</sup>, <a class="person" href="person149802.html">Marco Maggesi</a><sup>2</sup>, <a class="person" href="person149803.html">Cosimo Perini Brogi</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Scuola Normale Superiore di Pisa</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Florence</div>
@@ -1408,7 +1426,7 @@ The deductive engine performs an automated proof search in the labelled sequent 
                             <td>
                                 <div class="title">An L# Based Algorithm for Active Learning of Minimal Separating Automata <a class="abstract_link" href="CAV-2026-07-27.html#talk:1138">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25203_143542.html">Jasper Laumen</a><sup>1</sup>, <a class="person" href="person143543.html">Leonne Snel</a><sup>1</sup>, <a class="person" href="person143544.html">Frits Vaandrager</a><sup>1</sup>                                </div>
+<a class="person" href="person25203_148324.html">Jasper Laumen</a><sup>1</sup>, <a class="person" href="person148325.html">Leonne Snel</a><sup>1</sup>, <a class="person" href="person148326.html">Frits Vaandrager</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Radboud University</div>
                                 </div>
@@ -1422,7 +1440,7 @@ The deductive engine performs an automated proof search in the labelled sequent 
                             <td>
                                 <div class="title">Upper Bound for the Determinization of Emerson-Lei Automata: A One-Fin Approach <a class="abstract_link" href="CAV-2026-07-27.html#talk:1139">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23798.html">Runzhe Ma</a><sup>1</sup>, <a class="person" href="person143546.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person143547.html">Wensheng Wang</a><sup>1</sup>, <a class="person" href="person143548.html">Zhenhua Duan</a><sup>1</sup>                                </div>
+<a class="person" href="person23798.html">Runzhe Ma</a><sup>1</sup>, <a class="person" href="person148328.html">Cong Tian</a><sup>1</sup>, <a class="person" href="person148329.html">Wensheng Wang</a><sup>1</sup>, <a class="person" href="person148330.html">Zhenhua Duan</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> ICTT and ISN Laboratory, Xidian University</div>
                                 </div>
@@ -1442,7 +1460,7 @@ The deductive engine performs an automated proof search in the labelled sequent 
                             <td>
                                 <div class="title">SMT-Based Active Learning of Weighted Automata <a class="abstract_link" href="CAV-2026-07-27.html#talk:1140">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23521.html">Tiago Ferreira</a><sup>1</sup>, <a class="person" href="person25389_146156.html">Kevin Batz</a><sup>2</sup>, <a class="person" href="person143551.html">Alexandra Silva</a><sup>2</sup>                                </div>
+<a class="person" href="person23521.html">Tiago Ferreira</a><sup>1</sup>, <a class="person" href="person25389_150938.html">Kevin Batz</a><sup>2</sup>, <a class="person" href="person148333.html">Alexandra Silva</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University College London</div>
                                 <div class="affiliation_item"><sup>2</sup> Cornell University</div>
@@ -1457,7 +1475,7 @@ The deductive engine performs an automated proof search in the labelled sequent 
                             <td>
                                 <div class="title">Compositional Verification of Timed Automata via Violation Assumptions <a class="abstract_link" href="CAV-2026-07-27.html#talk:1141">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23532.html">Mehran Moeini Jam</a><sup>1</sup>, <a class="person" href="person143553.html">Hamed Kalantari</a><sup>2</sup>, <a class="person" href="person143554.html">Ehsan Khamespanah</a><sup>3</sup>, <a class="person" href="person143555.html">Marjan Sirjani</a><sup>4</sup>, <a class="person" href="person143556.html">Ali Movaghar</a><sup>2</sup>                                </div>
+<a class="person" href="person23532.html">Mehran Moeini Jam</a><sup>1</sup>, <a class="person" href="person148335.html">Hamed Kalantari</a><sup>2</sup>, <a class="person" href="person148336.html">Ehsan Khamespanah</a><sup>3</sup>, <a class="person" href="person148337.html">Marjan Sirjani</a><sup>4</sup>, <a class="person" href="person148338.html">Ali Movaghar</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> TU Wien, Austria - Sharif University of Technology, Iran</div>
                                 <div class="affiliation_item"><sup>2</sup> Sharif University of Technology, Iran</div>
@@ -1474,7 +1492,7 @@ The deductive engine performs an automated proof search in the labelled sequent 
                             <td>
                                 <div class="title">Weighted soundness for Workflow Nets <a class="abstract_link" href="CAV-2026-07-27.html#talk:1142">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25204_143557.html">Filip Mazowiecki</a><sup>1</sup>, <a class="person" href="person143558.html">Piotr Hofman</a><sup>1</sup>, <a class="person" href="person143559.html">Krzysztof Makuracki</a><sup>1</sup>                                </div>
+<a class="person" href="person25204_148339.html">Filip Mazowiecki</a><sup>1</sup>, <a class="person" href="person148340.html">Piotr Hofman</a><sup>1</sup>, <a class="person" href="person148341.html">Krzysztof Makuracki</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Warsaw</div>
                                 </div>
@@ -1490,7 +1508,7 @@ We provide multiple reasons supporting the relevance of weighted soundness. Our 
                             <td>
                                 <div class="title">Synthesizing POMDP Policies: Sampling Meets Model-checking via Learning <a class="abstract_link" href="CAV-2026-07-27.html#talk:1143">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25205_143560.html">Debraj Chakraborty</a><sup>1</sup>, <a class="person" href="person143561.html">Anirban Majumdar</a><sup>2</sup>, <a class="person" href="person143562.html">Prince Mathew</a><sup>3</sup>, <a class="person" href="person143563.html">Sayan Mukherjee</a><sup>4</sup>, <a class="person" href="person143564.html">Jean-François Raskin</a><sup>3</sup>                                </div>
+<a class="person" href="person25205_148342.html">Debraj Chakraborty</a><sup>1</sup>, <a class="person" href="person148343.html">Anirban Majumdar</a><sup>2</sup>, <a class="person" href="person148344.html">Prince Mathew</a><sup>3</sup>, <a class="person" href="person148345.html">Sayan Mukherjee</a><sup>4</sup>, <a class="person" href="person148346.html">Jean-François Raskin</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Nanyang Technological University</div>
                                 <div class="affiliation_item"><sup>2</sup> Tata Institute of Fundamental Research</div>
@@ -1507,7 +1525,7 @@ We provide multiple reasons supporting the relevance of weighted soundness. Our 
                             <td>
                                 <div class="title">TACO: A Toolsuite for the Verification of Threshold Automata <a class="abstract_link" href="CAV-2026-07-27.html#talk:1144">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23477.html">Paul Eichler</a><sup>1</sup>, <a class="person" href="person143566.html">Tom Baumeister</a><sup>1</sup>, <a class="person" href="person143567.html">Mouhammad Sakr</a><sup>2</sup>, <a class="person" href="person143568.html">Mahboubeh Kalateh Dowlati</a><sup>3</sup>, <a class="person" href="person143569.html">Marcus Völp</a><sup>3</sup>, <a class="person" href="person143570.html">Swen Jacobs</a><sup>1</sup>                                </div>
+<a class="person" href="person23477.html">Paul Eichler</a><sup>1</sup>, <a class="person" href="person148348.html">Tom Baumeister</a><sup>1</sup>, <a class="person" href="person148349.html">Mouhammad Sakr</a><sup>2</sup>, <a class="person" href="person148350.html">Mahboubeh Kalateh Dowlati</a><sup>3</sup>, <a class="person" href="person148351.html">Marcus Völp</a><sup>3</sup>, <a class="person" href="person148352.html">Swen Jacobs</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
                                 <div class="affiliation_item"><sup>2</sup> American University of Beirut</div>
@@ -1523,7 +1541,7 @@ We provide multiple reasons supporting the relevance of weighted soundness. Our 
                             <td>
                                 <div class="title">Extending QuAK with Nested Quantitative Automata <a class="abstract_link" href="CAV-2026-07-27.html#talk:1145">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25206_143571.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person143424.html">Nicolas Mazzocchi</a><sup>2</sup>, <a class="person" href="person143573.html">N. Ege Saraç</a><sup>3</sup>, <a class="person" href="person143574.html">Harun Yılmaz</a><sup>4</sup>                                </div>
+<a class="person" href="person25206_148353.html">Thomas A. Henzinger</a><sup>1</sup>, <a class="person" href="person148206.html">Nicolas Mazzocchi</a><sup>2</sup>, <a class="person" href="person148355.html">N. Ege Saraç</a><sup>3</sup>, <a class="person" href="person148356.html">Harun Yılmaz</a><sup>4</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Institute of Science and Technology Austria (ISTA)</div>
                                 <div class="affiliation_item"><sup>2</sup> Slovak University of Technology in Bratislava</div>
@@ -1595,7 +1613,7 @@ We address this gap by extending the Quantitative Automata Kit (QuAK), a softwar
                             <td>
                                 <div class="title">Disproving (Positive) Almost-Sure Termination of Probabilistic Term Rewriting via Random Walks <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1834">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23953.html">Jan-Christoph Kassing</a><sup>1</sup>, <a class="person" href="person145023.html">Henri Nagel</a><sup>1</sup>, <a class="person" href="person145024.html">Alexander Schlecht</a><sup>1</sup>, <a class="person" href="person23680.html">Jürgen Giesl</a><sup>1</sup>                                </div>
+<a class="person" href="person23953.html">Jan-Christoph Kassing</a><sup>1</sup>, <a class="person" href="person149805.html">Henri Nagel</a><sup>1</sup>, <a class="person" href="person149806.html">Alexander Schlecht</a><sup>1</sup>, <a class="person" href="person23680.html">Jürgen Giesl</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RWTH Aachen University</div>
                                 </div>
@@ -1638,7 +1656,7 @@ We address this gap by extending the Quantitative Automata Kit (QuAK), a softwar
                             <td>
                                 <div class="title">Learning Computation Tree Logic with Neural Networks <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1837">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25284_145028.html">Benjamin Bordais</a><sup>1</sup>, <a class="person" href="person145029.html">Daniel Neider</a><sup>2</sup>, <a class="person" href="person145030.html">Mustafa Yalciner</a><sup>2</sup>                                </div>
+<a class="person" href="person25284_149810.html">Benjamin Bordais</a><sup>1</sup>, <a class="person" href="person149811.html">Daniel Neider</a><sup>2</sup>, <a class="person" href="person149812.html">Mustafa Yalciner</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Université Libre de Bruxelles</div>
                                 <div class="affiliation_item"><sup>2</sup> TU Dortmund University</div>
@@ -1674,7 +1692,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
                             <td>
                                 <div class="title">Implementing Fuzzy OSF Logic Unification and Normalization <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1839">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23421.html">Gian Carlo Milanese</a><sup>1</sup>, <a class="person" href="person145033.html">Gabriella Pasi</a><sup>1</sup>                                </div>
+<a class="person" href="person23421.html">Gian Carlo Milanese</a><sup>1</sup>, <a class="person" href="person149815.html">Gabriella Pasi</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Milano-Bicocca</div>
                                 </div>
@@ -1688,7 +1706,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
                             <td>
                                 <div class="title">Presentation of the Termination Competition (termCOMP) Results <a class="abstract_link" href="IJCAR-2026-07-27.html#talk:1840">(abstract)</a> <span class="duration">10 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23632.html">Florian Frohn</a><sup>1</sup>, <a class="person" href="person23680.html">Jürgen Giesl</a><sup>1</sup>, <a class="person" href="person143653.html">Georg Moser</a><sup>2</sup>, <a class="person" href="person144739.html">Étienne Payet</a><sup>3</sup>, <a class="person" href="person145008.html">Akihisa Yamada</a><sup>4</sup>, <a class="person" href="person24114.html">Dieter Hofbauer</a><sup>5</sup>                                </div>
+<a class="person" href="person23632.html">Florian Frohn</a><sup>1</sup>, <a class="person" href="person23680.html">Jürgen Giesl</a><sup>1</sup>, <a class="person" href="person148435.html">Georg Moser</a><sup>2</sup>, <a class="person" href="person149521.html">Étienne Payet</a><sup>3</sup>, <a class="person" href="person149790.html">Akihisa Yamada</a><sup>4</sup>, <a class="person" href="person24114.html">Dieter Hofbauer</a><sup>5</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> RWTH Aachen</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Innsbruck</div>
@@ -1721,7 +1739,7 @@ It supports arbitrary CTL formulas up to a user-defined size budget and consiste
                             <td>
                                 <div class="title">Dolev-Yao Information Flow <a class="abstract_link" href="CSF-2026-07-27.html#talk:222">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23988.html">Simon Tobias Lund</a><sup>1</sup>, <a class="person" href="person25235_144192.html">Sebastian Mödersheim</a><sup>2</sup>                                </div>
+<a class="person" href="person23988.html">Simon Tobias Lund</a><sup>1</sup>, <a class="person" href="person25235_148974.html">Sebastian Mödersheim</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 <div class="affiliation_item"><sup>2</sup> DTU</div>
@@ -1753,7 +1771,7 @@ formalized and proved in Isabelle/HOL.</p>
                             <td>
                                 <div class="title">Partial Cast Calculus for Gradual Information Security <a class="abstract_link" href="CSF-2026-07-27.html#talk:223">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25234_144188.html">Zechi Shen</a><sup>1</sup>, <a class="person" href="person144189.html">Zhiwu Xu</a><sup>1</sup>, <a class="person" href="person144190.html">Shengchao Qin</a><sup>2</sup>, <a class="person" href="person144191.html">Zhong Ming</a><sup>1</sup>                                </div>
+<a class="person" href="person25234_148970.html">Zechi Shen</a><sup>1</sup>, <a class="person" href="person148971.html">Zhiwu Xu</a><sup>1</sup>, <a class="person" href="person148972.html">Shengchao Qin</a><sup>2</sup>, <a class="person" href="person148973.html">Zhong Ming</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Shenzhen University</div>
                                 <div class="affiliation_item"><sup>2</sup> Xidian University</div>
@@ -1770,7 +1788,7 @@ In this paper, we present a partial cast calculus λp for gradual information se
                             <td>
                                 <div class="title">Cryptographic Choreographies <a class="abstract_link" href="CSF-2026-07-27.html#talk:224">(abstract)</a> <span class="duration">24 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25235_144192.html">Sebastian Mödersheim</a><sup>1</sup>, <a class="person" href="person23988.html">Simon Tobias Lund</a><sup>2</sup>, <a class="person" href="person144194.html">Marco Carbone</a><sup>3</sup>, <a class="person" href="person144195.html">Rosario Giustolisi</a><sup>3</sup>, <a class="person" href="person24231.html">Alessandro Bruni</a><sup>3</sup>                                </div>
+<a class="person" href="person25235_148974.html">Sebastian Mödersheim</a><sup>1</sup>, <a class="person" href="person23988.html">Simon Tobias Lund</a><sup>2</sup>, <a class="person" href="person148976.html">Marco Carbone</a><sup>3</sup>, <a class="person" href="person148977.html">Rosario Giustolisi</a><sup>3</sup>, <a class="person" href="person24231.html">Alessandro Bruni</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> DTU</div>
                                 <div class="affiliation_item"><sup>2</sup> Technical University of Denmark</div>
@@ -1809,7 +1827,7 @@ In this paper, we present a partial cast calculus λp for gradual information se
                             <td>
                                 <div class="title">Formalizing the Bruck-Ryser-Chowla Theorem: Combinatorial Design Theory in Lean <a class="abstract_link" href="ITP-2026-07-27.html#talk:1291">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23453_145266.html">Eric Jonathan Wang</a><sup>1</sup>, <a class="person" href="person145267.html">Elif Uskuplu</a><sup>2</sup>                                </div>
+<a class="person" href="person23453_150048.html">Eric Jonathan Wang</a><sup>1</sup>, <a class="person" href="person150049.html">Elif Uskuplu</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> Indiana University Bloomington</div>
@@ -1824,7 +1842,7 @@ In this paper, we present a partial cast calculus λp for gradual information se
                             <td>
                                 <div class="title">Three Roads to de Finetti's Theorem in Lean: Short Paper <a class="abstract_link" href="ITP-2026-07-27.html#talk:1292">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25299_145268.html">Cameron Freer</a><sup>1</sup>                                </div>
+<a class="person" href="person25299_150050.html">Cameron Freer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Massachusetts Institute of Technology</div>
                                 </div>
@@ -1838,7 +1856,7 @@ In this paper, we present a partial cast calculus λp for gradual information se
                             <td>
                                 <div class="title">Formal Primal-Dual Algorithm Analysis (Short Paper) <a class="abstract_link" href="ITP-2026-07-27.html#talk:1293">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24133.html">Thomas Ammer</a><sup>1</sup>, <a class="person" href="person24466.html">Mohammad Abdulaziz</a><sup>1</sup>, <a class="person" href="person145271.html">Christoph Madlener</a>                                </div>
+<a class="person" href="person24133.html">Thomas Ammer</a><sup>1</sup>, <a class="person" href="person24466.html">Mohammad Abdulaziz</a><sup>1</sup>, <a class="person" href="person150053.html">Christoph Madlener</a>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> King's College London</div>
                                 </div>
@@ -1906,9 +1924,12 @@ We discuss a number of example formalisations from the theory of matching algori
                             <td>
                                 <div class="title">Proof Against Attack: Can AI Help Build Software We Can Trust? <a class="abstract_link" href="CAV-2026-07-27.html#talk:198">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25207_143575.html">Kathleen Fisher</a><sup>1</sup>                                </div>
+<a class="person" href="person25207_148357.html">Kathleen Fisher</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Advanced Research and Invention Agency</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> AI is making cyberattacks easier to launch, harder to spot, and possible at much greater scale. At the same time, more of everyday life depends on software: hospitals, energy grids, transport systems, financial services, and the devices we carry in our pockets. This talk asks a simple question: what would it take to make the software we rely on dramatically safer? One answer comes from formal methods: techniques that use mathematical proof to check that software behaves as intended. Until now, these methods have often been seen as too specialist, too expensive, or too slow for widespread use. But AI may change that. The same advances that could help attackers, could also help us find weaknesses and remove them before systems are deployed –  creating a unique opportunity to build toward a world without software vulnerabilities.</p>
                                 </div>
                             </td>
                         </tr>

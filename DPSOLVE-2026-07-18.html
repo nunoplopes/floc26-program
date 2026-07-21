@@ -184,7 +184,7 @@
                             <td>
                                 <div class="title">Introduction to Domain Independent Dynamic Programming Algorithms <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:656">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25555_144401.html">Christopher Beck</a><sup>1</sup>                                </div>
+<a class="person" href="person25555_149183.html">Christopher Beck</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
                                 </div>
@@ -236,7 +236,7 @@
                             <td>
                                 <div class="title">Neural Self-Improvement Learning for Domain-Independent Dynamic Programming <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:658">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25556_144403.html">Minori Narita</a><sup>1</sup>, <a class="person" href="person144404.html">Eldan Cohen</a><sup>1</sup>, <a class="person" href="person144405.html">Chris Beck</a><sup>1</sup>                                </div>
+<a class="person" href="person25556_149185.html">Minori Narita</a><sup>1</sup>, <a class="person" href="person149186.html">Eldan Cohen</a><sup>1</sup>, <a class="person" href="person149187.html">Chris Beck</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Toronto</div>
                                 </div>
@@ -250,11 +250,14 @@
                             <td>
                                 <div class="title">Domain-Independent Dynamic Programming with Constraint Propagation <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:659">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23710.html">Imko Marijnissen</a><sup>1</sup>, <a class="person" href="person144043.html">J. Christopher Beck</a><sup>2</sup>, <a class="person" href="person143867.html">Emir Demirovic</a><sup>1</sup>, <a class="person" href="person23167.html">Ryo Kuroiwa</a><sup>3</sup>                                </div>
+<a class="person" href="person23710.html">Imko Marijnissen</a><sup>1</sup>, <a class="person" href="person148825.html">J. Christopher Beck</a><sup>2</sup>, <a class="person" href="person148649.html">Emir Demirovic</a><sup>1</sup>, <a class="person" href="person23167.html">Ryo Kuroiwa</a><sup>3</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Toronto</div>
                                 <div class="affiliation_item"><sup>3</sup> Unkown</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> There are two prevalent model-based paradigms for combinatorial problems: 1) state-based representations, such as heuristic search, dynamic programming (DP), and decision diagrams, and 2) constraint and domain-based representations, such as constraint programming (CP), (mixed-)integer programming, and Boolean satisfiability. In this paper, we bridge the gap between the DP and CP paradigms by integrating constraint propagation into DP, enabling a DP solver to prune states and transitions using constraint propagation. To this end, we implement constraint propagation using a general-purpose CP solver in the Domain-Independent Dynamic Programming framework and evaluate using heuristic search on three combinatorial optimisation problems: Single Machine Scheduling with Time Windows (1|ri,δi| wiTi), the Resource-Constrained Project Scheduling Problem (RCPSP), and the Travelling Salesperson Problem with Time Windows (TSPTW). Our evaluation shows that constraint propagation significantly reduces the number of state expansions, causing our approach to solve more instances than a DP solver for 1|ri,δi| wiTi and RCPSP, and showing similar improvements for tightly constrained TSPTW instances. The runtime performance indicates that the benefits of propagation outweigh the overhead for constrained instances, but that further work into reducing propagation overhead could improve performance further. Our work is a key step in understanding the value of constraint propagation in DP solvers, providing a model-based approach to integrating DP and CP.</p>
                                 </div>
                             </td>
                         </tr>
@@ -278,9 +281,12 @@
                             <td>
                                 <div class="title">Dynamic Programming for Optimal Decision Trees <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:661">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25555_144413.html">Koos van der Linden</a><sup>1</sup>                                </div>
+<a class="person" href="person25555_149195.html">Koos van der Linden</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Delft University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Dynamic programming (DP) outperforms other optimization methods for learning decision trees by several orders of magnitude in runtime because it can exploit the fact that subtrees can be solved independently from one another. We explore the use of DP for optimizing decision tree in four dimensions: first, we recollect that decision tree learning is best described as an AND-OR optimization problem, in contrast to the more typical OR variant; second, we examine the conditions for objectives and constraints such subtrees can be solved independently; third, we show how reasoning about subproblem similarity helps prune the search space; and fourth, we show how DP can be used to find not only the optimal but all close-to-optimal solutions efficiently.</p>
                                 </div>
                             </td>
                         </tr>
@@ -322,10 +328,13 @@
                             <td>
                                 <div class="title">GPU-Accelerated State Expansion for Anytime Exact Decision-Diagram Search <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:662">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25557_144414.html">Fabio Tardivo</a><sup>1</sup>, <a class="person" href="person24177.html">Laurent Michel</a><sup>2</sup>                                </div>
+<a class="person" href="person25557_149196.html">Fabio Tardivo</a><sup>1</sup>, <a class="person" href="person24177.html">Laurent Michel</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> UNKNOWN</div>
                                 <div class="affiliation_item"><sup>2</sup> UCONN</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We present a GPU-accelerated method for compiling multi-valued decision diagrams (MDDs) for dynamic programming models. MDD construction expands states in layers defined by their distance from the root, a structure that enables independent parallel expansion of all states in a layer. We exploit this by partitioning each layer into limited-size fragments and executing the full expansion of each fragment on the GPU, including successor generation, dominance filtering, duplicate elimination, and pruning of suboptimal states. By systematically traversing fragments in a depth-first manner, we obtain a parallel Complete Anytime Decision Diagram Search that preserves exactness and anytime behavior. Applied to the Traveling Salesman Problem with Time Windows, our implementation yields speedups of up to two orders of magnitude, and outperforms other state-based methods as well as a state-of-the-art dedicated optimization method for this application.</p>
                                 </div>
                             </td>
                         </tr>
@@ -334,7 +343,7 @@
                             <td>
                                 <div class="title">CP or DP? Why Not Both: A Case Study in the Partial Shop Scheduling Problem. <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:663">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23758.html">Emma Legrand</a><sup>1</sup>, <a class="person" href="person144417.html">Roger Kameugne</a><sup>1</sup>, <a class="person" href="person143885.html">Pierre Schaus</a><sup>1</sup>                                </div>
+<a class="person" href="person23758.html">Emma Legrand</a><sup>1</sup>, <a class="person" href="person149199.html">Roger Kameugne</a><sup>1</sup>, <a class="person" href="person148667.html">Pierre Schaus</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> UCLouvain</div>
                                 </div>
@@ -349,7 +358,7 @@ While not competitive with state-of-the-art pure CP solvers for this specific pr
                             <td>
                                 <div class="title">Decision Diagram-Based Exact Optimization for Assembly Line Balancing with Human-Robot Collaboration <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:664">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25558_144419.html">Jiaxin Zhang</a><sup>1</sup>, <a class="person" href="person144420.html">Yiting Sun</a><sup>1</sup>, <a class="person" href="person144417.html">Roger Kameugne</a><sup>2</sup>, <a class="person" href="person143885.html">Pierre Schaus</a><sup>2</sup>                                </div>
+<a class="person" href="person25558_149201.html">Jiaxin Zhang</a><sup>1</sup>, <a class="person" href="person149202.html">Yiting Sun</a><sup>1</sup>, <a class="person" href="person149199.html">Roger Kameugne</a><sup>2</sup>, <a class="person" href="person148667.html">Pierre Schaus</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> College of Management and Economics, Tianjin University, Tianjin, China</div>
                                 <div class="affiliation_item"><sup>2</sup> UCLouvain</div>
@@ -364,9 +373,12 @@ While not competitive with state-of-the-art pure CP solvers for this specific pr
                             <td>
                                 <div class="title">Column Elimination Applied to Scheduling Problems <a class="abstract_link" href="DPSOLVE-2026-07-18.html#talk:665">(abstract)</a> <span class="duration">25 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25557_144423.html">Vianney Coppé</a><sup>1</sup>                                </div>
+<a class="person" href="person25557_149205.html">Vianney Coppé</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Hexaly</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Column elimination is a technique recently introduced to solve optimization problems aiming to find an optimal set of sequences, such as vehicle routing problems. It relies a compact representation of the problem in the form of a relaxed decision diagram, from which a relaxed solution can be extracted by solving a constrained network flow problem. As long as the solution contains infeasible sequences, or sequences with an under-approximated cost, the decision diagram is refined to eliminate the corresponding conflicts. This paper describes the ingredients required to apply column elimination to scheduling problems and presents preliminary results.</p>
                                 </div>
                             </td>
                         </tr>

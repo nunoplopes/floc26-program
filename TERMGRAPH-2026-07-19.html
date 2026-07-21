@@ -184,9 +184,14 @@
                             <td>
                                 <div class="title">Syntactic trinitarianism: terms, graphs, diagrams (joint keynote with DIALOCO, Room C4.02) <a class="abstract_link" href="TERMGRAPH-2026-07-19.html#talk:1719">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25884_147527.html">Dan Ghica</a><sup>1</sup>                                </div>
+<a class="person" href="person25884_152309.html">Dan Ghica</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Huawei Central Software Institute & University of Birmingham</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> The concept of ‘syntax’ is commonly understood as the structure hidden in linear sequences of tokens, which in language and logic we commonly call ‘terms’. However, for the purpose of analysis and transformation, compilers use more efficient data structures to represent syntax, namely graphs. The gap between the linear (term) and graph syntax is elegantly bridged by a third formalism, namely that of string diagrams, a planar representation of terms in the categorical representation of syntax. In this talk I will show how the interplay of terms, graphs, and diagrams can help specify and implement complex analyses and transformations in compilers for higher-order programming languages, such as type inference, automatic differentiation, or closure conversion. This methodology is at the foundation of a new industrial-strength compiler being implemented currently at Huawei.
+
+Most of the material I will discuss is based on the recent tutorial paper “Hierarchical string diagrams and applications” jointly with Fabio Zanasi (https://arxiv.org/abs/2305.18945) about to appear as a CUP monograph.</p>
                                 </div>
                             </td>
                         </tr>
@@ -237,6 +242,11 @@
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Gran Sasso Science Institute</div>
                                 </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Graph Neural Networks are deep learning models designed to process graph-structured data. Most modern GNNs operate by message passing: node representations are updated through repeated rounds of aggregating and combining information from neighboring nodes. This makes them well suited to applications involving relational and networked structures, and also places them naturally in dialogue with topics from graph rewriting and graph-based computation.
+
+In this talk, we present recent results on the relationship between Graph Neural Networks and formal logic, with the choice of topics guided by the speaker's own research in the area. We introduce logics that precisely capture the expressive power of certain classes of integer-valued GNNs, and show how GNN computations can be translated into logical formulas. We also discuss variants of GNNs over finite computer number formats. These logical characterizations provide a foundation for formal verification, allowing us to establish complexity bounds for key reasoning problems about GNN behavior.</p>
+                                </div>
                             </td>
                         </tr>
                         <tr class="talk" id="talk:1721">
@@ -263,7 +273,7 @@ we present a prototype implementation that demonstrates the viability of the app
                             <td>
                                 <div class="title">Labels, paths, and linearization of the lambda-calculus <a class="abstract_link" href="TERMGRAPH-2026-07-19.html#talk:1722">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23936_147530.html">Pedro Cunha</a><sup>1</sup>, <a class="person" href="person146307.html">Mário Florido</a><sup>1</sup>, <a class="person" href="person23260.html">Sandra Alves</a><sup>1</sup>                                </div>
+<a class="person" href="person23936_152312.html">Pedro Cunha</a><sup>1</sup>, <a class="person" href="person151089.html">Mário Florido</a><sup>1</sup>, <a class="person" href="person23260.html">Sandra Alves</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Faculdade de Ciências da Universidade do Porto</div>
                                 </div>
@@ -320,6 +330,21 @@ Linearization, based on the maximal reduction strategy and which may not termina
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Sussex, UK</div>
                                 </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We retrace some history of using term graphs 
+for implementing  β-reduction in the λ-calculus.
+We refactor the following three high-lights from that 
+history, illustrated  by a prototype implementation:
+- the classical (first) term graph implementation (Wadsworth),
+of β-reduction which we refactor through a term graph implementation 
+IMP of a well-behaved (e.g., orthogonal) class of TRSs;
+- implementing β-reduction through repeated weak-reduction 
+(De Bruijn (Automath),Peyton Jones,Coquand,Grégoire & Leroy,Balabonski,...),
+which we show can be performed on IMP;
+- implementing needed β-reduction (Huet & Lévy, Barendregt, Kennaway, Klop, Sleep,...)
+through a strategy for IMP that we dub α-spine. By making use of union-find techniques 
+for it, normal order reduction is shown to be linearly implementable.</p>
+                                </div>
                             </td>
                         </tr>
                         <tr class="talk" id="talk:1724">
@@ -327,7 +352,7 @@ Linearization, based on the maximal reduction strategy and which may not termina
                             <td>
                                 <div class="title">Hypergraphs with Binding <a class="abstract_link" href="TERMGRAPH-2026-07-19.html#talk:1724">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25885_147534.html">Anna Matsui</a><sup>1</sup>, <a class="person" href="person147535.html">Koko Muroya</a><sup>2</sup>                                </div>
+<a class="person" href="person25885_152316.html">Anna Matsui</a><sup>1</sup>, <a class="person" href="person152317.html">Koko Muroya</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Johns Hopkins University</div>
                                 <div class="affiliation_item"><sup>2</sup> Ochanomizu University</div>
@@ -394,7 +419,7 @@ Linearization, based on the maximal reduction strategy and which may not termina
                             <td>
                                 <div class="title">Reducible Graphs and Bisimilarity of 1-free Star Expressions <a class="abstract_link" href="TERMGRAPH-2026-07-19.html#talk:1726">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25255_144616.html">Bastiaan Laarakker</a><sup>1</sup>, <a class="person" href="person143426.html">Tobias Kappé</a><sup>1</sup>                                </div>
+<a class="person" href="person25255_149398.html">Bastiaan Laarakker</a><sup>1</sup>, <a class="person" href="person148208.html">Tobias Kappé</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Leiden University</div>
                                 </div>
