@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Search</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=0a0b29f540" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=fabad61532" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -55,6 +55,16 @@
         .search-result-title-row .group_tag {
             flex-shrink: 0;
             margin-top: 2px;
+        }
+        .search-result-title-row .group_tag[data-group-href] {
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, 0.55);
+            text-underline-offset: 2px;
+        }
+        .search-result-title-row .group_tag[data-group-href]:hover {
+            text-decoration-color: currentColor;
+            filter: brightness(1.15);
         }
         .search-result-authors {
             font-size: 14px;
@@ -170,6 +180,14 @@
 
     let allTalks = [];
     let debounceTimer;
+
+    resultsList.addEventListener('click', (event) => {
+        const tag = event.target.closest('.group_tag[data-group-href]');
+        if (!tag) return;
+        event.preventDefault();
+        event.stopPropagation();
+        window.location.href = tag.dataset.groupHref;
+    });
 
     const CACHE_KEY = 'floc:search-cache';
 
@@ -304,7 +322,7 @@
                 : '';
 
             const groupHtml = talk.groupName
-                ? `<span class="group_tag">${escapeHtml(talk.groupName)}</span>`
+                ? `<span class="group_tag"${talk.groupIndexHref ? ` data-group-href="${escapeHtml(talk.groupIndexHref)}"` : ''}>${escapeHtml(talk.groupName)}</span>`
                 : '';
 
             const targetHref = (!navigator.onLine && talk.groupIndexHref) ? talk.groupIndexHref : talk.href;

@@ -301,6 +301,8 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .day_icon { height: 14px; width: 14px; vertical-align: -2px; margin: 0 4px; }
 
 .date { position: sticky; top: 39px; z-index: 10; background: var(--color-border-dashed); padding: 6px 10px; margin-top: 18px; margin-bottom: 12px; font-weight: bold; }
+.date a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.date a:hover { filter: brightness(0.85); }
 
 .session { border-left: 3px solid var(--color-border-session); padding: 8px 12px; margin: 8px 0; background: var(--color-bg-alt); scroll-margin-top: 80px; }
 .session.subsession { margin-left: 28px; border-left-color: var(--color-border-session-hover); background: var(--color-bg-alt2); }
@@ -321,7 +323,9 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 .skip_link:focus { left: 8px; top: 8px; }
 .session .interval { font-weight: bold; color: var(--color-link); margin-right: 8px; }
 .session .title { font-weight: bold; }
-.group_tag { font-size: 11px; background: var(--color-tag-bg); color: var(--color-accent-contrast); padding: 2px 6px; border-radius: 3px; }
+.group_tag { font-size: 12px; background: var(--color-tag-bg); color: var(--color-accent-contrast); padding: 3px 7px; border-radius: 3px; text-decoration: none; }
+a.group_tag { text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.55); text-underline-offset: 2px; }
+a.group_tag:hover { text-decoration-color: currentColor; filter: brightness(1.15); }
 .session .group_tag { float: right; }
 
 .session_chair, .room { font-size: 13px; color: var(--color-text-muted); margin: 2px 0; }
@@ -431,6 +435,7 @@ table.bio_layout { width: 100%; border-collapse: collapse; margin-top: 8px; }
     #menu2 a, #menu3 a { padding: 6px 13px; }
 
     .session .group_tag { float: none; display: inline-block; margin-top: 4px; }
+    .group_tag { font-size: 13px; padding: 4px 8px; }
 
     table.talks, table.talks tbody, table.talks tr, table.talks td { display: block; width: auto; }
     table.talks td.time { width: auto; padding-bottom: 0; white-space: normal; }

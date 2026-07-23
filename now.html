@@ -5,7 +5,7 @@
     <script>(function(){var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Federated Logic Conference 2026 — Now and Next</title>
-    <link rel="stylesheet" type="text/css" href="program.css?v=0a0b29f540" />
+    <link rel="stylesheet" type="text/css" href="program.css?v=fabad61532" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -112,7 +112,7 @@
         const byGroup = new Map();
         sessions.forEach((s) => {
             const key = s.groupName || '';
-            if (!byGroup.has(key)) byGroup.set(key, { groupName: key, sessions: [] });
+            if (!byGroup.has(key)) byGroup.set(key, { groupName: key, groupHref: s.groupHref || '', sessions: [] });
             byGroup.get(key).sessions.push(s);
         });
 
@@ -138,7 +138,14 @@
 
             const heading = document.createElement('div');
             heading.className = 'date';
-            heading.textContent = group.groupName;
+            if (group.groupHref) {
+                const headingLink = document.createElement('a');
+                headingLink.href = group.groupHref;
+                headingLink.textContent = group.groupName;
+                heading.appendChild(headingLink);
+            } else {
+                heading.textContent = group.groupName;
+            }
             container.appendChild(heading);
 
             const ul = document.createElement('ul');
