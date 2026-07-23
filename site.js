@@ -238,7 +238,7 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
 
 (function () {
     const nowLabelsEl = document.getElementById('now_labels');
-    const sessionEls = document.querySelectorAll('.session[data-date]');
+    const sessionEls = document.querySelectorAll('.session[data-date], .room_sessions li[data-date]');
     if (!nowLabelsEl || sessionEls.length === 0) return;
 
     fetch('build-info.json', { cache: 'no-store' })
@@ -281,7 +281,7 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
                 badge.className = 'now_badge';
                 badge.textContent = nowLabelsEl.dataset.badgeLabel || 'NOW';
                 const heading = el.querySelector('.heading');
-                if (heading) heading.appendChild(badge);
+                (heading || el).appendChild(badge);
             }
 
             if (!matched) matched = el;
@@ -345,18 +345,24 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
             }
         }
 
-        const liveGroupIds = new Set(
-            sessions.filter((s) => s.end && `${s.date}T${s.start}` <= nowStamp && nowStamp < `${s.date}T${s.end}`)
-                .map((s) => s.groupId)
-        );
-        document.querySelectorAll('#menu2 a[data-group-id], .group_tile[data-group-id]').forEach((chip) => {
-            if (liveGroupIds.has(Number(chip.dataset.groupId)) && !chip.querySelector('.live_dot')) {
-                const dot = document.createElement('span');
-                dot.className = 'live_dot';
-                const label = chip.querySelector('.group_tile_label');
-                (label || chip).appendChild(dot);
-            }
-        });
+        const liveSessions = sessions.filter((s) => s.end
+            && `${s.date}T${s.start}` <= nowStamp && nowStamp < `${s.date}T${s.end}`);
+        const liveGroupIds = new Set(liveSessions.map((s) => s.groupId));
+        const liveRoomIds = new Set(liveSessions.map((s) => s.roomId));
+
+        const markLive = (selector, idAttr, liveIds) => {
+            document.querySelectorAll(selector).forEach((tile) => {
+                if (liveIds.has(Number(tile.dataset[idAttr])) && !tile.querySelector('.live_dot')) {
+                    const dot = document.createElement('span');
+                    dot.className = 'live_dot';
+                    const label = tile.querySelector('.group_tile_label');
+                    (label || tile).appendChild(dot);
+                }
+            });
+        };
+
+        markLive('#menu2 a[data-group-id], .group_tile[data-group-id]', 'groupId', liveGroupIds);
+        markLive('.group_tile[data-room-id]', 'roomId', liveRoomIds);
     }).catch(() => {});
 })();
 
