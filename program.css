@@ -366,10 +366,11 @@ tr.talk:target td { background: var(--color-bg-target); }
 
 .room_sessions_title { font-size: 16px; margin: 18px 0 8px 0; }
 .room_sessions { list-style: disc; padding-left: 20px; margin: 8px 0; }
-.room_sessions li { padding: 4px 0; }
+.room_sessions li { padding: 8px 0; margin-bottom: 4px; border-bottom: 1px solid var(--color-border-light); }
+.room_sessions li:last-child { border-bottom: none; }
 .room_sessions .session_link { color: var(--color-link); text-decoration: underline; font-weight: bold; }
 .room_sessions .session_link:hover { color: var(--color-accent); }
-.room_sessions .session_meta { color: var(--color-text-muted-2); font-family: Consolas, "Courier New", monospace; font-size: 13px; margin-left: 6px; }
+.room_sessions .session_meta { color: var(--color-text-muted-3); font-size: 13px; margin-left: 8px; }
 .room_sessions .group_tag { margin-left: 8px; }
 .room_sessions_empty { color: var(--color-text-muted-5); font-style: italic; }
 .room_sessions li.session_now { background: var(--color-bg-alt); border-left: 3px solid var(--color-accent); padding-left: 8px; margin-left: -8px; }
@@ -425,7 +426,8 @@ table.bio_layout { width: 100%; border-collapse: collapse; margin-top: 8px; }
     .page_table { table-layout: fixed; }
     .central_td_column { padding: 12px 12px 76px 12px; word-wrap: break-word; overflow-wrap: break-word; }
 
-    .group_tiles { grid-template-columns: 1fr; }
+    .group_tiles { grid-template-columns: 1fr; gap: 14px; }
+    .group_tile { padding: 16px; gap: 6px; }
 
     #header { flex-wrap: wrap; }
     #header .event_logo { height: 60px; }
