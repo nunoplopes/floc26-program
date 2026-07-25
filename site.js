@@ -350,19 +350,23 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
         const liveGroupIds = new Set(liveSessions.map((s) => s.groupId));
         const liveRoomIds = new Set(liveSessions.map((s) => s.roomId));
 
-        const markLive = (selector, idAttr, liveIds) => {
+        const markLive = (selector, idAttr, liveIds, reorder) => {
             document.querySelectorAll(selector).forEach((tile) => {
-                if (liveIds.has(Number(tile.dataset[idAttr])) && !tile.querySelector('.live_dot')) {
-                    const dot = document.createElement('span');
-                    dot.className = 'live_dot';
-                    const label = tile.querySelector('.group_tile_label');
-                    (label || tile).appendChild(dot);
+                const isLive = liveIds.has(Number(tile.dataset[idAttr]));
+                if (isLive) {
+                    if (reorder) tile.style.order = '-1';
+                    if (!tile.querySelector('.live_dot')) {
+                        const dot = document.createElement('span');
+                        dot.className = 'live_dot';
+                        const label = tile.querySelector('.group_tile_label');
+                        (label || tile).appendChild(dot);
+                    }
                 }
             });
         };
 
-        markLive('#menu2 a[data-group-id], .group_tile[data-group-id]', 'groupId', liveGroupIds);
-        markLive('.group_tile[data-room-id]', 'roomId', liveRoomIds);
+        markLive('#menu2 a[data-group-id], .group_tile[data-group-id]', 'groupId', liveGroupIds, true);
+        markLive('.group_tile[data-room-id]', 'roomId', liveRoomIds, false);
     }).catch(() => {});
 })();
 
