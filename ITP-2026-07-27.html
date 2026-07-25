@@ -119,6 +119,7 @@
             <span class="separator"> | </span>    <a href="RajeevFest-index.html" data-group-id="60">RajeevFest</a>
             <span class="separator"> | </span>    <a href="RCRA-index.html" data-group-id="61">RCRA</a>
             <span class="separator"> | </span>    <a href="RocqWS-index.html" data-group-id="62">RocqWS</a>
+            <span class="separator"> | </span>    <a href="SAIV-index.html" data-group-id="63">SAIV</a>
             <span class="separator"> | </span>    <a href="SAT-index.html" data-group-id="10">SAT</a>
             <span class="separator"> | </span>    <a href="SD-index.html" data-group-id="64">SD</a>
             <span class="separator"> | </span>    <a href="SKILLEDLLMs-index.html" data-group-id="65">SKILLED-LLMs</a>
@@ -186,6 +187,32 @@
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:2146">
+                            <td class="time">09:00-10:00</td>
+                            <td>
+                                <div class="title">Nitro Isolation Engine: Formally Verifying a Production Hypervisor <a class="abstract_link" href="ITP-2026-07-27.html#talk:2146">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person27207_194225.html">Dominic Mulligan</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> AWS</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Cloud computing relies on hypervisors to enforce isolation between co-tenanted virtual machines. Hypervisors are therefore critical security infrastructure, and assurance of their correctness is paramount. Traditional engineering techniques—code review, testing, fuzzing—provide strong assurance but cannot exhaustively verify that isolation holds across all possible execution paths. Formal verification extends and complements these approaches by establishing mathematical guarantees about system behaviour.
+
+This talk presents our experience applying interactive theorem proving to verify a production hypervisor component: the Nitro Isolation Engine. This is a trusted, minimalist computing base written in Rust, enforcing isolation between virtual machines on AWS Graviton5 EC2 instances. Designed for verification from inception, we have specified the intended behaviour of this component and verified correctness in the Isabelle/HOL interactive theorem prover, producing approximately 350,000 lines of machine-checked models and proofs, and establishing three key classes of property:
+
+1) Functional correctness: The system behaves as specified for all operations including virtual machine creation, memory mapping, and abort handling. Our total verification approach additionally establishes memory-safety, termination, and absence of runtime errors.
+2) Confidentiality: A noninterference-style property demonstrates that guest virtual machine state remains hidden from an expansive definition of observer monitoring system actions, formalised as indistinguishability preservation up to permitted declassification flows.
+3) Integrity: Guest virtual machine private state is unaffected by operations on distinct virtual machines.
+
+Currently, our proof coverage extends to verification of the core virtual machine-management hypercalls, guest power management, various utility hypercalls, and a subset of data, instruction, and asynchronous abort handling, and will continue to expand to cover more functionality including PCI device management and virtual GIC (Generic Interrupt Controller) handling.
+
+The talk will discuss the verification approach, key proof techniques, and challenges in applying formal methods to production systems. Note that this work builds on decades of academic research across interactive theorem proving, formal specification, separation logic and its automation, and programming language semantics.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="session interval_session" id="session:824" data-date="2026-07-27" data-start="10:00" data-end="11:00">
                     <div class="heading">
@@ -228,7 +255,7 @@
                             <td>
                                 <div class="title">Automated Verification of Robot Software Models with Assume-Guarantee Reasoning in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-27.html#talk:379">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24504.html">Fang Yan</a><sup>1</sup>, <a class="person" href="person188689.html">Benoît Ballenghien</a><sup>2</sup>, <a class="person" href="person188690.html">Simon Foster</a><sup>1</sup>, <a class="person" href="person188691.html">Ana Cavalcanti</a><sup>1</sup>, <a class="person" href="person188692.html">James Baxter</a><sup>1</sup>, <a class="person" href="person24503.html">Burkhart Wolff</a><sup>2</sup>                                </div>
+<a class="person" href="person24504.html">Fang Yan</a><sup>1</sup>, <a class="person" href="person194227.html">Benoît Ballenghien</a><sup>2</sup>, <a class="person" href="person194228.html">Simon Foster</a><sup>1</sup>, <a class="person" href="person194229.html">Ana Cavalcanti</a><sup>1</sup>, <a class="person" href="person194230.html">James Baxter</a><sup>1</sup>, <a class="person" href="person24503.html">Burkhart Wolff</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of York</div>
                                 <div class="affiliation_item"><sup>2</sup> Université Paris-Saclay</div>
@@ -243,7 +270,7 @@
                             <td>
                                 <div class="title">Securing the Foundations of an Intermediate Language for Probabilistic Program Verification <a class="abstract_link" href="ITP-2026-07-27.html#talk:380">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24333.html">Oliver Emil Bøving</a><sup>1</sup>, <a class="person" href="person187184.html">Christoph Matheja</a><sup>2</sup>                                </div>
+<a class="person" href="person24333.html">Oliver Emil Bøving</a><sup>1</sup>, <a class="person" href="person192721.html">Christoph Matheja</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Oldenburg and Technical University of Denmark</div>
@@ -302,7 +329,7 @@ All of our results have been formalized in the interactive theorem prover Lean o
                             <td>
                                 <div class="title">ProofWala: A Framework for Multilingual Proof Data Synthesis and Theorem-Proving <a class="abstract_link" href="ITP-2026-07-27.html#talk:381">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25296_188696.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person25842.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person188698.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person25684.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
+<a class="person" href="person25296_194234.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person25842.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person194236.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person25684.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Texas at Austin</div>
                                 <div class="affiliation_item"><sup>2</sup> New York University</div>
@@ -319,7 +346,7 @@ We open-source the full framework, including the parallel proof search module, t
                             <td>
                                 <div class="title">Feedback & Synthesis in LLM-Assisted Termination Proofs <a class="abstract_link" href="ITP-2026-07-27.html#talk:382">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25297_188700.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person188701.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
+<a class="person" href="person25297_194238.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person194239.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Northeastern University</div>
                                 </div>
@@ -345,7 +372,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">LeanArchitect: Automating Blueprint Generation for Humans and AI <a class="abstract_link" href="ITP-2026-07-27.html#talk:383">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25298_188702.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person188703.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person188704.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person188705.html">Sean Welleck</a><sup>1</sup>                                </div>
+<a class="person" href="person25298_194240.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person194241.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person194242.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person194243.html">Sean Welleck</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Trento</div>
@@ -398,7 +425,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Formalizing the Bruck-Ryser-Chowla Theorem: Combinatorial Design Theory in Lean <a class="abstract_link" href="ITP-2026-07-27.html#talk:1291">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23453_188706.html">Eric Jonathan Wang</a><sup>1</sup>, <a class="person" href="person188707.html">Elif Uskuplu</a><sup>2</sup>                                </div>
+<a class="person" href="person23453_194244.html">Eric Jonathan Wang</a><sup>1</sup>, <a class="person" href="person194245.html">Elif Uskuplu</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> Indiana University Bloomington</div>
@@ -413,7 +440,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Three Roads to de Finetti's Theorem in Lean: Short Paper <a class="abstract_link" href="ITP-2026-07-27.html#talk:1292">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25299_189342.html">Cameron Freer</a><sup>1</sup>                                </div>
+<a class="person" href="person25299_194880.html">Cameron Freer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Massachusetts Institute of Technology</div>
                                 </div>
@@ -427,7 +454,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Formal Primal-Dual Algorithm Analysis (Short Paper) <a class="abstract_link" href="ITP-2026-07-27.html#talk:1293">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24133.html">Thomas Ammer</a><sup>1</sup>, <a class="person" href="person24466.html">Mohammad Abdulaziz</a><sup>1</sup>, <a class="person" href="person188711.html">Christoph Madlener</a>                                </div>
+<a class="person" href="person24133.html">Thomas Ammer</a><sup>1</sup>, <a class="person" href="person24466.html">Mohammad Abdulaziz</a><sup>1</sup>, <a class="person" href="person194249.html">Christoph Madlener</a>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> King's College London</div>
                                 </div>
