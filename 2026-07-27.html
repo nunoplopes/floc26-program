@@ -119,7 +119,6 @@
             <span class="separator"> | </span>    <a href="RajeevFest-index.html" data-group-id="60">RajeevFest</a>
             <span class="separator"> | </span>    <a href="RCRA-index.html" data-group-id="61">RCRA</a>
             <span class="separator"> | </span>    <a href="RocqWS-index.html" data-group-id="62">RocqWS</a>
-            <span class="separator"> | </span>    <a href="SAIV-index.html" data-group-id="63">SAIV</a>
             <span class="separator"> | </span>    <a href="SAT-index.html" data-group-id="10">SAT</a>
             <span class="separator"> | </span>    <a href="SD-index.html" data-group-id="64">SD</a>
             <span class="separator"> | </span>    <a href="SKILLEDLLMs-index.html" data-group-id="65">SKILLED-LLMs</a>
@@ -197,6 +196,46 @@
                         </tr>
                     </table>
                 </div>
+                <div class="session" id="session:714" data-date="2026-07-27" data-start="09:00" data-end="10:00">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="714" data-title="Invited Talk" data-time="09:00-10:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">09:00-10:00</span>
+                        <span class="title">Invited Talk</span>
+                        <a class="group_tag" href="CSF-index.html">CSF</a>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room31.html">B2.03</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:211">
+                            <td class="time">09:00-10:00</td>
+                            <td>
+                                <div class="title">Analyzing the Security of Privacy Preserving Systems Built from Ideal Cryptographic Functionalities <a class="abstract_link" href="CSF-2026-07-27.html#talk:211">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24703_187586.html">Kenny Paterson</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> ETH Zurich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Cryptography is a powerful tool for building privacy preserving data processing systems. General-purpose techniques like Multi-Party Computation have become reasonably efficient and scalable. More niche methods like Private Set Intersection (PSI), Private Set Union (PSU), Meta’s “Multi-key Private Matching for Compute” or Google’s “Private Join and Compute” can be used to carry out specific operations over complex datasets in a privacy-preserving manner. A characteristic of all of these systems is that they come with security definitions that say, roughly speaking: the system leaks nothing more than the intended functionality. For example, in the case of PSI, two parties each having an input set both learn the intersection of their two sets, but nothing more. This is the “best possible” security one can hope for from such a functionality – after all, correctness demands that the participating parties do obtain certain outputs.
+
+But what happens when we integrate such a cryptographic functionality into a more complex system, where the functionality is used repeatedly and where the parties using the system may adaptively vary their inputs? In this setting, all privacy guarantees may be voided. That this is possible is not a new observation. However, it becomes a critical issue as these cryptographic functionalities start to become more widely deployed.
+
+We illustrate this phenomenon for the above-mentioned systems from Meta and Google. Specifically, we show query-efficient attacks against both systems allowing a party who varies their input to recover partial or full information about the other party’s private inputs [1,2]. These attacks do not violate the security guarantees of the underlying cryptographic primitives, but they do highlight the limitations of current security definitions when taking a system-level perspective. They motivate a call for careful privacy analysis of systems using advanced cryptographic techniques prior to their deployment, and the development of system-level techniques to counter leakage. They may also indicate the need for a more nuanced discussion about what ideal security for cryptographic primitives actually implies in practice.
+
+[1] F. Falzon and T. Tang. Learning from Functionality Outputs: Private Join and Compute in the Real World. USENIX Security 2025, full version at https://eprint.iacr.org/2025/162
+
+[2] F. Falzon K.G. Paterson, A. Raguso. T. Tang. Beyond the Output: Inference Attacks on Private Set Union and Multi-Key Private Matching. PoPETS 2026, to appear.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="session" id="session:823" data-date="2026-07-27" data-start="09:00" data-end="10:00">
                     <div class="heading">
                         <button type="button" class="favorite_btn" data-session-id="823" data-title="ITP Invited Talk: Dominic Mulligan, Amazon Web Services" data-time="09:00-10:00" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
@@ -259,61 +298,6 @@ I will close by showing how the same oracle-centric view extends beyond analyzer
                         </tr>
                     </table>
                 </div>
-                <div class="session" id="session:714" data-date="2026-07-27" data-start="09:00" data-end="10:00">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="714" data-title="Invited Talk" data-time="09:00-10:00" data-room="B2.03" data-group="CSF" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">09:00-10:00</span>
-                        <span class="title">Invited Talk</span>
-                        <a class="group_tag" href="CSF-index.html">CSF</a>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:211">
-                            <td class="time">09:00-10:00</td>
-                            <td>
-                                <div class="title">Analyzing the Security of Privacy Preserving Systems Built from Ideal Cryptographic Functionalities <a class="abstract_link" href="CSF-2026-07-27.html#talk:211">(abstract)</a> <span class="duration">60 min</span></div>
-                                <div class="authors">
-<a class="person" href="person24703_187586.html">Kenny Paterson</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> ETH Zurich</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Cryptography is a powerful tool for building privacy preserving data processing systems. General-purpose techniques like Multi-Party Computation have become reasonably efficient and scalable. More niche methods like Private Set Intersection (PSI), Private Set Union (PSU), Meta’s “Multi-key Private Matching for Compute” or Google’s “Private Join and Compute” can be used to carry out specific operations over complex datasets in a privacy-preserving manner. A characteristic of all of these systems is that they come with security definitions that say, roughly speaking: the system leaks nothing more than the intended functionality. For example, in the case of PSI, two parties each having an input set both learn the intersection of their two sets, but nothing more. This is the “best possible” security one can hope for from such a functionality – after all, correctness demands that the participating parties do obtain certain outputs.
-
-But what happens when we integrate such a cryptographic functionality into a more complex system, where the functionality is used repeatedly and where the parties using the system may adaptively vary their inputs? In this setting, all privacy guarantees may be voided. That this is possible is not a new observation. However, it becomes a critical issue as these cryptographic functionalities start to become more widely deployed.
-
-We illustrate this phenomenon for the above-mentioned systems from Meta and Google. Specifically, we show query-efficient attacks against both systems allowing a party who varies their input to recover partial or full information about the other party’s private inputs [1,2]. These attacks do not violate the security guarantees of the underlying cryptographic primitives, but they do highlight the limitations of current security definitions when taking a system-level perspective. They motivate a call for careful privacy analysis of systems using advanced cryptographic techniques prior to their deployment, and the development of system-level techniques to counter leakage. They may also indicate the need for a more nuanced discussion about what ideal security for cryptographic primitives actually implies in practice.
-
-[1] F. Falzon and T. Tang. Learning from Functionality Outputs: Private Join and Compute in the Real World. USENIX Security 2025, full version at https://eprint.iacr.org/2025/162
-
-[2] F. Falzon K.G. Paterson, A. Raguso. T. Tang. Beyond the Output: Inference Attacks on Private Set Union and Multi-Key Private Matching. PoPETS 2026, to appear.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session interval_session" id="session:715" data-date="2026-07-27" data-start="10:00" data-end="10:30">
-                    <div class="heading">
-                        <span class="interval">10:00-10:30</span>
-                        <span class="title">Coffee Break</span>
-                        <a class="group_tag" href="CSF-index.html">CSF</a>
-                    </div>
-
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room31.html">B2.03</a>
-                    </div>
-
-
-                </div>
                 <div class="session interval_session" id="session:661" data-date="2026-07-27" data-start="10:00" data-end="10:30">
                     <div class="heading">
                         <span class="interval">10:00-10:30</span>
@@ -340,6 +324,21 @@ We illustrate this phenomenon for the above-mentioned systems from Meta and Goog
                     <div class="room">
                         <span class="room_word">Location: </span>
                         <a class="room_name" href="room34.html">B1.04</a>
+                    </div>
+
+
+                </div>
+                <div class="session interval_session" id="session:715" data-date="2026-07-27" data-start="10:00" data-end="10:30">
+                    <div class="heading">
+                        <span class="interval">10:00-10:30</span>
+                        <span class="title">Coffee Break</span>
+                        <a class="group_tag" href="CSF-index.html">CSF</a>
+                    </div>
+
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room31.html">B2.03</a>
                     </div>
 
 
@@ -391,87 +390,6 @@ We illustrate this phenomenon for the above-mentioned systems from Meta and Goog
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Lorraine & Inria</div>
                                 <div class="affiliation_item"><sup>2</sup> EPFL</div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="session" id="session:662" data-date="2026-07-27" data-start="10:30" data-end="11:20">
-                    <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="662" data-title="Security, Privacy and Hyperproperties" data-time="10:30-11:20" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">10:30-11:20</span>
-                        <span class="title">Security, Privacy and Hyperproperties</span>
-                        <a class="group_tag" href="CAV-index.html">CAV</a>
-                    </div>
-
-                    <div class="session_chair">
-<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person24377.html">Cesare Tinelli</a>
-                        </div>
-                    </div>
-
-                    <div class="room">
-                        <span class="room_word">Location: </span>
-                        <a class="room_name" href="room28.html">Grande Auditório</a>
-                    </div>
-
-
-                    <table class="talks">
-                        <tr class="talk" id="talk:1122">
-                            <td class="time">10:30-10:45</td>
-                            <td>
-                                <div class="title">Differentially Private Runtime Monitoring <a class="abstract_link" href="CAV-2026-07-27.html#talk:1122">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person23942.html">Frederik Scheerer</a><sup>1</sup>, <a class="person" href="person186906.html">Bernd Finkbeiner</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Modern stream-based monitors collect detailed statistics of the runtime behavior of the system under observation. If the systems runs in a privacy-sensitive context, this poses the risk of disclosing sensitive information. Differential privacy is the state-of-the-art approach for protecting sensitive information, however, integrating it into runtime monitoring is challenging: temporal operators can cause individual input values to influence multiple outputs over time, leading to repeated disclosure of private information. We propose an approach that automatically enforces differential privacy in stream-based monitoring specifications by analyzing temporal dependencies and injecting carefully calibrated noise into the specification. To preserve the utility of the outputs, we identify strategically chosen positions in the specification for noise injection and leverage tree-based mechanisms to mitigate the accuracy loss caused by noise injected into aggregation operators. We demonstrate the practicality and effectiveness of our approach in a case study on monitoring public transportation usage.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1123">
-                            <td class="time">10:45-11:00</td>
-                            <td>
-                                <div class="title">HyperLasso: Bounded Model Checking of ∀+∃+-Liveness Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1123">(abstract)</a> <span class="duration">15 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25199_186907.html">Alcino Cunha</a><sup>1</sup>, <a class="person" href="person186908.html">Hugo Pacheco</a><sup>1</sup>, <a class="person" href="person186909.html">Nuno Macedo</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Universidade do Minho & INESC TEC</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper presents the first symbolic bounded model checking technique capable of verifying ∀+∃+-liveness hyperproperties (expressed in HyperLTL) over arbitrary (non-terminating) reactive systems. Previous bounded procedures for HyperLTL handled only safety hyperproperties or arbitrary properties over terminating systems. We implement our technique as HyperLasso, and our evaluation results show that it consistently outperforms the explicit-state complete model checker AutoHyper (the only existing tool capable of automatically verifying this class of problems) at several complex bug-finding and synthesis problems.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1124">
-                            <td class="time">11:00-11:10</td>
-                            <td>
-                                <div class="title">The Simulator’s Blueprint: Automata Learning from Cybersecurity Logs <a class="abstract_link" href="CAV-2026-07-27.html#talk:1124">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person24393.html">Tudor Braicu</a><sup>1</sup>, <a class="person" href="person186911.html">Benjamin Ylvisaker</a><sup>1</sup>, <a class="person" href="person186912.html">Nico Espinosa Dice</a><sup>1</sup>, <a class="person" href="person186913.html">Yiding Chen</a><sup>1</sup>, <a class="person" href="person186914.html">Yiyi Zhang</a><sup>1</sup>, <a class="person" href="person186915.html">Nate Foster</a><sup>2</sup>, <a class="person" href="person186916.html">Hossein Hojjat</a><sup>3</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Cornell</div>
-                                <div class="affiliation_item"><sup>2</sup> EPFL</div>
-                                <div class="affiliation_item"><sup>3</sup> Tehran Institute for Advanced Studies, Khatam University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We show how to use passive automata learning to infer models of attacker-defender interactions in cybersecurity. By treating system event logs as words in a formal language, we can apply the RPNI algorithm to infer minimal deterministic finite automata from observed traces. We evaluate this approach through a case study on the Cyber Operations Research Gymnasium (CybORG), a widely-used simulation framework for training defensive agents using machine learning. We analyze the structural properties of the inferred automata and assess their empirical fidelity with respect to the semantics of CybORG. Our results show that accurate formal models can be learned from a relatively small number of traces, suggesting a promising path toward more automated and data-driven approaches to cybersecurity.</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="talk" id="talk:1125">
-                            <td class="time">11:10-11:20</td>
-                            <td>
-                                <div class="title">HyperQB 2.0: A Bounded Model Checker for Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1125">(abstract)</a> <span class="duration">10 min</span></div>
-                                <div class="authors">
-<a class="person" href="person25200_186917.html">Tzu-Han Hsu</a><sup>1</sup>, <a class="person" href="person186918.html">Milad Rabizadeh</a><sup>1</sup>, <a class="person" href="person186919.html">Kenneth Rogale</a><sup>1</sup>, <a class="person" href="person186920.html">Fedor Filippov</a><sup>1</sup>, <a class="person" href="person186921.html">Marco A. de Oliveira Batista</a><sup>1</sup>, <a class="person" href="person24350.html">Borzoo Bonakdarpour</a><sup>1</sup>                                </div>
-                                <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Michigan State University</div>
-                                </div>
-                                <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce the tool HyperQB2.0, the first highly efficient push-button bounded model checker (BMC) for hyperproperties. HyperQB takes as input a model in NuSMV or Verilog and a formula expressed in the temporal logics HyperLTL or A-HLTL. The core decision procedures to implement BMC are SMT and QBF solvers, enabling verification of finite- and infinite-state programs. HyperQB offers command-line and standalone graphical, and web-based interfaces. Based on the selection of either bug-hunting or synthesis, instances of counterexamples or path witnesses are returned. The tool is entirely implemented in Rust and we report on successful and effective model checking results for a rich set of experiments on a variety of case studies with rigorous performance comparison and contrast with similar tools.</p>
                                 </div>
                             </td>
                         </tr>
@@ -583,6 +501,87 @@ the cryptographic library to generate an event stream which
 SpecMon continuously checks for compliance with the model.
 We use Tamarin to prove authentication properties, which thus
 transfer to OpenLDAP.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="session" id="session:662" data-date="2026-07-27" data-start="10:30" data-end="11:20">
+                    <div class="heading">
+                        <button type="button" class="favorite_btn" data-session-id="662" data-title="Security, Privacy and Hyperproperties" data-time="10:30-11:20" data-room="Grande Auditório" data-group="CAV" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">10:30-11:20</span>
+                        <span class="title">Security, Privacy and Hyperproperties</span>
+                        <a class="group_tag" href="CAV-index.html">CAV</a>
+                    </div>
+
+                    <div class="session_chair">
+<div class="chair_word">Session Chair:</div>                        <div class="chair_names">
+<a class="person" href="person24377.html">Cesare Tinelli</a>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <span class="room_word">Location: </span>
+                        <a class="room_name" href="room28.html">Grande Auditório</a>
+                    </div>
+
+
+                    <table class="talks">
+                        <tr class="talk" id="talk:1122">
+                            <td class="time">10:30-10:45</td>
+                            <td>
+                                <div class="title">Differentially Private Runtime Monitoring <a class="abstract_link" href="CAV-2026-07-27.html#talk:1122">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23942.html">Frederik Scheerer</a><sup>1</sup>, <a class="person" href="person186906.html">Bernd Finkbeiner</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> CISPA Helmholtz Center for Information Security</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Modern stream-based monitors collect detailed statistics of the runtime behavior of the system under observation. If the systems runs in a privacy-sensitive context, this poses the risk of disclosing sensitive information. Differential privacy is the state-of-the-art approach for protecting sensitive information, however, integrating it into runtime monitoring is challenging: temporal operators can cause individual input values to influence multiple outputs over time, leading to repeated disclosure of private information. We propose an approach that automatically enforces differential privacy in stream-based monitoring specifications by analyzing temporal dependencies and injecting carefully calibrated noise into the specification. To preserve the utility of the outputs, we identify strategically chosen positions in the specification for noise injection and leverage tree-based mechanisms to mitigate the accuracy loss caused by noise injected into aggregation operators. We demonstrate the practicality and effectiveness of our approach in a case study on monitoring public transportation usage.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1123">
+                            <td class="time">10:45-11:00</td>
+                            <td>
+                                <div class="title">HyperLasso: Bounded Model Checking of ∀+∃+-Liveness Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1123">(abstract)</a> <span class="duration">15 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25199_186907.html">Alcino Cunha</a><sup>1</sup>, <a class="person" href="person186908.html">Hugo Pacheco</a><sup>1</sup>, <a class="person" href="person186909.html">Nuno Macedo</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Universidade do Minho & INESC TEC</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> This paper presents the first symbolic bounded model checking technique capable of verifying ∀+∃+-liveness hyperproperties (expressed in HyperLTL) over arbitrary (non-terminating) reactive systems. Previous bounded procedures for HyperLTL handled only safety hyperproperties or arbitrary properties over terminating systems. We implement our technique as HyperLasso, and our evaluation results show that it consistently outperforms the explicit-state complete model checker AutoHyper (the only existing tool capable of automatically verifying this class of problems) at several complex bug-finding and synthesis problems.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1124">
+                            <td class="time">11:00-11:10</td>
+                            <td>
+                                <div class="title">The Simulator’s Blueprint: Automata Learning from Cybersecurity Logs <a class="abstract_link" href="CAV-2026-07-27.html#talk:1124">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person24393.html">Tudor Braicu</a><sup>1</sup>, <a class="person" href="person186911.html">Benjamin Ylvisaker</a><sup>1</sup>, <a class="person" href="person186912.html">Nico Espinosa Dice</a><sup>1</sup>, <a class="person" href="person186913.html">Yiding Chen</a><sup>1</sup>, <a class="person" href="person186914.html">Yiyi Zhang</a><sup>1</sup>, <a class="person" href="person186915.html">Nate Foster</a><sup>2</sup>, <a class="person" href="person186916.html">Hossein Hojjat</a><sup>3</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Cornell</div>
+                                <div class="affiliation_item"><sup>2</sup> EPFL</div>
+                                <div class="affiliation_item"><sup>3</sup> Tehran Institute for Advanced Studies, Khatam University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We show how to use passive automata learning to infer models of attacker-defender interactions in cybersecurity. By treating system event logs as words in a formal language, we can apply the RPNI algorithm to infer minimal deterministic finite automata from observed traces. We evaluate this approach through a case study on the Cyber Operations Research Gymnasium (CybORG), a widely-used simulation framework for training defensive agents using machine learning. We analyze the structural properties of the inferred automata and assess their empirical fidelity with respect to the semantics of CybORG. Our results show that accurate formal models can be learned from a relatively small number of traces, suggesting a promising path toward more automated and data-driven approaches to cybersecurity.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="talk" id="talk:1125">
+                            <td class="time">11:10-11:20</td>
+                            <td>
+                                <div class="title">HyperQB 2.0: A Bounded Model Checker for Hyperproperties <a class="abstract_link" href="CAV-2026-07-27.html#talk:1125">(abstract)</a> <span class="duration">10 min</span></div>
+                                <div class="authors">
+<a class="person" href="person25200_186917.html">Tzu-Han Hsu</a><sup>1</sup>, <a class="person" href="person186918.html">Milad Rabizadeh</a><sup>1</sup>, <a class="person" href="person186919.html">Kenneth Rogale</a><sup>1</sup>, <a class="person" href="person186920.html">Fedor Filippov</a><sup>1</sup>, <a class="person" href="person186921.html">Marco A. de Oliveira Batista</a><sup>1</sup>, <a class="person" href="person24350.html">Borzoo Bonakdarpour</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Michigan State University</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We introduce the tool HyperQB2.0, the first highly efficient push-button bounded model checker (BMC) for hyperproperties. HyperQB takes as input a model in NuSMV or Verilog and a formula expressed in the temporal logics HyperLTL or A-HLTL. The core decision procedures to implement BMC are SMT and QBF solvers, enabling verification of finite- and infinite-state programs. HyperQB offers command-line and standalone graphical, and web-based interfaces. Based on the selection of either bug-hunting or synthesis, instances of counterexamples or path witnesses are returned. The tool is entirely implemented in Rust and we report on successful and effective model checking results for a rich set of experiments on a variety of case studies with rigorous performance comparison and contrast with similar tools.</p>
                                 </div>
                             </td>
                         </tr>
@@ -782,7 +781,7 @@ remains an open question.</p>
                             <td>
                                 <div class="title">Satisfiability Modulo Extensional Constant Arrays (Distinguished Paper) <a class="abstract_link" href="CAV-2026-07-27.html#talk:1127">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25201_186928.html">Mathias Preiner</a><sup>1</sup>, <a class="person" href="person186929.html">Aina Niemetz</a><sup>1</sup>, <a class="person" href="person25838_186622.html">Clark Barrett</a><sup>1</sup>                                </div>
+<a class="person" href="person25201_186928.html">Mathias Preiner</a><sup>1</sup>, <a class="person" href="person186929.html">Aina Niemetz</a><sup>1</sup>, <a class="person" href="person25838_191932.html">Clark Barrett</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Stanford University</div>
                                 </div>
@@ -1081,7 +1080,7 @@ that to come with invertibility proofs for printing token sequences.</p>
                             <td>
                                 <div class="title">Automating Bitvector and Finite Field Equivalence Proofs in Lean <a class="abstract_link" href="CAV-2026-07-27.html#talk:1133">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24414.html">Elizaveta Pertseva</a><sup>1</sup>, <a class="person" href="person186950.html">Valentin Robert</a><sup>2</sup>, <a class="person" href="person25838_186622.html">Clark Barrett</a><sup>1</sup>, <a class="person" href="person186952.html">James Parker</a><sup>2</sup>                                </div>
+<a class="person" href="person24414.html">Elizaveta Pertseva</a><sup>1</sup>, <a class="person" href="person186950.html">Valentin Robert</a><sup>2</sup>, <a class="person" href="person25838_191932.html">Clark Barrett</a><sup>1</sup>, <a class="person" href="person186952.html">James Parker</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Stanford University</div>
                                 <div class="affiliation_item"><sup>2</sup> Galois, Inc.</div>
@@ -1096,7 +1095,7 @@ that to come with invertibility proofs for printing token sequences.</p>
                             <td>
                                 <div class="title">The Cooperating Proof Calculus: Comprehensive Proofs for an SMT Solver <a class="abstract_link" href="CAV-2026-07-27.html#talk:1134">(abstract)</a> <span class="duration">15 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23648.html">Andrew Reynolds</a><sup>1</sup>, <a class="person" href="person186954.html">Hans-Jörg Schurr</a><sup>1</sup>, <a class="person" href="person24353.html">Haniel Barbosa</a><sup>2</sup>, <a class="person" href="person25289_188517.html">Ofec Israel</a><sup>3</sup>, <a class="person" href="person186957.html">Jibiana Zoe Jakpor</a><sup>4</sup>, <a class="person" href="person186958.html">Hanna Lachnitt</a><sup>4</sup>, <a class="person" href="person186959.html">Abdalrhman Mohamed</a><sup>4</sup>, <a class="person" href="person186929.html">Aina Niemetz</a><sup>4</sup>, <a class="person" href="person25201_186928.html">Mathias Preiner</a><sup>4</sup>, <a class="person" href="person186962.html">Yoni Zohar</a><sup>3</sup>, <a class="person" href="person186963.html">Robert Jones</a><sup>5</sup>, <a class="person" href="person25838_186622.html">Clark Barrett</a><sup>4</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>1</sup>                                </div>
+<a class="person" href="person23648.html">Andrew Reynolds</a><sup>1</sup>, <a class="person" href="person186954.html">Hans-Jörg Schurr</a><sup>1</sup>, <a class="person" href="person24353.html">Haniel Barbosa</a><sup>2</sup>, <a class="person" href="person25289_188517.html">Ofec Israel</a><sup>3</sup>, <a class="person" href="person186957.html">Jibiana Zoe Jakpor</a><sup>4</sup>, <a class="person" href="person186958.html">Hanna Lachnitt</a><sup>4</sup>, <a class="person" href="person186959.html">Abdalrhman Mohamed</a><sup>4</sup>, <a class="person" href="person186929.html">Aina Niemetz</a><sup>4</sup>, <a class="person" href="person25201_186928.html">Mathias Preiner</a><sup>4</sup>, <a class="person" href="person186962.html">Yoni Zohar</a><sup>3</sup>, <a class="person" href="person186963.html">Robert Jones</a><sup>5</sup>, <a class="person" href="person25838_191932.html">Clark Barrett</a><sup>4</sup>, <a class="person" href="person24377.html">Cesare Tinelli</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> The University of Iowa</div>
                                 <div class="affiliation_item"><sup>2</sup> Universidade Federal de Minas Gerais</div>
