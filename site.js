@@ -322,6 +322,48 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
         return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}`;
     }
 
+    let previousLiveGroupIds = new Set();
+
+    const markLive = (selector, idAttr, liveIds, reorder) => {
+        document.querySelectorAll(selector).forEach((tile) => {
+            const id = Number(tile.dataset[idAttr]);
+            const isLive = liveIds.has(id);
+            const wasLive = reorder && previousLiveGroupIds.has(id);
+            const dot = tile.querySelector('.live_dot');
+
+            if (isLive) {
+                if (reorder) tile.style.order = '-1';
+                if (!dot) {
+                    const newDot = document.createElement('span');
+                    newDot.className = 'live_dot';
+                    const label = tile.querySelector('.group_tile_label');
+                    (label || tile).appendChild(newDot);
+                }
+                if (reorder && !wasLive) {
+                    tile.classList.remove('live_entering');
+                    void tile.offsetWidth;
+                    tile.classList.add('live_entering');
+                }
+            } else {
+                if (reorder) tile.style.order = '';
+                if (dot) dot.remove();
+                if (reorder) tile.classList.remove('live_entering');
+            }
+        });
+    };
+
+    function updateLiveState(sessions, nowStamp) {
+        const liveSessions = sessions.filter((s) => s.end
+            && `${s.date}T${s.start}` <= nowStamp && nowStamp < `${s.date}T${s.end}`);
+        const liveGroupIds = new Set(liveSessions.map((s) => s.groupId));
+        const liveRoomIds = new Set(liveSessions.map((s) => s.roomId));
+
+        markLive('#menu2 a[data-group-id], .group_tile[data-group-id]', 'groupId', liveGroupIds, true);
+        markLive('.group_tile[data-room-id]', 'roomId', liveRoomIds, false);
+
+        previousLiveGroupIds = liveGroupIds;
+    }
+
     Promise.all([
         fetch('now-data.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : [])),
         fetch('build-info.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)),
@@ -345,28 +387,8 @@ document.querySelectorAll('.favorite_btn').forEach((button) => {
             }
         }
 
-        const liveSessions = sessions.filter((s) => s.end
-            && `${s.date}T${s.start}` <= nowStamp && nowStamp < `${s.date}T${s.end}`);
-        const liveGroupIds = new Set(liveSessions.map((s) => s.groupId));
-        const liveRoomIds = new Set(liveSessions.map((s) => s.roomId));
-
-        const markLive = (selector, idAttr, liveIds, reorder) => {
-            document.querySelectorAll(selector).forEach((tile) => {
-                const isLive = liveIds.has(Number(tile.dataset[idAttr]));
-                if (isLive) {
-                    if (reorder) tile.style.order = '-1';
-                    if (!tile.querySelector('.live_dot')) {
-                        const dot = document.createElement('span');
-                        dot.className = 'live_dot';
-                        const label = tile.querySelector('.group_tile_label');
-                        (label || tile).appendChild(dot);
-                    }
-                }
-            });
-        };
-
-        markLive('#menu2 a[data-group-id], .group_tile[data-group-id]', 'groupId', liveGroupIds, true);
-        markLive('.group_tile[data-room-id]', 'roomId', liveRoomIds, false);
+        updateLiveState(sessions, nowStamp);
+        setInterval(() => updateLiveState(sessions, getEventNowStamp(timeZone)), 30000);
     }).catch(() => {});
 })();
 

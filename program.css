@@ -285,6 +285,12 @@ body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: var(--color-
 #menu2 a.selected:hover, #menu3 a.selected:hover { background: var(--color-accent); }
 #menu2 .separator, #menu3 .separator { display: none; }
 .live_dot { display: inline-block; width: 7px; height: 7px; margin-left: 6px; border-radius: 50%; background: var(--color-accent); vertical-align: middle; }
+#menu2 a, .group_tile { transition: background-color 0.3s ease; }
+@keyframes live_pulse {
+    0% { box-shadow: 0 0 0 0 var(--color-accent); }
+    100% { box-shadow: 0 0 0 6px transparent; }
+}
+.live_entering { animation: live_pulse 0.6s ease-out; }
 
 #pagetitle { position: sticky; top: 0; z-index: 11; background: var(--color-bg); font-size: 18px; line-height: 21px; font-weight: bold; padding: 12px 0 6px 0; }
 
