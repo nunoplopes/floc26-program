@@ -177,7 +177,7 @@
 
                     <div class="session_chair">
 <div class="chair_word">Session Chair:</div>                        <div class="chair_names">
-<a class="person" href="person27027.html">Ekaterina Komendantskaya</a>
+<a class="person" href="person23308.html">Ekaterina Komendantskaya</a>
                         </div>
                     </div>
 
@@ -193,7 +193,7 @@
                             <td>
                                 <div class="title">Nitro Isolation Engine: Formally Verifying a Production Hypervisor <a class="abstract_link" href="ITP-2026-07-27.html#talk:2146">(abstract)</a> <span class="duration">60 min</span></div>
                                 <div class="authors">
-<a class="person" href="person27207_199085.html">Dominic Mulligan</a><sup>1</sup>                                </div>
+<a class="person" href="person27207_206327.html">Dominic Mulligan</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> AWS</div>
                                 </div>
@@ -255,7 +255,7 @@ The talk will discuss the verification approach, key proof techniques, and chall
                             <td>
                                 <div class="title">Automated Verification of Robot Software Models with Assume-Guarantee Reasoning in Isabelle/HOL <a class="abstract_link" href="ITP-2026-07-27.html#talk:379">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24504.html">Fang Yan</a><sup>1</sup>, <a class="person" href="person199087.html">Benoît Ballenghien</a><sup>2</sup>, <a class="person" href="person199088.html">Simon Foster</a><sup>1</sup>, <a class="person" href="person199089.html">Ana Cavalcanti</a><sup>1</sup>, <a class="person" href="person199090.html">James Baxter</a><sup>1</sup>, <a class="person" href="person24503.html">Burkhart Wolff</a><sup>2</sup>                                </div>
+<a class="person" href="person24504.html">Fang Yan</a><sup>1</sup>, <a class="person" href="person206329.html">Benoît Ballenghien</a><sup>2</sup>, <a class="person" href="person206330.html">Simon Foster</a><sup>1</sup>, <a class="person" href="person206331.html">Ana Cavalcanti</a><sup>1</sup>, <a class="person" href="person206332.html">James Baxter</a><sup>1</sup>, <a class="person" href="person24503.html">Burkhart Wolff</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of York</div>
                                 <div class="affiliation_item"><sup>2</sup> Université Paris-Saclay</div>
@@ -265,24 +265,23 @@ The talk will discuss the verification approach, key proof techniques, and chall
                                 </div>
                             </td>
                         </tr>
-                        <tr class="talk" id="talk:380">
+                        <tr class="talk" id="talk:394">
                             <td class="time">11:30-12:00</td>
                             <td>
-                                <div class="title">Securing the Foundations of an Intermediate Language for Probabilistic Program Verification <a class="abstract_link" href="ITP-2026-07-27.html#talk:380">(abstract)</a> <span class="duration">30 min</span></div>
+                                <div class="title">Formally Verified Liveness with Multiparty Session Types in Rocq <a class="abstract_link" href="ITP-2026-07-27.html#talk:394">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24333.html">Oliver Emil Bøving</a><sup>1</sup>, <a class="person" href="person197540.html">Christoph Matheja</a><sup>2</sup>                                </div>
+<a class="person" href="person24101.html">Omer Keskin</a><sup>1</sup>, <a class="person" href="person206335.html">Nobuko Yoshida</a><sup>2</sup>, <a class="person" href="person206336.html">Rob van Glabbeek</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
-                                <div class="affiliation_item"><sup>1</sup> Technical University of Denmark</div>
-                                <div class="affiliation_item"><sup>2</sup> University of Oldenburg and Technical University of Denmark</div>
+                                <div class="affiliation_item"><sup>1</sup> University of Edinburgh</div>
+                                <div class="affiliation_item"><sup>2</sup> University of Oxford</div>
                                 </div>
                                 <div class="abstract">
-                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Schröer et al. developed a verification infrastructure for rapid prototyping of automated verification techniques for probabilistic programs (PPs), which is based on the quantitative intermediate verification language HeyVL. In a nutshell, users encode programs, specifications, and proof rules into a single HeyVL program. The verification conditions obtained from such a HeyVL program are then discharged with SMT solvers or probabilistic model checkers.
-However, ensuring that a HeyVL encoding is correct can be subtle and error-prone, just like reasoning about PPs in general.
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Multiparty session types (MPST) offer a framework for the description of communication-based protocols involving multiple participants. In the top-down approach to MPST, the communication pattern of the session is described using a global type. Then the global type is projected on to a local type for each participant, and the individual processes making up the session are type-checked against these projections. Typed sessions possess certain desirable properties such as safety, deadlock-freedom and liveness.
 
-In this paper, we develop mechanized foundations for writing formal correctness proofs for both HeyVL encodings and PP verification techniques that are grounded in the basics of probability theory. To this end, we formalize Markov decision processes (MDPs) - a standard model for assigning operational semantics to PPs. We construct suitable probability spaces for MDPs to ground them in probability theory. Furthermore, we develop least fixed-point characterizations of expected total costs of MDPs, which are useful for relating program logics or denotational semantics to an operational MDP semantics.
-We apply these characterizations to formalize sound weakest-precondition-style calculi for both partial and total correctness reasoning about the expected behavior of PPs with unbounded loops, nondeterminism, and conditioning. Finally, we develop a deep embedding of the HeyVL intermediate verification language. We apply the above machinery to prove the correctness of various existing HeyVL encodings. During that process, we improved the original HeyVL encoding of an invariant-based proof rule for loops.
+In this work, we present the first mechanised proof of liveness for synchronous multiparty session types in the Rocq Proof Assistant. Building on recent work, we represent global and local types as coinductive trees using the paco library. We use a coinductively defined subtyping relation 
+on local types together with another coinductively defined plain-merge projection relation relating local and global types. We then associate collections of local types, or local type contexts, with global types using this projection and subtyping relations, and prove an operational correspondence between a local type context and its associated global type. We utilise this association relation to prove the safety and liveness of associated local type contexts and, consequently, the multiparty sessions typed by these contexts.  
 
-All of our results have been formalized in the interactive theorem prover Lean on top of mathlib.</p>
+Besides clarifying the often informal proofs found in the MPST literature, our Rocq mechanisation also enables the certification of liveness properties of communication protocols. Our contribution amounts to around 14K lines of Rocq code, available at https://github.com/omerskeskin/mpstlive .</p>
                                 </div>
                             </td>
                         </tr>
@@ -329,7 +328,7 @@ All of our results have been formalized in the interactive theorem prover Lean o
                             <td>
                                 <div class="title">ProofWala: A Framework for Multilingual Proof Data Synthesis and Theorem-Proving <a class="abstract_link" href="ITP-2026-07-27.html#talk:381">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25296_199094.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person25842.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person199096.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person25684.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
+<a class="person" href="person25296_206337.html">Amitayush Thakur</a><sup>1</sup>, <a class="person" href="person25842.html">George Tsoukalas</a><sup>1</sup>, <a class="person" href="person206339.html">Greg Durrett</a><sup>2</sup>, <a class="person" href="person25684.html">Swarat Chaudhuri</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> University of Texas at Austin</div>
                                 <div class="affiliation_item"><sup>2</sup> New York University</div>
@@ -346,7 +345,7 @@ We open-source the full framework, including the parallel proof search module, t
                             <td>
                                 <div class="title">Feedback & Synthesis in LLM-Assisted Termination Proofs <a class="abstract_link" href="ITP-2026-07-27.html#talk:382">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25297_199098.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person199099.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
+<a class="person" href="person25297_206341.html">Zeke Medley</a><sup>1</sup>, <a class="person" href="person206342.html">Panagiotis Manolios</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Northeastern University</div>
                                 </div>
@@ -372,7 +371,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">LeanArchitect: Automating Blueprint Generation for Humans and AI <a class="abstract_link" href="ITP-2026-07-27.html#talk:383">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25298_199100.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person199101.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person199102.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person199103.html">Sean Welleck</a><sup>1</sup>                                </div>
+<a class="person" href="person25298_206343.html">Thomas Zhu</a><sup>1</sup>, <a class="person" href="person206344.html">Pietro Monticone</a><sup>2</sup>, <a class="person" href="person206345.html">Jeremy Avigad</a><sup>1</sup>, <a class="person" href="person206346.html">Sean Welleck</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> University of Trento</div>
@@ -425,7 +424,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Formalizing the Bruck-Ryser-Chowla Theorem: Combinatorial Design Theory in Lean <a class="abstract_link" href="ITP-2026-07-27.html#talk:1291">(abstract)</a> <span class="duration">30 min</span></div>
                                 <div class="authors">
-<a class="person" href="person23453_199104.html">Eric Jonathan Wang</a><sup>1</sup>, <a class="person" href="person199105.html">Elif Uskuplu</a><sup>2</sup>                                </div>
+<a class="person" href="person23453_206347.html">Eric Jonathan Wang</a><sup>1</sup>, <a class="person" href="person206348.html">Elif Uskuplu</a><sup>2</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Carnegie Mellon University</div>
                                 <div class="affiliation_item"><sup>2</sup> Indiana University Bloomington</div>
@@ -440,7 +439,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Three Roads to de Finetti's Theorem in Lean: Short Paper <a class="abstract_link" href="ITP-2026-07-27.html#talk:1292">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person25299_200172.html">Cameron Freer</a><sup>1</sup>                                </div>
+<a class="person" href="person25299_206985.html">Cameron Freer</a><sup>1</sup>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> Massachusetts Institute of Technology</div>
                                 </div>
@@ -454,7 +453,7 @@ model decomposes problems.</p>
                             <td>
                                 <div class="title">Formal Primal-Dual Algorithm Analysis (Short Paper) <a class="abstract_link" href="ITP-2026-07-27.html#talk:1293">(abstract)</a> <span class="duration">20 min</span></div>
                                 <div class="authors">
-<a class="person" href="person24133.html">Thomas Ammer</a><sup>1</sup>, <a class="person" href="person24466.html">Mohammad Abdulaziz</a><sup>1</sup>, <a class="person" href="person199109.html">Christoph Madlener</a>                                </div>
+<a class="person" href="person24133.html">Thomas Ammer</a><sup>1</sup>, <a class="person" href="person24466.html">Mohammad Abdulaziz</a><sup>1</sup>, <a class="person" href="person206352.html">Christoph Madlener</a>                                </div>
                                 <div class="affiliations">
                                 <div class="affiliation_item"><sup>1</sup> King's College London</div>
                                 </div>
@@ -495,11 +494,28 @@ We discuss a number of example formalisations from the theory of matching algori
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:2178">
+                            <td class="time">18:00-19:00</td>
+                            <td>
+                                <div class="title">Future of ITP Conference Series & Gen AI (discussion panel) <a class="abstract_link" href="ITP-2026-07-27.html#talk:2178">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person23308.html">Ekaterina Komendantskaya</a><sup>1</sup>, <a class="person" href="person23259.html">Tobias Nipkow</a><sup>2</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> Southampton</div>
+                                <div class="affiliation_item"><sup>2</sup> Munich</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> We will discuss  current ITP facts and figures, introduce chairs and venue for ITP'27, and initiate a discussion of how/whether Gen AI should be a subject of special regulations at ITP conference series. All ITP attendees are welcome to attend this meeting.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="session" id="session:831" data-date="2026-07-27" data-start="19:00" data-end="20:00">
+                <div class="session" id="session:831" data-date="2026-07-27" data-start="19:30" data-end="20:30">
                     <div class="heading">
-                        <button type="button" class="favorite_btn" data-session-id="831" data-title="AI for Math Happy Hour (“Differentiated” Networking)" data-time="19:00-20:00" data-room="B1.04" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
-                        <span class="interval">19:00-20:00</span>
+                        <button type="button" class="favorite_btn" data-session-id="831" data-title="AI for Math Happy Hour (“Differentiated” Networking)" data-time="19:30-20:30" data-room="Lago Lisboa" data-group="ITP" data-day="Monday, 27 July 2026" data-remove-label="Remove from my agenda" title="Add to my agenda" aria-label="Add to my agenda" aria-pressed="false">☆</button>
+                        <span class="interval">19:30-20:30</span>
                         <span class="title">AI for Math Happy Hour (“Differentiated” Networking)</span>
                         <a class="group_tag" href="ITP-index.html">ITP</a>
                     </div>
@@ -507,10 +523,30 @@ We discuss a number of example formalisations from the theory of matching algori
 
                     <div class="room">
                         <span class="room_word">Location: </span>
-                        <a class="room_name" href="room34.html">B1.04</a>
+                        <a class="room_name" href="room70.html">Lago Lisboa</a>
                     </div>
 
 
+                    <table class="talks">
+                        <tr class="talk" id="talk:2179">
+                            <td class="time">19:30-20:30</td>
+                            <td>
+                                <div class="title">Social Event Sponsored by Renaissance Philantropy <a class="abstract_link" href="ITP-2026-07-27.html#talk:2179">(abstract)</a> <span class="duration">60 min</span></div>
+                                <div class="authors">
+<a class="person" href="person27210_206356.html">Renaissance Philantropy</a><sup>1</sup>                                </div>
+                                <div class="affiliations">
+                                <div class="affiliation_item"><sup>1</sup> renaissancephilanthropy</div>
+                                </div>
+                                <div class="abstract">
+                                    <p class="abstract_text"><span class="abstract_label">ABSTRACT.</span> Venue Description: O Lago
+O Lago is beautifully situated right by the scenic lake inside the Campo Grande Garden. Offering a modern, luminous indoor space and an exceptional lakeside terrace, it combines a serene natural setting with a chic, welcoming atmosphere—perfect for a relaxed yet upscale group Happy Hour.
+
+Distance: 1.3Km
+Walking time: A pleasant 15/20 minute walk. Sponsor: https://www.renaissancephilanthropy.org/</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
